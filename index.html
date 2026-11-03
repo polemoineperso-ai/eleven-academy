@@ -92,7 +92,8 @@ a { color: var(--green); text-underline-offset: 3px; }
 .top {
   position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
-  padding-block: 12px; background: rgba(13, 13, 13, 0.94);
+  padding-block: 12px; background: var(--pitch);
+  box-shadow: 0 0 0 100vmax var(--pitch); clip-path: inset(0 -100vmax);
 }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; background: none; border: 0; padding: 0; }
 .brand-crest { height: 44px; width: auto; flex: none; display: block; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5)); }
@@ -210,6 +211,69 @@ button.row:hover .row-title { color: var(--green); }
 .sec-head:has(.sec-title) { align-items: center; }
 
 .tag { display: inline-flex; align-items: center; height: 24px; padding: 0 9px; border-radius: 999px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+
+/* Chapter path: Cours -> Fiche -> Questions */
+.path { display: flex; flex-direction: column; }
+.step {
+  display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; align-items: center; gap: 4px 14px;
+  padding: 14px 0; border: 0; border-bottom: 1px solid var(--line); background: none;
+  text-align: left; width: 100%; color: inherit; min-height: 68px;
+}
+.step:first-child { border-top: 1px solid var(--line); }
+button.step:hover .row-title { color: var(--green); }
+.step-n { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 15px; border: 2px solid var(--line-strong); color: var(--fg-2); font-variant-numeric: tabular-nums; }
+.step-n svg { width: 18px; height: 18px; }
+.step.is-done .step-n { background: var(--green); border-color: var(--green); color: var(--on-green); }
+.step.is-next .step-n { border-color: var(--green); color: var(--green); }
+.step.is-off { color: var(--fg-3); }
+.step.is-off .row-sub { color: var(--fg-3); }
+.step-where { font-size: 13px; color: var(--fg-2); font-weight: 600; }
+
+/* Lesson (cours) */
+.lesson { display: flex; flex-direction: column; gap: 16px; }
+.lesson-sec { gap: 14px; scroll-margin-top: 84px; }
+.lesson-h2 { font-size: 20px; font-weight: 800; line-height: 1.3; text-wrap: balance; margin: 0; }
+.lesson-code { color: var(--ink-2); font-variant-numeric: tabular-nums; margin-right: 6px; }
+.sheet.dark .lesson-code { color: var(--green); }
+.lesson-ref { font-size: 14px; font-weight: 600; color: var(--ink-2); margin: -6px 0 0; }
+.sheet.dark .lesson-ref { color: var(--fg-2); }
+.lesson-h3 { font-size: 17px; font-weight: 700; line-height: 1.35; margin: 10px 0 0; }
+.lesson-p, .lesson-list li { font-size: 16px; line-height: 1.65; max-width: 65ch; margin: 0; }
+.lesson-list { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
+.lesson-list li::marker { color: var(--ink-2); }
+.sheet.dark .lesson-list li::marker { color: var(--green); }
+.callout { border-radius: var(--r-s); padding: 14px 14px 15px; display: flex; flex-direction: column; gap: 6px; }
+.callout p { margin: 0; font-size: 15.5px; line-height: 1.6; max-width: 65ch; }
+.callout.cas { background: rgba(169, 224, 35, 0.2); }
+.callout.warn { background: rgba(245, 184, 46, 0.2); }
+.callout.memo { background: rgba(18, 22, 18, 0.06); }
+.sheet.dark .callout.cas { background: var(--green-soft); }
+.sheet.dark .callout.warn { background: var(--gold-soft); }
+.sheet.dark .callout.memo { background: rgba(255, 255, 255, 0.06); }
+.callout .callout-lab { display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 800; }
+.callout-lab svg { width: 18px; height: 18px; flex: none; }
+.callout .callout-sub { font-size: 13.5px; font-weight: 700; color: var(--ink-2); margin-top: 4px; }
+.sheet.dark .callout .callout-sub { color: var(--fg-2); }
+.tbl-wrap { overflow-x: auto; margin: 0 -4px; padding: 0 4px; }
+.lesson-table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.5; }
+.lesson-table th, .lesson-table td { text-align: left; vertical-align: top; padding: 9px 10px 9px 0; border-bottom: 1px solid var(--paper-line); }
+.lesson-table th { font-size: 13px; font-weight: 800; color: var(--ink-2); }
+.lesson-table td:first-child { font-weight: 700; }
+.lesson-table td.num, .lesson-table th.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sheet.dark .lesson-table th, .sheet.dark .lesson-table td { border-color: var(--line); }
+.sheet.dark .lesson-table th { color: var(--fg-2); }
+.tgroups { display: flex; flex-direction: column; }
+.tgroup { padding: 12px 0; border-bottom: 1px solid var(--paper-line); }
+.tgroup:first-child { padding-top: 2px; }
+.sheet.dark .tgroup { border-color: var(--line); }
+.tgroup-h { font-weight: 800; font-size: 15.5px; margin: 0 0 6px; }
+.tgroup dl { display: grid; grid-template-columns: minmax(0, 8.5em) minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: 14.5px; line-height: 1.5; }
+.tgroup dt { color: var(--ink-2); font-weight: 600; }
+.sheet.dark .tgroup dt { color: var(--fg-2); }
+.tgroup dd { margin: 0; }
+.lesson-end { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
+a.row { text-decoration: none; }
+a.row:hover .row-title { color: var(--green); }
 
 /* Paper sheet (fiche, article) */
 .sheet {
@@ -521,11 +585,11 @@ button.row:hover .row-title { color: var(--green); }
   /* ---------- State ---------- */
   const S = {
     content: null, contentSource: "", progress: null, uid: null, name: "",
-    db: null, sync: "local", view: "home", param: null, session: null, saving: Promise.resolve(), toastTimer: null
+    db: null, sync: "local", view: "home", param: null, from: null, session: null, saving: Promise.resolve(), toastTimer: null
   };
   const emptyProgress = () => ({
     xp: 0, answers: {}, streak: { count: 0, last: null, rest: null },
-    sessions: [], trophies: {}, settings: { fx: true, lightSheets: true, perSession: 10 }, total: 0, right: 0
+    sessions: [], trophies: {}, read: {}, settings: { fx: true, lightSheets: true, perSession: 10 }, total: 0, right: 0
   });
 
   /* ---------- Utils ---------- */
@@ -762,7 +826,8 @@ button.row:hover .row-title { color: var(--green); }
   function renderTabs() {
     const hidden = S.view === "quiz";
     document.querySelector(".tabbar").hidden = hidden;
-    const map = { home: "home", train: "train", chapter: "train", exams: "exams", revisions: "revisions", fiche: "revisions", progress: "progress", result: "home", me: "" };
+    const viaRev = S.from === "revisions" ? "revisions" : "train";
+    const map = { home: "home", train: "train", chapter: "train", exams: "exams", revisions: "revisions", fiche: viaRev, cours: viaRev, outil: "revisions", progress: "progress", result: "home", me: "" };
     const cur = map[S.view];
     document.getElementById("tabs").innerHTML = TABS.map((t) =>
       `<button class="tab" data-go="${t.id}" ${cur === t.id ? 'aria-current="page"' : ""}>${t.crest ? `<img class="tab-crest" src="${ASSET["crest"]}" alt="" width="29" height="32">` : t.pic ? pic(t.pic) : tile(t.icon)}<span>${t.label}</span></button>`).join("");
@@ -854,34 +919,113 @@ button.row:hover .row-title { color: var(--green); }
 
   function vTrain() {
     return `${header()}<main class="screen">
-      <div class="greet"><h1 class="h-screen">Programme</h1><p class="muted small">Lis la fiche, puis entraîne-toi chapitre par chapitre. Un chapitre est validé à 80 % de questions acquises.</p></div>
+      <div class="greet"><h1 class="h-screen">Programme</h1><p class="muted small">Chaque chapitre suit le même parcours : le cours, la fiche, puis les questions. Il est validé à 80 % de questions acquises.</p></div>
       ${C.domains().map((d) => `<section class="sec" id="d-${d.id}" aria-labelledby="t-${d.id}">
         <div class="sec-head"><span class="sec-title">${domPic(d.id)}<h2 class="h-sec" id="t-${d.id}">${esc(d.titre)}</h2></span><span class="tiny num">${mastery(C.qOfDomain(d.id))} % acquis</span></div>
         <div class="rows">${C.chapters().filter((c) => c.domaine === d.id).map((c) => {
           const st = chapterState(c);
           return `<button class="row" data-go="chapter" data-param="${c.id}">
-            <span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${C.qOf(c.id).length} questions${st.key === "ok" ? " · validé" : ""}</span></span>
+            <span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${hasCours(c) ? (isRead(c.id) ? "Cours lu · " : "Cours · ") : ""}${C.qOf(c.id).length} questions${st.key === "ok" ? " · validé" : ""}</span></span>
             <span class="row-side num">${st.m} %${icon("chevron")}</span>
             <span class="bar" aria-hidden="true"><i style="width:${st.m}%"></i></span></button>`;
         }).join("")}</div></section>`).join("")}
-      <section class="sec" aria-labelledby="soon-t"><div class="sec-head"><h2 class="h-sec" id="soon-t">Bientôt au programme</h2><span class="tiny">5 domaines</span></div>
+      <section class="sec" aria-labelledby="soon-t"><div class="sec-head"><h2 class="h-sec" id="soon-t">Bientôt au programme</h2><span class="tiny">${UPCOMING.length} domaines</span></div>
         <div class="rows">${soonRows()}</div>
         <p class="tiny">Ces domaines complètent le programme officiel 2026 de l'épreuve générale. Ils seront ajoutés au fil des versions, avec leurs fiches et leurs questions.</p></section>
     </main>`;
   }
 
+  /* ---------- Cours ---------- */
+  const hasCours = (c) => !!(c && c.cours && c.cours.sections && c.cours.sections.length);
+  const isRead = (id) => !!(S.progress.read && S.progress.read[id]);
+  const backTo = (c) => S.from === "revisions"
+    ? `<button class="link-btn" data-go="revisions" style="align-self:flex-start">${icon("back")} Révisions</button>`
+    : `<button class="link-btn" data-go="chapter" data-param="${c.id}" style="align-self:flex-start">${icon("back")} ${esc(c.titre)}</button>`;
+  function lessonTable(b) {
+    if (b.head.length >= 3) { /* phone width: one group per row instead of a cramped grid */
+      return `<div class="tgroups">${b.rows.map((r) => `<div class="tgroup"><p class="tgroup-h">${esc(r[0])}</p><dl>${b.head.slice(1).map((h, k) => `<dt>${esc(h)}</dt><dd>${esc(r[k + 1] || "")}</dd>`).join("")}</dl></div>`).join("")}</div>`;
+    }
+    const numCol = (v) => /^(L\. )?\d[\d-]*( et \d+)?$/.test(v.trim());
+    return `<div class="tbl-wrap"><table class="lesson-table"><thead><tr>${b.head.map((h) => `<th scope="col">${esc(h)}</th>`).join("")}</tr></thead>
+      <tbody>${b.rows.map((r) => `<tr>${r.map((v, k) => k === 0 ? `<th scope="row" class="${numCol(v) ? "num" : ""}" style="font-weight:700;color:inherit;font-size:14.5px">${esc(v)}</th>` : `<td>${esc(v)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+  }
+  function lessonBlock(b) {
+    switch (b.t) {
+      case "h": return `<h3 class="lesson-h3">${esc(b.x)}</h3>`;
+      case "p": return `<p class="lesson-p">${esc(b.x)}</p>`;
+      case "list": return `<ul class="lesson-list">${b.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
+      case "cas": return `<div class="callout cas"><p class="callout-lab">${icon("whistle")}Mise en situation</p><p>${esc(b.cas)}</p>${b.analyse ? `<p class="callout-sub">Analyse</p><p>${esc(b.analyse)}</p>` : ""}</div>`;
+      case "vigilance": return `<div class="callout warn"><p class="callout-lab">${icon("flag")}Point de vigilance</p><p>${esc(b.x)}</p></div>`;
+      case "memo": return `<div class="callout memo"><p class="callout-lab">${icon("target")}À retenir pour le QCM</p><p>${esc(b.x)}</p></div>`;
+      case "table": return lessonTable(b);
+      default: return "";
+    }
+  }
+  const lessonSections = (secs) => secs.map((sec, i) => `<section class="sheet${sheetCls()} lesson-sec" id="ls-${i}" aria-labelledby="ls-${i}-t">
+      <h2 class="lesson-h2" id="ls-${i}-t">${sec.code ? `<span class="lesson-code">${esc(sec.code)}</span>` : ""}${esc(sec.titre)}</h2>
+      ${sec.ref ? `<p class="lesson-ref">Texte de référence : ${esc(sec.ref)}</p>` : ""}
+      ${sec.blocs.map(lessonBlock).join("")}
+    </section>`).join("");
+  const lessonToc = (secs) => secs.length < 2 ? "" : `<nav class="sec" aria-labelledby="toc-t"><h2 class="h-sec" id="toc-t">Sommaire</h2>
+      <div class="rows">${secs.map((sec, i) => `<button class="row" data-act="toc" data-param="ls-${i}"><span class="row-title" style="font-size:15px">${sec.code ? `<span class="num">${esc(sec.code)}</span> ` : ""}${esc(sec.titre)}</span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div></nav>`;
+
+  function vCours() {
+    const c = C.chapter(S.param); if (!hasCours(c)) return vChapter();
+    const k = c.cours;
+    return `${header()}<main class="screen narrow">
+      <div class="stack" style="gap:6px">${backTo(c)}
+        <p class="step-where">Étape 1 sur 3 · Cours</p>
+        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(k.module)} · environ ${k.minutes} min de lecture${isRead(c.id) ? " · lu" : ""}</p></div>
+      ${lessonToc(k.sections)}
+      <div class="lesson">${lessonSections(k.sections)}</div>
+      <div class="lesson-end">
+        <button class="btn btn-primary btn-block" data-act="read-done" data-param="${c.id}">${icon("check")}J'ai lu le cours, passer à la fiche</button>
+        <button class="link-btn" data-act="chapter" data-param="${c.id}" style="align-self:center">S'entraîner directement sur les questions</button>
+      </div>
+    </main>`;
+  }
+
+  function vOutil() {
+    const [domId, oid] = String(S.param || "").split(":");
+    const d = C.domain(domId); const o = d && (d.outils || []).find((x) => x.id === oid);
+    if (!o) return vRevisions();
+    return `${header()}<main class="screen narrow">
+      <div class="stack" style="gap:6px"><button class="link-btn" data-go="revisions" style="align-self:flex-start">${icon("back")} Révisions</button>
+        <h1 class="h-screen">${esc(o.titre)}</h1><p class="muted small">${esc(d.module || d.titre)} · ${esc(o.sous)}</p></div>
+      <div class="lesson">${lessonSections(o.sections)}</div>
+    </main>`;
+  }
+
   function vChapter() {
     const c = C.chapter(S.param); if (!c) return vTrain();
-    const d = C.domain(c.domaine); const qs = C.qOf(c.id);
+    const d = C.domain(c.domaine); const qs = C.qOf(c.id); const st = chapterState(c);
+    const cours = hasCours(c); const read = isRead(c.id); const seen = qs.some((q) => ans(q.id));
+    const ficheSeen = isRead("f:" + c.id) || seen;
+    const done = [cours && read, ficheSeen, st.key === "ok"];
+    const next = cours && !read ? 0 : !ficheSeen ? 1 : 2;
+    const mark = (i) => done[i] ? icon("check") : String(i + 1);
+    const cls = (i) => `step${done[i] ? " is-done" : ""}${i === next && !done[i] ? " is-next" : ""}`;
+    const stepCours = cours
+      ? `<button class="${cls(0)}" data-go="cours" data-param="${c.id}" data-from="chapter"><span class="step-n" aria-hidden="true">${mark(0)}</span>
+          <span class="stack"><span class="row-title">Lire le cours</span><span class="row-sub">${c.cours.sections.length} parties · environ ${c.cours.minutes} min${read ? " · lu" : ""}</span></span><span class="row-side">${icon("chevron")}</span></button>`
+      : `<div class="step is-off"><span class="step-n" aria-hidden="true">1</span>
+          <span class="stack"><span class="row-title">Le cours</span><span class="row-sub">Il arrive avec le module de cours de ce domaine.</span></span></div>`;
+    const cta = next === 0
+      ? `<button class="btn btn-primary btn-block" data-go="cours" data-param="${c.id}" data-from="chapter">${icon("file")}Commencer par le cours</button>`
+      : next === 1
+        ? `<button class="btn btn-primary btn-block" data-go="fiche" data-param="${c.id}" data-from="chapter">${icon("list")}Lire la fiche</button>`
+        : `<button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>`;
     return `${header()}<main class="screen narrow">
       <div class="stack" style="gap:6px"><button class="link-btn" data-go="train" style="align-self:flex-start">${icon("back")} Programme</button>
-        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(d?.titre || "")} · ${qs.length} questions · ${chapterState(c).m} % acquis</p></div>
-      <article class="sheet${sheetCls()}" aria-labelledby="f-${c.id}">
-        <h2 class="sheet-title" id="f-${c.id}">La fiche</h2>
-        <ul class="sheet-list">${c.fiche.map((l) => `<li>${keyFig(esc(l))}</li>`).join("")}</ul>
-        <p class="sheet-src">Source : ${esc(c.source)}</p>
-      </article>
-      <button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>
+        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(d?.titre || "")} · ${qs.length} questions · ${st.m} % acquis</p></div>
+      <section class="sec" aria-labelledby="path-t"><h2 class="h-sec" id="path-t">Ton parcours</h2>
+        <div class="path">${stepCours}
+          <button class="${cls(1)}" data-go="fiche" data-param="${c.id}" data-from="chapter"><span class="step-n" aria-hidden="true">${mark(1)}</span>
+            <span class="stack"><span class="row-title">Retenir la fiche</span><span class="row-sub">${c.fiche.length} points clés</span></span><span class="row-side">${icon("chevron")}</span></button>
+          <button class="${cls(2)}" data-act="chapter" data-param="${c.id}"><span class="step-n" aria-hidden="true">${mark(2)}</span>
+            <span class="stack"><span class="row-title">S'entraîner</span><span class="row-sub">${qs.length} questions · ${st.m} % acquis${st.key === "ok" ? " · validé" : " · validé à 80 %"}</span></span><span class="row-side">${icon("chevron")}</span></button>
+        </div></section>
+      ${cta}
     </main>`;
   }
 
@@ -970,21 +1114,28 @@ button.row:hover .row-title { color: var(--green); }
     </main>`;
   }
 
+  const toolRows = (d) => !(d.outils && d.outils.length) ? "" : `<h3 class="h-sec" style="font-size:16px;margin-top:8px">Boîte à outils du ${esc((d.module || "").split(" · ")[0].toLowerCase() || "module")}</h3>
+      <div class="rows">${d.outils.map((o) => `<button class="row" data-go="outil" data-param="${d.id}:${o.id}"><span class="stack"><span class="row-title">${esc(o.titre)}</span><span class="row-sub">${esc(o.sous)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}
+      ${d.pdf && !window.claude ? `<a class="row" href="${esc(d.pdf)}" target="_blank" rel="noopener"><span class="stack"><span class="row-title">Le module complet en PDF</span><span class="row-sub">${esc(d.module || "")} · document d'origine</span></span><span class="row-side">${icon("file")}</span></a>` : ""}</div>`;
   function vRevisions() {
     return `${header()}<main class="screen">
-      <div class="greet"><h1 class="h-screen">Révisions</h1><p class="muted small">Toutes les fiches, avec leurs textes de référence.</p></div>
+      <div class="greet"><h1 class="h-screen">Révisions</h1><p class="muted small">Toutes les fiches, et la boîte à outils de chaque module de cours.</p></div>
       ${C.domains().map((d) => `<section class="sec" aria-labelledby="r-${d.id}"><h2 class="h-sec" id="r-${d.id}">${esc(d.titre)}</h2>
-        <div class="rows">${C.chapters().filter((c) => c.domaine === d.id).map((c) => `<button class="row" data-go="fiche" data-param="${c.id}"><span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${c.fiche.length} points clés · ${esc(c.source)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div></section>`).join("")}
+        <div class="rows">${C.chapters().filter((c) => c.domaine === d.id).map((c) => `<button class="row" data-go="fiche" data-param="${c.id}" data-from="revisions"><span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${c.fiche.length} points clés · ${esc(c.source)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div>${toolRows(d)}</section>`).join("")}
     </main>`;
   }
 
   function vFiche() {
     const c = C.chapter(S.param); if (!c) return vRevisions();
     return `${header()}<main class="screen narrow">
-      <div class="stack" style="gap:6px"><button class="link-btn" data-go="revisions" style="align-self:flex-start">${icon("back")} Révisions</button>
-        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(C.domain(c.domaine)?.titre || "")}</p></div>
+      <div class="stack" style="gap:6px">${backTo(c)}
+        <p class="step-where">Étape 2 sur 3 · Fiche</p>
+        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(C.domain(c.domaine)?.titre || "")} · ${c.fiche.length} points clés</p></div>
       <article class="sheet${sheetCls()}"><ul class="sheet-list">${c.fiche.map((l) => `<li>${keyFig(esc(l))}</li>`).join("")}</ul><p class="sheet-src">Source : ${esc(c.source)}</p></article>
-      <button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>
+      <div class="lesson-end">
+        <button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>
+        ${hasCours(c) ? `<button class="link-btn" data-go="cours" data-param="${c.id}" style="align-self:center">Relire le cours</button>` : ""}
+      </div>
     </main>`;
   }
 
@@ -1090,7 +1241,7 @@ button.row:hover .row-title { color: var(--green); }
     if (S.login) { app.innerHTML = typo(vLogin()); document.querySelector(".tabbar").hidden = true; return; }
     if (!S.progress) { app.innerHTML = vLoading(); document.querySelector(".tabbar").hidden = true; return; }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
-    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, exams: vExams, revisions: vRevisions, fiche: vFiche, progress: vProgress, me: vMe };
+    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, exams: vExams, revisions: vRevisions, fiche: vFiche, cours: vCours, outil: vOutil, progress: vProgress, me: vMe };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
     if (S.view === "train" && S.param) document.getElementById("d-" + S.param)?.scrollIntoView({ block: "start" });
@@ -1100,10 +1251,22 @@ button.row:hover .row-title { color: var(--green); }
   document.addEventListener("click", (e) => {
     const el = e.target.closest("[data-go],[data-act]"); if (!el) return;
     const param = el.dataset.param ?? null;
-    if (el.dataset.go) { go(el.dataset.go, param); return; }
+    if (el.dataset.go) {
+      if (el.dataset.from) S.from = el.dataset.from;
+      if (el.dataset.go === "fiche" && param && !isRead("f:" + param)) { S.progress.read = Object.assign({}, S.progress.read, { ["f:" + param]: today() }); save(); }
+      else if (el.classList.contains("tab") || ["train", "revisions", "home"].includes(el.dataset.go)) S.from = el.dataset.go === "revisions" ? "revisions" : null;
+      go(el.dataset.go, param); return;
+    }
     const s = S.session;
     switch (el.dataset.act) {
       case "daily": { const p = buildDaily(S.progress.settings.perSession); startSession("daily", p.ids, "Séance du jour"); break; }
+      case "toc": { const t = document.getElementById(param); if (t) { t.scrollIntoView({ behavior: fxOn() ? "smooth" : "auto", block: "start" }); t.querySelector("h2")?.setAttribute("tabindex", "-1"); t.querySelector("h2")?.focus({ preventScroll: true }); } break; }
+      case "read-done": {
+        const first = !isRead(param);
+        S.progress.read = Object.assign({}, S.progress.read, { [param]: today(), ["f:" + param]: today() });
+        if (first) { S.progress.xp += 20; save(); toast("Cours lu : +20 points"); } else save();
+        go("fiche", param); break;
+      }
       case "chapter": { const c = C.chapter(param); startSession("chapter", C.qOf(param).map((q) => q.id), "Chapitre : " + (c?.titre || "")); break; }
       case "pick": {
         if (!s || s.picked !== null) return;

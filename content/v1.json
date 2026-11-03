@@ -1,5 +1,5 @@
 {
- "version": "v3-2026-11-03",
+ "version": "v4-2026-11-03",
  "domaines": [
   {
    "id": "associations",
@@ -27,7 +27,506 @@
    "ordre": 4,
    "titre": "Contrats",
    "sous_titre": "Code civil : contrat, mandat, contrats voisins",
-   "epreuve": "generale"
+   "epreuve": "generale",
+   "module": "Module 02 · Droit des contrats",
+   "outils": [
+    {
+     "id": "lexique",
+     "titre": "Les mots-clés du module",
+     "sous": "18 définitions à connaître",
+     "sections": [
+      {
+       "code": "",
+       "titre": "Lexique",
+       "blocs": [
+        {
+         "t": "p",
+         "x": "Un glossaire de consultation rapide. Les définitions sont reformulées à partir des explications présentes dans le cours."
+        },
+        {
+         "t": "table",
+         "head": [
+          "Mot",
+          "Définition"
+         ],
+         "rows": [
+          [
+           "Contrat",
+           "Accord de volontés destiné à créer, modifier, transmettre ou éteindre des obligations."
+          ],
+          [
+           "Cocontractant",
+           "Personne avec laquelle une partie conclut un contrat."
+          ],
+          [
+           "Force obligatoire",
+           "Principe selon lequel les contrats légalement formés s'imposent aux parties."
+          ],
+          [
+           "Bonne foi",
+           "Exigence de loyauté lors de la négociation, de la formation et de l'exécution."
+          ],
+          [
+           "Consentement",
+           "Volonté de s'engager juridiquement."
+          ],
+          [
+           "Vice du consentement",
+           "Erreur, dol ou violence susceptible d'affecter la validité du contrat."
+          ],
+          [
+           "Nullité relative",
+           "Sanction qui protège en principe l'intérêt privé de la partie concernée."
+          ],
+          [
+           "Mandant",
+           "Personne qui donne à une autre le pouvoir d'agir pour elle et en son nom."
+          ],
+          [
+           "Mandataire",
+           "Personne qui reçoit ce pouvoir dans les limites du mandat."
+          ],
+          [
+           "Mandat",
+           "Acte par lequel une personne donne à une autre le pouvoir d'accomplir quelque chose pour elle et en son nom."
+          ],
+          [
+           "Commissionnaire",
+           "Personne qui agit en son propre nom pour le compte d'un commettant."
+          ],
+          [
+           "Commettant",
+           "Personne pour le compte de laquelle agit le commissionnaire."
+          ],
+          [
+           "Courtage",
+           "Activité consistant à rapprocher des parties en vue de la conclusion d'une opération."
+          ],
+          [
+           "Inexécution",
+           "Absence d'exécution ou exécution imparfaite d'une obligation."
+          ],
+          [
+           "Exception d'inexécution",
+           "Possibilité, dans les conditions légales, de suspendre sa propre obligation."
+          ],
+          [
+           "Résolution",
+           "Fin du contrat provoquée par une inexécution dans les conditions prévues."
+          ],
+          [
+           "Caducité",
+           "Disparition de l'efficacité du contrat en raison de la disparition d'un élément essentiel."
+          ],
+          [
+           "Contrat d'entreprise",
+           "Prestation réalisée par un prestataire pour un prix convenu, sans nécessairement représenter son client."
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "pieges",
+     "titre": "Les 10 pièges classiques du QCM",
+     "sous": "Les erreurs qui coûtent des points",
+     "sections": [
+      {
+       "code": "",
+       "titre": "Les 10 pièges classiques",
+       "blocs": [
+        {
+         "t": "table",
+         "head": [
+          "Piège",
+          "À retenir"
+         ],
+         "rows": [
+          [
+           "1. Le contrat verbal",
+           "En droit commun, un mandat peut être verbal. En revanche, le mandat d'agent sportif nécessite un écrit."
+          ],
+          [
+           "2. La liberté contractuelle",
+           "Les parties ne peuvent pas écarter les dispositions impératives du Code du sport."
+          ],
+          [
+           "3. La bonne foi",
+           "Elle s'impose pendant la négociation, la formation et l'exécution du contrat."
+          ],
+          [
+           "4. Les vices du consentement",
+           "Erreur, dol et violence peuvent entraîner une nullité relative, sous réserve de leurs conditions respectives."
+          ],
+          [
+           "5. La force obligatoire",
+           "Une partie ne peut pas modifier seule un contrat simplement parce qu'elle change d'avis."
+          ],
+          [
+           "6. L'exception d'inexécution",
+           "Toute inexécution ne permet pas automatiquement de suspendre ses propres obligations. Elle doit notamment présenter une gravité suffisante dans le cadre de l'article 1219."
+          ],
+          [
+           "7. La durée du mandat",
+           "La durée maximale légale du mandat d'agent sportif est de trois ans. Un règlement fédéral peut prévoir une durée inférieure."
+          ],
+          [
+           "8. La commission de 10 %",
+           "Il s'agit d'un plafond maximal, pas d'un taux systématique. Il faut également tenir compte des éventuels plafonds fédéraux inférieurs."
+          ],
+          [
+           "9. La représentation",
+           "Un agent ne peut agir que pour le compte d'une seule partie dans les conditions de l'article L. 222-17."
+          ],
+          [
+           "10. Les mineurs",
+           "L'interdiction de rémunération prévue par l'article L. 222-5 peut continuer à s'appliquer même lorsque le joueur atteint 18 ans pendant l'exécution du contrat."
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "j7",
+     "titre": "Réviser le droit des contrats en 7 jours",
+     "sous": "Le plan du module, jour par jour",
+     "sections": [
+      {
+       "code": "",
+       "titre": "Plan de révision J-7",
+       "blocs": [
+        {
+         "t": "table",
+         "head": [
+          "Jour",
+          "Programme"
+         ],
+         "rows": [
+          [
+           "J-7 – Formation du contrat",
+           "Articles 1101, 1102, 1103, 1104 et 1128. Définition, liberté contractuelle, bonne foi et validité."
+          ],
+          [
+           "J-6 – Consentement",
+           "Articles 1130 à 1144. Erreur, dol, violence, nullité et prescription."
+          ],
+          [
+           "J-5 – Inexécution",
+           "Articles 1217 à 1231-7. Sanctions, résolution et responsabilité."
+          ],
+          [
+           "J-4 – Droit commun du mandat",
+           "Articles 1984 à 2010. Formation, obligations, responsabilité et extinction."
+          ],
+          [
+           "J-3 – Mandat d'agent sportif",
+           "Articles L. 222-5 à L. 222-20. Écrit, durée, commission, représentation et sanctions."
+          ],
+          [
+           "J-2 – Contrats voisins et cas pratiques",
+           "Mandat, courtage, commission et entreprise. Résolution de situations professionnelles."
+          ],
+          [
+           "J-1 – Examen blanc",
+           "Les QCM du module, correction, mémorisation des erreurs et derniers rappels."
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "articles",
+     "titre": "Les articles à connaître par cœur",
+     "sous": "La sélection prioritaire du module",
+     "sections": [
+      {
+       "code": "",
+       "titre": "Code civil – Droit général des contrats",
+       "blocs": [
+        {
+         "t": "table",
+         "head": [
+          "Article",
+          "Sujet",
+          "Priorité"
+         ],
+         "rows": [
+          [
+           "1101",
+           "Définition du contrat",
+           "Haute"
+          ],
+          [
+           "1102",
+           "Liberté contractuelle",
+           "Haute"
+          ],
+          [
+           "1103",
+           "Force obligatoire",
+           "Haute"
+          ],
+          [
+           "1104",
+           "Bonne foi",
+           "Haute"
+          ],
+          [
+           "1128",
+           "Conditions de validité",
+           "Très haute"
+          ],
+          [
+           "1130",
+           "Vices du consentement",
+           "Très haute"
+          ],
+          [
+           "1131",
+           "Nullité relative",
+           "Haute"
+          ],
+          [
+           "1132",
+           "Erreur",
+           "Haute"
+          ],
+          [
+           "1137",
+           "Dol",
+           "Haute"
+          ],
+          [
+           "1140",
+           "Violence",
+           "Haute"
+          ],
+          [
+           "1143",
+           "Abus de dépendance",
+           "Haute"
+          ],
+          [
+           "1144",
+           "Délai d'action en nullité",
+           "Moyenne"
+          ],
+          [
+           "1193",
+           "Modification du contrat",
+           "Haute"
+          ],
+          [
+           "1195",
+           "Imprévision",
+           "Moyenne"
+          ],
+          [
+           "1217",
+           "Sanctions de l'inexécution",
+           "Très haute"
+          ],
+          [
+           "1219",
+           "Exception d'inexécution",
+           "Haute"
+          ],
+          [
+           "1221",
+           "Exécution forcée",
+           "Haute"
+          ],
+          [
+           "1223",
+           "Réduction du prix",
+           "Moyenne"
+          ],
+          [
+           "1224",
+           "Résolution",
+           "Haute"
+          ],
+          [
+           "1226",
+           "Résolution unilatérale",
+           "Haute"
+          ],
+          [
+           "1227",
+           "Résolution judiciaire",
+           "Haute"
+          ],
+          [
+           "1231-1",
+           "Responsabilité contractuelle",
+           "Très haute"
+          ],
+          [
+           "1231-5",
+           "Clause pénale",
+           "Haute"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "code": "",
+       "titre": "Code civil – Mandat",
+       "blocs": [
+        {
+         "t": "table",
+         "head": [
+          "Article",
+          "Sujet",
+          "Priorité"
+         ],
+         "rows": [
+          [
+           "1984",
+           "Définition du mandat",
+           "Très haute"
+          ],
+          [
+           "1985",
+           "Formation et forme",
+           "Haute"
+          ],
+          [
+           "1986",
+           "Gratuité",
+           "Haute"
+          ],
+          [
+           "1987",
+           "Mandat spécial ou général",
+           "Haute"
+          ],
+          [
+           "1988",
+           "Pouvoirs du mandat général",
+           "Moyenne"
+          ],
+          [
+           "1989",
+           "Limites du mandat",
+           "Très haute"
+          ],
+          [
+           "1991",
+           "Exécution",
+           "Haute"
+          ],
+          [
+           "1992",
+           "Responsabilité",
+           "Haute"
+          ],
+          [
+           "1993",
+           "Reddition des comptes",
+           "Haute"
+          ],
+          [
+           "1994",
+           "Substitution",
+           "Moyenne"
+          ],
+          [
+           "1998",
+           "Obligations du mandant",
+           "Haute"
+          ],
+          [
+           "1999",
+           "Remboursement et rémunération",
+           "Très haute"
+          ],
+          [
+           "2000",
+           "Indemnisation",
+           "Moyenne"
+          ],
+          [
+           "2003",
+           "Fin du mandat",
+           "Très haute"
+          ],
+          [
+           "2004",
+           "Révocation",
+           "Haute"
+          ],
+          [
+           "2007",
+           "Renonciation",
+           "Haute"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "code": "",
+       "titre": "Code du sport – Agent sportif",
+       "blocs": [
+        {
+         "t": "table",
+         "head": [
+          "Article",
+          "Sujet",
+          "Priorité"
+         ],
+         "rows": [
+          [
+           "L. 222-5",
+           "Protection des mineurs",
+           "Très haute"
+          ],
+          [
+           "L. 222-6",
+           "Sanctions relatives aux mineurs",
+           "Très haute"
+          ],
+          [
+           "L. 222-7",
+           "Définition de l'agent sportif",
+           "Très haute"
+          ],
+          [
+           "L. 222-17",
+           "Mandat, représentation et rémunération",
+           "Très haute"
+          ],
+          [
+           "L. 222-18",
+           "Contrôle des contrats",
+           "Haute"
+          ],
+          [
+           "L. 222-19",
+           "Dispositions disciplinaires",
+           "Haute"
+          ],
+          [
+           "L. 222-20",
+           "Sanctions pénales",
+           "Très haute"
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "pdf": "cours/module-02-droit-des-contrats.pdf"
   }
  ],
  "chapitres": [
@@ -91,7 +590,540 @@
     "Convention de collaboration : seulement entre agents titulaires de la carte professionnelle, dans la même discipline (L. 222-17, II).",
     "La rémunération n'est versée qu'après la transmission du contrat de l'agent à la fédération (L. 222-18, 3°)."
    ],
-   "source": "Code du sport, L. 222-5, L. 222-17, L. 222-18, A. 222-2 à A. 222-6 ; Module 02, partie C"
+   "source": "Code du sport, L. 222-5, L. 222-17, L. 222-18, A. 222-2 à A. 222-6 ; Module 02, partie C",
+   "cours": {
+    "module": "Module 02 · Droit des contrats",
+    "minutes": 13,
+    "sections": [
+     {
+      "code": "C.2",
+      "titre": "Formalisme : écrit obligatoire et mentions imposées",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. L'obligation d'un contrat écrit"
+       },
+       {
+        "t": "p",
+        "x": "L'article L. 222-17 impose qu'un agent sportif conclue un contrat écrit avec l'une des parties avant d'exercer son activité de mise en relation. Le contrat doit exister avant l'intervention réglementée. Un accord verbal ne suffit pas."
+       },
+       {
+        "t": "h",
+        "x": "2. Les mentions obligatoires"
+       },
+       {
+        "t": "p",
+        "x": "Le contrat doit préciser cinq éléments essentiels."
+       },
+       {
+        "t": "table",
+        "head": [
+         "Mention",
+         "Contenu"
+        ],
+        "rows": [
+         [
+          "1. Nature des services et exclusivité",
+          "Il faut décrire les prestations confiées à l'agent et préciser si le mandat est exclusif ou non."
+         ],
+         [
+          "2. Durée",
+          "La durée ne peut pas excéder trois ans. Les fédérations délégataires peuvent prévoir une durée maximale inférieure."
+         ],
+         [
+          "3. Rémunération",
+          "La rémunération ne peut dépasser 10 % du montant du contrat ou de l'accord conclu par les parties mises en relation. Les fédérations peuvent prévoir un taux inférieur."
+         ],
+         [
+          "4. Partie rémunératrice",
+          "Le contrat doit indiquer quelle partie rémunère l'agent. Il faut également préciser, le cas échéant, les conséquences fiscales et sociales susceptibles de résulter de ce paiement."
+         ],
+         [
+          "5. Transmission à la fédération",
+          "L'agent doit communiquer le contrat et ses avenants à la fédération délégataire compétente dans le mois suivant leur entrée en vigueur."
+         ]
+        ]
+       },
+       {
+        "t": "h",
+        "x": "3. La durée maximale"
+       },
+       {
+        "t": "p",
+        "x": "La durée légale maximale est de trois ans."
+       },
+       {
+        "t": "cas",
+        "cas": "Un mandat est signé le 1er décembre 2026 pour une durée de quatre ans.",
+        "analyse": "Il est contraire à la limite légale. Un mandat de deux ans respecte la limite légale générale, sous réserve d'un règlement fédéral plus restrictif."
+       },
+       {
+        "t": "h",
+        "x": "4. La transmission du contrat"
+       },
+       {
+        "t": "p",
+        "x": "La transmission du mandat n'est pas une simple formalité administrative facultative. Elle constitue une obligation légale. Le délai est d'un mois à compter de l'entrée en vigueur du contrat ou de son avenant."
+       },
+       {
+        "t": "h",
+        "x": "5. La sanction du non-respect"
+       },
+       {
+        "t": "p",
+        "x": "L'article L. 222-17 prévoit que toute convention contraire à ses dispositions ou non communiquée à la fédération délégataire compétente est réputée nulle et non écrite. Il faut donc être particulièrement attentif à la conformité du document."
+       }
+      ],
+      "ref": "Article L. 222-17 du Code du sport"
+     },
+     {
+      "code": "C.3",
+      "titre": "Plafond de rémunération : 10 %",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Le principe"
+       },
+       {
+        "t": "p",
+        "x": "La rémunération de l'agent sportif ne peut pas dépasser 10 % du montant du contrat ou de l'accord conclu par les parties qu'il a mises en relation. Ce plafond constitue une limite légale maximale, et non un taux automatiquement applicable. Une fédération délégataire peut prévoir un taux inférieur."
+       },
+       {
+        "t": "h",
+        "x": "2. Calcul de la commission"
+       },
+       {
+        "t": "p",
+        "x": "La formule pédagogique de base est : commission maximale = assiette applicable × 10 %."
+       },
+       {
+        "t": "table",
+        "head": [
+         "Exemple",
+         "Montant du contrat",
+         "Plafond",
+         "Commission maximale"
+        ],
+        "rows": [
+         [
+          "Exemple 1 : plafond légal",
+          "500 000 €",
+          "10 %",
+          "50 000 €"
+         ],
+         [
+          "Exemple 2 : règlement fédéral à 5 %",
+          "500 000 €",
+          "5 %",
+          "25 000 €"
+         ]
+        ]
+       },
+       {
+        "t": "h",
+        "x": "3. Plusieurs agents interviennent"
+       },
+       {
+        "t": "p",
+        "x": "L'article L. 222-17 prévoit que lorsque plusieurs agents interviennent pour les parties à un même contrat, le montant total de leurs rémunérations ne peut dépasser 10 % du montant de ce contrat."
+       },
+       {
+        "t": "cas",
+        "cas": "Deux agents interviennent sur le même contrat de 500 000 € : l'agent A perçoit 30 000 €, l'agent B 20 000 €, soit 50 000 € au total.",
+        "analyse": "Le plafond global de 10 % est atteint. Il ne s'agit pas de 10 % par agent."
+       },
+       {
+        "t": "h",
+        "x": "4. La convention tripartite"
+       },
+       {
+        "t": "p",
+        "x": "La rémunération due par le joueur ou l'entraîneur peut être payée, en tout ou partie, par son cocontractant. Cela nécessite une convention tripartite conclue par toutes les parties concernées. Elle doit préciser les conséquences fiscales et sociales susceptibles de résulter de cette prise en charge. L'agent doit également délivrer une quittance au cocontractant qui effectue le paiement."
+       },
+       {
+        "t": "h",
+        "x": "5. Les erreurs à éviter"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Appliquer systématiquement 10 % sans vérifier le règlement fédéral.",
+         "Calculer 10 % pour chaque agent alors qu'un plafond global s'applique.",
+         "Confondre la commission de l'agent et le salaire du joueur.",
+         "Oublier la convention tripartite.",
+         "Oublier les conséquences fiscales et sociales."
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "Le plafond de 10 % est une limite légale maximale. Le taux réellement applicable dépend également des dispositions fédérales."
+       }
+      ],
+      "ref": "Article L. 222-17 du Code du sport"
+     },
+     {
+      "code": "C.4",
+      "titre": "Un seul mandat par opération",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Le principe de représentation d'une seule partie"
+       },
+       {
+        "t": "p",
+        "x": "L'agent sportif ne peut agir, en droit comme en fait, que pour le compte d'une seule des parties aux contrats concernés. Cette règle vise à éviter les conflits d'intérêts. Un agent qui représente un joueur ne peut pas simultanément représenter le club adverse dans la même opération."
+       },
+       {
+        "t": "h",
+        "x": "2. L'interdiction de la double représentation"
+       },
+       {
+        "t": "cas",
+        "cas": "Un joueur souhaite rejoindre le club A. L'agent représente le joueur dans la négociation du contrat de travail. Le club A propose à cet agent une commission pour représenter également ses intérêts dans la même opération.",
+        "analyse": "L'agent ne peut pas accepter cette double représentation en violation de l'article L. 222-17."
+       },
+       {
+        "t": "h",
+        "x": "3. La coopération entre plusieurs agents"
+       },
+       {
+        "t": "p",
+        "x": "La loi encadre également les coopérations entre agents. Plusieurs agents qui travaillent ensemble, notamment au sein d'une même société, ne peuvent agir pour le compte de plusieurs parties dans le cadre d'un ensemble de contrats aboutissant directement ou indirectement à la mutation d'un sportif ou d'un entraîneur d'un club vers un autre. L'objectif est d'éviter qu'une coopération entre agents permette de contourner l'interdiction de double représentation."
+       },
+       {
+        "t": "h",
+        "x": "4. La convention de collaboration"
+       },
+       {
+        "t": "p",
+        "x": "Lorsque plusieurs agents collaborent pour une même opération, la convention de collaboration ne peut être conclue qu'entre agents sportifs titulaires, dans la même discipline, de la carte professionnelle prévue par l'article L. 222-7."
+       },
+       {
+        "t": "h",
+        "x": "5. Le piège à l'examen"
+       },
+       {
+        "t": "p",
+        "x": "Il faut distinguer :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Plusieurs agents qui interviennent pour une même partie.",
+         "Un agent qui représente plusieurs parties.",
+         "Plusieurs agents qui coopèrent dans une opération globale de mutation."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Ces situations ne sont pas juridiquement identiques."
+       }
+      ],
+      "ref": "Article L. 222-17, I, du Code du sport"
+     },
+     {
+      "code": "C.5",
+      "titre": "Sanctions civiles et pénales",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Les sanctions civiles"
+       },
+       {
+        "t": "p",
+        "x": "L'article L. 222-17 prévoit que les conventions contraires à ses dispositions ou non transmises à la fédération sont réputées nulles et non écrites. Cela peut affecter :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Le mandat.",
+         "Une convention de rémunération.",
+         "Un avenant.",
+         "Une convention qui contrevient aux règles de représentation."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "La qualification et les conséquences doivent être appréciées au regard du texte et de la situation concernée."
+       },
+       {
+        "t": "h",
+        "x": "2. Les sanctions pénales"
+       },
+       {
+        "t": "p",
+        "x": "L'article L. 222-20 du Code du sport prévoit des sanctions pénales pour certaines violations du régime des agents sportifs. Il faut notamment distinguer :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "L'exercice sans carte professionnelle.",
+         "Les manquements aux obligations relatives aux mineurs.",
+         "Les violations des règles relatives à la rémunération.",
+         "Les infractions concernant les incompatibilités et les conditions d'exercice."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Les sanctions ne sont pas nécessairement identiques selon l'infraction."
+       },
+       {
+        "t": "h",
+        "x": "3. Responsabilité de l'agent"
+       },
+       {
+        "t": "p",
+        "x": "L'agent peut également engager :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Sa responsabilité contractuelle.",
+         "Sa responsabilité civile délictuelle envers les tiers dans les conditions applicables.",
+         "Sa responsabilité disciplinaire.",
+         "Sa responsabilité pénale."
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "Une même situation peut entraîner plusieurs types de conséquences juridiques."
+       }
+      ]
+     },
+     {
+      "code": "C.6",
+      "titre": "Cas spécifique des mineurs",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Une protection renforcée"
+       },
+       {
+        "t": "p",
+        "x": "Le législateur prévoit un régime particulier pour protéger les mineurs dans le domaine sportif. Deux situations doivent être distinguées :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "La rémunération du mineur pour l'exercice d'une activité sportive.",
+         "La rémunération d'un agent ou intermédiaire intervenant dans une opération concernant un mineur."
+        ]
+       },
+       {
+        "t": "h",
+        "x": "2. Les rémunérations des jeunes sportifs"
+       },
+       {
+        "t": "p",
+        "x": "L'article L. 222-5 renvoie à l'article L. 7124-9 du Code du travail pour les rémunérations perçues au titre de l'activité sportive par les enfants de seize ans et moins soumis à l'obligation scolaire. Il s'agit notamment d'un mécanisme de protection des revenus des jeunes sportifs. Il faut distinguer cette question de la rémunération de l'agent."
+       },
+       {
+        "t": "h",
+        "x": "3. L'interdiction de rémunérer l'intermédiaire"
+       },
+       {
+        "t": "p",
+        "x": "L'article L. 222-5 prévoit une interdiction de contrepartie, de rémunération, d'indemnité ou d'avantage au bénéfice d'une personne physique ou morale mettant en relation les parties intéressées à certains contrats concernant un mineur. Cette interdiction concerne notamment :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Les contrats relatifs à la mutation d'un mineur d'un club vers un autre.",
+         "Les contrats relatifs à l'exercice d'une activité sportive par un mineur.",
+         "Les contrats dont la cause est l'exercice d'une activité sportive par un mineur."
+        ]
+       },
+       {
+        "t": "h",
+        "x": "4. La règle continue après la majorité"
+       },
+       {
+        "t": "p",
+        "x": "C'est un point particulièrement important. L'interdiction s'applique quelle que soit la durée du contrat et celle de ses avenants, y compris si le mineur atteint la majorité pendant l'exécution du contrat."
+       },
+       {
+        "t": "cas",
+        "cas": "Un joueur signe à 17 ans un contrat entrant dans le champ de l'interdiction. Il devient majeur à 18 ans alors que le contrat continue de produire ses effets.",
+        "analyse": "Le fait qu'il soit devenu majeur ne permet pas de rémunérer rétroactivement l'intermédiaire au titre de cette opération."
+       },
+       {
+        "t": "h",
+        "x": "5. Les conventions écrites"
+       },
+       {
+        "t": "p",
+        "x": "Les conventions écrites par lesquelles l'agent intervient dans les situations concernées doivent mentionner expressément l'interdiction de rémunération. Elles doivent être transmises à la fédération délégataire compétente."
+       },
+       {
+        "t": "h",
+        "x": "6. Les sanctions (article L. 222-6)"
+       },
+       {
+        "t": "p",
+        "x": "Dans sa version en vigueur depuis le 5 août 2026 :"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Infraction",
+         "Sanction prévue"
+        ],
+        "rows": [
+         [
+          "Violation des règles de rémunération du premier alinéa de L. 222-5",
+          "Amende de 7 500 €"
+         ],
+         [
+          "Récidive",
+          "6 mois d'emprisonnement et 15 000 € d'amende"
+         ],
+         [
+          "Violation de l'interdiction du deuxième alinéa de L. 222-5",
+          "2 ans d'emprisonnement et 30 000 € d'amende"
+         ],
+         [
+          "Amende dans ce dernier cas",
+          "Peut être portée jusqu'au double des sommes indûment perçues"
+         ]
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Il faut donc éviter de présenter toutes les violations concernant les mineurs comme relevant d'une sanction unique."
+       },
+       {
+        "t": "h",
+        "x": "7. Cas pratique"
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent intervient dans la négociation du premier contrat professionnel d'un joueur de 17 ans. Il demande une commission de 20 000 €.",
+        "analyse": "Identifier la nature du contrat. Vérifier s'il entre dans le champ de l'article L. 222-5. Examiner la date de conclusion et la situation du mineur. Vérifier si une rémunération de l'intermédiaire est interdite. Identifier les sanctions applicables. Il ne faut pas appliquer automatiquement le plafond de 10 % : l'interdiction spécifique relative aux mineurs peut s'appliquer avant même de calculer une commission."
+       }
+      ],
+      "ref": "Articles L. 222-5 et L. 222-6 du Code du sport"
+     },
+     {
+      "code": "C.7",
+      "titre": "Cas pratique : transfert international",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Situation"
+       },
+       {
+        "t": "p",
+        "x": "Un joueur professionnel évoluant dans un club français souhaite rejoindre un club espagnol. Il est représenté par un agent titulaire de la carte professionnelle française. Le club espagnol souhaite également faire intervenir un agent local. Plusieurs questions juridiques se posent."
+       },
+       {
+        "t": "h",
+        "x": "2. Identifier les contrats"
+       },
+       {
+        "t": "p",
+        "x": "L'opération peut impliquer :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Un mandat entre le joueur et son agent.",
+         "Un accord entre les clubs concernant la mutation.",
+         "Un contrat de travail entre le joueur et son nouveau club.",
+         "Une convention de collaboration entre agents, si les conditions sont réunies."
+        ]
+       },
+       {
+        "t": "h",
+        "x": "3. Vérifier la représentation"
+       },
+       {
+        "t": "p",
+        "x": "Il faut identifier qui représente chaque partie. Un agent ne peut pas représenter simultanément plusieurs parties dans les conditions interdites par l'article L. 222-17. La coopération entre agents doit respecter les règles françaises applicables."
+       },
+       {
+        "t": "h",
+        "x": "4. Vérifier la rémunération"
+       },
+       {
+        "t": "p",
+        "x": "Il faut déterminer :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "L'assiette de calcul.",
+         "Le taux applicable.",
+         "La partie qui rémunère l'agent.",
+         "Le respect du plafond global.",
+         "Les conséquences fiscales et sociales."
+        ]
+       },
+       {
+        "t": "h",
+        "x": "5. Vérifier les règles internationales"
+       },
+       {
+        "t": "p",
+        "x": "Il faut également examiner les règlements FIFA relatifs aux agents et aux transferts internationaux. Il faut notamment vérifier :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Le statut des agents intervenant dans l'opération.",
+         "Les obligations d'enregistrement.",
+         "Les formalités relatives au transfert.",
+         "Les règles concernant les mineurs, si le joueur est concerné.",
+         "Les éventuelles règles applicables au pays d'accueil."
+        ]
+       },
+       {
+        "t": "h",
+        "x": "6. Méthode de résolution"
+       },
+       {
+        "t": "p",
+        "x": "La réponse ne doit jamais se limiter à dire qu'un transfert international relève de la FIFA. Il faut examiner successivement :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Le droit français applicable à l'activité d'agent en France.",
+         "Le droit et les règles de la fédération concernée.",
+         "Les règles internationales FIFA.",
+         "Les obligations contractuelles et fiscales."
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "Un transfert international ne fait pas disparaître les obligations françaises qui encadrent l'activité exercée sur le territoire français."
+       }
+      ]
+     },
+     {
+      "code": "",
+      "titre": "Synthèse de la partie C",
+      "blocs": [
+       {
+        "t": "p",
+        "x": "Les points à mémoriser :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Contrat écrit obligatoire.",
+         "Une seule partie représentée par agent.",
+         "Durée maximale légale de trois ans.",
+         "Rémunération maximale de 10 %, sous réserve d'un plafond fédéral inférieur.",
+         "Communication du contrat à la fédération dans le mois suivant son entrée en vigueur.",
+         "Interdiction spécifique de rémunération concernant les contrats visés à l'article L. 222-5.",
+         "Sanctions civiles et pénales.",
+         "Distinction entre droit français et règles FIFA."
+        ]
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "agents-sanctions",
@@ -176,7 +1208,518 @@
     "Trois conditions de validité : consentement, capacité, contenu licite et certain (art. 1128). Toute personne physique peut contracter, sauf incapacité prévue par la loi (art. 1145).",
     "Dans un transfert, ne pas confondre le mandat joueur–agent, le contrat de travail joueur–club, la convention tripartite et l'accord entre clubs : ce sont des contrats distincts."
    ],
-   "source": "Code civil, art. 1101 à 1104, 1128, 1145, 1193 à 1195 ; Module 02, partie A"
+   "source": "Code civil, art. 1101 à 1104, 1128, 1145, 1193 à 1195 ; Module 02, partie A",
+   "cours": {
+    "module": "Module 02 · Droit des contrats",
+    "minutes": 11,
+    "sections": [
+     {
+      "code": "A.1",
+      "titre": "Définition du contrat",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Définition juridique"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1101 du Code civil définit le contrat comme un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations. Cette définition repose sur trois éléments :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Une rencontre des volontés.",
+         "Au moins deux parties.",
+         "La création, la modification, la transmission ou l'extinction d'obligations."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Un contrat n'est donc pas nécessairement un document signé. C'est avant tout un accord de volontés, même si la loi peut imposer un écrit pour certains contrats."
+       },
+       {
+        "t": "h",
+        "x": "2. Les quatre fonctions du contrat"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Fonction",
+         "Exemple"
+        ],
+        "rows": [
+         [
+          "Créer des obligations",
+          "Un joueur signe un contrat de travail avec un club. Le club doit verser une rémunération et le joueur doit fournir sa prestation sportive dans les conditions convenues."
+         ],
+         [
+          "Modifier des obligations",
+          "Un joueur et son club signent un avenant pour modifier la durée ou certaines conditions de son contrat."
+         ],
+         [
+          "Transmettre des obligations",
+          "Un contrat peut être cédé à un tiers dans les conditions prévues par les articles 1216 et suivants du Code civil."
+         ],
+         [
+          "Éteindre des obligations",
+          "Les parties peuvent conclure un accord mettant fin à certaines obligations contractuelles."
+         ]
+        ]
+       },
+       {
+        "t": "h",
+        "x": "3. Les différentes classifications des contrats"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Catégorie",
+         "Ce que cela signifie",
+         "Exemple"
+        ],
+        "rows": [
+         [
+          "Synallagmatique",
+          "Obligations réciproques",
+          "Contrat de travail"
+         ],
+         [
+          "Unilatéral",
+          "Obligation principale à la charge d'une partie",
+          "Donation"
+         ],
+         [
+          "À titre onéreux",
+          "Avantage contre contrepartie",
+          "Mandat rémunéré"
+         ],
+         [
+          "À titre gratuit",
+          "Absence de contrepartie",
+          "Mandat gratuit"
+         ],
+         [
+          "Commutatif",
+          "Prestations considérées comme équivalentes",
+          "Contrat de prestation"
+         ],
+         [
+          "Aléatoire",
+          "Prestations dépendant d'un événement incertain",
+          "Contrat d'assurance"
+         ],
+         [
+          "Consensuel",
+          "Formé par le seul échange des consentements",
+          "Vente ordinaire"
+         ],
+         [
+          "Solennel",
+          "Forme imposée pour sa validité",
+          "Certains actes notariés"
+         ],
+         [
+          "À exécution instantanée",
+          "Exécution en une seule fois",
+          "Achat comptant"
+         ],
+         [
+          "À exécution successive",
+          "Exécution dans la durée",
+          "Contrat de travail"
+         ]
+        ]
+       },
+       {
+        "t": "h",
+        "x": "4. Application au métier d'agent sportif"
+       },
+       {
+        "t": "p",
+        "x": "L'activité d'agent sportif implique généralement plusieurs contrats distincts :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Le mandat entre le joueur et l'agent.",
+         "Le contrat de travail entre le joueur et le club.",
+         "L'éventuelle convention tripartite relative au paiement de la rémunération de l'agent.",
+         "Les accords de mutation entre clubs, selon les situations."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Il faut absolument éviter de confondre ces différents actes."
+       },
+       {
+        "t": "cas",
+        "cas": "Un joueur signe un mandat avec un agent pour une durée de deux ans. Six mois plus tard, il signe un contrat de travail avec un nouveau club.",
+        "analyse": "Il existe deux relations contractuelles différentes : joueur / agent et joueur / club. La conclusion du contrat de travail ne signifie pas automatiquement que le mandat prend fin."
+       },
+       {
+        "t": "h",
+        "x": "5. Ce qu'il faut retenir"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Un contrat est un accord de volontés.",
+         "Il peut créer, modifier, transmettre ou éteindre des obligations.",
+         "Il existe plusieurs catégories de contrats.",
+         "Un même projet sportif peut nécessiter plusieurs contrats juridiquement distincts.",
+         "Le mandat de l'agent sportif ne doit pas être confondu avec le contrat de travail du joueur."
+        ]
+       }
+      ],
+      "ref": "Article 1101 du Code civil"
+     },
+     {
+      "code": "A.2",
+      "titre": "La liberté contractuelle",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Le principe"
+       },
+       {
+        "t": "p",
+        "x": "La liberté contractuelle signifie que chacun est libre :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "De contracter ou de ne pas contracter.",
+         "De choisir son cocontractant.",
+         "De déterminer le contenu du contrat.",
+         "De déterminer sa forme, dans les limites fixées par la loi."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Cette liberté constitue un principe fondamental du droit français des contrats."
+       },
+       {
+        "t": "h",
+        "x": "2. La liberté de contracter"
+       },
+       {
+        "t": "p",
+        "x": "Un joueur n'est pas obligé de signer un mandat avec un agent. Il peut :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Choisir un agent.",
+         "Refuser une proposition de mandat.",
+         "Décider de ne pas être représenté.",
+         "Comparer plusieurs propositions avant de s'engager."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "L'agent est également libre de refuser une mission, sous réserve de ses obligations éventuelles."
+       },
+       {
+        "t": "h",
+        "x": "3. La liberté de choisir son cocontractant"
+       },
+       {
+        "t": "p",
+        "x": "Un joueur peut choisir l'agent avec lequel il souhaite travailler. Toutefois, ce choix doit respecter les règles légales applicables. Un agent qui ne détient pas la carte professionnelle requise ne peut pas exercer librement l'activité réglementée au seul motif que le joueur souhaite travailler avec lui."
+       },
+       {
+        "t": "h",
+        "x": "4. La liberté de déterminer le contenu"
+       },
+       {
+        "t": "p",
+        "x": "Les parties peuvent notamment négocier :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "La nature des prestations.",
+         "Le caractère exclusif ou non du mandat.",
+         "La durée, dans la limite légale.",
+         "Les conditions de rémunération.",
+         "Les modalités de communication.",
+         "Les modalités de résiliation autorisées."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Mais elles ne peuvent pas librement écarter les dispositions impératives du Code du sport."
+       },
+       {
+        "t": "h",
+        "x": "5. Les limites de la liberté contractuelle"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1102 précise que la liberté contractuelle ne permet pas de déroger aux règles qui intéressent l'ordre public."
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent et un joueur conviennent d'une commission de 15 % du montant du contrat alors que le plafond légal applicable est de 10 %.",
+        "analyse": "Le fait que les deux parties aient accepté cette commission ne la rend pas légale. La liberté contractuelle ne peut pas autoriser une convention contraire à une disposition impérative."
+       },
+       {
+        "t": "h",
+        "x": "6. Application au football"
+       },
+       {
+        "t": "p",
+        "x": "Un joueur peut librement choisir son agent, mais il ne peut pas décider avec lui :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "De supprimer l'obligation de mandat écrit.",
+         "De dépasser le plafond légal de rémunération.",
+         "D'écarter les interdictions relatives aux mineurs.",
+         "De permettre à un agent de représenter simultanément les deux parties en violation de la loi."
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "La liberté contractuelle existe, mais elle s'exerce à l'intérieur du cadre légal."
+       }
+      ],
+      "ref": "Article 1102 du Code civil"
+     },
+     {
+      "code": "A.3",
+      "titre": "Force obligatoire et bonne foi",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. La force obligatoire du contrat"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1103 prévoit que les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits. Cela signifie que les parties doivent respecter leurs engagements. Un contrat valablement conclu ne peut pas être ignoré unilatéralement."
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent et un joueur signent un mandat prévoyant une rémunération déterminée pour une mission précise.",
+        "analyse": "Si l'agent réalise correctement cette mission et que les conditions contractuelles sont réunies, le joueur ne peut pas simplement décider de ne pas payer la rémunération prévue."
+       },
+       {
+        "t": "h",
+        "x": "2. Le principe de bonne foi"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1104 impose que les contrats soient négociés, formés et exécutés de bonne foi. La bonne foi concerne donc trois moments."
+       },
+       {
+        "t": "table",
+        "head": [
+         "Moment",
+         "Ce que la bonne foi impose"
+        ],
+        "rows": [
+         [
+          "Pendant la négociation",
+          "Ne pas mentir sur les informations essentielles. Ne pas dissimuler volontairement un élément déterminant. Ne pas entretenir une négociation dans une intention frauduleuse."
+         ],
+         [
+          "Pendant la formation",
+          "Donner des informations loyales. Ne pas utiliser de manœuvres trompeuses. Ne pas profiter abusivement d'une situation de faiblesse."
+         ],
+         [
+          "Pendant l'exécution",
+          "Respecter les engagements. Communiquer les informations nécessaires. Ne pas détourner les intérêts du mandant. Ne pas agir de manière déloyale."
+         ]
+        ]
+       },
+       {
+        "t": "h",
+        "x": "3. Application au métier d'agent sportif"
+       },
+       {
+        "t": "p",
+        "x": "Un agent apprend qu'un club a formulé une proposition intéressante à son joueur. Il ne doit pas volontairement cacher cette proposition pour favoriser une autre opération dont il tirerait un avantage personnel. Une telle situation pourrait engager sa responsabilité selon les circonstances."
+       },
+       {
+        "t": "h",
+        "x": "4. La force obligatoire et ses limites"
+       },
+       {
+        "t": "p",
+        "x": "Principe (article 1193) : un contrat ne peut être modifié ou révoqué que dans deux situations :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Par consentement mutuel des parties.",
+         "Pour les causes autorisées par la loi."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Portée (article 1194) : le contrat oblige aussi les parties à toutes les suites que lui donnent l'équité, l'usage ou la loi."
+       },
+       {
+        "t": "memo",
+        "x": "La force obligatoire n'interdit pas toute évolution du contrat : elle encadre les conditions de sa modification ou de sa révocation."
+       },
+       {
+        "t": "h",
+        "x": "5. L'imprévision : article 1195"
+       },
+       {
+        "t": "p",
+        "x": "Un changement de circonstances imprévisible au moment de la conclusion du contrat peut rendre son exécution excessivement onéreuse pour une partie qui n'avait pas accepté d'en supporter le risque. Cette partie peut alors demander une renégociation. Elle doit toutefois continuer à exécuter ses obligations pendant cette renégociation. En cas d'échec, les parties peuvent convenir de la résolution du contrat ou, dans les conditions prévues par le texte, demander au juge de le réviser ou d'y mettre fin."
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent conclut un contrat de prestation dont le coût devient exceptionnellement élevé à la suite d'un événement imprévisible.",
+        "analyse": "Il ne peut pas automatiquement suspendre ses obligations. Il doit examiner les conditions d'application de l'article 1195."
+       },
+       {
+        "t": "h",
+        "x": "6. Ce qu'il faut retenir"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Article",
+         "Réflexe"
+        ],
+        "rows": [
+         [
+          "1103",
+          "Force obligatoire"
+         ],
+         [
+          "1104",
+          "Bonne foi obligatoire"
+         ],
+         [
+          "1193",
+          "Modification ou révocation"
+         ],
+         [
+          "1194",
+          "Suites légales, équitables et usuelles"
+         ],
+         [
+          "1195",
+          "Imprévision"
+         ]
+        ]
+       }
+      ],
+      "ref": "Articles 1103 et 1104 du Code civil"
+     },
+     {
+      "code": "A.4",
+      "titre": "Les conditions de validité du contrat",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Les trois conditions fondamentales"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1128 pose trois conditions cumulatives :"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Condition",
+         "La question à se poser"
+        ],
+        "rows": [
+         [
+          "Consentement",
+          "Les parties veulent-elles réellement s'engager ?"
+         ],
+         [
+          "Capacité",
+          "Ont-elles juridiquement le pouvoir de contracter ?"
+         ],
+         [
+          "Contenu",
+          "L'opération est-elle licite et suffisamment déterminée ?"
+         ]
+        ]
+       },
+       {
+        "t": "memo",
+        "x": "La validité du contrat exige la réunion des trois conditions. L'absence de l'une d'elles peut entraîner la nullité, selon le régime applicable."
+       },
+       {
+        "t": "h",
+        "x": "A.4.1 — Le consentement"
+       },
+       {
+        "t": "p",
+        "x": "Le consentement correspond à la volonté de s'engager juridiquement. Il doit être libre, éclairé et non vicié. Une personne qui signe sous la contrainte ou à la suite d'une tromperie déterminante peut, dans les conditions légales, demander l'annulation du contrat."
+       },
+       {
+        "t": "h",
+        "x": "A.4.2 — La capacité de contracter"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1145 pose le principe selon lequel toute personne physique peut contracter, sauf incapacité prévue par la loi. Pour les personnes morales, leur capacité est limitée par les règles applicables à leur forme et à leur objet. Dans le football, il faut être particulièrement vigilant concernant les joueurs mineurs. Un mineur non émancipé ne dispose pas de la même capacité juridique qu'un majeur. Les règles de représentation légale et les dispositions particulières du Code du sport doivent être examinées."
+       },
+       {
+        "t": "h",
+        "x": "A.4.3 — Un contenu licite"
+       },
+       {
+        "t": "p",
+        "x": "Le contrat ne doit pas avoir un objet ou un but contraire à la loi ou à l'ordre public."
+       },
+       {
+        "t": "cas",
+        "cas": "Un contrat prévoit le versement d'une commission interdite par l'article L. 222-5 du Code du sport.",
+        "analyse": "Il ne peut pas être rendu licite par le simple accord des parties."
+       },
+       {
+        "t": "h",
+        "x": "A.4.4 — Un contenu certain"
+       },
+       {
+        "t": "p",
+        "x": "Le contenu doit être suffisamment déterminé ou déterminable. Les parties doivent pouvoir identifier les obligations qu'elles acceptent."
+       },
+       {
+        "t": "cas",
+        "cas": "Un mandat prévoit simplement que l'agent « accompagnera le joueur dans tous ses projets », sans préciser réellement les prestations.",
+        "analyse": "Il peut soulever des difficultés d'interprétation. Il faut donc décrire précisément les services attendus."
+       },
+       {
+        "t": "h",
+        "x": "A.4.5 — Les sanctions d'un défaut de validité"
+       },
+       {
+        "t": "p",
+        "x": "Les articles 1178 et suivants du Code civil encadrent la nullité. Un contrat qui ne satisfait pas aux conditions de validité peut être annulé. Il faut distinguer :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Nullité absolue : protection de l'intérêt général.",
+         "Nullité relative : protection d'un intérêt privé déterminé."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "La nullité peut entraîner des restitutions, selon les règles des articles 1352 et suivants."
+       },
+       {
+        "t": "vigilance",
+        "x": "Un contrat signé n'est pas nécessairement un contrat valable."
+       }
+      ],
+      "ref": "Article 1128 du Code civil"
+     }
+    ]
+   }
   },
   {
    "id": "contrats-consentement",
@@ -191,7 +1734,143 @@
     "Violence : contrainte qui fait craindre un mal considérable (art. 1140), y compris l'abus d'un état de dépendance qui procure un avantage manifestement excessif (art. 1143).",
     "Délai d'action : cinq ans (art. 2224), à compter de la découverte pour l'erreur et le dol, de la fin de la violence pour la violence (art. 1144)."
    ],
-   "source": "Code civil, art. 1130 à 1144 et 2224 ; Module 02, partie A"
+   "source": "Code civil, art. 1130 à 1144 et 2224 ; Module 02, partie A",
+   "cours": {
+    "module": "Module 02 · Droit des contrats",
+    "minutes": 5,
+    "sections": [
+     {
+      "code": "A.5",
+      "titre": "Les vices du consentement",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Le principe"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1130 prévoit trois vices du consentement :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "L'erreur.",
+         "Le dol.",
+         "La violence."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Ils peuvent entraîner la nullité du contrat lorsqu'ils ont déterminé le consentement de la partie concernée. L'appréciation dépend notamment de la personne et des circonstances dans lesquelles elle a contracté."
+       },
+       {
+        "t": "h",
+        "x": "2. L'erreur"
+       },
+       {
+        "t": "p",
+        "x": "L'erreur consiste à se tromper sur un élément essentiel du contrat. L'article 1132 prévoit que l'erreur de droit ou de fait peut entraîner la nullité lorsqu'elle porte sur les qualités essentielles de la prestation ou du cocontractant, sous réserve notamment du caractère excusable de l'erreur."
+       },
+       {
+        "t": "cas",
+        "cas": "Un joueur signe un mandat en croyant que l'agent dispose d'une autorisation professionnelle déterminée, alors que cette qualité était essentielle à son engagement.",
+        "analyse": "Il faut analyser les circonstances, la réalité de l'erreur et son caractère déterminant. Toutes les erreurs ne permettent pas d'obtenir la nullité. L'article 1136 précise notamment que l'erreur sur la valeur n'est pas une cause de nullité lorsqu'elle ne porte pas sur les qualités essentielles de la prestation."
+       },
+       {
+        "t": "h",
+        "x": "3. Le dol"
+       },
+       {
+        "t": "p",
+        "x": "Le dol correspond à une tromperie intentionnelle destinée à obtenir le consentement d'une autre personne. L'article 1137 vise notamment :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Les manœuvres.",
+         "Les mensonges.",
+         "La dissimulation intentionnelle d'une information dont on sait le caractère déterminant pour l'autre partie."
+        ]
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent présente volontairement de faux documents pour convaincre un joueur de signer un mandat.",
+        "analyse": "Le joueur peut invoquer le dol si les conditions légales sont réunies."
+       },
+       {
+        "t": "vigilance",
+        "x": "Le simple fait de ne pas révéler son estimation de la valeur d'une prestation ne constitue pas automatiquement un dol."
+       },
+       {
+        "t": "h",
+        "x": "4. La violence"
+       },
+       {
+        "t": "p",
+        "x": "La violence consiste à obtenir le consentement par une contrainte qui inspire la crainte d'un mal considérable. Elle peut être physique, morale, ou économique dans certaines circonstances. L'article 1143 prévoit notamment la violence résultant de l'abus d'un état de dépendance lorsqu'une partie obtient un engagement que l'autre n'aurait pas souscrit et en tire un avantage manifestement excessif."
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent menace un joueur de divulguer des informations personnelles s'il refuse de signer un mandat.",
+        "analyse": "Il peut s'agir d'une situation de violence morale."
+       },
+       {
+        "t": "h",
+        "x": "5. Les conséquences juridiques"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1131 prévoit que les vices du consentement constituent une cause de nullité relative. Cela signifie que la nullité protège en principe la partie dont le consentement a été vicié. L'article 1144 précise le point de départ du délai de l'action en nullité :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "En cas d'erreur ou de dol, à compter de leur découverte.",
+         "En cas de violence, à compter du jour où elle a cessé."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Le délai de prescription de droit commun est en principe de cinq ans, sous réserve des règles applicables."
+       },
+       {
+        "t": "h",
+        "x": "6. Tableau comparatif"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Vice",
+         "Définition",
+         "Exemple"
+        ],
+        "rows": [
+         [
+          "Erreur",
+          "Fausse représentation de la réalité",
+          "Se tromper sur une qualité essentielle"
+         ],
+         [
+          "Dol",
+          "Tromperie intentionnelle",
+          "Faux documents"
+         ],
+         [
+          "Violence",
+          "Contrainte déterminante",
+          "Menaces pour obtenir une signature"
+         ]
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "Piège classique : une mauvaise affaire commerciale n'est pas automatiquement une erreur juridique permettant l'annulation."
+       }
+      ],
+      "ref": "Articles 1130 à 1144 du Code civil"
+     }
+    ]
+   }
   },
   {
    "id": "contrats-inexecution",
@@ -207,7 +1886,345 @@
     "Clause pénale : le juge peut, même d'office, la modérer ou l'augmenter si elle est manifestement excessive ou dérisoire (art. 1231-5).",
     "Fin du contrat : engagements perpétuels interdits (art. 1210) ; durée indéterminée : résiliation avec préavis (art. 1211) ; durée déterminée : exécution jusqu'au terme (art. 1212) ; tacite reconduction : nouveau contrat à durée indéterminée (art. 1214 et 1215) ; caducité si un élément essentiel disparaît (art. 1186)."
    ],
-   "source": "Code civil, art. 1186, 1210 à 1231-5 ; Module 02, partie A"
+   "source": "Code civil, art. 1186, 1210 à 1231-5 ; Module 02, partie A",
+   "cours": {
+    "module": "Module 02 · Droit des contrats",
+    "minutes": 8,
+    "sections": [
+     {
+      "code": "A.6",
+      "titre": "L'inexécution du contrat et ses sanctions",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Définition de l'inexécution"
+       },
+       {
+        "t": "p",
+        "x": "L'inexécution intervient lorsqu'une partie ne respecte pas une obligation contractuelle. Elle peut être :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Totale.",
+         "Partielle.",
+         "Tardive.",
+         "Défectueuse."
+        ]
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent s'engage à réaliser une prestation de représentation et ne réalise aucune des démarches prévues.",
+        "analyse": "Il peut s'agir d'une inexécution contractuelle."
+       },
+       {
+        "t": "h",
+        "x": "2. Les sanctions prévues par l'article 1217"
+       },
+       {
+        "t": "p",
+        "x": "Lorsqu'une partie n'exécute pas ses obligations ou les exécute imparfaitement, l'autre partie peut notamment :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Refuser d'exécuter ou suspendre sa propre obligation.",
+         "Poursuivre l'exécution forcée en nature.",
+         "Obtenir une réduction du prix.",
+         "Provoquer la résolution du contrat.",
+         "Demander réparation des conséquences de l'inexécution."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Ces sanctions peuvent, selon les conditions légales, être cumulées lorsqu'elles sont compatibles."
+       },
+       {
+        "t": "h",
+        "x": "3. L'exception d'inexécution"
+       },
+       {
+        "t": "p",
+        "x": "Article 1219 : une partie peut refuser d'exécuter son obligation, même si celle-ci est exigible, lorsque l'autre n'exécute pas la sienne et que cette inexécution est suffisamment grave."
+       },
+       {
+        "t": "cas",
+        "cas": "Un prestataire ne réalise pas une prestation essentielle prévue dans un contrat synallagmatique.",
+        "analyse": "Son cocontractant peut, sous les conditions de l'article 1219, suspendre sa propre prestation."
+       },
+       {
+        "t": "p",
+        "x": "Article 1220 : une partie peut également suspendre son exécution lorsqu'il est manifeste que son cocontractant ne s'exécutera pas à l'échéance et que les conséquences de cette inexécution sont suffisamment graves. Elle doit notifier cette suspension dans les meilleurs délais."
+       },
+       {
+        "t": "h",
+        "x": "4. L'exécution forcée en nature"
+       },
+       {
+        "t": "p",
+        "x": "Article 1221 : le créancier peut demander l'exécution en nature après mise en demeure, sauf impossibilité ou disproportion manifeste entre son coût pour le débiteur de bonne foi et son intérêt pour le créancier."
+       },
+       {
+        "t": "cas",
+        "cas": "Un prestataire doit remettre un dossier déterminé conformément au contrat.",
+        "analyse": "Son client peut demander que cette obligation soit exécutée."
+       },
+       {
+        "t": "p",
+        "x": "Article 1222 : après mise en demeure, le créancier peut également faire exécuter l'obligation dans un délai et à un coût raisonnables, puis demander le remboursement au débiteur. Dans les conditions prévues par le texte, il peut demander au juge que le débiteur avance les sommes nécessaires."
+       },
+       {
+        "t": "h",
+        "x": "5. La réduction du prix"
+       },
+       {
+        "t": "p",
+        "x": "Article 1223 : en cas d'exécution imparfaite, le créancier peut, sous certaines conditions, accepter de payer une somme réduite proportionnellement à la prestation défectueuse. Si le prix n'a pas encore été payé, il doit notifier sa décision dans les meilleurs délais. Si le prix a déjà été payé, il peut, à défaut d'accord, demander au juge une réduction du prix."
+       },
+       {
+        "t": "cas",
+        "cas": "Une prestation contractuelle est réalisée, mais une partie importante des livrables prévus n'est pas fournie.",
+        "analyse": "Le client peut envisager une réduction proportionnelle du prix, dans les conditions légales."
+       },
+       {
+        "t": "h",
+        "x": "6. Les dommages-intérêts"
+       },
+       {
+        "t": "p",
+        "x": "L'inexécution peut également donner lieu à une indemnisation. Il faut notamment démontrer :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Une inexécution contractuelle.",
+         "Un préjudice réparable.",
+         "Un lien de causalité entre les deux."
+        ]
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent ne respecte pas une obligation contractuelle et provoque une perte financière directement liée à cette inexécution.",
+        "analyse": "La victime peut demander réparation si les conditions de la responsabilité contractuelle sont réunies."
+       }
+      ],
+      "ref": "Articles 1217 à 1223 du Code civil"
+     },
+     {
+      "code": "A.7",
+      "titre": "La résolution et la responsabilité contractuelle",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. La résolution du contrat"
+       },
+       {
+        "t": "p",
+        "x": "La résolution met fin au contrat en raison d'une inexécution suffisamment grave. Elle peut intervenir de trois manières."
+       },
+       {
+        "t": "table",
+        "head": [
+         "Voie",
+         "Ce que prévoit le texte"
+        ],
+        "rows": [
+         [
+          "La clause résolutoire (art. 1225)",
+          "Le contrat peut prévoir qu'en cas de manquement déterminé, il sera résolu. La clause doit identifier les engagements dont l'inexécution entraînera la résolution. En principe, une mise en demeure est nécessaire, sauf si les parties ont prévu que la résolution résulterait du seul fait de l'inexécution."
+         ],
+         [
+          "La résolution unilatérale (art. 1226)",
+          "Le créancier peut, à ses risques et périls, résoudre le contrat par notification. En principe, il doit mettre en demeure le débiteur de s'exécuter, lui accorder un délai raisonnable et préciser que, faute d'exécution, le contrat pourra être résolu. Si l'inexécution persiste, il notifie la résolution et en expose les motifs. En cas d'urgence, la mise en demeure préalable n'est pas nécessaire."
+         ],
+         [
+          "La résolution judiciaire (art. 1227)",
+          "Le créancier peut toujours demander au juge la résolution du contrat. L'article 1228 permet au juge de constater ou prononcer la résolution, d'ordonner l'exécution du contrat avec un délai, et d'accorder éventuellement des dommages-intérêts."
+         ]
+        ]
+       },
+       {
+        "t": "h",
+        "x": "2. Les effets de la résolution"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1229 prévoit que la résolution met fin au contrat. Les restitutions dépendent notamment de l'utilité des prestations échangées. Si les prestations n'ont d'utilité qu'en cas d'exécution complète du contrat, les restitutions sont en principe intégrales. Si les prestations ont trouvé leur utilité au fur et à mesure, il n'y a pas nécessairement restitution pour la période antérieure."
+       },
+       {
+        "t": "h",
+        "x": "3. Les clauses qui survivent"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1230 prévoit que certaines clauses peuvent survivre à la résolution. C'est notamment le cas des clauses destinées à produire effet même après la fin du contrat, comme certaines clauses de confidentialité ou de règlement des différends."
+       },
+       {
+        "t": "h",
+        "x": "4. La responsabilité contractuelle"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Article",
+         "Règle"
+        ],
+        "rows": [
+         [
+          "1231",
+          "Sauf inexécution définitive, les dommages-intérêts sont dus après mise en demeure du débiteur de s'exécuter dans un délai raisonnable."
+         ],
+         [
+          "1231-1",
+          "Le débiteur peut être condamné à payer des dommages-intérêts à raison de l'inexécution ou du retard, sauf s'il justifie que l'exécution a été empêchée par la force majeure."
+         ],
+         [
+          "1231-2",
+          "Les dommages-intérêts couvrent en principe la perte subie et le gain manqué."
+         ],
+         [
+          "1231-3",
+          "Sauf faute lourde ou dolosive, les dommages-intérêts ne couvrent en principe que les dommages prévus ou prévisibles lors de la conclusion du contrat."
+         ],
+         [
+          "1231-4",
+          "Même en cas de faute lourde ou dolosive, seuls les dommages qui sont une suite immédiate et directe de l'inexécution sont réparables."
+         ],
+         [
+          "1231-5",
+          "La clause pénale prévoit à l'avance une somme due en cas d'inexécution. Le juge peut, même d'office, modérer ou augmenter la pénalité lorsqu'elle est manifestement excessive ou dérisoire."
+         ]
+        ]
+       },
+       {
+        "t": "h",
+        "x": "5. Application au mandat d'agent sportif"
+       },
+       {
+        "t": "p",
+        "x": "Un agent s'engage à accompagner un joueur pendant une période déterminée. Il ne réalise pas les prestations essentielles prévues dans le mandat. Le joueur peut, selon les circonstances :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Mettre en demeure l'agent.",
+         "Demander l'exécution des prestations.",
+         "Suspendre certaines obligations si les conditions sont réunies.",
+         "Demander une résolution.",
+         "Réclamer une indemnisation si un préjudice est établi."
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "Le fait qu'un agent n'ait pas obtenu de transfert ne suffit pas automatiquement à caractériser une inexécution. Il faut examiner les obligations exactes prévues dans le contrat et la nature de la mission."
+       }
+      ],
+      "ref": "Articles 1224 à 1231-7 du Code civil"
+     },
+     {
+      "code": "A.8",
+      "titre": "La fin du contrat",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. La modification du contrat (article 1193)"
+       },
+       {
+        "t": "p",
+        "x": "Le contrat peut être modifié par accord mutuel, ou dans les cas autorisés par la loi. Une partie ne peut donc pas modifier seule les conditions essentielles d'un contrat, sauf fondement légal ou contractuel valable."
+       },
+       {
+        "t": "h",
+        "x": "2. Les contrats à durée déterminée et indéterminée"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Article",
+         "Règle"
+        ],
+        "rows": [
+         [
+          "1210",
+          "Interdiction des engagements perpétuels : un contrat ne peut pas enfermer définitivement une personne dans une relation contractuelle."
+         ],
+         [
+          "1211",
+          "Durée indéterminée : chaque partie peut y mettre fin en respectant le préavis contractuel ou, à défaut, un délai raisonnable."
+         ],
+         [
+          "1212",
+          "Durée déterminée : chaque partie doit en principe l'exécuter jusqu'à son terme. Nul ne peut exiger son renouvellement."
+         ],
+         [
+          "1213 et 1214",
+          "La prorogation prolonge le contrat avant son expiration. Le renouvellement donne naissance à un nouveau contrat, dans les conditions prévues par la loi."
+         ],
+         [
+          "1215",
+          "Tacite reconduction : lorsque les parties continuent d'exécuter un contrat arrivé à échéance, le nouveau contrat est à durée indéterminée."
+         ]
+        ]
+       },
+       {
+        "t": "h",
+        "x": "3. La caducité (article 1186)"
+       },
+       {
+        "t": "p",
+        "x": "Un contrat valablement formé devient caduc lorsqu'un de ses éléments essentiels disparaît. La caducité peut également concerner plusieurs contrats participant à une même opération économique lorsque les conditions de l'article 1186 sont réunies."
+       },
+       {
+        "t": "cas",
+        "cas": "Un ensemble de contrats interdépendants est conclu pour réaliser une opération sportive.",
+        "analyse": "La disparition de l'un d'eux peut rendre les autres caducs si les conditions légales sont satisfaites et si le cocontractant concerné connaissait l'opération d'ensemble."
+       },
+       {
+        "t": "h",
+        "x": "4. Les différentes façons de mettre fin à un contrat"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Mode",
+         "Explication"
+        ],
+        "rows": [
+         [
+          "Arrivée du terme",
+          "Fin à la date prévue"
+         ],
+         [
+          "Résiliation",
+          "Fin pour l'avenir"
+         ],
+         [
+          "Résolution",
+          "Fin liée à une inexécution"
+         ],
+         [
+          "Révocation",
+          "Retrait d'un engagement dans les conditions autorisées"
+         ],
+         [
+          "Accord amiable",
+          "Fin décidée par les parties"
+         ],
+         [
+          "Caducité",
+          "Disparition d'un élément essentiel"
+         ]
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "Il ne faut pas confondre la résiliation, la résolution et la caducité."
+       }
+      ],
+      "ref": "Articles 1193, 1210 à 1215 et 1186 du Code civil"
+     }
+    ]
+   }
   },
   {
    "id": "contrats-mandat",
@@ -222,7 +2239,594 @@
     "Le mandant exécute les engagements pris dans la limite du pouvoir donné ; au-delà, seulement s'il ratifie (art. 1998). Il rembourse frais et avances et paie la rémunération promise, même si l'affaire échoue, sauf faute du mandataire (art. 1999).",
     "Fin : révocation, renonciation, décès, tutelle ou déconfiture (art. 2003). Le mandant révoque quand bon lui semble (art. 2004) ; le mandataire qui renonce indemnise le mandant s'il lui cause un préjudice (art. 2007)."
    ],
-   "source": "Code civil, art. 1984 à 2007 ; Module 02, partie B"
+   "source": "Code civil, art. 1984 à 2007 ; Module 02, partie B",
+   "cours": {
+    "module": "Module 02 · Droit des contrats",
+    "minutes": 12,
+    "sections": [
+     {
+      "code": "B.1",
+      "titre": "Définition et nature du mandat",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Définition du mandat"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1984 du Code civil définit le mandat comme l'acte par lequel une personne donne à une autre le pouvoir de faire quelque chose pour le mandant et en son nom. Le contrat ne se forme que par l'acceptation du mandataire. Il repose donc sur trois acteurs ou notions :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Le mandant : celui qui donne le pouvoir.",
+         "Le mandataire : celui qui reçoit le pouvoir.",
+         "La mission : ce que le mandataire est autorisé à accomplir."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Dans le football, le joueur est généralement le mandant et l'agent sportif le mandataire."
+       },
+       {
+        "t": "h",
+        "x": "2. Le mandat et la représentation"
+       },
+       {
+        "t": "p",
+        "x": "La caractéristique essentielle du mandat est la représentation. Le mandataire agit pour le compte du mandant et, dans les limites de ses pouvoirs, en son nom. Il faut distinguer deux situations :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Le mandataire agit au nom du mandant : il représente juridiquement son client dans les limites de ses pouvoirs.",
+         "Le mandataire agit en son nom propre : il contracte personnellement avec le tiers, même s'il agit économiquement pour le compte d'une autre personne."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Cette distinction est importante pour différencier le mandat de la commission."
+       },
+       {
+        "t": "h",
+        "x": "3. Le mandat peut être gratuit ou rémunéré"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1986 prévoit que le mandat est gratuit sauf convention contraire. Dans le droit commun, les parties peuvent donc convenir d'une rémunération. Dans le domaine des agents sportifs, les règles particulières du Code du sport encadrent la rémunération et imposent un formalisme spécifique."
+       },
+       {
+        "t": "h",
+        "x": "4. Les différents types de mandat"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Type",
+         "Règle"
+        ],
+        "rows": [
+         [
+          "Mandat spécial (art. 1987)",
+          "Il porte sur une affaire ou certaines affaires seulement. Exemple : un joueur donne mandat à un agent pour négocier son prochain contrat avec un club déterminé."
+         ],
+         [
+          "Mandat général (art. 1987)",
+          "Il porte sur l'ensemble des affaires du mandant dans les limites prévues par la loi. L'article 1988 précise que le mandat conçu en termes généraux ne concerne que les actes d'administration. Pour les actes de disposition, un pouvoir exprès est nécessaire."
+         ],
+         [
+          "Mandat exprès et mandat tacite",
+          "L'acceptation du mandat peut être expresse ou tacite selon les dispositions applicables."
+         ]
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Cependant, dans le domaine des agents sportifs, l'exigence spéciale d'un contrat écrit doit impérativement être respectée."
+       },
+       {
+        "t": "h",
+        "x": "5. Les limites des pouvoirs du mandataire"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1989 prévoit que le mandataire ne peut rien faire au-delà de ce qui est porté dans son mandat."
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent reçoit mandat pour négocier un contrat de travail avec un club.",
+        "analyse": "Il ne dispose pas automatiquement du pouvoir de signer tous les documents engageant définitivement le joueur. Il faut vérifier l'étendue exacte de ses pouvoirs."
+       },
+       {
+        "t": "h",
+        "x": "6. Application au football"
+       },
+       {
+        "t": "p",
+        "x": "Un joueur signe un mandat avec un agent pour rechercher un nouveau club. Le mandat prévoit que l'agent peut :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Identifier les clubs intéressés.",
+         "Présenter le profil du joueur.",
+         "Organiser les négociations.",
+         "Défendre les intérêts du joueur."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "En revanche, si le contrat ne lui donne pas le pouvoir de signer à la place du joueur, l'agent ne peut pas décider seul d'accepter une proposition."
+       },
+       {
+        "t": "vigilance",
+        "x": "Le mandat ne donne pas tous les pouvoirs imaginables au mandataire. Il lui donne uniquement ceux qui lui ont été confiés."
+       }
+      ],
+      "ref": "Articles 1984 à 1990 du Code civil"
+     },
+     {
+      "code": "B.2",
+      "titre": "Formation et forme du mandat",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. La formation du mandat"
+       },
+       {
+        "t": "p",
+        "x": "Dans le droit commun, le mandat suppose :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Une volonté de confier une mission.",
+         "Une acceptation du mandataire.",
+         "Une mission suffisamment identifiable.",
+         "Le respect des conditions générales de validité du contrat."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "L'article 1985 prévoit que le mandat peut être donné par acte authentique, acte sous signature privée ou même verbalement, dans les conditions de preuve prévues par la loi. L'acceptation peut être tacite et résulter de l'exécution du mandat."
+       },
+       {
+        "t": "h",
+        "x": "2. Le principe du consensualisme"
+       },
+       {
+        "t": "p",
+        "x": "Le droit français reconnaît généralement que le contrat se forme par le seul échange des consentements. Mais ce principe connaît des exceptions. Certains contrats nécessitent une forme particulière pour être valables. C'est précisément le cas du mandat d'agent sportif."
+       },
+       {
+        "t": "h",
+        "x": "3. La règle particulière de l'agent sportif"
+       },
+       {
+        "t": "p",
+        "x": "L'article L. 222-17 du Code du sport impose un contrat écrit avant que l'agent puisse exercer l'activité de mise en relation concernée. Il ne suffit donc pas que le joueur ait simplement donné son accord oral à l'agent. Il faut un véritable document contractuel conforme aux dispositions spéciales."
+       },
+       {
+        "t": "h",
+        "x": "4. La preuve du mandat"
+       },
+       {
+        "t": "p",
+        "x": "Le contrat écrit permet notamment de prouver :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "L'identité des parties.",
+         "La mission confiée.",
+         "La durée de l'engagement.",
+         "Le caractère exclusif ou non.",
+         "La rémunération prévue.",
+         "La partie chargée de payer."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Dans le football professionnel, la traçabilité documentaire est particulièrement importante en cas de contrôle ou de contestation."
+       },
+       {
+        "t": "h",
+        "x": "5. Les documents à conserver"
+       },
+       {
+        "t": "p",
+        "x": "Un agent doit organiser la conservation de ses documents contractuels :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Mandat initial.",
+         "Avenants.",
+         "Convention tripartite éventuelle.",
+         "Justificatifs de prestations.",
+         "Factures.",
+         "Quittances de paiement.",
+         "Documents transmis à la fédération."
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "Le droit commun peut admettre un mandat verbal, mais le droit spécial des agents sportifs exige un écrit."
+       }
+      ],
+      "ref": "Articles 1984 à 1990 du Code civil"
+     },
+     {
+      "code": "B.3",
+      "titre": "Obligations du mandataire",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Exécuter la mission (article 1991)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandataire doit accomplir le mandat tant qu'il en demeure chargé. Il répond des dommages-intérêts qui peuvent résulter de son inexécution."
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent s'engage à présenter un joueur à plusieurs clubs et ne réalise aucune démarche alors que sa mission est toujours en cours.",
+        "analyse": "Il peut engager sa responsabilité."
+       },
+       {
+        "t": "h",
+        "x": "2. Répondre de ses fautes (article 1992)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandataire répond :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "De ses actes intentionnels.",
+         "De ses fautes de gestion.",
+         "Des manquements commis dans l'exercice de sa mission."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Le niveau d'appréciation de la responsabilité tient notamment compte du caractère gratuit ou rémunéré du mandat. Dans le cadre professionnel, l'agent exerce généralement une activité rémunérée."
+       },
+       {
+        "t": "h",
+        "x": "3. Rendre compte de sa gestion (article 1993)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandataire doit rendre compte de sa gestion. Il doit également restituer au mandant tout ce qu'il a reçu dans le cadre de sa procuration, même si certaines sommes n'étaient pas dues au mandant."
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent reçoit une somme pour le compte d'un joueur.",
+        "analyse": "Il doit être capable d'expliquer l'origine de cette somme, son affectation et les opérations réalisées."
+       },
+       {
+        "t": "h",
+        "x": "4. La substitution (article 1994)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandataire peut parfois se faire remplacer, mais il répond de la personne substituée dans certaines situations. Il engage notamment sa responsabilité :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "S'il n'avait pas le pouvoir de se substituer quelqu'un.",
+         "S'il a choisi une personne notoirement incapable ou insolvable lorsque son pouvoir de substitution ne désignait personne."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Le mandant peut également agir directement contre le substitué. Application : un agent ne peut pas librement déléguer toutes ses missions à un tiers non autorisé."
+       },
+       {
+        "t": "h",
+        "x": "5. Les autres obligations"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Article 1995 : solidarité entre plusieurs mandataires uniquement lorsqu'elle est expressément prévue.",
+         "Article 1996 : intérêts dus sur les sommes utilisées à son profit ou dont il est débiteur dans les conditions prévues.",
+         "Article 1997 : protection du mandataire ayant clairement informé le tiers de l'étendue de ses pouvoirs."
+        ]
+       },
+       {
+        "t": "h",
+        "x": "6. Les obligations essentielles à retenir"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Article",
+         "Obligation"
+        ],
+        "rows": [
+         [
+          "1991",
+          "Exécuter le mandat"
+         ],
+         [
+          "1992",
+          "Répondre des fautes"
+         ],
+         [
+          "1993",
+          "Rendre compte"
+         ],
+         [
+          "1994",
+          "Encadrer la substitution"
+         ],
+         [
+          "1995",
+          "Règles de solidarité"
+         ],
+         [
+          "1996",
+          "Intérêts sur les sommes"
+         ],
+         [
+          "1997",
+          "Respect des pouvoirs et information des tiers"
+         ]
+        ]
+       },
+       {
+        "t": "memo",
+        "x": "Piège d'examen : l'agent n'est pas simplement tenu d'obtenir un résultat sportif ou financier. Il doit surtout exécuter correctement les obligations qui lui ont été confiées."
+       }
+      ],
+      "ref": "Articles 1991 à 1997 du Code civil"
+     },
+     {
+      "code": "B.4",
+      "titre": "Obligations du mandant",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Respecter les engagements du mandataire (article 1998)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandant doit exécuter les engagements contractés par le mandataire conformément aux pouvoirs qui lui ont été donnés. Si le mandataire dépasse ses pouvoirs, le mandant n'est normalement pas tenu de ce qui a été fait au-delà, sauf s'il ratifie expressément ou tacitement l'acte."
+       },
+       {
+        "t": "cas",
+        "cas": "Un agent négocie un contrat dans les limites de ses pouvoirs.",
+        "analyse": "Le joueur doit respecter les engagements valablement pris pour son compte."
+       },
+       {
+        "t": "h",
+        "x": "2. Rembourser les frais et payer la rémunération (article 1999)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandant doit rembourser les avances et frais réalisés pour l'exécution du mandat. Il doit également payer la rémunération lorsqu'elle a été promise. En principe, il ne peut pas refuser ce paiement simplement parce que l'opération n'a pas réussi, dès lors qu'aucune faute du mandataire n'est imputable. Cette règle doit toutefois être combinée avec les dispositions spéciales du Code du sport et les conditions précises du contrat."
+       },
+       {
+        "t": "h",
+        "x": "3. Indemniser les pertes (article 2000)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandant doit indemniser le mandataire des pertes subies à l'occasion de sa gestion, sauf imprudence imputable au mandataire."
+       },
+       {
+        "t": "h",
+        "x": "4. Les intérêts des avances (article 2001)"
+       },
+       {
+        "t": "p",
+        "x": "Les intérêts des avances faites par le mandataire sont dus à compter du jour des avances constatées."
+       },
+       {
+        "t": "h",
+        "x": "5. Plusieurs mandants (article 2002)"
+       },
+       {
+        "t": "p",
+        "x": "Lorsque plusieurs personnes constituent un mandataire pour une affaire commune, elles sont solidaires envers lui pour les effets du mandat, selon les conditions prévues par cet article."
+       },
+       {
+        "t": "h",
+        "x": "6. Application au football"
+       },
+       {
+        "t": "p",
+        "x": "Un agent engage des frais justifiés pour réaliser une mission confiée par un joueur. Le joueur doit examiner les conditions contractuelles et les règles applicables avant de refuser le remboursement."
+       },
+       {
+        "t": "vigilance",
+        "x": "Le mandat crée des obligations des deux côtés. Le mandataire doit exécuter sa mission et le mandant doit respecter ses engagements financiers et contractuels."
+       }
+      ],
+      "ref": "Articles 1998 à 2002 du Code civil"
+     },
+     {
+      "code": "B.5",
+      "titre": "Fin du mandat",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Les causes de fin du mandat (article 2003)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandat prend fin notamment par :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "La révocation du mandataire.",
+         "La renonciation du mandataire au mandat.",
+         "Le décès du mandant ou du mandataire.",
+         "La tutelle des majeurs dans les conditions prévues par le texte.",
+         "La déconfiture du mandant ou du mandataire."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Dans la pratique professionnelle, il faut également examiner les conditions contractuelles d'arrivée du terme et de résiliation."
+       },
+       {
+        "t": "h",
+        "x": "2. La révocation (article 2004)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandant peut révoquer sa procuration quand bon lui semble. Toutefois, cette règle générale doit être articulée avec les dispositions spéciales applicables au mandat d'agent sportif, notamment sa durée et les règles contractuelles. La révocation peut mettre fin au pouvoir de représentation sans nécessairement supprimer toute conséquence financière liée à la rupture."
+       },
+       {
+        "t": "h",
+        "x": "3. La renonciation (article 2007)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandataire peut renoncer au mandat en notifiant sa renonciation au mandant. Il peut être tenu de réparer le préjudice causé par une renonciation préjudiciable, sauf lorsqu'il ne pouvait continuer sans subir lui-même un préjudice considérable."
+       },
+       {
+        "t": "h",
+        "x": "4. Le décès du mandant (article 2008)"
+       },
+       {
+        "t": "p",
+        "x": "Le mandataire qui ignore le décès du mandant et agit de bonne foi peut être protégé dans les conditions prévues par cet article."
+       },
+       {
+        "t": "h",
+        "x": "5. Les articles 2005, 2006, 2009 et 2010"
+       },
+       {
+        "t": "p",
+        "x": "Ils complètent le régime de la fin du mandat, notamment :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Les conséquences de la révocation.",
+         "Les effets de la constitution d'un nouveau mandataire.",
+         "La protection des tiers de bonne foi.",
+         "Les situations de pluralité de mandants ou de mandataires."
+        ]
+       },
+       {
+        "t": "h",
+        "x": "6. Application au football"
+       },
+       {
+        "t": "p",
+        "x": "Un joueur souhaite changer d'agent avant l'échéance de son mandat. Il faut vérifier :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "La durée du mandat.",
+         "Les conditions de rupture prévues.",
+         "L'existence d'une éventuelle exclusivité.",
+         "Les prestations déjà réalisées.",
+         "Les éventuelles sommes dues.",
+         "Les règles spécifiques de la fédération."
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "La fin de la relation de confiance ne signifie pas automatiquement que toutes les obligations financières disparaissent."
+       }
+      ],
+      "ref": "Articles 2003 à 2010 du Code civil"
+     },
+     {
+      "code": "",
+      "titre": "Synthèse de la partie B",
+      "blocs": [
+       {
+        "t": "p",
+        "x": "Les articles 1984 à 2010 doivent être connus dans leur logique."
+       },
+       {
+        "t": "table",
+        "head": [
+         "Article",
+         "Sujet"
+        ],
+        "rows": [
+         [
+          "1984",
+          "Définition du mandat"
+         ],
+         [
+          "1985",
+          "Forme et acceptation"
+         ],
+         [
+          "1986",
+          "Gratuité par principe"
+         ],
+         [
+          "1987",
+          "Mandat spécial ou général"
+         ],
+         [
+          "1988",
+          "Étendue du mandat général"
+         ],
+         [
+          "1989",
+          "Limites des pouvoirs"
+         ],
+         [
+          "1991",
+          "Exécution du mandat"
+         ],
+         [
+          "1992",
+          "Responsabilité du mandataire"
+         ],
+         [
+          "1993",
+          "Reddition des comptes"
+         ],
+         [
+          "1994",
+          "Substitution"
+         ],
+         [
+          "1998",
+          "Engagements du mandant"
+         ],
+         [
+          "1999",
+          "Frais et rémunération"
+         ],
+         [
+          "2000",
+          "Indemnisation des pertes"
+         ],
+         [
+          "2003",
+          "Fin du mandat"
+         ],
+         [
+          "2004",
+          "Révocation"
+         ],
+         [
+          "2007",
+          "Renonciation"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "contrats-voisins",
@@ -237,7 +2841,289 @@
     "Contrat d'entreprise (louage d'ouvrage) : faire quelque chose pour l'autre moyennant un prix convenu (art. 1710 C. civ.). Être payé ne le transforme pas en mandat.",
     "Agent sportif : c'est l'activité réelle de mise en relation (L. 222-7) qui déclenche la réglementation, quel que soit le nom donné au contrat."
    ],
-   "source": "Code civil, art. 1710 et 1984 ; Code de commerce, L. 132-1 ; Code du sport, L. 222-7 ; Module 02, parties C et D"
+   "source": "Code civil, art. 1710 et 1984 ; Code de commerce, L. 132-1 ; Code du sport, L. 222-7 ; Module 02, parties C et D",
+   "cours": {
+    "module": "Module 02 · Droit des contrats",
+    "minutes": 5,
+    "sections": [
+     {
+      "code": "C.1",
+      "titre": "Nature juridique : mandat ou courtage ?",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Pourquoi cette distinction est-elle importante ?"
+       },
+       {
+        "t": "p",
+        "x": "Dans le monde des affaires, plusieurs professionnels peuvent intervenir pour rapprocher deux parties. Il peut s'agir :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "D'un mandataire.",
+         "D'un courtier.",
+         "D'un commissionnaire.",
+         "D'un prestataire de services."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Ces professions ne sont pas juridiquement identiques. L'activité d'agent sportif est définie par l'article L. 222-7 du Code du sport. Le texte vise une mission d'intermédiaire consistant à mettre en relation des parties intéressées à la conclusion ou à la prolongation de contrats sportifs déterminés."
+       },
+       {
+        "t": "h",
+        "x": "2. Le mandat"
+       },
+       {
+        "t": "p",
+        "x": "Le mandataire agit pour le compte du mandant et, dans les limites de ses pouvoirs, en son nom. Exemple : un joueur confie à un agent le pouvoir de négocier son futur contrat."
+       },
+       {
+        "t": "h",
+        "x": "3. Le courtage"
+       },
+       {
+        "t": "p",
+        "x": "Le courtier intervient principalement pour rapprocher des parties afin de leur permettre de conclure une opération. Il n'agit pas nécessairement au nom de l'une des parties. Exemple : un intermédiaire identifie un joueur susceptible d'intéresser un club et facilite leur mise en contact. Le courtage n'est pas défini par un article général unique du Code civil. Sa qualification repose notamment sur les fonctions effectivement exercées."
+       },
+       {
+        "t": "h",
+        "x": "4. Les différences essentielles"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Critère",
+         "Mandat",
+         "Courtage"
+        ],
+        "rows": [
+         [
+          "Mission",
+          "Représenter ou agir pour le mandant",
+          "Rapprocher des parties"
+         ],
+         [
+          "Représentation",
+          "Possible",
+          "Pas nécessairement"
+         ],
+         [
+          "Pouvoir d'engager",
+          "Selon le mandat",
+          "En principe non"
+         ],
+         [
+          "Rémunération",
+          "Selon le contrat",
+          "Selon le contrat"
+         ],
+         [
+          "Réglementation agent sportif",
+          "Applicable si activité relevant de L. 222-7",
+          "Applicable si activité réelle relevant de L. 222-7"
+         ]
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "Appeler un contrat « contrat de courtage » ne permet pas de contourner la réglementation des agents sportifs. C'est la réalité de l'activité qui détermine le régime applicable."
+       }
+      ]
+     },
+     {
+      "code": "D.1",
+      "titre": "Le contrat d'entreprise",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Définition"
+       },
+       {
+        "t": "p",
+        "x": "L'article 1710 définit le louage d'ouvrage comme le contrat par lequel une partie s'engage à faire quelque chose pour une autre moyennant un prix convenu. Il s'agit aujourd'hui de ce que l'on appelle couramment le contrat d'entreprise ou le contrat de prestation de services."
+       },
+       {
+        "t": "h",
+        "x": "2. Les caractéristiques"
+       },
+       {
+        "t": "p",
+        "x": "Le contrat d'entreprise repose sur :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Une prestation à réaliser.",
+         "Une indépendance du prestataire dans l'organisation de son travail.",
+         "Un prix convenu.",
+         "Une obligation d'exécuter la prestation conformément au contrat."
+        ]
+       },
+       {
+        "t": "h",
+        "x": "3. Exemples dans le football"
+       },
+       {
+        "t": "p",
+        "x": "Un club engage une société pour :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Produire des vidéos.",
+         "Réaliser une campagne marketing.",
+         "Organiser un événement.",
+         "Concevoir un site internet.",
+         "Réaliser une étude de performance."
+        ]
+       },
+       {
+        "t": "p",
+        "x": "Il s'agit généralement de prestations relevant du contrat d'entreprise."
+       },
+       {
+        "t": "h",
+        "x": "4. Différence avec le mandat"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Critère",
+         "Mandat",
+         "Contrat d'entreprise"
+        ],
+        "rows": [
+         [
+          "Objet",
+          "Accomplir des actes pour le mandant",
+          "Réaliser une prestation"
+         ],
+         [
+          "Représentation",
+          "Possible",
+          "Pas nécessaire"
+         ],
+         [
+          "Pouvoir juridique",
+          "Peut engager le mandant",
+          "En principe non"
+         ],
+         [
+          "Exemple",
+          "Négocier au nom d'un joueur",
+          "Réaliser une vidéo pour un club"
+         ]
+        ]
+       },
+       {
+        "t": "vigilance",
+        "x": "Un contrat de prestation de services ne devient pas automatiquement un mandat parce qu'il prévoit une rémunération."
+       }
+      ],
+      "ref": "Article 1710 du Code civil"
+     },
+     {
+      "code": "D.2",
+      "titre": "Le contrat de commission",
+      "blocs": [
+       {
+        "t": "h",
+        "x": "1. Définition"
+       },
+       {
+        "t": "p",
+        "x": "Le commissionnaire est celui qui agit en son propre nom ou sous un nom social pour le compte d'un commettant. Il intervient donc pour le compte d'une autre personne, mais contracte en son propre nom. C'est la différence essentielle avec le mandat représentatif."
+       },
+       {
+        "t": "h",
+        "x": "2. Exemple"
+       },
+       {
+        "t": "p",
+        "x": "Une entreprise demande à un commissionnaire d'acheter des équipements pour son compte. Le commissionnaire réalise l'achat en son propre nom, mais économiquement pour le compte de l'entreprise."
+       },
+       {
+        "t": "h",
+        "x": "3. Les caractéristiques"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Intervention pour le compte d'un commettant.",
+         "Actes réalisés en nom propre.",
+         "Rémunération généralement prévue sous forme de commission.",
+         "Relations juridiques particulières entre le commissionnaire, le commettant et les tiers."
+        ]
+       },
+       {
+        "t": "h",
+        "x": "4. Différence avec le mandat"
+       },
+       {
+        "t": "p",
+        "x": "Dans le mandat, le mandataire agit en principe au nom du mandant dans les limites de ses pouvoirs. Dans la commission, le commissionnaire agit en son propre nom pour le compte du commettant. Cette différence a des conséquences sur les relations avec les tiers."
+       }
+      ],
+      "ref": "Article L. 132-1 du Code de commerce"
+     },
+     {
+      "code": "D.3",
+      "titre": "Synthèse : mandat, commission, courtage et entreprise",
+      "blocs": [
+       {
+        "t": "table",
+        "head": [
+         "Critère",
+         "Mandat",
+         "Commission",
+         "Courtage",
+         "Entreprise"
+        ],
+        "rows": [
+         [
+          "Représentation",
+          "Oui, selon pouvoirs",
+          "Non, en nom propre",
+          "Pas nécessaire",
+          "Non"
+         ],
+         [
+          "Mission",
+          "Agir pour le mandant",
+          "Contracter pour le commettant",
+          "Rapprocher les parties",
+          "Réaliser une prestation"
+         ],
+         [
+          "Texte principal",
+          "1984 C. civ.",
+          "L. 132-1 C. com.",
+          "Qualification jurisprudentielle et contractuelle",
+          "1710 C. civ."
+         ],
+         [
+          "Exemple",
+          "Agent représentant un joueur",
+          "Achat pour le compte d'une entreprise",
+          "Mise en relation commerciale",
+          "Production vidéo"
+         ]
+        ]
+       },
+       {
+        "t": "memo",
+        "x": "Le réflexe à adopter : examiner ce que fait réellement la personne, pour le compte de qui elle agit et au nom de qui elle contracte."
+       },
+       {
+        "t": "vigilance",
+        "x": "Une qualification contractuelle erronée peut conduire à appliquer le mauvais régime juridique."
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "contrats-cas",
@@ -250,7 +3136,83 @@
     "Le joueur est majeur : l'interdiction de rémunérer l'intermédiaire d'un mineur (L. 222-5) ne joue pas, c'est le plafond de 10 % qui s'applique.",
     "Bilan : durée trop longue, commission trop élevée, double représentation interdite, transmission obligatoire, engagement perpétuel prohibé (art. 1210 C. civ.)."
    ],
-   "source": "Module 02, cas pratique transversal ; Code du sport, L. 222-17 ; Code civil, art. 1210"
+   "source": "Module 02, cas pratique transversal ; Code du sport, L. 222-17 ; Code civil, art. 1210",
+   "cours": {
+    "module": "Module 02 · Droit des contrats",
+    "minutes": 5,
+    "sections": [
+     {
+      "code": "",
+      "titre": "Mise en situation – Cas pratique transversal",
+      "blocs": [
+       {
+        "t": "p",
+        "x": "Niveau avancé. Situation : négociation d'un mandat d'agent sportif. Un joueur professionnel de 19 ans signe un mandat exclusif avec un agent pour une durée de quatre ans. Le mandat prévoit :"
+       },
+       {
+        "t": "list",
+        "items": [
+         "Une commission de 12 %.",
+         "Une intervention pour le joueur et le club.",
+         "Aucune obligation de transmission à la fédération.",
+         "Une clause prévoyant que le joueur ne peut jamais mettre fin au mandat."
+        ]
+       },
+       {
+        "t": "h",
+        "x": "Questions"
+       },
+       {
+        "t": "list",
+        "items": [
+         "La durée est-elle conforme ?",
+         "Le taux de rémunération est-il légal ?",
+         "La double représentation est-elle autorisée ?",
+         "La transmission à la fédération est-elle obligatoire ?",
+         "La clause d'engagement perpétuel est-elle valable ?"
+        ]
+       },
+       {
+        "t": "h",
+        "x": "Correction détaillée"
+       },
+       {
+        "t": "table",
+        "head": [
+         "Point",
+         "Réponse"
+        ],
+        "rows": [
+         [
+          "Durée",
+          "Non conforme. La durée maximale légale est de trois ans, sous réserve d'une durée fédérale inférieure."
+         ],
+         [
+          "Rémunération",
+          "Non conforme. Le plafond légal est de 10 %, éventuellement inférieur selon le règlement fédéral."
+         ],
+         [
+          "Double représentation",
+          "Interdite. L'agent ne peut agir que pour le compte d'une seule partie dans les conditions de l'article L. 222-17."
+         ],
+         [
+          "Transmission",
+          "Obligatoire. Le contrat doit être communiqué à la fédération dans le mois suivant son entrée en vigueur."
+         ],
+         [
+          "Engagement perpétuel",
+          "Interdit. L'article 1210 du Code civil prohibe les engagements perpétuels. Il faut également examiner les règles spéciales relatives à la rupture du mandat."
+         ]
+        ]
+       },
+       {
+        "t": "memo",
+        "x": "Le mandat comporte donc plusieurs irrégularités majeures."
+       }
+      ]
+     }
+    ]
+   }
   }
  ],
  "questions": [
