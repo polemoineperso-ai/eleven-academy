@@ -1,0 +1,1057 @@
+{
+ "version": "v1-2026-11-03",
+ "domaines": [
+  {
+   "id": "associations",
+   "ordre": 1,
+   "titre": "Associations",
+   "sous_titre": "Loi de 1901 et fonds de dotation",
+   "epreuve": "generale"
+  },
+  {
+   "id": "agents",
+   "ordre": 2,
+   "titre": "Agents sportifs",
+   "sous_titre": "Code du sport, L. 222-5 à L. 222-22",
+   "epreuve": "generale"
+  },
+  {
+   "id": "dopage",
+   "ordre": 3,
+   "titre": "Dopage",
+   "sous_titre": "Code du sport, L. 230-1 et suivants",
+   "epreuve": "generale"
+  }
+ ],
+ "chapitres": [
+  {
+   "id": "asso-1901",
+   "domaine": "associations",
+   "ordre": 1,
+   "titre": "La loi de 1901",
+   "fiche": [
+    "L'association est une convention entre deux personnes au moins, dans un but autre que de partager des bénéfices (art. 1).",
+    "Elle se forme librement, mais n'a la capacité juridique qu'une fois déclarée en préfecture et publiée au Journal officiel (art. 2 et 5). La préfecture délivre le récépissé sous cinq jours.",
+    "Les changements d'administration et de statuts se déclarent dans les trois mois ; ils ne sont opposables aux tiers qu'à partir de leur déclaration (art. 5).",
+    "Déclarée, elle peut sans autorisation spéciale ester en justice, recevoir des dons manuels, acquérir son local et les immeubles strictement nécessaires à son but (art. 6).",
+    "Reconnaissance d'utilité publique : décret en Conseil d'État après au moins trois ans de fonctionnement (art. 10).",
+    "Un membre peut se retirer à tout moment, après avoir payé les cotisations échues et celle de l'année en cours (art. 4)."
+   ],
+   "source": "Loi du 1er juillet 1901, version en vigueur au 3 novembre 2026"
+  },
+  {
+   "id": "asso-fonds",
+   "domaine": "associations",
+   "ordre": 2,
+   "titre": "Fonds de dotation",
+   "fiche": [
+    "Personne morale de droit privé à but non lucratif qui capitalise des biens reçus à titre gratuit et irrévocable (art. 140, I).",
+    "Déclaré en préfecture ; personnalité morale à la publication au Journal officiel (II).",
+    "Dotation initiale : au moins un montant fixé par voie réglementaire, qui ne peut excéder 30 000 € (III). Avant la loi du 25 juin 2026, la règle à retenir était 15 000 €.",
+    "Aucun fonds public, sauf dérogation exceptionnelle par arrêté des ministres de l'économie et du budget (III).",
+    "Conseil d'administration d'au moins trois membres (V) ; commissaire aux comptes dès que les ressources dépassent 10 000 € (VI)."
+   ],
+   "source": "Loi n° 2008-776 du 4 août 2008, art. 140, en vigueur depuis le 27 juin 2026"
+  },
+  {
+   "id": "agents-qui",
+   "domaine": "agents",
+   "ordre": 1,
+   "titre": "Qui peut être agent",
+   "fiche": [
+    "L'agent sportif est une personne physique qui met en relation deux parties contre rémunération, pour un contrat de travail sportif, un contrat d'entraîneur ou une mutation (L. 222-7).",
+    "Depuis le 5 août 2026, il doit détenir une carte professionnelle d'agent sportif, délivrée par la fédération délégataire compétente, avec une obligation de formation initiale et continue (L. 222-7). Les décrets parlent encore de « licence ».",
+    "Incompatibilités : avoir exercé dans les douze mois précédents des fonctions de dirigeant, salarié ou encadrant dans un club employant des sportifs rémunérés, dans une fédération ou dans une organisation professionnelle ; être actionnaire d'un tel club ; être avocat inscrit au tableau sans omission (L. 222-9).",
+    "Incapacités : condamnations mentionnées à L. 212-9, fraude fiscale (art. 1741 CGI), faillite personnelle (L. 222-11).",
+    "Ses préposés, associés et dirigeants sont soumis aux mêmes règles ; les sportifs qu'il représente ne peuvent pas être associés de sa société (L. 222-12 à L. 222-14)."
+   ],
+   "source": "Code du sport, version en vigueur au 3 novembre 2026 (loi n° 2026-725 du 3 août 2026)"
+  },
+  {
+   "id": "agents-contrat",
+   "domaine": "agents",
+   "ordre": 2,
+   "titre": "Contrat et rémunération",
+   "fiche": [
+    "Pas d'intervention sans contrat écrit avec l'une des parties ; l'agent n'agit que pour le compte d'une seule partie (L. 222-17, I).",
+    "Le contrat précise les services, leur exclusivité, une durée de trois ans au plus, et une rémunération plafonnée à 10 % du contrat conclu (L. 222-17, I).",
+    "Il est communiqué à la fédération, avec ses avenants, dans le mois qui suit leur entrée en vigueur ; sinon il est réputé nul (L. 222-17).",
+    "Plusieurs agents sur un même contrat : 10 % au total (L. 222-17, II).",
+    "Contrat de travail sportif : rémunération calculée en pourcentage de la rémunération brute soumise à cotisations (A. 222-2 et A. 222-5). Avenant d'augmentation : 10 % au plus de la différence sur la durée restante (A. 222-6).",
+    "Mineurs : aucune rémunération ni avantage pour l'intermédiaire (L. 222-5)."
+   ],
+   "source": "Code du sport, L. 222-5, L. 222-17, A. 222-2 à A. 222-6"
+  },
+  {
+   "id": "agents-sanctions",
+   "domaine": "agents",
+   "ordre": 3,
+   "titre": "Sanctions et examen",
+   "fiche": [
+    "Exercer sans licence ou en violation des articles L. 222-9 à L. 222-17 : cinq ans d'emprisonnement et 375 000 € d'amende, jusqu'au double des sommes indûment perçues (L. 222-20, depuis le 5 août 2026).",
+    "Méconnaître L. 212-13 ou L. 222-11 : un an et 15 000 € (L. 222-20, II).",
+    "L'examen compte deux épreuves : la première (CNOSF) sur les connaissances sociales, fiscales, contractuelles, d'assurance et de droit du sport ; la seconde (fédération) sur les règlements (R. 222-15).",
+    "Seuls les admis à la première épreuve peuvent passer la seconde (R. 222-15). Résultats de la première épreuve notifiés dans les deux mois (R. 222-16)."
+   ],
+   "source": "Code du sport, L. 222-20, R. 222-15 et R. 222-16"
+  },
+  {
+   "id": "dopage-sanctions",
+   "domaine": "dopage",
+   "ordre": 1,
+   "titre": "Durée des suspensions",
+   "fiche": [
+    "Substance ou méthode non spécifiée : quatre ans, ramenés à deux ans si le sportif démontre l'absence d'intention (L. 232-23-3-3, I, 1°).",
+    "Substance ou méthode spécifiée : deux ans, portés à quatre ans si l'AFLD démontre l'intention (L. 232-23-3-3, I, 2°).",
+    "Substance d'abus hors compétition et sans rapport avec la performance : trois mois, ramenés à un mois avec un traitement approuvé par l'AFLD (L. 232-23-3-3, II).",
+    "Refus de se soumettre au prélèvement : quatre ans, avec des réductions possibles (L. 232-23-3-4)."
+   ],
+   "source": "Code du sport, L. 232-23-3-3 et L. 232-23-3-4"
+  },
+  {
+   "id": "dopage-aide",
+   "domaine": "dopage",
+   "ordre": 2,
+   "titre": "Aide substantielle et sursis",
+   "fiche": [
+    "Aide substantielle : deux conditions cumulatives, divulguer entièrement les informations et collaborer pleinement à l'enquête (L. 230-4).",
+    "Elle permet un sursis jusqu'aux trois quarts de la suspension, selon la gravité de la violation et l'importance de l'aide (L. 232-23-3-2, I).",
+    "Suspension définitive : la part ferme ne peut être inférieure à huit ans.",
+    "Le sursis est accordé par la commission des sanctions de l'AFLD, ou par le collège dans le cadre d'un accord de composition administrative.",
+    "Révocation, à la demande du collège : nouvelle violation dans les dix ans, ou arrêt de la coopération (L. 232-23-3-2, II)."
+   ],
+   "source": "Code du sport, L. 230-4 et L. 232-23-3-2"
+  },
+  {
+   "id": "dopage-principes",
+   "domaine": "dopage",
+   "ordre": 3,
+   "titre": "Principes et usage thérapeutique",
+   "fiche": [
+    "Chaque sportif doit s'assurer qu'aucune substance interdite ne pénètre dans son organisme ; la présence suffit, sans preuve d'intention ni de faute (L. 232-9, I).",
+    "Sont aussi interdits la possession sans justification et l'usage ou la tentative d'usage (L. 232-9, II).",
+    "Le sportif fait état de sa qualité lors de toute consultation médicale donnant lieu à prescription (L. 232-2).",
+    "Pour un traitement nécessitant une substance interdite, il demande une autorisation d'usage à des fins thérapeutiques à l'AFLD (L. 232-2)."
+   ],
+   "source": "Code du sport, L. 232-2 et L. 232-9"
+  }
+ ],
+ "questions": [
+  {
+   "id": "asso-01",
+   "chapitre": "asso-1901",
+   "niveau": 2,
+   "enonce": "Selon la loi du 1er juillet 1901, une association est tenue de faire connaître tous les changements survenus dans son administration dans un délai maximum de :",
+   "options": [
+    "15 jours",
+    "1 mois",
+    "2 mois",
+    "3 mois",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "La loi fixe un délai de trois mois, pour les changements d'administration comme pour les modifications des statuts.",
+   "article": {
+    "texte": "Loi du 1er juillet 1901",
+    "ref": "art. 5",
+    "extrait": "Les associations sont tenues de faire connaître, dans les trois mois, tous les changements survenus dans leur administration, ainsi que toutes les modifications apportées à leurs statuts.",
+    "version_du": "2015-07-25"
+   },
+   "origine": "Annale CNOSF 2023, QCM 3",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-02",
+   "chapitre": "asso-1901",
+   "niveau": 2,
+   "enonce": "Les modifications apportées aux statuts d'une association sont opposables aux tiers :",
+   "options": [
+    "À partir du jour où l'assemblée générale les adopte",
+    "À partir de la signature du procès-verbal de la réunion qui les adopte",
+    "À partir du jour où elles ont été déclarées",
+    "À partir de leur publication au Journal officiel des associations",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Ce n'est ni le vote ni la publication qui compte, mais la déclaration en préfecture. Un vote non déclaré ne s'impose pas aux tiers.",
+   "article": {
+    "texte": "Loi du 1er juillet 1901",
+    "ref": "art. 5",
+    "extrait": "Ces modifications et changements ne sont opposables aux tiers qu'à partir du jour où ils auront été déclarés.",
+    "version_du": "2015-07-25"
+   },
+   "origine": "Annale CNOSF 2024, QCM 3",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-03",
+   "chapitre": "asso-1901",
+   "niveau": 2,
+   "enonce": "Une association peut être reconnue d'utilité publique par décret en Conseil d'État à l'issue d'une période probatoire de fonctionnement d'au moins :",
+   "options": [
+    "1 an",
+    "2 ans",
+    "3 ans",
+    "4 ans",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Trois ans. La période probatoire n'est pas exigée si les ressources prévisibles sur trois ans assurent l'équilibre financier de l'association.",
+   "article": {
+    "texte": "Loi du 1er juillet 1901",
+    "ref": "art. 10",
+    "extrait": "Les associations peuvent être reconnues d'utilité publique par décret en Conseil d'Etat à l'issue d'une période probatoire de fonctionnement d'une durée au moins égale à trois ans.",
+    "version_du": "2021-08-26"
+   },
+   "origine": "Annale CNOSF 2023, QCM 2",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-04",
+   "chapitre": "asso-1901",
+   "niveau": 2,
+   "enonce": "Selon la loi du 1er juillet 1901, une association régulièrement déclarée peut, sans délai et sans autorisation spéciale :",
+   "options": [
+    "Recevoir des dons manuels",
+    "Recevoir des dons d'établissements d'utilité publique",
+    "Acquérir à titre onéreux le local destiné à son administration",
+    "Administrer les immeubles nécessaires à l'accomplissement de son but",
+    "Toutes les réponses ci-dessus sont correctes"
+   ],
+   "bonne": 4,
+   "explication": "L'article 6 cite ces quatre capacités. Piège : la loi dit « strictement nécessaires » pour les immeubles ; l'option D omet le mot, ce qui ne change pas la règle selon les corrigés consultés.",
+   "article": {
+    "texte": "Loi du 1er juillet 1901",
+    "ref": "art. 6",
+    "extrait": "Toute association régulièrement déclarée peut, sans aucune autorisation spéciale, ester en justice, recevoir des dons manuels ainsi que des dons d'établissements d'utilité publique, acquérir à titre onéreux, posséder et administrer […] 2° Le local destiné à l'administration de l'association […] 3° Les immeubles strictement nécessaires à l'accomplissement du but qu'elle se propose.",
+    "version_du": "2014-08-02"
+   },
+   "origine": "Annale CNOSF 2024, QCM 2 (réponse recoupée avec deux corrigés privés)",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-05",
+   "chapitre": "asso-1901",
+   "niveau": 1,
+   "enonce": "Après la déclaration d'une association, la préfecture délivre le récépissé dans un délai de :",
+   "options": [
+    "24 heures",
+    "5 jours",
+    "15 jours",
+    "1 mois",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Cinq jours. C'est ensuite sur production de ce récépissé que l'association est publiée au Journal officiel.",
+   "article": {
+    "texte": "Loi du 1er juillet 1901",
+    "ref": "art. 5",
+    "extrait": "Il sera donné récépissé de celle-ci dans le délai de cinq jours.",
+    "version_du": "2015-07-25"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-06",
+   "chapitre": "asso-1901",
+   "niveau": 2,
+   "enonce": "Une association déclarée est rendue publique, et peut se prévaloir de sa capacité juridique :",
+   "options": [
+    "Dès la signature des statuts",
+    "Dès le dépôt de la déclaration en préfecture",
+    "Dès la délivrance du récépissé",
+    "Par une insertion au Journal officiel, sur production du récépissé",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "La capacité juridique suppose les formalités de l'article 5, qui se terminent par l'insertion au Journal officiel. Sans déclaration, l'association existe mais n'a pas de capacité juridique (art. 2).",
+   "article": {
+    "texte": "Loi du 1er juillet 1901",
+    "ref": "art. 2 et 5",
+    "extrait": "L'association n'est rendue publique que par une insertion au Journal officiel, sur production de ce récépissé.",
+    "version_du": "2015-07-25"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-07",
+   "chapitre": "asso-1901",
+   "niveau": 2,
+   "enonce": "Un mineur de 15 ans souhaite participer à la création d'une association. Selon la loi de 1901 :",
+   "options": [
+    "C'est impossible avant 16 ans",
+    "C'est possible, sous réserve d'un accord écrit préalable de son représentant légal",
+    "C'est possible librement, ses parents sont seulement informés",
+    "C'est possible seulement si l'association est reconnue d'utilité publique",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Avant 16 ans, il faut l'accord écrit préalable du représentant légal. À partir de 16 ans révolus, le mineur participe librement et ses représentants sont seulement informés.",
+   "article": {
+    "texte": "Loi du 1er juillet 1901",
+    "ref": "art. 2 bis",
+    "extrait": "Tout mineur âgé de moins de seize ans, sous réserve d'un accord écrit préalable de son représentant légal, peut participer à la constitution d'une association et être chargé de son administration […]",
+    "version_du": "2017-01-29"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-08",
+   "chapitre": "asso-1901",
+   "niveau": 1,
+   "enonce": "Un membre veut quitter son association en cours d'année. Que prévoit la loi ?",
+   "options": [
+    "Il doit attendre la fin de l'exercice",
+    "Il peut se retirer à tout moment, après paiement des cotisations échues et de l'année courante",
+    "Il ne peut partir que si les statuts le prévoient",
+    "Il doit obtenir l'accord du bureau",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Le droit de retrait est d'ordre public : il joue « nonobstant toute clause contraire » des statuts.",
+   "article": {
+    "texte": "Loi du 1er juillet 1901",
+    "ref": "art. 4",
+    "extrait": "Tout membre d'une association peut s'en retirer en tout temps, après paiement des cotisations échues et de l'année courante, nonobstant toute clause contraire.",
+    "version_du": "2012-03-24"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-09",
+   "chapitre": "asso-1901",
+   "niveau": 2,
+   "enonce": "En cas de nullité d'une association fondée sur un objet illicite, sa dissolution est prononcée par :",
+   "options": [
+    "Le préfet",
+    "Le tribunal judiciaire",
+    "Le tribunal administratif",
+    "Le ministre de l'intérieur",
+    "L'assemblée générale"
+   ],
+   "bonne": 1,
+   "explication": "Le tribunal judiciaire, à la requête de tout intéressé ou du ministère public.",
+   "article": {
+    "texte": "Loi du 1er juillet 1901",
+    "ref": "art. 7",
+    "extrait": "En cas de nullité prévue par l'article 3, la dissolution de l'association est prononcée par le tribunal judiciaire, soit à la requête de tout intéressé, soit à la diligence du ministère public.",
+    "version_du": "2020-01-01"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-10",
+   "chapitre": "asso-fonds",
+   "niveau": 2,
+   "enonce": "Les fondateurs d'un fonds de dotation doivent apporter une dotation initiale au moins égale à :",
+   "options": [
+    "15 000 €, montant fixé par la loi",
+    "Un montant fixé par voie réglementaire, qui ne peut excéder 30 000 €",
+    "30 000 € au minimum",
+    "Aucune dotation n'est exigée",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Depuis la loi du 25 juin 2026, la loi ne fixe plus le montant : elle renvoie au règlement, avec un plafond de 30 000 €. Le montant réglementaire actuel reste à vérifier.",
+   "article": {
+    "texte": "Loi n° 2008-776 du 4 août 2008",
+    "ref": "art. 140, III",
+    "extrait": "Les fondateurs apportent une dotation initiale au moins égale à un montant fixé par voie réglementaire, qui ne peut excéder 30 000 €.",
+    "version_du": "2026-06-27"
+   },
+   "avant": {
+    "jusqu_au": "2026-06-26",
+    "regle": "La réponse attendue à l'annale 2022 était une dotation initiale minimale de 15 000 €."
+   },
+   "origine": "Annale CNOSF 2022, QCM 2, mise à jour",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-11",
+   "chapitre": "asso-fonds",
+   "niveau": 1,
+   "enonce": "Le conseil d'administration d'un fonds de dotation comprend au minimum :",
+   "options": [
+    "Un membre",
+    "Deux membres",
+    "Trois membres",
+    "Cinq membres",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Trois membres, nommés la première fois par le ou les fondateurs.",
+   "article": {
+    "texte": "Loi n° 2008-776 du 4 août 2008",
+    "ref": "art. 140, V",
+    "extrait": "Le fonds de dotation est administré par un conseil d'administration qui comprend au minimum trois membres nommés, la première fois, par le ou les fondateurs.",
+    "version_du": "2026-06-27"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "asso-12",
+   "chapitre": "asso-fonds",
+   "niveau": 2,
+   "enonce": "Un fonds de dotation doit nommer au moins un commissaire aux comptes dès que le montant total de ses ressources dépasse, en fin d'exercice :",
+   "options": [
+    "1 000 €",
+    "10 000 €",
+    "15 000 €",
+    "153 000 €",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Le seuil est de 10 000 € de ressources en fin d'exercice.",
+   "article": {
+    "texte": "Loi n° 2008-776 du 4 août 2008",
+    "ref": "art. 140, VI",
+    "extrait": "Le fonds nomme au moins un commissaire aux comptes […] dès lors que le montant total de ses ressources dépasse 10 000 euros en fin d'exercice.",
+    "version_du": "2026-06-27"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-01",
+   "chapitre": "agents-qui",
+   "niveau": 1,
+   "enonce": "Au sens du code du sport, l'agent sportif est :",
+   "options": [
+    "Une personne physique ou morale",
+    "Une personne physique uniquement",
+    "Une société commerciale agréée par la fédération",
+    "Un avocat mandataire sportif",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "L'agent est une personne physique. Il peut en revanche constituer une société pour exercer, ou en être le préposé (L. 222-8).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-7",
+    "extrait": "L'agent sportif est une personne physique dont la mission d'intermédiaire consiste à mettre en relation, directement ou indirectement, contre une rémunération, une indemnité ou un avantage, deux parties intéressées […]",
+    "version_du": "2026-08-05"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-02",
+   "chapitre": "agents-qui",
+   "niveau": 2,
+   "enonce": "Depuis le 5 août 2026, l'activité d'agent sportif ne peut être exercée que par une personne détentrice :",
+   "options": [
+    "D'une licence FIFA d'agent de football",
+    "D'une carte professionnelle d'agent sportif délivrée par la fédération délégataire compétente",
+    "D'une carte professionnelle délivrée par le CNOSF",
+    "D'un agrément du ministre chargé des sports",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "La loi parle désormais de carte professionnelle, délivrée, suspendue ou retirée par la fédération délégataire. Les décrets d'application emploient encore le mot « licence ». La licence FIFA n'est pas applicable en France selon la FFF.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-7",
+    "extrait": "L'activité d'agent sportif ne peut être exercée que par une personne détentrice d'une carte professionnelle d'agent sportif. Cette carte est délivrée, suspendue ou retirée par la fédération délégataire compétente dans des conditions définies par décret.",
+    "version_du": "2026-08-05"
+   },
+   "avant": {
+    "jusqu_au": "2026-08-04",
+    "regle": "La loi parlait de « licence d'agent sportif » délivrée par la fédération délégataire."
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-03",
+   "chapitre": "agents-qui",
+   "niveau": 2,
+   "enonce": "Les fonctions de dirigeant, salarié ou encadrant dans un club employant des sportifs rémunérés empêchent d'obtenir la carte d'agent si elles ont été exercées :",
+   "options": [
+    "Au cours des 6 mois précédents",
+    "Au cours des 12 mois précédents",
+    "Au cours des 2 années précédentes",
+    "À n'importe quel moment de la carrière",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "La fenêtre est de douze mois précédents, en droit ou en fait, à titre bénévole ou rémunéré, dans la discipline concernée.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-9, I",
+    "extrait": "Nul ne peut obtenir ou détenir une carte professionnelle d'agent sportif s'il exerce ou a été amené à exercer, au cours des douze mois précédents, directement ou indirectement, en droit ou en fait, à titre bénévole ou rémunéré, dans la discipline concernée, les fonctions suivantes […]",
+    "version_du": "2026-08-05"
+   },
+   "avant": {
+    "jusqu_au": "2026-08-04",
+    "regle": "Le texte visait les fonctions exercées « durant l'année écoulée » (cité dans l'annale CNOSF 2024)."
+   },
+   "origine": "Annale CNOSF 2024, cas pratique, mise à jour",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-04",
+   "chapitre": "agents-qui",
+   "niveau": 2,
+   "enonce": "Un avocat inscrit au tableau de l'ordre souhaite obtenir la carte professionnelle d'agent sportif. Il le peut :",
+   "options": [
+    "Librement, sa qualité d'avocat suffit",
+    "Seulement s'il a recouru à la procédure d'omission du tableau",
+    "Seulement avec l'accord du bâtonnier",
+    "Jamais, quelle que soit sa situation",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Depuis la réforme, l'inscription au tableau sans omission est une incompatibilité. L'avocat mandataire sportif reste possible, mais il représente une partie : il ne fait pas d'intermédiation.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-9, II, 2°",
+    "extrait": "Nul ne peut non plus obtenir ou détenir une carte professionnelle d'agent sportif […] 2° S'il est inscrit au tableau de l'ordre des avocats sans avoir recouru à la procédure d'omission […]",
+    "version_du": "2026-08-05"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-05",
+   "chapitre": "agents-qui",
+   "niveau": 2,
+   "enonce": "Un agent constitue une société pour exercer son activité. Qui ne peut pas en être associé ?",
+   "options": [
+    "Son conjoint",
+    "Un autre agent sportif",
+    "Les sportifs ou entraîneurs pour lesquels il peut exercer son activité",
+    "Une banque",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Les sportifs et entraîneurs qu'il peut représenter ne peuvent être ni dirigeants, ni associés, ni actionnaires. Les associés sont en outre soumis aux mêmes incompatibilités et incapacités que l'agent (L. 222-13).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-14",
+    "extrait": "Lorsque l'agent sportif constitue une personne morale pour l'exercice de sa profession, ses dirigeants, associés ou actionnaires ne peuvent être des sportifs ou des entraîneurs pour lesquels l'agent peut exercer l'activité mentionnée au premier alinéa de l'article L. 222-7.",
+    "version_du": "2010-06-09"
+   },
+   "origine": "Annale CNOSF 2024, cas pratique",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-06",
+   "chapitre": "agents-qui",
+   "niveau": 1,
+   "enonce": "Le préposé d'un agent sportif peut-il travailler pour plusieurs agents ?",
+   "options": [
+    "Oui, sans limite",
+    "Oui, dans la limite de deux",
+    "Non, il est interdit d'être préposé de plus d'un agent ou d'une société d'agent",
+    "Oui, avec l'accord de la fédération",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Un seul employeur dans l'activité d'agent. Le préposé est aussi soumis aux incompatibilités et incapacités de l'agent.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-12",
+    "extrait": "Il est interdit d'être préposé de plus d'un agent sportif ou de plus d'une société au sein de laquelle est exercée l'activité d'agent sportif.",
+    "version_du": "2010-06-09"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-07",
+   "chapitre": "agents-contrat",
+   "niveau": 1,
+   "enonce": "La rémunération de l'agent sportif ne peut excéder :",
+   "options": [
+    "5 % du montant du contrat conclu",
+    "8 % du montant du contrat conclu",
+    "10 % du montant du contrat conclu",
+    "15 % du montant du contrat conclu",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "10 % du contrat conclu par les parties qu'il a mises en rapport. La fédération peut fixer un taux inférieur, jamais supérieur.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, I, 3°",
+    "extrait": "Le montant de la rémunération de l'agent sportif, qui ne peut excéder 10 % du montant du contrat ou de l'accord conclu par les parties qu'il a mises en rapport",
+    "version_du": "2026-08-05"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-08",
+   "chapitre": "agents-contrat",
+   "niveau": 2,
+   "enonce": "Le contrat écrit entre l'agent et son client a une durée qui ne peut excéder :",
+   "options": [
+    "1 an",
+    "2 ans",
+    "3 ans",
+    "5 ans",
+    "La durée du contrat de travail du sportif"
+   ],
+   "bonne": 2,
+   "explication": "Trois ans au plus. Les fédérations peuvent fixer une durée maximale inférieure dans leur règlement.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, I, 2°",
+    "extrait": "La durée, qui ne peut excéder trois ans. Les fédérations délégataires peuvent fixer, dans leur règlement, une durée maximale inférieure",
+    "version_du": "2026-08-05"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-09",
+   "chapitre": "agents-contrat",
+   "niveau": 2,
+   "enonce": "Deux agents interviennent, chacun pour une partie, dans la conclusion du même contrat de travail. Leurs rémunérations :",
+   "options": [
+    "Peuvent chacune atteindre 10 %",
+    "Ne peuvent pas dépasser 10 % au total",
+    "Ne peuvent pas dépasser 20 % au total",
+    "Sont fixées librement par la fédération",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Le plafond de 10 % s'applique au total de leurs rémunérations.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, II",
+    "extrait": "Lorsque, pour la conclusion d'un même contrat mentionné à l'article L. 222-7, plusieurs agents sportifs interviennent pour les parties à ce contrat, le montant total de leurs rémunérations ne peut excéder 10 % du montant de ce contrat.",
+    "version_du": "2026-08-05"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-10",
+   "chapitre": "agents-contrat",
+   "niveau": 2,
+   "enonce": "L'agent doit communiquer son contrat et tout avenant à la fédération délégataire compétente :",
+   "options": [
+    "Dans les 8 jours de leur signature",
+    "Dans le mois qui suit leur entrée en vigueur",
+    "Dans les 3 mois de leur signature",
+    "Uniquement à la demande de la fédération",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Dans le mois qui suit leur entrée en vigueur. Une convention non communiquée est réputée nulle et non écrite.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, I, 5°",
+    "extrait": "L'obligation pour l'agent sportif de communiquer ce contrat et tout avenant à la fédération délégataire compétente dans le mois qui suit leur entrée en vigueur.",
+    "version_du": "2026-08-05"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-11",
+   "chapitre": "agents-contrat",
+   "niveau": 2,
+   "enonce": "Un agent permet la conclusion du contrat de travail d'un joueur de 17 ans. Il peut percevoir :",
+   "options": [
+    "10 % du contrat",
+    "5 % du contrat",
+    "Une rémunération versée par les parents uniquement",
+    "Aucune rémunération, indemnité ni avantage",
+    "Une rémunération différée à la majorité du joueur"
+   ],
+   "bonne": 3,
+   "explication": "Pour un mineur, aucune contrepartie n'est permise, quelle que soit la durée du contrat, même si le joueur devient majeur en cours d'exécution. La violation est punie de deux ans et 30 000 € (L. 222-6).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-5",
+    "extrait": "La conclusion d'un contrat […] relatif à l'exercice d'une activité sportive par un mineur […] ne donne lieu, quelle que soit sa durée et celle de ses avenants, y compris si en cours d'exécution le mineur atteint l'âge de la majorité, à aucune contrepartie, rémunération ou indemnité ni à l'octroi de quelque avantage que ce soit […]",
+    "version_du": "2026-08-05"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-12",
+   "chapitre": "agents-contrat",
+   "niveau": 2,
+   "enonce": "Pour un contrat de travail sportif, la rémunération de l'agent est calculée en pourcentage :",
+   "options": [
+    "Du montant hors taxe du contrat",
+    "De la rémunération brute prévue au contrat et soumise aux cotisations sociales",
+    "De la rémunération nette versée au sportif",
+    "Du montant de l'indemnité de transfert",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Pour un contrat de travail : la rémunération brute soumise à cotisations (A. 222-2 et A. 222-5). Pour les autres contrats : le montant hors taxe servant d'assiette à la TVA (A. 222-3).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "A. 222-2 et A. 222-5",
+    "extrait": "La rémunération brute mentionnée à l'article A. 222-2 est celle prévue au contrat de travail et soumise aux cotisations sociales au sens de l'article L. 242-1 du code de la sécurité sociale.",
+    "version_du": "2012-03-15"
+   },
+   "origine": "Annale CNOSF 2024, cas pratique",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-13",
+   "chapitre": "agents-contrat",
+   "niveau": 2,
+   "enonce": "Un avenant augmente le salaire brut d'un sportif. La rémunération de l'agent qui a négocié l'avenant ne peut excéder :",
+   "options": [
+    "10 % du nouveau salaire sur toute la durée du contrat",
+    "10 % de la différence de rémunération brute, sur la durée du contrat restant à exécuter",
+    "5 % du nouveau salaire",
+    "Un forfait fixé par la fédération",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Le pourcentage porte seulement sur le gain obtenu, sur la durée restante, ou sur le taux inférieur fixé par la fédération.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "A. 222-6",
+    "extrait": "[…] la rémunération de l'agent sportif ayant mis en rapport les parties à cet avenant ne peut excéder 10 % de la différence entre la rémunération brute prévue par l'avenant au contrat de travail et la rémunération brute qui devait être versée en application du contrat dans sa rédaction antérieure […] sur la durée du contrat restant à exécuter.",
+    "version_du": "2012-03-15"
+   },
+   "origine": "Annale CNOSF 2024, cas pratique",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-14",
+   "chapitre": "agents-sanctions",
+   "niveau": 2,
+   "enonce": "Le fait d'exercer l'activité d'agent sportif sans avoir obtenu la licence est puni de :",
+   "options": [
+    "1 an d'emprisonnement et 15 000 € d'amende",
+    "2 ans d'emprisonnement et 30 000 € d'amende",
+    "2 ans d'emprisonnement et 45 000 € d'amende",
+    "5 ans d'emprisonnement et 375 000 € d'amende",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "Depuis le 5 août 2026 : cinq ans et 375 000 €, l'amende pouvant aller jusqu'au double des sommes indûment perçues. Les mêmes peines visent la violation des articles L. 222-9 à L. 222-17, sauf L. 222-11.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-20, I",
+    "extrait": "Est puni de cinq ans d'emprisonnement et de 375 000 euros d'amende le fait d'exercer l'activité définie à l'article L. 222-7 : 1° Sans avoir obtenu la licence d'agent sportif ou en méconnaissance d'une décision de suspension ou de retrait de cette licence […]",
+    "version_du": "2026-08-05"
+   },
+   "avant": {
+    "jusqu_au": "2026-08-04",
+    "regle": "Deux ans d'emprisonnement et 30 000 € d'amende : c'était la réponse attendue à l'annale 2025 (corrigés privés)."
+   },
+   "origine": "Annale CNOSF 2025, QCM 2, mise à jour",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-15",
+   "chapitre": "agents-sanctions",
+   "niveau": 1,
+   "enonce": "Peut-on se présenter à la seconde épreuve de l'examen (épreuve fédérale) sans avoir réussi la première ?",
+   "options": [
+    "Oui, les deux épreuves sont indépendantes",
+    "Non, sauf dispense prévue par le code du sport",
+    "Oui, si la note de la première épreuve est d'au moins 8/20",
+    "Oui, la moyenne des deux épreuves suffit",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Seuls les admis à la première épreuve, ou les candidats qui en sont dispensés (R. 222-18), passent la seconde. Il n'y a pas de compensation entre les épreuves.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "R. 222-15",
+    "extrait": "Seuls peuvent se présenter à la seconde épreuve les candidats qui ont été admis à la première épreuve ou en sont dispensés conformément aux dispositions de l'article R. 222-18.",
+    "version_du": "2011-06-16"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-16",
+   "chapitre": "agents-sanctions",
+   "niveau": 1,
+   "enonce": "Les résultats de la première épreuve sont notifiés aux candidats dans un délai de :",
+   "options": [
+    "15 jours",
+    "1 mois",
+    "2 mois",
+    "3 mois",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Deux mois après l'épreuve, par la commission des agents sportifs de la fédération. Pour la seconde épreuve, le délai est d'un mois (R. 222-17).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "R. 222-16",
+    "extrait": "Elle notifie les résultats aux intéressés dans les deux mois suivant la date de l'épreuve et en assure la publication dans les conditions prévues par le règlement.",
+    "version_du": "2011-06-16"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-01",
+   "chapitre": "dopage-sanctions",
+   "niveau": 2,
+   "enonce": "La durée de suspension pour un manquement impliquant une substance ou méthode non spécifiée est de :",
+   "options": [
+    "2 ans, ramenée à 1 an si le sportif démontre l'absence d'intention",
+    "3 ans, ramenée à 18 mois si le sportif démontre l'absence d'intention",
+    "4 ans, ramenée à 2 ans si le sportif démontre l'absence d'intention",
+    "6 ans, ramenée à 3 ans si le sportif démontre l'absence d'intention",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Quatre ans, ramenés à deux si le sportif prouve qu'il n'avait pas l'intention. C'est la question la plus répétée des annales.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-23-3-3, I, 1°",
+    "extrait": "Est de quatre ans lorsque ce manquement implique une substance ou méthode non spécifiée. Cette durée est ramenée à deux ans lorsque le sportif démontre qu'il n'a pas eu l'intention de commettre ce manquement",
+    "version_du": "2021-04-21"
+   },
+   "origine": "Annale CNOSF 2024, QCM 4",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-02",
+   "chapitre": "dopage-sanctions",
+   "niveau": 2,
+   "enonce": "Un sportif est contrôlé positif à une substance spécifiée. La suspension encourue est de :",
+   "options": [
+    "2 ans, portée à 4 ans si l'AFLD démontre l'intention",
+    "4 ans, ramenée à 2 ans si le sportif démontre l'absence d'intention",
+    "1 an, portée à 2 ans en cas de récidive",
+    "3 mois",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 0,
+   "explication": "Pour une substance spécifiée, la charge de la preuve s'inverse : deux ans de base, quatre ans si c'est l'AFLD qui prouve l'intention.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-23-3-3, I, 2°",
+    "extrait": "Est de deux ans lorsque ce manquement implique une substance ou méthode spécifiée. Cette durée est portée à quatre ans lorsqu'il est démontré par l'Agence française de lutte contre le dopage que le sportif a eu l'intention de commettre ce manquement.",
+    "version_du": "2021-04-21"
+   },
+   "origine": "Annale CNOSF 2025, cas pratique",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-03",
+   "chapitre": "dopage-sanctions",
+   "niveau": 2,
+   "enonce": "Un sportif établit avoir consommé une substance d'abus hors compétition, sans rapport avec la performance, et suit un traitement approuvé par l'AFLD. Sa suspension peut être ramenée à :",
+   "options": [
+    "1 mois",
+    "3 mois",
+    "6 mois",
+    "1 an",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 0,
+   "explication": "Trois mois de base, ramenés à un mois avec un traitement approuvé par l'AFLD.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-23-3-3, II, 1°",
+    "extrait": "[…] la durée des mesures de suspension […] est de trois mois. Cette durée peut être ramenée à un mois si le sportif suit un traitement contre l'usage de substances d'abus approuvé par l'Agence française de lutte contre le dopage",
+    "version_du": "2021-04-21"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-04",
+   "chapitre": "dopage-sanctions",
+   "niveau": 1,
+   "enonce": "Un sportif refuse de se soumettre au prélèvement d'un échantillon. La suspension prévue est de :",
+   "options": [
+    "1 an",
+    "2 ans",
+    "4 ans, avec des réductions possibles",
+    "Suspension définitive",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Quatre ans, comme pour une substance non spécifiée intentionnelle. Des réductions sont possibles s'il établit certaines circonstances.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-23-3-4",
+    "extrait": "La durée des mesures de suspension […] à raison d'un manquement au 4° de l'article L. 232-10 et à l'article L. 232-9-2 est de quatre ans. Elle peut être réduite dans les conditions suivantes […]",
+    "version_du": "2021-04-21"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-05",
+   "chapitre": "dopage-aide",
+   "niveau": 2,
+   "enonce": "Selon le code du sport, l'aide substantielle en matière de lutte contre le dopage suppose :",
+   "options": [
+    "De reconnaître les faits devant la commission des sanctions",
+    "De divulguer entièrement les informations en sa possession et de collaborer pleinement à l'enquête",
+    "De dénoncer au moins deux autres sportifs",
+    "De renoncer à tout recours",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Les deux conditions sont cumulatives : la divulgation complète des informations et la pleine collaboration à l'enquête.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 230-4",
+    "extrait": "Constitue une aide substantielle […] le fait pour une personne de : 1° Divulguer entièrement […] toutes les informations en sa possession […] 2° Et de collaborer pleinement à l'enquête et à l'examen de toute affaire liée à ces informations […]",
+    "version_du": "2021-04-21"
+   },
+   "origine": "Annale CNOSF 2025, cas pratique",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-06",
+   "chapitre": "dopage-aide",
+   "niveau": 2,
+   "enonce": "En cas d'aide substantielle, la suspension peut être assortie du sursis à concurrence de :",
+   "options": [
+    "La moitié de sa durée",
+    "Les deux tiers de sa durée",
+    "Les trois quarts de sa durée",
+    "La totalité, dans tous les cas",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Jusqu'aux trois quarts, en fonction de la gravité de la violation et de l'importance de l'aide. Le sursis total n'est possible qu'à titre exceptionnel, après avis de l'Agence mondiale antidopage.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-23-3-2, I",
+    "extrait": "Les sanctions mentionnées au 2° du I de l'article L. 232-23 peuvent être assorties du sursis à concurrence des trois quarts de leur durée […] en fonction de la gravité de la violation commise par l'intéressé et de l'importance de l'aide substantielle fournie par lui.",
+    "version_du": "2021-04-21"
+   },
+   "origine": "Annale CNOSF 2025, cas pratique",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-07",
+   "chapitre": "dopage-aide",
+   "niveau": 2,
+   "enonce": "Lorsque la sanction encourue est une suspension définitive, la période non assortie du sursis pour aide substantielle ne peut être inférieure à :",
+   "options": [
+    "4 ans",
+    "6 ans",
+    "8 ans",
+    "10 ans",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Huit ans de suspension ferme au minimum.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-23-3-2, I",
+    "extrait": "Lorsque la sanction encourue est une suspension définitive, la période non assortie du sursis en application du présent article ne peut être inférieure à huit ans.",
+    "version_du": "2021-04-21"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-08",
+   "chapitre": "dopage-aide",
+   "niveau": 2,
+   "enonce": "À la demande du collège de l'AFLD, la commission des sanctions peut révoquer le sursis accordé pour aide substantielle si le sportif :",
+   "options": [
+    "Commet une nouvelle violation dans les dix ans suivant la sanction",
+    "Cesse de coopérer ou de transmettre les informations promises",
+    "Change de fédération",
+    "Les réponses A et B sont correctes",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "Deux causes de révocation : une nouvelle violation dans les dix ans à compter du prononcé de la sanction, ou l'arrêt de la coopération.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-23-3-2, II",
+    "extrait": "A la demande du collège, la commission des sanctions […] peut révoquer le sursis lorsque la personne qui en bénéficie : 1° A commis, dans le délai de dix ans à compter de la date du prononcé de la sanction faisant l'objet du sursis, une violation […] 2° Ou cesse de coopérer ou de transmettre les informations qu'elle s'était engagée à fournir […]",
+    "version_du": "2021-04-21"
+   },
+   "origine": "Annale CNOSF 2025, cas pratique",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-09",
+   "chapitre": "dopage-principes",
+   "niveau": 1,
+   "enonce": "Pour établir la présence d'une substance interdite dans l'échantillon d'un sportif, l'AFLD doit prouver :",
+   "options": [
+    "L'intention du sportif",
+    "Une faute ou une négligence du sportif",
+    "Rien de plus que la présence de la substance, de ses métabolites ou de ses marqueurs",
+    "Que la substance a amélioré la performance",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "C'est le principe de responsabilité objective : chaque sportif doit s'assurer qu'aucune substance interdite ne pénètre dans son organisme.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-9, I",
+    "extrait": "La violation de l'interdiction […] est établie par la présence, dans un échantillon fourni par le sportif, d'une substance interdite, de ses métabolites ou de ses marqueurs, sans qu'il y ait lieu de faire la preuve que l'usage de cette substance a revêtu un caractère intentionnel ou a résulté d'une faute ou d'une négligence du sportif.",
+    "version_du": "2026-03-20",
+    "modifie_par": "loi n° 2026-201 du 20 mars 2026"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-10",
+   "chapitre": "dopage-principes",
+   "niveau": 1,
+   "enonce": "Un sportif a besoin d'un médicament contenant une substance interdite. Il adresse sa demande d'autorisation d'usage à des fins thérapeutiques à :",
+   "options": [
+    "Son médecin traitant",
+    "Sa fédération",
+    "L'Agence française de lutte contre le dopage",
+    "Le ministère chargé des sports",
+    "Le CNOSF"
+   ],
+   "bonne": 2,
+   "explication": "À l'AFLD. Un traitement conforme à une autorisation n'entraîne ni sanction disciplinaire ni sanction pénale.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-2",
+    "extrait": "Le sportif […] dont l'état de santé requiert l'utilisation d'une substance ou méthode figurant sur la liste des interdictions […] peut adresser à l'Agence française de lutte contre le dopage des demandes d'autorisation d'usage à des fins thérapeutiques.",
+    "version_du": "2026-03-20",
+    "modifie_par": "loi n° 2026-201 du 20 mars 2026"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-11",
+   "chapitre": "dopage-principes",
+   "niveau": 1,
+   "enonce": "Lors d'une consultation médicale donnant lieu à prescription, le sportif doit :",
+   "options": [
+    "Ne rien signaler, le secret médical s'applique",
+    "Faire état de sa qualité de sportif",
+    "Prévenir sa fédération sous 48 heures",
+    "Demander systématiquement une autorisation à l'AFLD",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Il fait état de sa qualité de sportif, pour que le praticien tienne compte de la liste des interdictions.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-2",
+    "extrait": "Le sportif fait état de sa qualité lors de toute consultation médicale qui donne lieu à prescription.",
+    "version_du": "2026-03-20",
+    "modifie_par": "loi n° 2026-201 du 20 mars 2026"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  }
+ ]
+}
