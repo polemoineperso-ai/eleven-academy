@@ -1,5 +1,5 @@
 {
- "version": "v2-2026-11-03",
+ "version": "v3-2026-11-03",
  "domaines": [
   {
    "id": "associations",
@@ -105,6 +105,22 @@
     "Seuls les admis à la première épreuve peuvent passer la seconde (R. 222-15). Résultats de la première épreuve notifiés dans les deux mois (R. 222-16)."
    ],
    "source": "Code du sport, L. 222-20, R. 222-15 et R. 222-16"
+  },
+  {
+   "id": "agents-lcb",
+   "domaine": "agents",
+   "ordre": 4,
+   "titre": "Blanchiment : les obligations de l'agent",
+   "fiche": [
+    "Les agents sportifs titulaires d'une carte professionnelle sont soumis aux obligations de lutte contre le blanchiment et le financement du terrorisme, lorsque leur fédération compte plus d'agents qu'un seuil fixé par décret (CMF, L. 561-2, 16°).",
+    "Le contrôle est assuré par l'organisme indépendant de contrôle de la fédération (L. 133-1 du Code du sport) ou, à défaut, par la fédération elle-même (L. 561-36, I, 13°). Avant le 5 août 2026, c'était la fédération.",
+    "Bénéficiaire effectif : la personne physique qui contrôle en dernier lieu le client, ou pour laquelle l'opération est faite (L. 561-2-2). Pour une société : plus de 25 % du capital ou des droits de vote, ou un contrôle par un autre moyen (R. 561-1).",
+    "Vigilance selon les risques : classification selon les services, les conditions de transaction, les canaux de distribution, les clients et le pays d'origine ou de destination des fonds (L. 561-4-1).",
+    "Conservation des documents et des mesures de vigilance : cinq ans après la fin de la relation (L. 561-12).",
+    "L'autorité d'inspection peut enjoindre à l'agent de se mettre en conformité (L. 561-36-2, VII). La Commission nationale des sanctions peut infliger jusqu'à 5 millions d'euros, ou le double de l'avantage retiré (L. 561-40).",
+    "Vocabulaire : placement (l'argent entre dans le circuit), empilage (opérations en cascade pour masquer l'origine), intégration (l'argent revient blanchi)."
+   ],
+   "source": "Code monétaire et financier, L. 561-2 à L. 561-40, R. 561-1 ; annales CNOSF 2023 à 2025"
   },
   {
    "id": "dopage-sanctions",
@@ -1432,7 +1448,7 @@
     "version_du": "2016-10-01",
     "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
    },
-   "origine": "Module 02, QCM 6",
+   "origine": "Module 02, QCM 6 ; annale CNOSF 2023, QCM 7",
    "verifiee_le": "2026-11-03"
   },
   {
@@ -2313,6 +2329,392 @@
     "modifie_par": "loi n° 2026-725 du 3 août 2026"
    },
    "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-40",
+   "chapitre": "agents-lcb",
+   "niveau": 2,
+   "enonce": "Le respect, par les agents sportifs, de leurs obligations de lutte contre le blanchiment de capitaux et le financement du terrorisme est contrôlé par :",
+   "options": [
+    "L'Autorité des marchés financiers",
+    "Le procureur de la République",
+    "L'organisme de contrôle indépendant créé par la fédération ou, à défaut, la fédération sportive",
+    "Tracfin",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Depuis le 5 août 2026, le contrôle revient à l'organisme indépendant que la fédération crée en application de l'article L. 133-1 du Code du sport, et à la fédération elle-même si elle n'en a pas créé.",
+   "article": {
+    "texte": "Code monétaire et financier",
+    "ref": "L. 561-36, I, 13°",
+    "extrait": "Par les organismes créés en application du premier alinéa du I de l'article L. 133-1 du code du sport ou, lorsque la fédération n'a pas créé un tel organisme, par la fédération sportive concernée, pour les personnes mentionnées au 16° de l'article L. 561-2 du présent code",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Annale CNOSF 2023, QCM 8, mise à jour",
+   "verifiee_le": "2026-11-03",
+   "avant": {
+    "jusqu_au": "2026-08-04",
+    "regle": "Le contrôle était assuré par la fédération sportive : c'était la réponse attendue à l'annale 2023."
+   }
+  },
+  {
+   "id": "agt-41",
+   "chapitre": "agents-lcb",
+   "niveau": 2,
+   "enonce": "Au sens du Code monétaire et financier, le bénéficiaire effectif d'une relation d'affaires est la personne physique :",
+   "options": [
+    "Qui contrôle en dernier lieu, directement, le client",
+    "Qui contrôle en dernier lieu, indirectement, le client",
+    "Pour laquelle une opération est exécutée",
+    "Pour laquelle une activité est exercée",
+    "Toutes les réponses ci-dessus sont correctes"
+   ],
+   "bonne": 4,
+   "explication": "L'article L. 561-2-2 vise la personne qui contrôle en dernier lieu le client, directement ou indirectement, et celle pour laquelle une opération est exécutée ou une activité exercée.",
+   "article": {
+    "texte": "Code monétaire et financier",
+    "ref": "L. 561-2-2",
+    "extrait": "Le bénéficiaire effectif est la ou les personnes physiques : 1° Soit qui contrôlent en dernier lieu, directement ou indirectement, le client ; 2° Soit pour laquelle une opération est exécutée ou une activité exercée.",
+    "version_du": "2016-12-01",
+    "modifie_par": "ordonnance n° 2016-1635 du 1er décembre 2016"
+   },
+   "origine": "Annale CNOSF 2023, QCM 9",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-42",
+   "chapitre": "agents-lcb",
+   "niveau": 2,
+   "enonce": "Dans une transaction concernant un joueur, le client de l'agent est une société. Son bénéficiaire effectif est la ou les personnes physiques qui détiennent, directement ou indirectement :",
+   "options": [
+    "Plus de 15 % du capital ou des droits de vote",
+    "Plus de 20 % du capital ou des droits de vote",
+    "Plus de 25 % du capital ou des droits de vote",
+    "Plus de 50 % du capital ou des droits de vote",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Le seuil est de plus de 25 % du capital ou des droits de vote, ou un contrôle exercé par tout autre moyen (R. 561-1).",
+   "article": {
+    "texte": "Code monétaire et financier",
+    "ref": "R. 561-1",
+    "extrait": "Lorsque le client d'une des personnes mentionnées à l'article L. 561-2 est une société, on entend par bénéficiaire effectif […] la ou les personnes physiques qui soit détiennent, directement ou indirectement, plus de 25 % du capital ou des droits de vote de la société, soit exercent, par tout autre moyen, un pouvoir de contrôle sur la société",
+    "version_du": "2018-04-18",
+    "modifie_par": "décret n° 2018-284 du 18 avril 2018"
+   },
+   "origine": "Annale CNOSF 2024, QCM 18",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-43",
+   "chapitre": "agents-lcb",
+   "niveau": 2,
+   "enonce": "Pour appliquer leurs mesures de vigilance, les agents sportifs élaborent une classification des risques de blanchiment en fonction :",
+   "options": [
+    "De la nature des services offerts",
+    "Des conditions de transaction proposées",
+    "Des caractéristiques des clients",
+    "Du pays ou du territoire d'origine ou de destination des fonds",
+    "Toutes les réponses ci-dessus sont correctes"
+   ],
+   "bonne": 4,
+   "explication": "L'article L. 561-4-1 cite tous ces critères, ainsi que les canaux de distribution utilisés.",
+   "article": {
+    "texte": "Code monétaire et financier",
+    "ref": "L. 561-4-1",
+    "extrait": "Elles élaborent en particulier une classification des risques en question en fonction de la nature des produits ou services offerts, des conditions de transaction proposées, des canaux de distribution utilisés, des caractéristiques des clients, ainsi que du pays ou du territoire d'origine ou de destination des fonds.",
+    "version_du": "2020-02-12",
+    "modifie_par": "ordonnance n° 2020-115 du 12 février 2020"
+   },
+   "origine": "Annale CNOSF 2025, QCM 3",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-44",
+   "chapitre": "agents-lcb",
+   "niveau": 2,
+   "enonce": "Sauf disposition plus contraignante, l'agent conserve les documents relatifs à ses clients et à ses mesures de vigilance, à compter de la fin de la relation, pendant au moins :",
+   "options": [
+    "3 ans",
+    "4 ans",
+    "5 ans",
+    "10 ans",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Cinq ans à compter de la clôture des comptes ou de la fin de la relation (L. 561-12).",
+   "article": {
+    "texte": "Code monétaire et financier",
+    "ref": "L. 561-12",
+    "extrait": "Sous réserve de dispositions plus contraignantes, les personnes mentionnées à l'article L. 561-2 conservent pendant cinq ans à compter de la clôture de leurs comptes ou de la cessation de leurs relations avec eux les documents et informations, quel qu'en soit le support, relatifs à leurs relations d'affaires ou clients occasionnels, ainsi qu'aux mesures de vigilance mises en œuvre.",
+    "version_du": "2020-02-12",
+    "modifie_par": "ordonnance n° 2020-115 du 12 février 2020"
+   },
+   "origine": "Annale CNOSF 2023, QCM 15",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-45",
+   "chapitre": "agents-lcb",
+   "niveau": 2,
+   "enonce": "En cas de manquement aux obligations anti-blanchiment, la Commission nationale des sanctions peut prononcer une sanction pécuniaire dont le montant ne peut dépasser :",
+   "options": [
+    "Cinq millions d'euros ou, si l'avantage retiré peut être déterminé, le double de celui-ci",
+    "Trois millions d'euros ou le double de l'avantage retiré",
+    "Un million d'euros ou le double de l'avantage retiré",
+    "500 000 euros",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 0,
+   "explication": "Cinq millions d'euros, ou le double de l'avantage retiré du manquement s'il peut être déterminé (L. 561-40). Le corrigé de l'annale cite par erreur l'article L. 561-39.",
+   "article": {
+    "texte": "Code monétaire et financier",
+    "ref": "L. 561-40, I",
+    "extrait": "La commission peut prononcer, soit à la place, soit en sus de ces sanctions, une sanction pécuniaire dont le montant ne peut être supérieur à cinq millions d'euros ou, lorsque l'avantage retiré du manquement peut être déterminé, au double de ce dernier.",
+    "version_du": "2016-12-01",
+    "modifie_par": "ordonnance n° 2016-1635 du 1er décembre 2016"
+   },
+   "origine": "Annale CNOSF 2023, QCM 16",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-46",
+   "chapitre": "agents-lcb",
+   "niveau": 2,
+   "enonce": "À l'issue d'une inspection anti-blanchiment, l'autorité chargée d'inspecter un agent sportif peut :",
+   "options": [
+    "Prononcer elle-même une peine d'emprisonnement",
+    "Lui adresser l'injonction de prendre les mesures appropriées pour se mettre en conformité",
+    "Lui retirer son diplôme",
+    "Fermer son cabinet sans décision",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "L'autorité d'inspection peut enjoindre à l'agent de se mettre en conformité, sans préjudice des sanctions que peut prononcer la Commission nationale des sanctions (L. 561-36-2, VII).",
+   "article": {
+    "texte": "Code monétaire et financier",
+    "ref": "L. 561-36-2, VII",
+    "extrait": "Les autorités administratives chargées de l'inspections des personnes mentionnées aux 9°, 9 bis, 10°, 11° bis et 16° de l'article L. 561-2 peuvent adresser aux personnes inspectées l'injonction de prendre les mesures appropriées pour se mettre en conformité avec leurs obligations, sans préjudice des sanctions qui peuvent être prononcées par la Commission nationale des sanctions.",
+    "version_du": "2025-06-30",
+    "modifie_par": "loi n° 2025-594 du 30 juin 2025"
+   },
+   "origine": "Annale CNOSF 2024, QCM 5, mise à jour",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-47",
+   "chapitre": "agents-lcb",
+   "niveau": 2,
+   "enonce": "Quels agents sportifs sont soumis aux obligations de lutte contre le blanchiment du Code monétaire et financier ?",
+   "options": [
+    "Tous les intermédiaires du sport, même sans carte",
+    "Seulement les agents qui travaillent avec des clubs étrangers",
+    "Les titulaires d'une carte professionnelle délivrée par une fédération dont le nombre d'agents dépasse un seuil fixé par décret",
+    "Seulement les agents constitués en société",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Le 16° de l'article L. 561-2 vise les agents titulaires d'une carte professionnelle, lorsque leur fédération compte plus d'agents qu'un seuil fixé par décret.",
+   "article": {
+    "texte": "Code monétaire et financier",
+    "ref": "L. 561-2, 16°",
+    "extrait": "Les personnes exerçant l'activité d'agents sportifs mentionnés à l'article L. 222-7 du code du sport titulaires d'une carte professionnelle délivrée par une fédération dont le nombre d'agents sportifs dépasse un seuil déterminé par décret",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-48",
+   "chapitre": "agents-qui",
+   "niveau": 2,
+   "enonce": "Nul ne peut obtenir ou détenir une carte professionnelle d'agent sportif s'il a été condamné pour un délit prévu à l'article 1741 du Code général des impôts. Ce délit consiste notamment :",
+   "options": [
+    "À se soustraire frauduleusement au paiement de l'impôt",
+    "À omettre volontairement de faire sa déclaration dans les délais",
+    "À organiser son insolvabilité ou à faire obstacle au recouvrement de l'impôt",
+    "Toutes les réponses ci-dessus sont correctes",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "L'article 1741 du CGI réprime la fraude fiscale sous toutes ces formes. Une telle condamnation empêche d'obtenir ou de garder la carte (L. 222-11, 1° bis).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-11, 1° bis",
+    "extrait": "Nul ne peut obtenir ou détenir une carte professionnelle d'agent sportif s'il : […] 1° bis A fait l'objet d'une condamnation pour un délit prévu à l'article 1741 du code général des impôts",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Annale CNOSF 2024, QCM 6, mise à jour",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-49",
+   "chapitre": "agents-sanctions",
+   "niveau": 2,
+   "enonce": "Un litige contractuel oppose un agent sportif à un sportif professionnel. Avant tout recours au juge :",
+   "options": [
+    "La conciliation devant le CNOSF est obligatoire dans tous les cas",
+    "La conciliation devant le CNOSF est obligatoire si l'agent détient la carte professionnelle",
+    "La chambre arbitrale du sport du CNOSF est obligatoirement compétente",
+    "La conciliation n'est obligatoire qu'après un échec devant la commission fédérale des agents",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 4,
+   "explication": "La conciliation préalable devant le CNOSF ne vaut que pour un conflit né d'une décision fédérale (R. 141-5). Un litige contractuel entre agent et sportif n'en est pas une, et l'arbitrage du CNOSF suppose l'accord des parties.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "R. 141-5",
+    "extrait": "La saisine du comité à fin de conciliation constitue un préalable obligatoire à tout recours contentieux, lorsque le conflit résulte d'une décision, susceptible ou non de recours interne, prise par une fédération dans l'exercice de prérogatives de puissance publique ou en application de ses statuts.",
+    "version_du": "2007-07-24",
+    "modifie_par": "décret n° 2007-1133 du 24 juillet 2007"
+   },
+   "origine": "Annale CNOSF 2025, QCM 13",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-12",
+   "chapitre": "dopage-principes",
+   "niveau": 2,
+   "enonce": "Le laboratoire accrédité par l'Agence mondiale antidopage en France peut comparer des empreintes génétiques, lorsque les autres techniques ne suffisent pas, pour rechercher :",
+   "options": [
+    "Une administration de sang homologue",
+    "Une substitution d'échantillons prélevés",
+    "Une manipulation génétique pouvant modifier les caractéristiques somatiques aux fins d'augmenter la performance",
+    "Toutes les réponses ci-dessus sont correctes",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "L'article L. 232-12-2 vise ces trois cas, et une mutation génétique induisant la production d'une substance interdite.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-12-2, I",
+    "extrait": "Le laboratoire accrédité par l'Agence mondiale antidopage en France peut procéder […] à la comparaison d'empreintes génétiques et à l'examen de caractéristiques génétiques pour la recherche des cas suivants : 1° Une administration de sang homologue ; 2° Une substitution d'échantillons prélevés ; 3° Une mutation génétique […] ; 4° Une manipulation génétique pouvant modifier les caractéristiques somatiques aux fins d'augmentation de la performance.",
+    "version_du": "2026-03-20",
+    "modifie_par": "loi n° 2026-201 du 20 mars 2026"
+   },
+   "origine": "Annale CNOSF 2023, QCM 1",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-13",
+   "chapitre": "dopage-sanctions",
+   "niveau": 2,
+   "enonce": "En cas de violation des règles antidopage, l'action disciplinaire se prescrit par :",
+   "options": [
+    "5 ans à compter de la violation",
+    "8 ans à compter de la violation",
+    "10 ans à compter de la violation",
+    "12 ans à compter de la violation",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Dix années révolues à compter de la violation, délai interrompu par tout acte d'instruction ou de poursuite (L. 232-24-1).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-24-1",
+    "extrait": "L'action disciplinaire se prescrit par dix années révolues à compter de la date de la violation des dispositions du présent chapitre. Ce délai est interrompu par tout acte d'instruction ou de poursuite.",
+    "version_du": "2021-04-21"
+   },
+   "origine": "Annale CNOSF 2024, QCM 15",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-14",
+   "chapitre": "dopage-sanctions",
+   "niveau": 2,
+   "enonce": "Trois manquements aux obligations de localisation d'un sportif du groupe cible sont sanctionnables lorsqu'ils interviennent au cours d'une période continue de :",
+   "options": [
+    "Six mois",
+    "Douze mois",
+    "Dix-huit mois",
+    "Vingt-quatre mois",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Douze mois (L. 232-9-3), comme dans le code mondial antidopage. Comptent aussi les manquements constatés par les autres organisations signataires.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-9-3",
+    "extrait": "Toute combinaison de trois manquements aux obligations de localisation prévues par l'article L. 232-15 au cours d'une période continue de douze mois est passible des sanctions administratives prévues par les articles L. 232-21-1 à L. 232-23-3-12.",
+    "version_du": "2026-03-20",
+    "modifie_par": "loi n° 2026-201 du 20 mars 2026"
+   },
+   "origine": "Annale CNOSF 2025, QCM 7",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "dop-15",
+   "chapitre": "dopage-aide",
+   "niveau": 2,
+   "enonce": "Le sursis accordé pour aide substantielle est fixé en fonction :",
+   "options": [
+    "De l'âge du sportif et de son palmarès",
+    "De la gravité de la violation commise et de l'importance de l'aide fournie",
+    "Du niveau de la compétition et du nombre de contrôles",
+    "De l'avis de la fédération et du club",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Ce sont les deux critères de l'article L. 232-23-3-2 : la gravité de la violation et l'importance de l'aide substantielle.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 232-23-3-2, I",
+    "extrait": "Les sanctions mentionnées au 2° du I de l'article L. 232-23 peuvent être assorties du sursis à concurrence des trois quarts de leur durée […] en fonction de la gravité de la violation commise par l'intéressé et de l'importance de l'aide substantielle fournie par lui.",
+    "version_du": "2021-04-21"
+   },
+   "origine": "Annale CNOSF 2025, cas pratique",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-46",
+   "chapitre": "contrats-inexecution",
+   "niveau": 2,
+   "enonce": "La résolution d'un contrat peut résulter :",
+   "options": [
+    "De l'application d'une clause résolutoire",
+    "D'une notification du créancier au débiteur, en cas d'inexécution suffisamment grave",
+    "D'une décision de justice",
+    "Toutes les réponses ci-dessus sont correctes",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "L'article 1224 prévoit ces trois voies : la clause résolutoire, la notification du créancier et la décision du juge.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1224",
+    "extrait": "La résolution résulte soit de l'application d'une clause résolutoire soit, en cas d'inexécution suffisamment grave, d'une notification du créancier au débiteur ou d'une décision de justice.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Annale CNOSF 2024, QCM 17",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-47",
+   "chapitre": "contrats-bases",
+   "niveau": 2,
+   "enonce": "Le principe de l'effet relatif des contrats signifie :",
+   "options": [
+    "Que le contrat ne crée d'obligations qu'entre les parties",
+    "Que le contrat ne peut jamais être opposé aux tiers",
+    "Que les tiers peuvent exiger l'exécution du contrat",
+    "Que le contrat ne produit d'effet qu'après un an",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 0,
+   "explication": "Le contrat ne crée d'obligations qu'entre les parties : les tiers ne peuvent ni en demander l'exécution ni être contraints de l'exécuter (art. 1199). Il leur reste en revanche opposable.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1199",
+    "extrait": "Le contrat ne crée d'obligations qu'entre les parties. Les tiers ne peuvent ni demander l'exécution du contrat ni se voir contraints de l'exécuter, sous réserve des dispositions de la présente section et de celles du chapitre III du titre IV.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Annale CNOSF 2025, QCM 15",
    "verifiee_le": "2026-11-03"
   }
  ]
