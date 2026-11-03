@@ -1,5 +1,5 @@
 {
- "version": "v1-2026-11-03",
+ "version": "v2-2026-11-03",
  "domaines": [
   {
    "id": "associations",
@@ -20,6 +20,13 @@
    "ordre": 3,
    "titre": "Dopage",
    "sous_titre": "Code du sport, L. 230-1 et suivants",
+   "epreuve": "generale"
+  },
+  {
+   "id": "contrats",
+   "ordre": 4,
+   "titre": "Contrats",
+   "sous_titre": "Code civil : contrat, mandat, contrats voisins",
    "epreuve": "generale"
   }
  ],
@@ -78,9 +85,13 @@
     "Il est communiqué à la fédération, avec ses avenants, dans le mois qui suit leur entrée en vigueur ; sinon il est réputé nul (L. 222-17).",
     "Plusieurs agents sur un même contrat : 10 % au total (L. 222-17, II).",
     "Contrat de travail sportif : rémunération calculée en pourcentage de la rémunération brute soumise à cotisations (A. 222-2 et A. 222-5). Avenant d'augmentation : 10 % au plus de la différence sur la durée restante (A. 222-6).",
-    "Mineurs : aucune rémunération ni avantage pour l'intermédiaire (L. 222-5)."
+    "Mineurs : aucune rémunération ni avantage pour l'intermédiaire (L. 222-5).",
+    "Plusieurs agents qui coopèrent, par exemple dans une même société, ne peuvent agir pour plus d'une partie dans l'ensemble des contrats d'une mutation (L. 222-17, I).",
+    "Convention tripartite : le club peut payer tout ou partie de la rémunération due par le joueur ; elle précise les conséquences fiscales et sociales, et l'agent donne quittance (L. 222-17, II).",
+    "Convention de collaboration : seulement entre agents titulaires de la carte professionnelle, dans la même discipline (L. 222-17, II).",
+    "La rémunération n'est versée qu'après la transmission du contrat de l'agent à la fédération (L. 222-18, 3°)."
    ],
-   "source": "Code du sport, L. 222-5, L. 222-17, A. 222-2 à A. 222-6"
+   "source": "Code du sport, L. 222-5, L. 222-17, L. 222-18, A. 222-2 à A. 222-6 ; Module 02, partie C"
   },
   {
    "id": "agents-sanctions",
@@ -134,6 +145,96 @@
     "Pour un traitement nécessitant une substance interdite, il demande une autorisation d'usage à des fins thérapeutiques à l'AFLD (L. 232-2)."
    ],
    "source": "Code du sport, L. 232-2 et L. 232-9"
+  },
+  {
+   "id": "contrats-bases",
+   "domaine": "contrats",
+   "ordre": 1,
+   "titre": "Le contrat et sa formation",
+   "fiche": [
+    "Le contrat est un accord de volontés entre deux personnes ou plus, destiné à créer, modifier, transmettre ou éteindre des obligations (art. 1101). Ce n'est pas forcément un papier signé.",
+    "Liberté contractuelle : contracter ou non, choisir son cocontractant, fixer le contenu et la forme, dans les limites de la loi. Elle ne permet pas de déroger à l'ordre public (art. 1102).",
+    "Force obligatoire : le contrat légalement formé tient lieu de loi aux parties (art. 1103). Il ne se modifie ou ne se révoque que d'un commun accord, ou pour une cause que la loi autorise (art. 1193).",
+    "Bonne foi à trois moments : négociation, formation, exécution. C'est d'ordre public (art. 1104).",
+    "Imprévision : si un changement imprévisible rend l'exécution excessivement onéreuse, on peut demander une renégociation, mais on continue d'exécuter pendant ce temps (art. 1195).",
+    "Trois conditions de validité : consentement, capacité, contenu licite et certain (art. 1128). Toute personne physique peut contracter, sauf incapacité prévue par la loi (art. 1145).",
+    "Dans un transfert, ne pas confondre le mandat joueur–agent, le contrat de travail joueur–club, la convention tripartite et l'accord entre clubs : ce sont des contrats distincts."
+   ],
+   "source": "Code civil, art. 1101 à 1104, 1128, 1145, 1193 à 1195 ; Module 02, partie A"
+  },
+  {
+   "id": "contrats-consentement",
+   "domaine": "contrats",
+   "ordre": 2,
+   "titre": "Les vices du consentement",
+   "fiche": [
+    "Trois vices : l'erreur, le dol et la violence. Ils comptent s'ils ont été déterminants : sans eux, la partie n'aurait pas contracté, ou à des conditions très différentes (art. 1130).",
+    "Sanction : nullité relative, qui protège la victime (art. 1131).",
+    "Erreur : sur les qualités essentielles de la prestation ou du cocontractant, et non inexcusable (art. 1132). L'erreur sur la seule valeur n'annule pas le contrat (art. 1136).",
+    "Dol : manœuvres, mensonges, ou silence volontaire sur une information que l'on sait déterminante. Taire son estimation de la valeur n'est pas un dol (art. 1137).",
+    "Violence : contrainte qui fait craindre un mal considérable (art. 1140), y compris l'abus d'un état de dépendance qui procure un avantage manifestement excessif (art. 1143).",
+    "Délai d'action : cinq ans (art. 2224), à compter de la découverte pour l'erreur et le dol, de la fin de la violence pour la violence (art. 1144)."
+   ],
+   "source": "Code civil, art. 1130 à 1144 et 2224 ; Module 02, partie A"
+  },
+  {
+   "id": "contrats-inexecution",
+   "domaine": "contrats",
+   "ordre": 3,
+   "titre": "Inexécution et fin du contrat",
+   "fiche": [
+    "Face à une inexécution, cinq sanctions : suspendre sa propre obligation, exécution forcée en nature, réduction du prix, résolution, réparation. Celles qui sont compatibles se cumulent (art. 1217).",
+    "Exception d'inexécution : seulement si l'inexécution de l'autre est suffisamment grave (art. 1219). Suspension par anticipation possible, notifiée au plus vite (art. 1220).",
+    "Exécution forcée après mise en demeure, sauf impossibilité ou coût manifestement disproportionné (art. 1221).",
+    "Résolution : clause résolutoire, notification du créancier à ses risques et périls, ou décision du juge (art. 1224 à 1227). Les clauses de confidentialité, de non-concurrence et de règlement des différends survivent (art. 1230).",
+    "Dommages et intérêts : perte subie et gain manqué (art. 1231-2), limités au dommage prévisible sauf faute lourde ou dolosive (art. 1231-3), écartés en cas de force majeure (art. 1231-1).",
+    "Clause pénale : le juge peut, même d'office, la modérer ou l'augmenter si elle est manifestement excessive ou dérisoire (art. 1231-5).",
+    "Fin du contrat : engagements perpétuels interdits (art. 1210) ; durée indéterminée : résiliation avec préavis (art. 1211) ; durée déterminée : exécution jusqu'au terme (art. 1212) ; tacite reconduction : nouveau contrat à durée indéterminée (art. 1214 et 1215) ; caducité si un élément essentiel disparaît (art. 1186)."
+   ],
+   "source": "Code civil, art. 1186, 1210 à 1231-5 ; Module 02, partie A"
+  },
+  {
+   "id": "contrats-mandat",
+   "domaine": "contrats",
+   "ordre": 4,
+   "titre": "Le mandat du Code civil",
+   "fiche": [
+    "Mandat : une personne donne à une autre le pouvoir de faire quelque chose pour elle et en son nom ; il se forme par l'acceptation du mandataire (art. 1984). Le joueur est le mandant, l'agent le mandataire.",
+    "En droit commun, il peut être verbal et accepté tacitement (art. 1985). Le mandat d'agent sportif, lui, exige un écrit (Code du sport, L. 222-17).",
+    "Gratuit sauf convention contraire (art. 1986). Spécial ou général (art. 1987) ; le mandat général ne couvre que les actes d'administration : vendre exige un mandat exprès (art. 1988).",
+    "Le mandataire ne peut rien faire au-delà de son mandat (art. 1989). Il exécute la mission (art. 1991), répond de ses fautes, plus sévèrement s'il est payé (art. 1992), rend compte de sa gestion (art. 1993) et répond de son substitut dans certains cas (art. 1994).",
+    "Le mandant exécute les engagements pris dans la limite du pouvoir donné ; au-delà, seulement s'il ratifie (art. 1998). Il rembourse frais et avances et paie la rémunération promise, même si l'affaire échoue, sauf faute du mandataire (art. 1999).",
+    "Fin : révocation, renonciation, décès, tutelle ou déconfiture (art. 2003). Le mandant révoque quand bon lui semble (art. 2004) ; le mandataire qui renonce indemnise le mandant s'il lui cause un préjudice (art. 2007)."
+   ],
+   "source": "Code civil, art. 1984 à 2007 ; Module 02, partie B"
+  },
+  {
+   "id": "contrats-voisins",
+   "domaine": "contrats",
+   "ordre": 5,
+   "titre": "Mandat, commission, courtage, entreprise",
+   "fiche": [
+    "Toujours se demander ce que fait réellement la personne, pour le compte de qui elle agit, et au nom de qui elle signe.",
+    "Mandat : représentation ; le mandataire agit au nom du mandant (art. 1984 C. civ.).",
+    "Commission : le commissionnaire agit en son propre nom pour le compte d'un commettant (art. L. 132-1 C. com.).",
+    "Courtage : rapprocher des parties sans forcément représenter l'une d'elles ; aucun article unique du Code civil ne le définit.",
+    "Contrat d'entreprise (louage d'ouvrage) : faire quelque chose pour l'autre moyennant un prix convenu (art. 1710 C. civ.). Être payé ne le transforme pas en mandat.",
+    "Agent sportif : c'est l'activité réelle de mise en relation (L. 222-7) qui déclenche la réglementation, quel que soit le nom donné au contrat."
+   ],
+   "source": "Code civil, art. 1710 et 1984 ; Code de commerce, L. 132-1 ; Code du sport, L. 222-7 ; Module 02, parties C et D"
+  },
+  {
+   "id": "contrats-cas",
+   "domaine": "contrats",
+   "ordre": 6,
+   "titre": "Cas pratique : un mandat à corriger",
+   "fiche": [
+    "Situation : un joueur professionnel de 19 ans signe avec un agent un mandat exclusif de quatre ans. Le contrat prévoit 12 % de commission, une intervention pour le joueur et pour le club, aucune transmission à la fédération, et une clause qui interdit au joueur d'y mettre fin un jour.",
+    "Méthode : contrôler un à un les cinq points de L. 222-17 (services et exclusivité, durée, rémunération, partie qui paie, communication), puis la règle d'une seule partie représentée, puis le droit commun des contrats.",
+    "Le joueur est majeur : l'interdiction de rémunérer l'intermédiaire d'un mineur (L. 222-5) ne joue pas, c'est le plafond de 10 % qui s'applique.",
+    "Bilan : durée trop longue, commission trop élevée, double représentation interdite, transmission obligatoire, engagement perpétuel prohibé (art. 1210 C. civ.)."
+   ],
+   "source": "Module 02, cas pratique transversal ; Code du sport, L. 222-17 ; Code civil, art. 1210"
   }
  ],
  "questions": [
@@ -1049,6 +1150,1167 @@
     "extrait": "Le sportif fait état de sa qualité lors de toute consultation médicale qui donne lieu à prescription.",
     "version_du": "2026-03-20",
     "modifie_par": "loi n° 2026-201 du 20 mars 2026"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-01",
+   "chapitre": "contrats-bases",
+   "niveau": 1,
+   "enonce": "Selon l'article 1101 du Code civil, le contrat est :",
+   "options": [
+    "Un document obligatoirement signé",
+    "Un accord de volontés destiné à créer, modifier, transmettre ou éteindre des obligations",
+    "Une déclaration unilatérale",
+    "Une décision judiciaire"
+   ],
+   "bonne": 1,
+   "explication": "Le contrat est d'abord un accord de volontés entre deux personnes ou plus. Un écrit n'est exigé que lorsque la loi l'impose, comme pour le mandat d'agent sportif.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1101",
+    "extrait": "Le contrat est un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Module 02, QCM 1",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-02",
+   "chapitre": "contrats-bases",
+   "niveau": 1,
+   "enonce": "La liberté contractuelle permet-elle de déroger à l'ordre public ?",
+   "options": [
+    "Oui, avec un accord écrit",
+    "Oui, si le contrat est rémunéré",
+    "Non",
+    "Uniquement entre professionnels"
+   ],
+   "bonne": 2,
+   "explication": "L'article 1102 le dit en toutes lettres : la liberté contractuelle ne permet pas de déroger aux règles qui intéressent l'ordre public.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1102",
+    "extrait": "Chacun est libre de contracter ou de ne pas contracter, de choisir son cocontractant et de déterminer le contenu et la forme du contrat dans les limites fixées par la loi. La liberté contractuelle ne permet pas de déroger aux règles qui intéressent l'ordre public.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Module 02, QCM 2",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-03",
+   "chapitre": "contrats-bases",
+   "niveau": 1,
+   "enonce": "Quel article du Code civil impose la bonne foi pendant la négociation, la formation et l'exécution du contrat ?",
+   "options": [
+    "Article 1101",
+    "Article 1102",
+    "Article 1103",
+    "Article 1104"
+   ],
+   "bonne": 3,
+   "explication": "L'article 1104 couvre les trois moments du contrat, et précise que cette règle est d'ordre public.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1104",
+    "extrait": "Les contrats doivent être négociés, formés et exécutés de bonne foi. Cette disposition est d'ordre public.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Module 02, QCM 3",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-04",
+   "chapitre": "contrats-bases",
+   "niveau": 1,
+   "enonce": "Quelles sont les trois conditions de validité du contrat posées par l'article 1128 ?",
+   "options": [
+    "Un écrit, une signature et une rémunération",
+    "Le consentement, la capacité, un contenu licite et certain",
+    "La nationalité, l'âge et le domicile",
+    "La durée, l'objet et le paiement"
+   ],
+   "bonne": 1,
+   "explication": "Les trois conditions sont cumulatives : le consentement des parties, leur capacité de contracter, un contenu licite et certain.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1128",
+    "extrait": "Sont nécessaires à la validité d'un contrat : 1° Le consentement des parties ; 2° Leur capacité de contracter ; 3° Un contenu licite et certain.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Module 02, QCM 4",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-05",
+   "chapitre": "contrats-bases",
+   "niveau": 1,
+   "enonce": "Que prévoit l'article 1193 du Code civil ?",
+   "options": [
+    "La gratuité du mandat",
+    "La modification ou la révocation du contrat par accord mutuel ou pour une cause autorisée par la loi",
+    "La durée maximale de trois ans",
+    "Le plafond de commission"
+   ],
+   "bonne": 1,
+   "explication": "Un contrat ne change pas sur la décision d'une seule partie : il faut l'accord des deux, ou une cause prévue par la loi.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1193",
+    "extrait": "Les contrats ne peuvent être modifiés ou révoqués que du consentement mutuel des parties, ou pour les causes que la loi autorise.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Module 02, QCM 7",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-06",
+   "chapitre": "contrats-bases",
+   "niveau": 2,
+   "enonce": "Un agent et un joueur, tous deux d'accord, signent un mandat qui prévoit une commission de 15 % du contrat négocié. Cette clause :",
+   "options": [
+    "Est valable, car la liberté contractuelle prime",
+    "Est valable si le joueur l'a approuvée par écrit",
+    "Est valable si la fédération l'accepte",
+    "Ne peut pas écarter une règle impérative : elle est réputée non écrite",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "L'accord des parties ne rend pas licite une clause contraire à l'ordre public (art. 1102). Le Code du sport plafonne la rémunération à 10 % et répute non écrite toute convention contraire (L. 222-17).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1102",
+    "extrait": "Chacun est libre de contracter ou de ne pas contracter, de choisir son cocontractant et de déterminer le contenu et la forme du contrat dans les limites fixées par la loi. La liberté contractuelle ne permet pas de déroger aux règles qui intéressent l'ordre public.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-07",
+   "chapitre": "contrats-bases",
+   "niveau": 2,
+   "enonce": "Selon l'article 1104 du Code civil, l'obligation de bonne foi :",
+   "options": [
+    "Ne s'applique qu'à l'exécution du contrat",
+    "Peut être écartée par une clause expresse",
+    "Ne concerne que les contrats entre professionnels",
+    "S'applique à la négociation, à la formation et à l'exécution, et elle est d'ordre public",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "La bonne foi vaut avant, pendant et après la signature. Comme elle est d'ordre public, aucune clause ne peut l'écarter.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1104",
+    "extrait": "Les contrats doivent être négociés, formés et exécutés de bonne foi. Cette disposition est d'ordre public.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-08",
+   "chapitre": "contrats-bases",
+   "niveau": 2,
+   "enonce": "Un changement de circonstances imprévisible rend l'exécution d'un contrat excessivement onéreuse pour une partie qui n'en avait pas accepté le risque. Cette partie peut :",
+   "options": [
+    "Suspendre aussitôt ses obligations",
+    "Demander une renégociation, en continuant d'exécuter ses obligations pendant celle-ci",
+    "Résilier seule le contrat sans préavis",
+    "Obtenir de plein droit une réduction du prix",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "C'est l'imprévision de l'article 1195 : on renégocie, mais on continue d'exécuter. En cas d'échec, les parties peuvent convenir de la résolution ou saisir le juge.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1195",
+    "extrait": "Si un changement de circonstances imprévisible lors de la conclusion du contrat rend l'exécution excessivement onéreuse pour une partie qui n'avait pas accepté d'en assumer le risque, celle-ci peut demander une renégociation du contrat à son cocontractant. Elle continue à exécuter ses obligations durant la renégociation.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-09",
+   "chapitre": "contrats-bases",
+   "niveau": 2,
+   "enonce": "Lequel de ces éléments n'est PAS une condition de validité du contrat selon l'article 1128 du Code civil ?",
+   "options": [
+    "Le consentement des parties",
+    "La capacité de contracter",
+    "Un contenu licite et certain",
+    "Un écrit signé par les parties",
+    "Toutes ces réponses sont des conditions de validité"
+   ],
+   "bonne": 3,
+   "explication": "L'article 1128 pose trois conditions seulement. L'écrit n'est exigé que pour certains contrats, quand la loi l'impose.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1128",
+    "extrait": "Sont nécessaires à la validité d'un contrat : 1° Le consentement des parties ; 2° Leur capacité de contracter ; 3° Un contenu licite et certain.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-10",
+   "chapitre": "contrats-bases",
+   "niveau": 2,
+   "enonce": "Un club veut modifier seul la durée d'un contrat de prestation déjà signé. En principe :",
+   "options": [
+    "Il le peut s'il prévient l'autre partie un mois avant",
+    "Il le peut si la modification est mineure",
+    "Il ne le peut qu'avec l'accord de l'autre partie ou pour une cause que la loi autorise",
+    "Il le peut après avis de la fédération",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "C'est la force obligatoire du contrat : il se modifie d'un commun accord, ou pour une cause prévue par la loi (art. 1193).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1193",
+    "extrait": "Les contrats ne peuvent être modifiés ou révoqués que du consentement mutuel des parties, ou pour les causes que la loi autorise.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-11",
+   "chapitre": "contrats-consentement",
+   "niveau": 1,
+   "enonce": "Quels sont les trois vices du consentement ?",
+   "options": [
+    "L'erreur, le dol et la violence",
+    "La fraude, le retard et la faute",
+    "La nullité, la caducité et la résolution",
+    "L'erreur, l'imprudence et la mauvaise foi"
+   ],
+   "bonne": 0,
+   "explication": "L'article 1130 en retient trois : l'erreur, le dol et la violence, à condition qu'ils aient été déterminants.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1130",
+    "extrait": "L'erreur, le dol et la violence vicient le consentement lorsqu'ils sont de telle nature que, sans eux, l'une des parties n'aurait pas contracté ou aurait contracté à des conditions substantiellement différentes.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Module 02, QCM 5",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-12",
+   "chapitre": "contrats-consentement",
+   "niveau": 1,
+   "enonce": "En principe, les vices du consentement entraînent :",
+   "options": [
+    "Une nullité absolue",
+    "Une suspension automatique du contrat",
+    "Une nullité relative",
+    "Une simple réduction du prix"
+   ],
+   "bonne": 2,
+   "explication": "La nullité est relative (art. 1131) : elle protège la partie dont le consentement a été vicié.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1131",
+    "extrait": "Les vices du consentement sont une cause de nullité relative du contrat.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Module 02, QCM 6",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-13",
+   "chapitre": "contrats-consentement",
+   "niveau": 2,
+   "enonce": "Un joueur signe un mandat après que l'agent lui a montré de faux documents sur les transferts qu'il aurait réalisés. Le joueur peut invoquer :",
+   "options": [
+    "L'erreur sur la valeur",
+    "Le dol",
+    "La violence",
+    "L'imprévision",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Obtenir un consentement par des manœuvres ou des mensonges, c'est un dol (art. 1137). Il permet de demander la nullité du contrat.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1137",
+    "extrait": "Le dol est le fait pour un contractant d'obtenir le consentement de l'autre par des manœuvres ou des mensonges. Constitue également un dol la dissimulation intentionnelle par l'un des contractants d'une information dont il sait le caractère déterminant pour l'autre partie.",
+    "version_du": "2018-10-01",
+    "modifie_par": "loi n° 2018-287 du 20 avril 2018"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-14",
+   "chapitre": "contrats-consentement",
+   "niveau": 2,
+   "enonce": "Le délai de l'action en nullité pour dol court à compter :",
+   "options": [
+    "De la signature du contrat",
+    "Du jour où le dol a été découvert",
+    "Du jour où le contrat a pris fin",
+    "Du premier paiement",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Pour l'erreur et le dol, le délai part de leur découverte ; pour la violence, du jour où elle a cessé (art. 1144). Le délai est de cinq ans (art. 2224).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1144",
+    "extrait": "Le délai de l'action en nullité ne court, en cas d'erreur ou de dol, que du jour où ils ont été découverts et, en cas de violence, que du jour où elle a cessé.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-15",
+   "chapitre": "contrats-consentement",
+   "niveau": 2,
+   "enonce": "Après coup, un joueur estime avoir accepté une rémunération trop basse, sans s'être trompé sur les qualités essentielles du contrat. Cette erreur sur la valeur :",
+   "options": [
+    "Entraîne la nullité absolue",
+    "Entraîne la nullité relative",
+    "Ouvre droit à une réduction automatique du prix",
+    "N'est pas une cause de nullité",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "Une mauvaise affaire n'est pas une erreur au sens juridique : l'erreur sur la seule valeur n'annule pas le contrat (art. 1136).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1136",
+    "extrait": "L'erreur sur la valeur par laquelle, sans se tromper sur les qualités essentielles de la prestation, un contractant fait seulement de celle-ci une appréciation économique inexacte, n'est pas une cause de nullité.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-16",
+   "chapitre": "contrats-consentement",
+   "niveau": 2,
+   "enonce": "Il y a violence par abus de l'état de dépendance lorsqu'une partie :",
+   "options": [
+    "Obtient un engagement que l'autre n'aurait pas pris sans cette contrainte, et en tire un avantage manifestement excessif",
+    "Négocie un prix inférieur à celui du marché",
+    "Refuse de signer un avenant",
+    "Profite d'une erreur sur la valeur",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 0,
+   "explication": "L'article 1143 exige les deux : un engagement obtenu grâce à la dépendance de l'autre, et un avantage manifestement excessif.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1143",
+    "extrait": "Il y a également violence lorsqu'une partie, abusant de l'état de dépendance dans lequel se trouve son cocontractant à son égard, obtient de lui un engagement qu'il n'aurait pas souscrit en l'absence d'une telle contrainte et en tire un avantage manifestement excessif.",
+    "version_du": "2018-10-01",
+    "modifie_par": "loi n° 2018-287 du 20 avril 2018"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-17",
+   "chapitre": "contrats-consentement",
+   "niveau": 2,
+   "enonce": "Le dol peut résulter :",
+   "options": [
+    "Uniquement de mensonges écrits",
+    "Du simple fait de ne pas révéler son estimation de la valeur de la prestation",
+    "De manœuvres, de mensonges, ou de la dissimulation volontaire d'une information que l'on sait déterminante",
+    "Uniquement de manœuvres frauduleuses",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "L'article 1137 vise les manœuvres, les mensonges et le silence volontaire sur une information déterminante. Taire son estimation de la valeur, en revanche, n'est pas un dol.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1137",
+    "extrait": "Le dol est le fait pour un contractant d'obtenir le consentement de l'autre par des manœuvres ou des mensonges. Constitue également un dol la dissimulation intentionnelle par l'un des contractants d'une information dont il sait le caractère déterminant pour l'autre partie.",
+    "version_du": "2018-10-01",
+    "modifie_par": "loi n° 2018-287 du 20 avril 2018"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-18",
+   "chapitre": "contrats-inexecution",
+   "niveau": 1,
+   "enonce": "Quel article traite de l'exception d'inexécution en cas d'inexécution suffisamment grave ?",
+   "options": [
+    "Article 1217",
+    "Article 1218",
+    "Article 1219",
+    "Article 1224"
+   ],
+   "bonne": 2,
+   "explication": "L'article 1219 permet de refuser d'exécuter sa propre obligation si l'autre partie n'exécute pas la sienne et si ce manquement est suffisamment grave.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1219",
+    "extrait": "Une partie peut refuser d'exécuter son obligation, alors même que celle-ci est exigible, si l'autre n'exécute pas la sienne et si cette inexécution est suffisamment grave.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Module 02, QCM 8",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-19",
+   "chapitre": "contrats-inexecution",
+   "niveau": 2,
+   "enonce": "Lequel de ces remèdes ne figure PAS parmi les sanctions de l'inexécution prévues à l'article 1217 du Code civil ?",
+   "options": [
+    "Suspendre sa propre obligation",
+    "Poursuivre l'exécution forcée en nature",
+    "Obtenir une réduction du prix",
+    "Prolonger d'office la durée du contrat",
+    "Demander réparation des conséquences de l'inexécution"
+   ],
+   "bonne": 3,
+   "explication": "L'article 1217 en prévoit cinq : suspendre, exécution forcée, réduction du prix, résolution, réparation. Prolonger le contrat n'en fait pas partie.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1217",
+    "extrait": "La partie envers laquelle l'engagement n'a pas été exécuté, ou l'a été imparfaitement, peut : refuser d'exécuter ou suspendre l'exécution de sa propre obligation ; poursuivre l'exécution forcée en nature de l'obligation ; obtenir une réduction du prix ; provoquer la résolution du contrat ; demander réparation des conséquences de l'inexécution.",
+    "version_du": "2018-10-01",
+    "modifie_par": "loi n° 2018-287 du 20 avril 2018"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-20",
+   "chapitre": "contrats-inexecution",
+   "niveau": 2,
+   "enonce": "Sauf urgence, avant de résoudre un contrat par simple notification, le créancier doit :",
+   "options": [
+    "Saisir le juge",
+    "Obtenir l'accord du débiteur",
+    "Mettre le débiteur en demeure de s'exécuter dans un délai raisonnable",
+    "Attendre le terme du contrat",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "La résolution unilatérale se fait aux risques et périls du créancier, après une mise en demeure restée sans effet (art. 1226).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1226",
+    "extrait": "Le créancier peut, à ses risques et périls, résoudre le contrat par voie de notification. Sauf urgence, il doit préalablement mettre en demeure le débiteur défaillant de satisfaire à son engagement dans un délai raisonnable.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-21",
+   "chapitre": "contrats-inexecution",
+   "niveau": 2,
+   "enonce": "Un contrat de prestation est résolu pour inexécution. Quelle clause continue de produire effet ?",
+   "options": [
+    "La clause qui fixe le prix des prestations futures",
+    "La clause de durée",
+    "La clause de confidentialité",
+    "La clause d'exclusivité",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Survivent à la résolution les clauses de règlement des différends et celles faites pour durer après la fin, comme la confidentialité et la non-concurrence (art. 1230).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1230",
+    "extrait": "La résolution n'affecte ni les clauses relatives au règlement des différends, ni celles destinées à produire effet même en cas de résolution, telles les clauses de confidentialité et de non-concurrence.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-22",
+   "chapitre": "contrats-inexecution",
+   "niveau": 2,
+   "enonce": "Une clause pénale prévoit une somme manifestement excessive en cas d'inexécution. Le juge :",
+   "options": [
+    "Ne peut jamais la modifier",
+    "Peut la modérer, même d'office",
+    "Doit l'annuler entièrement",
+    "Ne peut la réduire qu'à la demande du créancier",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Le juge peut, même sans qu'on le lui demande, modérer une pénalité manifestement excessive ou augmenter une pénalité dérisoire (art. 1231-5).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1231-5",
+    "extrait": "Néanmoins, le juge peut, même d'office, modérer ou augmenter la pénalité ainsi convenue si elle est manifestement excessive ou dérisoire.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-23",
+   "chapitre": "contrats-inexecution",
+   "niveau": 2,
+   "enonce": "Un contrat à durée déterminée arrive à son terme et les parties continuent de l'exécuter. Cette tacite reconduction donne naissance à :",
+   "options": [
+    "Un contrat de même durée que le précédent",
+    "Un nouveau contrat au contenu identique, mais à durée indéterminée",
+    "Une simple prorogation du contrat initial",
+    "Un contrat nul",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "La tacite reconduction produit les effets d'un renouvellement (art. 1215), et le renouvellement crée un nouveau contrat, au même contenu mais à durée indéterminée (art. 1214).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1214, al. 2",
+    "extrait": "Le renouvellement donne naissance à un nouveau contrat dont le contenu est identique au précédent mais dont la durée est indéterminée.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-24",
+   "chapitre": "contrats-inexecution",
+   "niveau": 2,
+   "enonce": "Sauf faute lourde ou dolosive, le débiteur n'est tenu que des dommages et intérêts :",
+   "options": [
+    "Fixés par la fédération",
+    "Prévus ou prévisibles lors de la conclusion du contrat",
+    "Égaux au prix du contrat",
+    "Réclamés par le créancier",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "C'est la limite du dommage prévisible (art. 1231-3). Elle tombe en cas de faute lourde ou dolosive.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1231-3",
+    "extrait": "Le débiteur n'est tenu que des dommages et intérêts qui ont été prévus ou qui pouvaient être prévus lors de la conclusion du contrat, sauf lorsque l'inexécution est due à une faute lourde ou dolosive.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-25",
+   "chapitre": "contrats-inexecution",
+   "niveau": 2,
+   "enonce": "Un contrat interdit à une partie d'y mettre fin, sans limite de durée. Cet engagement :",
+   "options": [
+    "Est valable, le contrat tenant lieu de loi aux parties",
+    "Est valable s'il est écrit",
+    "Est prohibé : chaque partie peut y mettre fin comme pour un contrat à durée indéterminée",
+    "N'est valable qu'entre professionnels",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Les engagements perpétuels sont prohibés (art. 1210). Chaque partie peut y mettre fin, en respectant un préavis (art. 1211).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1210",
+    "extrait": "Les engagements perpétuels sont prohibés. Chaque contractant peut y mettre fin dans les conditions prévues pour le contrat à durée indéterminée.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-26",
+   "chapitre": "contrats-mandat",
+   "niveau": 1,
+   "enonce": "Selon l'article 1984 du Code civil, le mandat est :",
+   "options": [
+    "Un contrat de travail",
+    "Le pouvoir donné à une personne de faire quelque chose pour le mandant et en son nom",
+    "Une prestation matérielle",
+    "Une vente"
+   ],
+   "bonne": 1,
+   "explication": "Le mandataire reçoit le pouvoir d'agir pour le mandant et en son nom. Le contrat se forme par son acceptation.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1984",
+    "extrait": "Le mandat ou procuration est un acte par lequel une personne donne à une autre le pouvoir de faire quelque chose pour le mandant et en son nom. Le contrat ne se forme que par l'acceptation du mandataire.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Module 02, QCM 9",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-27",
+   "chapitre": "contrats-mandat",
+   "niveau": 1,
+   "enonce": "En droit commun, le mandat est gratuit :",
+   "options": [
+    "Toujours",
+    "Jamais",
+    "Sauf convention contraire",
+    "Uniquement pour les associations"
+   ],
+   "bonne": 2,
+   "explication": "L'article 1986 pose la gratuité par principe, sauf si les parties prévoient une rémunération. Pour l'agent sportif, le Code du sport encadre cette rémunération.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1986",
+    "extrait": "Le mandat est gratuit s'il n'y a convention contraire.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Module 02, QCM 10",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-28",
+   "chapitre": "contrats-mandat",
+   "niveau": 1,
+   "enonce": "Quel article interdit au mandataire de dépasser les pouvoirs de son mandat ?",
+   "options": [
+    "Article 1985",
+    "Article 1987",
+    "Article 1988",
+    "Article 1989"
+   ],
+   "bonne": 3,
+   "explication": "Selon l'article 1989, le mandataire ne peut rien faire au-delà de ce que prévoit son mandat.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1989",
+    "extrait": "Le mandataire ne peut rien faire au-delà de ce qui est porté dans son mandat : le pouvoir de transiger ne renferme pas celui de compromettre.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Module 02, QCM 11",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-29",
+   "chapitre": "contrats-mandat",
+   "niveau": 1,
+   "enonce": "Quel article oblige le mandataire à rendre compte de sa gestion ?",
+   "options": [
+    "Article 1991",
+    "Article 1992",
+    "Article 1993",
+    "Article 1994"
+   ],
+   "bonne": 2,
+   "explication": "L'article 1993 oblige le mandataire à rendre compte et à remettre au mandant tout ce qu'il a reçu en vertu de sa procuration.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1993",
+    "extrait": "Tout mandataire est tenu de rendre compte de sa gestion, et de faire raison au mandant de tout ce qu'il a reçu en vertu de sa procuration, quand même ce qu'il aurait reçu n'eût point été dû au mandant.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Module 02, QCM 12",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-30",
+   "chapitre": "contrats-mandat",
+   "niveau": 1,
+   "enonce": "Quel article traite du remboursement des frais et de la rémunération du mandataire ?",
+   "options": [
+    "Article 1998",
+    "Article 1999",
+    "Article 2000",
+    "Article 2001"
+   ],
+   "bonne": 1,
+   "explication": "L'article 1999 oblige le mandant à rembourser les avances et frais, et à payer la rémunération promise.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1999",
+    "extrait": "Le mandant doit rembourser au mandataire les avances et frais que celui-ci a faits pour l'exécution du mandat, et lui payer ses salaires lorsqu'il en a été promis. S'il n'y a aucune faute imputable au mandataire, le mandant ne peut se dispenser de faire ces remboursements et paiement, lors même que l'affaire n'aurait pas réussi.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Module 02, QCM 13",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-31",
+   "chapitre": "contrats-mandat",
+   "niveau": 2,
+   "enonce": "Mandaté pour négocier le contrat d'un joueur, un agent signe seul l'engagement définitif avec le club, sans en avoir reçu le pouvoir. Le joueur :",
+   "options": [
+    "Est engagé, puisque l'agent est son mandataire",
+    "N'est tenu que s'il ratifie l'acte, expressément ou tacitement",
+    "Est engagé si le club était de bonne foi",
+    "Doit indemniser le club",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Le mandataire ne peut pas dépasser son mandat (art. 1989). Ce qu'il fait au-delà n'engage le mandant que s'il le ratifie (art. 1998).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1998",
+    "extrait": "Le mandant est tenu d'exécuter les engagements contractés par le mandataire, conformément au pouvoir qui lui a été donné. Il n'est tenu de ce qui a pu être fait au-delà, qu'autant qu'il l'a ratifié expressément ou tacitement.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-32",
+   "chapitre": "contrats-mandat",
+   "niveau": 2,
+   "enonce": "Un agent a engagé des frais justifiés pour une mission, mais l'opération échoue sans faute de sa part. Selon le Code civil, le joueur :",
+   "options": [
+    "N'a rien à payer, puisque l'affaire n'a pas réussi",
+    "Doit rembourser les frais et avances",
+    "Ne rembourse que la moitié des frais",
+    "Peut réduire les frais s'ils auraient pu être moindres",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Sans faute du mandataire, l'échec de l'affaire ne dispense pas de rembourser les frais et avances (art. 1999). Attention : la rémunération de l'agent sportif, elle, se calcule sur le contrat conclu (L. 222-17).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1999",
+    "extrait": "Le mandant doit rembourser au mandataire les avances et frais que celui-ci a faits pour l'exécution du mandat, et lui payer ses salaires lorsqu'il en a été promis. S'il n'y a aucune faute imputable au mandataire, le mandant ne peut se dispenser de faire ces remboursements et paiement, lors même que l'affaire n'aurait pas réussi.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-33",
+   "chapitre": "contrats-mandat",
+   "niveau": 2,
+   "enonce": "La responsabilité du mandataire pour ses fautes de gestion s'apprécie :",
+   "options": [
+    "De la même façon, qu'il soit payé ou non",
+    "Moins rigoureusement s'il est rémunéré",
+    "Moins rigoureusement si le mandat est gratuit",
+    "Uniquement en cas de dol",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Le mandataire répond du dol et de ses fautes de gestion, mais plus sévèrement s'il est payé (art. 1992). Un agent sportif est rémunéré : on attend de lui un niveau professionnel.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1992",
+    "extrait": "Le mandataire répond non seulement du dol, mais encore des fautes qu'il commet dans sa gestion. Néanmoins, la responsabilité relative aux fautes est appliquée moins rigoureusement à celui dont le mandat est gratuit qu'à celui qui reçoit un salaire.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-34",
+   "chapitre": "contrats-mandat",
+   "niveau": 2,
+   "enonce": "En pleine négociation, un agent renonce à son mandat, ce qui cause un préjudice au joueur. En principe :",
+   "options": [
+    "La renonciation est impossible",
+    "Il doit indemniser le joueur, sauf s'il ne pouvait continuer sans subir lui-même un préjudice considérable",
+    "Il n'a jamais à indemniser",
+    "Il doit obtenir l'accord de la fédération",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Le mandataire peut renoncer en le notifiant, mais il indemnise le mandant s'il lui cause un préjudice, sauf exception de l'article 2007.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 2007",
+    "extrait": "Le mandataire peut renoncer au mandat, en notifiant au mandant sa renonciation. Néanmoins, si cette renonciation préjudicie au mandant il devra en être indemnisé par le mandataire, à moins que celui-ci ne se trouve dans l'impossibilité de continuer le mandat sans en éprouver lui-même un préjudice considérable.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-35",
+   "chapitre": "contrats-mandat",
+   "niveau": 2,
+   "enonce": "Un mandat conçu en termes généraux permet-il au mandataire de vendre un bien du mandant ?",
+   "options": [
+    "Oui, toujours",
+    "Oui, si la vente est urgente",
+    "Oui, si le prix est raisonnable",
+    "Oui, avec l'accord d'un tiers",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 4,
+   "explication": "Non : le mandat général ne couvre que les actes d'administration. Pour vendre, il faut un mandat exprès (art. 1988).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1988",
+    "extrait": "Le mandat conçu en termes généraux n'embrasse que les actes d'administration. S'il s'agit d'aliéner ou hypothéquer, ou de quelque autre acte de propriété, le mandat doit être exprès.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-36",
+   "chapitre": "contrats-mandat",
+   "niveau": 2,
+   "enonce": "Lequel de ces événements ne met PAS fin au mandat selon l'article 2003 du Code civil ?",
+   "options": [
+    "La révocation du mandataire",
+    "La renonciation du mandataire",
+    "Le décès du mandant",
+    "Le changement de club du mandant",
+    "La déconfiture du mandataire"
+   ],
+   "bonne": 3,
+   "explication": "L'article 2003 vise la révocation, la renonciation, le décès, la tutelle des majeurs et la déconfiture. Un joueur qui change de club garde son agent, sauf si le mandat prévoit autre chose.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 2003",
+    "extrait": "Le mandat finit : Par la révocation du mandataire, Par la renonciation de celui-ci au mandat, Par la mort, la tutelle des majeurs ou la déconfiture, soit du mandant, soit du mandataire.",
+    "version_du": "2009-05-14",
+    "modifie_par": "loi n° 2009-526 du 12 mai 2009"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-37",
+   "chapitre": "contrats-voisins",
+   "niveau": 1,
+   "enonce": "Quelle est la différence essentielle entre le mandat et la commission ?",
+   "options": [
+    "Il n'y en a aucune",
+    "Le mandataire agit au nom du mandant ; le commissionnaire agit en son propre nom pour le compte du commettant",
+    "Le commissionnaire est toujours salarié",
+    "Le mandat est toujours gratuit"
+   ],
+   "bonne": 1,
+   "explication": "Le mandat repose sur la représentation (art. 1984 C. civ.) ; le commissionnaire contracte en son propre nom pour le compte d'un autre (L. 132-1 C. com.).",
+   "article": {
+    "texte": "Code de commerce",
+    "ref": "L. 132-1, al. 1",
+    "extrait": "Le commissionnaire est celui qui agit en son propre nom ou sous un nom social pour le compte d'un commettant.",
+    "version_du": "2000-09-21",
+    "modifie_par": "ordonnance n° 2000-912 du 18 septembre 2000"
+   },
+   "origine": "Module 02, QCM 18",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-38",
+   "chapitre": "contrats-voisins",
+   "niveau": 2,
+   "enonce": "Une personne achète des équipements en son propre nom, mais pour le compte d'une entreprise. Elle agit comme :",
+   "options": [
+    "Mandataire",
+    "Commissionnaire",
+    "Courtier",
+    "Entrepreneur",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Agir en son propre nom pour le compte d'un autre, c'est la définition du commissionnaire (L. 132-1 du Code de commerce).",
+   "article": {
+    "texte": "Code de commerce",
+    "ref": "L. 132-1, al. 1",
+    "extrait": "Le commissionnaire est celui qui agit en son propre nom ou sous un nom social pour le compte d'un commettant.",
+    "version_du": "2000-09-21",
+    "modifie_par": "ordonnance n° 2000-912 du 18 septembre 2000"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-39",
+   "chapitre": "contrats-voisins",
+   "niveau": 2,
+   "enonce": "Un club confie à une société la réalisation de vidéos promotionnelles contre un prix convenu. Il s'agit :",
+   "options": [
+    "D'un mandat",
+    "D'un contrat de commission",
+    "D'un contrat d'entreprise",
+    "D'un contrat de courtage",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "S'engager à faire quelque chose pour l'autre moyennant un prix, c'est le louage d'ouvrage, ou contrat d'entreprise (art. 1710). La société ne représente pas le club.",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1710",
+    "extrait": "Le louage d'ouvrage est un contrat par lequel l'une des parties s'engage à faire quelque chose pour l'autre, moyennant un prix convenu entre elles.",
+    "version_du": null,
+    "version_note": "Rédaction d'origine du Code civil (1804)"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-40",
+   "chapitre": "contrats-voisins",
+   "niveau": 2,
+   "enonce": "Un intermédiaire met un joueur en relation avec un club en vue d'un contrat de travail, contre rémunération, et intitule son contrat « convention de courtage ». La réglementation des agents sportifs :",
+   "options": [
+    "Ne s'applique pas, puisque ce n'est pas un mandat",
+    "S'applique, car c'est l'activité réelle de mise en relation qui compte",
+    "Ne s'applique que si le club le rémunère",
+    "Ne s'applique qu'en Ligue 1",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Le Code du sport définit l'agent par sa mission : mettre en relation deux parties, contre rémunération, pour un contrat visé (L. 222-7). Le nom du contrat ne change rien.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-7",
+    "extrait": "L'agent sportif est une personne physique dont la mission d'intermédiaire consiste à mettre en relation, directement ou indirectement, contre une rémunération, une indemnité ou un avantage, deux parties intéressées, soit par la conclusion, soit par la prolongation",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-41",
+   "chapitre": "contrats-cas",
+   "niveau": 2,
+   "enonce": "Cas pratique. Un joueur professionnel de 19 ans signe avec un agent un mandat exclusif de quatre ans. Cette durée :",
+   "options": [
+    "Est valable, puisque le joueur est majeur",
+    "Est valable, puisque le mandat est exclusif",
+    "Dépasse le maximum légal de trois ans",
+    "Dépasse le maximum légal de deux ans",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Le contrat de l'agent ne peut excéder trois ans, et la fédération peut fixer une durée plus courte. Quatre ans, c'est non conforme.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, I, 2°",
+    "extrait": "La durée, qui ne peut excéder trois ans. Les fédérations délégataires peuvent fixer, dans leur règlement, une durée maximale inférieure",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Module 02, cas pratique transversal",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-42",
+   "chapitre": "contrats-cas",
+   "niveau": 2,
+   "enonce": "Cas pratique. Le mandat d'un joueur majeur prévoit une commission de 12 % du contrat négocié. Cette commission :",
+   "options": [
+    "Est valable si le joueur la paie lui-même",
+    "Dépasse le plafond légal de 10 %",
+    "Est interdite, car toute rémunération est exclue",
+    "Est valable avec une convention tripartite",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "Le joueur est majeur : l'interdiction propre aux mineurs (L. 222-5) ne joue pas. C'est le plafond de 10 % qui s'applique, éventuellement plus bas selon la fédération.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, I, 3°",
+    "extrait": "Le montant de la rémunération de l'agent sportif, qui ne peut excéder 10 % du montant du contrat ou de l'accord conclu par les parties qu'il a mises en rapport",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Module 02, cas pratique transversal",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-43",
+   "chapitre": "contrats-cas",
+   "niveau": 2,
+   "enonce": "Cas pratique. Le mandat prévoit que l'agent interviendra aussi pour le club dans la même opération. Cette clause :",
+   "options": [
+    "Est valable si le joueur l'accepte",
+    "Est valable si la commission totale reste sous 10 %",
+    "Est valable si le club paie l'agent",
+    "Est contraire à la loi : l'agent n'agit que pour une seule partie",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 3,
+   "explication": "L'agent ne peut agir, en droit comme en fait, que pour le compte d'une des parties (L. 222-17, I). L'accord du joueur n'y change rien.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, I",
+    "extrait": "Un agent sportif ne peut agir, en droit comme en fait, que pour le compte d'une des parties aux contrats mentionnés au même article L. 222-7.",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Module 02, cas pratique transversal",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-44",
+   "chapitre": "contrats-cas",
+   "niveau": 2,
+   "enonce": "Cas pratique. Le mandat dispense l'agent de le transmettre à la fédération. Cette clause :",
+   "options": [
+    "Est valable, la transmission étant facultative",
+    "Est valable, le joueur étant majeur",
+    "Est contraire à la loi : le contrat et ses avenants sont communiqués dans le mois de leur entrée en vigueur, sinon le contrat est réputé nul",
+    "Oblige seulement l'agent à transmettre dans l'année",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "La communication à la fédération est obligatoire, dans le mois qui suit l'entrée en vigueur. Un contrat non communiqué est réputé nul et non écrit (L. 222-17).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, I, 5° et dernier alinéa",
+    "extrait": "L'obligation pour l'agent sportif de communiquer ce contrat et tout avenant à la fédération délégataire compétente dans le mois qui suit leur entrée en vigueur. […] Toute convention contraire au présent article ou qui n'a pas été communiquée à la fédération délégataire compétente est réputée nulle et non écrite.",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Module 02, cas pratique transversal",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "ctr-45",
+   "chapitre": "contrats-cas",
+   "niveau": 2,
+   "enonce": "Cas pratique. Une clause du mandat interdit au joueur d'y mettre fin un jour. Elle :",
+   "options": [
+    "Est valable, le contrat étant la loi des parties",
+    "Est valable, puisqu'elle est écrite",
+    "Est contraire à l'article 1210 du Code civil, qui prohibe les engagements perpétuels",
+    "N'est valable que pour un mineur",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Les engagements perpétuels sont prohibés (art. 1210). De plus, le mandat d'agent sportif ne peut excéder trois ans (L. 222-17).",
+   "article": {
+    "texte": "Code civil",
+    "ref": "art. 1210",
+    "extrait": "Les engagements perpétuels sont prohibés. Chaque contractant peut y mettre fin dans les conditions prévues pour le contrat à durée indéterminée.",
+    "version_du": "2016-10-01",
+    "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
+   },
+   "origine": "Module 02, cas pratique transversal",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-30",
+   "chapitre": "agents-contrat",
+   "niveau": 1,
+   "enonce": "Un agent peut-il représenter à la fois le joueur et le club dans la même opération ?",
+   "options": [
+    "Oui, avec l'accord verbal des deux",
+    "Oui, si sa commission est partagée",
+    "Non, il n'agit que pour une seule partie",
+    "Oui, si les deux parties sont professionnelles"
+   ],
+   "bonne": 2,
+   "explication": "L'article L. 222-17 interdit à l'agent d'agir pour le compte de plus d'une partie, en droit comme en fait.",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, I",
+    "extrait": "Un agent sportif ne peut agir, en droit comme en fait, que pour le compte d'une des parties aux contrats mentionnés au même article L. 222-7.",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Module 02, QCM 16",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-31",
+   "chapitre": "agents-contrat",
+   "niveau": 2,
+   "enonce": "Une convention tripartite permet au club de payer la rémunération que le joueur doit à son agent. Cette convention :",
+   "options": [
+    "Est conclue entre le joueur et l'agent seulement",
+    "Précise les conséquences fiscales et sociales pour le cocontractant de l'agent, qui reçoit une quittance du paiement",
+    "Doit être homologuée par le ministère des sports",
+    "Prévoit une commission d'au moins 10 %",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "La convention est signée par toutes les parties au contrat. Elle précise les conséquences fiscales et sociales, et l'agent donne quittance du paiement (L. 222-17, II).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, II",
+    "extrait": "La rémunération due par le sportif ou l'entraîneur à l'agent sportif peut, par une convention tripartite conclue par toutes les parties aux contrats mentionnés audit article L. 222-7, être pour tout ou partie acquittée par le cocontractant du sportif ou de l'entraîneur. Dans ce cas, la convention tripartite précise les conséquences fiscales et sociales susceptibles d'en résulter pour le cocontractant de l'agent sportif. L'agent sportif donne quittance du paiement au cocontractant du sportif ou de l'entraîneur.",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-32",
+   "chapitre": "agents-contrat",
+   "niveau": 2,
+   "enonce": "Une convention de collaboration entre agents peut être conclue :",
+   "options": [
+    "Avec tout intermédiaire étranger",
+    "Uniquement entre agents titulaires de la carte professionnelle, dans la même discipline",
+    "Entre un agent et le club du joueur",
+    "Entre un agent et un avocat inscrit au barreau",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 1,
+   "explication": "La loi du 3 août 2026 réserve la convention de collaboration aux agents titulaires de la carte professionnelle dans la même discipline (L. 222-17, II).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-17, II",
+    "extrait": "Une convention de collaboration ne peut être conclue qu'entre agents sportifs titulaires, dans la même discipline, de la carte professionnelle prévue au même article L. 222-7.",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
+   },
+   "origine": "Rédigée d'après le texte",
+   "verifiee_le": "2026-11-03"
+  },
+  {
+   "id": "agt-33",
+   "chapitre": "agents-contrat",
+   "niveau": 2,
+   "enonce": "La rémunération de l'agent sportif ne peut être versée :",
+   "options": [
+    "Qu'à la fin du contrat de travail du joueur",
+    "Qu'en une seule fois",
+    "Qu'après la transmission de son contrat à la fédération délégataire compétente",
+    "Qu'au terme de la saison sportive",
+    "Aucune réponse ci-dessus n'est correcte"
+   ],
+   "bonne": 2,
+   "explication": "Les fédérations édictent les règles de versement : la rémunération ne peut intervenir qu'après la transmission du contrat de l'agent (L. 222-18, 3°).",
+   "article": {
+    "texte": "Code du sport",
+    "ref": "L. 222-18, 3°",
+    "extrait": "Au versement de la rémunération de l'agent sportif, qui ne peut intervenir qu'après transmission du contrat visé au I de l'article L. 222-17 à la fédération délégataire compétente.",
+    "version_du": "2026-08-05",
+    "modifie_par": "loi n° 2026-725 du 3 août 2026"
    },
    "origine": "Rédigée d'après le texte",
    "verifiee_le": "2026-11-03"

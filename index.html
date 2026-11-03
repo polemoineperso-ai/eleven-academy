@@ -228,8 +228,8 @@ button.row:hover .row-title { color: var(--green); }
 /* Quiz */
 .quiz-top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--pitch); padding-block: 10px; display: flex; flex-direction: column; gap: 10px; }
 .quiz-top-row { display: flex; align-items: center; gap: 12px; }
-.quiz-count { font-weight: 800; font-style: italic; font-size: 17px; font-variant-numeric: tabular-nums; }
-.quiz-chap { font-size: 13px; color: var(--fg-2); margin-left: auto; text-align: right; }
+.quiz-count { font-weight: 800; font-style: italic; font-size: 17px; font-variant-numeric: tabular-nums; white-space: nowrap; flex: none; }
+.quiz-chap { font-size: 13px; color: var(--fg-2); margin-left: auto; text-align: right; min-width: 0; text-wrap: balance; }
 .q-text { font-size: 19px; font-weight: 600; line-height: 1.45; max-width: 65ch; }
 .q-level { font-size: 13px; color: var(--fg-3); font-weight: 600; }
 .opts { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; border: 0; }
@@ -488,10 +488,9 @@ button.row:hover .row-title { color: var(--green); }
   const tile = (n, cls = "") => `<span class="tile ${cls}" aria-hidden="true"><svg viewBox="0 0 24 24">${GLYPH[n] || GLYPH.book}</svg></span>`;
   const CREST = `<img class="brand-crest" src="${ASSET["crest"]}" alt="" width="40" height="44">`;
   const WORDMARK = `<img class="brand-wm" src="${ASSET["logo-wordmark"]}" alt="" width="131" height="64">`;
-  const DOMAIN_PIC = { associations: () => pic("ic-scales"), agents: () => pic("ic-handshake"), dopage: () => pic("ic-checklist") };
+  const DOMAIN_PIC = { associations: () => pic("ic-scales"), agents: () => pic("ic-handshake"), dopage: () => pic("ic-checklist"), contrats: () => pic("ic-contract") };
   const UPCOMING = [
     { titre: "Droit social", sous: "Contrat de travail, CDD sportif, convention collective du sport" },
-    { titre: "Contrats", sous: "Formation, exécution, mandat, courtage" },
     { titre: "Sociétés", sous: "Formes de sociétés, entreprises en difficulté" },
     { titre: "Fiscalité", sous: "Impôt sur le revenu, impôt sur les sociétés, TVA" },
     { titre: "Assurances et image", sous: "Responsabilité civile, individuelle accident, droit à l'image" }
@@ -515,7 +514,8 @@ button.row:hover .row-title { color: var(--green); }
     { id: "hundred", name: "100 sélections", desc: "100 réponses données", mark: () => pic("ic-trophy") },
     { id: "dom-associations", name: "Champion des associations", desc: "80 % du domaine acquis", mark: () => pic("ic-trophy") },
     { id: "dom-agents", name: "Champion des agents sportifs", desc: "80 % du domaine acquis", mark: () => pic("ic-trophy") },
-    { id: "dom-dopage", name: "Champion de l'antidopage", desc: "80 % du domaine acquis", mark: () => pic("ic-trophy") }
+    { id: "dom-dopage", name: "Champion de l'antidopage", desc: "80 % du domaine acquis", mark: () => pic("ic-trophy") },
+    { id: "dom-contrats", name: "Champion des contrats", desc: "80 % du domaine acquis", mark: () => pic("ic-trophy") }
   ];
 
   /* ---------- State ---------- */
@@ -748,7 +748,7 @@ button.row:hover .row-title { color: var(--green); }
   /* ---------- Navigation ---------- */
   const TABS = [
     { id: "home", label: "Accueil", pic: "ic-home" },
-    { id: "train", label: "Entraînement", pic: "ic-cap" },
+    { id: "train", label: "Programme", pic: "ic-cap" },
     { id: "exams", label: "Examens", pic: "ic-stopwatch" },
     { id: "revisions", label: "Révisions", pic: "ic-book" },
     { id: "progress", label: "Progression", pic: "ic-chart" }
@@ -789,7 +789,7 @@ button.row:hover .row-title { color: var(--green); }
     return `<div class="rule${sheetCls()}">
       <div class="rule-ref">${esc(a.texte)} <span>${esc(a.ref)}</span></div>
       <p class="rule-text">«&nbsp;${esc(a.extrait)}&nbsp;»</p>
-      <div class="rule-date">Version en vigueur depuis le ${esc(frDate(a.version_du))}${mod}</div>
+      <div class="rule-date">${a.version_du ? `Version en vigueur depuis le ${esc(frDate(a.version_du))}${mod}` : esc(a.version_note || "")}</div>
     </div>`;
   }
   function syncBadge() {
@@ -847,14 +847,14 @@ button.row:hover .row-title { color: var(--green); }
             <span class="row-side num">${m} %${icon("chevron")}</span>
             <span class="bar" aria-hidden="true"><i style="width:${m}%"></i></span></button>`;
         }).join("")}</div>
-        <p class="tiny">Le programme compte 8 domaines : les 5 autres (droit social, contrats, sociétés, fiscalité, assurances) arrivent dans les prochaines versions, à voir dans Entraînement.</p>
+        <p class="tiny">Le programme compte 8 domaines : les ${UPCOMING.length} autres (${UPCOMING.map((u) => u.titre.toLowerCase()).join(", ")}) arrivent dans les prochaines versions, à voir dans Programme.</p>
       </section>
     </main>`;
   }
 
   function vTrain() {
     return `${header()}<main class="screen">
-      <div class="greet"><h1 class="h-screen">Entraînement</h1><p class="muted small">Lis la fiche, puis entraîne-toi chapitre par chapitre. Un chapitre est validé à 80 % de questions acquises.</p></div>
+      <div class="greet"><h1 class="h-screen">Programme</h1><p class="muted small">Lis la fiche, puis entraîne-toi chapitre par chapitre. Un chapitre est validé à 80 % de questions acquises.</p></div>
       ${C.domains().map((d) => `<section class="sec" id="d-${d.id}" aria-labelledby="t-${d.id}">
         <div class="sec-head"><span class="sec-title">${domPic(d.id)}<h2 class="h-sec" id="t-${d.id}">${esc(d.titre)}</h2></span><span class="tiny num">${mastery(C.qOfDomain(d.id))} % acquis</span></div>
         <div class="rows">${C.chapters().filter((c) => c.domaine === d.id).map((c) => {
@@ -874,7 +874,7 @@ button.row:hover .row-title { color: var(--green); }
     const c = C.chapter(S.param); if (!c) return vTrain();
     const d = C.domain(c.domaine); const qs = C.qOf(c.id);
     return `${header()}<main class="screen narrow">
-      <div class="stack" style="gap:6px"><button class="link-btn" data-go="train" style="align-self:flex-start">${icon("back")} Entraînement</button>
+      <div class="stack" style="gap:6px"><button class="link-btn" data-go="train" style="align-self:flex-start">${icon("back")} Programme</button>
         <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(d?.titre || "")} · ${qs.length} questions · ${chapterState(c).m} % acquis</p></div>
       <article class="sheet${sheetCls()}" aria-labelledby="f-${c.id}">
         <h2 class="sheet-title" id="f-${c.id}">La fiche</h2>
