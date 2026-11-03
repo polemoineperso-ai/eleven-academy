@@ -227,7 +227,6 @@ button.step:hover .row-title { color: var(--green); }
 .step.is-next .step-n { border-color: var(--green); color: var(--green); }
 .step.is-off { color: var(--fg-3); }
 .step.is-off .row-sub { color: var(--fg-3); }
-.step-where { font-size: 13px; color: var(--fg-2); font-weight: 600; }
 
 /* Lesson (cours) */
 .lesson { display: flex; flex-direction: column; gap: 16px; }
@@ -242,18 +241,19 @@ button.step:hover .row-title { color: var(--green); }
 .lesson-list { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
 .lesson-list li::marker { color: var(--ink-2); }
 .sheet.dark .lesson-list li::marker { color: var(--green); }
-.callout { border-radius: var(--r-s); padding: 14px 14px 15px; display: flex; flex-direction: column; gap: 6px; }
+.callout { margin-inline: -18px; padding: 14px 18px 15px; display: flex; flex-direction: column; gap: 6px; }
 .callout p { margin: 0; font-size: 15.5px; line-height: 1.6; max-width: 65ch; }
-.callout.cas { background: rgba(169, 224, 35, 0.2); }
-.callout.warn { background: rgba(245, 184, 46, 0.2); }
-.callout.memo { background: rgba(18, 22, 18, 0.06); }
-.sheet.dark .callout.cas { background: var(--green-soft); }
-.sheet.dark .callout.warn { background: var(--gold-soft); }
-.sheet.dark .callout.memo { background: rgba(255, 255, 255, 0.06); }
+.callout.cas { background: rgba(18, 22, 18, 0.05); }
+.callout.warn { background: rgba(245, 184, 46, 0.32); }
+.callout.warn .callout-lab { color: #6B4A00; }
+.callout.memo { background: rgba(169, 224, 35, 0.22); }
+.sheet.dark .callout.cas { background: rgba(255, 255, 255, 0.06); }
+.sheet.dark .callout.warn { background: rgba(245, 184, 46, 0.2); }
+.sheet.dark .callout.warn .callout-lab { color: var(--gold); }
+.sheet.dark .callout.memo { background: rgba(169, 224, 35, 0.2); }
 .callout .callout-lab { display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 800; }
 .callout-lab svg { width: 18px; height: 18px; flex: none; }
-.callout .callout-sub { font-size: 13.5px; font-weight: 700; color: var(--ink-2); margin-top: 4px; }
-.sheet.dark .callout .callout-sub { color: var(--fg-2); }
+.callout .callout-sub { font-size: 13.5px; font-weight: 800; margin-top: 4px; }
 .tbl-wrap { overflow-x: auto; margin: 0 -4px; padding: 0 4px; }
 .lesson-table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.5; }
 .lesson-table th, .lesson-table td { text-align: left; vertical-align: top; padding: 9px 10px 9px 0; border-bottom: 1px solid var(--paper-line); }
@@ -943,7 +943,7 @@ a.row:hover .row-title { color: var(--green); }
   const isRead = (id) => !!(S.progress.read && S.progress.read[id]);
   const backTo = (c) => S.from === "revisions"
     ? `<button class="link-btn" data-go="revisions" style="align-self:flex-start">${icon("back")} Révisions</button>`
-    : `<button class="link-btn" data-go="chapter" data-param="${c.id}" style="align-self:flex-start">${icon("back")} ${esc(c.titre)}</button>`;
+    : `<button class="link-btn" data-go="chapter" data-param="${c.id}" style="align-self:flex-start">${icon("back")} Ton parcours</button>`;
   function lessonTable(b) {
     if (b.head.length >= 3) { /* phone width: one group per row instead of a cramped grid */
       return `<div class="tgroups">${b.rows.map((r) => `<div class="tgroup"><p class="tgroup-h">${esc(r[0])}</p><dl>${b.head.slice(1).map((h, k) => `<dt>${esc(h)}</dt><dd>${esc(r[k + 1] || "")}</dd>`).join("")}</dl></div>`).join("")}</div>`;
@@ -964,8 +964,8 @@ a.row:hover .row-title { color: var(--green); }
       default: return "";
     }
   }
-  const lessonSections = (secs) => secs.map((sec, i) => `<section class="sheet${sheetCls()} lesson-sec" id="ls-${i}" aria-labelledby="ls-${i}-t">
-      <h2 class="lesson-h2" id="ls-${i}-t">${sec.code ? `<span class="lesson-code">${esc(sec.code)}</span>` : ""}${esc(sec.titre)}</h2>
+  const lessonSections = (secs, noTitle) => secs.map((sec, i) => `<section class="sheet${sheetCls()} lesson-sec" id="ls-${i}"${noTitle ? "" : ` aria-labelledby="ls-${i}-t"`}>
+      ${noTitle ? "" : `<h2 class="lesson-h2" id="ls-${i}-t">${sec.code ? `<span class="lesson-code">${esc(sec.code)}</span>` : ""}${esc(sec.titre)}</h2>`}
       ${sec.ref ? `<p class="lesson-ref">Texte de référence : ${esc(sec.ref)}</p>` : ""}
       ${sec.blocs.map(lessonBlock).join("")}
     </section>`).join("");
@@ -977,8 +977,7 @@ a.row:hover .row-title { color: var(--green); }
     const k = c.cours;
     return `${header()}<main class="screen narrow">
       <div class="stack" style="gap:6px">${backTo(c)}
-        <p class="step-where">Étape 1 sur 3 · Cours</p>
-        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(k.module)} · environ ${k.minutes} min de lecture${isRead(c.id) ? " · lu" : ""}</p></div>
+        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">Étape 1 sur 3 · ${esc(k.module)} · environ ${k.minutes} min de lecture${isRead(c.id) ? " · lu" : ""}</p></div>
       ${lessonToc(k.sections)}
       <div class="lesson">${lessonSections(k.sections)}</div>
       <div class="lesson-end">
@@ -995,7 +994,7 @@ a.row:hover .row-title { color: var(--green); }
     return `${header()}<main class="screen narrow">
       <div class="stack" style="gap:6px"><button class="link-btn" data-go="revisions" style="align-self:flex-start">${icon("back")} Révisions</button>
         <h1 class="h-screen">${esc(o.titre)}</h1><p class="muted small">${esc(d.module || d.titre)} · ${esc(o.sous)}</p></div>
-      <div class="lesson">${lessonSections(o.sections)}</div>
+      <div class="lesson">${lessonSections(o.sections, o.sections.length === 1)}</div>
     </main>`;
   }
 
@@ -1026,7 +1025,7 @@ a.row:hover .row-title { color: var(--green); }
           <button class="${cls(1)}" data-go="fiche" data-param="${c.id}" data-from="chapter"><span class="step-n" aria-hidden="true">${mark(1)}</span>
             <span class="stack"><span class="row-title">Retenir la fiche</span><span class="row-sub">${c.fiche.length} points clés</span></span><span class="row-side">${icon("chevron")}</span></button>
           <button class="${cls(2)}" data-act="chapter" data-param="${c.id}"><span class="step-n" aria-hidden="true">${mark(2)}</span>
-            <span class="stack"><span class="row-title">S'entraîner</span><span class="row-sub">${qs.length} questions · ${st.m} % acquis${st.key === "ok" ? " · validé" : " · validé à 80 %"}</span></span><span class="row-side">${icon("chevron")}</span></button>
+            <span class="stack"><span class="row-title">S'entraîner</span><span class="row-sub">${qs.length} questions · ${st.m} % acquis${st.key === "ok" ? " · validé" : " · à valider : 80 % de réussite"}</span></span><span class="row-side">${icon("chevron")}</span></button>
         </div></section>
       ${cta}
     </main>`;
@@ -1132,8 +1131,7 @@ a.row:hover .row-title { color: var(--green); }
     const c = C.chapter(S.param); if (!c) return vRevisions();
     return `${header()}<main class="screen narrow">
       <div class="stack" style="gap:6px">${backTo(c)}
-        <p class="step-where">Étape 2 sur 3 · Fiche</p>
-        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(C.domain(c.domaine)?.titre || "")} · ${c.fiche.length} points clés</p></div>
+        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${S.from === "revisions" ? "" : "Étape 2 sur 3 · "}${esc(C.domain(c.domaine)?.titre || "")} · ${c.fiche.length} points clés</p></div>
       <article class="sheet${sheetCls()}"><ul class="sheet-list">${c.fiche.map((l) => `<li>${keyFig(esc(l))}</li>`).join("")}</ul><p class="sheet-src">Source : ${esc(c.source)}</p></article>
       <div class="lesson-end">
         <button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>
