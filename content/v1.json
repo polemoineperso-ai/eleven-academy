@@ -1,5 +1,5 @@
 {
-"version": "v10-2026-11-04",
+"version": "v11-2026-11-04",
 "domaines": [
 {
 "id": "agents",
@@ -3786,12 +3786,12 @@
 "domaine": "agents",
 "titre": "Le métier, l'examen, la méthode",
 "fiche": [
-"Toutes les activités de conseil, de représentation ou d'accompagnement ne constituent pas",
-"Le règlement FIFA sur les agents de football et le droit français ne doivent pas être confondus. Ils peuvent",
-"À la terminologie : depuis la réforme de 2026, l'article L. 222-7 emploie la notion de carte professionnelle",
-"Introduction : Comprendre le métier et les responsabilités d'un agent sportif.",
-"Comprendre le métier d'agent sportif : L'agent sportif est un professionnel qui intervient comme intermédiaire dans le cadre de certaines opérations",
-"Comprendre l'examen d'agent sportif : L'accès à la profession d'agent sportif est conditionné par un examen organisé dans le cadre fédéral."
+"L'agent sportif est une personne physique : il met en relation deux parties intéressées à certains contrats sportifs, contre rémunération (L. 222-7 du Code du sport).",
+"Il doit détenir la carte professionnelle, délivrée par la fédération délégataire compétente.",
+"Tout conseil ou accompagnement n'est pas une activité d'agent : il faut vérifier la mise en relation et la contrepartie.",
+"Le règlement FIFA sur les agents de football et le droit français sont deux cadres distincts, à ne pas confondre.",
+"Agrément et délégation d'une fédération sont deux régimes différents : l'agrément ne donne pas automatiquement la délégation.",
+"L'épreuve générale est organisée par le CNOSF, l'épreuve spécifique par la fédération : la FFF pour le football."
 ],
 "source": "Module 01, introduction",
 "cours": {
@@ -7967,7 +7967,6 @@
 "La SARL est une structure encadrée par la loi, avec une gouvernance moins libre que celle de la SAS.",
 "La SAS est appréciée pour sa souplesse et sa capacité à organiser plusieurs associés et investisseurs.",
 "La SA est une structure plus encadrée, adaptée notamment aux projets de grande dimension.",
-"Responsabilité des associés",
 "La SNC présente un risque patrimonial beaucoup plus important pour les associés que la SARL ou la SAS."
 ],
 "source": "Module 03, partie A",
@@ -13406,7 +13405,6 @@
 "fiche": [
 "La déclaration permet à l’association d’exister juridiquement comme personne morale distincte de ses membres.",
 "La reconnaissance d’utilité publique est une reconnaissance institutionnelle particulière. Elle ne doit pas être confondue avec l’agrément d’une association sportive.",
-"Définition et liberté d’association : > « La convention par laquelle deux ou plusieurs personnes mettent en commun, d'une façon permanente, leurs connaissances ou leur activité dans un but autre que de partager des bénéfices.",
 "Association déclarée et association de fait : Une association de fait est un groupement qui existe sans avoir accompli les formalités de déclaration.",
 "Constitution : statuts, assemblée générale, déclaration et JOAFE : La création d’une association déclarée suit plusieurs étapes.",
 "Fonctionnement : assemblée générale, conseil d’administration, bureau et règlement intérieur : La loi de 1901 impose peu de règles générales concernant les organes de gouvernance des associations ordinaires."
@@ -19595,8 +19593,7 @@
 "La rémunération : Le salaire est la contrepartie du travail fourni par le salarié.",
 "Le temps de travail : La durée légale du travail à temps complet est de 35 heures par semaine.",
 "Les congés : Le droit légal est de 2,5 jours ouvrables par mois de travail effectif, soit 30 jours ouvrables pour une année complète, correspondant à cinq semaines.",
-"Le pouvoir disciplinaire : L'employeur dispose d'un pouvoir disciplinaire lui permettant de sanctionner les comportements fautifs du salarié.",
-"Le règlement intérieur est un document écrit qui fixe les règles générales et permanentes relatives :"
+"Le pouvoir disciplinaire : L'employeur dispose d'un pouvoir disciplinaire lui permettant de sanctionner les comportements fautifs du salarié."
 ],
 "source": "Module 06, partie B",
 "cours": {
@@ -21775,7 +21772,6 @@
 "titre": "Le droit individuel à l'image",
 "fiche": [
 "Une autorisation d'image doit être précise, contextualisée et limitée. Le consentement à être photographié ne vaut pas autorisation générale d'exploitation commerciale.",
-"Le fondement : l'article 9 du Code civil : > « Chacun a droit au respect de sa vie privée.",
 "Le consentement à l'utilisation de l'image : Lorsqu'une personne est identifiable, l'utilisation de son image nécessite en principe son accord, particulièrement lorsque l'image est utilisée à des fins commerciales.",
 "Les exceptions au consentement : Le droit à l'image doit être concilié avec les libertés d'information et d'expression.",
 "Les sanctions civiles : Une personne victime d'une atteinte à son droit à l'image peut saisir le juge civil.",
@@ -22525,7 +22521,6 @@
 "fiche": [
 "Le simple fait d'appeler une somme « redevance » ne suffit pas à lui donner cette qualification.",
 "Du DIC à la redevance de 2017 : Avant 2017, le droit français avait mis en place un mécanisme spécifique : le droit à l'image collective des sportifs professionnels.",
-"L'article L.222-2-10-1 du Code du sport : L'article permet à une association ou une société sportive relevant des articles L.122-1 ou L.122-2 du Code du sport de conclure avec un sportif ou un entraîneur professionnel qu'elle emploie un contrat relatif à l'exploitation commerciale :",
 "Les deux conditions cumulatives : L'article L.222-2-10-1 prévoit deux conditions cumulatives pour que la redevance puisse être distinguée du salaire et que l'exploitation ne caractérise pas un lien de subordination dans l'exécution du contrat d'image.",
 "Les mentions à peine de nullité : Le législateur veut éviter qu'un contrat d'exploitation commerciale de l'image soit utilisé pour dissimuler une partie du salaire.",
 "Image individuelle : article D.222-50 du Code du sport : L'article D.222-50 précise ce qu'est l'exploitation individuelle de l'image, du nom ou de la voix du sportif."
@@ -24351,8 +24346,6 @@
 "titre": "Pour bien commencer",
 "fiche": [
 "L'individuelle accident n'est pas nécessairement une indemnisation intégrale. Elle dépend des garanties, plafonds, franchises et exclusions du contrat.",
-"Introduction : Maîtriser les notions essentielles du module « Droit des assurances » et savoir les appliquer à l’activité d’agent sportif de football.",
-"0. Pourquoi cette matière est importante pour l'agent sportif : L'assurance sert à transférer à un assureur, dans les limites d'un contrat, les conséquences financières de certains risques.",
 "Responsabilité civile (RC) : Elle couvre les dommages causés à autrui lorsque la responsabilité de l'assuré est engagée.",
 "Individuelle accident (IA) : Elle couvre les dommages corporels subis par l'assuré, même lorsqu'aucun tiers n'est responsable."
 ],
@@ -25969,7 +25962,6 @@
 "fiche": [
 "Introduction : Maîtriser les notions essentielles du module « L’actualité : la loi du 3 août 2026 » et savoir les appliquer à l’activité d’agent sportif de football.",
 "0. Pourquoi ce module est essentiel : La loi n° 2026-725 du 3 août 2026, relative à l'organisation, à la gestion et au financement du sport professionnel, constitue une réforme majeure du Code du sport.",
-"1. La loi du 3 août 2026 : sa carte d'identité : Objectif 1 — Professionnaliser et encadrer davantage l'activité d'agent sportif",
 "Loi du 3 août 2026 : Licence, carte professionnelle, interdictions, contrats, rémunération et sanctions."
 ],
 "source": "Module 09, introduction",
@@ -27461,10 +27453,7 @@
 "fiche": [
 "La séparation éventuelle en deux sociétés ne signifie pas que le sport féminin et le sport masculin sont juridiquement et financièrement sans lien.",
 "Une ou deux sociétés, la convention, le contrat d'image : Cette partie correspond principalement à l'article 25 de la loi, qui modifie plusieurs dispositions du Code du sport relatives aux sociétés sportives et au contrat d'image.",
-"Deux modèles d'organisation : La réforme ne rend donc pas obligatoire la création de deux sociétés.",
-"2. Les seuils qui rendent la constitution obligatoire : L'article L.122-1 prévoit que certaines associations sportives sont tenues de constituer une société commerciale.",
-"3. Le délai de constitution — L.122-4 : Lorsqu'une association répond à au moins un des critères légaux, elle doit constituer une société sportive dans un délai d'un an à compter de la date à laquelle elle satisfait à cette condition.",
-"4. Les formes juridiques possibles — L.122-2 : La réforme n'a pas supprimé les principales formes de sociétés sportives."
+"Deux modèles d'organisation : La réforme ne rend donc pas obligatoire la création de deux sociétés."
 ],
 "source": "Module 09, partie B",
 "cours": {
@@ -30485,7 +30474,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 1,
-"explication": "Douze mois (L. 232-9-3), comme dans le code mondial antidopage. Comptent aussi les manquements constatés par les autres organisations signataires.",
+"explication": "(L. 232-9-3), comme dans le code mondial antidopage. Comptent aussi les manquements constatés par les autres organisations signataires.",
 "article": {
 "texte": "Code du sport",
 "ref": "L. 232-9-3",
@@ -31262,7 +31251,7 @@
 "Transforme l’association en société"
 ],
 "bonne": 1,
-"explication": "Un forfait non justifié peut être requalifié.",
+"explication": "Le remboursement de frais réels et justifiés n'est pas une rémunération. En revanche, un forfait non justifié peut être requalifié.",
 "origine": "Module 04, QCM 11"
 },
 {
@@ -31274,7 +31263,7 @@
 "Une simple facture adressée au club",
 "Une autorisation orale du président",
 "Une convention tripartite conforme à l’article L.222-17",
-"Aucune formalité particulière Corriger mes réponses"
+"Aucune formalité particulière"
 ],
 "bonne": 2,
 "explication": "Le paiement par le cocontractant du sportif doit être encadré par la convention prévue par L.222-17, avec identification du payeur et des conséquences fiscales et sociales.",
@@ -31445,7 +31434,7 @@
 "Une exonération générale des salaires des joueurs"
 ],
 "bonne": 1,
-"explication": "Une moyenne des recettes et dépenses sur 3 ou 5 ans pour certains revenus sportifs Sur option et sous déclaration contrôlée, l'article 100 bis prévoit une moyenne sur l'année et les deux années précédentes, ou sur l'année et les quatre années précédentes.",
+"explication": "Sur option et sous déclaration contrôlée, l'article 100 bis prévoit une moyenne sur l'année et les deux années précédentes, ou sur l'année et les quatre années précédentes.",
 "origine": "Module 05, QCM 12"
 },
 {
@@ -31484,7 +31473,7 @@
 "options": [
 "5 %",
 "15 %",
-"25 % Valider et afficher la correction"
+"25 %"
 ],
 "bonne": 1,
 "explication": "Le d du I de l'article 182 B vise certaines prestations sportives fournies ou utilisées en France ; le taux interne est de 15 %, sous réserve des conventions fiscales.",
@@ -31741,7 +31730,7 @@
 "options": [
 "Une saisine immédiate du conseil de prud'hommes",
 "Un recours devant la CRA",
-"Un recours devant le tribunal de commerce Valider et afficher la correction"
+"Un recours devant le tribunal de commerce"
 ],
 "bonne": 1,
 "explication": "Le recours devant la commission de recours amiable est généralement préalable à la saisine du pôle social du tribunal judiciaire ; certaines contestations médicales suivent une voie spécifique.",
@@ -31984,7 +31973,7 @@
 "D.222-50"
 ],
 "bonne": 1,
-"explication": "L.222-2-10-1 Cet article encadre le contrat d'exploitation commerciale conclu entre le club et le sportif professionnel salarié, sous conditions et avec des mentions obligatoires.",
+"explication": "Cet article encadre le contrat d'exploitation commerciale conclu entre le club et le sportif professionnel salarié, sous conditions et avec des mentions obligatoires.",
 "origine": "Module 07, QCM 5"
 },
 {
@@ -32121,7 +32110,7 @@
 "options": [
 "Aucune différence",
 "Le nom civil identifie juridiquement, le pseudonyme est un nom choisi et la marque est un signe commercial",
-"Le pseudonyme remplace automatiquement le nom civil Valider et afficher la correction"
+"Le pseudonyme remplace automatiquement le nom civil"
 ],
 "bonne": 1,
 "explication": "Le nom civil relève de l'état des personnes ; le pseudonyme est un nom choisi ; la marque distingue des produits ou services. Les régimes juridiques sont distincts.",
@@ -32650,7 +32639,7 @@
 "1er janvier 2028"
 ],
 "bonne": 2,
-"explication": "La loi prévoit expressément cette date différée. C'est l'un des pièges majeurs du module. Légifrance+5",
+"explication": "La loi prévoit expressément cette date différée. C'est l'un",
 "origine": "Module 09, QCM 20, corrigé du module"
 }
 ],
