@@ -1,5 +1,5 @@
 {
-"version": "v8-2026-11-04",
+"version": "v9-2026-11-04",
 "domaines": [
 {
 "id": "agents",
@@ -30711,7 +30711,7 @@
 "Oui, elles sont identiques",
 "Non, elles relèvent de cadres distincts",
 "Oui, la FIFA délivre toutes les autorisations françaises",
-"Non, aucune autorisation n'est nécessaire Synthèse du module 1"
+"Non, aucune autorisation n'est nécessaire"
 ],
 "bonne": 1,
 "explication": "La licence FIFA et l'autorisation française d'exercer relèvent de cadres distincts.",

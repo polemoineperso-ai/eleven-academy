@@ -1212,7 +1212,7 @@ a.row:hover .row-title { color: var(--green); }
       ${divisionUp ? `<div class="trophy-new ${fxOn() ? "pop" : ""}">${pic("ic-trophy")}<div><b>Montée en ${esc(divisionUp)}</b><span>Tu changes de division.</span></div></div>` : ""}
       ${won.map((id) => { const t = TROPHIES.find((x) => x.id === id); return t ? `<div class="trophy-new ${fxOn() ? "pop" : ""}">${pic("ic-trophy")}<div><b>Trophée : ${esc(t.name)}</b><span>${esc(t.desc)}</span></div></div>` : ""; }).join("")}
       ${missed.length ? `<section class="sec" aria-labelledby="miss-t"><h2 class="h-sec" id="miss-t">À revoir demain</h2>
-        <div class="rows">${missed.map((q) => `<button class="row" data-go="chapter" data-param="${q.chapitre}"><span class="stack"><span class="row-title">${esc(q.article.texte)}, ${esc(q.article.ref)}</span><span class="row-sub">${esc(q.enonce)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div>
+        <div class="rows">${missed.map((q) => `<button class="row" data-go="chapter" data-param="${q.chapitre}"><span class="stack"><span class="row-title">${q.article ? `${esc(q.article.texte)}, ${esc(q.article.ref)}` : esc(C.chapter(q.chapitre)?.titre || "")}</span><span class="row-sub">${esc(q.enonce)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div>
         <p class="tiny">Ces questions reviendront dans ta séance de demain, puis à 3, 7, 14 et 30 jours une fois réussies.</p></section>` : ""}
       <div class="stack" style="gap:10px"><button class="btn btn-primary btn-block" data-go="home">Retour à l'accueil</button>
         <button class="btn btn-ghost btn-block" data-go="train">Voir les chapitres</button></div>
@@ -1828,7 +1828,9 @@ a.row:hover .row-title { color: var(--green); }
         break;
       }
       case "next": {
-        if (!s) return; s.i++; s.picked = null;
+        if (!s) return;
+        if (s.summary) { go("result"); break; }
+        s.i++; s.picked = null;
         if (s.i >= s.ids.length) finishSession();
         else { keepSession(); render(); window.scrollTo(0, 0); const h = document.getElementById("q-t"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
         break;
