@@ -1,5 +1,5 @@
 {
-"version": "v9-2026-11-04",
+"version": "v10-2026-11-04",
 "domaines": [
 {
 "id": "agents",
@@ -30718,6 +30718,193 @@
 "origine": "Module 01, QCM 10"
 },
 {
+"id": "an25-q01",
+"niveau": 2,
+"enonce": "L'autorité administrative peut conclure avec une entreprise une convention destinée à faciliter l'emploi d'un sportif de haut niveau et sa reconversion. La relation entre l'entreprise et le sportif peut prendre la forme :",
+"options": [
+"D'un contrat de travail",
+"D'un contrat de prestation de services",
+"D'un contrat de cession de droit à l'image",
+"D'un contrat de parrainage exclusif de tout lien de subordination",
+"Toutes les réponses ci-dessus sont correctes"
+],
+"bonne": 4,
+"explication": "L'article L. 221-8 du Code du sport admet le contrat de travail, et aussi la prestation de services, la cession de droit à l'image ou le parrainage sans lien de subordination, avec un projet de formation.",
+"origine": "Annale CNOSF 2025, QCM 1",
+"chapitre": "m01-1"
+},
+{
+"id": "an25-q05",
+"niveau": 2,
+"enonce": "Selon l'article L. 132-1 du Code du sport, le nombre de mandats de plein exercice d'un même président de ligue professionnelle ne peut excéder :",
+"options": [
+"Deux",
+"Deux consécutifs",
+"Trois",
+"Trois consécutifs",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 2,
+"explication": "L'article L. 132-1 fixe la limite à trois mandats de plein exercice, sans parler de mandats consécutifs.",
+"origine": "Annale CNOSF 2025, QCM 5",
+"chapitre": "m01-1"
+},
+{
+"id": "an25-q06",
+"niveau": 2,
+"enonce": "Une demande de conciliation contre une décision fédérale doit être adressée au président de la conférence des conciliateurs du CNOSF dans un délai maximum de :",
+"options": [
+"Sept jours suivant la notification ou la publication de la décision",
+"Dix jours suivant la notification ou la publication de la décision",
+"Quatorze jours suivant la notification ou la publication de la décision",
+"Quinze jours suivant la notification ou la publication de la décision",
+"Un mois suivant la notification ou la publication de la décision"
+],
+"bonne": 3,
+"explication": "L'article R. 141-15 du Code du sport donne quinze jours à compter de la notification ou de la publication de la décision contestée.",
+"origine": "Annale CNOSF 2025, QCM 6",
+"chapitre": "m01-1"
+},
+{
+"id": "an25-q14",
+"niveau": 2,
+"enonce": "Le Code du sport interdit de détenir une participation au sein d'un opérateur de paris sportifs agréé :",
+"options": [
+"À tous les dirigeants de clubs participant à des compétitions servant de support à des paris",
+"Seulement aux dirigeants de clubs constitués en sociétés commerciales",
+"Seulement aux dirigeants rémunérés de clubs constitués en sociétés commerciales",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 0,
+"explication": "Les articles L. 131-16 et D. 131-36-1 du Code du sport visent les dirigeants, salariés, bénévoles et membres des clubs concernés, quelle que soit leur forme.",
+"origine": "Annale CNOSF 2025, QCM 14",
+"chapitre": "m01-1"
+},
+{
+"id": "an25-q17",
+"niveau": 2,
+"enonce": "En matière de blanchiment de capitaux, que désigne le terme « empilage » (ou « dispersion ») ?",
+"options": [
+"L'opération initiale consistant à introduire l'argent « sale » dans le système financier",
+"La multiplication de transactions complexes destinée à masquer l'origine illicite des fonds",
+"Une technique de transfert direct de fonds vers une organisation terroriste",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 1,
+"explication": "C'est un terme de la pratique, sans texte. Les trois étapes classiques sont le placement, l'empilage, puis l'intégration.",
+"origine": "Annale CNOSF 2025, QCM 17",
+"chapitre": "m01-1"
+},
+{
+"id": "an24-q01",
+"niveau": 2,
+"enonce": "Un conseiller technique sportif exerçant une mission auprès d'une fédération agréée est placé, pendant ses missions, sous l'autorité hiérarchique :",
+"options": [
+"Du président de la fédération agréée",
+"Du directeur technique national de la fédération",
+"Du ministre chargé des sports",
+"Du directeur des sports au sein du ministère",
+"Toutes les réponses ci-dessus sont correctes"
+],
+"bonne": 2,
+"explication": "Selon l'article L. 131-12 du Code du sport, il reste sous l'autorité hiérarchique exclusive du ministre chargé des sports ou du chef de service déconcentré dont il relève.",
+"origine": "Annale CNOSF 2024, QCM 1",
+"chapitre": "m01-1"
+},
+{
+"id": "an24-q10",
+"niveau": 2,
+"enonce": "Constituée en association déclarée, une ligue professionnelle doit procéder à l'élection de son instance dirigeante :",
+"options": [
+"Tous les quatre ans, avant le 31 décembre qui suit les Jeux olympiques d'été",
+"Tous les quatre ans, avant les élections de la fédération délégataire dont elle relève",
+"Tous les quatre ans, après les élections de la fédération délégataire dont elle relève",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 3,
+"explication": "Le Code du sport ne prévoit aucune de ces obligations pour la ligue (annexe I-5 et article R. 131-11).",
+"origine": "Annale CNOSF 2024, QCM 10",
+"chapitre": "m01-1"
+},
+{
+"id": "an24-q16",
+"niveau": 2,
+"enonce": "Les règles des fédérations délégataires sur les paris sportifs en ligne, prévues à l'article L. 131-16 du Code du sport, s'appliquent :",
+"options": [
+"Aux sportifs exerçant leur activité au sein d'un centre de formation",
+"Aux arbitres",
+"Aux agents sportifs",
+"Toutes les réponses ci-dessus sont correctes",
+"Aucune réponse n'est correcte"
+],
+"bonne": 3,
+"explication": "L'article D. 131-36-1 du Code du sport liste largement les acteurs des compétitions : sportifs, centres de formation, arbitres, agents, dirigeants…",
+"origine": "Annale CNOSF 2024, QCM 16",
+"chapitre": "m01-1"
+},
+{
+"id": "an23-q13",
+"niveau": 2,
+"enonce": "Constituée en association déclarée, une ligue professionnelle doit comprendre au sein de son instance dirigeante :",
+"options": [
+"Au moins un sportif professionnel et un entraîneur diplômé, en activité ou l'ayant été dans les quatre dernières années",
+"Des représentants des sportifs et des entraîneurs, désignés par leurs organisations représentatives",
+"Au moins une sportive professionnelle, en activité ou l'ayant été dans les quatre dernières années",
+"Toutes les réponses ci-dessus sont correctes",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 1,
+"explication": "L'article R. 132-4 du Code du sport prévoit des représentants des sportifs et des entraîneurs désignés par leurs organisations représentatives.",
+"origine": "Annale CNOSF 2023, QCM 13",
+"chapitre": "m01-1"
+},
+{
+"id": "an23-q14",
+"niveau": 2,
+"enonce": "Une ligue professionnelle :",
+"options": [
+"Est obligatoirement constituée sous la forme d'une association déclarée",
+"Peut être constituée sous la forme d'une société anonyme sportive professionnelle",
+"Peut être une société commerciale si la fédération l'autorise à commercialiser les droits d'exploitation",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 0,
+"explication": "L'article R. 132-2 du Code du sport impose la forme de l'association déclarée, pour une durée illimitée.",
+"origine": "Annale CNOSF 2023, QCM 14",
+"chapitre": "m01-1"
+},
+{
+"id": "an23-q17",
+"niveau": 2,
+"enonce": "Quelle est la durée maximale, hors récidive, d'un arrêté d'interdiction administrative de stade (article L. 332-16 du Code du sport) ?",
+"options": [
+"6 mois",
+"12 mois",
+"18 mois",
+"24 mois"
+],
+"bonne": 1,
+"explication": "L'article L. 332-16 fixe douze mois, portés à vingt-quatre si la personne a déjà fait l'objet d'une interdiction dans les trois années précédentes.",
+"origine": "Annale CNOSF 2023, QCM 17",
+"chapitre": "m01-1"
+},
+{
+"id": "an23-q07",
+"niveau": 2,
+"enonce": "Les vices du consentement, tels que l'erreur, le dol ou la violence, sont une cause de :",
+"options": [
+"Nullité relative du contrat",
+"Nullité absolue du contrat",
+"Caducité du contrat",
+"Illicéité du contrat",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 0,
+"explication": "L'article 1131 du Code civil en fait une cause de nullité relative.",
+"origine": "Annale CNOSF 2023, QCM 7",
+"chapitre": "contrats-consentement"
+},
+{
 "id": "m03-q01",
 "chapitre": "m03-2",
 "niveau": 1,
@@ -30881,6 +31068,37 @@
 "bonne": 1,
 "explication": "La procédure collective de la société ne rend pas automatiquement le dirigeant personnellement failli. Une sanction personnelle, telle qu'une faillite personnelle ou une interdiction de gérer, suppose une décision fondée sur les conditions légales.",
 "origine": "Module 03, QCM 11"
+},
+{
+"id": "an24-q11",
+"niveau": 2,
+"enonce": "Quel organisme est habilité à délivrer l'attestation d'immatriculation d'une société sportive au Registre national des entreprises ?",
+"options": [
+"La préfecture du lieu du siège social",
+"Le tribunal de commerce territorialement compétent",
+"L'Institut national de la propriété industrielle (INPI)",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 2,
+"explication": "Le teneur du registre est seul habilité à délivrer cette attestation (article A. 123-293 du Code de commerce), et c'est l'INPI qui le tient (article R. 411-1 du Code de la propriété intellectuelle).",
+"origine": "Annale CNOSF 2024, QCM 11",
+"chapitre": "m03-2"
+},
+{
+"id": "an23-q12",
+"niveau": 2,
+"enonce": "Une société sportive ne peut pas être constituée sous la forme :",
+"options": [
+"D'une société anonyme (SA)",
+"D'une société par actions simplifiée (SAS)",
+"D'une société coopérative d'intérêt collectif (SCIC)",
+"Toutes les réponses ci-dessus sont correctes",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 4,
+"explication": "Ces trois formes sont possibles au regard de l'article L. 122-2 du Code du sport : aucune n'est interdite.",
+"origine": "Annale CNOSF 2023, QCM 12",
+"chapitre": "m03-3"
 },
 {
 "id": "m04-q01",
@@ -31273,6 +31491,53 @@
 "origine": "Module 05, QCM 15"
 },
 {
+"id": "an25-q08",
+"niveau": 2,
+"enonce": "Les redevances versées par un club à un sportif ou un entraîneur pour l'exploitation commerciale de son image, de son nom ou de sa voix sont assujetties :",
+"options": [
+"À l'impôt sur le revenu",
+"À la CSG sur les revenus du patrimoine",
+"À la CRDS sur les revenus du patrimoine",
+"Au prélèvement de solidarité",
+"Toutes les réponses ci-dessus sont correctes"
+],
+"bonne": 4,
+"explication": "Selon l'instruction interministérielle du 2 juillet 2019, ces redevances ne sont pas du salaire : elles relèvent de l'impôt sur le revenu et des prélèvements sociaux sur le patrimoine.",
+"origine": "Annale CNOSF 2025, QCM 8",
+"chapitre": "m05-2"
+},
+{
+"id": "an25-q16",
+"niveau": 2,
+"enonce": "Les avantages en nature accordés à un salarié dans le cadre de son contrat de travail :",
+"options": [
+"Sont toujours imposables",
+"Sont imposables, sauf la mise à disposition d'un logement",
+"Sont toujours imposables, mais seulement à hauteur de 50 % de leur montant",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 0,
+"explication": "L'article 82 du Code général des impôts inclut dans la base imposable tous les avantages en argent ou en nature.",
+"origine": "Annale CNOSF 2025, QCM 16",
+"chapitre": "m05-4"
+},
+{
+"id": "an24-q08",
+"niveau": 2,
+"enonce": "Une entreprise de prestation de services relève du régime micro pour ses bénéfices lorsque son chiffre d'affaires hors taxes de l'année civile précédente ou de la pénultième n'excède pas :",
+"options": [
+"15 000 €",
+"50 700 €",
+"83 600 €",
+"188 700 €",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 2,
+"explication": "Le seuil est aujourd'hui de 83 600 € (article 50-0 du CGI). L'annale de 2024 donnait 77 700 €, le montant de l'époque : ce seuil est révisé périodiquement.",
+"origine": "Annale CNOSF 2024, QCM 8, mise à jour",
+"chapitre": "m05-3"
+},
+{
 "id": "m06-q01",
 "chapitre": "m06-2",
 "niveau": 1,
@@ -31481,6 +31746,176 @@
 "bonne": 1,
 "explication": "Le recours devant la commission de recours amiable est généralement préalable à la saisine du pôle social du tribunal judiciaire ; certaines contestations médicales suivent une voie spécifique.",
 "origine": "Module 06, QCM 15"
+},
+{
+"id": "an25-q04",
+"niveau": 2,
+"enonce": "Selon la Convention collective nationale du sport, à compter du 1er janvier 2026 et hors jeunes sportifs en formation, le salaire annuel brut de référence d'un sportif salarié à temps plein doit être au moins égal à :",
+"options": [
+"19 650,19 € brut annuel",
+"22 289,19 € brut annuel",
+"25 316,19 € brut annuel",
+"29 650,19 € brut annuel"
+],
+"bonne": 1,
+"explication": "L'avenant n° 210 du 3 avril 2025 fixe ce minimum à 22 289,19 € à compter du 1er janvier 2026. Ce montant change avec les avenants : vérifier le dernier en vigueur.",
+"origine": "Annale CNOSF 2025, QCM 4",
+"chapitre": "m06-2"
+},
+{
+"id": "an25-q09",
+"niveau": 2,
+"enonce": "Après la signature d'un CDD spécifique avec un sportif ou un entraîneur professionnel, dans quel délai l'employeur doit-il transmettre le contrat au salarié ?",
+"options": [
+"Dans les 2 jours suivant l'embauche",
+"Dans les 3 jours suivant l'embauche",
+"Dans les 5 jours suivant l'embauche",
+"Aucun délai",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 0,
+"explication": "L'article L. 1242-13 du Code du travail impose la transmission au plus tard dans les deux jours ouvrables suivant l'embauche.",
+"origine": "Annale CNOSF 2025, QCM 9",
+"chapitre": "m06-2"
+},
+{
+"id": "an25-q10",
+"niveau": 2,
+"enonce": "Le harcèlement moral est défini par le Code du travail comme le fait de faire subir à un salarié :",
+"options": [
+"Un acte isolé ayant pour objet ou pour effet une dégradation de ses conditions de travail",
+"Des agissements répétés ayant pour objet ou pour effet une dégradation de ses conditions de travail",
+"Un acte isolé ou des agissements répétés ayant pour objet ou pour effet une dégradation de ses conditions de travail",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 1,
+"explication": "L'article L. 1152-1 du Code du travail vise des agissements répétés : la répétition est au cœur de la définition.",
+"origine": "Annale CNOSF 2025, QCM 10",
+"chapitre": "m06-2"
+},
+{
+"id": "an25-q11",
+"niveau": 2,
+"enonce": "Un salarié licencié pour motif économique bénéficie d'une priorité de réembauche. Laquelle de ces affirmations est correcte ?",
+"options": [
+"Il en bénéficie automatiquement durant 12 mois, sans avoir à en faire la demande",
+"Il en bénéficie durant 24 mois à compter de la rupture de son contrat s'il en fait la demande au cours de ce délai",
+"Il en bénéficie durant 12 mois à compter de la rupture de son contrat s'il en fait la demande au cours de ce délai",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 2,
+"explication": "L'article L. 1233-45 du Code du travail prévoit un an à compter de la rupture, à condition que le salarié le demande pendant ce délai.",
+"origine": "Annale CNOSF 2025, QCM 11",
+"chapitre": "m06-2"
+},
+{
+"id": "an24-q12",
+"niveau": 2,
+"enonce": "Outre les sportifs et entraîneurs professionnels salariés, le CDD spécifique peut s'adresser, selon l'article L. 222-2-2 du Code du sport :",
+"options": [
+"Aux arbitres ou juges professionnels salariés de leur fédération",
+"Aux sportifs salariés de leur fédération en qualité de membre d'une équipe de France",
+"Aux entraîneurs qui encadrent à titre principal les sportifs d'une équipe de France",
+"Toutes les réponses ci-dessus sont correctes",
+"Aucune réponse n'est correcte"
+],
+"bonne": 3,
+"explication": "L'article L. 222-2-2 étend ces règles, avec l'accord des parties, aux membres d'une équipe de France et à leurs entraîneurs, ainsi qu'aux arbitres et juges salariés de leur fédération.",
+"origine": "Annale CNOSF 2024, QCM 12",
+"chapitre": "m06-2"
+},
+{
+"id": "an24-q13",
+"niveau": 2,
+"enonce": "Selon la Convention collective nationale du sport, un salarié exerce de manière permanente des tâches relevant de groupes de classification différents. Quelle règle s'applique ?",
+"options": [
+"Il est automatiquement classé dans le groupe le plus élevé",
+"Il est classé dans le groupe le plus élevé si ces tâches dépassent 20 % de son temps de travail hebdomadaire",
+"Il est classé dans le groupe le plus élevé si ces tâches dépassent 40 % de son temps de travail hebdomadaire",
+"Il est classé dans le groupe le plus élevé si ces tâches dépassent 60 % de son temps de travail hebdomadaire",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 1,
+"explication": "L'article 9.1.2 de la CCNS retient le seuil de 20 % du temps de travail hebdomadaire.",
+"origine": "Annale CNOSF 2024, QCM 13",
+"chapitre": "m06-3"
+},
+{
+"id": "an24-q14",
+"niveau": 2,
+"enonce": "Le délai de droit commun pour introduire une action en paiement du salaire est de :",
+"options": [
+"1 an à compter du jour où celui qui l'exerce a connu ou aurait dû connaître les faits",
+"2 ans à compter du jour où celui qui l'exerce a connu ou aurait dû connaître les faits",
+"3 ans à compter du jour où celui qui l'exerce a connu ou aurait dû connaître les faits",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 2,
+"explication": "L'article L. 3245-1 du Code du travail fixe la prescription à trois ans.",
+"origine": "Annale CNOSF 2024, QCM 14",
+"chapitre": "m06-2"
+},
+{
+"id": "an23-q04",
+"niveau": 2,
+"enonce": "À l'expiration d'un CDD de 14 jours ou plus, le délai de carence avant un nouveau CDD est égal, sauf accord de branche :",
+"options": [
+"Au 1/5e de la durée du contrat venu à expiration",
+"Au 1/4 de la durée du contrat venu à expiration",
+"Au 1/3 de la durée du contrat venu à expiration",
+"À la moitié de la durée du contrat venu à expiration",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 2,
+"explication": "L'article L. 1244-3-1 du Code du travail retient le tiers de la durée du contrat, renouvellement inclus, à défaut de stipulation de branche.",
+"origine": "Annale CNOSF 2023, QCM 4",
+"chapitre": "m06-2"
+},
+{
+"id": "an23-q05",
+"niveau": 2,
+"enonce": "La lettre de licenciement, envoyée en recommandé avec avis de réception après l'entretien préalable, ne peut être expédiée :",
+"options": [
+"Moins de 2 jours ouvrables après la date prévue de l'entretien",
+"Moins de 3 jours ouvrables après la date prévue de l'entretien",
+"Plus de 2 jours ouvrables après la date prévue de l'entretien",
+"Plus de 3 jours ouvrables après la date prévue de l'entretien",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 0,
+"explication": "L'article L. 1232-6 du Code du travail impose d'attendre au moins deux jours ouvrables après la date prévue de l'entretien.",
+"origine": "Annale CNOSF 2023, QCM 5",
+"chapitre": "m06-4"
+},
+{
+"id": "an23-q10",
+"niveau": 2,
+"enonce": "Quelle proposition correspond à la définition de l'abandon de poste par le Code du travail ? Le salarié qui a abandonné volontairement son poste et ne reprend pas le travail après mise en demeure de justifier son absence et de reprendre son poste :",
+"options": [
+"Est présumé avoir démissionné",
+"Est présumé avoir démissionné à l'expiration du délai fixé par l'employeur",
+"Est présumé avoir démissionné à l'expiration d'un délai de 24 heures",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 1,
+"explication": "Selon l'article L. 1237-1-1 du Code du travail, la présomption joue à l'expiration du délai fixé par l'employeur dans la mise en demeure.",
+"origine": "Annale CNOSF 2023, QCM 10",
+"chapitre": "m06-2"
+},
+{
+"id": "an23-q11",
+"niveau": 2,
+"enonce": "La rupture d'un CDD pour inaptitude d'origine professionnelle ouvre droit à une indemnité dont le montant, sauf dispositions conventionnelles plus favorables :",
+"options": [
+"Est égal à celui de l'indemnité légale de licenciement",
+"Ne peut être inférieur au triple de l'indemnité légale de licenciement",
+"Ne peut être inférieur au double de l'indemnité légale de licenciement",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 2,
+"explication": "L'indemnité ne peut être inférieure au double de l'indemnité légale de licenciement (article L. 1226-20 du Code du travail).",
+"origine": "Annale CNOSF 2023, QCM 11",
+"chapitre": "m06-2"
 },
 {
 "id": "m07-q01",
@@ -31693,6 +32128,38 @@
 "origine": "Module 07, QCM 15"
 },
 {
+"id": "an25-q18",
+"niveau": 2,
+"enonce": "Un concessionnaire de véhicules de luxe utilise sur son site la photo individuelle d'un joueur, prise pendant un match officiel, pour promouvoir ses produits, sans son accord. Ce procédé est-il licite ?",
+"options": [
+"Oui, car l'image a été prise lors d'un événement public",
+"Oui, car l'image a été prise lors d'un événement public et qu'il s'agit d'un joueur professionnel",
+"Non, car l'exploitation commerciale de l'image individuelle d'un sportif exige son consentement exprès",
+"Non, car le procédé n'est pas licite pour les voitures de luxe",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 2,
+"explication": "L'article 9 du Code civil protège l'image. Une photo prise lors d'un événement public n'autorise pas son exploitation commerciale sans accord (Cass. 1re civ., 27 février 2007).",
+"origine": "Annale CNOSF 2025, QCM 18",
+"chapitre": "m07-2"
+},
+{
+"id": "an24-q09",
+"niveau": 2,
+"enonce": "Le plafond de la redevance versée au sportif ou à l'entraîneur professionnel au titre de l'exploitation commerciale de son image, de son nom ou de sa voix est fixé par :",
+"options": [
+"Le Code de la sécurité sociale",
+"Un décret",
+"La Convention collective nationale du sport",
+"Un accord collectif national conclu par discipline",
+"Un règlement de la fédération ou de la ligue"
+],
+"bonne": 3,
+"explication": "L'article L. 222-2-10-1 du Code du sport renvoie à une convention ou un accord collectif national conclu par discipline.",
+"origine": "Annale CNOSF 2024, QCM 9",
+"chapitre": "m07-3"
+},
+{
 "id": "m08-q01",
 "chapitre": "m08-2",
 "niveau": 1,
@@ -31859,6 +32326,52 @@
 "bonne": 0,
 "explication": "C'est une exigence de l'article L.113-1 du Code des assurances.",
 "origine": "Module 08, QCM 12, corrigé du module"
+},
+{
+"id": "an25-q12",
+"niveau": 2,
+"enonce": "En matière d'assurance de personnes, du type « individuelle accident », le principe est celui :",
+"options": [
+"De la réparation intégrale du préjudice",
+"De la réparation du préjudice dans la limite des garanties prévues par le contrat",
+"De la réparation du préjudice selon la nomenclature dite « Dintilhac »",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 1,
+"explication": "Selon l'article L. 131-1 du Code des assurances, les sommes assurées sont fixées par le contrat : c'est le principe forfaitaire.",
+"origine": "Annale CNOSF 2025, QCM 12",
+"chapitre": "m08-3"
+},
+{
+"id": "an24-q07",
+"niveau": 2,
+"enonce": "L'assuré doit déclarer à l'assureur les circonstances nouvelles qui aggravent les risques ou en créent de nouveaux. À partir du moment où il en a connaissance, il dispose d'un délai de :",
+"options": [
+"5 jours",
+"15 jours",
+"30 jours",
+"2 mois",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 1,
+"explication": "L'article L. 113-2 du Code des assurances fixe ce délai à quinze jours.",
+"origine": "Annale CNOSF 2024, QCM 7",
+"chapitre": "m08-2"
+},
+{
+"id": "an23-q18",
+"niveau": 2,
+"enonce": "Selon l'article L. 112-4 du Code des assurances, les clauses d'une police édictant des nullités, des déchéances ou des exclusions ne sont valables :",
+"options": [
+"Que si elles sont mentionnées en caractères très apparents",
+"Que si elles sont mentionnées en gras et en majuscules",
+"Que si elles sont reprises dans une annexe particulière",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 0,
+"explication": "L'article L. 112-4 exige des caractères très apparents, sans imposer de forme précise.",
+"origine": "Annale CNOSF 2023, QCM 18",
+"chapitre": "m08-2"
 },
 {
 "id": "m09-q01",
@@ -33774,6 +34287,104 @@
 "genre": "article",
 "recto": "Code du sport L.321-4-1",
 "verso": "Assurance de personnes des sportifs de haut niveau"
+}
+],
+"examens": [
+{
+"id": "2025",
+"titre": "Épreuve générale 2025",
+"minutes": 120,
+"qcm": [
+"an25-q01",
+"agt-14",
+"agt-43",
+"an25-q04",
+"an25-q05",
+"an25-q06",
+"dop-14",
+"an25-q08",
+"an25-q09",
+"an25-q10",
+"an25-q11",
+"an25-q12",
+"agt-49",
+"an25-q14",
+"ctr-47",
+"an25-q16",
+"an25-q17",
+"an25-q18"
+],
+"cas": [
+{
+"titre": "Cas pratique 1 : un sportif contrôlé positif",
+"points": 6,
+"enonce": "Un sportif, récemment contrôlé positif à une substance spécifiée par l'Agence française de lutte contre le dopage (AFLD), vous consulte : l'AFLD l'a informé qu'il était poursuivi pour une violation des règles antidopage.",
+"questions": [
+{
+"q": "Quelle est la durée de la suspension qu'il encourt, et existe-t-il un motif d'aggravation ?",
+"c": "2 ans. La durée passe à 4 ans s'il est démontré qu'il a eu l'intention de commettre le manquement.",
+"ref": "L. 232-23-3-3 du Code du sport"
+},
+{
+"q": "Il veut apporter son aide aux instances compétentes. Précisez les deux critères de l'aide substantielle.",
+"c": "Divulguer entièrement toutes les informations en sa possession sur des violations, et collaborer pleinement à l'enquête, le cas échéant en témoignant.",
+"ref": "L. 230-4 du Code du sport"
+},
+{
+"q": "La suspension peut être assortie du sursis en cas d'aide substantielle. Quel niveau ce sursis peut-il atteindre ?",
+"c": "Jusqu'aux trois quarts de la durée de la suspension prononcée.",
+"ref": "L. 232-23-3-2 du Code du sport"
+},
+{
+"q": "En fonction de quels critères ce sursis peut-il être prononcé ? Citez les deux critères prévus.",
+"c": "La gravité de la violation commise et l'importance de l'aide apportée.",
+"ref": "L. 232-23-3-2 du Code du sport"
+},
+{
+"q": "Quelle instance de l'AFLD est compétente pour assortir la sanction d'un sursis ?",
+"c": "La commission des sanctions. Le collège n'intervient qu'en cas d'accord de composition administrative, ce qui n'est pas le cas ici.",
+"ref": "L. 232-23-3-2 du Code du sport"
+},
+{
+"q": "Quelles sont les deux raisons qui pourraient conduire à révoquer ce sursis ?",
+"c": "Une nouvelle violation dans les dix ans suivant le prononcé de la sanction, ou le fait de cesser de coopérer ou de transmettre les informations promises.",
+"ref": "L. 232-23-3-2, II, du Code du sport"
+}
+]
+},
+{
+"titre": "Cas pratique 2 : un CDD spécifique à temps partiel",
+"points": 5,
+"enonce": "Vous êtes l'agent d'un basketteur de 27 ans qui devrait être recruté par un club de 3e division. Le club propose un CDD spécifique à temps partiel. Vous vérifiez la conformité du contrat, notamment au chapitre 12 de la Convention collective nationale du sport (CCNS).",
+"questions": [
+{
+"q": "Quelle doit être la durée minimale de travail proposée par le club ?",
+"c": "17 h 30 par semaine, ou son équivalent sur la période de référence.",
+"ref": "CCNS, chapitre 12, temps partiel"
+},
+{
+"q": "Le club pourra demander des heures complémentaires. Quel pourcentage de majoration doit-il appliquer ?",
+"c": "10 %.",
+"ref": "CCNS, chapitre 12, heures complémentaires"
+},
+{
+"q": "Quelle limite les heures complémentaires ne peuvent-elles pas dépasser ?",
+"c": "Un tiers de la durée de travail prévue au contrat, sans atteindre la durée légale.",
+"ref": "CCNS, chapitre 12, heures complémentaires"
+},
+{
+"q": "Quel risque encourt l'employeur si une mention obligatoire sur la durée du travail manque au contrat ?",
+"c": "Le contrat est présumé à temps plein (requalification à temps complet).",
+"ref": "Cass. soc., 9 janvier 2013, n° 11-16.433, et L. 3123-6 du Code du travail"
+},
+{
+"q": "Quelle est la durée du maintien de salaire en cas d'arrêt de travail pour maladie ou accident du travail ?",
+"c": "Jusqu'au 90e jour d'arrêt : l'employeur complète les indemnités journalières.",
+"ref": "CCNS, chapitre 12, maladie et accident"
+}
+]
+}
+]
 }
 ]
 }

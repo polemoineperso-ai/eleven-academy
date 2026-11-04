@@ -324,6 +324,24 @@ a.row:hover .row-title { color: var(--green); }
 .lic-stats dt { font-size: 13px; color: var(--fg-2); font-weight: 500; }
 .lic-foot { margin: 0; font-size: 14px; color: var(--fg-2); }
 
+/* Match officiel */
+.exam-bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--pitch); padding-block: 6px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.exam-time { font-size: 16px; font-weight: 800; }
+.exam-q { display: flex; flex-direction: column; gap: 12px; padding-block: 8px; }
+.exam-case { margin: 0; font-size: 16px; line-height: 1.6; max-width: 65ch; }
+.exam-text { width: 100%; padding: 12px 14px; border-radius: var(--r-s); border: 1px solid var(--line-strong); background: var(--turf); color: var(--chalk); font: inherit; line-height: 1.5; resize: vertical; }
+.exam-text:focus { outline: 2px solid var(--green); outline-offset: 1px; }
+.opt.is-picked { border-color: var(--green); background: var(--green-soft); }
+.opt.is-picked .opt-letter { background: var(--green); color: var(--on-green); }
+.exam-score { display: flex; flex-direction: column; gap: 10px; }
+.exam-fix { display: flex; flex-direction: column; gap: 8px; padding-block: 14px; border-top: 1px solid var(--line); }
+.exam-fq { margin: 0; font-weight: 700; line-height: 1.45; }
+.exam-corr { margin: 0; line-height: 1.55; }
+.exam-mark { display: inline-flex; vertical-align: -3px; margin-right: 6px; }
+.exam-mark svg { width: 18px; height: 18px; }
+.exam-mark.ok { color: var(--green); }
+.exam-mark.ko { color: var(--red); }
+
 /* Cards */
 .flash { width: 100%; min-height: 46vh; border: 0; text-align: left; color: var(--ink); font: inherit; gap: 14px; }
 .flash-front { cursor: pointer; justify-content: center; align-items: center; text-align: center; position: relative; padding-block: 40px; }
@@ -651,6 +669,7 @@ a.row:hover .row-title { color: var(--green); }
     whistle: '<circle cx="9" cy="14" r="5"/><path d="M13 11h8v4h-5M9 14h.01"/>'
   };
   Object.assign(I, {
+    close: '<path d="M6 6l12 12M18 6 6 18"/>',
     edit: '<path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',
     indent: '<path d="M4 6h16M12 12h8M12 18h8M4 10l4 3-4 3z"/>',
     outdent: '<path d="M4 6h16M12 12h8M12 18h8M8 10l-4 3 4 3z"/>',
@@ -894,7 +913,7 @@ a.row:hover .row-title { color: var(--green); }
     S.progress.answers[q.id] = a;
     S.progress.total++; if (right) S.progress.right++;
     S.progress.xp += right ? 10 : 2;
-    S.session.results.push({ id: q.id, choice, right });
+    S.session?.results.push({ id: q.id, choice, right });
     save();
     return right;
   }
@@ -948,9 +967,9 @@ a.row:hover .row-title { color: var(--green); }
     if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
   }
   function renderTabs() {
-    const hidden = S.view === "quiz" || S.view === "ficheEdit" || S.view === "cardPlay";
+    const hidden = ["quiz", "ficheEdit", "cardPlay", "exam", "examIntro", "examFix"].includes(S.view);
     document.querySelector(".tabbar").hidden = hidden;
-    const map = { home: "home", train: "train", chapter: "train", match: "match", cards: "cards", fiche: "train", cours: "train", outil: "train", module: "train", progress: "progress", result: "home", me: "" };
+    const map = { home: "home", train: "train", chapter: "train", match: "match", cards: "cards", examIntro: "match", exam: "match", examFix: "match", fiche: "train", cours: "train", outil: "train", module: "train", progress: "progress", result: "home", me: "" };
     const cur = map[S.view];
     document.getElementById("tabs").innerHTML = TABS.map((t) =>
       `<button class="tab" data-go="${t.id}" ${cur === t.id ? 'aria-current="page"' : ""}>${t.crest ? `<img class="tab-crest" src="${ASSET["crest"]}" alt="" width="29" height="32">` : t.pic ? pic(t.pic) : tile(t.icon)}<span>${t.label}</span></button>`).join("");
@@ -1248,18 +1267,105 @@ a.row:hover .row-title { color: var(--green); }
             <span class="row-side num">${m} %${icon("play")}</span>
             <span class="bar" aria-hidden="true"><i style="width:${m}%"></i></span></button>`;
         }).join("")}</div></section>
-      <section class="sheet dark" aria-labelledby="ex-t">
-        <h2 class="sheet-title" id="ex-t">Match officiel : pas encore disponible</h2>
-        <p class="muted small" style="margin:0">L'examen blanc reproduira l'épreuve générale du CNOSF.</p>
-        <ul class="plan">
-          <li><span><b>2 heures, sans document</b><br><span class="muted small">Comme le jour de l'épreuve.</span></span></li>
-          <li><span><b>18 QCM, 9 points</b><br><span class="muted small">0,5 point par question, une seule bonne réponse.</span></span></li>
-          <li><span><b>2 cas pratiques, 6 et 5 points</b><br><span class="muted small">Réponse rédigée, puis corrigé et grille de points.</span></span></li>
-          <li><span><b>10/20 minimum</b><br><span class="muted small">Note éliminatoire pour passer à l'épreuve FFF.</span></span></li>
-        </ul>
-      </section>
+      ${officialBlock()}
     </main>`;
   }
+
+  /* ---------- Match officiel: a past paper, timed, marked out of 20 ---------- */
+  const EX_MIN = 10; /* below this mark the candidate cannot sit the FFF paper */
+  const examById = (id) => (S.content?.examens || []).find((e) => e.id === id);
+  const examNow = () => S.progress.examCur || null;
+  const frNote = (n) => String(Math.round(n * 100) / 100).replace(".", ",");
+  function officialBlock() {
+    const cur = examNow(), res = S.progress.examResults || [];
+    return `<section class="sec" aria-labelledby="ex-t"><h2 class="h-sec" id="ex-t">Match officiel</h2>
+      <p class="muted small" style="margin:0">Un vrai sujet du CNOSF, noté sur 20, en 2 heures et sans document.</p>
+      <div class="rows">${(S.content?.examens || []).map((e) => {
+        const last = res.find((r) => r.id === e.id), mine = cur && cur.id === e.id;
+        return `<button class="row" data-act="${mine ? "exam-resume" : "exam-intro"}" data-param="${e.id}"><span class="stack"><span class="row-title">${esc(e.titre)}</span><span class="row-sub num">${mine ? (cur.phase === "fix" ? "Correction en cours" : "Match en cours") : last ? `Dernière note : ${frNote(last.note)} / 20` : "18 QCM et 2 cas pratiques"}</span></span><span class="row-side">${icon(mine ? "play" : "chevron")}</span></button>`;
+      }).join("")}</div>
+      <p class="note">Les sujets 2023 et 2024 arriveront ensuite.</p></section>`;
+  }
+  function vExamIntro() {
+    const e = examById(S.param); if (!e) return vMatch();
+    return `<main class="screen narrow">
+      <div class="stack" style="gap:6px"><button class="link-btn" data-go="match" style="align-self:flex-start">${icon("back")} Match</button>
+        <h1 class="h-screen">${esc(e.titre)}</h1><p class="muted small">Comme le jour de l'épreuve générale du CNOSF.</p></div>
+      <section class="sheet dark"><ul class="plan" style="margin:0">
+        <li><span><b>2 heures, sans document</b><br><span class="muted small">Le chrono démarre dès que tu commences et continue si tu quittes l'appli.</span></span></li>
+        <li><span><b>18 QCM, 9 points</b><br><span class="muted small">0,5 point par question, une seule bonne réponse.</span></span></li>
+        <li><span><b>2 cas pratiques, 6 et 5 points</b><br><span class="muted small">Tu rédiges, puis tu notes toi-même ta réponse avec le corrigé. Barème indicatif : le même nombre de points par question.</span></span></li>
+        <li><span><b>10/20 minimum</b><br><span class="muted small">En dessous, la note est éliminatoire pour l'épreuve FFF.</span></span></li>
+      </ul></section>
+      <p class="note warn">La question sur les sanctions a été mise à jour : la loi du 3 août 2026 a changé la réponse de l'annale. Les corrigés citent les textes en vigueur.</p>
+      <div class="lesson-end"><button class="btn btn-primary btn-block" data-act="exam-start" data-param="${e.id}">${icon("play")}Commencer le match</button></div>
+    </main>`;
+  }
+  const examLeft = (cur, e) => Math.max(0, Math.round((cur.start + e.minutes * 60000 - Date.now()) / 1000));
+  const clock = (sec) => `${Math.floor(sec / 3600)} h ${String(Math.floor(sec / 60) % 60).padStart(2, "0")} min ${String(sec % 60).padStart(2, "0")}`;
+  const examCount = (cur, e) => e.qcm.filter((id) => cur.qcm[id] !== undefined).length;
+  function vExam() {
+    const cur = examNow(), e = cur && examById(cur.id); if (!e) return vMatch();
+    return `<main class="screen narrow exam">
+      <div class="exam-bar"><button class="link-btn" data-go="match">Quitter</button><span class="exam-time num" id="ex-time" role="timer">${clock(examLeft(cur, e))}</span><span class="tiny num" id="ex-count">${examCount(cur, e)} / ${e.qcm.length} QCM</span></div>
+      <h1 class="h-screen">${esc(e.titre)}</h1>
+      <section class="sec" aria-labelledby="p1-t"><h2 class="h-sec" id="p1-t">Les 18 QCM</h2>
+        ${e.qcm.map((id, n) => { const q = C.q(id); return q ? `<div class="exam-q"><p class="q-text" id="qq-${n}"><span class="num">${n + 1}.</span> ${esc(q.enonce)}</p>
+          <div class="opts" role="group" aria-labelledby="qq-${n}">${q.options.map((o, k) => `<button class="opt${cur.qcm[id] === k ? " is-picked" : ""}" data-act="exam-pick" data-param="${id}:${k}" aria-pressed="${cur.qcm[id] === k}"><span class="opt-letter">${LETTERS[k]}</span><span>${esc(o)}</span><span class="opt-mark"></span></button>`).join("")}</div></div>` : ""; }).join("")}
+      </section>
+      ${e.cas.map((cas, i) => `<section class="sec" aria-labelledby="c${i}-t"><h2 class="h-sec" id="c${i}-t">${esc(cas.titre)}, ${cas.points} points</h2>
+        <p class="exam-case">${esc(cas.enonce)}</p>
+        ${cas.questions.map((x, j) => `<div class="field"><label for="ca-${i}-${j}">${j + 1}. ${esc(x.q)}</label><textarea id="ca-${i}-${j}" class="exam-text" data-cas="${i}-${j}" rows="4">${esc(cur.cas[`${i}-${j}`] || "")}</textarea></div>`).join("")}
+      </section>`).join("")}
+      ${cur.confirm ? `<div class="ed-confirm" role="alert"><p>Rendre ta copie ? Il te reste ${examCount(cur, e) < e.qcm.length ? `${e.qcm.length - examCount(cur, e)} QCM sans réponse et ` : ""}du temps. Tu ne pourras plus modifier tes réponses.</p><button class="btn btn-ghost btn-block" data-act="exam-stay">Continuer le match</button><button class="btn btn-primary btn-block" data-act="exam-submit">Rendre ma copie</button></div>`
+        : `<div class="lesson-end"><button class="btn btn-primary btn-block" data-act="exam-ask">${icon("check")}Rendre ma copie</button>
+          <button class="link-btn" data-act="exam-drop" style="align-self:center">Abandonner ce match</button></div>`}
+    </main>`;
+  }
+  function examMark(cur, e) {
+    const right = e.qcm.filter((id) => cur.qcm[id] === C.q(id)?.bonne).length;
+    let cas = 0, todo = 0;
+    e.cas.forEach((c, i) => c.questions.forEach((_, j) => {
+      const g = cur.grade[`${i}-${j}`];
+      if (g === undefined) todo++; else cas += g * c.points / c.questions.length;
+    }));
+    return { right, qcm: right * 0.5, cas, todo, note: right * 0.5 + cas };
+  }
+  function vExamFix() {
+    const cur = examNow(), e = cur && examById(cur.id); if (!e) return vMatch();
+    const m = examMark(cur, e);
+    return `<main class="screen narrow">
+      <div class="stack" style="gap:6px"><button class="link-btn" data-go="match" style="align-self:flex-start">${icon("back")} Match</button><h1 class="h-screen">Correction</h1><p class="muted small">${esc(e.titre)}${cur.late ? " · copie rendue à la fin du temps" : ""}</p></div>
+      <div class="exam-score"><span class="score-big num">${frNote(m.note)}<small> / 20</small></span>
+        <p class="small" style="margin:0">QCM : ${m.right} sur ${e.qcm.length}, soit ${frNote(m.qcm)} points. Cas pratiques : ${frNote(m.cas)} points${m.todo ? `, ${m.todo} réponse${m.todo > 1 ? "s" : ""} à noter` : ""}.</p>
+        ${m.todo ? "" : `<p class="note ${m.note >= EX_MIN ? "ok" : "warn"}">${m.note >= EX_MIN ? "Au-dessus des 10/20 demandés pour passer à l'épreuve FFF." : "Sous les 10/20 : cette note serait éliminatoire pour l'épreuve FFF."}</p>`}</div>
+      ${e.cas.map((cas, i) => `<section class="sec" aria-labelledby="fc${i}-t"><h2 class="h-sec" id="fc${i}-t">${esc(cas.titre)}</h2><p class="muted small" style="margin:0">Compare ta réponse au corrigé, puis note-toi.</p>
+        ${cas.questions.map((x, j) => { const key = `${i}-${j}`, g = cur.grade[key]; return `<div class="exam-fix"><p class="exam-fq">${j + 1}. ${esc(x.q)}</p>
+          <p class="small muted" style="margin:0">Ta réponse : ${cur.cas[key] ? esc(cur.cas[key]) : "aucune"}</p>
+          <p class="exam-corr"><b>Corrigé :</b> ${esc(x.c)} <span class="muted small">(${esc(x.ref)})</span></p>
+          <div class="seg" role="group" aria-label="Ta note pour cette réponse">${[[1, "Trouvé"], [0.5, "En partie"], [0, "Manqué"]].map(([v, l]) => `<button data-act="exam-grade" data-param="${key}:${v}" aria-pressed="${g === v}">${l}</button>`).join("")}</div></div>`; }).join("")}</section>`).join("")}
+      <section class="sec" aria-labelledby="fq-t"><h2 class="h-sec" id="fq-t">Les QCM</h2>
+        ${e.qcm.map((id, n) => { const q = C.q(id); if (!q) return ""; const c = cur.qcm[id], ok = c === q.bonne; return `<div class="exam-fix"><p class="exam-fq"><span class="exam-mark ${ok ? "ok" : "ko"}">${icon(ok ? "check" : "close")}</span>${n + 1}. ${esc(q.enonce)}</p>
+          ${ok ? "" : `<p class="small muted" style="margin:0">Ta réponse : ${c === undefined ? "aucune" : esc(q.options[c])}</p>`}
+          <p class="exam-corr"><b>Bonne réponse :</b> ${esc(q.options[q.bonne])}</p><p class="small muted" style="margin:0">${esc(q.explication)}</p></div>`; }).join("")}</section>
+      <div class="lesson-end"><button class="btn btn-primary btn-block" data-act="exam-save">${icon("check")}${m.todo ? `Enregistrer ma note (${m.todo} à noter)` : "Enregistrer ma note"}</button></div>
+    </main>`;
+  }
+  function examSubmit(late) {
+    const cur = examNow(), e = cur && examById(cur.id); if (!e || cur.phase === "fix") return;
+    e.qcm.forEach((id) => { const q = C.q(id); if (q && cur.qcm[id] !== undefined) grade(q, cur.qcm[id]); }); /* wrong answers come back in the daily match */
+    cur.phase = "fix"; cur.confirm = false; cur.late = !!late;
+    save(); go("examFix");
+    if (late) toast("Temps écoulé : ta copie est rendue.");
+  }
+  // One tick a second while the exam is on screen, or to close a paper whose time ran out
+  setInterval(() => {
+    if (S.view !== "exam" || !S.progress) return;
+    const cur = examNow(), e = cur && examById(cur.id); if (!e || cur.phase === "fix") return;
+    const left = examLeft(cur, e);
+    const n = document.getElementById("ex-time"); if (n) n.textContent = clock(left);
+    if (!left) examSubmit(true);
+  }, 1000);
 
   /* ---------- Cartes: one notion per card, a collection per module ---------- */
   const allCards = () => S.content?.cartes || [];
@@ -1816,7 +1922,7 @@ a.row:hover .row-title { color: var(--green); }
     if (!S.progress) { app.innerHTML = vLoading(); document.querySelector(".tabbar").hidden = true; return; }
     if (S.welcome) { app.innerHTML = typo(vWelcome()); document.querySelector(".tabbar").hidden = true; return; }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
-    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, match: vMatch, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
+    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
   }
@@ -1880,6 +1986,20 @@ a.row:hover .row-title { color: var(--green); }
       case "reload": location.reload(); break;
       case "login-back": if (S.login) { S.login.step = "email"; S.login.err = ""; render(); } break;
       case "module-match": { const d = C.domain(param); startSession("module", buildDaily(S.progress.settings.perSession, C.qOfDomain(param)).ids, "Match : " + (d?.titre || "")); break; }
+      case "exam-intro": go("examIntro", param); break;
+      case "exam-start": S.progress.examCur = { id: param, start: Date.now(), qcm: {}, cas: {}, grade: {}, phase: "copy" }; save(); go("exam"); break;
+      case "exam-resume": { const cur = examNow(), e = cur && examById(cur.id); if (!e) break; if (cur.phase === "fix") go("examFix"); else if (!examLeft(cur, e)) examSubmit(true); else go("exam"); break; }
+      case "exam-pick": { const cur = examNow(); if (!cur || cur.phase === "fix") break; const [id, k] = param.split(":"); cur.qcm[id] = Number(k);
+        el.parentElement.querySelectorAll(".opt").forEach((b) => { const on = b === el; b.classList.toggle("is-picked", on); b.setAttribute("aria-pressed", on); });
+        const n = document.getElementById("ex-count"), e = examById(cur.id); if (n && e) n.textContent = `${examCount(cur, e)} / ${e.qcm.length} QCM`; save(); break; }
+      case "exam-ask": { const cur = examNow(); if (cur) { cur.confirm = true; render(); document.querySelector(".ed-confirm")?.scrollIntoView({ block: "center" }); } break; }
+      case "exam-stay": { const cur = examNow(); if (cur) { cur.confirm = false; render(); } break; }
+      case "exam-submit": examSubmit(false); break;
+      case "exam-drop": S.progress.examCur = null; save(); go("match"); toast("Match abandonné, sans note."); break;
+      case "exam-grade": { const cur = examNow(); if (!cur) break; const cut = param.lastIndexOf(":"); cur.grade[param.slice(0, cut)] = Number(param.slice(cut + 1)); save(); render(); break; }
+      case "exam-save": { const cur = examNow(), e = cur && examById(cur.id); if (!e) break; const m = examMark(cur, e);
+        S.progress.examResults = [{ id: cur.id, date: today(), note: m.note, qcm: m.qcm, cas: m.cas }].concat(S.progress.examResults || []).slice(0, 30);
+        S.progress.examCur = null; save(); go("match"); toast(`Note enregistrée : ${frNote(m.note)} / 20.`); break; }
       case "card-play": { const mod = S.deck?.mod; startDeck(buildDeck(mod ? allCards().filter((k) => k.domaine === mod) : allCards(), 10), false, mod); break; }
       case "card-module": startDeck(buildDeck(allCards().filter((k) => k.domaine === param), 10), false, param); break;
       case "card-open": startDeck([param], true); break;
@@ -1927,6 +2047,7 @@ a.row:hover .row-title { color: var(--green); }
       if (S.edit && (!S.edit.lastHist || Date.now() - S.edit.lastHist > 1500)) { S.edit.hist.push(S.edit.html); S.edit.lastHist = Date.now(); }
       edTouched();
     }
+    if (e.target.dataset?.cas) { const cur = examNow(); if (cur) { cur.cas[e.target.dataset.cas] = e.target.value; save(); } return; }
     if (e.target.id === "card-q") { S.cardQ.q = e.target.value; document.getElementById("card-out").innerHTML = typo(cardOut()); return; }
     if (e.target.id !== "rev-q") return;
     S.rev.q = e.target.value;
