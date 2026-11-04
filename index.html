@@ -120,6 +120,7 @@ a { color: var(--green); text-underline-offset: 3px; }
 .icon-btn svg { width: 20px; height: 20px; }
 .me-btn { width: 44px; height: 44px; padding: 0; border: 0; background: none; border-radius: 12px; flex: none; }
 .me-btn img { width: 44px; height: 44px; border-radius: 12px; display: block; }
+.me-initial { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; background: var(--green); color: var(--on-green); font-size: 20px; font-weight: 800; }
 
 /* Picto tiles: the art-direction rasters, and the same tile drawn in CSS for glyphs the board does not have */
 .pic { width: 44px; height: 44px; border-radius: 12px; display: block; flex: none; }
@@ -308,6 +309,20 @@ a.row:hover .row-title { color: var(--green); }
 .sheet-list li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 8px; height: 8px; border-radius: 50%; border: 2px solid var(--green-press); }
 .sheet-src { font-size: 13px; color: var(--ink-2); border-top: 1px solid var(--paper-line); padding-top: 10px; }
 .sheet.dark .sheet-src { border-color: var(--line); }
+
+/* Licence */
+.licence { display: flex; flex-direction: column; gap: 16px; padding: 18px; border-radius: var(--r-m); border: 1px solid var(--tile-rim); background: linear-gradient(160deg, rgba(169, 224, 35, 0.16), rgba(169, 224, 35, 0) 55%), var(--turf); box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4); }
+.lic-head { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.lic-crest { width: 58px; height: auto; flex: none; display: block; }
+.lic-name { margin: 0; font-size: 26px; font-weight: 900; font-style: italic; line-height: 1.15; overflow-wrap: anywhere; }
+.lic-div { margin: 2px 0 0; display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--gold); }
+.lic-div svg { width: 18px; height: 18px; flex: none; }
+.lic-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding-block: 12px; border-block: 1px solid var(--line); }
+.lic-stats div { display: flex; flex-direction: column-reverse; gap: 2px; min-width: 0; }
+.lic-stats div + div { padding-left: 12px; border-left: 1px solid var(--line); }
+.lic-stats dd { margin: 0; font-size: 22px; font-weight: 800; font-style: italic; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.lic-stats dt { font-size: 13px; color: var(--fg-2); font-weight: 500; }
+.lic-foot { margin: 0; font-size: 14px; color: var(--fg-2); }
 
 /* Cards */
 .flash { width: 100%; min-height: 46vh; border: 0; text-align: left; color: var(--ink); font: inherit; gap: 14px; }
@@ -942,11 +957,12 @@ a.row:hover .row-title { color: var(--green); }
   }
 
   /* ---------- Shared pieces ---------- */
+  const initial = () => [...String(S.name || "").trim()][0]?.toUpperCase() || "";
   function topActions() {
     const d = division(S.progress.xp).cur.name;
     return `<div class="top-actions">
         <button class="division-chip" data-go="progress" aria-label="Division ${esc(d)}, voir la progression">${icon("trophy")}${esc(d)}</button>
-        <button class="me-btn" data-go="me" aria-label="Mon espace">${pic("ic-user")}</button>
+        <button class="me-btn" data-go="me" aria-label="Mon espace">${initial() ? `<span class="me-initial" aria-hidden="true">${esc(initial())}</span>` : pic("ic-user")}</button>
       </div>`;
   }
   function header() {
@@ -1715,10 +1731,26 @@ a.row:hover .row-title { color: var(--green); }
     const m = mastery(C.qOfDomain(id.replace("dom-", ""))); return { pct: clamp(100 * m / 80), label: `${m} / 80 %` };
   }
 
+  // The player's licence: who they are and how far along, the detail stays in Progression
+  function licence() {
+    const p = S.progress, first = String(S.name || "").trim().split(" ")[0];
+    const months = Math.max(0, Math.round((EXAM_TARGET - new Date()) / (30.44 * 86400000)));
+    return `<section class="licence" aria-label="Ma licence">
+      <div class="lic-head"><img class="lic-crest" src="${ASSET["crest"]}" alt="" width="371" height="416">
+        <div class="stack" style="min-width:0"><p class="lic-name">${first ? esc(first) : "Ta licence"}</p><p class="lic-div">${icon("trophy")}${esc(division(p.xp).cur.name)}</p></div></div>
+      <dl class="lic-stats">
+        <div><dt>points</dt><dd>${fmt(p.xp)}</dd></div>
+        <div><dt>${p.streak.count > 1 ? "jours de série" : "jour de série"}</dt><dd>${p.streak.count}</dd></div>
+        <div><dt>${cardsKnown(allCards()) > 1 ? "cartes acquises" : "carte acquise"}</dt><dd>${cardsKnown(allCards())}</dd></div>
+      </dl>
+      <p class="lic-foot">Épreuve générale du CNOSF : novembre 2027, dans environ ${months} mois.</p>
+    </section>`;
+  }
   function vMe() {
     const st = S.progress.settings; const reportFor = S.param && C.q(S.param);
     return `${header()}<main class="screen narrow">
       <div class="greet"><h1 class="h-screen">Mon espace</h1><p>${syncBadge()}</p></div>
+      ${licence()}
       ${S.sb && S.uid ? `<section class="sec" aria-labelledby="acc-t"><h2 class="h-sec" id="acc-t">Mon compte</h2>
         <div class="field"><label for="s-name">Ton prénom</label><input id="s-name" type="text" autocomplete="given-name" value="${esc(S.progress.settings.name || "")}"></div>
         <p class="small muted">Connectée avec ${esc(S.email || "ton adresse e-mail")}.</p>
@@ -1873,7 +1905,7 @@ a.row:hover .row-title { color: var(--green); }
     }
   });
   document.addEventListener("change", (e) => {
-    if (e.target.id === "s-name") { S.progress.settings.name = e.target.value.trim(); S.name = S.progress.settings.name; save(); toast("Prénom enregistré."); return; }
+    if (e.target.id === "s-name") { S.progress.settings.name = e.target.value.trim(); S.name = S.progress.settings.name; save(); if (S.view === "me") render(); toast("Prénom enregistré."); return; }
     const k = e.target.dataset?.set; if (!k) return;
     S.progress.settings[k] = e.target.checked; save(); render();
   });
