@@ -1,5 +1,5 @@
 {
-"version": "v6-2026-11-04",
+"version": "v7-2026-11-04",
 "domaines": [
 {
 "id": "agents",
@@ -22,91 +22,43 @@
 "blocs": [
 {
 "t": "p",
-"x": "L'examen ne cherche pas uniquement à vérifier si le candidat connaît une définition. Il cherche aussi à vérifier s'il sait"
+"x": "L'examen ne cherche pas uniquement à vérifier si le candidat connaît une définition. Il cherche aussi à vérifier s'il sait interpréter une situation et identifier les exceptions."
 },
 {
-"t": "p",
-"x": "interpréter une situation et identifier les exceptions."
-},
-{
-"t": "vigilance",
-"x": "D’EXAMEN",
-"lab": "Piège"
-},
-{
-"t": "p",
-"x": "n°1 – Les mots qui changent le sens de la question"
+"t": "h",
+"x": "Piège n°1 : les mots qui changent le sens de la question"
 },
 {
 "t": "lead",
 "x": "Certains termes sont juridiquement déterminants :"
 },
 {
-"t": "p",
-"x": "Obligatoirement."
-},
-{
-"t": "p",
-"x": "Exclusivement."
-},
-{
-"t": "p",
-"x": "Toujours."
-},
-{
-"t": "p",
-"x": "Jamais."
-},
-{
-"t": "p",
-"x": "Peut."
-},
-{
-"t": "p",
-"x": "Doit."
-},
-{
-"t": "p",
-"x": "Sauf."
-},
-{
-"t": "p",
-"x": "À condition que."
+"t": "list",
+"items": [
+"Obligatoirement.",
+"Exclusivement.",
+"Toujours.",
+"Jamais.",
+"Peut.",
+"Doit.",
+"Sauf.",
+"À condition que."
+]
 },
 {
 "t": "cas",
-"cas": "de question :",
-"analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple football : une question",
+"cas": "Une fédération agréée dispose-t-elle automatiquement de toutes les prérogatives d'une fédération délégataire ? A. Oui. B. Non. C. Uniquement pour les compétitions professionnelles.",
+"analyse": "Bonne réponse : B. L'agrément et la délégation sont deux régimes différents. L'agrément ne confère pas automatiquement les prérogatives attachées à la délégation."
 },
 {
-"t": "p",
-"x": "Une fédération agréée dispose-t-elle automatiquement de toutes les prérogatives d'une fédération délégataire ?"
+"t": "memo",
+"lab": "Méthode",
+"x": "Entourer mentalement les mots qui expriment une obligation, une interdiction ou une exception."
 },
 {
-"t": "p",
-"x": "A. Oui. B. Non. C. Uniquement pour les compétitions professionnelles. Bonne réponse : B"
-},
-{
-"t": "p",
-"x": "L'agrément et la délégation sont deux régimes différents. L'agrément ne confère pas automatiquement les"
-},
-{
-"t": "p",
-"x": "prérogatives attachées à la délégation."
-},
-{
-"t": "p",
-"x": "Méthode : entourer mentalement les mots qui expriment une obligation, une interdiction ou une exception."
-},
-{
-"t": "vigilance",
-"x": "D’EXAMEN",
-"lab": "Piège"
-},
-{
-"t": "p",
-"x": "n°2 – Les exceptions à la règle générale"
+"t": "h",
+"x": "Piège n°2 : les exceptions à la règle générale"
 },
 {
 "t": "p",
@@ -114,203 +66,111 @@
 },
 {
 "t": "cas",
-"cas": "une personne peut être soumise à une interdiction générale, mais bénéficier d'un régime dérogatoire",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "lorsque certaines conditions sont réunies."
+"lab": "Exemple football",
+"cas": "Une personne peut être soumise à une interdiction générale, mais bénéficier d'un régime dérogatoire lorsque certaines conditions sont réunies."
 },
 {
 "t": "lead",
 "x": "Dans le domaine des agents sportifs, cela concerne notamment :"
 },
 {
-"t": "p",
-"x": "Les ressortissants européens."
+"t": "list",
+"items": [
+"Les ressortissants européens.",
+"Les interventions temporaires et occasionnelles.",
+"Les sportifs mineurs.",
+"Les situations impliquant plusieurs parties.",
+"Les règles propres aux fédérations."
+]
 },
 {
-"t": "p",
-"x": "Les interventions temporaires et occasionnelles."
+"t": "memo",
+"lab": "Méthode",
+"x": "Ne jamais répondre uniquement à partir du principe général. Vérifier systématiquement si le texte prévoit une exception."
 },
 {
-"t": "p",
-"x": "Les sportifs mineurs."
-},
-{
-"t": "p",
-"x": "Les situations impliquant plusieurs parties."
-},
-{
-"t": "p",
-"x": "Les règles propres aux fédérations."
-},
-{
-"t": "p",
-"x": "Méthode : ne jamais répondre uniquement à partir du principe général. Vérifier systématiquement si le texte prévoit"
-},
-{
-"t": "p",
-"x": "une exception."
-},
-{
-"t": "vigilance",
-"x": "D’EXAMEN",
-"lab": "Piège"
-},
-{
-"t": "p",
-"x": "n°3 – Les chiffres et les délais"
+"t": "h",
+"x": "Piège n°3 : les chiffres et les délais"
 },
 {
 "t": "lead",
 "x": "Les questions peuvent porter sur :"
 },
 {
-"t": "p",
-"x": "La durée maximale d'un mandat."
-},
-{
-"t": "p",
-"x": "Le pourcentage maximal d'une commission."
-},
-{
-"t": "p",
-"x": "Les délais de transmission des contrats."
-},
-{
-"t": "p",
-"x": "Les durées de suspension."
-},
-{
-"t": "p",
-"x": "Les délais de recours."
-},
-{
-"t": "p",
-"x": "Les conditions de renouvellement."
+"t": "list",
+"items": [
+"La durée maximale d'un mandat.",
+"Le pourcentage maximal d'une commission.",
+"Les délais de transmission des contrats.",
+"Les durées de suspension.",
+"Les délais de recours.",
+"Les conditions de renouvellement."
+]
 },
 {
 "t": "cas",
-"cas": "Un agent signe un mandat pour une durée de quatre ans. Est-ce conforme à la durée maximale prévue par le Code du",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "sport ?"
-},
-{
-"t": "p",
-"x": "La bonne démarche consiste à identifier le texte applicable, sa version en vigueur et les éventuelles règles"
-},
-{
-"t": "p",
-"x": "particulières."
-},
-{
-"t": "p",
-"x": "Il ne faut jamais extrapoler un délai ou un chiffre d'une situation à une autre."
+"lab": "Exemple football",
+"cas": "Un agent signe un mandat pour une durée de quatre ans. Est-ce conforme à la durée maximale prévue par le Code du sport ?",
+"analyse": "La bonne démarche consiste à identifier le texte applicable, sa version en vigueur et les éventuelles règles particulières."
 },
 {
 "t": "vigilance",
-"x": "D’EXAMEN",
-"lab": "Piège"
+"x": "Il ne faut jamais extrapoler un délai ou un chiffre d'une situation à une autre."
 },
 {
-"t": "p",
-"x": "n°4 – Les compétences des institutions"
+"t": "h",
+"x": "Piège n°4 : les compétences des institutions"
 },
 {
 "t": "p",
 "x": "Il faut savoir qui fait quoi."
 },
 {
-"t": "p",
-"x": "Organisme"
-},
-{
-"t": "p",
-"x": "Fonction principale"
-},
-{
-"t": "p",
-"x": "Ministère des Sports"
-},
-{
-"t": "p",
-"x": "Politique publique et encadrement réglementaire"
-},
-{
-"t": "p",
-"x": "ANS"
-},
-{
-"t": "p",
-"x": "Développement du sport et haute performance"
-},
-{
-"t": "p",
-"x": "CNOSF"
-},
-{
-"t": "p",
-"x": "Représentation du mouvement sportif et conciliation"
-},
-{
-"t": "p",
-"x": "FFF"
-},
-{
-"t": "p",
-"x": "Organisation et réglementation du football français"
-},
-{
-"t": "p",
-"x": "LFP"
-},
-{
-"t": "p",
-"x": "Gestion du football professionnel dans le cadre fédéral"
-},
-{
-"t": "p",
-"x": "FIFA"
-},
-{
-"t": "p",
-"x": "Gouvernance internationale du football"
-},
-{
-"t": "p",
-"x": "AFLD"
-},
-{
-"t": "p",
-"x": "Lutte antidopage en France"
-},
-{
-"t": "p",
-"x": "ANJ"
-},
-{
-"t": "p",
-"x": "Régulation des jeux et paris"
+"t": "table",
+"head": [
+"Organisme",
+"Fonction principale"
+],
+"rows": [
+[
+"Ministère des Sports",
+"Politique publique et encadrement réglementaire"
+],
+[
+"ANS",
+"Développement du sport et haute performance"
+],
+[
+"CNOSF",
+"Représentation du mouvement sportif et conciliation"
+],
+[
+"FFF",
+"Organisation et réglementation du football français"
+],
+[
+"LFP",
+"Gestion du football professionnel dans le cadre fédéral"
+],
+[
+"FIFA",
+"Gouvernance internationale du football"
+],
+[
+"AFLD",
+"Lutte antidopage en France"
+],
+[
+"ANJ",
+"Régulation des jeux et paris"
+]
+]
 },
 {
 "t": "cas",
+"lab": "Exemple football",
 "cas": "Un candidat affirme que le CNOSF délivre les cartes professionnelles des agents sportifs.",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "Cette affirmation est fausse : la délivrance relève de la fédération délégataire compétente, selon l'article L. 222-7"
-},
-{
-"t": "p",
-"x": "dans sa version actuelle."
+"analyse": "Cette affirmation est fausse : la délivrance relève de la fédération délégataire compétente, selon l'article L. 222-7 dans sa version actuelle."
 }
 ]
 }
@@ -3936,7 +3796,7 @@
 "source": "Module 01, introduction",
 "cours": {
 "module": "Module 01 · Institutions et statut de l'agent",
-"minutes": 12,
+"minutes": 15,
 "sections": [
 {
 "code": "",
@@ -5082,6 +4942,165 @@
 "x": "Terminologie historique / terminologie légale actuelle"
 }
 ]
+},
+{
+"code": "1.4",
+"titre": "Les 4 pièges récurrents de l'examen",
+"blocs": [
+{
+"t": "p",
+"x": "L'examen ne cherche pas uniquement à vérifier si le candidat connaît une définition. Il cherche aussi à vérifier s'il sait interpréter une situation et identifier les exceptions."
+},
+{
+"t": "h",
+"x": "Piège n°1 : les mots qui changent le sens de la question"
+},
+{
+"t": "lead",
+"x": "Certains termes sont juridiquement déterminants :"
+},
+{
+"t": "list",
+"items": [
+"Obligatoirement.",
+"Exclusivement.",
+"Toujours.",
+"Jamais.",
+"Peut.",
+"Doit.",
+"Sauf.",
+"À condition que."
+]
+},
+{
+"t": "cas",
+"lab": "Exemple football : une question",
+"cas": "Une fédération agréée dispose-t-elle automatiquement de toutes les prérogatives d'une fédération délégataire ? A. Oui. B. Non. C. Uniquement pour les compétitions professionnelles.",
+"analyse": "Bonne réponse : B. L'agrément et la délégation sont deux régimes différents. L'agrément ne confère pas automatiquement les prérogatives attachées à la délégation."
+},
+{
+"t": "memo",
+"lab": "Méthode",
+"x": "Entourer mentalement les mots qui expriment une obligation, une interdiction ou une exception."
+},
+{
+"t": "h",
+"x": "Piège n°2 : les exceptions à la règle générale"
+},
+{
+"t": "p",
+"x": "Une règle juridique peut prévoir plusieurs exceptions."
+},
+{
+"t": "cas",
+"lab": "Exemple football",
+"cas": "Une personne peut être soumise à une interdiction générale, mais bénéficier d'un régime dérogatoire lorsque certaines conditions sont réunies."
+},
+{
+"t": "lead",
+"x": "Dans le domaine des agents sportifs, cela concerne notamment :"
+},
+{
+"t": "list",
+"items": [
+"Les ressortissants européens.",
+"Les interventions temporaires et occasionnelles.",
+"Les sportifs mineurs.",
+"Les situations impliquant plusieurs parties.",
+"Les règles propres aux fédérations."
+]
+},
+{
+"t": "memo",
+"lab": "Méthode",
+"x": "Ne jamais répondre uniquement à partir du principe général. Vérifier systématiquement si le texte prévoit une exception."
+},
+{
+"t": "h",
+"x": "Piège n°3 : les chiffres et les délais"
+},
+{
+"t": "lead",
+"x": "Les questions peuvent porter sur :"
+},
+{
+"t": "list",
+"items": [
+"La durée maximale d'un mandat.",
+"Le pourcentage maximal d'une commission.",
+"Les délais de transmission des contrats.",
+"Les durées de suspension.",
+"Les délais de recours.",
+"Les conditions de renouvellement."
+]
+},
+{
+"t": "cas",
+"lab": "Exemple football",
+"cas": "Un agent signe un mandat pour une durée de quatre ans. Est-ce conforme à la durée maximale prévue par le Code du sport ?",
+"analyse": "La bonne démarche consiste à identifier le texte applicable, sa version en vigueur et les éventuelles règles particulières."
+},
+{
+"t": "vigilance",
+"x": "Il ne faut jamais extrapoler un délai ou un chiffre d'une situation à une autre."
+},
+{
+"t": "h",
+"x": "Piège n°4 : les compétences des institutions"
+},
+{
+"t": "p",
+"x": "Il faut savoir qui fait quoi."
+},
+{
+"t": "table",
+"head": [
+"Organisme",
+"Fonction principale"
+],
+"rows": [
+[
+"Ministère des Sports",
+"Politique publique et encadrement réglementaire"
+],
+[
+"ANS",
+"Développement du sport et haute performance"
+],
+[
+"CNOSF",
+"Représentation du mouvement sportif et conciliation"
+],
+[
+"FFF",
+"Organisation et réglementation du football français"
+],
+[
+"LFP",
+"Gestion du football professionnel dans le cadre fédéral"
+],
+[
+"FIFA",
+"Gouvernance internationale du football"
+],
+[
+"AFLD",
+"Lutte antidopage en France"
+],
+[
+"ANJ",
+"Régulation des jeux et paris"
+]
+]
+},
+{
+"t": "cas",
+"lab": "Exemple football",
+"cas": "Un candidat affirme que le CNOSF délivre les cartes professionnelles des agents sportifs.",
+"analyse": "Cette affirmation est fausse : la délivrance relève de la fédération délégataire compétente, selon l'article L. 222-7 dans sa version actuelle."
+}
+],
+"cle": 5
 },
 {
 "code": "1.5",
