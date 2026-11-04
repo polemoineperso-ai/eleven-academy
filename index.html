@@ -307,7 +307,7 @@ a.row:hover .row-title { color: var(--green); }
 .rich h4 { font-size: 16px; font-weight: 700; line-height: 1.35; margin: 18px 0 0; }
 .rich h3 + *, .rich h4 + * { margin-top: 8px; }
 .rich p, .rich li { font-size: 15.5px; line-height: 1.6; max-width: 65ch; margin: 0; }
-.rich p + p { margin-top: 12px; }
+.rich p + p, .rich > ul + p, .rich > ol + p, .rich > table + p, .rich > blockquote + p, .rich > div + p { margin-top: 12px; }
 .rich ul, .rich ol { padding-left: 22px; margin-bottom: 0; }
 .rich > ul, .rich > ol { margin-top: 12px; }
 .rich > :first-child:is(ul, ol) { margin-top: 0; }
@@ -318,6 +318,19 @@ a.row:hover .row-title { color: var(--green); }
 .rich blockquote { margin: 12px 0 0 22px; padding: 0; border: 0; }
 .rich strong { font-weight: 700; }
 .rich mark { background: var(--green); color: var(--on-green); border-radius: 3px; padding: 0 0.2em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
+.rich h2 { font-size: 20px; font-weight: 800; line-height: 1.3; margin: 0; text-wrap: balance; }
+.lesson-sec .rich h3 { font-size: 17px; font-weight: 700; line-height: 1.35; margin-top: 20px; }
+.lesson-sec .rich h4 { font-size: 15.5px; margin-top: 14px; }
+.lesson-sec .rich p, .lesson-sec .rich li { font-size: 16px; line-height: 1.65; }
+.rich .callout { margin-top: 14px; margin-bottom: 14px; }
+.rich .callout p { font-size: 15.5px; line-height: 1.6; }
+.rich .callout p + p { margin-top: 0; }
+.rich table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.5; margin-top: 12px; }
+.rich table th, .rich table td { text-align: left; vertical-align: top; padding: 9px 10px 9px 0; border-bottom: 1px solid var(--paper-line); }
+.ed-box table { display: block; overflow-x: auto; }
+.sheet.dark .rich table th, .sheet.dark .rich table td { border-color: var(--line); }
+.sec-edit { align-self: flex-start; gap: 6px; }
 
 /* Fiche editor */
 .ed-bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--pitch); padding-block: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
@@ -1026,13 +1039,14 @@ a.row:hover .row-title { color: var(--green); }
   const backTo = (c) => S.from === "revisions"
     ? `<button class="link-btn" data-go="module" data-param="${c.domaine}" style="align-self:flex-start">${icon("back")} ${esc(C.domain(c.domaine)?.num ? "Module " + C.domain(c.domaine).num : "Révisions")}</button>`
     : `<button class="link-btn" data-go="chapter" data-param="${c.id}" style="align-self:flex-start">${icon("back")} Ton parcours</button>`;
-  function lessonTable(b) {
+  function lessonTable(b, clean) {
+    const cell = clean ? (v) => v : esc;
     if (b.head.length >= 3) { /* phone width: one group per row instead of a cramped grid */
-      return `<div class="tgroups">${b.rows.map((r) => `<div class="tgroup"><p class="tgroup-h">${esc(r[0])}</p><dl>${b.head.slice(1).map((h, k) => `<dt>${esc(h)}</dt><dd>${esc(r[k + 1] || "")}</dd>`).join("")}</dl></div>`).join("")}</div>`;
+      return `<div class="tgroups">${b.rows.map((r) => `<div class="tgroup"><p class="tgroup-h">${cell(r[0])}</p><dl>${b.head.slice(1).map((h, k) => `<dt>${cell(h)}</dt><dd>${cell(r[k + 1] || "")}</dd>`).join("")}</dl></div>`).join("")}</div>`;
     }
     const numCol = (v) => /^(L\. )?\d[\d-]*( et \d+)?$/.test(v.trim());
-    return `<div class="tbl-wrap"><table class="lesson-table"><thead><tr>${b.head.map((h) => `<th scope="col">${esc(h)}</th>`).join("")}</tr></thead>
-      <tbody>${b.rows.map((r) => `<tr>${r.map((v, k) => k === 0 ? `<th scope="row" class="${numCol(v) ? "num" : ""}" style="font-weight:700;color:inherit;font-size:14.5px">${esc(v)}</th>` : `<td>${esc(v)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    return `<div class="tbl-wrap"><table class="lesson-table"><thead><tr>${b.head.map((h) => `<th scope="col">${cell(h)}</th>`).join("")}</tr></thead>
+      <tbody>${b.rows.map((r) => `<tr>${r.map((v, k) => k === 0 ? `<th scope="row" class="${numCol(v) ? "num" : ""}" style="font-weight:700;color:inherit;font-size:14.5px">${cell(v)}</th>` : `<td>${cell(v)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
   }
   function lessonBlock(b) {
     switch (b.t) {
@@ -1047,10 +1061,11 @@ a.row:hover .row-title { color: var(--green); }
       default: return "";
     }
   }
-  const lessonSections = (secs, noTitle) => secs.map((sec, i) => `<section class="sheet${sheetCls()} lesson-sec" id="ls-${i}"${noTitle ? "" : ` aria-labelledby="ls-${i}-t"`}>
+  const lessonSections = (secs, noTitle, editId) => secs.map((sec, i) => `<section class="sheet${sheetCls()} lesson-sec" id="ls-${i}"${noTitle ? "" : ` aria-labelledby="ls-${i}-t"`}>
       ${noTitle ? "" : `<h2 class="lesson-h2" id="ls-${i}-t">${sec.code ? `<span class="lesson-code">${esc(sec.code)}</span>` : ""}${esc(sec.titre)}</h2>`}
       ${sec.ref ? `<p class="lesson-ref">Texte de référence : ${esc(sec.ref)}</p>` : ""}
-      ${sec.blocs.map(lessonBlock).join("")}
+      ${sec.html ? `<div class="rich">${richBody(sec.html)}</div>` : sec.blocs.map(lessonBlock).join("")}
+      ${editId && S.canEdit ? `<button class="link-btn sec-edit" data-act="cours-edit" data-param="${editId}:${i}">${icon("edit")}Modifier cette section</button>` : ""}
     </section>`).join("");
   const lessonToc = (secs) => secs.length < 2 ? "" : `<nav class="sec" aria-labelledby="toc-t"><h2 class="h-sec" id="toc-t">Sommaire</h2>
       <div class="rows">${secs.map((sec, i) => `<button class="row" data-act="toc" data-param="ls-${i}"><span class="row-title" style="font-size:15px">${sec.code ? `<span class="num">${esc(sec.code)}</span> ` : ""}${esc(sec.titre)}</span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div></nav>`;
@@ -1062,7 +1077,7 @@ a.row:hover .row-title { color: var(--green); }
       <div class="stack" style="gap:6px">${backTo(c)}
         <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">Étape 1 sur 3 · ${esc(k.module)} · environ ${k.minutes} min de lecture${isRead(c.id) ? " · lu" : ""}</p></div>
       ${lessonToc(k.sections)}
-      <div class="lesson">${lessonSections(k.sections)}</div>
+      <div class="lesson">${lessonSections(k.sections, false, c.id)}</div>
       <div class="lesson-end">
         <button class="btn btn-primary btn-block" data-act="read-done" data-param="${c.id}">${icon("check")}J'ai lu le cours, passer à la fiche</button>
         ${C.qOf(c.id).length ? `<button class="link-btn" data-act="chapter" data-param="${c.id}" style="align-self:center">S'entraîner directement sur les questions</button>` : ""}
@@ -1280,9 +1295,10 @@ a.row:hover .row-title { color: var(--green); }
   }
 
   /* ---------- Fiche editor (web version, editors only) ---------- */
-  const RICH = { H1: "h3", H2: "h3", H3: "h3", H4: "h4", H5: "h4", H6: "h4", P: "p", DIV: "p", UL: "ul", OL: "ol", LI: "li", STRONG: "strong", B: "strong", EM: "em", I: "em", MARK: "mark", BR: "br", BLOCKQUOTE: "blockquote" };
-  // Allow-list: only these tags, never an attribute. Applied on save and on every display.
-  function cleanRich(html) {
+  const RICH = { H1: "h3", H2: "h3", H3: "h3", H4: "h4", H5: "h4", H6: "h4", P: "p", DIV: "p", UL: "ul", OL: "ol", LI: "li", STRONG: "strong", B: "strong", EM: "em", I: "em", MARK: "mark", BR: "br", BLOCKQUOTE: "blockquote", TABLE: "table", THEAD: "thead", TBODY: "tbody", TR: "tr", TH: "th", TD: "td" };
+  const CALLOUT_CLS = /^callout (cas|warn|memo)$/, CALLOUT_P = /^callout-(lab|sub)$/;
+  // Allow-list: only these tags, and no attribute except the class of a course callout. Applied on save and on every display.
+  function cleanRich(html, keepH2) {
     const doc = new DOMParser().parseFromString(String(html), "text/html");
     const out = doc.createElement("div");
     const walk = (from, to) => from.childNodes.forEach((n) => {
@@ -1290,12 +1306,16 @@ a.row:hover .row-title { color: var(--green); }
       if (n.nodeType !== 1 || /^(script|style|iframe|object|embed|noscript|template|svg|math)$/i.test(n.nodeName)) return;
       const tag = RICH[n.tagName];
       if (!tag) { walk(n, to); return; }
-      const e = doc.createElement(tag); walk(n, e); to.append(e);
+      const k = n.getAttribute("class") || "";
+      const callout = n.tagName === "DIV" && CALLOUT_CLS.test(k);
+      const e = doc.createElement(callout ? "div" : n.tagName === "H2" && keepH2 ? "h2" : tag);
+      if (callout || (n.tagName === "P" && CALLOUT_P.test(k))) e.className = k;
+      walk(n, e); to.append(e);
     });
     walk(doc.body, out);
     // A list directly inside a list (what browsers produce on indent) moves into the item above it
     out.querySelectorAll("ul > ul, ul > ol, ol > ul, ol > ol").forEach((l) => { const li = l.previousElementSibling; if (li && li.tagName === "LI") li.append(l); });
-    out.querySelectorAll("p, li, h3, h4, mark, strong, em, ul, ol, blockquote").forEach((e) => { if (!e.textContent.trim()) e.remove(); });
+    out.querySelectorAll("p, li, h2, h3, h4, mark, strong, em, ul, ol, blockquote, div").forEach((e) => { if (!e.textContent.trim()) e.remove(); });
     out.querySelectorAll("mark").forEach((m) => { while (m.nextSibling && m.nextSibling.nodeName === "MARK") { m.append(...m.nextSibling.childNodes); m.nextSibling.remove(); } });
     // Loose text at the top level gets its own paragraph
     let para = null;
@@ -1317,6 +1337,55 @@ a.row:hover .row-title { color: var(--green); }
       const copy = e.cloneNode(true); copy.querySelectorAll("ul, ol").forEach((l) => l.remove()); return copy.textContent.trim();
     }).filter(Boolean);
     c.fiche = points.length ? points : c.ficheBase;
+    S.revIdx = null;
+  }
+  function applySectionEdit(c, i, html) {
+    const sec = c.cours?.sections?.[i]; if (!sec) return;
+    if (!sec.base) sec.base = { titre: sec.titre, blocs: sec.blocs };
+    const box = new DOMParser().parseFromString(cleanRich(html, true), "text/html").body;
+    const h = box.querySelector("h2");
+    sec.titre = (h && h.textContent.trim()) || sec.base.titre;
+    if (h) h.remove();
+    sec.html = box.innerHTML;
+    sec.blocs = [{ t: "p", x: box.textContent }]; /* what the search reads */
+    S.revIdx = null;
+  }
+  function resetSectionEdit(sec) {
+    if (sec.base) { sec.titre = sec.base.titre; sec.blocs = sec.base.blocs; }
+    delete sec.html; S.revIdx = null;
+  }
+  // Course blocks as the editor's HTML: callouts keep their class, tables stay tables
+  function blocsHtml(blocs) {
+    const box = (cls, lab, body) => `<div class="callout ${cls}"><p class="callout-lab">${esc(lab)}</p>${body}</div>`;
+    return blocs.map((b) => {
+      switch (b.t) {
+        case "h": return `<h3>${esc(b.x)}</h3>`;
+        case "p": return `<p>${esc(b.x)}</p>`;
+        case "lead": return `<p><strong>${esc(b.x)}</strong></p>`;
+        case "list": return `<ul>${b.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
+        case "cas": return box("cas", b.lab || "Mise en situation", `<p>${esc(b.cas)}</p>${b.analyse ? `<p class="callout-sub">Analyse</p><p>${esc(b.analyse)}</p>` : ""}`);
+        case "vigilance": return box("warn", b.lab || "Point de vigilance", `<p>${esc(b.x)}</p>`);
+        case "memo": return box("memo", b.lab || "À retenir pour le QCM", `<p>${esc(b.x)}</p>`);
+        case "table": return `<table><thead><tr>${b.head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${b.rows.map((r) => `<tr>${r.map((v) => `<td>${esc(v)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+        default: return "";
+      }
+    }).join("");
+  }
+  // Display of an edited section: same tables and callout icons as the untouched ones
+  function richBody(html) {
+    const box = new DOMParser().parseFromString(html, "text/html").body, doc = box.ownerDocument;
+    box.querySelectorAll("table").forEach((t) => {
+      const rows = [...t.rows].map((r) => [...r.cells].map((v) => v.innerHTML));
+      const head = rows.shift() || [];
+      const w = doc.createElement("div"); w.innerHTML = lessonTable({ head, rows }, true);
+      t.replaceWith(...w.childNodes);
+    });
+    const ICON = { cas: "whistle", warn: "flag", memo: "target" };
+    box.querySelectorAll(".callout").forEach((d) => {
+      const lab = d.querySelector(".callout-lab"), name = Object.keys(ICON).find((n) => d.classList.contains(n));
+      if (lab && name) lab.insertAdjacentHTML("afterbegin", icon(ICON[name]));
+    });
+    return box.innerHTML;
   }
   function resetFicheEdit(c) {
     if (c.ficheBase) c.fiche = c.ficheBase;
@@ -1330,25 +1399,44 @@ a.row:hover .row-title { color: var(--green); }
         S.sb.from("editors").select("user_id").eq("user_id", S.uid).maybeSingle()
       ]);
       S.canEdit = !!(me && me.data);
-      ((edits && edits.data) || []).forEach((r) => { const c = C.chapter(r.chapter_id); if (c) applyFicheEdit(c, r.html); });
+      ((edits && edits.data) || []).forEach((r) => {
+        const m = /^cours:(.+):(\d+)$/.exec(r.chapter_id);
+        if (m) { const c = C.chapter(m[1]); if (c) applySectionEdit(c, Number(m[2]), r.html); return; }
+        const c = C.chapter(r.chapter_id); if (c) applyFicheEdit(c, r.html);
+      });
     } catch { /* the supplied fiches stay in place */ }
   }
-  const ficheDraftKey = (id) => "ea-draft-" + id;
-  function openFicheEditor(id) {
+  const ficheDraftKey = (key) => "ea-draft-" + key;
+  function openEditor(id, secIndex) {
     const c = C.chapter(id); if (!c) return;
-    const draft = lsGet(ficheDraftKey(id));
+    const isSec = secIndex !== undefined;
+    const sec = isSec ? c.cours.sections[secIndex] : null; if (isSec && !sec) return;
+    const key = isSec ? `cours:${id}:${secIndex}` : id;
+    const draft = lsGet(ficheDraftKey(key));
+    const base = isSec
+      ? `<h2>${esc(sec.titre)}</h2>${sec.html || blocsHtml(sec.blocs)}`
+      : c.ficheHtml || `<ul>${c.fiche.map((l) => `<li>${esc(l)}</li>`).join("")}</ul>`;
     S.edit = {
-      id, html: (draft && cleanRich(draft)) || c.ficheHtml || `<ul>${c.fiche.map((l) => `<li>${esc(l)}</li>`).join("")}</ul>`,
+      id, key, sec: isSec ? secIndex : null,
+      html: (draft && cleanRich(draft, isSec)) || base,
       dirty: !!draft, restored: !!draft, err: "", saving: false, confirm: null, hist: [], range: null
     };
     go("ficheEdit", id);
+  }
+  // Back to the page the editor was opened from, at the right section
+  function leaveEditor(key) {
+    const E = S.edit; S.edit = null;
+    lsSet(ficheDraftKey(key || E.key), null);
+    if (E.sec === null) { go("fiche", E.id); return; }
+    go("cours", E.id);
+    requestAnimationFrame(() => document.getElementById("ls-" + E.sec)?.scrollIntoView({ block: "start" }));
   }
   const edBox = () => document.getElementById("ed-box");
   function edTouched() {
     const box = edBox(); if (!box || !S.edit) return;
     box.querySelectorAll("[style]").forEach((e) => e.removeAttribute("style")); /* browsers copy inline sizes when a block changes */
     S.edit.html = box.innerHTML; S.edit.dirty = true;
-    lsSet(ficheDraftKey(S.edit.id), S.edit.html);
+    lsSet(ficheDraftKey(S.edit.key), S.edit.html);
   }
   function edRememberSel() {
     const sel = getSelection(), box = edBox();
@@ -1409,56 +1497,57 @@ a.row:hover .row-title { color: var(--green); }
     edTouched(); edPressed();
   }
   async function saveFicheEdit() {
-    const E = S.edit, box = edBox(), c = C.chapter(E.id); if (!E || !box || !c || E.saving) return;
-    const html = cleanRich(box.innerHTML);
+    const E = S.edit, box = edBox(), c = E && C.chapter(E.id); if (!E || !box || !c || E.saving) return;
+    const isSec = E.sec !== null;
+    const html = cleanRich(box.innerHTML, isSec);
     E.html = box.innerHTML;
-    if (!html.trim()) { E.err = "La fiche est vide. Écris au moins un point, ou reviens à la fiche d'origine."; render(); return; }
+    if (!new DOMParser().parseFromString(html, "text/html").body.textContent.trim()) { E.err = "Le texte est vide. Écris au moins une ligne, ou reviens à la version d'origine."; render(); return; }
     E.saving = true; E.err = ""; render();
     let r;
-    try { r = await S.sb.from("fiche_edits").upsert({ chapter_id: E.id, html, updated_at: new Date().toISOString() }); } catch (x) { r = { error: x }; }
+    try { r = await S.sb.from("fiche_edits").upsert({ chapter_id: E.key, html, updated_at: new Date().toISOString() }); } catch (x) { r = { error: x }; }
     E.saving = false;
     if (r.error) { E.err = "Enregistrement impossible. Vérifie ta connexion et réessaie : ton texte reste ici."; render(); return; }
-    applyFicheEdit(c, html);
-    lsSet(ficheDraftKey(E.id), null);
-    S.edit = null;
-    go("fiche", c.id);
-    toast("Fiche enregistrée.");
+    if (isSec) applySectionEdit(c, E.sec, html); else applyFicheEdit(c, html);
+    leaveEditor();
+    toast(isSec ? "Section enregistrée." : "Fiche enregistrée.");
   }
   async function resetFicheToOrigin() {
-    const E = S.edit, c = C.chapter(E.id); if (!E || !c) return;
+    const E = S.edit, c = E && C.chapter(E.id); if (!E || !c) return;
     let r;
-    try { r = await S.sb.from("fiche_edits").delete().eq("chapter_id", E.id); } catch (x) { r = { error: x }; }
+    try { r = await S.sb.from("fiche_edits").delete().eq("chapter_id", E.key); } catch (x) { r = { error: x }; }
     if (r.error) { E.confirm = null; E.err = "Retour impossible. Vérifie ta connexion et réessaie."; render(); return; }
-    resetFicheEdit(c);
-    lsSet(ficheDraftKey(E.id), null);
-    S.edit = null;
-    go("fiche", c.id);
-    toast("Fiche d'origine rétablie.");
+    if (E.sec !== null) resetSectionEdit(c.cours.sections[E.sec]); else resetFicheEdit(c);
+    leaveEditor();
+    toast("Version d'origine rétablie.");
   }
   function vFicheEdit() {
     const E = S.edit, c = E && C.chapter(E.id);
     if (!c || !S.canEdit) return vRevisions();
+    const sec = E.sec !== null ? c.cours.sections[E.sec] : null;
+    const noun = sec ? "section" : "fiche";
+    const edited = sec ? sec.html : c.ficheHtml;
+    const body = /<\/(table|div)>\s*$/.test(E.html) ? E.html + "<p><br></p>" : E.html; /* room to keep typing after a table or a callout */
     const tool = (cmd, label, content) => `<button type="button" class="ed-tool" data-act="ed" data-param="${cmd}" aria-label="${label}"${["h3", "h4", "ul", "bold", "mark"].includes(cmd) ? ' aria-pressed="false"' : ""}>${content}</button>`;
     const confirmBox = E.confirm === "quit"
       ? `<div class="ed-confirm" role="alert"><p>Quitter sans enregistrer ? Tes changements seront perdus.</p><button class="btn btn-ghost btn-block" data-act="ed-stay">Continuer à modifier</button><button class="btn btn-ghost btn-block" data-act="ed-quit-yes">Quitter sans enregistrer</button></div>`
       : E.confirm === "origin"
-        ? `<div class="ed-confirm" role="alert"><p>Revenir à la fiche d'origine ? Toutes tes modifications de cette fiche seront supprimées.</p><button class="btn btn-ghost btn-block" data-act="ed-stay">Garder mes modifications</button><button class="btn btn-ghost btn-block" data-act="ed-origin-yes">Revenir à la fiche d'origine</button></div>`
+        ? `<div class="ed-confirm" role="alert"><p>Revenir à la version d'origine ? Toutes tes modifications de cette ${noun} seront supprimées.</p><button class="btn btn-ghost btn-block" data-act="ed-stay">Garder mes modifications</button><button class="btn btn-ghost btn-block" data-act="ed-origin-yes">Revenir à la version d'origine</button></div>`
         : "";
     return `<main class="screen narrow">
       <div class="stack" style="gap:6px"><button class="link-btn" data-act="ed-quit" style="align-self:flex-start">Quitter</button>
-        <h1 class="h-screen">Modifier la fiche</h1><p class="muted small">${esc(c.titre)}</p>
+        <h1 class="h-screen">Modifier la ${noun}</h1><p class="muted small">${esc(c.titre)}</p>
         ${E.restored ? `<p class="ed-note">Ton brouillon non enregistré a été repris.</p>` : ""}</div>
       <div class="ed-bar" role="toolbar" aria-label="Mise en forme">
         ${tool("h3", "Titre", "Titre")}${tool("h4", "Sous-titre", "Sous-titre")}${tool("ul", "Liste à puces", "Puces")}
         ${tool("outdent", "Réduire le retrait", icon("outdent"))}${tool("indent", "Augmenter le retrait", icon("indent"))}
         ${tool("mark", "Surligner en vert", "<mark>Surligner</mark>")}${tool("bold", "Gras", "<strong>Gras</strong>")}${tool("undo", "Annuler", icon("undo"))}
       </div>
-      <article class="sheet${sheetCls()}"><div class="rich ed-box" id="ed-box" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Texte de la fiche">${E.html}</div></article>
+      <article class="sheet${sheetCls()}"><div class="rich ed-box" id="ed-box" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Texte de la ${noun}">${body}</div></article>
       <p class="ed-err" id="ed-err" role="status" ${E.err ? "" : "hidden"}>${esc(E.err)}</p>
       ${confirmBox}
       <div class="lesson-end">
-        <button class="btn btn-primary btn-block" data-act="ed-save" ${E.saving ? "disabled" : ""}>${icon("check")}${E.saving ? "Enregistrement…" : "Enregistrer la fiche"}</button>
-        ${c.ficheHtml ? `<button class="link-btn" data-act="ed-origin" style="align-self:center">Revenir à la fiche d'origine</button>` : ""}
+        <button class="btn btn-primary btn-block" data-act="ed-save" ${E.saving ? "disabled" : ""}>${icon("check")}${E.saving ? "Enregistrement…" : `Enregistrer la ${noun}`}</button>
+        ${edited ? `<button class="link-btn" data-act="ed-origin" style="align-self:center">Revenir à la version d'origine</button>` : ""}
       </div>
     </main>`;
   }
@@ -1633,11 +1722,12 @@ a.row:hover .row-title { color: var(--green); }
       case "per": S.progress.settings.perSession = Number(param); save(); render(); break;
       case "reload": location.reload(); break;
       case "login-back": if (S.login) { S.login.step = "email"; S.login.err = ""; render(); } break;
-      case "fiche-edit": openFicheEditor(param); break;
+      case "fiche-edit": openEditor(param); break;
+      case "cours-edit": { const cut = param.lastIndexOf(":"); openEditor(param.slice(0, cut), Number(param.slice(cut + 1))); break; }
       case "ed": edCommand(param); break;
       case "ed-save": saveFicheEdit(); break;
-      case "ed-quit": if (S.edit && S.edit.dirty) { S.edit.confirm = "quit"; render(); document.querySelector(".ed-confirm")?.scrollIntoView({ block: "center" }); } else { const q = S.edit.id; S.edit = null; go("fiche", q); } break;
-      case "ed-quit-yes": { const q = S.edit.id; lsSet(ficheDraftKey(q), null); S.edit = null; go("fiche", q); break; }
+      case "ed-quit": if (S.edit && S.edit.dirty) { S.edit.confirm = "quit"; render(); document.querySelector(".ed-confirm")?.scrollIntoView({ block: "center" }); } else leaveEditor(); break;
+      case "ed-quit-yes": leaveEditor(); break;
       case "ed-origin": S.edit.confirm = "origin"; render(); document.querySelector(".ed-confirm")?.scrollIntoView({ block: "center" }); break;
       case "ed-origin-yes": resetFicheToOrigin(); break;
       case "ed-stay": S.edit.confirm = null; render(); break;

@@ -1,5 +1,5 @@
 {
-"version": "v5-2026-11-04",
+"version": "v6-2026-11-04",
 "domaines": [
 {
 "id": "agents",
@@ -3752,10 +3752,6 @@
 {
 "t": "p",
 "x": "Cette affirmation est fausse si elle prétend décrire le droit immédiatement applicable en août 2026 : cette règle figure dans la nouvelle rédaction de L.222-8 qui n'entre en vigueur qu'en 2028."
-},
-{
-"t": "p",
-"x": "Légifrance+2"
 }
 ]
 }
@@ -3933,47 +3929,19 @@
 "Toutes les activités de conseil, de représentation ou d'accompagnement ne constituent pas",
 "Le règlement FIFA sur les agents de football et le droit français ne doivent pas être confondus. Ils peuvent",
 "À la terminologie : depuis la réforme de 2026, l'article L. 222-7 emploie la notion de carte professionnelle",
-"Introduction : À la fin de ce module, l'apprenant doit être capable de : Comprendre le métier et les responsabilités d'un agent sportif.",
+"Introduction : Comprendre le métier et les responsabilités d'un agent sportif.",
 "Comprendre le métier d'agent sportif : L'agent sportif est un professionnel qui intervient comme intermédiaire dans le cadre de certaines opérations",
 "Comprendre l'examen d'agent sportif : L'accès à la profession d'agent sportif est conditionné par un examen organisé dans le cadre fédéral."
 ],
 "source": "Module 01, introduction",
 "cours": {
 "module": "Module 01 · Institutions et statut de l'agent",
-"minutes": 13,
+"minutes": 12,
 "sections": [
 {
 "code": "",
 "titre": "Introduction",
 "blocs": [
-{
-"t": "p",
-"x": "À la fin de ce module, l'apprenant doit être capable de : Comprendre le métier et les responsabilités d'un agent sportif. Identifier les grandes règles qui encadrent la profession. Maîtriser les 27 termes juridiques et sportifs indispensables. Comprendre l'organisation de l'examen. Identifier les pièges classiques des QCM. Adopter une méthode efficace pour résoudre une question juridique."
-},
-{
-"t": "p",
-"x": "PDF source compilé — pages 12 à 22 ; corrigé du QCM reconstitué dans le support."
-},
-{
-"t": "p",
-"x": "MODULE 1 — ARCHITECTURE INSTITUTIONNELLE DU"
-},
-{
-"t": "p",
-"x": "SPORT ET STATUT DE L’AGENT SPORTIF"
-},
-{
-"t": "p",
-"x": "MODULE 01"
-},
-{
-"t": "p",
-"x": "Niveau débutant à expert"
-},
-{
-"t": "p",
-"x": "Introduction & méthodologie"
-},
 {
 "t": "p",
 "x": "Objectif pédagogique"
@@ -7869,18 +7837,6 @@
 "blocs": [
 {
 "t": "p",
-"x": "Comprendre le fonctionnement juridique, économique et financier des sociétés, maîtriser les principales formes sociales et savoir identifier les structures adaptées à l'activité d'agent sportif."
-},
-{
-"t": "p",
-"x": "Archive de travail — cours et 11 QCM ; le corrigé complet n’est pas présent dans le texte source."
-},
-{
-"t": "p",
-"x": "MODULE 03"
-},
-{
-"t": "p",
 "x": "Droit des sociétés"
 },
 {
@@ -9451,14 +9407,6 @@
 {
 "t": "p",
 "x": "Mais le choix doit être confronté aux dispositions particulières du Code du sport."
-},
-{
-"t": "p",
-"x": "Service Public Entreprendre"
-},
-{
-"t": "p",
-"x": "+2"
 }
 ]
 },
@@ -10121,10 +10069,6 @@
 "t": "memo",
 "x": "depuis la réforme de 2026, il faut connaître la possibilité de créer deux sociétés sportives, et pas seulement une société unique.",
 "lab": "À retenir"
-},
-{
-"t": "p",
-"x": "+1"
 }
 ]
 },
@@ -10495,10 +10439,6 @@
 {
 "t": "p",
 "x": "d'examen : ne pas confondre la SAOS et la SASP. Les deux sont des sociétés anonymes sportives, mais leurs règles de fonctionnement et de détention du capital diffèrent."
-},
-{
-"t": "p",
-"x": "+2"
 }
 ]
 },
@@ -10682,10 +10622,6 @@
 {
 "t": "p",
 "x": "d'examen : ne pas confondre la durée de la convention association-société sportive et la durée du mandat d'un agent sportif."
-},
-{
-"t": "p",
-"x": "+1"
 }
 ]
 },
@@ -10882,10 +10818,6 @@
 {
 "t": "p",
 "x": "Cette réforme future devra faire l'objet d'une mise à jour spécifique des cours."
-},
-{
-"t": "p",
-"x": "+2"
 },
 {
 "t": "h",
@@ -11388,14 +11320,6 @@
 {
 "t": "p",
 "x": "Ce montant ne constitue pas automatiquement le montant distribuable aux associés."
-},
-{
-"t": "p",
-"x": "Service Public Entreprendre"
-},
-{
-"t": "p",
-"x": "+1"
 }
 ]
 }
@@ -12112,14 +12036,6 @@
 {
 "t": "p",
 "x": "d'examen : la sauvegarde est une procédure judiciaire, même si elle est considérée comme une procédure préventive."
-},
-{
-"t": "p",
-"x": "Service Public Entreprendre"
-},
-{
-"t": "p",
-"x": "+3"
 }
 ]
 },
@@ -12397,10 +12313,6 @@
 "t": "memo",
 "x": "le redressement judiciaire ne signifie pas automatiquement la disparition de l'entreprise.",
 "lab": "À retenir"
-},
-{
-"t": "p",
-"x": "+1"
 }
 ]
 },
@@ -12564,10 +12476,6 @@
 {
 "t": "p",
 "x": "Infogreffe"
-},
-{
-"t": "p",
-"x": "+1"
 }
 ]
 },
@@ -12737,10 +12645,6 @@
 "t": "memo",
 "x": "le droit des entreprises en difficulté peut avoir des conséquences directes sur l'accès à la profession d'agent sportif, par l'intermédiaire de l'article L. 222-11.",
 "lab": "À retenir"
-},
-{
-"t": "p",
-"x": "+1"
 }
 ]
 },
@@ -13404,7 +13308,7 @@
 "domaine": "associations",
 "titre": "Pour bien commencer",
 "fiche": [
-"Introduction : maîtriser le fonctionnement juridique d’une association, comprendre son statut dans l’organisation du sport français et savoir analyser les relations financières entre un club associatif et un agent sportif.",
+"Introduction : Objectif du module : maîtriser le fonctionnement juridique d’une association, comprendre son statut dans l’organisation du sport français et savoir analyser les relations financières entre un club associatif et un agent sportif.",
 "Introduction — Pourquoi le droit des associations concerne l’agent sportif : Le football français repose sur une organisation dans laquelle les associations occupent une place centrale."
 ],
 "source": "Module 04, introduction",
@@ -13416,14 +13320,6 @@
 "code": "",
 "titre": "Introduction",
 "blocs": [
-{
-"t": "p",
-"x": "maîtriser le fonctionnement juridique d’une association, comprendre son statut dans l’organisation du sport français et savoir analyser les relations financières entre un club associatif et un agent sportif."
-},
-{
-"t": "p",
-"x": "Support source original — cours et 12 QCM ; corrigé détaillé absent du fichier transmis."
-},
 {
 "t": "p",
 "x": "Objectif du module : maîtriser le fonctionnement juridique d’une association, comprendre son statut dans l’organisation du sport français et savoir analyser les relations financières entre un club associatif et un agent sportif."
@@ -15535,7 +15431,7 @@
 "domaine": "fiscal",
 "titre": "Pour bien commencer",
 "fiche": [
-"Introduction : comprendre les principaux mécanismes de l’imposition des particuliers et des entreprises, maîtriser les régimes fiscaux applicables à l’agent sportif et connaître les dispositifs particuliers concernant les revenus des sportifs professionnels."
+"Introduction : Objectif du module : comprendre les principaux mécanismes de l’imposition des particuliers et des entreprises, maîtriser les régimes fiscaux applicables à l’agent sportif et connaître les dispositifs particuliers concernant les revenus des sportifs professionnels."
 ],
 "source": "Module 05, introduction",
 "cours": {
@@ -15546,14 +15442,6 @@
 "code": "",
 "titre": "Introduction",
 "blocs": [
-{
-"t": "p",
-"x": "comprendre les principaux mécanismes de l’imposition des particuliers et des entreprises, maîtriser les régimes fiscaux applicables à l’agent sportif et connaître les dispositifs particuliers concernant les revenus des sportifs professionnels."
-},
-{
-"t": "p",
-"x": "Support source original — cours, QCM blanc et auto-test ; les corrigés complets ne sont pas fournis dans le fichier."
-},
 {
 "t": "p",
 "x": "Objectif du module : comprendre les principaux mécanismes de l’imposition des particuliers et des entreprises, maîtriser les régimes fiscaux applicables à l’agent sportif et connaître les dispositifs particuliers concernant les revenus des sportifs professionnels."
@@ -15742,10 +15630,6 @@
 "45 %"
 ]
 ]
-},
-{
-"t": "p",
-"x": "Service Public+2"
 },
 {
 "t": "h",
@@ -16567,10 +16451,6 @@
 "x": "Au-delà de 42 500 €, le taux normal de 25 % s'applique."
 },
 {
-"t": "p",
-"x": "Service Public Entreprendre+1"
-},
-{
 "t": "h",
 "x": "3. Exemple chiffré"
 },
@@ -16721,10 +16601,6 @@
 "83 600 €"
 ]
 ]
-},
-{
-"t": "p",
-"x": "Service Public Entreprendre+1"
 },
 {
 "t": "p",
@@ -16963,10 +16839,6 @@
 "x": "Ces seuils sont maintenus en 2026 : le projet de seuil unique de 25 000 € a été abandonné."
 },
 {
-"t": "p",
-"x": "Service Public Entreprendre+1"
-},
-{
 "t": "h",
 "x": "3. Conséquences du dépassement"
 },
@@ -17039,10 +16911,6 @@
 {
 "t": "p",
 "x": "La TVA exigible doit également rester dans les limites prévues par les textes."
-},
-{
-"t": "p",
-"x": "Service Public Entreprendre+1"
 },
 {
 "t": "h",
@@ -17232,10 +17100,6 @@
 {
 "t": "p",
 "x": "Les règles de territorialité des prestations de services sont notamment précisées par les articles 259 et suivants du CGI."
-},
-{
-"t": "p",
-"x": "impots.gouv.fr+1"
 },
 {
 "t": "h",
@@ -17684,10 +17548,6 @@
 {
 "t": "p",
 "x": "Il peut également choisir une période de cinq années : l'année concernée et les quatre années précédentes."
-},
-{
-"t": "p",
-"x": "Légifrance+2"
 },
 {
 "t": "h",
@@ -18578,7 +18438,7 @@
 "domaine": "travail",
 "titre": "Pour bien commencer",
 "fiche": [
-"Introduction : maîtriser les règles qui encadrent la relation entre un employeur et un salarié, comprendre les différents contrats de travail et connaître les dispositions particulières applicables aux sportifs professionnels."
+"Introduction : Objectif du module : maîtriser les règles qui encadrent la relation entre un employeur et un salarié, comprendre les différents contrats de travail et connaître les dispositions particulières applicables aux sportifs professionnels."
 ],
 "source": "Module 06, introduction",
 "cours": {
@@ -18589,14 +18449,6 @@
 "code": "",
 "titre": "Introduction",
 "blocs": [
-{
-"t": "p",
-"x": "maîtriser les règles qui encadrent la relation entre un employeur et un salarié, comprendre les différents contrats de travail et connaître les dispositions particulières applicables aux sportifs professionnels."
-},
-{
-"t": "p",
-"x": "Support source original — cours, QCM blanc et quiz ; les corrigés complets ne sont pas fournis dans le fichier."
-},
 {
 "t": "p",
 "x": "Objectif du module : maîtriser les règles qui encadrent la relation entre un employeur et un salarié, comprendre les différents contrats de travail et connaître les dispositions particulières applicables aux sportifs professionnels."
@@ -19046,10 +18898,6 @@
 {
 "t": "p",
 "x": "La rupture de la période d'essai est libre en principe, mais le délai de prévenance doit être respecté."
-},
-{
-"t": "p",
-"x": "Ministère du Travail et des Solidarités+1"
 },
 {
 "t": "vigilance",
@@ -19889,10 +19737,6 @@
 "x": "L'avantage en nature doit être évalué selon les règles applicables, figurer sur le bulletin de paie et être intégré dans l'assiette des cotisations lorsqu'il est soumis à cotisations."
 },
 {
-"t": "p",
-"x": "Mon-entreprise+1"
-},
-{
 "t": "h",
 "x": "6. Les retenues sur salaire"
 },
@@ -19997,10 +19841,6 @@
 "x": "Ces règles comportent des dérogations strictement encadrées."
 },
 {
-"t": "p",
-"x": "Ministère du Travail et des Solidarités+1"
-},
-{
 "t": "h",
 "x": "4. Les heures supplémentaires"
 },
@@ -20092,10 +19932,6 @@
 {
 "t": "p",
 "x": "Le droit légal est de 2,5 jours ouvrables par mois de travail effectif, soit 30 jours ouvrables pour une année complète, correspondant à cinq semaines."
-},
-{
-"t": "p",
-"x": "Service Public Entreprendre+1"
 },
 {
 "t": "h",
@@ -20787,10 +20623,6 @@
 {
 "t": "p",
 "x": "Le club ne peut pas lui imposer cette réduction au seul motif qu'il rencontre des difficultés financières. Il doit respecter la procédure applicable et justifier tout éventuel licenciement."
-},
-{
-"t": "p",
-"x": "Service Public"
 }
 ]
 },
@@ -21218,10 +21050,6 @@
 "x": "Elle ne doit pas être utilisée pour contourner les règles du licenciement économique ou exercer une pression sur le salarié."
 },
 {
-"t": "p",
-"x": "Service Public"
-},
-{
 "t": "h",
 "x": "3. La rupture anticipée du CDD"
 },
@@ -21288,10 +21116,6 @@
 {
 "t": "p",
 "x": "La prise d'acte rompt immédiatement le contrat : elle est donc risquée si les faits ne sont pas solides."
-},
-{
-"t": "p",
-"x": "Service Public"
 },
 {
 "t": "h",
@@ -21470,10 +21294,6 @@
 "x": "La branche recouvrement, organisée autour de l'Urssaf, collecte les cotisations et contributions sociales pour financer les différentes branches."
 },
 {
-"t": "p",
-"x": "Sécurité Sociale+1"
-},
-{
 "t": "h",
 "x": "3. Les principaux organismes"
 },
@@ -21634,10 +21454,6 @@
 {
 "t": "p",
 "x": "L'Urssaf rappelle notamment que les primes et avantages en nature sont inclus dans l'assiette des cotisations selon les règles applicables."
-},
-{
-"t": "p",
-"x": "Urssaf+1"
 },
 {
 "t": "h",
@@ -21842,7 +21658,7 @@
 "domaine": "personnalite",
 "titre": "Pour bien commencer",
 "fiche": [
-"Introduction : comprendre et maîtriser les droits attachés à la personne du sportif, en particulier le droit à l'image et le droit au nom, ainsi que les conditions de leur exploitation commerciale.",
+"Introduction : Objectif du module : comprendre et maîtriser les droits attachés à la personne du sportif, en particulier le droit à l'image et le droit au nom, ainsi que les conditions de leur exploitation commerciale.",
 "Le piège central et la carte du chapitre : Le droit à l'image d'une personne, le droit à l'image collective du sportif professionnel et l'exploitation commerciale de son image dans un contrat de sponsoring ne sont pas la même chose."
 ],
 "source": "Module 07, introduction",
@@ -21854,14 +21670,6 @@
 "code": "",
 "titre": "Introduction",
 "blocs": [
-{
-"t": "p",
-"x": "comprendre et maîtriser les droits attachés à la personne du sportif, en particulier le droit à l'image et le droit au nom, ainsi que les conditions de leur exploitation commerciale."
-},
-{
-"t": "p",
-"x": "Support source original — cours, QCM blanc et quiz ; les corrigés complets ne sont pas fournis dans le fichier."
-},
 {
 "t": "p",
 "x": "Objectif du module : comprendre et maîtriser les droits attachés à la personne du sportif, en particulier le droit à l'image et le droit au nom, ainsi que les conditions de leur exploitation commerciale."
@@ -24544,10 +24352,6 @@
 },
 {
 "t": "p",
-"x": "Support source original — cours, QCM blanc et quiz ; les corrigés complets ne sont pas fournis dans le fichier."
-},
-{
-"t": "p",
 "x": "Droit français — actualisé au 3 novembre 2026"
 }
 ]
@@ -25478,10 +25282,6 @@
 {
 "t": "p",
 "x": "La faute sportive et la faute civile ne se confondent donc pas."
-},
-{
-"t": "p",
-"x": "sports.gouv.fr+2"
 }
 ]
 },
@@ -25560,10 +25360,6 @@
 {
 "t": "p",
 "x": "Le Conseil d'État l'a confirmé dans sa décision du 27 juin 2024, n° 489391 : une fédération ne peut pas imposer à tous ses licenciés de souscrire une assurance personnelle couvrant les dommages corporels, en méconnaissance du régime fixé par le législateur."
-},
-{
-"t": "p",
-"x": "Conseil d'État+1"
 },
 {
 "t": "cas",
@@ -25821,10 +25617,6 @@
 {
 "t": "p",
 "x": "La Cour de cassation a notamment jugé qu'une agression d'arbitre commise par un joueur dans une enceinte sportive pouvait engager la responsabilité de l'association sportive."
-},
-{
-"t": "p",
-"x": "sports.gouv.fr+1"
 }
 ]
 }
@@ -25943,10 +25735,6 @@
 {
 "t": "p",
 "x": "Ne réponds pas automatiquement « obligatoire » à une question sur la RC Pro de l'agent sportif."
-},
-{
-"t": "p",
-"x": "Légifrance+2"
 }
 ]
 },
@@ -26180,10 +25968,6 @@
 },
 {
 "t": "p",
-"x": "Support source original — cours de réforme et quiz interactif ; le fichier ne contient qu’une question visible du quiz final."
-},
-{
-"t": "p",
 "x": "Droit du sport français — situation au 3 novembre 2026"
 }
 ]
@@ -26211,10 +25995,6 @@
 {
 "t": "p",
 "x": "Source de référence : Loi n° 2026-725 du 3 août 2026 — texte consolidé sur Légifrance — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000054608060?utm_source=chatgpt.com."
-},
-{
-"t": "p",
-"x": "Légifrance+2"
 }
 ]
 },
@@ -26924,10 +26704,6 @@
 {
 "t": "p",
 "x": "le contrôle ne porte pas uniquement sur l'agent sportif lui-même. Il concerne aussi les personnes qui participent à la structure professionnelle."
-},
-{
-"t": "p",
-"x": "Légifrance+2"
 },
 {
 "t": "h",
@@ -27652,10 +27428,6 @@
 {
 "t": "p",
 "x": "La rédaction de L.222-20 conserve le terme « licence » dans son premier cas d'infraction, alors que L.222-7 parle désormais de carte professionnelle. Pour l'examen, il faut connaître la rédaction exacte de chaque article plutôt que remplacer mécaniquement tous les anciens termes."
-},
-{
-"t": "p",
-"x": "Légifrance+3"
 }
 ]
 }
@@ -28121,10 +27893,6 @@
 {
 "t": "p",
 "x": "La loi prévoit notamment une exception à l'interdiction de prêt ou de cautionnement entre deux sociétés distinctes qui gèrent respectivement les secteurs masculin et féminin d'une même discipline."
-},
-{
-"t": "p",
-"x": "Légifrance+2"
 }
 ]
 },
