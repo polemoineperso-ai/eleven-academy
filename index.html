@@ -57,6 +57,7 @@
 html { height: 100%; }
 body {
   min-height: 100%;
+  overflow-x: clip;
   background: var(--pitch);
   color: var(--chalk);
   font-family: var(--font);
@@ -96,8 +97,9 @@ a { color: var(--green); text-underline-offset: 3px; }
   position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
   padding-block: 12px; background: var(--pitch);
-  box-shadow: 0 0 0 100vmax var(--pitch); clip-path: inset(0 -100vmax);
 }
+/* Full-width band. Not a huge box-shadow trimmed by clip-path: on iPhone the trim drops out while scrolling and the shadow hides the page */
+.top::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); background: var(--pitch); z-index: -1; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; background: none; border: 0; padding: 0; }
 .brand-crest { height: 44px; width: auto; flex: none; display: block; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5)); }
 .brand-wm { height: 40px; width: auto; display: block; }
