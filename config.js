@@ -3,6 +3,6 @@
 // supabaseKey = la clé publique "anon" (ou "publishable") du projet : elle est faite pour être publique,
 // la sécurité repose sur les règles d'accès (RLS) de supabase/schema.sql.
 window.EA_CONFIG = {
-  supabaseUrl: "",
-  supabaseKey: ""
+  supabaseUrl: "https://pwziiledutebgoyuvflm.supabase.co",
+  supabaseKey: "sb_publishable_kBA3GSSDoWY3QwUARbXWkg_uUhguGZs"
 };
