@@ -105,6 +105,8 @@ a { color: var(--green); text-underline-offset: 3px; }
 .brand-wm { height: 40px; width: auto; display: block; }
 .top-actions { display: flex; align-items: center; gap: 8px; }
 .division-chip {
+.division-chip { position: relative; }
+.division-chip::after { content: ""; position: absolute; inset: -6px 0; }
   display: inline-flex; align-items: center; gap: 6px; height: 32px; padding-inline: 10px 12px;
   border-radius: 999px; background: var(--gold-soft); color: var(--gold);
   font-size: 13px; font-weight: 700; border: 0;
@@ -278,12 +280,14 @@ button.step:hover .row-title { color: var(--green); }
 .tgroup dd { margin: 0; }
 .lesson-end { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
 .lesson-lead { font-size: 16px; font-weight: 700; line-height: 1.5; margin: 4px 0 0; max-width: 65ch; }
-.rev-search { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 68px); z-index: 10; background: var(--pitch); padding-block: 8px; display: flex; flex-direction: column; gap: 8px; }
+.rev-search { padding-block: 8px; display: flex; flex-direction: column; gap: 8px; }
+.rev-search:focus-within, .rev-search:has(input:not(:placeholder-shown)) { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 68px); z-index: 10; background: var(--pitch); margin-inline: -16px; padding-inline: 16px; }
+.chips[hidden] { display: none; }
 .rev-search label { font-size: 14px; font-weight: 700; }
 .rev-search input { width: 100%; min-height: 50px; padding: 0 14px; border-radius: var(--r-s); border: 1px solid var(--line-strong); background: var(--turf); color: var(--chalk); font: inherit; font-size: 16px; }
 .rev-search input:focus { outline: 2px solid var(--green); outline-offset: 1px; }
 .chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
-.chip { flex: none; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line-strong); background: none; color: var(--fg-2); font: inherit; font-size: 14px; font-weight: 600; }
+.chip { flex: none; min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line-strong); background: none; color: var(--fg-2); font: inherit; font-size: 14px; font-weight: 600; }
 .chip[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: var(--on-green); }
 .rev-count { font-size: 14px; color: var(--fg-2); margin: 0; }
 .row mark, .row-sub mark { background: var(--green); color: var(--on-green); border-radius: 3px; padding: 0 2px; }
@@ -304,6 +308,26 @@ a.row:hover .row-title { color: var(--green); }
 .sheet-list li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 8px; height: 8px; border-radius: 50%; border: 2px solid var(--green-press); }
 .sheet-src { font-size: 13px; color: var(--ink-2); border-top: 1px solid var(--paper-line); padding-top: 10px; }
 .sheet.dark .sheet-src { border-color: var(--line); }
+
+/* Cards */
+.flash { width: 100%; min-height: 46vh; border: 0; text-align: left; color: var(--ink); font: inherit; gap: 14px; }
+.flash-front { cursor: pointer; justify-content: center; align-items: center; text-align: center; position: relative; padding-block: 40px; }
+.flash-pic { display: block; }
+.flash-recto { font-size: 28px; font-weight: 800; line-height: 1.2; margin: 0; text-wrap: balance; overflow-wrap: anywhere; }
+.flash-title { font-size: 21px; font-weight: 800; line-height: 1.25; margin: 0; text-wrap: balance; }
+.flash-text { font-size: 17px; line-height: 1.6; margin: 0; max-width: 65ch; }
+.flash-foot { font-size: 13px; font-weight: 600; color: var(--ink-2); margin: 0; }
+.sheet.dark .flash-foot { color: var(--fg-2); }
+.sheet.dark.flash.is-back .flash-foot { border-color: var(--line); }
+.sheet.dark.flash { color: var(--chalk); }
+.cards-count { font-weight: 700; color: var(--chalk); }
+.flash-front .flash-foot { position: absolute; left: 0; right: 0; bottom: 18px; }
+.flash.is-back .flash-foot { margin-top: auto; padding-top: 10px; border-top: 1px solid var(--paper-line); }
+.flash-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.flash-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; position: sticky; bottom: calc(env(safe-area-inset-bottom, 0px) + 12px); z-index: 15; }
+.flash-actions .btn-ghost { background: var(--pitch); }
+.flash-turn { animation: flash-turn 260ms cubic-bezier(0.16, 1, 0.3, 1); }
+@keyframes flash-turn { from { transform: perspective(900px) rotateY(-70deg); opacity: 0.4; } to { transform: none; opacity: 1; } }
 
 /* Fiche text: same rules when reading and when editing */
 .rich > * + * { margin-top: 12px; }
@@ -621,6 +645,7 @@ a.row:hover .row-title { color: var(--green); }
 
   const pic = (n, alt = "") => `<img class="pic" src="${ASSET[n]}" alt="${alt}" width="44" height="44" decoding="async">`;
   const GLYPH = {
+    cards: '<rect x="3.2" y="5" width="11" height="15.5" rx="2" transform="rotate(-9 8.7 12.7)" opacity=".55"/><rect class="acc" x="9.3" y="3.6" width="11.4" height="16" rx="2" transform="rotate(7 15 11.6)"/>',
     home: '<path d="M12 2.8 2.2 11.2h2.6V21h14.4v-9.8h2.6z"/><rect class="acc" x="9.8" y="14" width="4.4" height="7" rx=".6"/>',
     pill: '<g transform="rotate(-45 12 12)"><rect x="2.6" y="7.6" width="18.8" height="8.8" rx="4.4"/><path class="acc" d="M12 7.6h5a4.4 4.4 0 0 1 0 8.8h-5z"/></g>',
     target: '<circle cx="12" cy="12" r="9.5"/><circle class="deep" cx="12" cy="12" r="6.6"/><circle cx="12" cy="12" r="4.4"/><circle class="acc" cx="12" cy="12" r="2.2"/>',
@@ -811,9 +836,9 @@ a.row:hover .row-title { color: var(--green); }
   }
 
   /* ---------- Spaced repetition & sessions ---------- */
-  function buildDaily(n) {
+  function buildDaily(n, pool) {
     const t = today();
-    const qs = C.chapters().flatMap((c) => C.qOf(c.id));
+    const qs = pool || C.chapters().flatMap((c) => C.qOf(c.id));
     const due = qs.filter((q) => ans(q.id) && ans(q.id).due <= t && (ans(q.id).box || 0) < 6)
       .sort((a, b) => ans(a.id).due.localeCompare(ans(b.id).due));
     const fresh = qs.filter((q) => !ans(q.id));
@@ -894,21 +919,23 @@ a.row:hover .row-title { color: var(--green); }
   const TABS = [
     { id: "home", label: "Accueil", pic: "ic-home" },
     { id: "train", label: "Programme", pic: "ic-cap" },
-    { id: "exams", label: "Examens", pic: "ic-stopwatch" },
-    { id: "revisions", label: "Révisions", pic: "ic-book" },
+    { id: "match", label: "Match", pic: "ic-stopwatch" },
+    { id: "cards", label: "Cartes", icon: "cards" },
     { id: "progress", label: "Progression", pic: "ic-chart" }
   ];
   function go(view, param = null) {
     S.view = view; S.param = param; render();
     window.scrollTo(0, 0);
+    focusH1();
+  }
+  function focusH1() {
     const h = document.querySelector("#app h1");
     if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
   }
   function renderTabs() {
-    const hidden = S.view === "quiz" || S.view === "ficheEdit";
+    const hidden = S.view === "quiz" || S.view === "ficheEdit" || S.view === "cardPlay";
     document.querySelector(".tabbar").hidden = hidden;
-    const viaRev = S.from === "revisions" ? "revisions" : "train";
-    const map = { home: "home", train: "train", chapter: "train", exams: "exams", revisions: "revisions", fiche: viaRev, cours: viaRev, outil: "revisions", module: "revisions", progress: "progress", result: "home", me: "" };
+    const map = { home: "home", train: "train", chapter: "train", match: "match", cards: "cards", fiche: "train", cours: "train", outil: "train", module: "train", progress: "progress", result: "home", me: "" };
     const cur = map[S.view];
     document.getElementById("tabs").innerHTML = TABS.map((t) =>
       `<button class="tab" data-go="${t.id}" ${cur === t.id ? 'aria-current="page"' : ""}>${t.crest ? `<img class="tab-crest" src="${ASSET["crest"]}" alt="" width="29" height="32">` : t.pic ? pic(t.pic) : tile(t.icon)}<span>${t.label}</span></button>`).join("");
@@ -966,23 +993,27 @@ a.row:hover .row-title { color: var(--green); }
       : `<div class="row">${inner}</div>`}</div></div>`;
   }
 
+  function matchCard() {
+    const plan = buildDaily(S.progress.settings.perSession);
+    const done = doneToday();
+    const body = done
+      ? `<p class="match-done">Match du jour terminé : ${done.right} / ${done.total}. Tu peux en jouer un autre pour avancer plus vite.</p>
+         <button class="btn btn-block" data-act="daily">${icon("refresh")}Jouer un match de plus</button>`
+      : `<div class="match-meta"><span>${icon("list")}${plan.ids.length} questions</span><span>${icon("clock")}environ ${Math.max(5, Math.round(plan.ids.length * 1.5))} min</span><span>${icon("refresh")}${plan.nDue} à revoir · ${plan.nNew} nouvelles</span></div>
+         <button class="btn btn-block" data-act="daily">${icon("play")}Lancer le match</button>`;
+    const resume = S.pending ? `<div class="resume"><p class="match-done">Tu as un match en cours : question ${S.pending.i + 1} sur ${S.pending.ids.length}.</p>
+         <button class="btn btn-block" data-act="resume">${icon("play")}Reprendre le match</button></div>` : "";
+    return `<section class="match" aria-labelledby="match-t"><h2 class="match-title" id="match-t">Match du jour</h2>${resume || body}</section>`;
+  }
+
   function vHome() {
     const p = S.progress; const dv = division(p.xp);
     const months = Math.max(0, Math.round((EXAM_TARGET - new Date()) / (30.44 * 86400000)));
-    const plan = buildDaily(p.settings.perSession);
-    const done = doneToday();
     const first = S.name ? esc(S.name.split(" ")[0]) : "";
     const hello = S.owner ? "Aperçu de l'application avec ton compte. la candidate aura son propre espace et sa propre progression."
       : "";
     const askName = !S.owner && !first ? `<form class="ask-name" id="ask-name"><label for="s-name">Ton prénom, pour que l'appli s'adresse à toi</label><div class="ask-row"><input id="s-name" type="text" autocomplete="given-name" required><button class="btn btn-primary" type="submit">Valider</button></div></form>` : "";
     const next = nextTrophy();
-    const matchBody = done
-      ? `<p class="match-done">Séance du jour terminée : ${done.right} / ${done.total}. Tu peux en jouer une autre pour avancer plus vite.</p>
-         <button class="btn btn-block" data-act="daily">${icon("refresh")}Jouer une séance de plus</button>`
-      : `<div class="match-meta"><span>${icon("list")}${plan.ids.length} questions</span><span>${icon("clock")}environ ${Math.max(5, Math.round(plan.ids.length * 1.5))} min</span><span>${icon("refresh")}${plan.nDue} à revoir · ${plan.nNew} nouvelles</span></div>
-         <button class="btn btn-block" data-act="daily">${icon("play")}Lancer la séance</button>`;
-    const resume = S.pending ? `<div class="resume"><p class="match-done">Tu as un match en cours : question ${S.pending.i + 1} sur ${S.pending.ids.length}.</p>
-         <button class="btn btn-block" data-act="resume">${icon("play")}Reprendre le match</button></div>` : "";
     return `${header()}<main class="screen home">
       <section class="hero" aria-labelledby="hero-t">
         <div class="hero-actions">${topActions()}</div>
@@ -991,7 +1022,7 @@ a.row:hover .row-title { color: var(--green); }
         <div class="hero-more"><p class="hero-sub">Épreuve générale du CNOSF en novembre 2027, dans environ ${months} mois. Un match par jour, chaque réponse expliquée par la loi.</p>
           ${hello ? `<p class="hero-hello">${hello}</p>` : ""}${askName}</div>
       </section>
-      <section class="match" aria-labelledby="match-t"><h2 class="match-title" id="match-t">Séance du jour</h2>${resume || matchBody}</section>
+      ${matchCard()}
       <div class="home-side"><section class="stats" aria-label="Statistiques">
         <div class="stat"><span class="stat-val">${p.streak.count}</span><span class="stat-lab">${p.streak.count > 1 ? "jours de série" : "jour de série"}</span></div>
         <div class="stat"><span class="stat-val">${fmt(p.xp)}</span><span class="stat-lab">points</span></div>
@@ -1012,7 +1043,7 @@ a.row:hover .row-title { color: var(--green); }
         <div class="sec-head"><h2 class="h-sec" id="dom-t">Tes domaines</h2><button class="link-btn" data-go="train">Tout voir</button></div>
         <div class="rows">${C.domains().map((d) => {
           const qs = C.qOfDomain(d.id); const m = mastery(qs);
-          return `<button class="row has-pic" data-go="train" data-param="${d.id}">${domPic(d.id)}
+          return `<button class="row has-pic" data-go="module" data-param="${d.id}">${domPic(d.id)}
             <span class="stack"><span class="row-title">${esc(d.titre)}</span><span class="row-sub">${esc(d.sous_titre)} · ${qs.length} questions</span></span>
             <span class="row-side num">${m} %${icon("chevron")}</span>
             <span class="bar" aria-hidden="true"><i style="width:${m}%"></i></span></button>`;
@@ -1022,27 +1053,11 @@ a.row:hover .row-title { color: var(--green); }
     </main>`;
   }
 
-  function vTrain() {
-    return `${header()}<main class="screen">
-      <div class="greet"><h1 class="h-screen">Programme</h1><p class="muted small">Chaque chapitre suit le même parcours : le cours, la fiche, puis les questions. Il est validé à 80 % de questions acquises.</p></div>
-      ${C.domains().map((d) => `<section class="sec" id="d-${d.id}" aria-labelledby="t-${d.id}">
-        <div class="sec-head"><span class="sec-title">${domPic(d.id)}<h2 class="h-sec" id="t-${d.id}">${esc(d.titre)}</h2></span><span class="tiny num">${mastery(C.qOfDomain(d.id))} % acquis</span></div>
-        <div class="rows">${C.chapters().filter((c) => c.domaine === d.id).map((c) => {
-          const st = chapterState(c);
-          return `<button class="row" data-go="chapter" data-param="${c.id}">
-            <span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${hasCours(c) ? (isRead(c.id) ? "Cours lu" : "Cours") : "Fiche"}${C.qOf(c.id).length ? ` · ${C.qOf(c.id).length} questions` : ""}${st.key === "ok" && C.qOf(c.id).length ? " · validé" : ""}</span></span>
-            <span class="row-side num">${st.m} %${icon("chevron")}</span>
-            <span class="bar" aria-hidden="true"><i style="width:${st.m}%"></i></span></button>`;
-        }).join("")}</div></section>`).join("")}
-      
-    </main>`;
-  }
-
   /* ---------- Cours ---------- */
   const hasCours = (c) => !!(c && c.cours && c.cours.sections && c.cours.sections.length);
   const isRead = (id) => !!(S.progress.read && S.progress.read[id]);
   const backTo = (c) => S.from === "revisions"
-    ? `<button class="link-btn" data-go="module" data-param="${c.domaine}" style="align-self:flex-start">${icon("back")} ${esc(C.domain(c.domaine)?.num ? "Module " + C.domain(c.domaine).num : "Révisions")}</button>`
+    ? `<button class="link-btn" data-go="module" data-param="${c.domaine}" style="align-self:flex-start">${icon("back")} ${esc(C.domain(c.domaine)?.num ? "Module " + C.domain(c.domaine).num : "Programme")}</button>`
     : `<button class="link-btn" data-go="chapter" data-param="${c.id}" style="align-self:flex-start">${icon("back")} Ton parcours</button>`;
   function lessonTable(b, clean) {
     const cell = clean ? (v) => v : esc;
@@ -1093,7 +1108,7 @@ a.row:hover .row-title { color: var(--green); }
   function vOutil() {
     const [domId, oid] = String(S.param || "").split(":");
     const d = C.domain(domId); const o = d && (d.outils || []).find((x) => x.id === oid);
-    if (!o) return vRevisions();
+    if (!o) return vTrain();
     return `${header()}<main class="screen narrow">
       <div class="stack" style="gap:6px"><button class="link-btn" data-go="module" data-param="${d.id}" style="align-self:flex-start">${icon("back")} ${esc("Module " + d.num)}</button>
         <h1 class="h-screen">${esc(o.titre)}</h1><p class="muted small">${esc(d.module || d.titre)} · ${esc(o.sous)}</p></div>
@@ -1120,9 +1135,9 @@ a.row:hover .row-title { color: var(--green); }
       : next === 1
         ? `<button class="btn btn-primary btn-block" data-go="fiche" data-param="${c.id}" data-from="chapter">${icon("list")}Lire la fiche</button>`
         : qs.length ? `<button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>`
-        : `<button class="btn btn-primary btn-block" data-go="train">${icon("list")}Revenir au programme</button>`;
+        : `<button class="btn btn-primary btn-block" data-go="module" data-param="${c.domaine}">${icon("list")}Revenir au module</button>`;
     return `${header()}<main class="screen narrow">
-      <div class="stack" style="gap:6px"><button class="link-btn" data-go="train" style="align-self:flex-start">${icon("back")} Programme</button>
+      <div class="stack" style="gap:6px"><button class="link-btn" data-go="module" data-param="${c.domaine}" style="align-self:flex-start">${icon("back")} ${esc(d?.num ? "Module " + d.num : "Programme")}</button>
         <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(d?.titre || "")}${qs.length ? ` · ${qs.length} questions · ${st.m} % acquis` : ""}</p></div>
       <section class="sec" aria-labelledby="path-t"><h2 class="h-sec" id="path-t">Ton parcours</h2>
         <div class="path">${stepCours}
@@ -1204,11 +1219,22 @@ a.row:hover .row-title { color: var(--green); }
     </main>`;
   }
 
-  function vExams() {
+  /* ---------- Match: today, one module, or the mock exam ---------- */
+  function vMatch() {
     return `${header()}<main class="screen">
-      <div class="greet"><h1 class="h-screen">Examens blancs</h1><p class="muted small">Le match officiel reproduit l'épreuve générale du CNOSF.</p></div>
+      <div class="greet"><h1 class="h-screen">Match</h1><p class="muted small">Joue le match du jour, ou choisis un module à travailler.</p></div>
+      ${matchCard()}
+      <section class="sec" aria-labelledby="mm-t"><h2 class="h-sec" id="mm-t">Match par module</h2>
+        <div class="rows">${C.domains().filter((d) => C.qOfDomain(d.id).length).map((d) => {
+          const qs = C.qOfDomain(d.id); const m = mastery(qs);
+          return `<button class="row has-pic" data-act="module-match" data-param="${d.id}">${domPic(d.id)}
+            <span class="stack"><span class="row-title">${esc(d.titre)}</span><span class="row-sub">${qs.length} questions</span></span>
+            <span class="row-side num">${m} %${icon("play")}</span>
+            <span class="bar" aria-hidden="true"><i style="width:${m}%"></i></span></button>`;
+        }).join("")}</div></section>
       <section class="sheet dark" aria-labelledby="ex-t">
-        <h2 class="sheet-title" id="ex-t">Le match officiel</h2>
+        <h2 class="sheet-title" id="ex-t">Match officiel : pas encore disponible</h2>
+        <p class="muted small" style="margin:0">L'examen blanc reproduira l'épreuve générale du CNOSF.</p>
         <ul class="plan">
           <li><span><b>2 heures, sans document</b><br><span class="muted small">Comme le jour de l'épreuve.</span></span></li>
           <li><span><b>18 QCM, 9 points</b><br><span class="muted small">0,5 point par question, une seule bonne réponse.</span></span></li>
@@ -1216,15 +1242,95 @@ a.row:hover .row-title { color: var(--green); }
           <li><span><b>10/20 minimum</b><br><span class="muted small">Note éliminatoire pour passer à l'épreuve FFF.</span></span></li>
         </ul>
       </section>
-      <p class="note">Les matchs officiels et les annales complètes arrivent dans une prochaine version. En attendant, chaque séance du jour mélange déjà des questions des 9 modules et des annales.</p>
+    </main>`;
+  }
+
+  /* ---------- Cartes: one notion per card, a collection per module ---------- */
+  const allCards = () => S.content?.cartes || [];
+  const cardState = (id) => S.progress.cards?.[id];
+  const cardsKnown = (list) => list.filter((k) => cardState(k.id)?.s === "ok").length;
+  const CARD_KINDS = [["all", "Tout"], ["terme", "Termes"], ["article", "Articles"]];
+  function buildDeck(pool, n) {
+    const rank = (k) => { const st = cardState(k.id); return !st ? 1 : st.s === "todo" ? 0 : 2; };
+    const when = (k) => cardState(k.id)?.d || "";
+    return pool.slice().sort((a, b) => rank(a) - rank(b) || when(a).localeCompare(when(b))).slice(0, n).map((k) => k.id);
+  }
+  function startDeck(ids, single, mod) {
+    if (!ids.length) { toast("Aucune carte disponible pour l'instant."); return; }
+    S.deck = { ids, i: 0, flip: !!single, ok: 0, todo: 0, single: !!single, mod: mod || null, back: S.deck?.back || (S.view === "train" ? "train" : "cards") };
+    go("cardPlay");
+  }
+  function cardResults() {
+    const q = normS(S.cardQ.q).trim(), terms = q.split(" ").filter(Boolean);
+    const hits = allCards().filter((k) => (S.cardQ.kind === "all" || k.genre === S.cardQ.kind) && (terms.length ? terms.every((t) => normS(k.recto + " " + k.verso).includes(t)) : true));
+    if (!hits.length) return `<p class="rev-count" role="status">Aucune carte trouvée. Essaie un autre mot, ou cherche dans Programme, qui couvre aussi les cours.</p>`;
+    const rx = terms.length ? new RegExp(terms.map(termRx).join("|"), "gi") : null;
+    const mark = (t) => rx ? markText(t, rx) : esc(t);
+    const sorted = terms.length ? hits : hits.slice().sort((a, b) => a.recto.localeCompare(b.recto, "fr"));
+    return `<p class="rev-count" role="status">${hits.length} carte${hits.length > 1 ? "s" : ""}${hits.length > 40 ? ", les 40 premières affichées" : ""}</p><div class="rows">${sorted.slice(0, 40).map((k) => {
+      const d = C.domain(k.domaine);
+      return `<button class="row" data-act="card-open" data-param="${k.id}"><span class="stack"><span class="row-title" style="font-size:15px">${mark(k.recto)}</span><span class="row-sub">${d?.num ? "Module " + d.num + " · " : ""}${mark(k.verso.length > 110 ? k.verso.slice(0, 110) + " …" : k.verso)}</span></span><span class="row-side">${icon("chevron")}</span></button>`;
+    }).join("")}</div>`;
+  }
+  function cardCollection() {
+    const doms = C.domains();
+    const without = doms.filter((d) => !allCards().some((k) => k.domaine === d.id));
+    return `<section class="sec" aria-labelledby="col-t"><h2 class="h-sec" id="col-t">Ta collection</h2>
+      <div class="rows">${doms.filter((d) => !without.includes(d)).map((d) => {
+        const list = allCards().filter((k) => k.domaine === d.id), n = cardsKnown(list), pct = Math.round(100 * n / list.length);
+        return `<button class="row has-pic" data-act="card-module" data-param="${d.id}">${domPic(d.id)}
+          <span class="stack"><span class="row-title">${esc(d.titre)}</span><span class="row-sub num">${n} sur ${list.length} cartes</span></span>
+          <span class="row-side">${icon("play")}</span>
+          <span class="bar" aria-hidden="true"><i style="width:${pct}%"></i></span></button>`;
+      }).join("")}</div>
+      ${without.length ? `<p class="note">Pas encore de cartes pour : ${without.map((d) => esc(d.num ? "Module " + d.num : d.titre)).join(", ")}.</p>` : ""}</section>`;
+  }
+  const cardOut = () => normS(S.cardQ.q).trim().length >= 2 || S.cardQ.kind !== "all" ? cardResults() : cardCollection();
+  function vCards() {
+    S.cardQ = S.cardQ || { q: "", kind: "all" };
+    const all = allCards(), n = cardsKnown(all), pct = all.length ? Math.round(100 * n / all.length) : 0;
+    return `${header()}<main class="screen">
+      <div class="greet"><h1 class="h-screen">Cartes</h1><p class="muted small">Une notion par carte. Retourne-la, puis dis si tu la connais.</p></div>
+      <section class="ladder" aria-label="Cartes acquises">
+        <div class="ladder-row"><span class="cards-count num">${n} sur ${all.length} cartes acquises</span></div>
+        <div class="bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Cartes acquises"><i style="width:${pct}%"></i></div>
+      </section>
+      <button class="btn btn-primary btn-block" data-act="card-play">${icon("play")}Jouer 10 cartes</button>
+      <div class="rev-search" role="search"><label for="card-q">Chercher un mot ou un article</label>
+        <input id="card-q" type="search" enterkeyhint="search" autocomplete="off" placeholder="Ex. : mandat, L. 222-7" value="${esc(S.cardQ.q)}">
+        <div class="chips" id="card-chips">${CARD_KINDS.map(([k, l]) => `<button class="chip" data-act="card-kind" data-param="${k}" aria-pressed="${S.cardQ.kind === k}">${l}</button>`).join("")}</div></div>
+      <div id="card-out" class="sec">${cardOut()}</div>
+    </main>`;
+  }
+  function vCardPlay() {
+    const D = S.deck; if (!D) return vCards();
+    if (D.i >= D.ids.length) {
+      const all = allCards();
+      return `<main class="screen narrow">
+        <div class="stack" style="gap:6px"><h1 class="h-screen">Série terminée</h1><div class="score"><span class="score-big num">${D.ok}<small> / ${D.ids.length}</small></span></div><p class="muted small">${D.ok > 1 ? "cartes acquises" : "carte acquise"}, ${D.todo} à revoir. Ta collection compte ${cardsKnown(all)} carte${cardsKnown(all) > 1 ? "s" : ""} sur ${all.length}.</p></div>
+        <div class="lesson-end"><button class="btn btn-primary btn-block" data-act="card-play">${icon("play")}${D.todo ? "Rejouer, avec " + (D.todo > 1 ? "tes " + D.todo + " cartes" : "ta carte") + " à revoir" : "Jouer la série suivante"}</button>
+          <button class="btn btn-ghost btn-block" data-act="card-quit">Revenir aux cartes</button></div>
+      </main>`;
+    }
+    const k = allCards().find((x) => x.id === D.ids[D.i]); if (!k) return vCards();
+    const d = C.domain(k.domaine);
+    const foot = `<p class="flash-foot">${k.genre === "article" ? "Article" : "Terme"} · ${esc(d?.num ? "Module " + d.num : d?.titre || "")}</p>`;
+    return `<main class="screen narrow">
+      <div class="flash-top"><button class="link-btn" data-act="card-quit">${D.single ? "Fermer" : "Quitter"}</button>${D.single ? "" : `<span class="quiz-count num">${D.i + 1} / ${D.ids.length}</span>`}</div>
+      ${D.single ? "" : `<div class="bar" aria-hidden="true"><i style="width:${Math.round(100 * D.i / D.ids.length)}%"></i></div>`}
+      ${D.flip
+        ? `<article class="sheet flash is-back${sheetCls()}${D.anim && fxOn() ? " flash-turn" : ""}"><h1 class="flash-title">${esc(k.recto)}</h1><p class="flash-text">${esc(k.verso)}</p>${k.exemple ? `<div class="callout cas"><p class="callout-lab">${icon("whistle")}Exemple football</p><p>${esc(k.exemple)}</p></div>` : ""}${foot}</article>
+           ${D.single ? "" : `<div class="flash-actions"><button class="btn btn-ghost" data-act="card-answer" data-param="todo">${icon("refresh")}À revoir</button><button class="btn btn-primary" data-act="card-answer" data-param="ok">${icon("check")}Je sais</button></div>`}`
+        : `<article class="sheet flash flash-front${sheetCls()}" data-act="card-flip">${d ? `<span class="flash-pic">${domPic(k.domaine)}</span>` : ""}<h1 class="flash-recto">${esc(k.recto)}</h1>${foot}</article>
+           <button class="btn btn-primary btn-block" data-act="card-flip">Retourner la carte</button>`}
     </main>`;
   }
 
   /* ---------- Révisions: search over everything, then one page per module ---------- */
   const normS = (t) => String(t || "").toLowerCase().replace(/œ/g, "oe").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, " ").replace(/\b([lrda])\.? ?(\d)/g, "$1$2");
   const blockText = (b) => b.t === "list" ? b.items.join(" ") : b.t === "table" ? [b.head, ...b.rows].map((r) => r.join(" ")).join(" ") : b.t === "cas" ? `${b.cas} ${b.analyse || ""}` : (b.x || "");
-  const REV_KINDS = [["all", "Tout"], ["cours", "Cours"], ["fiche", "Fiches"], ["question", "Questions"], ["outil", "Outils"]];
-  const KIND_LABEL = { cours: "Cours", fiche: "Fiche", question: "Question", outil: "Outil" };
+  const REV_KINDS = [["all", "Tout"], ["cours", "Cours"], ["fiche", "Fiches"], ["question", "Questions"], ["outil", "Outils"], ["carte", "Cartes"]];
+  const KIND_LABEL = { cours: "Cours", fiche: "Fiche", question: "Question", outil: "Outil", carte: "Carte" };
   function revIndex() {
     if (S.revIdx && S.revIdx.v === S.content.version) return S.revIdx.items;
     const items = [];
@@ -1237,6 +1343,7 @@ a.row:hover .row-title { color: var(--green); }
       });
       (d.outils || []).forEach((o) => add("outil", d, o.titre, o.sections.map((sec) => sec.blocs.map(blockText).join(" ")).join(" "), `data-go="outil" data-param="${d.id}:${o.id}"`));
     });
+    allCards().forEach((k) => add("carte", C.domain(k.domaine), k.recto, k.verso, `data-act="card-open" data-param="${k.id}"`));
     S.revIdx = { v: S.content.version, items };
     return items;
   }
@@ -1258,27 +1365,35 @@ a.row:hover .row-title { color: var(--green); }
     }).join("")}</div>`;
   }
   const revDefault = () => `<section class="sec" aria-labelledby="rev-mods"><h2 class="h-sec" id="rev-mods">Les modules</h2><div class="rows">${C.domains().map((d) => {
-      const n = C.chapters().filter((c) => c.domaine === d.id).length;
-      return `<button class="row has-pic" data-go="module" data-param="${d.id}">${domPic(d.id)}<span class="stack"><span class="row-title">${esc(d.titre)}</span><span class="row-sub">${n} chapitres${d.outils?.length ? ` · ${d.outils.length} outils` : ""}${d.pdf ? " · PDF" : ""}</span></span><span class="row-side">${icon("chevron")}</span></button>`;
+      const n = C.chapters().filter((c) => c.domaine === d.id).length, m = mastery(C.qOfDomain(d.id));
+      return `<button class="row has-pic" data-go="module" data-param="${d.id}">${domPic(d.id)}<span class="stack"><span class="row-title">${esc(d.titre)}</span><span class="row-sub">${n} chapitre${n > 1 ? "s" : ""} · ${C.qOfDomain(d.id).length} questions</span></span><span class="row-side num">${m} %${icon("chevron")}</span><span class="bar" aria-hidden="true"><i style="width:${m}%"></i></span></button>`;
     }).join("")}</div></section>`;
-  function vRevisions() {
+  function vTrain() {
     S.rev = S.rev || { q: "", kind: "all" };
     return `${header()}<main class="screen">
-      <div class="greet"><h1 class="h-screen">Révisions</h1><p class="muted small">Tous les cours, fiches, questions et outils, en un seul endroit.</p></div>
+      <div class="greet"><h1 class="h-screen">Programme</h1><p class="muted small">Choisis un module, ou cherche directement ce que tu veux revoir.</p></div>
       <div class="rev-search" role="search"><label for="rev-q">Chercher un mot, un thème ou un article</label>
         <input id="rev-q" type="search" enterkeyhint="search" autocomplete="off" placeholder="Ex. : clause pénale, L. 222-17, TVA" value="${esc(S.rev.q)}">
-        <div class="chips" id="rev-chips">${REV_KINDS.map(([k, l]) => `<button class="chip" data-act="rev-kind" data-param="${k}" aria-pressed="${S.rev.kind === k}">${l}</button>`).join("")}</div></div>
+        <div class="chips" id="rev-chips" ${normS(S.rev.q).trim().length >= 2 ? "" : "hidden"}>${REV_KINDS.map(([k, l]) => `<button class="chip" data-act="rev-kind" data-param="${k}" aria-pressed="${S.rev.kind === k}">${l}</button>`).join("")}</div></div>
       <div id="rev-out" class="sec">${normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault()}</div>
     </main>`;
   }
   function vModule() {
-    const d = C.domain(S.param); if (!d) return vRevisions();
+    const d = C.domain(S.param); if (!d) return vTrain();
     const chs = C.chapters().filter((c) => c.domaine === d.id);
     return `${header()}<main class="screen narrow">
-      <div class="stack" style="gap:6px"><button class="link-btn" data-go="revisions" style="align-self:flex-start">${icon("back")} Révisions</button>
+      <div class="stack" style="gap:6px"><button class="link-btn" data-go="train" style="align-self:flex-start">${icon("back")} Programme</button>
         <h1 class="h-screen">${esc(d.titre)}</h1><p class="muted small">${esc(d.sous_titre || "")}</p></div>
-      <section class="sec" aria-labelledby="mod-ch"><h2 class="h-sec" id="mod-ch">Les fiches et les cours</h2>
-        <div class="rows">${chs.map((c) => `<button class="row" data-go="fiche" data-param="${c.id}" data-from="revisions"><span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${c.fiche.length} points clés${hasCours(c) ? ` · cours de ${c.cours.minutes} min` : ""}${C.qOf(c.id).length ? ` · ${C.qOf(c.id).length} questions` : ""}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div></section>
+      <section class="sec" aria-labelledby="mod-ch"><h2 class="h-sec" id="mod-ch">Les chapitres</h2>
+        <p class="muted small" style="margin:0">Chaque chapitre suit le même parcours : le cours, la fiche, puis les questions. Il est validé à 80 % de questions acquises.</p>
+        <div class="rows">${chs.map((c) => {
+          const st = chapterState(c);
+          return `<button class="row" data-go="chapter" data-param="${c.id}">
+            <span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${hasCours(c) ? (isRead(c.id) ? "Cours lu" : "Cours") : "Fiche"}${C.qOf(c.id).length ? ` · ${C.qOf(c.id).length} questions` : ""}${st.key === "ok" && C.qOf(c.id).length ? " · validé" : ""}</span></span>
+            <span class="row-side num">${st.m} %${icon("chevron")}</span>
+            <span class="bar" aria-hidden="true"><i style="width:${st.m}%"></i></span></button>`;
+        }).join("")}</div>
+        ${C.qOfDomain(d.id).length ? `<button class="btn btn-ghost btn-block" data-act="module-match" data-param="${d.id}">${icon("play")}Jouer un match sur ce module</button>` : ""}</section>
       ${d.outils?.length || d.pdf ? `<section class="sec" aria-labelledby="mod-out"><h2 class="h-sec" id="mod-out">La boîte à outils</h2>
         <div class="rows">${(d.outils || []).map((o) => `<button class="row" data-go="outil" data-param="${d.id}:${o.id}"><span class="stack"><span class="row-title">${esc(o.titre)}</span><span class="row-sub">${esc(o.sous)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}
         ${d.pdf && !window.claude ? `<a class="row" href="${esc(d.pdf)}" target="_blank" rel="noopener"><span class="stack"><span class="row-title">Le module complet en PDF</span><span class="row-sub">Le document d'origine</span></span><span class="row-side">${icon("file")}</span></a>` : ""}</div></section>` : ""}
@@ -1286,7 +1401,7 @@ a.row:hover .row-title { color: var(--green); }
   }
 
   function vFiche() {
-    const c = C.chapter(S.param); if (!c) return vRevisions();
+    const c = C.chapter(S.param); if (!c) return vTrain();
     return `${header()}<main class="screen narrow">
       <div class="stack" style="gap:6px">${backTo(c)}
         <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${S.from === "revisions" ? "" : "Étape 2 sur 3 · "}${esc(C.domain(c.domaine)?.titre || "")} · ${c.fiche.length} points clés</p>
@@ -1531,7 +1646,7 @@ a.row:hover .row-title { color: var(--green); }
   }
   function vFicheEdit() {
     const E = S.edit, c = E && C.chapter(E.id);
-    if (!c || !S.canEdit) return vRevisions();
+    if (!c || !S.canEdit) return vTrain();
     const sec = E.sec !== null ? c.cours.sections[E.sec] : null;
     const noun = sec ? "section" : "fiche";
     const edited = sec ? sec.html : c.ficheHtml;
@@ -1669,10 +1784,9 @@ a.row:hover .row-title { color: var(--green); }
     if (!S.progress) { app.innerHTML = vLoading(); document.querySelector(".tabbar").hidden = true; return; }
     if (S.welcome) { app.innerHTML = typo(vWelcome()); document.querySelector(".tabbar").hidden = true; return; }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
-    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, exams: vExams, revisions: vRevisions, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
+    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, match: vMatch, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
-    if (S.view === "train" && S.param) document.getElementById("d-" + S.param)?.scrollIntoView({ block: "start" });
   }
 
   /* ---------- Events ---------- */
@@ -1682,14 +1796,14 @@ a.row:hover .row-title { color: var(--green); }
     if (el.dataset.go) {
       if (el.dataset.from) S.from = el.dataset.from;
       if (el.dataset.go === "fiche" && param && !isRead("f:" + param)) { S.progress.read = Object.assign({}, S.progress.read, { ["f:" + param]: today() }); save(); }
-      else if (el.classList.contains("tab") || ["train", "revisions", "home"].includes(el.dataset.go)) S.from = el.dataset.go === "revisions" ? "revisions" : null;
+      else if (el.classList.contains("tab") || ["train", "home"].includes(el.dataset.go)) S.from = null;
       go(el.dataset.go, param);
       if (el.dataset.anchor) document.getElementById(el.dataset.anchor)?.scrollIntoView({ block: "start" });
       return;
     }
     const s = S.session;
     switch (el.dataset.act) {
-      case "daily": { const p = buildDaily(S.progress.settings.perSession); startSession("daily", p.ids, "Séance du jour"); break; }
+      case "daily": { const p = buildDaily(S.progress.settings.perSession); startSession("daily", p.ids, "Match du jour"); break; }
       case "enter": S.welcome = false; go("home"); break;
       case "rev-kind": S.rev.kind = param; document.querySelectorAll("#rev-chips .chip").forEach((c) => c.setAttribute("aria-pressed", c.dataset.param === param)); document.getElementById("rev-out").innerHTML = typo(normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault()); break;
       case "ask": { const q = C.q(param); if (q) startSession("chapter", [q.id], "Question : " + q.enonce.slice(0, 40)); break; }
@@ -1731,6 +1845,19 @@ a.row:hover .row-title { color: var(--green); }
       case "per": S.progress.settings.perSession = Number(param); save(); render(); break;
       case "reload": location.reload(); break;
       case "login-back": if (S.login) { S.login.step = "email"; S.login.err = ""; render(); } break;
+      case "module-match": { const d = C.domain(param); startSession("module", buildDaily(S.progress.settings.perSession, C.qOfDomain(param)).ids, "Match : " + (d?.titre || "")); break; }
+      case "card-play": { const mod = S.deck?.mod; startDeck(buildDeck(mod ? allCards().filter((k) => k.domaine === mod) : allCards(), 10), false, mod); break; }
+      case "card-module": startDeck(buildDeck(allCards().filter((k) => k.domaine === param), 10), false, param); break;
+      case "card-open": startDeck([param], true); break;
+      case "card-flip": if (S.deck) { S.deck.flip = true; S.deck.anim = true; render(); window.scrollTo(0, 0); focusH1(); S.deck.anim = false; } break;
+      case "card-answer": if (S.deck) {
+        const D = S.deck;
+        S.progress.cards = Object.assign({}, S.progress.cards, { [D.ids[D.i]]: { s: param, d: today() } });
+        if (param === "ok") D.ok++; else D.todo++;
+        save(); D.i++; D.flip = false; render(); window.scrollTo(0, 0); focusH1();
+      } break;
+      case "card-quit": { const back = S.deck?.back || "cards"; S.deck = null; go(back); break; }
+      case "card-kind": S.cardQ.kind = param; document.querySelectorAll("#card-chips .chip").forEach((c) => c.setAttribute("aria-pressed", c.dataset.param === param)); document.getElementById("card-out").innerHTML = typo(cardOut()); break;
       case "fiche-edit": openEditor(param); break;
       case "cours-edit": { const cut = param.lastIndexOf(":"); openEditor(param.slice(0, cut), Number(param.slice(cut + 1))); break; }
       case "ed": edCommand(param); break;
@@ -1766,8 +1893,10 @@ a.row:hover .row-title { color: var(--green); }
       if (S.edit && (!S.edit.lastHist || Date.now() - S.edit.lastHist > 1500)) { S.edit.hist.push(S.edit.html); S.edit.lastHist = Date.now(); }
       edTouched();
     }
+    if (e.target.id === "card-q") { S.cardQ.q = e.target.value; document.getElementById("card-out").innerHTML = typo(cardOut()); return; }
     if (e.target.id !== "rev-q") return;
     S.rev.q = e.target.value;
+    document.getElementById("rev-chips").hidden = normS(S.rev.q).trim().length < 2;
     document.getElementById("rev-out").innerHTML = typo(normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault());
   });
   document.addEventListener("submit", async (e) => {

@@ -1,5 +1,5 @@
 {
-"version": "v7-2026-11-04",
+"version": "v8-2026-11-04",
 "domaines": [
 {
 "id": "agents",
@@ -32139,6 +32139,1641 @@
 "bonne": 2,
 "explication": "La loi prévoit expressément cette date différée. C'est l'un des pièges majeurs du module. Légifrance+5",
 "origine": "Module 09, QCM 20, corrigé du module"
+}
+],
+"cartes": [
+{
+"id": "k-agents-1",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Agent sportif",
+"verso": "Personne physique exerçant une activité réglementée consistant à mettre en relation des parties intéressées à la conclusion ou à la prolongation de certains contrats sportifs, contre rémunération, indemnité ou avantage. Référence : article L. 222-7 du Code du sport.",
+"exemple": "Un agent met en relation un joueur et un club pour négocier un contrat de travail."
+},
+{
+"id": "k-agents-2",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Mandant",
+"verso": "Personne qui confie une mission à une autre personne dans le cadre d'un mandat.",
+"exemple": "Un joueur confie à un agent la mission de négocier son futur contrat."
+},
+{
+"id": "k-agents-3",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Mandataire",
+"verso": "Personne qui reçoit le pouvoir d'agir pour le compte d'un mandant.",
+"exemple": "L'agent sportif qui reçoit un mandat écrit du joueur."
+},
+{
+"id": "k-agents-4",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Fédération délégataire",
+"verso": "Fédération à laquelle l'État a confié des prérogatives particulières pour organiser et réglementer une discipline sportive.",
+"exemple": "La FFF pour le football en France."
+},
+{
+"id": "k-agents-5",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Ligue professionnelle",
+"verso": "Structure constituée dans le cadre fédéral pour gérer les activités professionnelles d'une discipline sportive.",
+"exemple": "La Ligue de football professionnel (LFP)."
+},
+{
+"id": "k-agents-6",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Personne physique",
+"verso": "Être humain titulaire de droits et d'obligations.",
+"exemple": "Un joueur, un entraîneur ou un agent sportif."
+},
+{
+"id": "k-agents-7",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Personne morale",
+"verso": "Entité juridiquement reconnue, distincte des personnes physiques qui la composent.",
+"exemple": "Une SAS représentant une société sportive."
+},
+{
+"id": "k-agents-8",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Mandat",
+"verso": "Contrat par lequel une personne donne à une autre le pouvoir d'accomplir un acte juridique en son nom et pour son compte. Référence : article 1984 du Code civil."
+},
+{
+"id": "k-agents-9",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Exclusivité",
+"verso": "Clause contractuelle réservant à un agent déterminé le droit d'intervenir dans le cadre d'une mission définie.",
+"exemple": "Un joueur s'engage à confier exclusivement à un agent la négociation de son prochain contrat."
+},
+{
+"id": "k-agents-10",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Commission",
+"verso": "Somme versée à l'agent en contrepartie de son intervention, dans les conditions prévues par les textes et le contrat."
+},
+{
+"id": "k-agents-11",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Avenant",
+"verso": "Document contractuel permettant de modifier un contrat existant avec l'accord des parties.",
+"exemple": "Modification de la rémunération prévue dans un mandat."
+},
+{
+"id": "k-agents-12",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Nullité",
+"verso": "Sanction juridique qui entraîne la disparition rétroactive d'un acte juridique irrégulier, sous réserve des règles applicables."
+},
+{
+"id": "k-agents-13",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Résiliation",
+"verso": "Fin d'un contrat pour l'avenir, dans les conditions prévues par la loi ou le contrat."
+},
+{
+"id": "k-agents-14",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Mutation",
+"verso": "Changement de rattachement d'un sportif d'une association sportive ou société sportive vers une autre, selon les règles applicables à la discipline."
+},
+{
+"id": "k-agents-15",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Transfert",
+"verso": "Opération permettant notamment le passage d'un joueur d'un club à un autre, selon le cadre contractuel et réglementaire applicable. Dans le football, il faut distinguer le transfert international, la mutation nationale et l'enregistrement du joueur."
+},
+{
+"id": "k-agents-16",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Licence",
+"verso": "Autorisation délivrée dans le cadre fédéral permettant l'exercice d'une activité réglementée. d'agent sportif. Les anciens textes et documents d'examen continuent parfois à employer le terme licence."
+},
+{
+"id": "k-agents-17",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Carte professionnelle",
+"verso": "Document autorisant une personne physique à exercer l'activité d'agent sportif, délivré par la fédération délégataire compétente selon les conditions réglementaires."
+},
+{
+"id": "k-agents-18",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Agrément",
+"verso": "Reconnaissance accordée par l'État à une fédération sportive répondant aux conditions légales."
+},
+{
+"id": "k-agents-19",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Délégation",
+"verso": "Pouvoirs particuliers accordés par l'État à une fédération pour organiser une discipline sportive."
+},
+{
+"id": "k-agents-20",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Incompatibilité",
+"verso": "Situation dans laquelle l'exercice simultané de deux fonctions ou activités est interdit."
+},
+{
+"id": "k-agents-21",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Incapacité",
+"verso": "Situation juridique empêchant une personne d'obtenir ou de conserver le droit d'exercer une activité."
+},
+{
+"id": "k-agents-22",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Préposé",
+"verso": "Personne qui agit pour le compte d'une autre dans le cadre d'un lien de subordination ou d'une organisation juridique déterminée."
+},
+{
+"id": "k-agents-23",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Responsabilité civile",
+"verso": "Obligation de réparer un dommage causé à autrui."
+},
+{
+"id": "k-agents-24",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Responsabilité pénale",
+"verso": "Responsabilité engagée lorsqu'une personne commet une infraction prévue par la loi."
+},
+{
+"id": "k-agents-25",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Dopage",
+"verso": "Violation des règles antidopage, notamment par l'utilisation ou la présence de substances ou méthodes interdites dans les conditions définies par les textes."
+},
+{
+"id": "k-agents-26",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Blanchiment de capitaux",
+"verso": "Opération visant à dissimuler l'origine illicite de fonds pour leur donner une apparence légale."
+},
+{
+"id": "k-agents-27",
+"domaine": "agents",
+"genre": "terme",
+"recto": "Conflit d'intérêts",
+"verso": "Situation dans laquelle les intérêts personnels ou professionnels d'une personne risquent d'interférer avec l'exercice impartial de ses fonctions."
+},
+{
+"id": "k-contrats-1",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Contrat",
+"verso": "Accord de volontés destiné à créer, modifier, transmettre ou éteindre des obligations"
+},
+{
+"id": "k-contrats-2",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Cocontractant",
+"verso": "Personne avec laquelle une partie conclut un contrat"
+},
+{
+"id": "k-contrats-3",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Force obligatoire",
+"verso": "Principe selon lequel les contrats légalement formés s'imposent aux parties"
+},
+{
+"id": "k-contrats-4",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Bonne foi",
+"verso": "Exigence de loyauté lors de la négociation, de la formation et de l'exécution"
+},
+{
+"id": "k-contrats-5",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Consentement",
+"verso": "Volonté de s'engager juridiquement"
+},
+{
+"id": "k-contrats-6",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Vice du consentement",
+"verso": "Erreur, dol ou violence susceptible d'affecter la validité du contrat"
+},
+{
+"id": "k-contrats-7",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Nullité relative",
+"verso": "Sanction qui protège en principe l'intérêt privé de la partie concernée"
+},
+{
+"id": "k-contrats-8",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Mandant",
+"verso": "Personne qui donne à une autre le pouvoir d'agir pour elle et en son nom"
+},
+{
+"id": "k-contrats-9",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Mandataire",
+"verso": "Personne qui reçoit ce pouvoir dans les limites du mandat"
+},
+{
+"id": "k-contrats-10",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Mandat",
+"verso": "Acte par lequel une personne donne à une autre le pouvoir d'accomplir quelque chose pour elle et en son nom"
+},
+{
+"id": "k-contrats-11",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Commissionnaire",
+"verso": "Personne qui agit en son propre nom pour le compte d'un commettant"
+},
+{
+"id": "k-contrats-12",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Commettant",
+"verso": "Personne pour le compte de laquelle agit le commissionnaire"
+},
+{
+"id": "k-contrats-13",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Courtage",
+"verso": "Activité consistant à rapprocher des parties en vue de la conclusion d'une opération"
+},
+{
+"id": "k-contrats-14",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Inexécution",
+"verso": "Absence d'exécution ou exécution imparfaite d'une obligation"
+},
+{
+"id": "k-contrats-15",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Exception d'inexécution",
+"verso": "Possibilité, dans les conditions légales, de suspendre sa propre obligation"
+},
+{
+"id": "k-contrats-16",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Résolution",
+"verso": "Fin du contrat provoquée par une inexécution dans les conditions prévues"
+},
+{
+"id": "k-contrats-17",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Caducité",
+"verso": "Disparition de l'efficacité du contrat en raison de la disparition d'un élément essentiel"
+},
+{
+"id": "k-contrats-18",
+"domaine": "contrats",
+"genre": "terme",
+"recto": "Contrat d'entreprise",
+"verso": "Prestation réalisée par un prestataire pour un prix convenu, sans nécessairement représenter son client"
+},
+{
+"id": "k-contrats-19",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1101, Code civil",
+"verso": "Définition du contrat"
+},
+{
+"id": "k-contrats-20",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1102, Code civil",
+"verso": "Liberté contractuelle"
+},
+{
+"id": "k-contrats-21",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1103, Code civil",
+"verso": "Force obligatoire"
+},
+{
+"id": "k-contrats-22",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1104, Code civil",
+"verso": "Bonne foi"
+},
+{
+"id": "k-contrats-23",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1128, Code civil",
+"verso": "Conditions de validité"
+},
+{
+"id": "k-contrats-24",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1130, Code civil",
+"verso": "Vices du consentement"
+},
+{
+"id": "k-contrats-25",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1131, Code civil",
+"verso": "Nullité relative"
+},
+{
+"id": "k-contrats-26",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1132, Code civil",
+"verso": "Erreur"
+},
+{
+"id": "k-contrats-27",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1137, Code civil",
+"verso": "Dol"
+},
+{
+"id": "k-contrats-28",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1140, Code civil",
+"verso": "Violence"
+},
+{
+"id": "k-contrats-29",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1143, Code civil",
+"verso": "Abus de dépendance"
+},
+{
+"id": "k-contrats-30",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1144, Code civil",
+"verso": "Délai d'action en nullité"
+},
+{
+"id": "k-contrats-31",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1193, Code civil",
+"verso": "Modification du contrat"
+},
+{
+"id": "k-contrats-32",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1195, Code civil",
+"verso": "Imprévision"
+},
+{
+"id": "k-contrats-33",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1217, Code civil",
+"verso": "Sanctions de l'inexécution"
+},
+{
+"id": "k-contrats-34",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1219, Code civil",
+"verso": "Exception d'inexécution"
+},
+{
+"id": "k-contrats-35",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1221, Code civil",
+"verso": "Exécution forcée"
+},
+{
+"id": "k-contrats-36",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1223, Code civil",
+"verso": "Réduction du prix"
+},
+{
+"id": "k-contrats-37",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1224, Code civil",
+"verso": "Résolution"
+},
+{
+"id": "k-contrats-38",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1226, Code civil",
+"verso": "Résolution unilatérale"
+},
+{
+"id": "k-contrats-39",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1227, Code civil",
+"verso": "Résolution judiciaire"
+},
+{
+"id": "k-contrats-40",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1231-1, Code civil",
+"verso": "Responsabilité contractuelle"
+},
+{
+"id": "k-contrats-41",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1231-5, Code civil",
+"verso": "Clause pénale"
+},
+{
+"id": "k-contrats-42",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1984, Code civil",
+"verso": "Définition du mandat"
+},
+{
+"id": "k-contrats-43",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1985, Code civil",
+"verso": "Formation et forme"
+},
+{
+"id": "k-contrats-44",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1986, Code civil",
+"verso": "Gratuité"
+},
+{
+"id": "k-contrats-45",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1987, Code civil",
+"verso": "Mandat spécial ou général"
+},
+{
+"id": "k-contrats-46",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1988, Code civil",
+"verso": "Pouvoirs du mandat général"
+},
+{
+"id": "k-contrats-47",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1989, Code civil",
+"verso": "Limites du mandat"
+},
+{
+"id": "k-contrats-48",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1991, Code civil",
+"verso": "Exécution"
+},
+{
+"id": "k-contrats-49",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1992, Code civil",
+"verso": "Responsabilité"
+},
+{
+"id": "k-contrats-50",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1993, Code civil",
+"verso": "Reddition des comptes"
+},
+{
+"id": "k-contrats-51",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1994, Code civil",
+"verso": "Substitution"
+},
+{
+"id": "k-contrats-52",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1998, Code civil",
+"verso": "Obligations du mandant"
+},
+{
+"id": "k-contrats-53",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 1999, Code civil",
+"verso": "Remboursement et rémunération"
+},
+{
+"id": "k-contrats-54",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 2000, Code civil",
+"verso": "Indemnisation"
+},
+{
+"id": "k-contrats-55",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 2003, Code civil",
+"verso": "Fin du mandat"
+},
+{
+"id": "k-contrats-56",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 2004, Code civil",
+"verso": "Révocation"
+},
+{
+"id": "k-contrats-57",
+"domaine": "contrats",
+"genre": "article",
+"recto": "Article 2007, Code civil",
+"verso": "Renonciation"
+},
+{
+"id": "k-contrats-58",
+"domaine": "contrats",
+"genre": "article",
+"recto": "L. 222-5, Code du sport",
+"verso": "Protection des mineurs"
+},
+{
+"id": "k-contrats-59",
+"domaine": "contrats",
+"genre": "article",
+"recto": "L. 222-6, Code du sport",
+"verso": "Sanctions relatives aux mineurs"
+},
+{
+"id": "k-contrats-60",
+"domaine": "contrats",
+"genre": "article",
+"recto": "L. 222-7, Code du sport",
+"verso": "Définition de l'agent sportif"
+},
+{
+"id": "k-contrats-61",
+"domaine": "contrats",
+"genre": "article",
+"recto": "L. 222-17, Code du sport",
+"verso": "Mandat, représentation et rémunération"
+},
+{
+"id": "k-contrats-62",
+"domaine": "contrats",
+"genre": "article",
+"recto": "L. 222-18, Code du sport",
+"verso": "Contrôle des contrats"
+},
+{
+"id": "k-contrats-63",
+"domaine": "contrats",
+"genre": "article",
+"recto": "L. 222-19, Code du sport",
+"verso": "Dispositions disciplinaires"
+},
+{
+"id": "k-contrats-64",
+"domaine": "contrats",
+"genre": "article",
+"recto": "L. 222-20, Code du sport",
+"verso": "Sanctions pénales"
+},
+{
+"id": "k-associations-1",
+"domaine": "associations",
+"genre": "article",
+"recto": "Loi 1901, art. 1",
+"verso": "Définition légale de l’association"
+},
+{
+"id": "k-associations-2",
+"domaine": "associations",
+"genre": "article",
+"recto": "Loi 1901, art. 2",
+"verso": "Liberté de création des associations"
+},
+{
+"id": "k-associations-3",
+"domaine": "associations",
+"genre": "article",
+"recto": "Loi 1901, art. 5",
+"verso": "Déclaration et formalités de publicité"
+},
+{
+"id": "k-associations-4",
+"domaine": "associations",
+"genre": "article",
+"recto": "Loi 1901, art. 6",
+"verso": "Capacité juridique de l’association déclarée"
+},
+{
+"id": "k-associations-5",
+"domaine": "associations",
+"genre": "article",
+"recto": "Loi 1901, art. 7",
+"verso": "Dissolution judiciaire dans les cas prévus"
+},
+{
+"id": "k-associations-6",
+"domaine": "associations",
+"genre": "article",
+"recto": "Loi 1901, art. 9",
+"verso": "Dévolution des biens après dissolution"
+},
+{
+"id": "k-associations-7",
+"domaine": "associations",
+"genre": "article",
+"recto": "Loi 1901, art. 10",
+"verso": "Reconnaissance d’utilité publique"
+},
+{
+"id": "k-associations-8",
+"domaine": "associations",
+"genre": "article",
+"recto": "Loi 1901, art. 11",
+"verso": "Capacité renforcée des associations reconnues d’utilité publique"
+},
+{
+"id": "k-associations-9",
+"domaine": "associations",
+"genre": "article",
+"recto": "Code du sport, L.121-1",
+"verso": "Constitution des associations sportives"
+},
+{
+"id": "k-associations-10",
+"domaine": "associations",
+"genre": "article",
+"recto": "Code du sport, L.121-4",
+"verso": "Agrément, affiliation, contrat d’engagement républicain, suspension et retrait"
+},
+{
+"id": "k-associations-11",
+"domaine": "associations",
+"genre": "article",
+"recto": "Code du sport, L.122-1 et suivants",
+"verso": "Sociétés sportives"
+},
+{
+"id": "k-associations-12",
+"domaine": "associations",
+"genre": "article",
+"recto": "Code du sport, L.122-14",
+"verso": "Convention entre association et société sportive"
+},
+{
+"id": "k-associations-13",
+"domaine": "associations",
+"genre": "article",
+"recto": "Code du sport, L.222-7",
+"verso": "Définition de l’activité d’agent sportif et contrats concernés"
+},
+{
+"id": "k-associations-14",
+"domaine": "associations",
+"genre": "article",
+"recto": "Code du sport, L.222-17",
+"verso": "Contrat écrit, rémunération, plafond et paiement par le cocontractant"
+},
+{
+"id": "k-associations-15",
+"domaine": "associations",
+"genre": "article",
+"recto": "CGI, art. 206",
+"verso": "Assujettissement à l’impôt sur les sociétés et franchise"
+},
+{
+"id": "k-associations-16",
+"domaine": "associations",
+"genre": "article",
+"recto": "CGI, art. 261",
+"verso": "Exonérations et règles applicables aux organismes sans but lucratif, notamment rémunération des dirigeants"
+},
+{
+"id": "k-fiscal-1",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "Foyer fiscal",
+"verso": "Ensemble des personnes dont les revenus sont déclarés sur une même déclaration d'impôt"
+},
+{
+"id": "k-fiscal-2",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "Revenu imposable",
+"verso": "Revenu retenu par l'administration après application des abattements et déductions prévus par la loi"
+},
+{
+"id": "k-fiscal-3",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "Quotient familial",
+"verso": "Mécanisme qui divise le revenu imposable par un nombre de parts dépendant de la situation familiale"
+},
+{
+"id": "k-fiscal-4",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "TMI",
+"verso": "Taux marginal d'imposition : taux de la tranche la plus élevée atteinte par le revenu"
+},
+{
+"id": "k-fiscal-5",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "IR",
+"verso": "Impôt sur le revenu payé par les personnes physiques"
+},
+{
+"id": "k-fiscal-6",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "IS",
+"verso": "Impôt sur les bénéfices payé par les sociétés soumises à cet impôt"
+},
+{
+"id": "k-fiscal-7",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "BNC",
+"verso": "Bénéfices non commerciaux : catégorie fiscale notamment applicable aux professions libérales"
+},
+{
+"id": "k-fiscal-8",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "BIC",
+"verso": "Bénéfices industriels et commerciaux : catégorie applicable à certaines activités commerciales ou artisanales"
+},
+{
+"id": "k-fiscal-9",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "TVA",
+"verso": "Taxe sur la valeur ajoutée collectée sur les opérations imposables"
+},
+{
+"id": "k-fiscal-10",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "Franchise en base",
+"verso": "Régime qui dispense, sous conditions, de facturer et déclarer la TVA sur les opérations concernées"
+},
+{
+"id": "k-fiscal-11",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "PAS",
+"verso": "Prélèvement à la source : mode de collecte de l'impôt sur le revenu au fur et à mesure de la perception des revenus"
+},
+{
+"id": "k-fiscal-12",
+"domaine": "fiscal",
+"genre": "terme",
+"recto": "Résidence fiscale",
+"verso": "Situation permettant de déterminer dans quel État une personne est imposable, selon les règles internes et les conventions fiscales"
+},
+{
+"id": "k-fiscal-13",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 4 B",
+"verso": "Domicile fiscal : Critères de domiciliation fiscale en France"
+},
+{
+"id": "k-fiscal-14",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 12",
+"verso": "Imposition annuelle : Principe de l'imposition annuelle des revenus"
+},
+{
+"id": "k-fiscal-15",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 197",
+"verso": "Barème IR : Calcul de l'impôt progressif et quotient familial"
+},
+{
+"id": "k-fiscal-16",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 92",
+"verso": "BNC : Définition des bénéfices non commerciaux"
+},
+{
+"id": "k-fiscal-17",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 100 bis",
+"verso": "Revenus sportifs : Moyenne des recettes et dépenses sur 3 ou 5 ans"
+},
+{
+"id": "k-fiscal-18",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 84 A",
+"verso": "Sportifs salariés : Extension du dispositif d'étalement aux salaires sportifs"
+},
+{
+"id": "k-fiscal-19",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 163-0 A ter",
+"verso": "Primes olympiques : Répartition sur 4 années"
+},
+{
+"id": "k-fiscal-20",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 155 B",
+"verso": "Impatriés : Régime fiscal des salariés et dirigeants venant de l'étranger"
+},
+{
+"id": "k-fiscal-21",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 182 B",
+"verso": "Non-résidents : Retenue à la source sur certains revenus, dont les prestations sportives"
+},
+{
+"id": "k-fiscal-22",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 206 et 219",
+"verso": "IS : Assujettissement et taux de l'impôt sur les sociétés"
+},
+{
+"id": "k-fiscal-23",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 259",
+"verso": "Territorialité TVA : Lieu d'imposition des prestations de services"
+},
+{
+"id": "k-fiscal-24",
+"domaine": "fiscal",
+"genre": "article",
+"recto": "CGI, art. 293 B",
+"verso": "Franchise TVA : Seuils et conditions de la franchise en base"
+},
+{
+"id": "k-travail-1",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Employeur",
+"verso": "Personne physique ou morale qui embauche le salarié et exerce le pouvoir de direction"
+},
+{
+"id": "k-travail-2",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Salarié",
+"verso": "Personne qui travaille pour le compte d'un employeur dans un lien de subordination"
+},
+{
+"id": "k-travail-3",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Contrat de travail",
+"verso": "Convention par laquelle une personne travaille pour le compte d'une autre, sous son autorité, contre rémunération"
+},
+{
+"id": "k-travail-4",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Lien de subordination",
+"verso": "Pouvoir de donner des ordres, d'en contrôler l'exécution et de sanctionner les manquements"
+},
+{
+"id": "k-travail-5",
+"domaine": "travail",
+"genre": "terme",
+"recto": "CDI",
+"verso": "Contrat à durée indéterminée, forme normale et générale de la relation de travail"
+},
+{
+"id": "k-travail-6",
+"domaine": "travail",
+"genre": "terme",
+"recto": "CDD",
+"verso": "Contrat à durée déterminée, autorisé uniquement dans les cas prévus par la loi"
+},
+{
+"id": "k-travail-7",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Intérim",
+"verso": "Relation de travail temporaire organisée par une entreprise de travail temporaire"
+},
+{
+"id": "k-travail-8",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Convention collective",
+"verso": "Accord négocié entre organisations représentatives d'employeurs et de salariés, qui complète les dispositions légales"
+},
+{
+"id": "k-travail-9",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Accord d'entreprise",
+"verso": "Accord collectif conclu au niveau de l'entreprise ou de l'établissement"
+},
+{
+"id": "k-travail-10",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Période d'essai",
+"verso": "Période permettant à l'employeur d'évaluer les compétences du salarié et au salarié d'apprécier son emploi"
+},
+{
+"id": "k-travail-11",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Salaire brut",
+"verso": "Rémunération avant déduction des cotisations salariales"
+},
+{
+"id": "k-travail-12",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Salaire net",
+"verso": "Somme versée au salarié après les retenues salariales, avant ou après prélèvement à la source selon le contexte"
+},
+{
+"id": "k-travail-13",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Prime",
+"verso": "Complément de rémunération lié à un événement, une performance ou une condition contractuelle"
+},
+{
+"id": "k-travail-14",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Avantage en nature",
+"verso": "Bien ou service fourni par l'employeur à titre personnel : logement, véhicule, repas, etc"
+},
+{
+"id": "k-travail-15",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Durée légale",
+"verso": "Durée de référence du travail effectif à temps complet : 35 heures par semaine dans le régime général"
+},
+{
+"id": "k-travail-16",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Heures supplémentaires",
+"verso": "Heures effectuées au-delà de la durée légale ou de la durée considérée comme équivalente, ouvrant droit à majoration ou repos selon les règles applicables"
+},
+{
+"id": "k-travail-17",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Mise à pied disciplinaire",
+"verso": "Sanction qui suspend temporairement le contrat et la rémunération"
+},
+{
+"id": "k-travail-18",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Licenciement",
+"verso": "Rupture du CDI à l'initiative de l'employeur, fondée sur un motif légalement valable"
+},
+{
+"id": "k-travail-19",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Inaptitude",
+"verso": "Situation dans laquelle le médecin du travail constate que le salarié ne peut plus occuper son poste dans les conditions prévues par la loi"
+},
+{
+"id": "k-travail-20",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Accident du travail",
+"verso": "Accident survenu par le fait ou à l'occasion du travail, selon les critères légaux"
+},
+{
+"id": "k-travail-21",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Maladie professionnelle",
+"verso": "Maladie reconnue comme liée à l'activité professionnelle selon les règles de Sécurité sociale"
+},
+{
+"id": "k-travail-22",
+"domaine": "travail",
+"genre": "terme",
+"recto": "Prévoyance",
+"verso": "Dispositif de protection complémentaire couvrant notamment certains risques d'incapacité, d'invalidité et de décès"
+},
+{
+"id": "k-travail-23",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1221-1",
+"verso": "Contrat de travail : Principes généraux"
+},
+{
+"id": "k-travail-24",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1221-19 à L.1221-26",
+"verso": "Période d'essai : Durée, renouvellement, rupture"
+},
+{
+"id": "k-travail-25",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1242-1",
+"verso": "CDD : Le CDD ne doit pas pourvoir durablement un emploi permanent"
+},
+{
+"id": "k-travail-26",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1242-2",
+"verso": "Motifs de recours au CDD : Cas autorisés"
+},
+{
+"id": "k-travail-27",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1243-1",
+"verso": "Rupture anticipée du CDD : Cas autorisés"
+},
+{
+"id": "k-travail-28",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1243-8",
+"verso": "Indemnité de fin de CDD : Prime de précarité"
+},
+{
+"id": "k-travail-29",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du sport L.222-2",
+"verso": "Sportif professionnel salarié : Définition"
+},
+{
+"id": "k-travail-30",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du sport L.222-2-3",
+"verso": "CDD sportif spécifique : Contrat de travail à durée déterminée"
+},
+{
+"id": "k-travail-31",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du sport L.222-2-4",
+"verso": "Durée du CDD sportif : 12 mois en principe, maximum 5 ans, exceptions"
+},
+{
+"id": "k-travail-32",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du sport L.222-2-5",
+"verso": "Contrat sportif : Écrit, mentions obligatoires, transmission"
+},
+{
+"id": "k-travail-33",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du sport L.222-2-6",
+"verso": "Homologation : Règles fédérales ou de ligue"
+},
+{
+"id": "k-travail-34",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.3121-1",
+"verso": "Temps de travail : Définition du travail effectif"
+},
+{
+"id": "k-travail-35",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.3121-27",
+"verso": "Durée légale : 35 heures par semaine"
+},
+{
+"id": "k-travail-36",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.3141-3",
+"verso": "Congés payés : 2,5 jours ouvrables par mois"
+},
+{
+"id": "k-travail-37",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1331-1",
+"verso": "Sanction disciplinaire : Définition"
+},
+{
+"id": "k-travail-38",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1332-2",
+"verso": "Procédure disciplinaire : Entretien et notification"
+},
+{
+"id": "k-travail-39",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1332-4",
+"verso": "Prescription disciplinaire : Deux mois"
+},
+{
+"id": "k-travail-40",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1321-1",
+"verso": "Règlement intérieur : Discipline, santé et sécurité"
+},
+{
+"id": "k-travail-41",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1224-1",
+"verso": "Transfert d'entreprise : Maintien des contrats"
+},
+{
+"id": "k-travail-42",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1232-1",
+"verso": "Licenciement personnel : Cause réelle et sérieuse"
+},
+{
+"id": "k-travail-43",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1233-3",
+"verso": "Licenciement économique : Définition du motif économique"
+},
+{
+"id": "k-travail-44",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.1237-11",
+"verso": "Rupture conventionnelle : Rupture d'un commun accord"
+},
+{
+"id": "k-travail-45",
+"domaine": "travail",
+"genre": "article",
+"recto": "Code du travail L.911-1",
+"verso": "Protection sociale complémentaire : Mise en place des garanties collectives"
+},
+{
+"id": "k-personnalite-1",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Droit à l'image",
+"verso": "Droit pour une personne de contrôler, dans certaines limites, la fixation, la diffusion et l'exploitation de son image"
+},
+{
+"id": "k-personnalite-2",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Droit de la personnalité",
+"verso": "Droit attaché à la personne : vie privée, image, nom, voix, honneur, réputation"
+},
+{
+"id": "k-personnalite-3",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Consentement",
+"verso": "Accord libre et éclairé donné pour une utilisation déterminée de l'image"
+},
+{
+"id": "k-personnalite-4",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Autorisation d'exploitation",
+"verso": "Accord précisant les conditions dans lesquelles l'image peut être utilisée"
+},
+{
+"id": "k-personnalite-5",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Image individuelle",
+"verso": "Représentation d'un sportif identifiable individuellement"
+},
+{
+"id": "k-personnalite-6",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Image collective",
+"verso": "Image exploitée dans le cadre particulier prévu par le Code du sport pour certains sportifs professionnels"
+},
+{
+"id": "k-personnalite-7",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Image d'équipe",
+"verso": "Image montrant plusieurs joueurs réunis dans un contexte sportif ; elle n'est pas automatiquement soumise au régime de l'image collective du Code du sport"
+},
+{
+"id": "k-personnalite-8",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Droit à l'image collective (DIC)",
+"verso": "Ancien mécanisme de rémunération lié à l'exploitation collective de l'image des sportifs professionnels"
+},
+{
+"id": "k-personnalite-9",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Redevance",
+"verso": "Somme versée en contrepartie d'une exploitation autorisée, selon un régime juridique déterminé"
+},
+{
+"id": "k-personnalite-10",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Sponsoring",
+"verso": "Contrat par lequel une marque soutient une personne ou une activité en contrepartie d'une visibilité ou d'une association d'image"
+},
+{
+"id": "k-personnalite-11",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Parrainage",
+"verso": "Opération par laquelle une entreprise associe son nom ou sa marque à une personne ou un événement"
+},
+{
+"id": "k-personnalite-12",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Endorsement",
+"verso": "Recommandation ou promotion d'un produit ou d'une marque par une personnalité"
+},
+{
+"id": "k-personnalite-13",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Droit au nom",
+"verso": "Droit de toute personne à son nom et à son identité civile"
+},
+{
+"id": "k-personnalite-14",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Pseudonyme",
+"verso": "Nom d'emprunt utilisé publiquement par une personne"
+},
+{
+"id": "k-personnalite-15",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Marque",
+"verso": "Signe distinctif pouvant être enregistré pour identifier des produits ou services"
+},
+{
+"id": "k-personnalite-16",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Atteinte à la vie privée",
+"verso": "Divulgation ou utilisation illicite d'informations relevant de la sphère personnelle"
+},
+{
+"id": "k-personnalite-17",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Préjudice moral",
+"verso": "Atteinte à la dignité, à la réputation, à la vie privée ou aux intérêts personnels"
+},
+{
+"id": "k-personnalite-18",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Préjudice patrimonial",
+"verso": "Perte financière ou perte de valeur économique liée à une atteinte"
+},
+{
+"id": "k-personnalite-19",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Usurpation d'identité",
+"verso": "Utilisation frauduleuse de l'identité d'une personne, dans les conditions prévues par la loi"
+},
+{
+"id": "k-personnalite-20",
+"domaine": "personnalite",
+"genre": "terme",
+"recto": "Autorisation écrite",
+"verso": "Document permettant de prouver le consentement et d'en délimiter la portée"
+},
+{
+"id": "k-personnalite-21",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code civil, art. 9",
+"verso": "Vie privée et droit à l'image : Protection de la vie privée et mesures de cessation"
+},
+{
+"id": "k-personnalite-22",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code civil, art. 16",
+"verso": "Respect de la personne humaine : Principe de protection de la personne"
+},
+{
+"id": "k-personnalite-23",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code civil, art. 311-21",
+"verso": "Attribution du nom : Choix du nom de famille"
+},
+{
+"id": "k-personnalite-24",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code civil, art. 311-24-2",
+"verso": "Nom d'usage : Utilisation d'un nom à titre d'usage"
+},
+{
+"id": "k-personnalite-25",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code civil, art. 61",
+"verso": "Changement de nom : Motif légitime"
+},
+{
+"id": "k-personnalite-26",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code civil, art. 61-3-1",
+"verso": "Changement simplifié : Procédure de déclaration"
+},
+{
+"id": "k-personnalite-27",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code du sport, art. L.222-2-10-1",
+"verso": "Exploitation commerciale : Contrat d'image, conditions et redevance"
+},
+{
+"id": "k-personnalite-28",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code du sport, art. D.222-50",
+"verso": "Exploitation individuelle : Recettes éligibles et définition"
+},
+{
+"id": "k-personnalite-29",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code de la sécurité sociale, art. L.242-1",
+"verso": "Assiette des cotisations : Distinction salaire/redevance"
+},
+{
+"id": "k-personnalite-30",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code pénal, art. 226-1",
+"verso": "Vie privée : Captation d'image dans un lieu privé"
+},
+{
+"id": "k-personnalite-31",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code pénal, art. 226-2",
+"verso": "Diffusion d'enregistrements illicites : Conservation et diffusion"
+},
+{
+"id": "k-personnalite-32",
+"domaine": "personnalite",
+"genre": "article",
+"recto": "Code pénal, art. 226-8",
+"verso": "Montage et contenus artificiels : Protection contre certains deepfakes"
+},
+{
+"id": "k-assurances-1",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Assureur",
+"verso": "Organisme qui accepte de couvrir un risque en contrepartie d'une prime ou cotisation"
+},
+{
+"id": "k-assurances-2",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Souscripteur",
+"verso": "Personne qui conclut le contrat avec l'assureur"
+},
+{
+"id": "k-assurances-3",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Assuré",
+"verso": "Personne dont les intérêts ou la responsabilité sont couverts"
+},
+{
+"id": "k-assurances-4",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Bénéficiaire",
+"verso": "Personne qui reçoit la prestation prévue par le contrat"
+},
+{
+"id": "k-assurances-5",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Prime",
+"verso": "Somme payée à l'assureur en contrepartie de la garantie"
+},
+{
+"id": "k-assurances-6",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Risque",
+"verso": "Événement incertain contre lequel on souhaite se protéger"
+},
+{
+"id": "k-assurances-7",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Sinistre",
+"verso": "Réalisation de l'événement couvert par le contrat"
+},
+{
+"id": "k-assurances-8",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Garantie",
+"verso": "Protection accordée par l'assureur pour un risque défini"
+},
+{
+"id": "k-assurances-9",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Exclusion",
+"verso": "Situation expressément écartée de la couverture"
+},
+{
+"id": "k-assurances-10",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Franchise",
+"verso": "Part du dommage qui reste à la charge de l'assuré"
+},
+{
+"id": "k-assurances-11",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Plafond",
+"verso": "Montant maximal que l'assureur accepte de verser"
+},
+{
+"id": "k-assurances-12",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Indemnisation",
+"verso": "Somme ou prestation versée à la suite d'un sinistre"
+},
+{
+"id": "k-assurances-13",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Déchéance",
+"verso": "Perte du droit à garantie en raison du non-respect d'une obligation contractuelle, si les conditions légales sont réunies"
+},
+{
+"id": "k-assurances-14",
+"domaine": "assurances",
+"genre": "terme",
+"recto": "Subrogation",
+"verso": "Mécanisme permettant à l'assureur ayant indemnisé une victime d'exercer certains recours contre le responsable"
+},
+{
+"id": "k-assurances-15",
+"domaine": "assurances",
+"genre": "article",
+"recto": "Code des assurances L.112-2",
+"verso": "Proposition et formation du contrat d'assurance, information précontractuelle"
+},
+{
+"id": "k-assurances-16",
+"domaine": "assurances",
+"genre": "article",
+"recto": "Code des assurances L.112-4",
+"verso": "Mentions obligatoires de la police d'assurance"
+},
+{
+"id": "k-assurances-17",
+"domaine": "assurances",
+"genre": "article",
+"recto": "Code des assurances L.113-1",
+"verso": "Étendue de la garantie et exclusion des fautes intentionnelles ou dolosives"
+},
+{
+"id": "k-assurances-18",
+"domaine": "assurances",
+"genre": "article",
+"recto": "Code des assurances L.113-2",
+"verso": "Obligations de l'assuré : prime, déclaration du risque, déclaration du sinistre"
+},
+{
+"id": "k-assurances-19",
+"domaine": "assurances",
+"genre": "article",
+"recto": "Code des assurances L.113-8",
+"verso": "Nullité en cas de fausse déclaration intentionnelle"
+},
+{
+"id": "k-assurances-20",
+"domaine": "assurances",
+"genre": "article",
+"recto": "Code des assurances L.114-1",
+"verso": "Prescription biennale de principe"
+},
+{
+"id": "k-assurances-21",
+"domaine": "assurances",
+"genre": "article",
+"recto": "Code du sport L.321-1",
+"verso": "Assurance RC obligatoire des structures sportives"
+},
+{
+"id": "k-assurances-22",
+"domaine": "assurances",
+"genre": "article",
+"recto": "Code du sport L.321-2",
+"verso": "Sanction en cas de défaut d'assurance de l'association sportive"
+},
+{
+"id": "k-assurances-23",
+"domaine": "assurances",
+"genre": "article",
+"recto": "Code du sport L.321-4",
+"verso": "Obligation d'information sur l'assurance individuelle accident"
+},
+{
+"id": "k-assurances-24",
+"domaine": "assurances",
+"genre": "article",
+"recto": "Code du sport L.321-4-1",
+"verso": "Assurance de personnes des sportifs de haut niveau"
 }
 ]
 }
