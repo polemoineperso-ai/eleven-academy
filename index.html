@@ -272,6 +272,17 @@ button.step:hover .row-title { color: var(--green); }
 .sheet.dark .tgroup dt { color: var(--fg-2); }
 .tgroup dd { margin: 0; }
 .lesson-end { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
+.lesson-lead { font-size: 16px; font-weight: 700; line-height: 1.5; margin: 4px 0 0; max-width: 65ch; }
+.rev-search { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 68px); z-index: 10; background: var(--pitch); padding-block: 8px; display: flex; flex-direction: column; gap: 8px; }
+.rev-search label { font-size: 14px; font-weight: 700; }
+.rev-search input { width: 100%; min-height: 50px; padding: 0 14px; border-radius: var(--r-s); border: 1px solid var(--line-strong); background: var(--turf); color: var(--chalk); font: inherit; font-size: 16px; }
+.rev-search input:focus { outline: 2px solid var(--green); outline-offset: 1px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.chip { flex: none; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line-strong); background: none; color: var(--fg-2); font: inherit; font-size: 14px; font-weight: 600; }
+.chip[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: var(--on-green); }
+.rev-count { font-size: 14px; color: var(--fg-2); margin: 0; }
+.row mark, .row-sub mark { background: var(--green); color: var(--on-green); border-radius: 3px; padding: 0 2px; }
+.rev-kind { font-weight: 700; color: var(--chalk); }
 a.row { text-decoration: none; }
 a.row:hover .row-title { color: var(--green); }
 
@@ -559,13 +570,8 @@ a.row:hover .row-title { color: var(--green); }
   const tile = (n, cls = "") => `<span class="tile ${cls}" aria-hidden="true"><svg viewBox="0 0 24 24">${GLYPH[n] || GLYPH.book}</svg></span>`;
   const CREST = `<img class="brand-crest" src="${ASSET["crest"]}" alt="" width="40" height="44">`;
   const WORDMARK = `<img class="brand-wm" src="${ASSET["logo-wordmark"]}" alt="" width="131" height="64">`;
-  const DOMAIN_PIC = { associations: () => pic("ic-scales"), agents: () => pic("ic-handshake"), dopage: () => pic("ic-checklist"), contrats: () => pic("ic-contract") };
-  const UPCOMING = [
-    { titre: "Droit social", sous: "Contrat de travail, CDD sportif, convention collective du sport" },
-    { titre: "Sociétés", sous: "Formes de sociétés, entreprises en difficulté" },
-    { titre: "Fiscalité", sous: "Impôt sur le revenu, impôt sur les sociétés, TVA" },
-    { titre: "Assurances et image", sous: "Responsabilité civile, individuelle accident, droit à l'image" }
-  ];
+  const DOMAIN_PIC = { associations: () => pic("ic-scales"), agents: () => pic("ic-handshake"), dopage: () => pic("ic-checklist"), contrats: () => pic("ic-contract"), societes: () => pic("ic-chart"), fiscal: () => pic("ic-stopwatch"), travail: () => pic("ic-user"), personnalite: () => pic("ic-var"), assurances: () => pic("ic-transfer"), actualite: () => pic("ic-book") };
+  const UPCOMING = [];
   const soonRows = () => UPCOMING.map((u) => `<div class="row soon">
       <span class="stack"><span class="row-title">${esc(u.titre)}</span><span class="row-sub">${esc(u.sous)}</span></span></div>`).join("");
   const domPic = (id) => (DOMAIN_PIC[id] || (() => tile("book")))();
@@ -586,7 +592,13 @@ a.row:hover .row-title { color: var(--green); }
     { id: "dom-associations", name: "Champion des associations", desc: "80 % du domaine acquis", mark: () => pic("ic-trophy") },
     { id: "dom-agents", name: "Champion des agents sportifs", desc: "80 % du domaine acquis", mark: () => pic("ic-trophy") },
     { id: "dom-dopage", name: "Champion de l'antidopage", desc: "80 % du domaine acquis", mark: () => pic("ic-trophy") },
-    { id: "dom-contrats", name: "Champion des contrats", desc: "80 % du domaine acquis", mark: () => pic("ic-trophy") }
+    { id: "dom-contrats", name: "Champion des contrats", desc: "80 % du module acquis", mark: () => pic("ic-trophy") },
+    { id: "dom-societes", name: "Champion des sociétés", desc: "80 % du module acquis", mark: () => pic("ic-trophy") },
+    { id: "dom-fiscal", name: "Champion du fiscal", desc: "80 % du module acquis", mark: () => pic("ic-trophy") },
+    { id: "dom-travail", name: "Champion du droit du travail", desc: "80 % du module acquis", mark: () => pic("ic-trophy") },
+    { id: "dom-personnalite", name: "Champion de l'image", desc: "80 % du module acquis", mark: () => pic("ic-trophy") },
+    { id: "dom-assurances", name: "Champion des assurances", desc: "80 % du module acquis", mark: () => pic("ic-trophy") },
+    { id: "dom-actualite", name: "Champion de la réforme 2026", desc: "80 % du module acquis", mark: () => pic("ic-trophy") }
   ];
 
   /* ---------- State ---------- */
@@ -637,6 +649,7 @@ a.row:hover .row-title { color: var(--green); }
   const mastery = (qs) => qs.length ? Math.round(100 * qs.filter((q) => isLearned(q.id)).length / qs.length) : 0;
   const chapterState = (ch) => {
     const qs = C.qOf(ch.id); const seen = qs.filter((q) => ans(q.id)).length; const m = mastery(qs);
+    if (!qs.length) return S.progress.read && S.progress.read[ch.id] ? { key: "ok", label: "Lu", m: 100 } : { key: "new", label: "À découvrir", m: 0 };
     if (m >= 80) return { key: "ok", label: "Validé", m };
     if (seen > 0) return { key: "run", label: "En cours", m };
     return { key: "new", label: "À découvrir", m };
@@ -834,7 +847,7 @@ a.row:hover .row-title { color: var(--green); }
     const hidden = S.view === "quiz";
     document.querySelector(".tabbar").hidden = hidden;
     const viaRev = S.from === "revisions" ? "revisions" : "train";
-    const map = { home: "home", train: "train", chapter: "train", exams: "exams", revisions: "revisions", fiche: viaRev, cours: viaRev, outil: "revisions", progress: "progress", result: "home", me: "" };
+    const map = { home: "home", train: "train", chapter: "train", exams: "exams", revisions: "revisions", fiche: viaRev, cours: viaRev, outil: "revisions", module: "revisions", progress: "progress", result: "home", me: "" };
     const cur = map[S.view];
     document.getElementById("tabs").innerHTML = TABS.map((t) =>
       `<button class="tab" data-go="${t.id}" ${cur === t.id ? 'aria-current="page"' : ""}>${t.crest ? `<img class="tab-crest" src="${ASSET["crest"]}" alt="" width="29" height="32">` : t.pic ? pic(t.pic) : tile(t.icon)}<span>${t.label}</span></button>`).join("");
@@ -881,7 +894,7 @@ a.row:hover .row-title { color: var(--green); }
       const n = C.qOf(run.id).length; const left = Math.max(1, Math.ceil(0.8 * n) - Math.round(chapterState(run).m * n / 100));
       return { id: run.id, t: `Termine « ${run.titre} »`, w: `Encore ${left} question${left > 1 ? "s" : ""} à acquérir pour valider ce chapitre.` };
     }
-    const start = open.filter(hasCours).sort((x, y) => x.cours.sections[0].code.localeCompare(y.cours.sections[0].code))[0] || open[0]; /* module order: A.1 first */
+    const start = open.find((c) => hasCours(c) && c.id !== "agents-contrat") || open[0]; /* module order; agents-contrat builds on module 02 */
     return { id: start.id, t: `Commence « ${start.titre} »`, w: hasCours(start) ? `Le cours se lit en environ ${start.cours.minutes} min.` : `${start.fiche.length} points clés à retenir, puis ${C.qOf(start.id).length} questions.` };
   }
   function adviceBlock() {
@@ -943,7 +956,7 @@ a.row:hover .row-title { color: var(--green); }
             <span class="row-side num">${m} %${icon("chevron")}</span>
             <span class="bar" aria-hidden="true"><i style="width:${m}%"></i></span></button>`;
         }).join("")}</div>
-        <p class="tiny">Le programme compte 8 domaines : les ${UPCOMING.length} autres (${UPCOMING.map((u) => u.titre.toLowerCase()).join(", ")}) arrivent dans les prochaines versions, à voir dans Programme.</p>
+        
       </section>
     </main>`;
   }
@@ -956,13 +969,11 @@ a.row:hover .row-title { color: var(--green); }
         <div class="rows">${C.chapters().filter((c) => c.domaine === d.id).map((c) => {
           const st = chapterState(c);
           return `<button class="row" data-go="chapter" data-param="${c.id}">
-            <span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${hasCours(c) ? (isRead(c.id) ? "Cours lu · " : "Cours · ") : ""}${C.qOf(c.id).length} questions${st.key === "ok" ? " · validé" : ""}</span></span>
+            <span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${hasCours(c) ? (isRead(c.id) ? "Cours lu" : "Cours") : "Fiche"}${C.qOf(c.id).length ? ` · ${C.qOf(c.id).length} questions` : ""}${st.key === "ok" && C.qOf(c.id).length ? " · validé" : ""}</span></span>
             <span class="row-side num">${st.m} %${icon("chevron")}</span>
             <span class="bar" aria-hidden="true"><i style="width:${st.m}%"></i></span></button>`;
         }).join("")}</div></section>`).join("")}
-      <section class="sec" aria-labelledby="soon-t"><div class="sec-head"><h2 class="h-sec" id="soon-t">Bientôt au programme</h2><span class="tiny">${UPCOMING.length} domaines</span></div>
-        <div class="rows">${soonRows()}</div>
-        <p class="tiny">Ces domaines complètent le programme officiel 2026 de l'épreuve générale. Ils seront ajoutés au fil des versions, avec leurs fiches et leurs questions.</p></section>
+      
     </main>`;
   }
 
@@ -970,7 +981,7 @@ a.row:hover .row-title { color: var(--green); }
   const hasCours = (c) => !!(c && c.cours && c.cours.sections && c.cours.sections.length);
   const isRead = (id) => !!(S.progress.read && S.progress.read[id]);
   const backTo = (c) => S.from === "revisions"
-    ? `<button class="link-btn" data-go="revisions" style="align-self:flex-start">${icon("back")} Révisions</button>`
+    ? `<button class="link-btn" data-go="module" data-param="${c.domaine}" style="align-self:flex-start">${icon("back")} ${esc(C.domain(c.domaine)?.num ? "Module " + C.domain(c.domaine).num : "Révisions")}</button>`
     : `<button class="link-btn" data-go="chapter" data-param="${c.id}" style="align-self:flex-start">${icon("back")} Ton parcours</button>`;
   function lessonTable(b) {
     if (b.head.length >= 3) { /* phone width: one group per row instead of a cramped grid */
@@ -984,10 +995,11 @@ a.row:hover .row-title { color: var(--green); }
     switch (b.t) {
       case "h": return `<h3 class="lesson-h3">${esc(b.x)}</h3>`;
       case "p": return `<p class="lesson-p">${esc(b.x)}</p>`;
+      case "lead": return `<p class="lesson-lead">${esc(b.x)}</p>`;
       case "list": return `<ul class="lesson-list">${b.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
-      case "cas": return `<div class="callout cas"><p class="callout-lab">${icon("whistle")}Mise en situation</p><p>${esc(b.cas)}</p>${b.analyse ? `<p class="callout-sub">Analyse</p><p>${esc(b.analyse)}</p>` : ""}</div>`;
-      case "vigilance": return `<div class="callout warn"><p class="callout-lab">${icon("flag")}Point de vigilance</p><p>${esc(b.x)}</p></div>`;
-      case "memo": return `<div class="callout memo"><p class="callout-lab">${icon("target")}À retenir pour le QCM</p><p>${esc(b.x)}</p></div>`;
+      case "cas": return `<div class="callout cas"><p class="callout-lab">${icon("whistle")}${esc(b.lab || "Mise en situation")}</p><p>${esc(b.cas)}</p>${b.analyse ? `<p class="callout-sub">Analyse</p><p>${esc(b.analyse)}</p>` : ""}</div>`;
+      case "vigilance": return `<div class="callout warn"><p class="callout-lab">${icon("flag")}${esc(b.lab || "Point de vigilance")}</p><p>${esc(b.x)}</p></div>`;
+      case "memo": return `<div class="callout memo"><p class="callout-lab">${icon("target")}${esc(b.lab || "À retenir pour le QCM")}</p><p>${esc(b.x)}</p></div>`;
       case "table": return lessonTable(b);
       default: return "";
     }
@@ -1010,7 +1022,7 @@ a.row:hover .row-title { color: var(--green); }
       <div class="lesson">${lessonSections(k.sections)}</div>
       <div class="lesson-end">
         <button class="btn btn-primary btn-block" data-act="read-done" data-param="${c.id}">${icon("check")}J'ai lu le cours, passer à la fiche</button>
-        <button class="link-btn" data-act="chapter" data-param="${c.id}" style="align-self:center">S'entraîner directement sur les questions</button>
+        ${C.qOf(c.id).length ? `<button class="link-btn" data-act="chapter" data-param="${c.id}" style="align-self:center">S'entraîner directement sur les questions</button>` : ""}
       </div>
     </main>`;
   }
@@ -1020,7 +1032,7 @@ a.row:hover .row-title { color: var(--green); }
     const d = C.domain(domId); const o = d && (d.outils || []).find((x) => x.id === oid);
     if (!o) return vRevisions();
     return `${header()}<main class="screen narrow">
-      <div class="stack" style="gap:6px"><button class="link-btn" data-go="revisions" style="align-self:flex-start">${icon("back")} Révisions</button>
+      <div class="stack" style="gap:6px"><button class="link-btn" data-go="module" data-param="${d.id}" style="align-self:flex-start">${icon("back")} ${esc("Module " + d.num)}</button>
         <h1 class="h-screen">${esc(o.titre)}</h1><p class="muted small">${esc(d.module || d.titre)} · ${esc(o.sous)}</p></div>
       <div class="lesson">${lessonSections(o.sections, o.sections.length === 1)}</div>
     </main>`;
@@ -1044,16 +1056,17 @@ a.row:hover .row-title { color: var(--green); }
       ? `<button class="btn btn-primary btn-block" data-go="cours" data-param="${c.id}" data-from="chapter">${icon("file")}Commencer par le cours</button>`
       : next === 1
         ? `<button class="btn btn-primary btn-block" data-go="fiche" data-param="${c.id}" data-from="chapter">${icon("list")}Lire la fiche</button>`
-        : `<button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>`;
+        : qs.length ? `<button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>`
+        : `<button class="btn btn-primary btn-block" data-go="train">${icon("list")}Revenir au programme</button>`;
     return `${header()}<main class="screen narrow">
       <div class="stack" style="gap:6px"><button class="link-btn" data-go="train" style="align-self:flex-start">${icon("back")} Programme</button>
-        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(d?.titre || "")} · ${qs.length} questions · ${st.m} % acquis</p></div>
+        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${esc(d?.titre || "")}${qs.length ? ` · ${qs.length} questions · ${st.m} % acquis` : ""}</p></div>
       <section class="sec" aria-labelledby="path-t"><h2 class="h-sec" id="path-t">Ton parcours</h2>
         <div class="path">${stepCours}
           <button class="${cls(1)}" data-go="fiche" data-param="${c.id}" data-from="chapter"><span class="step-n" aria-hidden="true">${mark(1)}</span>
             <span class="stack"><span class="row-title">Retenir la fiche</span><span class="row-sub">${c.fiche.length} points clés</span></span><span class="row-side">${icon("chevron")}</span></button>
-          <button class="${cls(2)}" data-act="chapter" data-param="${c.id}"><span class="step-n" aria-hidden="true">${mark(2)}</span>
-            <span class="stack"><span class="row-title">S'entraîner</span><span class="row-sub">${qs.length} questions · ${st.m} % acquis${st.key === "ok" ? " · validé" : " · à valider : 80 % de réussite"}</span></span><span class="row-side">${icon("chevron")}</span></button>
+          ${qs.length ? `<button class="${cls(2)}" data-act="chapter" data-param="${c.id}"><span class="step-n" aria-hidden="true">${mark(2)}</span>
+            <span class="stack"><span class="row-title">S'entraîner</span><span class="row-sub">${qs.length} questions · ${st.m} % acquis${st.key === "ok" ? " · validé" : " · à valider : 80 % de réussite"}</span></span><span class="row-side">${icon("chevron")}</span></button>` : `<div class="step is-off"><span class="step-n" aria-hidden="true">3</span><span class="stack"><span class="row-title">S'entraîner</span><span class="row-sub">Cette introduction n'a pas de questions : elles sont dans les chapitres suivants.</span></span></div>`}
         </div></section>
       ${cta}
     </main>`;
@@ -1087,7 +1100,7 @@ a.row:hover .row-title { color: var(--green); }
           <p class="var-expl">${esc(q.explication)}</p>
           ${ruleBlock(q.article)}
           ${q.avant ? `<div class="before"><b>Avant le ${esc(frDate(addDays(q.avant.jusqu_au, 1)))}</b><p>${esc(q.avant.regle)}</p></div>` : ""}
-          <div class="var-foot"><span class="origin">${esc(q.origine)} · vérifiée le ${esc(frDate(q.verifiee_le))}</span>
+          <div class="var-foot"><span class="origin">${esc(q.origine)}${q.verifiee_le ? ` · vérifiée le ${esc(frDate(q.verifiee_le))}` : ""}</span>
             <button class="link-btn" data-act="report" data-param="${q.id}">${icon("flag")} Signaler une erreur</button></div>
         </div></section>`;
     }
@@ -1140,18 +1153,72 @@ a.row:hover .row-title { color: var(--green); }
           <li><span><b>10/20 minimum</b><br><span class="muted small">Note éliminatoire pour passer à l'épreuve FFF.</span></span></li>
         </ul>
       </section>
-      <p class="note">Les matchs officiels et les annales 2015 à 2025 ouvrent quand les 8 domaines du programme seront en ligne. En attendant, chaque séance du jour mélange déjà des questions tirées des annales.</p>
+      <p class="note">Les matchs officiels et les annales complètes arrivent dans une prochaine version. En attendant, chaque séance du jour mélange déjà des questions des 9 modules et des annales.</p>
     </main>`;
   }
 
-  const toolRows = (d) => !(d.outils && d.outils.length) ? "" : `<h3 class="h-sec" style="font-size:16px;margin-top:8px">Boîte à outils du ${esc((d.module || "").split(" · ")[0].toLowerCase() || "module")}</h3>
-      <div class="rows">${d.outils.map((o) => `<button class="row" data-go="outil" data-param="${d.id}:${o.id}"><span class="stack"><span class="row-title">${esc(o.titre)}</span><span class="row-sub">${esc(o.sous)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}
-      ${d.pdf && !window.claude ? `<a class="row" href="${esc(d.pdf)}" target="_blank" rel="noopener"><span class="stack"><span class="row-title">Le module complet en PDF</span><span class="row-sub">${esc(d.module || "")} · document d'origine</span></span><span class="row-side">${icon("file")}</span></a>` : ""}</div>`;
+  /* ---------- Révisions: search over everything, then one page per module ---------- */
+  const normS = (t) => String(t || "").toLowerCase().replace(/œ/g, "oe").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, " ").replace(/\b([lrda])\.? ?(\d)/g, "$1$2");
+  const blockText = (b) => b.t === "list" ? b.items.join(" ") : b.t === "table" ? [b.head, ...b.rows].map((r) => r.join(" ")).join(" ") : b.t === "cas" ? `${b.cas} ${b.analyse || ""}` : (b.x || "");
+  const REV_KINDS = [["all", "Tout"], ["cours", "Cours"], ["fiche", "Fiches"], ["question", "Questions"], ["outil", "Outils"]];
+  const KIND_LABEL = { cours: "Cours", fiche: "Fiche", question: "Question", outil: "Outil" };
+  function revIndex() {
+    if (S.revIdx && S.revIdx.v === S.content.version) return S.revIdx.items;
+    const items = [];
+    const add = (kind, d, title, text, attrs) => items.push({ kind, title, text, mod: d?.num ? `Module ${d.num}` : (d?.titre || ""), attrs, nt: normS(title), nx: normS(text) });
+    C.domains().forEach((d) => {
+      C.chapters().filter((c) => c.domaine === d.id).forEach((c) => {
+        (c.cours?.sections || []).forEach((sec, i) => add("cours", d, `${sec.code ? sec.code + " " : ""}${sec.titre}`, `${sec.ref || ""} ${sec.blocs.map(blockText).join(" ")}`, `data-go="cours" data-param="${c.id}" data-from="revisions" data-anchor="ls-${i}"`));
+        add("fiche", d, c.titre, c.fiche.join(" "), `data-go="fiche" data-param="${c.id}" data-from="revisions"`);
+        C.qOf(c.id).forEach((q) => add("question", d, q.enonce, `${q.options[q.bonne]} ${q.explication} ${q.article ? q.article.ref + " " + q.article.texte : ""}`, `data-act="ask" data-param="${q.id}"`));
+      });
+      (d.outils || []).forEach((o) => add("outil", d, o.titre, o.sections.map((sec) => sec.blocs.map(blockText).join(" ")).join(" "), `data-go="outil" data-param="${d.id}:${o.id}"`));
+    });
+    S.revIdx = { v: S.content.version, items };
+    return items;
+  }
+  const termRx = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/^([lrda])(\d)/, "$1\\.? ?$2").replace(/e/g, "[eéèêë]").replace(/a(?![\]\\])/g, "[aàâä]").replace(/i/g, "[iîï]").replace(/o/g, "(?:o|ô|œ)").replace(/u/g, "[uùûü]").replace(/c/g, "[cç]");
+  const markText = (txt, rx) => { let out = "", last = 0, m; rx.lastIndex = 0; while ((m = rx.exec(txt)) && m[0]) { out += esc(txt.slice(last, m.index)) + `<mark>${esc(m[0])}</mark>`; last = m.index + m[0].length; } return out + esc(txt.slice(last)); };
+  function revResults() {
+    const q = normS(S.rev.q).trim();
+    if (q.length < 2) return "";
+    const terms = q.split(" ").filter(Boolean);
+    const kind = S.rev.kind;
+    const hits = revIndex().filter((it) => (kind === "all" || it.kind === kind) && terms.every((t) => it.nt.includes(t) || it.nx.includes(t)))
+      .map((it) => ({ it, score: terms.filter((t) => it.nt.includes(t)).length * 3 + (it.kind === "cours" ? 1 : 0) })).sort((a, b) => b.score - a.score);
+    if (!hits.length) return `<p class="rev-count" role="status">Aucun résultat pour « ${esc(S.rev.q)} ». Essaie un autre mot, ou un numéro d'article comme L. 222-17.</p>`;
+    const rx = new RegExp(terms.map(termRx).join("|"), "gi");
+    return `<p class="rev-count" role="status">${hits.length} résultat${hits.length > 1 ? "s" : ""}${hits.length > 40 ? ", les 40 plus proches affichés" : ""}</p><div class="rows">${hits.slice(0, 40).map(({ it }) => {
+      const txt = it.text.replace(/\s+/g, " "); rx.lastIndex = 0; const m = rx.exec(txt); const from = m ? Math.max(0, m.index - 50) : 0;
+      const snip = (from ? "… " : "") + txt.slice(from, from + 130) + (txt.length > from + 130 ? " …" : "");
+      return `<button class="row" ${it.attrs}><span class="stack"><span class="row-title" style="font-size:15px">${markText(it.title, rx)}</span><span class="row-sub"><span class="rev-kind">${KIND_LABEL[it.kind]}</span> · ${esc(it.mod)} · ${markText(snip, rx)}</span></span><span class="row-side">${icon("chevron")}</span></button>`;
+    }).join("")}</div>`;
+  }
+  const revDefault = () => `<section class="sec" aria-labelledby="rev-mods"><h2 class="h-sec" id="rev-mods">Les modules</h2><div class="rows">${C.domains().map((d) => {
+      const n = C.chapters().filter((c) => c.domaine === d.id).length;
+      return `<button class="row has-pic" data-go="module" data-param="${d.id}">${domPic(d.id)}<span class="stack"><span class="row-title">${esc(d.titre)}</span><span class="row-sub">${n} chapitres${d.outils?.length ? ` · ${d.outils.length} outils` : ""}${d.pdf ? " · PDF" : ""}</span></span><span class="row-side">${icon("chevron")}</span></button>`;
+    }).join("")}</div></section>`;
   function vRevisions() {
+    S.rev = S.rev || { q: "", kind: "all" };
     return `${header()}<main class="screen">
-      <div class="greet"><h1 class="h-screen">Révisions</h1><p class="muted small">Toutes les fiches, et la boîte à outils de chaque module de cours.</p></div>
-      ${C.domains().map((d) => `<section class="sec" aria-labelledby="r-${d.id}"><h2 class="h-sec" id="r-${d.id}">${esc(d.titre)}</h2>
-        <div class="rows">${C.chapters().filter((c) => c.domaine === d.id).map((c) => `<button class="row" data-go="fiche" data-param="${c.id}" data-from="revisions"><span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${c.fiche.length} points clés · ${esc(c.source)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div>${toolRows(d)}</section>`).join("")}
+      <div class="greet"><h1 class="h-screen">Révisions</h1><p class="muted small">Tous les cours, fiches, questions et outils, en un seul endroit.</p></div>
+      <div class="rev-search" role="search"><label for="rev-q">Chercher un mot, un thème ou un article</label>
+        <input id="rev-q" type="search" enterkeyhint="search" autocomplete="off" placeholder="Ex. : clause pénale, L. 222-17, TVA" value="${esc(S.rev.q)}">
+        <div class="chips" id="rev-chips">${REV_KINDS.map(([k, l]) => `<button class="chip" data-act="rev-kind" data-param="${k}" aria-pressed="${S.rev.kind === k}">${l}</button>`).join("")}</div></div>
+      <div id="rev-out" class="sec">${normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault()}</div>
+    </main>`;
+  }
+  function vModule() {
+    const d = C.domain(S.param); if (!d) return vRevisions();
+    const chs = C.chapters().filter((c) => c.domaine === d.id);
+    return `${header()}<main class="screen narrow">
+      <div class="stack" style="gap:6px"><button class="link-btn" data-go="revisions" style="align-self:flex-start">${icon("back")} Révisions</button>
+        <h1 class="h-screen">${esc(d.titre)}</h1><p class="muted small">${esc(d.sous_titre || "")}</p></div>
+      <section class="sec" aria-labelledby="mod-ch"><h2 class="h-sec" id="mod-ch">Les fiches et les cours</h2>
+        <div class="rows">${chs.map((c) => `<button class="row" data-go="fiche" data-param="${c.id}" data-from="revisions"><span class="stack"><span class="row-title">${esc(c.titre)}</span><span class="row-sub">${c.fiche.length} points clés${hasCours(c) ? ` · cours de ${c.cours.minutes} min` : ""}${C.qOf(c.id).length ? ` · ${C.qOf(c.id).length} questions` : ""}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div></section>
+      ${d.outils?.length || d.pdf ? `<section class="sec" aria-labelledby="mod-out"><h2 class="h-sec" id="mod-out">La boîte à outils</h2>
+        <div class="rows">${(d.outils || []).map((o) => `<button class="row" data-go="outil" data-param="${d.id}:${o.id}"><span class="stack"><span class="row-title">${esc(o.titre)}</span><span class="row-sub">${esc(o.sous)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}
+        ${d.pdf && !window.claude ? `<a class="row" href="${esc(d.pdf)}" target="_blank" rel="noopener"><span class="stack"><span class="row-title">Le module complet en PDF</span><span class="row-sub">Le document d'origine</span></span><span class="row-side">${icon("file")}</span></a>` : ""}</div></section>` : ""}
     </main>`;
   }
 
@@ -1162,8 +1229,8 @@ a.row:hover .row-title { color: var(--green); }
         <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${S.from === "revisions" ? "" : "Étape 2 sur 3 · "}${esc(C.domain(c.domaine)?.titre || "")} · ${c.fiche.length} points clés</p></div>
       <article class="sheet${sheetCls()}"><ul class="sheet-list">${c.fiche.map((l) => `<li>${keyFig(esc(l))}</li>`).join("")}</ul><p class="sheet-src">Source : ${esc(c.source)}</p></article>
       <div class="lesson-end">
-        <button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>
-        ${hasCours(c) ? `<button class="link-btn" data-go="cours" data-param="${c.id}" style="align-self:center">Relire le cours</button>` : ""}
+        ${C.qOf(c.id).length ? `<button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>` : `<button class="btn btn-primary btn-block" data-go="${S.from === "revisions" ? "module" : "chapter"}" data-param="${S.from === "revisions" ? c.domaine : c.id}">${icon("check")}Continuer</button>`}
+        ${hasCours(c) ? `<button class="link-btn" data-go="cours" data-param="${c.id}" style="align-self:center">${isRead(c.id) ? "Relire le cours" : "Lire le cours"}</button>` : ""}
       </div>
     </main>`;
   }
@@ -1276,7 +1343,7 @@ a.row:hover .row-title { color: var(--green); }
     if (!S.progress) { app.innerHTML = vLoading(); document.querySelector(".tabbar").hidden = true; return; }
     if (S.welcome) { app.innerHTML = typo(vWelcome()); document.querySelector(".tabbar").hidden = true; return; }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
-    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, exams: vExams, revisions: vRevisions, fiche: vFiche, cours: vCours, outil: vOutil, progress: vProgress, me: vMe };
+    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, exams: vExams, revisions: vRevisions, fiche: vFiche, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
     if (S.view === "train" && S.param) document.getElementById("d-" + S.param)?.scrollIntoView({ block: "start" });
@@ -1290,12 +1357,16 @@ a.row:hover .row-title { color: var(--green); }
       if (el.dataset.from) S.from = el.dataset.from;
       if (el.dataset.go === "fiche" && param && !isRead("f:" + param)) { S.progress.read = Object.assign({}, S.progress.read, { ["f:" + param]: today() }); save(); }
       else if (el.classList.contains("tab") || ["train", "revisions", "home"].includes(el.dataset.go)) S.from = el.dataset.go === "revisions" ? "revisions" : null;
-      go(el.dataset.go, param); return;
+      go(el.dataset.go, param);
+      if (el.dataset.anchor) document.getElementById(el.dataset.anchor)?.scrollIntoView({ block: "start" });
+      return;
     }
     const s = S.session;
     switch (el.dataset.act) {
       case "daily": { const p = buildDaily(S.progress.settings.perSession); startSession("daily", p.ids, "Séance du jour"); break; }
       case "enter": S.welcome = false; go("home"); break;
+      case "rev-kind": S.rev.kind = param; document.querySelectorAll("#rev-chips .chip").forEach((c) => c.setAttribute("aria-pressed", c.dataset.param === param)); document.getElementById("rev-out").innerHTML = typo(normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault()); break;
+      case "ask": { const q = C.q(param); if (q) startSession("chapter", [q.id], "Question : " + q.enonce.slice(0, 40)); break; }
       case "toc": { const t = document.getElementById(param); if (t) { t.scrollIntoView({ behavior: fxOn() ? "smooth" : "auto", block: "start" }); t.querySelector("h2")?.setAttribute("tabindex", "-1"); t.querySelector("h2")?.focus({ preventScroll: true }); } break; }
       case "read-done": {
         const first = !isRead(param);
@@ -1341,6 +1412,11 @@ a.row:hover .row-title { color: var(--green); }
     if (e.target.id === "s-name") { S.progress.settings.name = e.target.value.trim(); S.name = S.progress.settings.name; save(); toast("Prénom enregistré."); return; }
     const k = e.target.dataset?.set; if (!k) return;
     S.progress.settings[k] = e.target.checked; save(); render();
+  });
+  document.addEventListener("input", (e) => {
+    if (e.target.id !== "rev-q") return;
+    S.rev.q = e.target.value;
+    document.getElementById("rev-out").innerHTML = typo(normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault());
   });
   document.addEventListener("submit", async (e) => {
     if (e.target.id === "ask-name") {
