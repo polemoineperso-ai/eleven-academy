@@ -737,6 +737,8 @@ a.row:hover .row-title { color: var(--green); }
           if (docs.catalog) {
             fromDb = { version: docs.catalog.version, domaines: docs.catalog.domaines, chapitres: docs.catalog.chapitres, questions: [] };
             Object.keys(docs).filter((k) => k.startsWith("q_")).forEach((k) => { fromDb.questions.push(...(docs[k].questions || [])); });
+            fromDb.chapitres.forEach((c) => { if (docs["cours_" + c.id]) c.cours = docs["cours_" + c.id].cours; });
+            fromDb.domaines.forEach((d) => { if (docs["outils_" + d.id]) d.outils = docs["outils_" + d.id].outils; });
           }
         }
       } catch { /* fall back to the published file */ }
