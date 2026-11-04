@@ -327,6 +327,10 @@ a.row:hover .row-title { color: var(--green); }
 /* Match officiel */
 .exam-bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--pitch); padding-block: 6px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .exam-time { font-size: 16px; font-weight: 800; }
+.exam-time.is-low { color: var(--red); }
+.exam-fix .seg { display: grid; grid-template-columns: repeat(3, 1fr); }
+.exam-fix .seg button { height: 44px; padding-inline: 6px; }
+.exam-yours { white-space: pre-wrap; overflow-wrap: anywhere; }
 .exam-q { display: flex; flex-direction: column; gap: 12px; padding-block: 8px; }
 .exam-case { margin: 0; font-size: 16px; line-height: 1.6; max-width: 65ch; }
 .exam-text { width: 100%; padding: 12px 14px; border-radius: var(--r-s); border: 1px solid var(--line-strong); background: var(--turf); color: var(--chalk); font: inherit; line-height: 1.5; resize: vertical; }
@@ -425,7 +429,7 @@ a.row:hover .row-title { color: var(--green); }
   color: var(--chalk); font-size: 15.5px; line-height: 1.4; font-weight: 500;
   transition: border-color 140ms ease, background-color 140ms ease;
 }
-.opt:hover:not([disabled]) { border-color: var(--green); }
+@media (hover: hover) { .opt:hover:not([disabled]) { border-color: var(--green); } }
 .opt-letter {
   width: 36px; height: 36px; border-radius: 8px; display: grid; place-items: center;
   background: var(--turf-2); font-weight: 800; font-size: 15px;
@@ -1304,10 +1308,18 @@ a.row:hover .row-title { color: var(--green); }
   const examLeft = (cur, e) => Math.max(0, Math.round((cur.start + e.minutes * 60000 - Date.now()) / 1000));
   const clock = (sec) => `${Math.floor(sec / 3600)} h ${String(Math.floor(sec / 60) % 60).padStart(2, "0")} min ${String(sec % 60).padStart(2, "0")}`;
   const examCount = (cur, e) => e.qcm.filter((id) => cur.qcm[id] !== undefined).length;
+  const isBlank = (cur, key) => !(cur.cas[key] || "").trim();
+  const examBlank = (cur, e) => e.cas.reduce((n, c, i) => n + c.questions.filter((_, j) => isBlank(cur, `${i}-${j}`)).length, 0);
+  function examMissing(cur, e) {
+    const q = e.qcm.length - examCount(cur, e), w = examBlank(cur, e), parts = [];
+    if (q) parts.push(`${q} QCM sans réponse`);
+    if (w) parts.push(`${w} réponse${w > 1 ? "s" : ""} rédigée${w > 1 ? "s" : ""} vide${w > 1 ? "s" : ""}`);
+    return parts.length ? `Il te reste ${parts.join(" et ")}. ` : "";
+  }
   function vExam() {
     const cur = examNow(), e = cur && examById(cur.id); if (!e) return vMatch();
     return `<main class="screen narrow exam">
-      <div class="exam-bar"><button class="link-btn" data-go="match">Quitter</button><span class="exam-time num" id="ex-time" role="timer">${clock(examLeft(cur, e))}</span><span class="tiny num" id="ex-count">${examCount(cur, e)} / ${e.qcm.length} QCM</span></div>
+      <div class="exam-bar"><button class="link-btn" data-go="match" aria-label="Quitter : le chrono continue">Quitter</button><span class="exam-time num${examLeft(cur, e) <= 300 ? " is-low" : ""}" id="ex-time" role="timer">${clock(examLeft(cur, e))}</span><span class="tiny num" id="ex-count">${examCount(cur, e)} / ${e.qcm.length} QCM</span></div>
       <h1 class="h-screen">${esc(e.titre)}</h1>
       <section class="sec" aria-labelledby="p1-t"><h2 class="h-sec" id="p1-t">Les 18 QCM</h2>
         ${e.qcm.map((id, n) => { const q = C.q(id); return q ? `<div class="exam-q"><p class="q-text" id="qq-${n}"><span class="num">${n + 1}.</span> ${esc(q.enonce)}</p>
@@ -1317,19 +1329,23 @@ a.row:hover .row-title { color: var(--green); }
         <p class="exam-case">${esc(cas.enonce)}</p>
         ${cas.questions.map((x, j) => `<div class="field"><label for="ca-${i}-${j}">${j + 1}. ${esc(x.q)}</label><textarea id="ca-${i}-${j}" class="exam-text" data-cas="${i}-${j}" rows="4">${esc(cur.cas[`${i}-${j}`] || "")}</textarea></div>`).join("")}
       </section>`).join("")}
-      ${cur.confirm ? `<div class="ed-confirm" role="alert"><p>Rendre ta copie ? Il te reste ${examCount(cur, e) < e.qcm.length ? `${e.qcm.length - examCount(cur, e)} QCM sans réponse et ` : ""}du temps. Tu ne pourras plus modifier tes réponses.</p><button class="btn btn-ghost btn-block" data-act="exam-stay">Continuer le match</button><button class="btn btn-primary btn-block" data-act="exam-submit">Rendre ma copie</button></div>`
-        : `<div class="lesson-end"><button class="btn btn-primary btn-block" data-act="exam-ask">${icon("check")}Rendre ma copie</button>
+      ${cur.confirm === "drop"
+        ? `<div class="ed-confirm" role="alert"><p>Abandonner ce match ? Tes réponses seront perdues et il n'y aura pas de note.</p><button class="btn btn-ghost btn-block" data-act="exam-stay">Continuer le match</button><button class="btn btn-ghost btn-block" data-act="exam-drop-yes">Abandonner le match</button></div>`
+        : cur.confirm
+          ? `<div class="ed-confirm" role="alert"><p>Rendre ta copie ? ${examMissing(cur, e)}Tu ne pourras plus modifier tes réponses.</p><button class="btn btn-ghost btn-block" data-act="exam-stay">Continuer le match</button><button class="btn btn-primary btn-block" data-act="exam-submit">Rendre ma copie</button></div>`
+          : `<div class="lesson-end"><button class="btn btn-primary btn-block" data-act="exam-ask">${icon("check")}Rendre ma copie</button>
           <button class="link-btn" data-act="exam-drop" style="align-self:center">Abandonner ce match</button></div>`}
     </main>`;
   }
   function examMark(cur, e) {
     const right = e.qcm.filter((id) => cur.qcm[id] === C.q(id)?.bonne).length;
-    let cas = 0, todo = 0;
+    let cas = 0, todo = 0, open = 0;
     e.cas.forEach((c, i) => c.questions.forEach((_, j) => {
-      const g = cur.grade[`${i}-${j}`];
-      if (g === undefined) todo++; else cas += g * c.points / c.questions.length;
+      const key = `${i}-${j}`, worth = c.points / c.questions.length, g = cur.grade[key];
+      if (isBlank(cur, key)) return; /* no answer, no point */
+      if (g === undefined) { todo++; open += worth; } else cas += g * worth;
     }));
-    return { right, qcm: right * 0.5, cas, todo, note: right * 0.5 + cas };
+    return { right, qcm: right * 0.5, cas, todo, open, note: right * 0.5 + cas };
   }
   function vExamFix() {
     const cur = examNow(), e = cur && examById(cur.id); if (!e) return vMatch();
@@ -1337,15 +1353,17 @@ a.row:hover .row-title { color: var(--green); }
     return `<main class="screen narrow">
       <div class="stack" style="gap:6px"><button class="link-btn" data-go="match" style="align-self:flex-start">${icon("back")} Match</button><h1 class="h-screen">Correction</h1><p class="muted small">${esc(e.titre)}${cur.late ? " · copie rendue à la fin du temps" : ""}</p></div>
       <div class="exam-score"><span class="score-big num">${frNote(m.note)}<small> / 20</small></span>
-        <p class="small" style="margin:0">QCM : ${m.right} sur ${e.qcm.length}, soit ${frNote(m.qcm)} points. Cas pratiques : ${frNote(m.cas)} points${m.todo ? `, ${m.todo} réponse${m.todo > 1 ? "s" : ""} à noter` : ""}.</p>
+        <p class="small" style="margin:0">QCM : ${m.right} sur ${e.qcm.length}, soit ${frNote(m.qcm)} points. Cas pratiques : ${frNote(m.cas)} point${m.cas > 1 ? "s" : ""}.</p>
+        ${m.todo ? `<p class="small" style="margin:0"><b>Note provisoire :</b> il reste ${m.todo} réponse${m.todo > 1 ? "s" : ""} à noter, jusqu'à ${frNote(m.open)} point${m.open > 1 ? "s" : ""} de plus.</p>` : ""}
         ${m.todo ? "" : `<p class="note ${m.note >= EX_MIN ? "ok" : "warn"}">${m.note >= EX_MIN ? "Au-dessus des 10/20 demandés pour passer à l'épreuve FFF." : "Sous les 10/20 : cette note serait éliminatoire pour l'épreuve FFF."}</p>`}</div>
       ${e.cas.map((cas, i) => `<section class="sec" aria-labelledby="fc${i}-t"><h2 class="h-sec" id="fc${i}-t">${esc(cas.titre)}</h2><p class="muted small" style="margin:0">Compare ta réponse au corrigé, puis note-toi.</p>
         ${cas.questions.map((x, j) => { const key = `${i}-${j}`, g = cur.grade[key]; return `<div class="exam-fix"><p class="exam-fq">${j + 1}. ${esc(x.q)}</p>
-          <p class="small muted" style="margin:0">Ta réponse : ${cur.cas[key] ? esc(cur.cas[key]) : "aucune"}</p>
+          <p class="small muted exam-yours" style="margin:0">Ta réponse : ${isBlank(cur, key) ? "aucune" : esc(cur.cas[key])}</p>
           <p class="exam-corr"><b>Corrigé :</b> ${esc(x.c)} <span class="muted small">(${esc(x.ref)})</span></p>
-          <div class="seg" role="group" aria-label="Ta note pour cette réponse">${[[1, "Trouvé"], [0.5, "En partie"], [0, "Manqué"]].map(([v, l]) => `<button data-act="exam-grade" data-param="${key}:${v}" aria-pressed="${g === v}">${l}</button>`).join("")}</div></div>`; }).join("")}</section>`).join("")}
+          ${isBlank(cur, key) ? `<p class="small" style="margin:0"><b>Sans réponse : 0 point.</b></p>` : `<div class="seg" role="group" aria-label="Ta note pour cette réponse">${[[1, "Trouvé"], [0.5, "En partie"], [0, "Manqué"]].map(([v, l]) => `<button data-act="exam-grade" data-param="${key}:${v}" aria-pressed="${g === v}">${l}</button>`).join("")}</div>`}</div>`; }).join("")}</section>`).join("")}
+      <button class="btn btn-primary btn-block" data-act="exam-save">${icon("check")}${m.todo ? `Enregistrer ma note (${m.todo} à noter)` : "Enregistrer ma note"}</button>
       <section class="sec" aria-labelledby="fq-t"><h2 class="h-sec" id="fq-t">Les QCM</h2>
-        ${e.qcm.map((id, n) => { const q = C.q(id); if (!q) return ""; const c = cur.qcm[id], ok = c === q.bonne; return `<div class="exam-fix"><p class="exam-fq"><span class="exam-mark ${ok ? "ok" : "ko"}">${icon(ok ? "check" : "close")}</span>${n + 1}. ${esc(q.enonce)}</p>
+        ${e.qcm.map((id, n) => { const q = C.q(id); if (!q) return ""; const c = cur.qcm[id], ok = c === q.bonne; return `<div class="exam-fix"><p class="exam-fq"><span class="exam-mark ${ok ? "ok" : "ko"}">${icon(ok ? "check" : "close")}<span class="sr">${ok ? "Juste." : "Faux."}</span></span>${n + 1}. ${esc(q.enonce)}</p>
           ${ok ? "" : `<p class="small muted" style="margin:0">Ta réponse : ${c === undefined ? "aucune" : esc(q.options[c])}</p>`}
           <p class="exam-corr"><b>Bonne réponse :</b> ${esc(q.options[q.bonne])}</p><p class="small muted" style="margin:0">${esc(q.explication)}</p></div>`; }).join("")}</section>
       <div class="lesson-end"><button class="btn btn-primary btn-block" data-act="exam-save">${icon("check")}${m.todo ? `Enregistrer ma note (${m.todo} à noter)` : "Enregistrer ma note"}</button></div>
@@ -1363,7 +1381,13 @@ a.row:hover .row-title { color: var(--green); }
     if (S.view !== "exam" || !S.progress) return;
     const cur = examNow(), e = cur && examById(cur.id); if (!e || cur.phase === "fix") return;
     const left = examLeft(cur, e);
-    const n = document.getElementById("ex-time"); if (n) n.textContent = clock(left);
+    const n = document.getElementById("ex-time"); if (n) { n.textContent = clock(left); n.classList.toggle("is-low", left <= 300); }
+    const step = [60, 300, 1800].find((t) => left <= t && left > 0);
+    if (step && (cur.warned === undefined || step < cur.warned)) {
+      cur.warned = step;
+      const msg = `Il reste ${step / 60} minute${step > 60 ? "s" : ""}.`;
+      toast(msg); announce(msg);
+    }
     if (!left) examSubmit(true);
   }, 1000);
 
@@ -1995,7 +2019,8 @@ a.row:hover .row-title { color: var(--green); }
       case "exam-ask": { const cur = examNow(); if (cur) { cur.confirm = true; render(); document.querySelector(".ed-confirm")?.scrollIntoView({ block: "center" }); } break; }
       case "exam-stay": { const cur = examNow(); if (cur) { cur.confirm = false; render(); } break; }
       case "exam-submit": examSubmit(false); break;
-      case "exam-drop": S.progress.examCur = null; save(); go("match"); toast("Match abandonné, sans note."); break;
+      case "exam-drop": { const cur = examNow(); if (cur) { cur.confirm = "drop"; render(); document.querySelector(".ed-confirm")?.scrollIntoView({ block: "center" }); } break; }
+      case "exam-drop-yes": S.progress.examCur = null; save(); go("match"); toast("Match abandonné, sans note."); break;
       case "exam-grade": { const cur = examNow(); if (!cur) break; const cut = param.lastIndexOf(":"); cur.grade[param.slice(0, cut)] = Number(param.slice(cut + 1)); save(); render(); break; }
       case "exam-save": { const cur = examNow(), e = cur && examById(cur.id); if (!e) break; const m = examMark(cur, e);
         S.progress.examResults = [{ id: cur.id, date: today(), note: m.note, qcm: m.qcm, cas: m.cas }].concat(S.progress.examResults || []).slice(0, 30);
