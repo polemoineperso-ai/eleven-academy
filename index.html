@@ -300,6 +300,41 @@ a.row:hover .row-title { color: var(--green); }
 .sheet-src { font-size: 13px; color: var(--ink-2); border-top: 1px solid var(--paper-line); padding-top: 10px; }
 .sheet.dark .sheet-src { border-color: var(--line); }
 
+/* Fiche text: same rules when reading and when editing */
+.rich > * + * { margin-top: 12px; }
+.rich > :first-child { margin-top: 0; }
+.rich h3 { font-size: 19px; font-weight: 800; line-height: 1.3; margin: 26px 0 0; text-wrap: balance; }
+.rich h4 { font-size: 16px; font-weight: 700; line-height: 1.35; margin: 18px 0 0; }
+.rich h3 + *, .rich h4 + * { margin-top: 8px; }
+.rich p, .rich li { font-size: 15.5px; line-height: 1.6; max-width: 65ch; margin: 0; }
+.rich p + p { margin-top: 12px; }
+.rich ul, .rich ol { padding-left: 22px; margin-bottom: 0; }
+.rich > ul, .rich > ol { margin-top: 12px; }
+.rich > :first-child:is(ul, ol) { margin-top: 0; }
+.rich li + li { margin-top: 8px; }
+.rich li > ul, .rich li > ol { margin-top: 8px; }
+.rich li > ul { list-style: circle; }
+.rich li::marker { color: var(--green-press); font-weight: 700; }
+.rich blockquote { margin: 12px 0 0 22px; padding: 0; border: 0; }
+.rich strong { font-weight: 700; }
+.rich mark { background: var(--green); color: var(--on-green); border-radius: 3px; padding: 0 0.2em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
+/* Fiche editor */
+.ed-bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--pitch); padding-block: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+.ed-tool { min-height: 44px; min-width: 44px; padding: 0 12px; display: inline-flex; align-items: center; justify-content: center; border-radius: var(--r-s); border: 1px solid var(--line-strong); background: var(--turf); color: var(--chalk); font-size: 14px; font-weight: 600; transition: background-color 140ms ease, color 140ms ease; }
+.ed-tool:hover { background: var(--line); }
+.ed-tool[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: var(--on-green); }
+.ed-tool svg { width: 20px; height: 20px; }
+.ed-tool mark { background: var(--green); color: var(--on-green); border-radius: 3px; padding: 1px 5px; }
+.ed-tool[aria-pressed="true"] mark { background: transparent; }
+.ed-box { min-height: 46vh; caret-color: var(--green-press); display: block; }
+.ed-box:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.ed-box::selection, .ed-box *::selection { background: rgba(150, 203, 26, 0.45); }
+.ed-note { margin: 0; font-size: 14px; color: var(--fg-2); }
+.ed-err { margin: 0; font-size: 14px; color: var(--red); }
+.ed-confirm { display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: var(--r-s); background: var(--red-soft); }
+.ed-confirm p { margin: 0; font-size: 15px; font-weight: 600; }
+
 /* Quiz */
 .quiz-top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--pitch); padding-block: 10px; display: flex; flex-direction: column; gap: 10px; }
 .quiz-top-row { display: flex; align-items: center; gap: 12px; }
@@ -558,6 +593,12 @@ a.row:hover .row-title { color: var(--green); }
     pill: '<rect x="2.5" y="8.5" width="19" height="7" rx="3.5" transform="rotate(-45 12 12)"/><path d="m8.5 8.5 7 7"/>',
     whistle: '<circle cx="9" cy="14" r="5"/><path d="M13 11h8v4h-5M9 14h.01"/>'
   };
+  Object.assign(I, {
+    edit: '<path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',
+    indent: '<path d="M4 6h16M12 12h8M12 18h8M4 10l4 3-4 3z"/>',
+    outdent: '<path d="M4 6h16M12 12h8M12 18h8M8 10l-4 3 4 3z"/>',
+    undo: '<path d="M8 5 4 9l4 4"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/>'
+  });
   const icon = (n, cls = "") => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${I[n]}</svg>`;
 
   const pic = (n, alt = "") => `<img class="pic" src="${ASSET[n]}" alt="${alt}" width="44" height="44" decoding="async">`;
@@ -846,7 +887,7 @@ a.row:hover .row-title { color: var(--green); }
     if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
   }
   function renderTabs() {
-    const hidden = S.view === "quiz";
+    const hidden = S.view === "quiz" || S.view === "ficheEdit";
     document.querySelector(".tabbar").hidden = hidden;
     const viaRev = S.from === "revisions" ? "revisions" : "train";
     const map = { home: "home", train: "train", chapter: "train", exams: "exams", revisions: "revisions", fiche: viaRev, cours: viaRev, outil: "revisions", module: "revisions", progress: "progress", result: "home", me: "" };
@@ -1171,7 +1212,7 @@ a.row:hover .row-title { color: var(--green); }
     C.domains().forEach((d) => {
       C.chapters().filter((c) => c.domaine === d.id).forEach((c) => {
         (c.cours?.sections || []).forEach((sec, i) => add("cours", d, `${sec.code ? sec.code + " " : ""}${sec.titre}`, `${sec.ref || ""} ${sec.blocs.map(blockText).join(" ")}`, `data-go="cours" data-param="${c.id}" data-from="revisions" data-anchor="ls-${i}"`));
-        add("fiche", d, c.titre, c.fiche.join(" "), `data-go="fiche" data-param="${c.id}" data-from="revisions"`);
+        add("fiche", d, c.titre, c.ficheTxt || c.fiche.join(" "), `data-go="fiche" data-param="${c.id}" data-from="revisions"`);
         C.qOf(c.id).forEach((q) => add("question", d, q.enonce, `${q.options[q.bonne]} ${q.explication} ${q.article ? q.article.ref + " " + q.article.texte : ""}`, `data-act="ask" data-param="${q.id}"`));
       });
       (d.outils || []).forEach((o) => add("outil", d, o.titre, o.sections.map((sec) => sec.blocs.map(blockText).join(" ")).join(" "), `data-go="outil" data-param="${d.id}:${o.id}"`));
@@ -1228,11 +1269,196 @@ a.row:hover .row-title { color: var(--green); }
     const c = C.chapter(S.param); if (!c) return vRevisions();
     return `${header()}<main class="screen narrow">
       <div class="stack" style="gap:6px">${backTo(c)}
-        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${S.from === "revisions" ? "" : "Étape 2 sur 3 · "}${esc(C.domain(c.domaine)?.titre || "")} · ${c.fiche.length} points clés</p></div>
-      <article class="sheet${sheetCls()}"><ul class="sheet-list">${c.fiche.map((l) => `<li>${keyFig(esc(l))}</li>`).join("")}</ul><p class="sheet-src">Source : ${esc(c.source)}</p></article>
+        <h1 class="h-screen">${esc(c.titre)}</h1><p class="muted small">${S.from === "revisions" ? "" : "Étape 2 sur 3 · "}${esc(C.domain(c.domaine)?.titre || "")} · ${c.fiche.length} points clés</p>
+        ${S.canEdit ? `<button class="link-btn" data-act="fiche-edit" data-param="${c.id}" style="align-self:flex-start;gap:6px">${icon("edit")}Modifier cette fiche</button>` : ""}</div>
+      <article class="sheet${sheetCls()}"><div class="rich">${c.ficheHtml || `<ul>${c.fiche.map((l) => `<li>${keyFig(esc(l))}</li>`).join("")}</ul>`}</div><p class="sheet-src">Source : ${esc(c.source)}</p></article>
       <div class="lesson-end">
         ${C.qOf(c.id).length ? `<button class="btn btn-primary btn-block" data-act="chapter" data-param="${c.id}">${icon("play")}S'entraîner sur ce chapitre</button>` : `<button class="btn btn-primary btn-block" data-go="${S.from === "revisions" ? "module" : "chapter"}" data-param="${S.from === "revisions" ? c.domaine : c.id}">${icon("check")}Continuer</button>`}
         ${hasCours(c) ? `<button class="link-btn" data-go="cours" data-param="${c.id}" style="align-self:center">${isRead(c.id) ? "Relire le cours" : "Lire le cours"}</button>` : ""}
+      </div>
+    </main>`;
+  }
+
+  /* ---------- Fiche editor (web version, editors only) ---------- */
+  const RICH = { H1: "h3", H2: "h3", H3: "h3", H4: "h4", H5: "h4", H6: "h4", P: "p", DIV: "p", UL: "ul", OL: "ol", LI: "li", STRONG: "strong", B: "strong", EM: "em", I: "em", MARK: "mark", BR: "br", BLOCKQUOTE: "blockquote" };
+  // Allow-list: only these tags, never an attribute. Applied on save and on every display.
+  function cleanRich(html) {
+    const doc = new DOMParser().parseFromString(String(html), "text/html");
+    const out = doc.createElement("div");
+    const walk = (from, to) => from.childNodes.forEach((n) => {
+      if (n.nodeType === 3) { to.append(n.textContent); return; }
+      if (n.nodeType !== 1 || /^(script|style|iframe|object|embed|noscript|template|svg|math)$/i.test(n.nodeName)) return;
+      const tag = RICH[n.tagName];
+      if (!tag) { walk(n, to); return; }
+      const e = doc.createElement(tag); walk(n, e); to.append(e);
+    });
+    walk(doc.body, out);
+    // A list directly inside a list (what browsers produce on indent) moves into the item above it
+    out.querySelectorAll("ul > ul, ul > ol, ol > ul, ol > ol").forEach((l) => { const li = l.previousElementSibling; if (li && li.tagName === "LI") li.append(l); });
+    out.querySelectorAll("p, li, h3, h4, mark, strong, em, ul, ol, blockquote").forEach((e) => { if (!e.textContent.trim()) e.remove(); });
+    out.querySelectorAll("mark").forEach((m) => { while (m.nextSibling && m.nextSibling.nodeName === "MARK") { m.append(...m.nextSibling.childNodes); m.nextSibling.remove(); } });
+    // Loose text at the top level gets its own paragraph
+    let para = null;
+    [...out.childNodes].forEach((n) => {
+      const inline = n.nodeType === 3 || /^(STRONG|EM|MARK|BR)$/.test(n.nodeName);
+      if (!inline) { para = null; return; }
+      if (n.nodeType === 3 && !n.textContent.trim()) { n.remove(); return; }
+      if (!para) { para = doc.createElement("p"); n.before(para); }
+      para.append(n);
+    });
+    return out.innerHTML;
+  }
+  function applyFicheEdit(c, html) {
+    if (!c.ficheBase) c.ficheBase = c.fiche;
+    c.ficheHtml = cleanRich(html);
+    const box = new DOMParser().parseFromString(c.ficheHtml, "text/html").body;
+    c.ficheTxt = box.textContent;
+    const points = [...box.querySelectorAll("li, p")].filter((e) => !e.closest("li") || e.tagName === "LI").map((e) => {
+      const copy = e.cloneNode(true); copy.querySelectorAll("ul, ol").forEach((l) => l.remove()); return copy.textContent.trim();
+    }).filter(Boolean);
+    c.fiche = points.length ? points : c.ficheBase;
+  }
+  function resetFicheEdit(c) {
+    if (c.ficheBase) c.fiche = c.ficheBase;
+    delete c.ficheHtml; delete c.ficheTxt;
+  }
+  async function loadFicheEdits() {
+    if (!S.sb || !S.content) return;
+    try {
+      const [edits, me] = await Promise.all([
+        S.sb.from("fiche_edits").select("chapter_id,html"),
+        S.sb.from("editors").select("user_id").eq("user_id", S.uid).maybeSingle()
+      ]);
+      S.canEdit = !!(me && me.data);
+      ((edits && edits.data) || []).forEach((r) => { const c = C.chapter(r.chapter_id); if (c) applyFicheEdit(c, r.html); });
+    } catch { /* the supplied fiches stay in place */ }
+  }
+  const ficheDraftKey = (id) => "ea-draft-" + id;
+  function openFicheEditor(id) {
+    const c = C.chapter(id); if (!c) return;
+    const draft = lsGet(ficheDraftKey(id));
+    S.edit = {
+      id, html: (draft && cleanRich(draft)) || c.ficheHtml || `<ul>${c.fiche.map((l) => `<li>${esc(l)}</li>`).join("")}</ul>`,
+      dirty: !!draft, restored: !!draft, err: "", saving: false, confirm: null, hist: [], range: null
+    };
+    go("ficheEdit", id);
+  }
+  const edBox = () => document.getElementById("ed-box");
+  function edTouched() {
+    const box = edBox(); if (!box || !S.edit) return;
+    box.querySelectorAll("[style]").forEach((e) => e.removeAttribute("style")); /* browsers copy inline sizes when a block changes */
+    S.edit.html = box.innerHTML; S.edit.dirty = true;
+    lsSet(ficheDraftKey(S.edit.id), S.edit.html);
+  }
+  function edRememberSel() {
+    const sel = getSelection(), box = edBox();
+    if (box && S.edit && sel.rangeCount && box.contains(sel.anchorNode)) S.edit.range = sel.getRangeAt(0).cloneRange();
+    if (box) edPressed();
+  }
+  function edPressed() {
+    const sel = getSelection(), box = edBox(); if (!box || !sel.rangeCount || !box.contains(sel.anchorNode)) return;
+    const at = sel.anchorNode.nodeType === 1 ? sel.anchorNode : sel.anchorNode.parentElement;
+    const on = { h3: at.closest("h3"), h4: at.closest("h4"), ul: at.closest("ul"), bold: at.closest("strong, b"), mark: at.closest("mark") };
+    document.querySelectorAll(".ed-tool[data-param]").forEach((b) => { if (b.dataset.param in on) b.setAttribute("aria-pressed", on[b.dataset.param] ? "true" : "false"); });
+  }
+  function edMark(box) {
+    const sel = getSelection();
+    if (!sel.rangeCount || sel.isCollapsed || !box.contains(sel.anchorNode)) { edSay("Sélectionne d'abord le texte à surligner."); return false; }
+    const r = sel.getRangeAt(0), sc = r.startContainer, so = r.startOffset, ec = r.endContainer, eo = r.endOffset;
+    const walker = document.createTreeWalker(box, NodeFilter.SHOW_TEXT), nodes = [];
+    while (walker.nextNode()) { const n = walker.currentNode; if (r.intersectsNode(n) && n.textContent.trim()) nodes.push(n); }
+    if (!nodes.length) return false;
+    if (nodes.every((n) => n.parentElement.closest("mark"))) {
+      nodes.forEach((n) => { const m = n.parentElement.closest("mark"); if (m) m.replaceWith(...m.childNodes); });
+    } else {
+      nodes.filter((n) => !n.parentElement.closest("mark")).forEach((n) => {
+        const from = n === sc ? so : 0, to = n === ec ? eo : n.length;
+        if (from >= to) return;
+        let part = n;
+        if (from > 0) part = part.splitText(from);
+        if (to < n.length + part.length && to - from < part.length) part.splitText(to - from);
+        const m = document.createElement("mark"); part.replaceWith(m); m.append(part);
+      });
+    }
+    box.normalize(); sel.collapseToEnd();
+    return true;
+  }
+  function edSay(msg) { const n = document.getElementById("ed-err"); if (n) { n.textContent = msg; n.hidden = !msg; } }
+  function edCommand(cmd) {
+    const box = edBox(), E = S.edit; if (!box || !E) return;
+    edSay("");
+    box.focus();
+    const sel = getSelection();
+    if (E.range && (!sel.rangeCount || !box.contains(sel.anchorNode))) { sel.removeAllRanges(); sel.addRange(E.range); }
+    if (cmd === "undo") {
+      if (!E.hist.length) { edSay("Rien à annuler."); return; }
+      box.innerHTML = E.hist.pop(); edTouched(); return;
+    }
+    E.hist.push(box.innerHTML);
+    document.execCommand("styleWithCSS", false, false);
+    document.execCommand("defaultParagraphSeparator", false, "p");
+    const at = sel.anchorNode && (sel.anchorNode.nodeType === 1 ? sel.anchorNode : sel.anchorNode.parentElement);
+    if (cmd === "h3" || cmd === "h4") {
+      const li = at && at.closest("li");
+      if (li) document.execCommand(li.closest("ol") ? "insertOrderedList" : "insertUnorderedList");
+      document.execCommand("formatBlock", false, at && at.closest(cmd) ? "p" : cmd);
+    } else if (cmd === "ul") document.execCommand("insertUnorderedList");
+    else if (cmd === "bold") document.execCommand("bold");
+    else if (cmd === "indent" || cmd === "outdent") document.execCommand(cmd);
+    else if (cmd === "mark") { if (!edMark(box)) { E.hist.pop(); return; } }
+    edTouched(); edPressed();
+  }
+  async function saveFicheEdit() {
+    const E = S.edit, box = edBox(), c = C.chapter(E.id); if (!E || !box || !c || E.saving) return;
+    const html = cleanRich(box.innerHTML);
+    E.html = box.innerHTML;
+    if (!html.trim()) { E.err = "La fiche est vide. Écris au moins un point, ou reviens à la fiche d'origine."; render(); return; }
+    E.saving = true; E.err = ""; render();
+    let r;
+    try { r = await S.sb.from("fiche_edits").upsert({ chapter_id: E.id, html, updated_at: new Date().toISOString() }); } catch (x) { r = { error: x }; }
+    E.saving = false;
+    if (r.error) { E.err = "Enregistrement impossible. Vérifie ta connexion et réessaie : ton texte reste ici."; render(); return; }
+    applyFicheEdit(c, html);
+    lsSet(ficheDraftKey(E.id), null);
+    S.edit = null;
+    go("fiche", c.id);
+    toast("Fiche enregistrée.");
+  }
+  async function resetFicheToOrigin() {
+    const E = S.edit, c = C.chapter(E.id); if (!E || !c) return;
+    let r;
+    try { r = await S.sb.from("fiche_edits").delete().eq("chapter_id", E.id); } catch (x) { r = { error: x }; }
+    if (r.error) { E.confirm = null; E.err = "Retour impossible. Vérifie ta connexion et réessaie."; render(); return; }
+    resetFicheEdit(c);
+    lsSet(ficheDraftKey(E.id), null);
+    S.edit = null;
+    go("fiche", c.id);
+    toast("Fiche d'origine rétablie.");
+  }
+  function vFicheEdit() {
+    const E = S.edit, c = E && C.chapter(E.id);
+    if (!c || !S.canEdit) return vRevisions();
+    const tool = (cmd, label, content) => `<button type="button" class="ed-tool" data-act="ed" data-param="${cmd}" aria-label="${label}"${["h3", "h4", "ul", "bold", "mark"].includes(cmd) ? ' aria-pressed="false"' : ""}>${content}</button>`;
+    const confirmBox = E.confirm === "quit"
+      ? `<div class="ed-confirm" role="alert"><p>Quitter sans enregistrer ? Tes changements seront perdus.</p><button class="btn btn-ghost btn-block" data-act="ed-stay">Continuer à modifier</button><button class="btn btn-ghost btn-block" data-act="ed-quit-yes">Quitter sans enregistrer</button></div>`
+      : E.confirm === "origin"
+        ? `<div class="ed-confirm" role="alert"><p>Revenir à la fiche d'origine ? Toutes tes modifications de cette fiche seront supprimées.</p><button class="btn btn-ghost btn-block" data-act="ed-stay">Garder mes modifications</button><button class="btn btn-ghost btn-block" data-act="ed-origin-yes">Revenir à la fiche d'origine</button></div>`
+        : "";
+    return `<main class="screen narrow">
+      <div class="stack" style="gap:6px"><button class="link-btn" data-act="ed-quit" style="align-self:flex-start">Quitter</button>
+        <h1 class="h-screen">Modifier la fiche</h1><p class="muted small">${esc(c.titre)}</p>
+        ${E.restored ? `<p class="ed-note">Ton brouillon non enregistré a été repris.</p>` : ""}</div>
+      <div class="ed-bar" role="toolbar" aria-label="Mise en forme">
+        ${tool("h3", "Titre", "Titre")}${tool("h4", "Sous-titre", "Sous-titre")}${tool("ul", "Liste à puces", "Puces")}
+        ${tool("outdent", "Réduire le retrait", icon("outdent"))}${tool("indent", "Augmenter le retrait", icon("indent"))}
+        ${tool("mark", "Surligner en vert", "<mark>Surligner</mark>")}${tool("bold", "Gras", "<strong>Gras</strong>")}${tool("undo", "Annuler", icon("undo"))}
+      </div>
+      <article class="sheet${sheetCls()}"><div class="rich ed-box" id="ed-box" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Texte de la fiche">${E.html}</div></article>
+      <p class="ed-err" id="ed-err" role="status" ${E.err ? "" : "hidden"}>${esc(E.err)}</p>
+      ${confirmBox}
+      <div class="lesson-end">
+        <button class="btn btn-primary btn-block" data-act="ed-save" ${E.saving ? "disabled" : ""}>${icon("check")}${E.saving ? "Enregistrement…" : "Enregistrer la fiche"}</button>
+        ${c.ficheHtml ? `<button class="link-btn" data-act="ed-origin" style="align-self:center">Revenir à la fiche d'origine</button>` : ""}
       </div>
     </main>`;
   }
@@ -1345,7 +1571,7 @@ a.row:hover .row-title { color: var(--green); }
     if (!S.progress) { app.innerHTML = vLoading(); document.querySelector(".tabbar").hidden = true; return; }
     if (S.welcome) { app.innerHTML = typo(vWelcome()); document.querySelector(".tabbar").hidden = true; return; }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
-    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, exams: vExams, revisions: vRevisions, fiche: vFiche, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
+    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, exams: vExams, revisions: vRevisions, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
     if (S.view === "train" && S.param) document.getElementById("d-" + S.param)?.scrollIntoView({ block: "start" });
@@ -1407,6 +1633,14 @@ a.row:hover .row-title { color: var(--green); }
       case "per": S.progress.settings.perSession = Number(param); save(); render(); break;
       case "reload": location.reload(); break;
       case "login-back": if (S.login) { S.login.step = "email"; S.login.err = ""; render(); } break;
+      case "fiche-edit": openFicheEditor(param); break;
+      case "ed": edCommand(param); break;
+      case "ed-save": saveFicheEdit(); break;
+      case "ed-quit": if (S.edit && S.edit.dirty) { S.edit.confirm = "quit"; render(); document.querySelector(".ed-confirm")?.scrollIntoView({ block: "center" }); } else { const q = S.edit.id; S.edit = null; go("fiche", q); } break;
+      case "ed-quit-yes": { const q = S.edit.id; lsSet(ficheDraftKey(q), null); S.edit = null; go("fiche", q); break; }
+      case "ed-origin": S.edit.confirm = "origin"; render(); document.querySelector(".ed-confirm")?.scrollIntoView({ block: "center" }); break;
+      case "ed-origin-yes": resetFicheToOrigin(); break;
+      case "ed-stay": S.edit.confirm = null; render(); break;
       case "logout": if (S.sb) { S.sb.auth.signOut().finally(() => location.reload()); } break;
     }
   });
@@ -1415,7 +1649,24 @@ a.row:hover .row-title { color: var(--green); }
     const k = e.target.dataset?.set; if (!k) return;
     S.progress.settings[k] = e.target.checked; save(); render();
   });
+  // Editor: toolbar buttons keep the text selection; what is pasted goes through the allow-list
+  document.addEventListener("mousedown", (e) => { if (e.target.closest(".ed-tool")) e.preventDefault(); });
+  document.addEventListener("selectionchange", edRememberSel);
+  document.addEventListener("paste", (e) => {
+    if (e.target.closest?.("#ed-box")) {
+      e.preventDefault();
+      const data = e.clipboardData, rich = data.getData("text/html");
+      const html = rich ? cleanRich(rich) : data.getData("text/plain").split(/\r?\n/).filter((l) => l.trim()).map((l) => `<p>${esc(l)}</p>`).join("");
+      if (S.edit) S.edit.hist.push(edBox().innerHTML);
+      document.execCommand("insertHTML", false, html);
+      edTouched();
+    }
+  });
   document.addEventListener("input", (e) => {
+    if (e.target.id === "ed-box") {
+      if (S.edit && (!S.edit.lastHist || Date.now() - S.edit.lastHist > 1500)) { S.edit.hist.push(S.edit.html); S.edit.lastHist = Date.now(); }
+      edTouched();
+    }
     if (e.target.id !== "rev-q") return;
     S.rev.q = e.target.value;
     document.getElementById("rev-out").innerHTML = typo(normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault());
@@ -1464,6 +1715,7 @@ a.row:hover .row-title { color: var(--green); }
   const CFG = window.EA_CONFIG || {};
   async function afterAuth(hotData) {
     await Promise.all([loadContent(), loadProgress()]);
+    await loadFicheEdits();
     if (hotData && hotData.session && S.content) { S.session = hotData.session; S.view = hotData.view || "home"; S.param = hotData.param ?? null; }
     else if (S.content) {
       const kept = lsGet(sessKey());
