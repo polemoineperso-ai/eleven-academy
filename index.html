@@ -1946,7 +1946,7 @@ a.row:hover .row-title { color: var(--green); }
   /* ---------- Article references open their official text ---------- */
   const CODE_NAMES = { sport: "Code du sport", travail: "Code du travail", civil: "Code civil", commerce: "Code de commerce", assurances: "Code des assurances", cgi: "Code général des impôts", cmf: "Code monétaire et financier", css: "Code de la sécurité sociale", csi: "Code de la sécurité intérieure" };
   const CODE_WORDS = [[/code du sport|c\. sport/i, "sport"], [/code du travail|c\. trav/i, "travail"], [/code civil|c\. civ/i, "civil"], [/code de commerce|c\. com/i, "commerce"], [/code des assurances|c\. assur/i, "assurances"], [/\bcgi\b|général des impôts/i, "cgi"], [/\bcmf\b|monétaire et financier/i, "cmf"], [/sécurité sociale|\bcss\b/i, "css"], [/sécurité intérieure/i, "csi"]];
-  const DOMAIN_CODES = { agents: ["sport", "cmf", "travail", "civil"], dopage: ["sport"], contrats: ["civil", "sport", "commerce"], societes: ["commerce", "civil", "sport"], associations: ["sport", "cgi"], fiscal: ["cgi", "civil"], travail: ["travail", "sport", "css"], personnalite: ["civil", "sport", "cgi", "css"], assurances: ["assurances", "sport"], actualite: ["sport", "travail"] };
+  const DOMAIN_CODES = { agents: ["sport", "cmf", "travail", "civil"], dopage: ["sport"], contrats: ["civil", "sport", "commerce"], societes: ["commerce", "civil", "sport"], associations: ["sport"], fiscal: ["cgi", "civil"], travail: ["travail", "sport", "css"], personnalite: ["civil", "sport", "cgi", "css"], assurances: ["assurances", "sport"], actualite: ["sport", "travail"] };
   const REF_RX = /\b([LRDA])\.?[\s\u00a0\u202f]*(\d{1,4}(?:\u2060?-\u2060?\d+)*)|\b[Aa]rt(?:icles?|\.)[\s\u00a0\u202f]+(\d{1,4}(?:\u2060?-\u2060?\d+)*(?:[\s\u00a0\u202f]?(?:bis|ter|quater|[A-Z]{1,2}\b))?)/g;
   function viewDomain() {
     const v = S.view;
@@ -1959,6 +1959,7 @@ a.row:hover .row-title { color: var(--green); }
   }
   function resolveRef(num, near, dom, lettered) {
     const has = (c) => S.arts?.[c]?.[num];
+    if (/\bloi\b|code pénal|c\. pén/i.test(near)) return null; /* those texts are not in the articles file: better no link than a wrong one */
     const named = CODE_WORDS.find(([rx]) => rx.test(near));
     if (named) return has(named[1]) ? named[1] : null;
     if (!lettered) return (DOMAIN_CODES[dom] || []).filter((c) => c === "civil" || c === "cgi").find(has) || null;
