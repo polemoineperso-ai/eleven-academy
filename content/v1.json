@@ -1,5 +1,5 @@
 {
-"version": "v11-2026-11-04",
+"version": "v12-2026-11-07",
 "domaines": [
 {
 "id": "agents",
@@ -3811,32 +3811,16 @@
 "x": "À la fin de ce module, l'apprenant doit être capable de :"
 },
 {
-"t": "p",
-"x": "Comprendre le métier et les responsabilités d'un agent sportif."
-},
-{
-"t": "p",
-"x": "Identifier les grandes règles qui encadrent la profession."
-},
-{
-"t": "p",
-"x": "Maîtriser les 27 termes juridiques et sportifs indispensables."
-},
-{
-"t": "p",
-"x": "Comprendre l'organisation de l'examen."
-},
-{
-"t": "p",
-"x": "Identifier les pièges classiques des QCM."
-},
-{
-"t": "p",
-"x": "Adopter une méthode efficace pour résoudre une question juridique."
-},
-{
-"t": "p",
-"x": "Durée indicative : 2 heures 30 à 3 heures."
+"t": "list",
+"items": [
+"Comprendre le métier et les responsabilités d'un agent sportif.",
+"Identifier les grandes règles qui encadrent la profession.",
+"Maîtriser les 27 termes juridiques et sportifs indispensables.",
+"Comprendre l'organisation de l'examen.",
+"Identifier les pièges classiques des QCM.",
+"Adopter une méthode efficace pour résoudre une question juridique.",
+"Durée indicative : 2 heures 30 à 3 heures."
+]
 }
 ]
 },
@@ -3865,48 +3849,28 @@
 "x": "Dans le football professionnel, il peut intervenir notamment entre :"
 },
 {
-"t": "p",
-"x": "Un joueur et un club."
-},
-{
-"t": "p",
-"x": "Un entraîneur et un club."
-},
-{
-"t": "p",
-"x": "Deux clubs, lorsque son intervention entre dans le cadre légal applicable."
-},
-{
-"t": "p",
-"x": "Un joueur et un club dans le cadre d'une négociation contractuelle."
+"t": "list",
+"items": [
+"Un joueur et un club.",
+"Un entraîneur et un club.",
+"Deux clubs, lorsque son intervention entre dans le cadre légal applicable.",
+"Un joueur et un club dans le cadre d'une négociation contractuelle."
+]
 },
 {
 "t": "lead",
 "x": "L'agent peut intervenir à différentes étapes :"
 },
 {
-"t": "p",
-"x": "Identification d'une opportunité sportive."
-},
-{
-"t": "p",
-"x": "Prise de contact avec un club."
-},
-{
-"t": "p",
-"x": "Présentation du profil du joueur."
-},
-{
-"t": "p",
-"x": "Négociation des conditions contractuelles."
-},
-{
-"t": "p",
-"x": "Accompagnement de la signature."
-},
-{
-"t": "p",
-"x": "Suivi de la relation contractuelle."
+"t": "list",
+"items": [
+"Identification d'une opportunité sportive.",
+"Prise de contact avec un club.",
+"Présentation du profil du joueur.",
+"Négociation des conditions contractuelles.",
+"Accompagnement de la signature.",
+"Suivi de la relation contractuelle."
+]
 },
 {
 "t": "vigilance",
@@ -3938,28 +3902,15 @@
 "x": "L'agent sportif peut intervenir pour :"
 },
 {
-"t": "p",
-"x": "Recueillir les attentes du joueur."
-},
-{
-"t": "p",
-"x": "Identifier les clubs susceptibles d'être intéressés."
-},
-{
-"t": "p",
-"x": "Organiser les échanges entre les parties."
-},
-{
-"t": "p",
-"x": "Participer à la négociation du futur contrat."
-},
-{
-"t": "p",
-"x": "Veiller au respect du mandat et des règles applicables."
-},
-{
-"t": "p",
-"x": "Accompagner la conclusion du contrat."
+"t": "list",
+"items": [
+"Recueillir les attentes du joueur.",
+"Identifier les clubs susceptibles d'être intéressés.",
+"Organiser les échanges entre les parties.",
+"Participer à la négociation du futur contrat.",
+"Veiller au respect du mandat et des règles applicables.",
+"Accompagner la conclusion du contrat."
+]
 },
 {
 "t": "p",
@@ -3998,20 +3949,13 @@
 "x": "L'accès à la profession est soumis à des conditions, notamment :"
 },
 {
-"t": "p",
-"x": "La réussite aux épreuves prévues par la réglementation."
-},
-{
-"t": "p",
-"x": "L'obtention de la licence appropriée."
-},
-{
-"t": "p",
-"x": "Le respect des conditions d'exercice."
-},
-{
-"t": "p",
-"x": "L'absence de certaines incompatibilités ou incapacités."
+"t": "list",
+"items": [
+"La réussite aux épreuves prévues par la réglementation.",
+"L'obtention de la licence appropriée.",
+"Le respect des conditions d'exercice.",
+"L'absence de certaines incompatibilités ou incapacités."
+]
 },
 {
 "t": "h",
@@ -4124,12 +4068,11 @@
 "x": "Il faut distinguer deux dimensions :"
 },
 {
-"t": "p",
-"x": "La connaissance du cadre juridique général applicable aux agents sportifs."
-},
-{
-"t": "p",
-"x": "La connaissance des règles spécifiques à la discipline sportive concernée."
+"t": "list",
+"items": [
+"La connaissance du cadre juridique général applicable aux agents sportifs.",
+"La connaissance des règles spécifiques à la discipline sportive concernée."
+]
 },
 {
 "t": "p",
@@ -4152,44 +4095,19 @@
 "x": "Elles concernent notamment :"
 },
 {
-"t": "p",
-"x": "Le Code du sport."
-},
-{
-"t": "p",
-"x": "Le statut de l'agent sportif."
-},
-{
-"t": "p",
-"x": "Les conditions d'accès à la profession."
-},
-{
-"t": "p",
-"x": "Les contrats de mandat."
-},
-{
-"t": "p",
-"x": "Les règles de rémunération."
-},
-{
-"t": "p",
-"x": "Les incompatibilités et incapacités."
-},
-{
-"t": "p",
-"x": "Les sanctions."
-},
-{
-"t": "p",
-"x": "Le droit du sport."
-},
-{
-"t": "p",
-"x": "Les institutions sportives."
-},
-{
-"t": "p",
-"x": "Les règles de lutte contre les dérives financières et sportives."
+"t": "list",
+"items": [
+"Le Code du sport.",
+"Le statut de l'agent sportif.",
+"Les conditions d'accès à la profession.",
+"Les contrats de mandat.",
+"Les règles de rémunération.",
+"Les incompatibilités et incapacités.",
+"Les sanctions.",
+"Le droit du sport.",
+"Les institutions sportives.",
+"Les règles de lutte contre les dérives financières et sportives."
+]
 },
 {
 "t": "p",
@@ -4200,44 +4118,19 @@
 "x": "Elles concernent notamment :"
 },
 {
-"t": "p",
-"x": "L'organisation du football français."
-},
-{
-"t": "p",
-"x": "Le rôle de la FFF."
-},
-{
-"t": "p",
-"x": "Le rôle de la LFP."
-},
-{
-"t": "p",
-"x": "Les règlements des compétitions."
-},
-{
-"t": "p",
-"x": "Les règles relatives aux joueurs professionnels."
-},
-{
-"t": "p",
-"x": "Les transferts nationaux et internationaux."
-},
-{
-"t": "p",
-"x": "Les règlements FIFA."
-},
-{
-"t": "p",
-"x": "Les règles relatives aux mineurs."
-},
-{
-"t": "p",
-"x": "Les mécanismes d'enregistrement des joueurs."
-},
-{
-"t": "p",
-"x": "Les règles relatives aux intermédiaires et agents."
+"t": "list",
+"items": [
+"L'organisation du football français.",
+"Le rôle de la FFF.",
+"Le rôle de la LFP.",
+"Les règlements des compétitions.",
+"Les règles relatives aux joueurs professionnels.",
+"Les transferts nationaux et internationaux.",
+"Les règlements FIFA.",
+"Les règles relatives aux mineurs.",
+"Les mécanismes d'enregistrement des joueurs.",
+"Les règles relatives aux intermédiaires et agents."
+]
 },
 {
 "t": "vigilance",
@@ -4305,40 +4198,18 @@
 "x": "Les principales sources sont :"
 },
 {
-"t": "p",
-"x": "Le Code du sport."
-},
-{
-"t": "p",
-"x": "Le Code civil."
-},
-{
-"t": "p",
-"x": "Le Code pénal."
-},
-{
-"t": "p",
-"x": "Le Code monétaire et financier."
-},
-{
-"t": "p",
-"x": "Les règlements de la FFF."
-},
-{
-"t": "p",
-"x": "Les règlements de la FIFA."
-},
-{
-"t": "p",
-"x": "Les textes réglementaires relatifs à la profession."
-},
-{
-"t": "p",
-"x": "Chaque texte possède un champ d'application particulier."
-},
-{
-"t": "p",
-"x": "Le candidat doit être capable de déterminer quel texte s'applique à une situation donnée."
+"t": "list",
+"items": [
+"Le Code du sport.",
+"Le Code civil.",
+"Le Code pénal.",
+"Le Code monétaire et financier.",
+"Les règlements de la FFF.",
+"Les règlements de la FIFA.",
+"Les textes réglementaires relatifs à la profession.",
+"Chaque texte possède un champ d'application particulier.",
+"Le candidat doit être capable de déterminer quel texte s'applique à une situation donnée."
+]
 },
 {
 "t": "h",
@@ -4349,24 +4220,14 @@
 "x": "La FFF a publié les informations relatives à la session 2027 :"
 },
 {
-"t": "p",
-"x": "Épreuve générale : 23 novembre 2026, organisée par le CNOSF."
-},
-{
-"t": "p",
-"x": "Épreuve spécifique football : mars 2027, organisée par la FFF."
-},
-{
-"t": "p",
-"x": "Inscriptions à la première épreuve : du 6 juillet au 31 août 2026."
-},
-{
-"t": "p",
-"x": "Frais d'inscription annoncés : 300 €."
-},
-{
-"t": "p",
-"x": "La période d'inscription à la première épreuve est donc déjà clôturée à la date de ce cours."
+"t": "list",
+"items": [
+"Épreuve générale : 23 novembre 2026, organisée par le CNOSF.",
+"Épreuve spécifique football : mars 2027, organisée par la FFF.",
+"Inscriptions à la première épreuve : du 6 juillet au 31 août 2026.",
+"Frais d'inscription annoncés : 300 €.",
+"La période d'inscription à la première épreuve est donc déjà clôturée à la date de ce cours."
+]
 },
 {
 "t": "h",
@@ -7842,8 +7703,8 @@
 "domaine": "societes",
 "titre": "Pour bien commencer",
 "fiche": [
-"Introduction : Comprendre le fonctionnement juridique, économique et financier des sociétés, maîtriser les principales formes sociales et savoir identifier les structures adaptées à l'activité d'agent sportif.",
-"Partie C : difficultés des entreprises et responsabilité des dirigeants. : Révisions, articles de référence, pièges et QCM."
+"Ce module suit trois temps : le droit général des sociétés, les sociétés dans le sport, puis les entreprises en difficulté.",
+"Le fil rouge pour l'agent : savoir quelle forme choisir, qui décide et qui répond des dettes."
 ],
 "source": "Module 03, introduction",
 "cours": {
@@ -7911,32 +7772,16 @@
 "x": "Il doit donc comprendre :"
 },
 {
-"t": "p",
-"x": "Comment une société est créée."
-},
-{
-"t": "p",
-"x": "Qui la dirige et qui en est propriétaire."
-},
-{
-"t": "p",
-"x": "Comment les associés prennent les décisions."
-},
-{
-"t": "p",
-"x": "Quelle est la responsabilité des dirigeants."
-},
-{
-"t": "p",
-"x": "Comment sont répartis les bénéfices."
-},
-{
-"t": "p",
-"x": "Quelles sont les conséquences d'une difficulté financière."
-},
-{
-"t": "p",
-"x": "Quelles règles particulières s'appliquent aux sociétés sportives et aux sociétés d'agents sportifs."
+"t": "list",
+"items": [
+"Comment une société est créée.",
+"Qui la dirige et qui en est propriétaire.",
+"Comment les associés prennent les décisions.",
+"Quelle est la responsabilité des dirigeants.",
+"Comment sont répartis les bénéfices.",
+"Quelles sont les conséquences d'une difficulté financière.",
+"Quelles règles particulières s'appliquent aux sociétés sportives et aux sociétés d'agents sportifs."
+]
 },
 {
 "t": "lead",
@@ -7961,13 +7806,13 @@
 "domaine": "societes",
 "titre": "Droit général des sociétés",
 "fiche": [
-"Cette séparation patrimoniale ne signifie pas que le dirigeant est toujours à l'abri d'une responsabilité personnelle.",
-"La société est une personne juridique distincte de ses associés, mais elle ne dispense pas les personnes physiques de respecter les conditions réglementaires de leur profession.",
-"Il ne faut pas confondre la responsabilité des associés, le nombre d'associés et la nature civile ou commerciale de la société.",
-"La SARL est une structure encadrée par la loi, avec une gouvernance moins libre que celle de la SAS.",
-"La SAS est appréciée pour sa souplesse et sa capacité à organiser plusieurs associés et investisseurs.",
-"La SA est une structure plus encadrée, adaptée notamment aux projets de grande dimension.",
-"La SNC présente un risque patrimonial beaucoup plus important pour les associés que la SARL ou la SAS."
+"Le contrat de société (article 1832 du Code civil) : mettre en commun des biens ou son industrie pour partager un bénéfice ou profiter d'une économie, en contribuant aux pertes.",
+"Une société commerciale acquiert la personnalité morale à son immatriculation (article 1842 du Code civil).",
+"SARL : 2 à 100 associés, dirigée par un gérant, responsabilité limitée.",
+"SAS : grande liberté statutaire, représentée par un président, responsabilité limitée.",
+"SA : capital minimum de 37 000 €, conseil d'administration ou directoire.",
+"SNC : les associés répondent indéfiniment et solidairement des dettes sociales.",
+"La société ne protège pas de tout : le dirigeant peut engager sa responsabilité personnelle."
 ],
 "source": "Module 03, partie A",
 "cours": {
@@ -8009,28 +7854,15 @@
 "x": "La société repose donc sur plusieurs éléments fondamentaux :"
 },
 {
-"t": "p",
-"x": "Des associés ou un associé unique lorsque la loi l'autorise."
-},
-{
-"t": "p",
-"x": "Des apports."
-},
-{
-"t": "p",
-"x": "Une entreprise commune."
-},
-{
-"t": "p",
-"x": "Une volonté de participer à un projet économique."
-},
-{
-"t": "p",
-"x": "Une vocation aux bénéfices ou aux économies."
-},
-{
-"t": "p",
-"x": "Une contribution aux pertes."
+"t": "list",
+"items": [
+"Des associés ou un associé unique lorsque la loi l'autorise.",
+"Des apports.",
+"Une entreprise commune.",
+"Une volonté de participer à un projet économique.",
+"Une vocation aux bénéfices ou aux économies.",
+"Une contribution aux pertes."
+]
 },
 {
 "t": "h",
@@ -8139,32 +7971,16 @@
 "x": "Il faut distinguer :"
 },
 {
-"t": "p",
-"x": "Le bénéfice comptable."
-},
-{
-"t": "p",
-"x": "Le bénéfice distribuable."
-},
-{
-"t": "p",
-"x": "Le dividende effectivement versé."
-},
-{
-"t": "p",
-"x": "La perte comptable."
-},
-{
-"t": "p",
-"x": "La contribution aux pertes."
-},
-{
-"t": "p",
-"x": "L'obligation aux dettes sociales."
-},
-{
-"t": "p",
-"x": "Ces notions ne sont pas interchangeables."
+"t": "list",
+"items": [
+"Le bénéfice comptable.",
+"Le bénéfice distribuable.",
+"Le dividende effectivement versé.",
+"La perte comptable.",
+"La contribution aux pertes.",
+"L'obligation aux dettes sociales.",
+"Ces notions ne sont pas interchangeables."
+]
 },
 {
 "t": "cas",
@@ -8181,24 +7997,14 @@
 "x": "Il faut tenir compte notamment :"
 },
 {
-"t": "p",
-"x": "Des pertes antérieures."
-},
-{
-"t": "p",
-"x": "Des réserves légales."
-},
-{
-"t": "p",
-"x": "Des réserves statutaires."
-},
-{
-"t": "p",
-"x": "Des règles de distribution."
-},
-{
-"t": "p",
-"x": "De la décision des associés."
+"t": "list",
+"items": [
+"Des pertes antérieures.",
+"Des réserves légales.",
+"Des réserves statutaires.",
+"Des règles de distribution.",
+"De la décision des associés."
+]
 },
 {
 "t": "h",
@@ -8243,28 +8049,15 @@
 "x": "Elle dispose notamment :"
 },
 {
-"t": "p",
-"x": "D'une dénomination sociale."
-},
-{
-"t": "p",
-"x": "D'un siège social."
-},
-{
-"t": "p",
-"x": "D'un patrimoine propre."
-},
-{
-"t": "p",
-"x": "D'une capacité juridique."
-},
-{
-"t": "p",
-"x": "D'une responsabilité propre."
-},
-{
-"t": "p",
-"x": "De droits et obligations."
+"t": "list",
+"items": [
+"D'une dénomination sociale.",
+"D'un siège social.",
+"D'un patrimoine propre.",
+"D'une capacité juridique.",
+"D'une responsabilité propre.",
+"De droits et obligations."
+]
 },
 {
 "t": "cas",
@@ -8346,20 +8139,13 @@
 "x": "Un agent peut choisir :"
 },
 {
-"t": "p",
-"x": "D'exercer individuellement."
-},
-{
-"t": "p",
-"x": "De créer une société."
-},
-{
-"t": "p",
-"x": "De s'associer avec d'autres professionnels."
-},
-{
-"t": "p",
-"x": "De constituer une structure permettant de gérer plusieurs activités compatibles."
+"t": "list",
+"items": [
+"D'exercer individuellement.",
+"De créer une société.",
+"De s'associer avec d'autres professionnels.",
+"De constituer une structure permettant de gérer plusieurs activités compatibles."
+]
 },
 {
 "t": "p",
@@ -8423,36 +8209,17 @@
 "x": "Les principales formes sont :"
 },
 {
-"t": "p",
-"x": "SARL."
-},
-{
-"t": "p",
-"x": "EURL."
-},
-{
-"t": "p",
-"x": "SAS."
-},
-{
-"t": "p",
-"x": "SASU."
-},
-{
-"t": "p",
-"x": "SA."
-},
-{
-"t": "p",
-"x": "SNC."
-},
-{
-"t": "p",
-"x": "Une société peut être commerciale par sa forme, même si son activité est civile."
-},
-{
-"t": "p",
-"x": "C'est notamment le cas de la SAS et de la SARL."
+"t": "list",
+"items": [
+"SARL.",
+"EURL.",
+"SAS.",
+"SASU.",
+"SA.",
+"SNC.",
+"Une société peut être commerciale par sa forme, même si son activité est civile.",
+"C'est notamment le cas de la SAS et de la SARL."
+]
 },
 {
 "t": "h",
@@ -8551,60 +8318,37 @@
 "x": "Sociétés unipersonnelles et pluripersonnelles"
 },
 {
-"t": "p",
-"x": "Société"
-},
-{
-"t": "p",
-"x": "Nombre d'associés"
-},
-{
-"t": "p",
-"x": "EURL"
-},
-{
-"t": "p",
-"x": "Un"
-},
-{
-"t": "p",
-"x": "SASU"
-},
-{
-"t": "p",
-"x": "Un"
-},
-{
-"t": "p",
-"x": "SARL"
-},
-{
-"t": "p",
-"x": "Deux à cent"
-},
-{
-"t": "p",
-"x": "SAS"
-},
-{
-"t": "p",
-"x": "Deux ou plus"
-},
-{
-"t": "p",
-"x": "SA"
-},
-{
-"t": "p",
-"x": "Nombre minimum prévu par la loi selon le cas"
-},
-{
-"t": "p",
-"x": "SNC"
-},
-{
-"t": "p",
-"x": "Deux ou plus"
+"t": "table",
+"head": [
+"Société",
+"Nombre d'associés"
+],
+"rows": [
+[
+"EURL",
+"Un"
+],
+[
+"SASU",
+"Un"
+],
+[
+"SARL",
+"Deux à cent"
+],
+[
+"SAS",
+"Deux ou plus"
+],
+[
+"SA",
+"Nombre minimum prévu par la loi selon le cas"
+],
+[
+"SNC",
+"Deux ou plus"
+]
+]
 },
 {
 "t": "h",
@@ -8650,40 +8394,26 @@
 "x": "Elle peut être constituée par :"
 },
 {
-"t": "p",
-"x": "Deux associés au minimum."
-},
-{
-"t": "p",
-"x": "Cent associés au maximum."
-},
-{
-"t": "p",
-"x": "Lorsqu'elle ne comporte qu'un seul associé, elle prend la forme d'une EURL."
-},
-{
-"t": "p",
-"x": "B. Le capital social Il n'existe pas de capital social minimum légal."
-},
-{
-"t": "p",
-"x": "Le capital est divisé en parts sociales."
+"t": "list",
+"items": [
+"Deux associés au minimum.",
+"Cent associés au maximum.",
+"Lorsqu'elle ne comporte qu'un seul associé, elle prend la forme d'une EURL.",
+"B. Le capital social Il n'existe pas de capital social minimum légal.",
+"Le capital est divisé en parts sociales."
+]
 },
 {
 "t": "lead",
 "x": "Les associés peuvent réaliser :"
 },
 {
-"t": "p",
-"x": "Des apports en numéraire."
-},
-{
-"t": "p",
-"x": "Des apports en nature."
-},
-{
-"t": "p",
-"x": "Des apports en industrie, dans les conditions prévues par la loi."
+"t": "list",
+"items": [
+"Des apports en numéraire.",
+"Des apports en nature.",
+"Des apports en industrie, dans les conditions prévues par la loi."
+]
 },
 {
 "t": "p",
@@ -8702,24 +8432,14 @@
 "x": "Il peut être :"
 },
 {
-"t": "p",
-"x": "Associé majoritaire."
-},
-{
-"t": "p",
-"x": "Associé minoritaire."
-},
-{
-"t": "p",
-"x": "Associé égalitaire."
-},
-{
-"t": "p",
-"x": "Non associé."
-},
-{
-"t": "p",
-"x": "Il représente la société dans ses relations avec les tiers."
+"t": "list",
+"items": [
+"Associé majoritaire.",
+"Associé minoritaire.",
+"Associé égalitaire.",
+"Non associé.",
+"Il représente la société dans ses relations avec les tiers."
+]
 },
 {
 "t": "p",
@@ -8730,40 +8450,26 @@
 "x": "Les décisions ordinaires concernent notamment :"
 },
 {
-"t": "p",
-"x": "L'approbation des comptes."
-},
-{
-"t": "p",
-"x": "L'affectation des bénéfices."
-},
-{
-"t": "p",
-"x": "La nomination du gérant."
-},
-{
-"t": "p",
-"x": "La révocation du gérant."
+"t": "list",
+"items": [
+"L'approbation des comptes.",
+"L'affectation des bénéfices.",
+"La nomination du gérant.",
+"La révocation du gérant."
+]
 },
 {
 "t": "lead",
 "x": "Les décisions extraordinaires concernent notamment :"
 },
 {
-"t": "p",
-"x": "La modification des statuts."
-},
-{
-"t": "p",
-"x": "L'augmentation du capital."
-},
-{
-"t": "p",
-"x": "La réduction du capital."
-},
-{
-"t": "p",
-"x": "Le changement de dénomination sociale."
+"t": "list",
+"items": [
+"La modification des statuts.",
+"L'augmentation du capital.",
+"La réduction du capital.",
+"Le changement de dénomination sociale."
+]
 },
 {
 "t": "p",
@@ -8806,24 +8512,14 @@
 "x": "Deux agents sportifs créent une SARL :"
 },
 {
-"t": "p",
-"x": "Agent A : 60 % du capital."
-},
-{
-"t": "p",
-"x": "Agent B : 40 % du capital."
-},
-{
-"t": "p",
-"x": "Capital : 10 000 €."
-},
-{
-"t": "p",
-"x": "La société est dirigée par un gérant."
-},
-{
-"t": "p",
-"x": "Les décisions sont prises selon les règles légales et statutaires."
+"t": "list",
+"items": [
+"Agent A : 60 % du capital.",
+"Agent B : 40 % du capital.",
+"Capital : 10 000 €.",
+"La société est dirigée par un gérant.",
+"Les décisions sont prises selon les règles légales et statutaires."
+]
 },
 {
 "t": "memo",
@@ -8879,36 +8575,25 @@
 "x": "Le président peut être :"
 },
 {
-"t": "p",
-"x": "Une personne physique."
-},
-{
-"t": "p",
-"x": "Une personne morale."
+"t": "list",
+"items": [
+"Une personne physique.",
+"Une personne morale."
+]
 },
 {
 "t": "lead",
 "x": "Les statuts peuvent prévoir d'autres organes :"
 },
 {
-"t": "p",
-"x": "Directeur général."
-},
-{
-"t": "p",
-"x": "Directeurs généraux délégués."
-},
-{
-"t": "p",
-"x": "Comité stratégique."
-},
-{
-"t": "p",
-"x": "Comité de direction."
-},
-{
-"t": "p",
-"x": "La SAS offre donc une grande liberté d'organisation."
+"t": "list",
+"items": [
+"Directeur général.",
+"Directeurs généraux délégués.",
+"Comité stratégique.",
+"Comité de direction.",
+"La SAS offre donc une grande liberté d'organisation."
+]
 },
 {
 "t": "p",
@@ -8923,28 +8608,15 @@
 "x": "Les statuts peuvent prévoir :"
 },
 {
-"t": "p",
-"x": "Des règles de majorité."
-},
-{
-"t": "p",
-"x": "Des consultations écrites."
-},
-{
-"t": "p",
-"x": "Des assemblées."
-},
-{
-"t": "p",
-"x": "Des clauses d'agrément."
-},
-{
-"t": "p",
-"x": "Des clauses de préemption."
-},
-{
-"t": "p",
-"x": "Des conditions particulières de cession des actions."
+"t": "list",
+"items": [
+"Des règles de majorité.",
+"Des consultations écrites.",
+"Des assemblées.",
+"Des clauses d'agrément.",
+"Des clauses de préemption.",
+"Des conditions particulières de cession des actions."
+]
 },
 {
 "t": "p",
@@ -8983,40 +8655,26 @@
 "x": "Trois agents créent une SAS :"
 },
 {
-"t": "p",
-"x": "Agent A : 50 %."
-},
-{
-"t": "p",
-"x": "Agent B : 30 %."
-},
-{
-"t": "p",
-"x": "Agent C : 20 %."
+"t": "list",
+"items": [
+"Agent A : 50 %.",
+"Agent B : 30 %.",
+"Agent C : 20 %."
+]
 },
 {
 "t": "lead",
 "x": "Les statuts prévoient :"
 },
 {
-"t": "p",
-"x": "Un président."
-},
-{
-"t": "p",
-"x": "Un directeur général."
-},
-{
-"t": "p",
-"x": "Un comité stratégique."
-},
-{
-"t": "p",
-"x": "Des clauses d'agrément pour contrôler l'entrée de nouveaux associés."
-},
-{
-"t": "p",
-"x": "La SAS permet d'organiser précisément la gouvernance."
+"t": "list",
+"items": [
+"Un président.",
+"Un directeur général.",
+"Un comité stratégique.",
+"Des clauses d'agrément pour contrôler l'entrée de nouveaux associés.",
+"La SAS permet d'organiser précisément la gouvernance."
+]
 },
 {
 "t": "memo",
@@ -9044,20 +8702,13 @@
 "x": "Elle peut être constituée par :"
 },
 {
-"t": "p",
-"x": "Deux actionnaires au minimum lorsqu'elle ne fait pas appel public à l'épargne."
-},
-{
-"t": "p",
-"x": "Sept actionnaires au minimum lorsqu'elle est cotée sur un marché réglementé."
-},
-{
-"t": "p",
-"x": "Le capital social minimum est de 37 000 €."
-},
-{
-"t": "p",
-"x": "B. Les organes de direction La SA peut fonctionner selon deux modèles."
+"t": "list",
+"items": [
+"Deux actionnaires au minimum lorsqu'elle ne fait pas appel public à l'épargne.",
+"Sept actionnaires au minimum lorsqu'elle est cotée sur un marché réglementé.",
+"Le capital social minimum est de 37 000 €.",
+"B. Les organes de direction La SA peut fonctionner selon deux modèles."
+]
 },
 {
 "t": "p",
@@ -9084,24 +8735,14 @@
 "x": "Modèle dualiste :"
 },
 {
-"t": "p",
-"x": "Directoire."
-},
-{
-"t": "p",
-"x": "Conseil de surveillance."
-},
-{
-"t": "p",
-"x": "Le directoire assure la gestion de la société."
-},
-{
-"t": "p",
-"x": "Le conseil de surveillance contrôle sa gestion."
-},
-{
-"t": "p",
-"x": "C. La responsabilité Les actionnaires supportent les pertes à hauteur de leurs apports."
+"t": "list",
+"items": [
+"Directoire.",
+"Conseil de surveillance.",
+"Le directoire assure la gestion de la société.",
+"Le conseil de surveillance contrôle sa gestion.",
+"C. La responsabilité Les actionnaires supportent les pertes à hauteur de leurs apports."
+]
 },
 {
 "t": "p",
@@ -9128,20 +8769,13 @@
 "x": "La structure permet :"
 },
 {
-"t": "p",
-"x": "Une gouvernance organisée."
-},
-{
-"t": "p",
-"x": "Une répartition du capital entre plusieurs actionnaires."
-},
-{
-"t": "p",
-"x": "Des opérations d'augmentation de capital."
-},
-{
-"t": "p",
-"x": "Une organisation institutionnelle plus formalisée."
+"t": "list",
+"items": [
+"Une gouvernance organisée.",
+"Une répartition du capital entre plusieurs actionnaires.",
+"Des opérations d'augmentation de capital.",
+"Une organisation institutionnelle plus formalisée."
+]
 },
 {
 "t": "memo",
@@ -9178,12 +8812,11 @@
 "x": "Les associés sont responsables :"
 },
 {
-"t": "p",
-"x": "Indéfiniment."
-},
-{
-"t": "p",
-"x": "Solidairement."
+"t": "list",
+"items": [
+"Indéfiniment.",
+"Solidairement."
+]
 },
 {
 "t": "p",
@@ -9239,144 +8872,58 @@
 "x": "Tableau comparatif des quatre principales formes"
 },
 {
-"t": "p",
-"x": "Critère"
-},
-{
-"t": "p",
-"x": "SARL"
-},
-{
-"t": "p",
-"x": "SAS"
-},
-{
-"t": "p",
-"x": "SA"
-},
-{
-"t": "p",
-"x": "SNC"
-},
-{
-"t": "p",
-"x": "Associés"
-},
-{
-"t": "p",
-"x": "2 à 100"
-},
-{
-"t": "p",
-"x": "1 ou plus"
-},
-{
-"t": "p",
-"x": "2 ou 7 minimum selon cas"
-},
-{
-"t": "p",
-"x": "2 minimum"
-},
-{
-"t": "p",
-"x": "Capital minimum"
-},
-{
-"t": "p",
-"x": "Aucun"
-},
-{
-"t": "p",
-"x": "Aucun"
-},
-{
-"t": "p",
-"x": "37 000 €"
-},
-{
-"t": "p",
-"x": "Aucun"
-},
-{
-"t": "p",
-"x": "Titres"
-},
-{
-"t": "p",
-"x": "Parts sociales"
-},
-{
-"t": "p",
-"x": "Actions"
-},
-{
-"t": "p",
-"x": "Actions"
-},
-{
-"t": "p",
-"x": "Parts sociales"
-},
-{
-"t": "p",
-"x": "Direction"
-},
-{
-"t": "p",
-"x": "Gérant"
-},
-{
-"t": "p",
-"x": "Président"
-},
-{
-"t": "p",
-"x": "CA ou directoire"
-},
-{
-"t": "p",
-"x": "Gérant"
-},
-{
-"t": "p",
-"x": "Responsabilité associés"
-},
-{
-"t": "p",
-"x": "Limitée"
-},
-{
-"t": "p",
-"x": "Limitée"
-},
-{
-"t": "p",
-"x": "Limitée"
-},
-{
-"t": "p",
-"x": "Indéfinie et solidaire"
-},
-{
-"t": "p",
-"x": "Fiscalité par défaut"
-},
-{
-"t": "p",
-"x": "IS"
-},
-{
-"t": "p",
-"x": "IS"
-},
-{
-"t": "p",
-"x": "IS"
-},
-{
-"t": "p",
-"x": "IR"
+"t": "table",
+"head": [
+"Critère",
+"SARL",
+"SAS",
+"SA",
+"SNC"
+],
+"rows": [
+[
+"Associés",
+"2 à 100",
+"1 ou plus",
+"2 ou 7 minimum selon cas",
+"2 minimum"
+],
+[
+"Capital minimum",
+"Aucun",
+"Aucun",
+"37 000 €",
+"Aucun"
+],
+[
+"Titres",
+"Parts sociales",
+"Actions",
+"Actions",
+"Parts sociales"
+],
+[
+"Direction",
+"Gérant",
+"Président",
+"CA ou directoire",
+"Gérant"
+],
+[
+"Responsabilité des associés",
+"Limitée",
+"Limitée",
+"Limitée",
+"Indéfinie et solidaire"
+],
+[
+"Fiscalité par défaut",
+"IS",
+"IS",
+"IS",
+"IR"
+]
+]
 },
 {
 "t": "h",
@@ -9391,40 +8938,18 @@
 "x": "Le choix dépend notamment :"
 },
 {
-"t": "p",
-"x": "Du nombre d'associés."
-},
-{
-"t": "p",
-"x": "Du niveau d'investissement."
-},
-{
-"t": "p",
-"x": "Du fonctionnement souhaité."
-},
-{
-"t": "p",
-"x": "Du régime social du dirigeant."
-},
-{
-"t": "p",
-"x": "De la fiscalité."
-},
-{
-"t": "p",
-"x": "Des contraintes propres au Code du sport."
-},
-{
-"t": "p",
-"x": "Pour un agent qui démarre seul, la SASU ou l'EURL peuvent être étudiées."
-},
-{
-"t": "p",
-"x": "Pour plusieurs agents souhaitant travailler ensemble, une SAS ou une SARL peuvent être envisagées."
-},
-{
-"t": "p",
-"x": "Mais le choix doit être confronté aux dispositions particulières du Code du sport."
+"t": "list",
+"items": [
+"Du nombre d'associés.",
+"Du niveau d'investissement.",
+"Du fonctionnement souhaité.",
+"Du régime social du dirigeant.",
+"De la fiscalité.",
+"Des contraintes propres au Code du sport.",
+"Pour un agent qui démarre seul, la SASU ou l'EURL peuvent être étudiées.",
+"Pour plusieurs agents souhaitant travailler ensemble, une SAS ou une SARL peuvent être envisagées.",
+"Mais le choix doit être confronté aux dispositions particulières du Code du sport."
+]
 }
 ]
 },
@@ -9465,32 +8990,16 @@
 "x": "Les statuts déterminent :"
 },
 {
-"t": "p",
-"x": "La dénomination."
-},
-{
-"t": "p",
-"x": "L'objet social."
-},
-{
-"t": "p",
-"x": "Le siège social."
-},
-{
-"t": "p",
-"x": "La durée."
-},
-{
-"t": "p",
-"x": "Le montant du capital."
-},
-{
-"t": "p",
-"x": "Les règles de fonctionnement."
-},
-{
-"t": "p",
-"x": "Les modalités de prise de décision."
+"t": "list",
+"items": [
+"La dénomination.",
+"L'objet social.",
+"Le siège social.",
+"La durée.",
+"Le montant du capital.",
+"Les règles de fonctionnement.",
+"Les modalités de prise de décision."
+]
 },
 {
 "t": "p",
@@ -9555,28 +9064,15 @@
 "x": "Ils prennent notamment des décisions concernant :"
 },
 {
-"t": "p",
-"x": "L'approbation des comptes."
-},
-{
-"t": "p",
-"x": "La distribution des bénéfices."
-},
-{
-"t": "p",
-"x": "La nomination des dirigeants."
-},
-{
-"t": "p",
-"x": "La modification des statuts."
-},
-{
-"t": "p",
-"x": "Les opérations sur le capital."
-},
-{
-"t": "p",
-"x": "La dissolution."
+"t": "list",
+"items": [
+"L'approbation des comptes.",
+"La distribution des bénéfices.",
+"La nomination des dirigeants.",
+"La modification des statuts.",
+"Les opérations sur le capital.",
+"La dissolution."
+]
 },
 {
 "t": "h",
@@ -9591,20 +9087,13 @@
 "x": "Les comptes annuels comprennent généralement :"
 },
 {
-"t": "p",
-"x": "Le bilan."
-},
-{
-"t": "p",
-"x": "Le compte de résultat."
-},
-{
-"t": "p",
-"x": "L'annexe, lorsque celle-ci est requise."
-},
-{
-"t": "p",
-"x": "Ils permettent de connaître la situation financière de la société."
+"t": "list",
+"items": [
+"Le bilan.",
+"Le compte de résultat.",
+"L'annexe, lorsque celle-ci est requise.",
+"Ils permettent de connaître la situation financière de la société."
+]
 },
 {
 "t": "h",
@@ -9619,20 +9108,13 @@
 "x": "La distribution suppose notamment :"
 },
 {
-"t": "p",
-"x": "L'approbation des comptes."
-},
-{
-"t": "p",
-"x": "L'existence d'un bénéfice distribuable."
-},
-{
-"t": "p",
-"x": "Le respect des réserves obligatoires."
-},
-{
-"t": "p",
-"x": "Une décision régulière des associés."
+"t": "list",
+"items": [
+"L'approbation des comptes.",
+"L'existence d'un bénéfice distribuable.",
+"Le respect des réserves obligatoires.",
+"Une décision régulière des associés."
+]
 },
 {
 "t": "h",
@@ -9643,24 +9125,14 @@
 "x": "La société peut prendre fin notamment :"
 },
 {
-"t": "p",
-"x": "À l'arrivée du terme."
-},
-{
-"t": "p",
-"x": "Par décision des associés."
-},
-{
-"t": "p",
-"x": "Par décision judiciaire."
-},
-{
-"t": "p",
-"x": "En cas de réalisation ou d'extinction de l'objet social."
-},
-{
-"t": "p",
-"x": "Pour d'autres causes prévues par la loi."
+"t": "list",
+"items": [
+"À l'arrivée du terme.",
+"Par décision des associés.",
+"Par décision judiciaire.",
+"En cas de réalisation ou d'extinction de l'objet social.",
+"Pour d'autres causes prévues par la loi."
+]
 },
 {
 "t": "p",
@@ -9701,136 +9173,58 @@
 "x": "Quel régime fiscal ?"
 },
 {
-"t": "p",
-"x": "Forme"
-},
-{
-"t": "p",
-"x": "Associés"
-},
-{
-"t": "p",
-"x": "Dirigeant"
-},
-{
-"t": "p",
-"x": "Responsabilité"
-},
-{
-"t": "p",
-"x": "Fiscalité par défaut"
-},
-{
-"t": "p",
-"x": "EURL"
-},
-{
-"t": "p",
-"x": "Gérant"
-},
-{
-"t": "p",
-"x": "Limitée"
-},
-{
-"t": "p",
-"x": "IR, option IS possible"
-},
-{
-"t": "p",
-"x": "SARL"
-},
-{
-"t": "p",
-"x": "2 à 100"
-},
-{
-"t": "p",
-"x": "Gérant"
-},
-{
-"t": "p",
-"x": "Limitée"
-},
-{
-"t": "p",
-"x": "IS"
-},
-{
-"t": "p",
-"x": "SASU"
-},
-{
-"t": "p",
-"x": "Président"
-},
-{
-"t": "p",
-"x": "Limitée"
-},
-{
-"t": "p",
-"x": "IS"
-},
-{
-"t": "p",
-"x": "SAS"
-},
-{
-"t": "p",
-"x": "2 ou plus"
-},
-{
-"t": "p",
-"x": "Président"
-},
-{
-"t": "p",
-"x": "Limitée"
-},
-{
-"t": "p",
-"x": "IS"
-},
-{
-"t": "p",
-"x": "SA"
-},
-{
-"t": "p",
-"x": "2 ou 7 minimum"
-},
-{
-"t": "p",
-"x": "CA/DG ou directoire"
-},
-{
-"t": "p",
-"x": "Limitée"
-},
-{
-"t": "p",
-"x": "IS"
-},
-{
-"t": "p",
-"x": "SNC"
-},
-{
-"t": "p",
-"x": "2 ou plus"
-},
-{
-"t": "p",
-"x": "Gérant"
-},
-{
-"t": "p",
-"x": "Indéfinie et solidaire"
-},
-{
-"t": "p",
-"x": "IR"
+"t": "table",
+"head": [
+"Forme",
+"Associés",
+"Dirigeant",
+"Responsabilité",
+"Fiscalité par défaut"
+],
+"rows": [
+[
+"EURL",
+"1",
+"Gérant",
+"Limitée",
+"IR, option IS possible"
+],
+[
+"SARL",
+"2 à 100",
+"Gérant",
+"Limitée",
+"IS"
+],
+[
+"SASU",
+"1",
+"Président",
+"Limitée",
+"IS"
+],
+[
+"SAS",
+"2 ou plus",
+"Président",
+"Limitée",
+"IS"
+],
+[
+"SA",
+"2 ou 7 minimum",
+"CA/DG ou directoire",
+"Limitée",
+"IS"
+],
+[
+"SNC",
+"2 ou plus",
+"Gérant",
+"Indéfinie et solidaire",
+"IR"
+]
+]
 }
 ]
 }
@@ -9843,10 +9237,12 @@
 "domaine": "societes",
 "titre": "Les sociétés dans le sport et l'activité d'agent sportif",
 "fiche": [
-"Depuis la réforme de 2026, il faut connaître la possibilité de créer deux sociétés sportives, et pas seulement une société unique.",
-"L'EUSRL est une société sportive à associé unique.",
-"La SAOS possède un régime plus contraignant que celui d'une SA de droit commun.",
-"Le recours à une forme de droit commun ne dispense pas de respecter les obligations spécifiques du Code du sport."
+"Une société sportive peut prendre sept formes : EUSRL, SAOS, SASP, SARL, SA, SAS ou SCIC (L. 122-2).",
+"SAOS : l'association sportive doit détenir au moins un tiers du capital et des droits de vote (L. 122-6).",
+"Ne pas confondre la SAOS et la SASP, deux sociétés anonymes au régime différent.",
+"La convention entre l'association et la société dure de dix à quinze ans (L. 122-14). Sans opposition de l'administration sous deux mois, elle est réputée approuvée (L. 122-15).",
+"Depuis la réforme de 2026, une association peut avoir une société unique ou deux sociétés, l'une masculine, l'autre féminine (L. 122-1).",
+"L'agent peut exercer par une société ou comme préposé, mais c'est la personne physique qui détient la carte. Sportifs et entraîneurs qu'il peut représenter ne peuvent pas en être associés (L. 222-14)."
 ],
 "source": "Module 03, partie B",
 "cours": {
@@ -9884,32 +9280,16 @@
 "x": "Elle implique notamment :"
 },
 {
-"t": "p",
-"x": "La rémunération des joueurs."
-},
-{
-"t": "p",
-"x": "La vente de billets."
-},
-{
-"t": "p",
-"x": "Les droits audiovisuels."
-},
-{
-"t": "p",
-"x": "Les contrats de sponsoring."
-},
-{
-"t": "p",
-"x": "Le merchandising."
-},
-{
-"t": "p",
-"x": "Les transferts et mutations."
-},
-{
-"t": "p",
-"x": "Les contrats commerciaux."
+"t": "list",
+"items": [
+"La rémunération des joueurs.",
+"La vente de billets.",
+"Les droits audiovisuels.",
+"Les contrats de sponsoring.",
+"Le merchandising.",
+"Les transferts et mutations.",
+"Les contrats commerciaux."
+]
 },
 {
 "t": "p",
@@ -9920,16 +9300,12 @@
 "x": "Il faut distinguer :"
 },
 {
-"t": "p",
-"x": "L'association sportive."
-},
-{
-"t": "p",
-"x": "La société sportive."
-},
-{
-"t": "p",
-"x": "Le club sportif au sens économique et sportif."
+"t": "list",
+"items": [
+"L'association sportive.",
+"La société sportive.",
+"Le club sportif au sens économique et sportif."
+]
 },
 {
 "t": "p",
@@ -10052,36 +9428,25 @@
 "x": "Une association sportive gère :"
 },
 {
-"t": "p",
-"x": "Une équipe masculine professionnelle."
-},
-{
-"t": "p",
-"x": "Une équipe féminine professionnelle."
-},
-{
-"t": "p",
-"x": "Un centre de formation."
-},
-{
-"t": "p",
-"x": "Une activité commerciale importante."
+"t": "list",
+"items": [
+"Une équipe masculine professionnelle.",
+"Une équipe féminine professionnelle.",
+"Un centre de formation.",
+"Une activité commerciale importante."
+]
 },
 {
 "t": "lead",
 "x": "Elle peut organiser ses activités économiques au moyen :"
 },
 {
-"t": "p",
-"x": "D'une société unique regroupant les deux secteurs."
-},
-{
-"t": "p",
-"x": "De deux sociétés distinctes, masculine et féminine."
-},
-{
-"t": "p",
-"x": "Le choix dépend notamment de sa stratégie, de sa gouvernance et de ses besoins financiers."
+"t": "list",
+"items": [
+"D'une société unique regroupant les deux secteurs.",
+"De deux sociétés distinctes, masculine et féminine.",
+"Le choix dépend notamment de sa stratégie, de sa gouvernance et de ses besoins financiers."
+]
 },
 {
 "t": "memo",
@@ -10107,36 +9472,17 @@
 "x": "L'article L. 122-2 prévoit sept possibilités :"
 },
 {
-"t": "p",
-"x": "EUSRL."
-},
-{
-"t": "p",
-"x": "SAOS."
-},
-{
-"t": "p",
-"x": "SASP."
-},
-{
-"t": "p",
-"x": "SARL."
-},
-{
-"t": "p",
-"x": "SA."
-},
-{
-"t": "p",
-"x": "SAS."
-},
-{
-"t": "p",
-"x": "Société coopérative d'intérêt collectif (SCIC)."
-},
-{
-"t": "p",
-"x": "Il faut comprendre les caractéristiques des trois formes historiques spécifiquement sportives."
+"t": "list",
+"items": [
+"EUSRL.",
+"SAOS.",
+"SASP.",
+"SARL.",
+"SA.",
+"SAS.",
+"Société coopérative d'intérêt collectif (SCIC).",
+"Il faut comprendre les caractéristiques des trois formes historiques spécifiquement sportives."
+]
 },
 {
 "t": "h",
@@ -10329,24 +9675,14 @@
 "x": "Depuis la loi du 2 mars 2022, l'article L. 122-2 autorise également les sociétés sportives à prendre les formes suivantes :"
 },
 {
-"t": "p",
-"x": "SARL."
-},
-{
-"t": "p",
-"x": "SA."
-},
-{
-"t": "p",
-"x": "SAS."
-},
-{
-"t": "p",
-"x": "SCIC."
-},
-{
-"t": "p",
-"x": "Cela permet aux clubs de choisir une structure adaptée à leur organisation."
+"t": "list",
+"items": [
+"SARL.",
+"SA.",
+"SAS.",
+"SCIC.",
+"Cela permet aux clubs de choisir une structure adaptée à leur organisation."
+]
 },
 {
 "t": "vigilance",
@@ -10358,96 +9694,49 @@
 "x": "Tableau comparatif"
 },
 {
-"t": "p",
-"x": "Forme"
-},
-{
-"t": "p",
-"x": "Associés"
-},
-{
-"t": "p",
-"x": "Particularité"
-},
-{
-"t": "p",
-"x": "EUSRL"
-},
-{
-"t": "p",
-"x": "Société sportive unipersonnelle"
-},
-{
-"t": "p",
-"x": "SAOS"
-},
-{
-"t": "p",
-"x": "Plusieurs"
-},
-{
-"t": "p",
-"x": "Association détient au moins 1/3 du capital et des votes"
-},
-{
-"t": "p",
-"x": "SASP"
-},
-{
-"t": "p",
-"x": "Plusieurs"
-},
-{
-"t": "p",
-"x": "Société anonyme sportive professionnelle"
-},
-{
-"t": "p",
-"x": "SARL"
-},
-{
-"t": "p",
-"x": "2 à 100"
-},
-{
-"t": "p",
-"x": "Forme commerciale de droit commun"
-},
-{
-"t": "p",
-"x": "SA"
-},
-{
-"t": "p",
-"x": "2 ou 7 minimum"
-},
-{
-"t": "p",
-"x": "Forme de droit commun"
-},
-{
-"t": "p",
-"x": "SAS"
-},
-{
-"t": "p",
-"x": "1 ou plus"
-},
-{
-"t": "p",
-"x": "Grande liberté statutaire"
-},
-{
-"t": "p",
-"x": "SCIC"
-},
-{
-"t": "p",
-"x": "Plusieurs catégories d'associés"
-},
-{
-"t": "p",
-"x": "Gouvernance coopérative et intérêt collectif"
+"t": "table",
+"head": [
+"Forme",
+"Associés",
+"Particularité"
+],
+"rows": [
+[
+"EUSRL",
+"1",
+"Société sportive unipersonnelle"
+],
+[
+"SAOS",
+"Plusieurs",
+"L'association détient au moins 1/3 du capital et des votes"
+],
+[
+"SASP",
+"Plusieurs",
+"Société anonyme sportive professionnelle"
+],
+[
+"SARL",
+"2 à 100",
+"Forme commerciale de droit commun"
+],
+[
+"SA",
+"2 ou 7 minimum",
+"Forme de droit commun"
+],
+[
+"SAS",
+"1 ou plus",
+"Grande liberté statutaire"
+],
+[
+"SCIC",
+"Plusieurs catégories d'associés",
+"Gouvernance coopérative et intérêt collectif"
+]
+]
 },
 {
 "t": "vigilance",
@@ -10533,40 +9822,18 @@
 "x": "Elle permet notamment d'organiser :"
 },
 {
-"t": "p",
-"x": "La mise à disposition des installations."
-},
-{
-"t": "p",
-"x": "L'utilisation du nom et des signes distinctifs."
-},
-{
-"t": "p",
-"x": "Les relations entre les équipes."
-},
-{
-"t": "p",
-"x": "La gestion des activités sportives."
-},
-{
-"t": "p",
-"x": "Les obligations respectives."
-},
-{
-"t": "p",
-"x": "Les moyens humains et matériels."
-},
-{
-"t": "p",
-"x": "Les responsabilités financières."
-},
-{
-"t": "p",
-"x": "Les conditions d'utilisation des équipements."
-},
-{
-"t": "p",
-"x": "Les relations avec les partenaires institutionnels."
+"t": "list",
+"items": [
+"La mise à disposition des installations.",
+"L'utilisation du nom et des signes distinctifs.",
+"Les relations entre les équipes.",
+"La gestion des activités sportives.",
+"Les obligations respectives.",
+"Les moyens humains et matériels.",
+"Les responsabilités financières.",
+"Les conditions d'utilisation des équipements.",
+"Les relations avec les partenaires institutionnels."
+]
 },
 {
 "t": "h",
@@ -10585,24 +9852,14 @@
 "x": "La convention organise :"
 },
 {
-"t": "p",
-"x": "Les relations entre le centre de formation et l'équipe professionnelle."
-},
-{
-"t": "p",
-"x": "La mise à disposition des installations."
-},
-{
-"t": "p",
-"x": "Les conditions d'utilisation du stade."
-},
-{
-"t": "p",
-"x": "Les moyens financiers et humains."
-},
-{
-"t": "p",
-"x": "Les obligations de chacune des structures."
+"t": "list",
+"items": [
+"Les relations entre le centre de formation et l'équipe professionnelle.",
+"La mise à disposition des installations.",
+"Les conditions d'utilisation du stade.",
+"Les moyens financiers et humains.",
+"Les obligations de chacune des structures."
+]
 },
 {
 "t": "h",
@@ -10660,36 +9917,17 @@
 "x": "Un agent sportif peut souhaiter exercer sa profession dans un cadre sociétaire pour plusieurs raisons :"
 },
 {
-"t": "p",
-"x": "Organiser son activité professionnelle."
-},
-{
-"t": "p",
-"x": "Séparer les flux financiers de son activité et ses dépenses personnelles."
-},
-{
-"t": "p",
-"x": "Employer des collaborateurs."
-},
-{
-"t": "p",
-"x": "Organiser ses relations avec d'autres professionnels."
-},
-{
-"t": "p",
-"x": "Structurer son activité commerciale."
-},
-{
-"t": "p",
-"x": "Préparer le développement de son entreprise."
-},
-{
-"t": "p",
-"x": "Mais l'exercice de l'activité d'agent sportif est réglementé."
-},
-{
-"t": "p",
-"x": "La création d'une société ne permet donc pas de contourner les conditions d'accès à la profession."
+"t": "list",
+"items": [
+"Organiser son activité professionnelle.",
+"Séparer les flux financiers de son activité et ses dépenses personnelles.",
+"Employer des collaborateurs.",
+"Organiser ses relations avec d'autres professionnels.",
+"Structurer son activité commerciale.",
+"Préparer le développement de son entreprise.",
+"Mais l'exercice de l'activité d'agent sportif est réglementé.",
+"La création d'une société ne permet donc pas de contourner les conditions d'accès à la profession."
+]
 },
 {
 "t": "h",
@@ -10700,20 +9938,13 @@
 "x": "Dans sa version actuellement applicable, l'article L. 222-8 prévoit que l'agent sportif peut :"
 },
 {
-"t": "p",
-"x": "Constituer une société pour l'exercice de sa profession."
-},
-{
-"t": "p",
-"x": "Ou être préposé d'une société."
-},
-{
-"t": "p",
-"x": "La société constitue un support d'exercice de l'activité."
-},
-{
-"t": "p",
-"x": "Elle ne remplace pas la personne physique titulaire de l'autorisation professionnelle."
+"t": "list",
+"items": [
+"Constituer une société pour l'exercice de sa profession.",
+"Ou être préposé d'une société.",
+"La société constitue un support d'exercice de l'activité.",
+"Elle ne remplace pas la personne physique titulaire de l'autorisation professionnelle."
+]
 },
 {
 "t": "cas",
@@ -10742,24 +9973,14 @@
 "x": "L'agent doit communiquer à la fédération délégataire :"
 },
 {
-"t": "p",
-"x": "L'identité des dirigeants."
-},
-{
-"t": "p",
-"x": "L'identité des associés ou actionnaires."
-},
-{
-"t": "p",
-"x": "Le bulletin n° 3 de leur casier judiciaire."
-},
-{
-"t": "p",
-"x": "Il doit informer la fédération de tout changement affectant cette liste."
-},
-{
-"t": "p",
-"x": "Cette obligation vise à permettre à la fédération de contrôler la conformité de la structure."
+"t": "list",
+"items": [
+"L'identité des dirigeants.",
+"L'identité des associés ou actionnaires.",
+"Le bulletin n° 3 de leur casier judiciaire.",
+"Il doit informer la fédération de tout changement affectant cette liste.",
+"Cette obligation vise à permettre à la fédération de contrôler la conformité de la structure."
+]
 },
 {
 "t": "h",
@@ -10774,20 +9995,13 @@
 "x": "Elle doit notamment pouvoir identifier :"
 },
 {
-"t": "p",
-"x": "L'agent titulaire de la carte professionnelle."
-},
-{
-"t": "p",
-"x": "La société par laquelle il exerce."
-},
-{
-"t": "p",
-"x": "Les personnes qui dirigent la société."
-},
-{
-"t": "p",
-"x": "Les personnes qui détiennent des parts ou des actions."
+"t": "list",
+"items": [
+"L'agent titulaire de la carte professionnelle.",
+"La société par laquelle il exerce.",
+"Les personnes qui dirigent la société.",
+"Les personnes qui détiennent des parts ou des actions."
+]
 },
 {
 "t": "p",
@@ -10846,16 +10060,12 @@
 "x": "Il faut distinguer trois choses :"
 },
 {
-"t": "p",
-"x": "La personne physique titulaire de la carte professionnelle."
-},
-{
-"t": "p",
-"x": "La personne morale utilisée pour organiser l'activité."
-},
-{
-"t": "p",
-"x": "Les dirigeants, associés et actionnaires soumis aux contrôles prévus par le Code du sport."
+"t": "list",
+"items": [
+"La personne physique titulaire de la carte professionnelle.",
+"La personne morale utilisée pour organiser l'activité.",
+"Les dirigeants, associés et actionnaires soumis aux contrôles prévus par le Code du sport."
+]
 },
 {
 "t": "vigilance",
@@ -10889,32 +10099,24 @@
 "x": "Avantages :"
 },
 {
-"t": "p",
-"x": "Simplicité de fonctionnement."
-},
-{
-"t": "p",
-"x": "Formalités réduites."
-},
-{
-"t": "p",
-"x": "Structure adaptée à une activité individuelle."
+"t": "list",
+"items": [
+"Simplicité de fonctionnement.",
+"Formalités réduites.",
+"Structure adaptée à une activité individuelle."
+]
 },
 {
 "t": "lead",
 "x": "Limites :"
 },
 {
-"t": "p",
-"x": "Organisation patrimoniale et financière différente de celle d'une société."
-},
-{
-"t": "p",
-"x": "Développement d'une structure collective plus complexe."
-},
-{
-"t": "p",
-"x": "Nécessité de bien gérer les responsabilités professionnelles."
+"t": "list",
+"items": [
+"Organisation patrimoniale et financière différente de celle d'une société.",
+"Développement d'une structure collective plus complexe.",
+"Nécessité de bien gérer les responsabilités professionnelles."
+]
 },
 {
 "t": "h",
@@ -10929,32 +10131,24 @@
 "x": "Avantages :"
 },
 {
-"t": "p",
-"x": "Un seul associé."
-},
-{
-"t": "p",
-"x": "Grande liberté statutaire."
-},
-{
-"t": "p",
-"x": "Responsabilité des associés limitée aux apports en principe."
-},
-{
-"t": "p",
-"x": "Possibilité de faire entrer de nouveaux associés."
+"t": "list",
+"items": [
+"Un seul associé.",
+"Grande liberté statutaire.",
+"Responsabilité des associés limitée aux apports en principe.",
+"Possibilité de faire entrer de nouveaux associés."
+]
 },
 {
 "t": "lead",
 "x": "Limites :"
 },
 {
-"t": "p",
-"x": "Formalisme sociétaire."
-},
-{
-"t": "p",
-"x": "Coût de fonctionnement."
+"t": "list",
+"items": [
+"Formalisme sociétaire.",
+"Coût de fonctionnement."
+]
 },
 {
 "t": "p",
@@ -10973,32 +10167,24 @@
 "x": "Avantages :"
 },
 {
-"t": "p",
-"x": "Un seul associé."
-},
-{
-"t": "p",
-"x": "Fonctionnement encadré."
-},
-{
-"t": "p",
-"x": "Possibilité d'un régime fiscal à l'IR selon les conditions."
-},
-{
-"t": "p",
-"x": "Possibilité d'opter pour l'IS."
+"t": "list",
+"items": [
+"Un seul associé.",
+"Fonctionnement encadré.",
+"Possibilité d'un régime fiscal à l'IR selon les conditions.",
+"Possibilité d'opter pour l'IS."
+]
 },
 {
 "t": "lead",
 "x": "Limites :"
 },
 {
-"t": "p",
-"x": "Moins de souplesse statutaire que la SASU."
-},
-{
-"t": "p",
-"x": "Régime social spécifique du gérant associé unique."
+"t": "list",
+"items": [
+"Moins de souplesse statutaire que la SASU.",
+"Régime social spécifique du gérant associé unique."
+]
 },
 {
 "t": "h",
@@ -11013,112 +10199,70 @@
 "x": "Avantages :"
 },
 {
-"t": "p",
-"x": "Organisation personnalisable."
-},
-{
-"t": "p",
-"x": "Entrée possible de nouveaux investisseurs."
-},
-{
-"t": "p",
-"x": "Répartition des responsabilités de gouvernance."
-},
-{
-"t": "p",
-"x": "Possibilité de prévoir des mécanismes de sortie et d'agrément."
+"t": "list",
+"items": [
+"Organisation personnalisable.",
+"Entrée possible de nouveaux investisseurs.",
+"Répartition des responsabilités de gouvernance.",
+"Possibilité de prévoir des mécanismes de sortie et d'agrément."
+]
 },
 {
 "t": "lead",
 "x": "Limites :"
 },
 {
-"t": "p",
-"x": "Nécessité de rédiger des statuts précis."
-},
-{
-"t": "p",
-"x": "Risques de conflits entre associés."
-},
-{
-"t": "p",
-"x": "Gouvernance potentiellement complexe."
+"t": "list",
+"items": [
+"Nécessité de rédiger des statuts précis.",
+"Risques de conflits entre associés.",
+"Gouvernance potentiellement complexe."
+]
 },
 {
 "t": "h",
 "x": "Les critères de choix"
 },
 {
-"t": "p",
-"x": "Critère"
-},
-{
-"t": "p",
-"x": "Question à se poser"
-},
-{
-"t": "p",
-"x": "Associés"
-},
-{
-"t": "p",
-"x": "Seul ou à plusieurs ?"
-},
-{
-"t": "p",
-"x": "Capital"
-},
-{
-"t": "p",
-"x": "Quel investissement initial ?"
-},
-{
-"t": "p",
-"x": "Responsabilité"
-},
-{
-"t": "p",
-"x": "Quel niveau de protection patrimoniale ?"
-},
-{
-"t": "p",
-"x": "Fiscalité"
-},
-{
-"t": "p",
-"x": "IR ou IS ?"
-},
-{
-"t": "p",
-"x": "Social"
-},
-{
-"t": "p",
-"x": "Quel statut pour le dirigeant ?"
-},
-{
-"t": "p",
-"x": "Développement"
-},
-{
-"t": "p",
-"x": "Prévoir de nouveaux associés ?"
-},
-{
-"t": "p",
-"x": "Gouvernance"
-},
-{
-"t": "p",
-"x": "Quel niveau de liberté statutaire ?"
-},
-{
-"t": "p",
-"x": "Réglementation"
-},
-{
-"t": "p",
-"x": "La structure respecte-t-elle le Code du sport ?"
+"t": "table",
+"head": [
+"Critère",
+"Question à se poser"
+],
+"rows": [
+[
+"Associés",
+"Seul ou à plusieurs ?"
+],
+[
+"Capital",
+"Quel investissement initial ?"
+],
+[
+"Responsabilité",
+"Quel niveau de protection patrimoniale ?"
+],
+[
+"Fiscalité",
+"IR ou IS ?"
+],
+[
+"Social",
+"Quel statut pour le dirigeant ?"
+],
+[
+"Développement",
+"Prévoir de nouveaux associés ?"
+],
+[
+"Gouvernance",
+"Quel niveau de liberté statutaire ?"
+],
+[
+"Réglementation",
+"La structure respecte-t-elle le Code du sport ?"
+]
+]
 },
 {
 "t": "p",
@@ -11171,16 +10315,12 @@
 "x": "Un taux réduit de 15 % peut s'appliquer à la fraction des bénéfices jusqu'à 42 500 €, sous réserve de conditions notamment relatives :"
 },
 {
-"t": "p",
-"x": "Au chiffre d'affaires."
-},
-{
-"t": "p",
-"x": "À la détention du capital."
-},
-{
-"t": "p",
-"x": "À la nature des associés."
+"t": "list",
+"items": [
+"Au chiffre d'affaires.",
+"À la détention du capital.",
+"À la nature des associés."
+]
 },
 {
 "t": "h",
@@ -11221,24 +10361,14 @@
 "x": "Il faut distinguer :"
 },
 {
-"t": "p",
-"x": "La rémunération du mandat social."
-},
-{
-"t": "p",
-"x": "La rémunération d'un contrat de travail réel et distinct."
-},
-{
-"t": "p",
-"x": "Les dividendes."
-},
-{
-"t": "p",
-"x": "Les remboursements de frais professionnels."
-},
-{
-"t": "p",
-"x": "Ces revenus n'ont pas nécessairement le même traitement fiscal et social."
+"t": "list",
+"items": [
+"La rémunération du mandat social.",
+"La rémunération d'un contrat de travail réel et distinct.",
+"Les dividendes.",
+"Les remboursements de frais professionnels.",
+"Ces revenus n'ont pas nécessairement le même traitement fiscal et social."
+]
 },
 {
 "t": "cas",
@@ -11255,16 +10385,12 @@
 "x": "Il peut percevoir :"
 },
 {
-"t": "p",
-"x": "Une rémunération de président."
-},
-{
-"t": "p",
-"x": "Des dividendes lorsque les conditions de distribution sont réunies."
-},
-{
-"t": "p",
-"x": "La rémunération et les dividendes ne sont pas soumis au même régime social."
+"t": "list",
+"items": [
+"Une rémunération de président.",
+"Des dividendes lorsque les conditions de distribution sont réunies.",
+"La rémunération et les dividendes ne sont pas soumis au même régime social."
+]
 },
 {
 "t": "h",
@@ -11279,24 +10405,14 @@
 "x": "Il faut notamment prendre en compte :"
 },
 {
-"t": "p",
-"x": "Les charges déductibles."
-},
-{
-"t": "p",
-"x": "Les amortissements."
-},
-{
-"t": "p",
-"x": "Les provisions."
-},
-{
-"t": "p",
-"x": "Les réintégrations fiscales."
-},
-{
-"t": "p",
-"x": "Les déductions fiscales."
+"t": "list",
+"items": [
+"Les charges déductibles.",
+"Les amortissements.",
+"Les provisions.",
+"Les réintégrations fiscales.",
+"Les déductions fiscales."
+]
 },
 {
 "t": "vigilance",
@@ -11316,16 +10432,12 @@
 "x": "Une SAS d'agent sportif réalise :"
 },
 {
-"t": "p",
-"x": "Chiffre d'affaires : 300 000 €."
-},
-{
-"t": "p",
-"x": "Charges déductibles : 180 000 €."
-},
-{
-"t": "p",
-"x": "Résultat fiscal simplifié : 120 000 €."
+"t": "list",
+"items": [
+"Chiffre d'affaires : 300 000 €.",
+"Charges déductibles : 180 000 €.",
+"Résultat fiscal simplifié : 120 000 €."
+]
 },
 {
 "t": "p",
@@ -11350,11 +10462,12 @@
 "domaine": "societes",
 "titre": "Les difficultés des entreprises",
 "fiche": [
-"Cessation des paiements et insolvabilité patrimoniale ne sont pas des notions strictement identiques.",
-"Le redressement judiciaire ne signifie pas automatiquement la disparition de l'entreprise.",
-"La liquidation judiciaire est la procédure de traitement des difficultés lorsque le redressement est manifestement impossible.",
-"Le droit des entreprises en difficulté peut avoir des conséquences directes sur l'accès à la profession d'agent sportif, par l'intermédiaire de l'article L. 222-11.",
-"La DNCG ne remplace pas le tribunal et une décision sportive ou financière n'est pas automatiquement une procédure collective."
+"Mandat ad hoc et conciliation : procédures amiables, à l'initiative du dirigeant.",
+"Sauvegarde : pour un débiteur qui n'est pas en cessation des paiements mais a des difficultés qu'il ne peut surmonter (L. 620-1 du Code de commerce).",
+"Redressement judiciaire : il ne signifie pas automatiquement la disparition de l'entreprise.",
+"Liquidation judiciaire : deux conditions cumulatives, la cessation des paiements et un redressement manifestement impossible (L. 640-1 du Code de commerce).",
+"La liquidation n'entraîne pas automatiquement la faillite personnelle du dirigeant : il faut une sanction distincte, qui peut lui fermer l'accès à la profession d'agent.",
+"La DNCG ne remplace pas le tribunal : une décision financière sportive n'est pas une procédure collective."
 ],
 "source": "Module 03, partie C",
 "cours": {
@@ -11382,28 +10495,15 @@
 "x": "Il doit notamment comprendre :"
 },
 {
-"t": "p",
-"x": "Les dispositifs permettant d'éviter la cessation des paiements."
-},
-{
-"t": "p",
-"x": "Les procédures de sauvegarde."
-},
-{
-"t": "p",
-"x": "Le redressement judiciaire."
-},
-{
-"t": "p",
-"x": "La liquidation judiciaire."
-},
-{
-"t": "p",
-"x": "Les conséquences sur la responsabilité des dirigeants."
-},
-{
-"t": "p",
-"x": "Les incapacités pouvant affecter l'exercice de la profession d'agent sportif."
+"t": "list",
+"items": [
+"Les dispositifs permettant d'éviter la cessation des paiements.",
+"Les procédures de sauvegarde.",
+"Le redressement judiciaire.",
+"La liquidation judiciaire.",
+"Les conséquences sur la responsabilité des dirigeants.",
+"Les incapacités pouvant affecter l'exercice de la profession d'agent sportif."
+]
 },
 {
 "t": "p",
@@ -11527,16 +10627,12 @@
 "x": "Trois mécanismes doivent être distingués :"
 },
 {
-"t": "p",
-"x": "Le mandat ad hoc."
-},
-{
-"t": "p",
-"x": "La conciliation."
-},
-{
-"t": "p",
-"x": "La sauvegarde."
+"t": "list",
+"items": [
+"Le mandat ad hoc.",
+"La conciliation.",
+"La sauvegarde."
+]
 },
 {
 "t": "h",
@@ -11579,36 +10675,17 @@
 "x": "Le mandataire peut notamment :"
 },
 {
-"t": "p",
-"x": "Aider à négocier avec les banques."
-},
-{
-"t": "p",
-"x": "Rechercher un accord avec les fournisseurs."
-},
-{
-"t": "p",
-"x": "Renégocier certains contrats."
-},
-{
-"t": "p",
-"x": "Faciliter un rééchelonnement des dettes."
-},
-{
-"t": "p",
-"x": "Aider à résoudre un conflit entre associés."
-},
-{
-"t": "p",
-"x": "Accompagner la restructuration de l'entreprise."
-},
-{
-"t": "p",
-"x": "Il ne remplace pas le dirigeant."
-},
-{
-"t": "p",
-"x": "Le dirigeant conserve ses pouvoirs de gestion."
+"t": "list",
+"items": [
+"Aider à négocier avec les banques.",
+"Rechercher un accord avec les fournisseurs.",
+"Renégocier certains contrats.",
+"Faciliter un rééchelonnement des dettes.",
+"Aider à résoudre un conflit entre associés.",
+"Accompagner la restructuration de l'entreprise.",
+"Il ne remplace pas le dirigeant.",
+"Le dirigeant conserve ses pouvoirs de gestion."
+]
 },
 {
 "t": "p",
@@ -11687,24 +10764,14 @@
 "x": "La conciliation peut être demandée par une entreprise :"
 },
 {
-"t": "p",
-"x": "Qui rencontre une difficulté juridique, économique ou financière."
-},
-{
-"t": "p",
-"x": "Qui n'est pas en cessation des paiements."
-},
-{
-"t": "p",
-"x": "Ou qui est en cessation des paiements depuis moins de 45 jours."
-},
-{
-"t": "p",
-"x": "D. Durée La procédure est ouverte pour une durée maximale de quatre mois."
-},
-{
-"t": "p",
-"x": "Elle peut être prolongée dans les conditions légales, sans dépasser cinq mois au total."
+"t": "list",
+"items": [
+"Qui rencontre une difficulté juridique, économique ou financière.",
+"Qui n'est pas en cessation des paiements.",
+"Ou qui est en cessation des paiements depuis moins de 45 jours.",
+"D. Durée La procédure est ouverte pour une durée maximale de quatre mois.",
+"Elle peut être prolongée dans les conditions légales, sans dépasser cinq mois au total."
+]
 },
 {
 "t": "p",
@@ -11719,24 +10786,14 @@
 "x": "Il peut notamment négocier :"
 },
 {
-"t": "p",
-"x": "Des délais de paiement."
-},
-{
-"t": "p",
-"x": "Des remises de dettes."
-},
-{
-"t": "p",
-"x": "Des abandons de créances."
-},
-{
-"t": "p",
-"x": "De nouveaux financements."
-},
-{
-"t": "p",
-"x": "Des réaménagements contractuels."
+"t": "list",
+"items": [
+"Des délais de paiement.",
+"Des remises de dettes.",
+"Des abandons de créances.",
+"De nouveaux financements.",
+"Des réaménagements contractuels."
+]
 },
 {
 "t": "p",
@@ -11831,64 +10888,24 @@
 "x": "Elle permet de réorganiser l'entreprise afin de :"
 },
 {
-"t": "p",
-"x": "Poursuivre l'activité."
-},
-{
-"t": "p",
-"x": "Maintenir les emplois."
-},
-{
-"t": "p",
-"x": "Réorganiser les dettes."
-},
-{
-"t": "p",
-"x": "Préparer un plan de sauvegarde."
-},
-{
-"t": "p",
-"x": "B. Condition fondamentale L'entreprise ne doit pas être en état de cessation des paiements."
-},
-{
-"t": "p",
-"x": "C'est la différence essentielle avec le redressement judiciaire."
-},
-{
-"t": "p",
-"x": "C. Qui peut demander la sauvegarde ? La procédure est demandée par le débiteur lui-même."
-},
-{
-"t": "p",
-"x": "Un créancier ne peut pas imposer l'ouverture d'une procédure de sauvegarde à l'entreprise."
-},
-{
-"t": "p",
-"x": "D. Déroulement Dépôt de la demande."
-},
-{
-"t": "p",
-"x": "Examen par le tribunal."
-},
-{
-"t": "p",
-"x": "Ouverture de la procédure."
-},
-{
-"t": "p",
-"x": "Période d'observation."
-},
-{
-"t": "p",
-"x": "Établissement d'un bilan économique et social."
-},
-{
-"t": "p",
-"x": "Élaboration d'un plan."
-},
-{
-"t": "p",
-"x": "Adoption du plan par le tribunal si les conditions sont réunies."
+"t": "list",
+"items": [
+"Poursuivre l'activité.",
+"Maintenir les emplois.",
+"Réorganiser les dettes.",
+"Préparer un plan de sauvegarde.",
+"B. Condition fondamentale L'entreprise ne doit pas être en état de cessation des paiements.",
+"C'est la différence essentielle avec le redressement judiciaire.",
+"C. Qui peut demander la sauvegarde ? La procédure est demandée par le débiteur lui-même.",
+"Un créancier ne peut pas imposer l'ouverture d'une procédure de sauvegarde à l'entreprise.",
+"D. Déroulement Dépôt de la demande.",
+"Examen par le tribunal.",
+"Ouverture de la procédure.",
+"Période d'observation.",
+"Établissement d'un bilan économique et social.",
+"Élaboration d'un plan.",
+"Adoption du plan par le tribunal si les conditions sont réunies."
+]
 },
 {
 "t": "p",
@@ -11911,20 +10928,13 @@
 "x": "Une société d'agents sportifs rencontre des difficultés importantes :"
 },
 {
-"t": "p",
-"x": "Plusieurs contrats commerciaux sont perdus."
-},
-{
-"t": "p",
-"x": "Les revenus diminuent."
-},
-{
-"t": "p",
-"x": "Les charges fixes restent élevées."
-},
-{
-"t": "p",
-"x": "L'entreprise ne peut pas surmonter seule ses difficultés."
+"t": "list",
+"items": [
+"Plusieurs contrats commerciaux sont perdus.",
+"Les revenus diminuent.",
+"Les charges fixes restent élevées.",
+"L'entreprise ne peut pas surmonter seule ses difficultés."
+]
 },
 {
 "t": "p",
@@ -11935,116 +10945,51 @@
 "x": "Tableau comparatif des procédures préventives"
 },
 {
-"t": "p",
-"x": "Critère"
-},
-{
-"t": "p",
-"x": "Mandat ad hoc"
-},
-{
-"t": "p",
-"x": "Conciliation"
-},
-{
-"t": "p",
-"x": "Sauvegarde"
-},
-{
-"t": "p",
-"x": "Nature"
-},
-{
-"t": "p",
-"x": "Amiable"
-},
-{
-"t": "p",
-"x": "Amiable"
-},
-{
-"t": "p",
-"x": "Judiciaire"
-},
-{
-"t": "p",
-"x": "Initiative"
-},
-{
-"t": "p",
-"x": "Dirigeant"
-},
-{
-"t": "p",
-"x": "Dirigeant"
-},
-{
-"t": "p",
-"x": "Débiteur"
-},
-{
-"t": "p",
-"x": "Cessation des paiements"
-},
-{
-"t": "p",
-"x": "Non"
-},
-{
-"t": "p",
-"x": "Moins de 45 jours maximum"
-},
-{
-"t": "p",
-"x": "Non"
-},
-{
-"t": "p",
-"x": "Confidentialité"
-},
-{
-"t": "p",
-"x": "Oui"
-},
-{
-"t": "p",
-"x": "Oui en principe"
-},
-{
-"t": "p",
-"x": "Non"
-},
-{
-"t": "p",
-"x": "Durée"
-},
-{
-"t": "p",
-"x": "Pas de maximum général"
-},
-{
-"t": "p",
-"x": "5 mois maximum"
-},
-{
-"t": "p",
-"x": "Selon procédure"
-},
-{
-"t": "p",
-"x": "Objectif"
-},
-{
-"t": "p",
-"x": "Négocier"
-},
-{
-"t": "p",
-"x": "Trouver un accord"
-},
-{
-"t": "p",
-"x": "Réorganiser"
+"t": "table",
+"head": [
+"Critère",
+"Mandat ad hoc",
+"Conciliation",
+"Sauvegarde"
+],
+"rows": [
+[
+"Nature",
+"Amiable",
+"Amiable",
+"Judiciaire"
+],
+[
+"Initiative",
+"Dirigeant",
+"Dirigeant",
+"Débiteur"
+],
+[
+"Cessation des paiements",
+"Non",
+"Moins de 45 jours maximum",
+"Non"
+],
+[
+"Confidentialité",
+"Oui",
+"Oui en principe",
+"Non"
+],
+[
+"Durée",
+"Pas de maximum général",
+"5 mois maximum",
+"Selon procédure"
+],
+[
+"Objectif",
+"Négocier",
+"Trouver un accord",
+"Réorganiser"
+]
+]
 },
 {
 "t": "vigilance",
@@ -12078,20 +11023,13 @@
 "x": "Son objectif est de permettre :"
 },
 {
-"t": "p",
-"x": "La poursuite de l'activité."
-},
-{
-"t": "p",
-"x": "Le maintien de l'emploi."
-},
-{
-"t": "p",
-"x": "L'apurement du passif."
-},
-{
-"t": "p",
-"x": "Il ne s'agit donc pas nécessairement de mettre fin à l'entreprise."
+"t": "list",
+"items": [
+"La poursuite de l'activité.",
+"Le maintien de l'emploi.",
+"L'apurement du passif.",
+"Il ne s'agit donc pas nécessairement de mettre fin à l'entreprise."
+]
 },
 {
 "t": "h",
@@ -12102,12 +11040,11 @@
 "x": "Deux conditions principales :"
 },
 {
-"t": "p",
-"x": "L'entreprise est en cessation des paiements."
-},
-{
-"t": "p",
-"x": "Le redressement de l'entreprise reste possible."
+"t": "list",
+"items": [
+"L'entreprise est en cessation des paiements.",
+"Le redressement de l'entreprise reste possible."
+]
 },
 {
 "t": "cas",
@@ -12124,24 +11061,14 @@
 "x": "Cependant, elle possède encore :"
 },
 {
-"t": "p",
-"x": "Un portefeuille de clients."
-},
-{
-"t": "p",
-"x": "Des contrats en cours."
-},
-{
-"t": "p",
-"x": "Une activité rentable potentielle."
-},
-{
-"t": "p",
-"x": "Des perspectives de recettes."
-},
-{
-"t": "p",
-"x": "Un redressement judiciaire peut être envisagé."
+"t": "list",
+"items": [
+"Un portefeuille de clients.",
+"Des contrats en cours.",
+"Une activité rentable potentielle.",
+"Des perspectives de recettes.",
+"Un redressement judiciaire peut être envisagé."
+]
 },
 {
 "t": "h",
@@ -12152,16 +11079,12 @@
 "x": "La procédure peut être ouverte à la demande :"
 },
 {
-"t": "p",
-"x": "Du dirigeant."
-},
-{
-"t": "p",
-"x": "D'un créancier."
-},
-{
-"t": "p",
-"x": "Du ministère public."
+"t": "list",
+"items": [
+"Du dirigeant.",
+"D'un créancier.",
+"Du ministère public."
+]
 },
 {
 "t": "p",
@@ -12224,28 +11147,15 @@
 "x": "Elle sert notamment à :"
 },
 {
-"t": "p",
-"x": "Examiner les comptes."
-},
-{
-"t": "p",
-"x": "Analyser les difficultés."
-},
-{
-"t": "p",
-"x": "Évaluer les perspectives."
-},
-{
-"t": "p",
-"x": "Préparer un plan de redressement."
-},
-{
-"t": "p",
-"x": "Étudier les possibilités de cession."
-},
-{
-"t": "p",
-"x": "La durée initiale est de six mois, renouvelable dans les conditions légales."
+"t": "list",
+"items": [
+"Examiner les comptes.",
+"Analyser les difficultés.",
+"Évaluer les perspectives.",
+"Préparer un plan de redressement.",
+"Étudier les possibilités de cession.",
+"La durée initiale est de six mois, renouvelable dans les conditions légales."
+]
 },
 {
 "t": "h",
@@ -12260,24 +11170,14 @@
 "x": "Il peut prévoir :"
 },
 {
-"t": "p",
-"x": "Des délais de paiement."
-},
-{
-"t": "p",
-"x": "Des remises de dettes."
-},
-{
-"t": "p",
-"x": "Une réorganisation de l'activité."
-},
-{
-"t": "p",
-"x": "Une restructuration des effectifs."
-},
-{
-"t": "p",
-"x": "Une cession de certaines activités."
+"t": "list",
+"items": [
+"Des délais de paiement.",
+"Des remises de dettes.",
+"Une réorganisation de l'activité.",
+"Une restructuration des effectifs.",
+"Une cession de certaines activités."
+]
 },
 {
 "t": "h",
@@ -12292,20 +11192,13 @@
 "x": "Selon les circonstances, il peut :"
 },
 {
-"t": "p",
-"x": "Continuer à diriger l'entreprise."
-},
-{
-"t": "p",
-"x": "Être assisté par un administrateur."
-},
-{
-"t": "p",
-"x": "Voir certains de ses pouvoirs limités."
-},
-{
-"t": "p",
-"x": "Être remplacé dans les cas prévus par la loi."
+"t": "list",
+"items": [
+"Continuer à diriger l'entreprise.",
+"Être assisté par un administrateur.",
+"Voir certains de ses pouvoirs limités.",
+"Être remplacé dans les cas prévus par la loi."
+]
 },
 {
 "t": "h",
@@ -12351,12 +11244,11 @@
 "x": "La liquidation judiciaire est une procédure collective destinée à mettre fin à l'activité d'une entreprise lorsque deux conditions sont réunies :"
 },
 {
-"t": "p",
-"x": "Elle est en cessation des paiements."
-},
-{
-"t": "p",
-"x": "Son redressement est manifestement impossible."
+"t": "list",
+"items": [
+"Elle est en cessation des paiements.",
+"Son redressement est manifestement impossible."
+]
 },
 {
 "t": "p",
@@ -12419,28 +11311,15 @@
 "x": "Le liquidateur intervient notamment pour :"
 },
 {
-"t": "p",
-"x": "Réaliser l'actif."
-},
-{
-"t": "p",
-"x": "Recouvrer les créances."
-},
-{
-"t": "p",
-"x": "Vérifier le passif."
-},
-{
-"t": "p",
-"x": "Vendre les biens."
-},
-{
-"t": "p",
-"x": "Répartir les sommes disponibles."
-},
-{
-"t": "p",
-"x": "Effectuer les formalités de clôture."
+"t": "list",
+"items": [
+"Réaliser l'actif.",
+"Recouvrer les créances.",
+"Vérifier le passif.",
+"Vendre les biens.",
+"Répartir les sommes disponibles.",
+"Effectuer les formalités de clôture."
+]
 },
 {
 "t": "h",
@@ -12451,20 +11330,13 @@
 "x": "La liquidation peut entraîner :"
 },
 {
-"t": "p",
-"x": "La cessation de l'activité."
-},
-{
-"t": "p",
-"x": "La rupture des contrats de travail selon les règles applicables."
-},
-{
-"t": "p",
-"x": "La vente des actifs."
-},
-{
-"t": "p",
-"x": "La disparition de la société après clôture et radiation, selon les formalités requises."
+"t": "list",
+"items": [
+"La cessation de l'activité.",
+"La rupture des contrats de travail selon les règles applicables.",
+"La vente des actifs.",
+"La disparition de la société après clôture et radiation, selon les formalités requises."
+]
 },
 {
 "t": "h",
@@ -12518,36 +11390,17 @@
 "x": "Il peut engager sa responsabilité dans différentes situations :"
 },
 {
-"t": "p",
-"x": "Faute de gestion."
-},
-{
-"t": "p",
-"x": "Violation des statuts."
-},
-{
-"t": "p",
-"x": "Violation de la loi."
-},
-{
-"t": "p",
-"x": "Dissimulation d'actifs."
-},
-{
-"t": "p",
-"x": "Poursuite abusive d'une activité déficitaire."
-},
-{
-"t": "p",
-"x": "Déclaration tardive de cessation des paiements."
-},
-{
-"t": "p",
-"x": "Fraude."
-},
-{
-"t": "p",
-"x": "Détournement de biens sociaux."
+"t": "list",
+"items": [
+"Faute de gestion.",
+"Violation des statuts.",
+"Violation de la loi.",
+"Dissimulation d'actifs.",
+"Poursuite abusive d'une activité déficitaire.",
+"Déclaration tardive de cessation des paiements.",
+"Fraude.",
+"Détournement de biens sociaux."
+]
 },
 {
 "t": "p",
@@ -12598,16 +11451,12 @@
 "x": "Il prévoit qu'une personne ne peut obtenir ou détenir une carte professionnelle d'agent sportif dans certaines situations, notamment si elle :"
 },
 {
-"t": "p",
-"x": "A été définitivement condamnée pour certains crimes ou délits mentionnés par le Code du sport."
-},
-{
-"t": "p",
-"x": "A fait l'objet d'une condamnation pour fraude fiscale dans les conditions prévues par le texte."
-},
-{
-"t": "p",
-"x": "A été frappée de faillite personnelle."
+"t": "list",
+"items": [
+"A été définitivement condamnée pour certains crimes ou délits mentionnés par le Code du sport.",
+"A fait l'objet d'une condamnation pour fraude fiscale dans les conditions prévues par le texte.",
+"A été frappée de faillite personnelle."
+]
 },
 {
 "t": "p",
@@ -12683,44 +11532,19 @@
 "x": "Ils doivent notamment gérer :"
 },
 {
-"t": "p",
-"x": "Les salaires des joueurs."
-},
-{
-"t": "p",
-"x": "Les indemnités de transfert."
-},
-{
-"t": "p",
-"x": "Les charges sociales."
-},
-{
-"t": "p",
-"x": "Les droits audiovisuels."
-},
-{
-"t": "p",
-"x": "Les recettes de billetterie."
-},
-{
-"t": "p",
-"x": "Les partenariats commerciaux."
-},
-{
-"t": "p",
-"x": "Les dépenses d'infrastructures."
-},
-{
-"t": "p",
-"x": "Les coûts de formation."
-},
-{
-"t": "p",
-"x": "Leur équilibre financier dépend souvent de recettes variables."
-},
-{
-"t": "p",
-"x": "Une baisse importante des revenus peut rapidement provoquer des difficultés de trésorerie."
+"t": "list",
+"items": [
+"Les salaires des joueurs.",
+"Les indemnités de transfert.",
+"Les charges sociales.",
+"Les droits audiovisuels.",
+"Les recettes de billetterie.",
+"Les partenariats commerciaux.",
+"Les dépenses d'infrastructures.",
+"Les coûts de formation.",
+"Leur équilibre financier dépend souvent de recettes variables.",
+"Une baisse importante des revenus peut rapidement provoquer des difficultés de trésorerie."
+]
 },
 {
 "t": "h",
@@ -12739,28 +11563,15 @@
 "x": "Elle peut notamment :"
 },
 {
-"t": "p",
-"x": "Examiner les comptes."
-},
-{
-"t": "p",
-"x": "Contrôler les budgets prévisionnels."
-},
-{
-"t": "p",
-"x": "Vérifier les engagements financiers."
-},
-{
-"t": "p",
-"x": "Encadrer la masse salariale."
-},
-{
-"t": "p",
-"x": "Prononcer des mesures relevant de ses compétences réglementaires."
-},
-{
-"t": "p",
-"x": "Il faut distinguer ce contrôle sportif et financier des procédures judiciaires du Code de commerce."
+"t": "list",
+"items": [
+"Examiner les comptes.",
+"Contrôler les budgets prévisionnels.",
+"Vérifier les engagements financiers.",
+"Encadrer la masse salariale.",
+"Prononcer des mesures relevant de ses compétences réglementaires.",
+"Il faut distinguer ce contrôle sportif et financier des procédures judiciaires du Code de commerce."
+]
 },
 {
 "t": "h",
@@ -12867,28 +11678,15 @@
 "x": "Il doit notamment examiner :"
 },
 {
-"t": "p",
-"x": "La capacité du club à payer les salaires."
-},
-{
-"t": "p",
-"x": "Les garanties financières."
-},
-{
-"t": "p",
-"x": "Les échéances contractuelles."
-},
-{
-"t": "p",
-"x": "Les éventuelles restrictions budgétaires."
-},
-{
-"t": "p",
-"x": "Les conséquences d'une procédure collective."
-},
-{
-"t": "p",
-"x": "Les risques de non-paiement."
+"t": "list",
+"items": [
+"La capacité du club à payer les salaires.",
+"Les garanties financières.",
+"Les échéances contractuelles.",
+"Les éventuelles restrictions budgétaires.",
+"Les conséquences d'une procédure collective.",
+"Les risques de non-paiement."
+]
 },
 {
 "t": "memo",
@@ -12972,232 +11770,130 @@
 "x": "Code de commerce – Formes sociales"
 },
 {
-"t": "lead",
-"x": "Article"
-},
-{
-"t": "p",
-"x": "Sujet"
-},
-{
-"t": "p",
-"x": "L. 210-1"
-},
-{
-"t": "p",
-"x": "Caractère commercial des sociétés"
-},
-{
-"t": "p",
-"x": "L. 210-6"
-},
-{
-"t": "p",
-"x": "Personnalité morale et société en formation"
-},
-{
-"t": "p",
-"x": "L. 223-1"
-},
-{
-"t": "p",
-"x": "SARL"
-},
-{
-"t": "p",
-"x": "L. 223-18"
-},
-{
-"t": "p",
-"x": "Pouvoirs du gérant de SARL"
-},
-{
-"t": "p",
-"x": "L. 225-1"
-},
-{
-"t": "p",
-"x": "SA"
-},
-{
-"t": "p",
-"x": "L. 225-17"
-},
-{
-"t": "p",
-"x": "Conseil d'administration"
-},
-{
-"t": "p",
-"x": "L. 227-1"
-},
-{
-"t": "p",
-"x": "SAS"
-},
-{
-"t": "p",
-"x": "L. 227-6"
-},
-{
-"t": "p",
-"x": "Pouvoirs du président de SAS"
-},
-{
-"t": "p",
-"x": "L. 221-1"
-},
-{
-"t": "p",
-"x": "SNC"
-},
-{
-"t": "p",
-"x": "L. 611-3"
-},
-{
-"t": "p",
-"x": "Mandat ad hoc"
-},
-{
-"t": "p",
-"x": "L. 611-4"
-},
-{
-"t": "p",
-"x": "Conciliation"
-},
-{
-"t": "p",
-"x": "L. 620-1"
-},
-{
-"t": "p",
-"x": "Sauvegarde"
-},
-{
-"t": "p",
-"x": "L. 631-1"
-},
-{
-"t": "p",
-"x": "Redressement judiciaire"
-},
-{
-"t": "p",
-"x": "L. 631-4"
-},
-{
-"t": "p",
-"x": "Déclaration de cessation des paiements"
-},
-{
-"t": "p",
-"x": "L. 640-1"
-},
-{
-"t": "p",
-"x": "Liquidation judiciaire"
+"t": "table",
+"head": [
+"Article",
+"Sujet"
+],
+"rows": [
+[
+"L. 210-1",
+"Caractère commercial des sociétés"
+],
+[
+"L. 210-6",
+"Personnalité morale et société en formation"
+],
+[
+"L. 223-1",
+"SARL"
+],
+[
+"L. 223-18",
+"Pouvoirs du gérant de SARL"
+],
+[
+"L. 225-1",
+"SA"
+],
+[
+"L. 225-17",
+"Conseil d'administration"
+],
+[
+"L. 227-1",
+"SAS"
+],
+[
+"L. 227-6",
+"Pouvoirs du président de SAS"
+],
+[
+"L. 221-1",
+"SNC"
+],
+[
+"L. 611-3",
+"Mandat ad hoc"
+],
+[
+"L. 611-4",
+"Conciliation"
+],
+[
+"L. 620-1",
+"Sauvegarde"
+],
+[
+"L. 631-1",
+"Redressement judiciaire"
+],
+[
+"L. 631-4",
+"Déclaration de cessation des paiements"
+],
+[
+"L. 640-1",
+"Liquidation judiciaire"
+]
+]
 },
 {
 "t": "lead",
 "x": "Code du sport – Sociétés sportives et agents"
 },
 {
-"t": "lead",
-"x": "Article"
-},
-{
-"t": "p",
-"x": "Sujet"
-},
-{
-"t": "p",
-"x": "L. 122-1"
-},
-{
-"t": "p",
-"x": "Constitution des sociétés sportives"
-},
-{
-"t": "p",
-"x": "L. 122-2"
-},
-{
-"t": "p",
-"x": "Formes juridiques autorisées"
-},
-{
-"t": "p",
-"x": "L. 122-3"
-},
-{
-"t": "p",
-"x": "Statuts types"
-},
-{
-"t": "p",
-"x": "L. 122-4"
-},
-{
-"t": "p",
-"x": "Obligation de constituer une société sportive"
-},
-{
-"t": "p",
-"x": "L. 122-5"
-},
-{
-"t": "p",
-"x": "SAOS"
-},
-{
-"t": "p",
-"x": "L. 122-6"
-},
-{
-"t": "p",
-"x": "Participation de l'association dans la SAOS"
-},
-{
-"t": "p",
-"x": "L. 122-7"
-},
-{
-"t": "p",
-"x": "Contrôle de plusieurs sociétés sportives"
-},
-{
-"t": "p",
-"x": "L. 122-14"
-},
-{
-"t": "p",
-"x": "Convention association-société"
-},
-{
-"t": "p",
-"x": "L. 222-8"
-},
-{
-"t": "p",
-"x": "Société de l'agent sportif"
-},
-{
-"t": "p",
-"x": "L. 222-11"
-},
-{
-"t": "p",
-"x": "Incapacités professionnelles"
-},
-{
-"t": "p",
-"x": "L. 222-13"
-},
-{
-"t": "p",
-"x": "Contrôle des dirigeants et associés"
+"t": "table",
+"head": [
+"Article",
+"Sujet"
+],
+"rows": [
+[
+"L. 122-1",
+"Constitution des sociétés sportives"
+],
+[
+"L. 122-2",
+"Formes juridiques autorisées"
+],
+[
+"L. 122-3",
+"Statuts types"
+],
+[
+"L. 122-4",
+"Obligation de constituer une société sportive"
+],
+[
+"L. 122-5",
+"SAOS"
+],
+[
+"L. 122-6",
+"Participation de l'association dans la SAOS"
+],
+[
+"L. 122-7",
+"Contrôle de plusieurs sociétés sportives"
+],
+[
+"L. 122-14",
+"Convention association-société"
+],
+[
+"L. 222-8",
+"Société de l'agent sportif"
+],
+[
+"L. 222-11",
+"Incapacités professionnelles"
+],
+[
+"L. 222-13",
+"Contrôle des dirigeants et associés"
+]
+]
 },
 {
 "t": "h",
@@ -13326,8 +12022,8 @@
 "domaine": "associations",
 "titre": "Pour bien commencer",
 "fiche": [
-"Introduction : Objectif du module : maîtriser le fonctionnement juridique d’une association, comprendre son statut dans l’organisation du sport français et savoir analyser les relations financières entre un club associatif et un agent sportif.",
-"Introduction — Pourquoi le droit des associations concerne l’agent sportif : Le football français repose sur une organisation dans laquelle les associations occupent une place centrale."
+"Le module traite du droit général des associations, des associations sportives, puis de leur fiscalité.",
+"Pour l'agent : le football français repose largement sur des associations, avec lesquelles il faut savoir traiter."
 ],
 "source": "Module 04, introduction",
 "cours": {
@@ -13403,11 +12099,12 @@
 "domaine": "associations",
 "titre": "Le droit général des associations",
 "fiche": [
-"La déclaration permet à l’association d’exister juridiquement comme personne morale distincte de ses membres.",
-"La reconnaissance d’utilité publique est une reconnaissance institutionnelle particulière. Elle ne doit pas être confondue avec l’agrément d’une association sportive.",
-"Association déclarée et association de fait : Une association de fait est un groupement qui existe sans avoir accompli les formalités de déclaration.",
-"Constitution : statuts, assemblée générale, déclaration et JOAFE : La création d’une association déclarée suit plusieurs étapes.",
-"Fonctionnement : assemblée générale, conseil d’administration, bureau et règlement intérieur : La loi de 1901 impose peu de règles générales concernant les organes de gouvernance des associations ordinaires."
+"Il faut au moins deux personnes pour constituer une association (article 1er de la loi de 1901).",
+"Une association non déclarée peut exister, mais sans personnalité morale. La déclaration et la publicité lui donnent sa capacité juridique (article 5).",
+"Le but non lucratif interdit de partager les bénéfices, pas de dégager un excédent réinvesti dans l'objet associatif.",
+"Les statuts fixent l'essentiel du fonctionnement : la loi laisse une large liberté.",
+"Les changements d'administration se déclarent dans les trois mois ; ils ne sont opposables aux tiers qu'à partir de leur déclaration (article 5).",
+"La reconnaissance d'utilité publique est accordée par décret en Conseil d'État."
 ],
 "source": "Module 04, partie A",
 "cours": {
@@ -14218,12 +12915,9 @@
 "domaine": "associations",
 "titre": "Les associations sportives",
 "fiche": [
-"Le fait qu’un club soit une association loi 1901 ne lui interdit pas de rémunérer un agent sportif. Ce sont les règles du Code du sport, le contrat écrit, les pouvoirs du signataire et les conditions fiscales et comptables du paiement qui doivent être respectés.",
-"Définition légale : article L.121-1 du Code du sport : L’article L.121-1 du Code du sport dispose que les associations sportives sont constituées conformément à la loi du 1er juillet 1901 ou, pour les départements du Bas-Rhin, du Haut-Rhin et de la Moselle, conformément au droit civil local.",
-"L’agrément : conditions et effets : L’agrément est une reconnaissance administrative permettant à une association sportive de bénéficier de certains dispositifs d’aide de l’État.",
-"L’affiliation à une fédération agréée et le contrat d’engagement républicain valent agrément : C’est un point important de l’article L.121-4.",
-"Retrait et suspension de l’agrément : Le préfet peut intervenir lorsque l’association ne respecte plus les conditions légales.",
-"Lien avec la société sportive : rappel du Module 3 : Les associations sportives peuvent, dans les conditions prévues par le Code du sport, constituer une société sportive pour gérer certaines activités."
+"L'affiliation à une fédération agréée vaut agrément si le club a souscrit le contrat d'engagement républicain (L. 121-4).",
+"Le retrait de l'agrément n'entraîne automatiquement ni dissolution, ni liquidation, ni perte de la personnalité morale.",
+"Être une association n'interdit pas à un club de rémunérer un agent : ce sont les règles du Code du sport qui s'appliquent."
 ],
 "source": "Module 04, partie B",
 "cours": {
@@ -14629,12 +13323,11 @@
 "domaine": "associations",
 "titre": "La fiscalité des associations",
 "fiche": [
-"Les conditions précises et les règles d’appréciation ne sont pas identiques pour tous les impôts. Il faut notamment distinguer le seuil de la franchise des impôts commerciaux et les règles propres à la TVA.",
-"La forme associative du club n’interdit pas le paiement d’une commission d’agent. En revanche, elle ne permet pas de contourner les exigences de l’article L.222-17.",
-"Principe : non-lucrativité et exonération : Une association n’est pas automatiquement exonérée d’impôts parce qu’elle est constituée sous la loi de 1901.",
-"La méthode d’analyse en trois étapes : L’administration fiscale utilise une méthode en trois étapes pour déterminer si un organisme sans but lucratif doit être soumis aux impôts commerciaux.",
-"La règle des 4P en détail : L’association propose-t-elle un service différent ou répond-elle à un besoin insuffisamment couvert par les entreprises ?",
-"La franchise des impôts commerciaux : Une association peut exercer une activité lucrative accessoire tout en bénéficiant d’une franchise des impôts commerciaux, si les conditions légales sont réunies."
+"Le statut d'association n'exonère pas automatiquement d'impôts : gestion désintéressée, concurrence et conditions d'exercice sont examinées.",
+"La règle des 4P, dans l'ordre : Produit, Public, Prix, Publicité.",
+"La rémunération des dirigeants dans le régime légal dépend notamment de la moyenne des ressources des trois exercices clos précédents.",
+"Un remboursement de frais réels et justifiés n'est pas une rémunération ; un forfait non justifié peut être requalifié.",
+"Si le club paie la commission due par le joueur, il faut une convention tripartite conforme à L. 222-17."
 ],
 "source": "Module 04, partie C",
 "cours": {
@@ -15448,7 +14141,8 @@
 "domaine": "fiscal",
 "titre": "Pour bien commencer",
 "fiche": [
-"Introduction : Objectif du module : comprendre les principaux mécanismes de l’imposition des particuliers et des entreprises, maîtriser les régimes fiscaux applicables à l’agent sportif et connaître les dispositifs particuliers concernant les revenus des sportifs professionnels."
+"Le module couvre l'impôt sur le revenu, la fiscalité des entreprises, puis les régimes propres au sportif et à l'agent.",
+"Les chiffres sont ceux de 2026, sauf mention contraire : à vérifier chaque année."
 ],
 "source": "Module 05, introduction",
 "cours": {
@@ -15498,12 +14192,11 @@
 "domaine": "fiscal",
 "titre": "L'impôt sur le revenu (IR)",
 "fiche": [
-"CEHR et CDHR sont deux contributions différentes. Il faut vérifier les conditions d'application et les règles de calcul propres à chaque dispositif pour l'année concernée.",
-"Le principe de l'impôt sur le revenu : L'impôt sur le revenu est un impôt direct qui frappe les revenus perçus par les personnes physiques au cours d'une année.",
-"Le barème progressif 2026 (revenus 2025) : Applicable aux revenus de 2025, après revalorisation de 0,9 %.",
-"Les catégories de revenus imposables : Le Code général des impôts distingue plusieurs catégories de revenus.",
-"Le quotient familial et la décote : Le quotient familial adapte le calcul de l'impôt à la composition du foyer.",
-"La CEHR et la CDHR : fiscalité des hauts revenus : Les contribuables disposant de revenus très élevés peuvent être concernés par des contributions supplémentaires."
+"L'impôt calculé en 2026 porte sur les revenus perçus en 2025.",
+"Le taux marginal (TMI) est le taux de la tranche la plus élevée atteinte : il ne s'applique pas à tout le revenu.",
+"Le quotient familial adapte l'impôt à la composition du foyer.",
+"Les commissions d'un agent indépendant relèvent en principe des BNC.",
+"CEHR et CDHR sont deux contributions différentes sur les hauts revenus, avec leurs propres conditions."
 ],
 "source": "Module 05, partie A",
 "cours": {
@@ -16238,12 +14931,12 @@
 "domaine": "fiscal",
 "titre": "Fiscalité des entreprises",
 "fiche": [
-"IR ou IS ? Le choix selon la forme juridique : La première question à se poser lorsqu'un agent sportif crée son activité est : qui va payer l'impôt sur le bénéfice ?",
-"L'impôt sur les sociétés (IS) : taux 2026 : Il s'applique au bénéfice imposable de la société.",
-"La micro-entreprise : seuils 2026 : La micro-entreprise n'est pas une forme juridique autonome.",
-"La TVA : franchise, régime simplifié et régime normal : La TVA est un impôt indirect sur la consommation.",
-"La TVA : champ d'application et territorialité : C'est une partie technique, mais essentielle pour un agent qui travaille avec des clubs, des joueurs et des partenaires étrangers.",
-"TVA : exigibilité, déduction et obligations : Fait générateur : événement qui donne naissance à la créance fiscale."
+"IS : taux normal de 25 %, et taux réduit de 15 % sous conditions sur les premiers 42 500 € de bénéfice.",
+"Micro-BNC : seuil de 83 600 € de recettes hors taxes, abattement forfaitaire de 34 %.",
+"Franchise de TVA pour les prestations de services : seuil de base de 37 500 €, seuil majoré de 41 250 €.",
+"Micro-BNC et franchise de TVA sont indépendants : on peut rester au micro et devenir redevable de TVA.",
+"Prestation B2B entre deux assujettis de l'UE : taxation au lieu du preneur, qui autoliquide généralement la TVA.",
+"Pour une prestation de services, la TVA est en principe exigible à l'encaissement."
 ],
 "source": "Module 05, partie B",
 "cours": {
@@ -17493,12 +16186,10 @@
 "domaine": "fiscal",
 "titre": "Fiscalité spécifique du sportif et de l'agent sportif",
 "fiche": [
-"Pour l'examen : article 100 bis pour les bénéfices sportifs relevant des BNC ; article 84 A pour les salaires des sportifs. Période de référence de trois ou cinq ans.",
-"L'étalement des revenus du sportif : articles 100 bis et 84 A du CGI : Les revenus des sportifs professionnels peuvent être très irréguliers.",
-"L'étalement des primes olympiques : article 163-0 A ter du CGI : L'article 163-0 A ter du CGI prévoit un dispositif spécifique pour les primes versées aux sportifs médaillés aux Jeux olympiques et paralympiques.",
-"Le régime des impatriés : article 155 B du CGI : Un impatrié est une personne qui vient travailler en France après avoir été recrutée à l'étranger ou appelée par une entreprise établie en France.",
-"La retenue à la source des sportifs non-résidents : article 182 B du CGI : Un sportif non-résident peut percevoir des revenus de source française.",
-"La fiscalité de l'agent sportif : L'agent sportif qui exerce à titre indépendant perçoit des commissions en contrepartie de ses prestations."
+"Article 100 bis du CGI : moyenne sur 3 ou 5 ans pour certains bénéfices sportifs relevant des BNC ; article 84 A pour les salaires des sportifs.",
+"Article 163-0 A ter : étalement des primes des médaillés olympiques et paralympiques.",
+"Article 155 B : régime des impatriés appelés de l'étranger à travailler en France, sous conditions.",
+"Article 182 B : retenue à la source de 15 % sur certaines rémunérations sportives de non-résidents, sous réserve des conventions fiscales."
 ],
 "source": "Module 05, partie C",
 "cours": {
@@ -18455,7 +17146,8 @@
 "domaine": "travail",
 "titre": "Pour bien commencer",
 "fiche": [
-"Introduction : Objectif du module : maîtriser les règles qui encadrent la relation entre un employeur et un salarié, comprendre les différents contrats de travail et connaître les dispositions particulières applicables aux sportifs professionnels."
+"Le module couvre les fondamentaux, la relation de travail, la rupture du contrat, puis la protection sociale.",
+"Le droit du travail général s'applique aux sportifs salariés, sous réserve des règles propres au Code du sport."
 ],
 "source": "Module 06, introduction",
 "cours": {
@@ -18507,12 +17199,12 @@
 "domaine": "travail",
 "titre": "Les fondamentaux du droit du travail",
 "fiche": [
-"Une période d'essai ne doit pas être confondue avec une période probatoire, qui intervient notamment lors d'un changement de fonctions au sein de l'entreprise.",
-"Pourquoi cette matière concerne l'agent sportif : L'agent sportif n'est pas seulement un intermédiaire chargé de trouver un club à un joueur.",
-"Les sources du droit du travail : Le droit du travail français repose sur plusieurs sources qui s'articulent entre elles.",
-"Le contrat de travail : principes généraux : Le contrat de travail est une convention par laquelle une personne s'engage à travailler pour le compte d'une autre, sous sa subordination, moyennant rémunération.",
-"Les contrats de droit commun : CDI, CDD et intérim : Le CDI est la forme normale et générale de la relation de travail.",
-"Les contrats sportifs et spéciaux : Le Code du sport prévoit un régime particulier pour les sportifs professionnels."
+"Trois éléments font le contrat de travail : un travail, une rémunération et un lien de subordination.",
+"Le CDI est la forme normale. Un CDD ne peut pas pourvoir durablement un emploi lié à l'activité normale et permanente.",
+"Le sportif professionnel salarié relève d'un CDD spécifique (L. 222-2-3).",
+"Durée de ce CDD : au minimum une saison de 12 mois, sauf exceptions ; au maximum 5 ans (L. 222-2-4).",
+"Le contrat est transmis au salarié dans les deux jours ouvrables suivant l'embauche (L. 1242-13).",
+"Ne pas confondre période d'essai et période probatoire."
 ],
 "source": "Module 06, partie A",
 "cours": {
@@ -19589,11 +18281,12 @@
 "domaine": "travail",
 "titre": "La relation de travail",
 "fiche": [
-"Une sanction sportive et une sanction disciplinaire de droit du travail ne sont pas nécessairement la même chose. Il faut identifier la nature de la mesure et son effet sur le contrat.",
-"La rémunération : Le salaire est la contrepartie du travail fourni par le salarié.",
-"Le temps de travail : La durée légale du travail à temps complet est de 35 heures par semaine.",
-"Les congés : Le droit légal est de 2,5 jours ouvrables par mois de travail effectif, soit 30 jours ouvrables pour une année complète, correspondant à cinq semaines.",
-"Le pouvoir disciplinaire : L'employeur dispose d'un pouvoir disciplinaire lui permettant de sanctionner les comportements fautifs du salarié."
+"Baisser le salaire contractuel exige l'accord du salarié.",
+"Durée légale : 35 heures par semaine. Congés : 2,5 jours ouvrables par mois de travail effectif (L. 3141-3).",
+"Poursuites disciplinaires : dans les deux mois suivant la connaissance des faits (L. 1332-4).",
+"Amendes et sanctions pécuniaires sont interdites, même pour un retard à l'entraînement (L. 1331-2).",
+"Le règlement intérieur est obligatoire à partir de 50 salariés (L. 1311-2).",
+"Une sanction sportive et une sanction disciplinaire du droit du travail ne sont pas forcément la même chose."
 ],
 "source": "Module 06, partie B",
 "cours": {
@@ -20461,10 +19154,11 @@
 "domaine": "travail",
 "titre": "Évolution et rupture du contrat de travail",
 "fiche": [
-"La modification du contrat : Cette distinction est essentielle : dans le premier cas, l'accord du salarié est en principe nécessaire.",
-"Le transfert d'entreprise : L'article L.1224-1 prévoit que lorsque survient une modification dans la situation juridique de l'employeur, les contrats de travail en cours subsistent avec le nouvel employeur.",
-"Le licenciement est une rupture du CDI à l'initiative de l'employeur.",
-"Les autres modes de rupture : Le licenciement n'est pas la seule manière de mettre fin à un contrat de travail."
+"L'article L. 1224-1 maintient les contrats lors du transfert d'une entreprise ; il ne vise pas le transfert sportif d'un joueur.",
+"Lettre de licenciement : au moins deux jours ouvrables après la date prévue de l'entretien préalable (L. 1232-6).",
+"Rupture conventionnelle : 15 jours calendaires pour se rétracter (L. 1237-13).",
+"Priorité de réembauche après un licenciement économique : un an, sur demande du salarié (L. 1233-45).",
+"Abandon de poste : après mise en demeure, présomption de démission à l'expiration du délai fixé par l'employeur (L. 1237-1-1)."
 ],
 "source": "Module 06, partie C",
 "cours": {
@@ -21224,10 +19918,8 @@
 "titre": "La protection sociale",
 "fiche": [
 "Le salaire brut n'est pas le coût total du salarié pour le club.",
-"La Sécurité sociale : principes, branches et caisses : La Sécurité sociale protège les personnes contre les principaux risques sociaux.",
-"L'affiliation : régime général et autres régimes : Le régime général couvre la majorité des salariés du secteur privé.",
-"L'assiette des cotisations sociales est la base sur laquelle sont calculées les cotisations et contributions dues au titre de la rémunération.",
-"Les recours contre les décisions des organismes sociaux : Un assuré ou un employeur peut contester certaines décisions prises par un organisme de Sécurité sociale."
+"Le régime général couvre la majorité des salariés du secteur privé.",
+"Contester une décision de la CPAM passe en général d'abord par la commission de recours amiable, puis par le pôle social du tribunal judiciaire."
 ],
 "source": "Module 06, partie D",
 "cours": {
@@ -21674,8 +20366,8 @@
 "domaine": "personnalite",
 "titre": "Pour bien commencer",
 "fiche": [
-"Introduction : Objectif du module : comprendre et maîtriser les droits attachés à la personne du sportif, en particulier le droit à l'image et le droit au nom, ainsi que les conditions de leur exploitation commerciale.",
-"Le piège central et la carte du chapitre : Le droit à l'image d'une personne, le droit à l'image collective du sportif professionnel et l'exploitation commerciale de son image dans un contrat de sponsoring ne sont pas la même chose."
+"Le piège central : distinguer le droit à l'image de la personne, l'exploitation commerciale de l'image du sportif et les contrats de sponsoring.",
+"Le module suit cet ordre, puis termine par le droit au nom."
 ],
 "source": "Module 07, introduction",
 "cours": {
@@ -21771,11 +20463,11 @@
 "domaine": "personnalite",
 "titre": "Le droit individuel à l'image",
 "fiche": [
-"Une autorisation d'image doit être précise, contextualisée et limitée. Le consentement à être photographié ne vaut pas autorisation générale d'exploitation commerciale.",
-"Le consentement à l'utilisation de l'image : Lorsqu'une personne est identifiable, l'utilisation de son image nécessite en principe son accord, particulièrement lorsque l'image est utilisée à des fins commerciales.",
-"Les exceptions au consentement : Le droit à l'image doit être concilié avec les libertés d'information et d'expression.",
-"Les sanctions civiles : Une personne victime d'une atteinte à son droit à l'image peut saisir le juge civil.",
-"Les sanctions pénales : Il faut distinguer l'atteinte civile au droit à l'image et les infractions pénales spécifiques."
+"L'article 9 du Code civil est le fondement du droit à l'image.",
+"Accepter d'être photographié n'autorise pas une exploitation publicitaire : l'autorisation doit être précise et limitée.",
+"La notoriété ne fait pas disparaître le droit à l'image, mais elle se concilie avec l'information et la liberté d'expression.",
+"Une photo prise lors d'un événement public n'autorise pas son usage commercial sans accord (Cass. 1re civ., 27 février 2007).",
+"Le Code pénal vise aussi certains montages et contenus artificiels diffusés sans consentement (article 226-8)."
 ],
 "source": "Module 07, partie A",
 "cours": {
@@ -22519,11 +21211,12 @@
 "domaine": "personnalite",
 "titre": "L'exploitation commerciale de l'image du sportif professionnel",
 "fiche": [
-"Le simple fait d'appeler une somme « redevance » ne suffit pas à lui donner cette qualification.",
-"Du DIC à la redevance de 2017 : Avant 2017, le droit français avait mis en place un mécanisme spécifique : le droit à l'image collective des sportifs professionnels.",
-"Les deux conditions cumulatives : L'article L.222-2-10-1 prévoit deux conditions cumulatives pour que la redevance puisse être distinguée du salaire et que l'exploitation ne caractérise pas un lien de subordination dans l'exécution du contrat d'image.",
-"Les mentions à peine de nullité : Le législateur veut éviter qu'un contrat d'exploitation commerciale de l'image soit utilisé pour dissimuler une partie du salaire.",
-"Image individuelle : article D.222-50 du Code du sport : L'article D.222-50 précise ce qu'est l'exploitation individuelle de l'image, du nom ou de la voix du sportif."
+"La loi du 1er mars 2017 a instauré le régime de la redevance, organisé par L. 222-2-10-1 du Code du sport.",
+"Deux conditions cumulatives : la présence physique du sportif n'est pas requise, et la redevance dépend des recettes générées, pas du salaire.",
+"Durée, objet, supports, territoire et calcul figurent au contrat, à peine de nullité.",
+"Recettes visées (D. 222-50) : notamment parrainage et produits dérivés, liés à une exploitation individuelle. Billetterie et droits audiovisuels sont exclus.",
+"Le plafond de la redevance est fixé par un accord collectif national conclu par discipline.",
+"Appeler une somme « redevance » ne suffit pas à lui donner cette qualification."
 ],
 "source": "Module 07, partie B",
 "cours": {
@@ -23182,12 +21875,10 @@
 "domaine": "personnalite",
 "titre": "L'exploitation commerciale individuelle : sponsoring, fiscalité et rôle de l'agent",
 "fiche": [
-"L'étiquette inscrite sur le contrat ou la facture ne détermine pas la qualification juridique. Ce sont les conditions réelles de l'opération qui comptent.",
-"Le contrat de sponsoring : Le sponsoring est un contrat par lequel une entreprise apporte un soutien financier ou matériel à une personne, une équipe ou un événement en contrepartie d'une visibilité ou d'une association commerciale.",
-"La qualification fiscale : TVA : Les prestations publicitaires réalisées par un sportif à titre onéreux et indépendant entrent en principe dans le champ de la TVA.",
-"La qualification sociale dépend de la nature réelle de la rémunération et du dispositif utilisé.",
-"L'agent face à l'image : L'agent sportif doit être capable d'identifier les opportunités commerciales et les risques juridiques liés à l'image du joueur.",
-"Tableau de synthèse : les trois régimes : Le raisonnement à retenir : on commence par identifier l'opération réellement réalisée, puis on détermine le régime juridique, fiscal et social applicable."
+"L'étiquette du contrat ne décide de rien : ce sont les conditions réelles qui qualifient l'opération.",
+"Une prestation publicitaire indépendante, réalisée à titre onéreux, entre en principe dans le champ de la TVA.",
+"La qualification sociale dépend de la nature réelle de la rémunération.",
+"Pour raisonner : identifier d'abord l'opération réellement réalisée, puis le régime applicable."
 ],
 "source": "Module 07, partie C",
 "cours": {
@@ -23889,9 +22580,8 @@
 "domaine": "personnalite",
 "titre": "Le droit au nom",
 "fiche": [
-"Le nom est à la fois un attribut de la personnalité et, dans certaines circonstances, un actif commercial. Mais son exploitation ne signifie pas que la personne perd son droit sur son identité.",
-"Le nom de famille : attribution et changement : Le nom de famille est un élément essentiel de l'identité juridique d'une personne.",
-"Le nom : usage, protection et exploitation : Le droit au nom permet à une personne de protéger son identité contre certaines utilisations abusives."
+"Le nom civil identifie juridiquement, le pseudonyme est un nom choisi, la marque distingue des produits ou services.",
+"Le nom est un attribut de la personnalité, et parfois un actif commercial dont l'exploitation s'encadre."
 ],
 "source": "Module 07, partie D",
 "cours": {
@@ -24345,9 +23035,8 @@
 "domaine": "assurances",
 "titre": "Pour bien commencer",
 "fiche": [
-"L'individuelle accident n'est pas nécessairement une indemnisation intégrale. Elle dépend des garanties, plafonds, franchises et exclusions du contrat.",
-"Responsabilité civile (RC) : Elle couvre les dommages causés à autrui lorsque la responsabilité de l'assuré est engagée.",
-"Individuelle accident (IA) : Elle couvre les dommages corporels subis par l'assuré, même lorsqu'aucun tiers n'est responsable."
+"Le piège central : la RC couvre les dommages causés à autrui, l'individuelle accident couvre les dommages subis par l'assuré.",
+"L'individuelle accident n'est pas forcément une indemnisation intégrale : elle dépend des garanties, plafonds et franchises."
 ],
 "source": "Module 08, introduction",
 "cours": {
@@ -24497,12 +23186,12 @@
 "domaine": "assurances",
 "titre": "Le contrat d'assurance",
 "fiche": [
-"En assurance de responsabilité civile, la victime est souvent un tiers qui reçoit une indemnisation au titre de la responsabilité de l'assuré. Elle n'est pas nécessairement le bénéficiaire désigné dans le contrat au sens de toutes les assurances de personnes.",
-"Une déclaration tardive ne provoque pas automatiquement la perte de garantie. La déchéance prévue au contrat ne peut notamment être opposée que si l'assureur établit que le retard lui a causé un préjudice, sous réserve des cas de force majeure ou cas fortuit.",
-"Le contrat d'assurance : définition et caractères : Le contrat d'assurance est une convention par laquelle un assureur s'engage, en contrepartie du paiement d'une prime ou cotisation, à fournir une prestation lorsque survient un événement incertain défini au contrat.",
-"Les parties au contrat : les quatre acteurs : Il faut distinguer quatre rôles, qui peuvent parfois être exercés par des personnes différentes.",
-"La formation du contrat d'assurance suit les principes généraux du droit des contrats, complétés par le Code des assurances.",
-"Assurances de dommages vs assurances de personnes : Il s'agit d'une distinction fondamentale."
+"Délai de déclaration d'un sinistre : fixé au contrat, jamais moins de 5 jours ouvrés en règle générale (L. 113-2).",
+"Aggravation du risque : à déclarer dans les 15 jours après en avoir eu connaissance (L. 113-2).",
+"Prescription de principe : 2 ans (L. 114-1).",
+"Une exclusion doit être formelle et limitée (L. 113-1), et mentionnée en caractères très apparents (L. 112-4).",
+"Assurance de personnes : les sommes sont fixées par le contrat, c'est le principe forfaitaire (L. 131-1).",
+"Une déclaration tardive ne fait pas perdre automatiquement la garantie."
 ],
 "source": "Module 08, partie A",
 "cours": {
@@ -25068,12 +23757,11 @@
 "domaine": "assurances",
 "titre": "Les assurances dans le sport",
 "fiche": [
-"Au piège : le texte vise expressément le responsable d'une association sportive. Il ne faut pas transformer cette disposition en une sanction pénale identique applicable automatiquement à toute personne morale sportive.",
-"Informer n'est pas obliger.",
-"L'obligation d'assurance des clubs : C'est l'un des points les plus importants du module.",
-"L'assurance responsabilité civile sportive : L'assurance RC sportive couvre les conséquences financières des dommages causés à autrui dans le cadre de l'activité sportive, lorsque la responsabilité de l'assuré est engagée et que le sinistre entre dans les garanties.",
-"L'individuelle accident du licencié : L'individuelle accident est une assurance de personnes.",
-"L'obligation d'information — article L.321-4 : L'article L.321-4 du Code du sport impose aux associations et fédérations sportives d'informer leurs adhérents de l'intérêt que présente la souscription d'un contrat d'assurance de personnes couvrant les dommages corporels auxquels leur pratique sportive peut les exposer."
+"Les structures sportives doivent s'assurer en RC pour elles, leurs préposés et les pratiquants (L. 321-1).",
+"Les licenciés sont des tiers entre eux (L. 321-1).",
+"Défaut d'assurance du responsable d'une association : 6 mois d'emprisonnement et 7 500 € d'amende (L. 321-2).",
+"L'individuelle accident n'est pas obligatoire pour tous : le club doit informer de son intérêt (L. 321-4). Informer n'est pas obliger.",
+"Les licenciés de haut niveau ont un régime spécifique, souscrit par la fédération délégataire (L. 321-4-1)."
 ],
 "source": "Module 08, partie B",
 "cours": {
@@ -25641,11 +24329,10 @@
 "domaine": "assurances",
 "titre": "L'assurance de l'agent sportif",
 "fiche": [
-"L'agent sportif : un risque professionnel élevé : L'agent sportif exerce une activité d'intermédiation et de conseil dans un environnement contractuel et financier sensible.",
-"L'assurance RC professionnelle de l'agent : La RC professionnelle, ou RC Pro, couvre les conséquences financières de certaines fautes professionnelles commises dans le cadre de l'activité assurée.",
-"Comment lire un contrat RC Pro agent : Un agent ne doit pas se contenter de vérifier le prix de son assurance.",
-"Le défaut d'assurance : ce que dit la loi : Il faut distinguer la situation du club et celle de l'agent.",
-"Les autres assurances utiles à l'agent : Au-delà de la RC Pro, plusieurs assurances peuvent être utiles."
+"La RC Pro de l'agent couvre certaines conséquences de ses erreurs professionnelles.",
+"L. 222-17 ne prévoit pas d'obligation générale de RC Pro pour l'agent, mais elle reste recommandée.",
+"Il ne faut pas confondre la situation du club, soumis à l'obligation, et celle de l'agent.",
+"Dans un contrat, regarder les garanties, les exclusions, les plafonds et les franchises, pas seulement le prix."
 ],
 "source": "Module 08, partie C",
 "cours": {
@@ -25960,9 +24647,8 @@
 "domaine": "actualite",
 "titre": "Pour bien commencer",
 "fiche": [
-"Introduction : Maîtriser les notions essentielles du module « L’actualité : la loi du 3 août 2026 » et savoir les appliquer à l’activité d’agent sportif de football.",
-"0. Pourquoi ce module est essentiel : La loi n° 2026-725 du 3 août 2026, relative à l'organisation, à la gestion et au financement du sport professionnel, constitue une réforme majeure du Code du sport.",
-"Loi du 3 août 2026 : Licence, carte professionnelle, interdictions, contrats, rémunération et sanctions."
+"La loi n° 2026-725 est promulguée le 3 août 2026 et publiée au Journal officiel le 4 août.",
+"Attention au piège des dates : certaines règles s'appliquent déjà, d'autres plus tard. Le module situe L. 222-8 au 1er janvier 2028."
 ],
 "source": "Module 09, introduction",
 "cours": {
@@ -26225,11 +24911,13 @@
 "domaine": "actualite",
 "titre": "Le nouveau statut de l'agent sportif",
 "fiche": [
-"Le contrôle devient plus structuré, plus régulier et plus transparent.",
-"L'article L.222-11 vise des incapacités attachées à la personne.",
-"10 % est un plafond légal, pas nécessairement le taux applicable à toutes les opérations.",
-"Il ne s'agit pas simplement d'un défaut administratif sans conséquence.",
-"À la lecture du texte : le I de L.222-20 vise notamment l'exercice sans avoir obtenu la licence ou en méconnaissance d'une suspension ou d'un retrait, ainsi que la violation des articles L.222-9 à L.222-17, sauf L.222-11. Le II vise spécifiquement la méconnaissance de L.212-13 et L.222-11."
+"L'agent est une personne physique titulaire de la carte professionnelle, délivrée par la fédération délégataire (L. 222-7).",
+"Le contrat écrit dure trois ans au plus (L. 222-17). Le module prévoit une formation initiale et continue.",
+"Rémunération : 10 % au plus du contrat, y compris au total si plusieurs agents interviennent (L. 222-17).",
+"Le club peut payer à la place du joueur par une convention tripartite, qui précise les conséquences fiscales et sociales.",
+"Le superviseur se limite à des tâches administratives de prospection (L. 222-12-1).",
+"Apporteur d'affaires : carte professionnelle, convention de collaboration préalable, et première opération de placement seulement.",
+"Exercice sans licence : 5 ans et 375 000 € (L. 222-20). Infractions sur les mineurs : 2 ans et 30 000 € (L. 222-6)."
 ],
 "source": "Module 09, partie A",
 "cours": {
@@ -27451,9 +26139,10 @@
 "domaine": "actualite",
 "titre": "Les sociétés sportives et le contrat d'image",
 "fiche": [
-"La séparation éventuelle en deux sociétés ne signifie pas que le sport féminin et le sport masculin sont juridiquement et financièrement sans lien.",
-"Une ou deux sociétés, la convention, le contrat d'image : Cette partie correspond principalement à l'article 25 de la loi, qui modifie plusieurs dispositions du Code du sport relatives aux sociétés sportives et au contrat d'image.",
-"Deux modèles d'organisation : La réforme ne rend donc pas obligatoire la création de deux sociétés."
+"Une association peut créer une seule société, ou deux : l'une pour le secteur masculin, l'autre pour le féminin (L. 122-1).",
+"La réforme ne rend pas obligatoires les deux sociétés.",
+"La convention avec l'association dure de dix à quinze ans (L. 122-14) ; l'opposition de l'administration doit intervenir sous deux mois (L. 122-15).",
+"Redevance d'image : pas de présence physique requise, et un montant lié aux recettes générées (L. 222-2-10-1)."
 ],
 "source": "Module 09, partie B",
 "cours": {
@@ -31749,7 +30438,7 @@
 "bonne": 1,
 "explication": "L'avenant n° 210 du 3 avril 2025 fixe ce minimum à 22 289,19 € à compter du 1er janvier 2026. Ce montant change avec les avenants : vérifier le dernier en vigueur.",
 "origine": "Annale CNOSF 2025, QCM 4",
-"chapitre": "m06-2"
+"chapitre": "m06-3"
 },
 {
 "id": "an25-q09",
@@ -31780,7 +30469,7 @@
 "bonne": 1,
 "explication": "L'article L. 1152-1 du Code du travail vise des agissements répétés : la répétition est au cœur de la définition.",
 "origine": "Annale CNOSF 2025, QCM 10",
-"chapitre": "m06-2"
+"chapitre": "m06-3"
 },
 {
 "id": "an25-q11",
@@ -31795,7 +30484,7 @@
 "bonne": 2,
 "explication": "L'article L. 1233-45 du Code du travail prévoit un an à compter de la rupture, à condition que le salarié le demande pendant ce délai.",
 "origine": "Annale CNOSF 2025, QCM 11",
-"chapitre": "m06-2"
+"chapitre": "m06-4"
 },
 {
 "id": "an24-q12",
@@ -31842,7 +30531,7 @@
 "bonne": 2,
 "explication": "L'article L. 3245-1 du Code du travail fixe la prescription à trois ans.",
 "origine": "Annale CNOSF 2024, QCM 14",
-"chapitre": "m06-2"
+"chapitre": "m06-3"
 },
 {
 "id": "an23-q04",
@@ -31889,7 +30578,7 @@
 "bonne": 1,
 "explication": "Selon l'article L. 1237-1-1 du Code du travail, la présomption joue à l'expiration du délai fixé par l'employeur dans la mise en demeure.",
 "origine": "Annale CNOSF 2023, QCM 10",
-"chapitre": "m06-2"
+"chapitre": "m06-4"
 },
 {
 "id": "an23-q11",
@@ -31904,7 +30593,7 @@
 "bonne": 2,
 "explication": "L'indemnité ne peut être inférieure au double de l'indemnité légale de licenciement (article L. 1226-20 du Code du travail).",
 "origine": "Annale CNOSF 2023, QCM 11",
-"chapitre": "m06-2"
+"chapitre": "m06-4"
 },
 {
 "id": "m07-q01",
@@ -32641,6 +31330,22 @@
 "bonne": 2,
 "explication": "La loi prévoit expressément cette date différée. C'est l'un",
 "origine": "Module 09, QCM 20, corrigé du module"
+},
+{
+"id": "an23-q06",
+"niveau": 2,
+"enonce": "Depuis le 1er juillet 2023, selon la CCNS, le salaire annuel brut de référence d'un entraîneur principal de l'équipe fanion d'une société sportive (cadre catégorie D) ne peut pas être inférieur à :",
+"options": [
+"36 615 euros",
+"40 000 euros",
+"41 855 euros",
+"43 615 euros",
+"Aucune réponse ci-dessus n'est correcte"
+],
+"bonne": 2,
+"explication": "Montant fixé par la CCNS à compter du 1er juillet 2023. Il a pu changer depuis : à vérifier dans le dernier avenant.",
+"origine": "Annale CNOSF 2023, QCM 6",
+"chapitre": "examen"
 }
 ],
 "cartes": [
@@ -32841,6 +31546,412 @@
 "genre": "terme",
 "recto": "Conflit d'intérêts",
 "verso": "Situation dans laquelle les intérêts personnels ou professionnels d'une personne risquent d'interférer avec l'exercice impartial de ses fonctions."
+},
+{
+"id": "k-societes-1",
+"domaine": "societes",
+"genre": "terme",
+"recto": "SARL",
+"verso": "Société de 2 à 100 associés, sans capital minimum légal, dirigée par un ou plusieurs gérants. La responsabilité des associés est limitée à leurs apports."
+},
+{
+"id": "k-societes-2",
+"domaine": "societes",
+"genre": "terme",
+"recto": "SAS",
+"verso": "Société à grande liberté statutaire, dirigée par un président. Responsabilité limitée aux apports."
+},
+{
+"id": "k-societes-3",
+"domaine": "societes",
+"genre": "terme",
+"recto": "SA",
+"verso": "Société par actions au capital minimum de 37 000 €, plus encadrée, dirigée par un conseil d'administration ou un directoire."
+},
+{
+"id": "k-societes-4",
+"domaine": "societes",
+"genre": "terme",
+"recto": "SNC",
+"verso": "Société dont les associés répondent indéfiniment et solidairement des dettes sociales."
+},
+{
+"id": "k-societes-5",
+"domaine": "societes",
+"genre": "terme",
+"recto": "EUSRL",
+"verso": "Société sportive à associé unique, forme prévue par l'article L. 122-2 du Code du sport."
+},
+{
+"id": "k-societes-6",
+"domaine": "societes",
+"genre": "terme",
+"recto": "SAOS",
+"verso": "Société anonyme à objet sportif. L'association sportive doit détenir au moins un tiers du capital et des droits de vote (L. 122-6)."
+},
+{
+"id": "k-societes-7",
+"domaine": "societes",
+"genre": "terme",
+"recto": "SASP",
+"verso": "Société anonyme sportive professionnelle, l'une des formes de société sportive prévues par l'article L. 122-2."
+},
+{
+"id": "k-societes-8",
+"domaine": "societes",
+"genre": "terme",
+"recto": "Personnalité morale d'une société",
+"verso": "Elle commence à l'immatriculation (article 1842 du Code civil)."
+},
+{
+"id": "k-societes-9",
+"domaine": "societes",
+"genre": "terme",
+"recto": "Cessation des paiements",
+"verso": "Impossibilité de faire face au passif exigible avec l'actif disponible. Elle ouvre la voie au redressement ou à la liquidation judiciaire."
+},
+{
+"id": "k-societes-10",
+"domaine": "societes",
+"genre": "terme",
+"recto": "Mandat ad hoc",
+"verso": "Procédure amiable et confidentielle : un mandataire aide le dirigeant à négocier, sans cessation des paiements."
+},
+{
+"id": "k-societes-11",
+"domaine": "societes",
+"genre": "terme",
+"recto": "Conciliation",
+"verso": "Procédure amiable de 5 mois au plus, possible en cessation des paiements depuis moins de 45 jours."
+},
+{
+"id": "k-societes-12",
+"domaine": "societes",
+"genre": "terme",
+"recto": "Sauvegarde",
+"verso": "Procédure judiciaire pour un débiteur qui, sans être en cessation des paiements, a des difficultés insurmontables (L. 620-1 du Code de commerce)."
+},
+{
+"id": "k-societes-13",
+"domaine": "societes",
+"genre": "terme",
+"recto": "Liquidation judiciaire",
+"verso": "Ouverte quand l'entreprise est en cessation des paiements et que son redressement est manifestement impossible (L. 640-1 du Code de commerce)."
+},
+{
+"id": "k-actualite-1",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Loi n° 2026-725",
+"verso": "Loi du 3 août 2026, publiée au Journal officiel le 4 août, qui réforme notamment le statut de l'agent sportif et les sociétés sportives."
+},
+{
+"id": "k-actualite-2",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Agent sportif (L. 222-7)",
+"verso": "Personne physique, titulaire de la carte professionnelle, qui met en relation deux parties intéressées à certains contrats sportifs, contre rémunération."
+},
+{
+"id": "k-actualite-3",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Carte professionnelle",
+"verso": "Nouvelle terminologie de L. 222-7 : elle est délivrée, suspendue ou retirée par la fédération délégataire compétente."
+},
+{
+"id": "k-actualite-4",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Plafond de rémunération de l'agent",
+"verso": "10 % du montant du contrat, y compris au total lorsque plusieurs agents interviennent sur un même contrat (L. 222-17)."
+},
+{
+"id": "k-actualite-5",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Durée du contrat d'agent",
+"verso": "Trois ans au plus ; les fédérations peuvent fixer une durée inférieure (L. 222-17)."
+},
+{
+"id": "k-actualite-6",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Convention de collaboration",
+"verso": "Réservée aux agents titulaires de la carte professionnelle, dans la même discipline (L. 222-17)."
+},
+{
+"id": "k-actualite-7",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Superviseur",
+"verso": "Limité à des tâches administratives de prospection, comme la rédaction de rapports (L. 222-12-1)."
+},
+{
+"id": "k-actualite-8",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Apporteur d'affaires",
+"verso": "Rémunération possible seulement s'il détient la carte professionnelle, avec une convention de collaboration préalable. Seule la première opération de placement est concernée."
+},
+{
+"id": "k-actualite-9",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Exercice sans licence (L. 222-20)",
+"verso": "Cinq ans d'emprisonnement et 375 000 € d'amende."
+},
+{
+"id": "k-actualite-10",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Infractions sur les mineurs (L. 222-6)",
+"verso": "Deux ans d'emprisonnement et 30 000 € d'amende, l'amende pouvant aller jusqu'au double des sommes indûment perçues."
+},
+{
+"id": "k-actualite-11",
+"domaine": "actualite",
+"genre": "terme",
+"recto": "Deux sociétés sportives",
+"verso": "Une association peut créer une société unique pour les secteurs masculin et féminin, ou deux sociétés distinctes (L. 122-1)."
+},
+{
+"id": "k-dopage-1",
+"domaine": "dopage",
+"genre": "terme",
+"recto": "Substance spécifiée",
+"verso": "Suspension de 2 ans, portée à 4 ans si l'AFLD démontre l'intention (L. 232-23-3-3)."
+},
+{
+"id": "k-dopage-2",
+"domaine": "dopage",
+"genre": "terme",
+"recto": "Substance non spécifiée",
+"verso": "Suspension de 4 ans, ramenée à 2 ans si le sportif démontre l'absence d'intention (L. 232-23-3-3)."
+},
+{
+"id": "k-dopage-3",
+"domaine": "dopage",
+"genre": "terme",
+"recto": "Aide substantielle",
+"verso": "Divulguer toutes les informations sur des violations et collaborer pleinement à l'enquête, le cas échéant en témoignant (L. 230-4)."
+},
+{
+"id": "k-dopage-4",
+"domaine": "dopage",
+"genre": "terme",
+"recto": "Sursis pour aide substantielle",
+"verso": "Jusqu'aux trois quarts de la suspension, selon la gravité de la violation et l'importance de l'aide (L. 232-23-3-2)."
+},
+{
+"id": "k-dopage-5",
+"domaine": "dopage",
+"genre": "terme",
+"recto": "Révocation du sursis",
+"verso": "Nouvelle violation dans les dix ans, ou fin de la coopération promise (L. 232-23-3-2)."
+},
+{
+"id": "k-dopage-6",
+"domaine": "dopage",
+"genre": "terme",
+"recto": "Manquements de localisation",
+"verso": "Trois manquements sur une période continue de douze mois sont passibles de sanctions (L. 232-9-3)."
+},
+{
+"id": "k-dopage-7",
+"domaine": "dopage",
+"genre": "terme",
+"recto": "Commission des sanctions",
+"verso": "Instance de l'AFLD compétente pour assortir une sanction d'un sursis, hors accord de composition administrative."
+},
+{
+"id": "k-dopage-8",
+"domaine": "dopage",
+"genre": "terme",
+"recto": "Prescription disciplinaire",
+"verso": "L'AFLD dispose de dix ans à compter de la violation pour engager l'action (L. 232-24-1)."
+},
+{
+"id": "k-societes-14",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 210-1, Code de commerce",
+"verso": "Caractère commercial des sociétés"
+},
+{
+"id": "k-societes-15",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 210-6, Code de commerce",
+"verso": "Personnalité morale et société en formation"
+},
+{
+"id": "k-societes-16",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 223-1, Code de commerce",
+"verso": "SARL"
+},
+{
+"id": "k-societes-17",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 223-18, Code de commerce",
+"verso": "Pouvoirs du gérant de SARL"
+},
+{
+"id": "k-societes-18",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 225-1, Code de commerce",
+"verso": "SA"
+},
+{
+"id": "k-societes-19",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 225-17, Code de commerce",
+"verso": "Conseil d'administration"
+},
+{
+"id": "k-societes-20",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 227-1, Code de commerce",
+"verso": "SAS"
+},
+{
+"id": "k-societes-21",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 227-6, Code de commerce",
+"verso": "Pouvoirs du président de SAS"
+},
+{
+"id": "k-societes-22",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 221-1, Code de commerce",
+"verso": "SNC"
+},
+{
+"id": "k-societes-23",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 611-3, Code de commerce",
+"verso": "Mandat ad hoc"
+},
+{
+"id": "k-societes-24",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 611-4, Code de commerce",
+"verso": "Conciliation"
+},
+{
+"id": "k-societes-25",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 620-1, Code de commerce",
+"verso": "Sauvegarde"
+},
+{
+"id": "k-societes-26",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 631-1, Code de commerce",
+"verso": "Redressement judiciaire"
+},
+{
+"id": "k-societes-27",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 631-4, Code de commerce",
+"verso": "Déclaration de cessation des paiements"
+},
+{
+"id": "k-societes-28",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 640-1, Code de commerce",
+"verso": "Liquidation judiciaire"
+},
+{
+"id": "k-societes-29",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 122-1, Code du sport",
+"verso": "Constitution des sociétés sportives"
+},
+{
+"id": "k-societes-30",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 122-2, Code du sport",
+"verso": "Formes juridiques autorisées"
+},
+{
+"id": "k-societes-31",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 122-3, Code du sport",
+"verso": "Statuts types"
+},
+{
+"id": "k-societes-32",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 122-4, Code du sport",
+"verso": "Obligation de constituer une société sportive"
+},
+{
+"id": "k-societes-33",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 122-5, Code du sport",
+"verso": "SAOS"
+},
+{
+"id": "k-societes-34",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 122-6, Code du sport",
+"verso": "Participation de l'association dans la SAOS"
+},
+{
+"id": "k-societes-35",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 122-7, Code du sport",
+"verso": "Contrôle de plusieurs sociétés sportives"
+},
+{
+"id": "k-societes-36",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 122-14, Code du sport",
+"verso": "Convention association-société"
+},
+{
+"id": "k-societes-37",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 222-8, Code du sport",
+"verso": "Société de l'agent sportif"
+},
+{
+"id": "k-societes-38",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 222-11, Code du sport",
+"verso": "Incapacités professionnelles"
+},
+{
+"id": "k-societes-39",
+"domaine": "societes",
+"genre": "article",
+"recto": "L. 222-13, Code du sport",
+"verso": "Contrôle des dirigeants et associés"
 },
 {
 "id": "k-contrats-1",
@@ -34370,6 +33481,213 @@
 "q": "Quelle est la durée du maintien de salaire en cas d'arrêt de travail pour maladie ou accident du travail ?",
 "c": "Jusqu'au 90e jour d'arrêt : l'employeur complète les indemnités journalières.",
 "ref": "CCNS, chapitre 12, maladie et accident"
+}
+]
+}
+],
+"note": "La question sur les sanctions a été mise à jour : la loi du 3 août 2026 a changé la réponse de l'annale. Les corrigés citent les textes en vigueur."
+},
+{
+"id": "2024",
+"titre": "Épreuve générale 2024",
+"minutes": 120,
+"note": "Sujet d'avant la loi du 3 août 2026 : le cas pratique 1 parle de « licence », aujourd'hui « carte professionnelle », et le corrigé le signale. Le seuil micro de la question 8 est mis à jour.",
+"qcm": [
+"an24-q01",
+"asso-04",
+"asso-02",
+"dop-01",
+"agt-46",
+"agt-48",
+"an24-q07",
+"an24-q08",
+"an24-q09",
+"an24-q10",
+"an24-q11",
+"an24-q12",
+"an24-q13",
+"an24-q14",
+"dop-13",
+"an24-q16",
+"ctr-46",
+"agt-42"
+],
+"cas": [
+{
+"titre": "Cas pratique 1 : un ancien sportif veut devenir agent",
+"points": 6,
+"enonce": "Un ancien sportif souhaite devenir agent sportif et vous interroge sur les règles qui s'imposeront à lui. Il connaît une incompatibilité de l'article L. 222-9 : exercer ou avoir exercé des fonctions de direction ou d'entraînement dans une association ou une société employant des sportifs contre rémunération.",
+"questions": [
+{
+"q": "Quelles sont les autres structures prévues par L. 222-9 où ces fonctions sont incompatibles avec l'activité d'agent ?",
+"c": "Les fédérations sportives et les organes qu'elles ont constitués, ainsi que les organisateurs de manifestations sportives. Depuis la loi de 2026, le texte parle de carte professionnelle et de douze mois précédents : à vérifier dans sa version complète.",
+"ref": "L. 222-9 du Code du sport"
+},
+{
+"q": "Existe-t-il d'autres incompatibilités ? Citez-les.",
+"c": "Oui : être ou avoir été actionnaire ou associé d'une société employant des sportifs contre rémunération ou organisant des manifestations sportives. Le texte en vigueur est à relire, car la réforme l'a réécrit.",
+"ref": "L. 222-9 et L. 222-10 du Code du sport"
+},
+{
+"q": "Il veut créer une société pour exercer. Des personnes physiques peuvent-elles être empêchées d'en être associées ou actionnaires ?",
+"c": "Oui : les sportifs et les entraîneurs pour lesquels l'agent peut exercer son activité.",
+"ref": "L. 222-14 du Code du sport"
+},
+{
+"q": "Quel est le montant, le mode de calcul et l'assiette de la rémunération de l'agent pour un contrat de travail sportif ?",
+"c": "Au plus 10 % du montant du contrat, calculés en pourcentage de la rémunération brute prévue au contrat et soumise aux cotisations sociales.",
+"ref": "L. 222-17, R. 222-37, A. 222-2 et A. 222-5 du Code du sport"
+},
+{
+"q": "Y a-t-il une particularité en cas d'avenant augmentant la rémunération brute du sportif ?",
+"c": "Oui : au plus 10 % de la différence entre la nouvelle rémunération brute et celle qui devait être versée avant l'avenant.",
+"ref": "A. 222-6 du Code du sport"
+}
+]
+},
+{
+"titre": "Cas pratique 2 : rompre le CDD d'un entraîneur",
+"points": 5,
+"enonce": "Un entraîneur a signé un CDD spécifique de deux ans avec un club. Le club souhaite se séparer de lui avant la fin du contrat, estimant qu'il a commis une faute grave.",
+"questions": [
+{
+"q": "Comment s'appelle la mesure provisoire qui permet d'écarter le salarié dans l'attente de la sanction ?",
+"c": "La mise à pied conservatoire.",
+"ref": "L. 1332-3 du Code du travail"
+},
+{
+"q": "L'entraîneur est aussi délégué syndical. Quelle obligation s'impose au club avant de rompre le CDD ?",
+"c": "Obtenir l'autorisation de l'inspecteur du travail.",
+"ref": "L. 2421-1 et suivants du Code du travail"
+},
+{
+"q": "Quelle est la première obligation de l'employeur dans la procédure disciplinaire ?",
+"c": "Convoquer le salarié à un entretien préalable.",
+"ref": "L. 1332-2 du Code du travail"
+},
+{
+"q": "Quel est le délai maximum pour notifier la rupture ?",
+"c": "Un mois à compter du jour fixé pour l'entretien.",
+"ref": "L. 1332-2 du Code du travail"
+},
+{
+"q": "À quelle indemnité peut-il prétendre, même en cas de rupture pour faute grave ?",
+"c": "L'indemnité compensatrice de congés payés.",
+"ref": "L. 3141-28 du Code du travail"
+}
+]
+}
+]
+},
+{
+"id": "2023",
+"titre": "Épreuve générale 2023",
+"minutes": 120,
+"note": "Sujet ancien : le montant de la question 6 date de 2023, et le cas pratique 1 parle encore de « licence d'agent sportif ».",
+"qcm": [
+"dop-12",
+"asso-03",
+"asso-01",
+"an23-q04",
+"an23-q05",
+"an23-q06",
+"an23-q07",
+"agt-40",
+"agt-41",
+"an23-q10",
+"an23-q11",
+"an23-q12",
+"an23-q13",
+"an23-q14",
+"agt-44",
+"agt-45",
+"an23-q17",
+"an23-q18"
+],
+"cas": [
+{
+"titre": "Cas pratique 1 : créer une ligue professionnelle",
+"points": 5,
+"enonce": "Une fédération sportive délégataire peut créer une ligue professionnelle pour représenter, gérer et coordonner les activités sportives à caractère professionnel des associations affiliées et des sociétés sportives.",
+"questions": [
+{
+"q": "Sous quelle forme juridique cette ligue doit-elle être constituée ?",
+"c": "Une association déclarée, selon la loi de 1901, pour une durée illimitée.",
+"ref": "R. 132-2 du Code du sport",
+"pts": 1
+},
+{
+"q": "La fédération doit créer un organisme au pouvoir d'appréciation indépendant. Citez deux de ses missions.",
+"c": "Deux parmi : contrôle administratif, juridique et financier des clubs ; contrôle financier de l'activité des agents ; contrôle des projets d'achat, de cession et de changement d'actionnaires des sociétés sportives.",
+"ref": "L. 132-2 du Code du sport",
+"pts": 1
+},
+{
+"q": "L'instance dirigeante comprend les représentants des clubs et des personnalités qualifiées. Citez les deux autres catégories.",
+"c": "Des représentants de la fédération, et des représentants des sportifs et des entraîneurs.",
+"ref": "R. 132-4 du Code du sport",
+"pts": 1
+},
+{
+"q": "Quelle est la durée maximale de la convention entre la fédération et la ligue ?",
+"c": "Cinq ans.",
+"ref": "R. 132-9 du Code du sport",
+"pts": 0.5
+},
+{
+"q": "Hormis la délivrance des licences, citez deux compétences propres à la fédération.",
+"c": "Deux parmi : formation des dirigeants et entraîneurs fédéraux, arbitrage, règles techniques et de sécurité, surveillance médicale, équipes de France, accès au haut niveau, classement des équipements, discipline en appel.",
+"ref": "R. 132-10 du Code du sport",
+"pts": 1
+},
+{
+"q": "Citez une compétence exercée en commun par la ligue et la fédération.",
+"c": "Une parmi : agrément des centres de formation, calendrier des compétitions professionnelles, mise à disposition pour les équipes de France, règlement médical, droit à l'information.",
+"ref": "R. 132-11 du Code du sport",
+"pts": 0.5
+}
+]
+},
+{
+"titre": "Cas pratique 2 : un footballeur mis à l'écart",
+"points": 6,
+"enonce": "Un footballeur professionnel, votre client, a signé un CDD spécifique de trois saisons. Depuis trois mois, il est écarté du groupe professionnel et joue avec la réserve. Il veut mettre fin au contrat et hésite entre une prise d'acte et une résiliation judiciaire.",
+"questions": [
+{
+"q": "Quelle est la principale différence entre ces deux modes de rupture ?",
+"c": "Résiliation judiciaire : saisine directe du conseil de prud'hommes, et le salarié reste dans l'entreprise si sa demande est rejetée. Prise d'acte : rupture notifiée d'abord, et un rejet équivaut à une démission. Réponse sans texte unique : l'appréciation du correcteur compte.",
+"ref": "Question de pratique et de jurisprudence",
+"pts": 1
+},
+{
+"q": "Dans quel cas la rupture peut-elle être prononcée aux torts de l'employeur ?",
+"c": "Si son comportement constitue une faute grave rendant impossible la poursuite de la relation.",
+"ref": "Régime de rupture du CDD, L. 1243-1 du Code du travail",
+"pts": 2
+},
+{
+"q": "Après une prise d'acte, dans quel délai le joueur doit-il saisir les prud'hommes ?",
+"c": "Douze mois à compter de la notification de la rupture.",
+"ref": "L. 1471-1 du Code du travail",
+"pts": 0.5
+},
+{
+"q": "Sur quelle base est calculé le minimum de dommages et intérêts ?",
+"c": "Au moins les rémunérations qu'il aurait perçues jusqu'au terme du contrat.",
+"ref": "L. 1243-4 du Code du travail",
+"pts": 0.5
+},
+{
+"q": "Ces dommages et intérêts sont-ils soumis aux cotisations de sécurité sociale ?",
+"c": "Oui, pour la part qui correspond aux salaires perdus.",
+"ref": "L. 242-1 du Code de la sécurité sociale",
+"pts": 1
+},
+{
+"q": "Peut-il aussi prétendre à l'indemnité de fin de contrat ?",
+"c": "Non : le Code du sport écarte l'indemnité de précarité pour ce CDD spécifique.",
+"ref": "L. 222-2-1 du Code du sport",
+"pts": 1
 }
 ]
 }

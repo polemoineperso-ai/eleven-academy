@@ -310,6 +310,17 @@ a.row:hover .row-title { color: var(--green); }
 .sheet-src { font-size: 13px; color: var(--ink-2); border-top: 1px solid var(--paper-line); padding-top: 10px; }
 .sheet.dark .sheet-src { border-color: var(--line); }
 
+/* Article references */
+.ref { display: inline; padding: 0; border: 0; background: none; color: inherit; font: inherit; font-weight: 600; text-decoration: underline dotted var(--green-press) 2px; text-underline-offset: 3px; cursor: pointer; }
+.ref:hover { text-decoration-style: solid; }
+.art-dlg { width: min(100%, 620px); max-width: 100%; max-height: 82vh; max-height: 82dvh; margin: auto auto 0; padding: 18px 18px calc(18px + env(safe-area-inset-bottom, 0px)); border: 0; border-radius: var(--r-m) var(--r-m) 0 0; background: var(--turf); color: var(--chalk); }
+.art-dlg[open] { display: flex; flex-direction: column; gap: 14px; }
+.art-dlg::backdrop { background: rgba(5, 8, 6, 0.72); }
+.art-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.art-title { margin: 0; font-size: 20px; font-weight: 800; }
+.art-text p { margin: 0 0 10px; font-size: 16px; line-height: 1.6; max-width: 65ch; }
+@media (min-width: 620px) { .art-dlg { margin: auto; border-radius: var(--r-m); } }
+
 /* Guided tour */
 .tour { min-height: calc(100vh - 100px); min-height: calc(100dvh - 100px); display: flex; flex-direction: column; gap: 18px; padding-top: 8px; }
 .tour-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
@@ -582,6 +593,11 @@ a.row:hover .row-title { color: var(--green); }
 .splash { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center; }
 .splash { min-height: calc(100vh - 48px); min-height: calc(100dvh - 48px); gap: 18px; width: 100%; border: 0; background: none; color: inherit; font: inherit; }
 .splash .hero-crest { width: min(64vw, 300px); height: auto; }
+.app:has(.splash) { background: none; }
+.splash-bg { position: fixed; inset: 0; z-index: 0; pointer-events: none; background: var(--pitch); }
+.splash-bg video, .splash-bg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.splash-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8, 11, 9, 0.62), rgba(8, 11, 9, 0.5) 45%, rgba(8, 11, 9, 0.82)); }
+.splash > :not(.splash-bg) { position: relative; z-index: 1; }
 .splash-slogan { font-size: clamp(19px, 5.4vw, 26px); font-weight: 800; line-height: 1.3; margin: 0; text-wrap: balance; }
 .splash-hello { font-size: 17px; font-weight: 600; color: var(--green); margin: 0; }
 .ask-name { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; font-size: 14px; font-weight: 600; }
@@ -1298,7 +1314,7 @@ a.row:hover .row-title { color: var(--green); }
         const last = res.find((r) => r.id === e.id), mine = cur && cur.id === e.id;
         return `<button class="row" data-act="${mine ? "exam-resume" : "exam-intro"}" data-param="${e.id}"><span class="stack"><span class="row-title">${esc(e.titre)}</span><span class="row-sub num">${mine ? (cur.phase === "fix" ? "Correction en cours" : "Match en cours") : last ? `Dernière note : ${frNote(last.note)} / 20` : "18 QCM et 2 cas pratiques"}</span></span><span class="row-side">${icon(mine ? "play" : "chevron")}</span></button>`;
       }).join("")}</div>
-      <p class="note">Les sujets 2023 et 2024 arriveront ensuite.</p></section>`;
+</section>`;
   }
   function vExamIntro() {
     const e = examById(S.param); if (!e) return vMatch();
@@ -1308,10 +1324,10 @@ a.row:hover .row-title { color: var(--green); }
       <section class="sheet dark"><ul class="plan" style="margin:0">
         <li><span><b>2 heures, sans document</b><br><span class="muted small">Le chrono démarre dès que tu commences et continue si tu quittes l'appli.</span></span></li>
         <li><span><b>18 QCM, 9 points</b><br><span class="muted small">0,5 point par question, une seule bonne réponse.</span></span></li>
-        <li><span><b>2 cas pratiques, 6 et 5 points</b><br><span class="muted small">Tu rédiges, puis tu notes toi-même ta réponse avec le corrigé. Barème indicatif : le même nombre de points par question.</span></span></li>
+        <li><span><b>2 cas pratiques, ${e.cas.map((c) => c.points).join(" et ")} points</b><br><span class="muted small">Tu rédiges, puis tu notes toi-même ta réponse avec le corrigé.${e.cas.some((c) => c.questions.some((x) => !x.pts)) ? " Barème indicatif : le même nombre de points par question, quand le sujet ne le précise pas." : ""}</span></span></li>
         <li><span><b>10/20 minimum</b><br><span class="muted small">En dessous, la note est éliminatoire pour l'épreuve FFF.</span></span></li>
       </ul></section>
-      <p class="note warn">La question sur les sanctions a été mise à jour : la loi du 3 août 2026 a changé la réponse de l'annale. Les corrigés citent les textes en vigueur.</p>
+      ${e.note ? `<p class="note warn">${esc(e.note)}</p>` : ""}
       <div class="lesson-end"><button class="btn btn-primary btn-block" data-act="exam-start" data-param="${e.id}">${icon("play")}Commencer le match</button></div>
     </main>`;
   }
@@ -1351,7 +1367,7 @@ a.row:hover .row-title { color: var(--green); }
     const right = e.qcm.filter((id) => cur.qcm[id] === C.q(id)?.bonne).length;
     let cas = 0, todo = 0, open = 0;
     e.cas.forEach((c, i) => c.questions.forEach((_, j) => {
-      const key = `${i}-${j}`, worth = c.points / c.questions.length, g = cur.grade[key];
+      const key = `${i}-${j}`, worth = c.questions[j].pts || c.points / c.questions.length, g = cur.grade[key];
       if (isBlank(cur, key)) return; /* no answer, no point */
       if (g === undefined) { todo++; open += worth; } else cas += g * worth;
     }));
@@ -1927,6 +1943,68 @@ a.row:hover .row-title { color: var(--green); }
       <img class="hero-crest" src="${ASSET["crest"]}" alt="" width="371" height="416">${WORDMARK.replace('alt=""', 'alt="ELEVEN ACADEMY"')}
       <p class="splash-slogan">Prépare ta licence. Maîtrise le jeu.</p></main>`;
   }
+  /* ---------- Article references open their official text ---------- */
+  const CODE_NAMES = { sport: "Code du sport", travail: "Code du travail", civil: "Code civil", commerce: "Code de commerce", assurances: "Code des assurances", cgi: "Code général des impôts", cmf: "Code monétaire et financier", css: "Code de la sécurité sociale", csi: "Code de la sécurité intérieure" };
+  const CODE_WORDS = [[/code du sport|c\. sport/i, "sport"], [/code du travail|c\. trav/i, "travail"], [/code civil|c\. civ/i, "civil"], [/code de commerce|c\. com/i, "commerce"], [/code des assurances|c\. assur/i, "assurances"], [/\bcgi\b|général des impôts/i, "cgi"], [/\bcmf\b|monétaire et financier/i, "cmf"], [/sécurité sociale|\bcss\b/i, "css"], [/sécurité intérieure/i, "csi"]];
+  const DOMAIN_CODES = { agents: ["sport", "cmf", "travail", "civil"], dopage: ["sport"], contrats: ["civil", "sport", "commerce"], societes: ["commerce", "civil", "sport"], associations: ["sport", "cgi"], fiscal: ["cgi", "civil"], travail: ["travail", "sport", "css"], personnalite: ["civil", "sport", "cgi", "css"], assurances: ["assurances", "sport"], actualite: ["sport", "travail"] };
+  const REF_RX = /\b([LRDA])\.?[\s\u00a0\u202f]*(\d{1,4}(?:\u2060?-\u2060?\d+)*)|\b[Aa]rt(?:icles?|\.)[\s\u00a0\u202f]+(\d{1,4}(?:\u2060?-\u2060?\d+)*(?:[\s\u00a0\u202f]?(?:bis|ter|quater|[A-Z]{1,2}\b))?)/g;
+  function viewDomain() {
+    const v = S.view;
+    if (v === "module") return S.param;
+    if (v === "outil") return String(S.param || "").split(":")[0];
+    if (v === "fiche" || v === "cours" || v === "chapter") return C.chapter(S.param)?.domaine;
+    if (v === "quiz" && S.session) { const q = C.q(S.session.ids[S.session.i]); return q && C.chapter(q.chapitre)?.domaine; }
+    if (v === "cardPlay" && S.deck) return allCards().find((k) => k.id === S.deck.ids[S.deck.i])?.domaine;
+    return null;
+  }
+  function resolveRef(num, near, dom, lettered) {
+    const has = (c) => S.arts?.[c]?.[num];
+    const named = CODE_WORDS.find(([rx]) => rx.test(near));
+    if (named) return has(named[1]) ? named[1] : null;
+    if (!lettered) return (DOMAIN_CODES[dom] || []).filter((c) => c === "civil" || c === "cgi").find(has) || null;
+    return [...(DOMAIN_CODES[dom] || []), "sport", "travail", "commerce", "assurances", "cmf", "cgi", "css"].find(has) || null;
+  }
+  function linkRefs(root) {
+    if (!S.arts || S.view === "ficheEdit") return;
+    const dom = viewDomain();
+    root.querySelectorAll(".rich, .lesson-sec, .flash-text, .exam-corr, .var-expl, .rule-ref, .exam-fix .muted, .row-sub.ref-on").forEach((box) => {
+      const walker = document.createTreeWalker(box, NodeFilter.SHOW_TEXT), nodes = [];
+      while (walker.nextNode()) if (!walker.currentNode.parentElement.closest("button, a, textarea, [contenteditable]")) nodes.push(walker.currentNode);
+      nodes.forEach((n) => {
+        const t = n.textContent; REF_RX.lastIndex = 0;
+        let m, at = 0, frag = null;
+        while ((m = REF_RX.exec(t))) {
+          const raw = (m[2] || m[3]).replace(/[\u2060\s\u00a0\u202f]/g, "");
+          const num = m[1] ? m[1] + raw : raw;
+          const near = t.slice(Math.max(0, m.index - 24), m.index) + " " + t.slice(m.index + m[0].length, m.index + m[0].length + 40);
+          const code = resolveRef(num, near, dom, !!m[1]);
+          if (!code) continue;
+          frag = frag || document.createDocumentFragment();
+          frag.append(t.slice(at, m.index));
+          const b = document.createElement("button");
+          b.type = "button"; b.className = "ref"; b.dataset.act = "art"; b.dataset.param = code + "|" + num; b.textContent = m[0];
+          frag.append(b); at = m.index + m[0].length;
+        }
+        if (frag) { frag.append(t.slice(at)); n.replaceWith(frag); }
+      });
+    });
+  }
+  function openArticle(param) {
+    const [code, num] = param.split("|"), a = S.arts?.[code]?.[num]; if (!a) return;
+    let d = document.getElementById("art-dlg");
+    if (!d) {
+      d = document.createElement("dialog"); d.id = "art-dlg"; d.className = "art-dlg"; d.setAttribute("aria-labelledby", "art-t"); document.body.append(d);
+      d.addEventListener("click", (e) => { if (e.target === d) d.close(); });
+    }
+    const label = /^[LRDA]/.test(num) ? `${num[0]}. ${num.slice(1)}` : num;
+    const q = encodeURIComponent(`article ${label} ${CODE_NAMES[code]}`);
+    d.innerHTML = typo(`<div class="art-head"><div class="stack"><h2 class="art-title" id="art-t">Article ${esc(label)}</h2><p class="muted small" style="margin:0">${esc(CODE_NAMES[code])}</p></div><button class="link-btn" data-act="art-close">Fermer</button></div>
+      ${a.cut ? `<p class="note warn" style="margin:0">Nos sources ne donnent qu'une partie de cet article. Vérifie le texte complet sur Légifrance.</p>` : ""}
+      <div class="art-text">${a.t.split("\n").map((l) => `<p>${esc(l)}</p>`).join("")}</div>
+      <a class="row" href="https://www.legifrance.gouv.fr/search/all?query=${q}" target="_blank" rel="noopener"><span class="row-title" style="font-size:15px">Voir sur Légifrance</span><span class="row-side">${icon("chevron")}</span></a>`);
+    d.showModal(); d.scrollTop = 0;
+  }
+
   /* ---------- Guided tour: once after the first entry, then from Mon espace ---------- */
   const TOUR = [
     { mark: () => pic("ic-home"), title: "Un match par jour", text: "Dans l'onglet Accueil, tu retrouves chaque jour ton match et ton conseil pour avancer." },
@@ -1949,9 +2027,16 @@ a.row:hover .row-title { color: var(--green); }
   }
   function tourDone() { S.progress.settings.tourDone = true; save(); }
 
+  // Plays once, then rests on its last frame; the still image also stands in when motion is off or the video cannot start
+  function splashBg() {
+    if (window.claude) return "";
+    const f = matchMedia("(orientation: portrait)").matches ? "entree-v" : "entree-h";
+    return `<div class="splash-bg" aria-hidden="true">${fxOn() ? `<video muted autoplay playsinline preload="auto" poster="media/${f}.jpg" src="media/${f}.mp4"></video>` : `<img src="media/${f}.jpg" alt="">`}</div>`;
+  }
+
   function vWelcome() {
     return `<main class="splash" data-act="enter" aria-label="Bienvenue sur ELEVEN ACADEMY">
-      <img class="hero-crest" src="${ASSET["crest"]}" alt="" width="371" height="416">${WORDMARK.replace('alt=""', 'alt="ELEVEN ACADEMY"')}
+      ${splashBg()}<img class="hero-crest" src="${ASSET["crest"]}" alt="" width="371" height="416">${WORDMARK.replace('alt=""', 'alt="ELEVEN ACADEMY"')}
       <h1 class="splash-slogan">Prépare ta licence. Maîtrise le jeu.</h1>
       ${S.name && !S.owner ? `<p class="splash-hello">Content de te revoir, ${esc(S.name.split(" ")[0])}.</p>` : ""}
       <button class="btn btn-primary" data-act="enter">${icon("play")}Entrer sur le terrain</button></main>`;
@@ -1977,11 +2062,16 @@ a.row:hover .row-title { color: var(--green); }
     document.documentElement.classList.toggle("no-fx", !fxOn());
     if (S.login) { app.innerHTML = typo(vLogin()); document.querySelector(".tabbar").hidden = true; return; }
     if (!S.progress) { app.innerHTML = vLoading(); document.querySelector(".tabbar").hidden = true; return; }
-    if (S.welcome) { app.innerHTML = typo(vWelcome()); document.querySelector(".tabbar").hidden = true; return; }
+    if (S.welcome) {
+      app.innerHTML = typo(vWelcome()); document.querySelector(".tabbar").hidden = true;
+      const v = app.querySelector(".splash-bg video"); if (v) { v.muted = true; v.play()?.catch(() => {}); }
+      return;
+    }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
     const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
+    linkRefs(app);
   }
 
   /* ---------- Events ---------- */
@@ -2075,6 +2165,8 @@ a.row:hover .row-title { color: var(--green); }
       } break;
       case "card-quit": { const back = S.deck?.back || "cards"; S.deck = null; go(back); break; }
       case "card-kind": S.cardQ.kind = param; document.querySelectorAll("#card-chips .chip").forEach((c) => c.setAttribute("aria-pressed", c.dataset.param === param)); document.getElementById("card-out").innerHTML = typo(cardOut()); break;
+      case "art": openArticle(param); break;
+      case "art-close": document.getElementById("art-dlg")?.close(); break;
       case "fiche-edit": openEditor(param); break;
       case "cours-edit": { const cut = param.lastIndexOf(":"); openEditor(param.slice(0, cut), Number(param.slice(cut + 1))); break; }
       case "ed": edCommand(param); break;
@@ -2130,7 +2222,14 @@ a.row:hover .row-title { color: var(--green); }
         L.email = document.getElementById("l-email").value.trim(); L.name = document.getElementById("l-name").value.trim();
         if (!/^\S+@\S+\.\S+$/.test(L.email)) { L.err = "Indique une adresse e-mail valide, par exemple prenom@exemple.fr."; render(); document.getElementById("l-email")?.focus(); return; }
         const r = await S.sb.auth.signInWithOtp({ email: L.email, options: { shouldCreateUser: true, emailRedirectTo: location.origin + location.pathname } });
-        if (r.error) { L.err = "Le lien n'a pas pu être envoyé. Réessaie dans quelques minutes."; render(); return; }
+        if (r.error) {
+          const code = r.error.code || "";
+          L.err = code === "over_email_send_rate_limit" || r.error.status === 429 ? "Trop de liens envoyés pour l'instant : le service limite les envois par heure. Réessaie dans une heure."
+            : code === "email_address_not_authorized" ? "Cette adresse n'est pas autorisée pour le moment. Demande à l'administrateur de l'appli de l'ajouter."
+            : code === "signup_disabled" || code === "otp_disabled" ? "Les nouvelles inscriptions sont fermées, et cette adresse n'a pas de compte. Vérifie l'orthographe, ou demande à l'administrateur."
+            : "Le lien n'a pas pu être envoyé. Vérifie ta connexion et réessaie.";
+          render(); return;
+        }
         lsSet("ea-pending-name", L.name);
         L.step = "code"; render(); document.getElementById("l-code")?.focus(); return;
       }
@@ -2160,6 +2259,7 @@ a.row:hover .row-title { color: var(--green); }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   async function afterAuth(hotData) {
+    fetch("content/articles.json").then((r) => r.ok ? r.json() : null).then((j) => { S.arts = j; if (j && !S.welcome) linkRefs(document.getElementById("app")); }).catch(() => {});
     await Promise.all([loadContent(), loadProgress()]);
     await loadFicheEdits();
     if (hotData && hotData.session && S.content) { S.session = hotData.session; S.view = hotData.view || "home"; S.param = hotData.param ?? null; }
