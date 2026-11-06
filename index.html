@@ -310,6 +310,16 @@ a.row:hover .row-title { color: var(--green); }
 .sheet-src { font-size: 13px; color: var(--ink-2); border-top: 1px solid var(--paper-line); padding-top: 10px; }
 .sheet.dark .sheet-src { border-color: var(--line); }
 
+/* Guided tour */
+.tour { min-height: calc(100vh - 100px); min-height: calc(100dvh - 100px); display: flex; flex-direction: column; gap: 18px; padding-top: 8px; }
+.tour-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.tour-body { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; padding-block: 16px; }
+.tour-body .pic, .tour-body .tile { width: 84px; height: 84px; border-radius: 20px; }
+.tour-body .tile svg { width: 48px; height: 48px; }
+.tour-title { margin: 0; font-size: 30px; font-weight: 800; line-height: 1.15; text-wrap: balance; }
+.tour-text { margin: 0; font-size: 17px; line-height: 1.6; max-width: 65ch; }
+.tour-actions { display: grid; grid-template-columns: auto 1fr; gap: 10px; padding-bottom: 12px; }
+
 /* Licence */
 .licence { display: flex; flex-direction: column; gap: 16px; padding: 18px; border-radius: var(--r-m); border: 1px solid var(--tile-rim); background: linear-gradient(160deg, rgba(169, 224, 35, 0.16), rgba(169, 224, 35, 0) 55%), var(--turf); box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4); }
 .lic-head { display: flex; align-items: center; gap: 14px; min-width: 0; }
@@ -971,7 +981,7 @@ a.row:hover .row-title { color: var(--green); }
     if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
   }
   function renderTabs() {
-    const hidden = ["quiz", "ficheEdit", "cardPlay", "exam", "examIntro", "examFix"].includes(S.view);
+    const hidden = ["quiz", "ficheEdit", "cardPlay", "exam", "examIntro", "examFix", "tour"].includes(S.view);
     document.querySelector(".tabbar").hidden = hidden;
     const map = { home: "home", train: "train", chapter: "train", match: "match", cards: "cards", examIntro: "match", exam: "match", examFix: "match", fiche: "train", cours: "train", outil: "train", module: "train", progress: "progress", result: "home", me: "" };
     const cur = map[S.view];
@@ -1881,6 +1891,7 @@ a.row:hover .row-title { color: var(--green); }
     return `${header()}<main class="screen narrow">
       <div class="greet"><h1 class="h-screen">Mon espace</h1><p>${syncBadge()}</p></div>
       ${licence()}
+      <button class="row" data-act="tour-open"><span class="stack"><span class="row-title">Comment ça marche</span><span class="row-sub">La visite de l'appli, en moins d'une minute</span></span><span class="row-side">${icon("chevron")}</span></button>
       ${S.sb && S.uid ? `<section class="sec" aria-labelledby="acc-t"><h2 class="h-sec" id="acc-t">Mon compte</h2>
         <div class="field"><label for="s-name">Ton prénom</label><input id="s-name" type="text" autocomplete="given-name" value="${esc(S.progress.settings.name || "")}"></div>
         <p class="small muted">Connectée avec ${esc(S.email || "ton adresse e-mail")}.</p>
@@ -1916,6 +1927,28 @@ a.row:hover .row-title { color: var(--green); }
       <img class="hero-crest" src="${ASSET["crest"]}" alt="" width="371" height="416">${WORDMARK.replace('alt=""', 'alt="ELEVEN ACADEMY"')}
       <p class="splash-slogan">Prépare ta licence. Maîtrise le jeu.</p></main>`;
   }
+  /* ---------- Guided tour: once after the first entry, then from Mon espace ---------- */
+  const TOUR = [
+    { mark: () => pic("ic-home"), title: "Un match par jour", text: "Dans l'onglet Accueil, tu retrouves chaque jour ton match et ton conseil pour avancer." },
+    { mark: () => pic("ic-cap"), title: "Apprends module par module", text: "Dans Programme, chaque chapitre suit le même parcours : le cours, la fiche, puis les questions. La recherche retrouve aussi un mot ou un article en quelques lettres." },
+    { mark: () => pic("ic-stopwatch"), title: "Entraîne-toi comme à l'examen", text: "Dans Match, joue le match du jour ou un module de ton choix. Quand tu te sens à niveau, passe le match officiel : un vrai sujet, en 2 heures, noté sur 20." },
+    { mark: () => tile("cards"), title: "Collectionne le vocabulaire", text: "Dans Cartes, retourne une carte et dis si tu la connais. Ta collection grandit, et les cartes à revoir reviennent en premier." },
+    { mark: () => pic("ic-chart"), title: "Monte de division", text: "Dans Progression, suis ta division, tes trophées et ce que tu maîtrises dans chaque module." }
+  ];
+  function vTour() {
+    const i = Math.min(S.tour || 0, TOUR.length - 1), t = TOUR[i], last = i === TOUR.length - 1;
+    return `<main class="screen narrow tour">
+      <div class="tour-top"><span class="tiny num" aria-live="polite">Écran ${i + 1} sur ${TOUR.length}</span><button class="link-btn" data-act="tour-skip">${S.tourBack ? "Fermer" : "Passer"}</button></div>
+      <div class="bar" aria-hidden="true"><i style="width:${Math.round(100 * (i + 1) / TOUR.length)}%"></i></div>
+      <div class="tour-body">${t.mark()}<h1 class="tour-title">${esc(t.title)}</h1><p class="tour-text">${esc(t.text)}</p></div>
+      <div class="${i ? "tour-actions" : "lesson-end"}">
+        ${i ? `<button class="btn btn-ghost" data-act="tour-prev">${icon("back")}Retour</button>` : ""}
+        ${last ? `<button class="btn btn-primary" data-act="tour-first">${icon("play")}${S.tourBack ? "Lancer un match" : "Lancer mon premier match"}</button>` : `<button class="btn btn-primary${i ? "" : " btn-block"}" data-act="tour-next">Suivant${icon("chevron")}</button>`}
+      </div>
+    </main>`;
+  }
+  function tourDone() { S.progress.settings.tourDone = true; save(); }
+
   function vWelcome() {
     return `<main class="splash" data-act="enter" aria-label="Bienvenue sur ELEVEN ACADEMY">
       <img class="hero-crest" src="${ASSET["crest"]}" alt="" width="371" height="416">${WORDMARK.replace('alt=""', 'alt="ELEVEN ACADEMY"')}
@@ -1946,7 +1979,7 @@ a.row:hover .row-title { color: var(--green); }
     if (!S.progress) { app.innerHTML = vLoading(); document.querySelector(".tabbar").hidden = true; return; }
     if (S.welcome) { app.innerHTML = typo(vWelcome()); document.querySelector(".tabbar").hidden = true; return; }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
-    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
+    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
   }
@@ -1966,7 +1999,12 @@ a.row:hover .row-title { color: var(--green); }
     const s = S.session;
     switch (el.dataset.act) {
       case "daily": { const p = buildDaily(S.progress.settings.perSession); startSession("daily", p.ids, "Match du jour"); break; }
-      case "enter": S.welcome = false; go("home"); break;
+      case "enter": S.welcome = false; if (S.content && !S.progress.settings.tourDone) { S.tour = 0; S.tourBack = false; go("tour"); } else go("home"); break;
+      case "tour-open": S.tour = 0; S.tourBack = true; go("tour"); break;
+      case "tour-next": S.tour = (S.tour || 0) + 1; go("tour"); break;
+      case "tour-prev": S.tour = Math.max(0, (S.tour || 0) - 1); go("tour"); break;
+      case "tour-skip": { const back = S.tourBack ? "me" : "home"; tourDone(); S.tourBack = false; go(back); break; }
+      case "tour-first": { tourDone(); S.tourBack = false; const plan = buildDaily(S.progress.settings.perSession); startSession("daily", plan.ids, "Match du jour"); break; }
       case "rev-kind": S.rev.kind = param; document.querySelectorAll("#rev-chips .chip").forEach((c) => c.setAttribute("aria-pressed", c.dataset.param === param)); document.getElementById("rev-out").innerHTML = typo(normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault()); break;
       case "ask": { const q = C.q(param); if (q) startSession("chapter", [q.id], "Question : " + q.enonce.slice(0, 40)); break; }
       case "toc": { const t = document.getElementById(param); if (t) { t.scrollIntoView({ behavior: fxOn() ? "smooth" : "auto", block: "start" }); t.querySelector("h2")?.setAttribute("tabindex", "-1"); t.querySelector("h2")?.focus({ preventScroll: true }); } break; }
