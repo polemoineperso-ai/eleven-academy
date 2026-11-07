@@ -456,8 +456,11 @@ a.row:hover .row-title { color: var(--green); }
 .ticket.lvl-or::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: linear-gradient(105deg, transparent 40%, rgba(255, 235, 170, 0.3) 50%, transparent 60%) no-repeat; background-size: 300% 100%; background-position: 130% 0; animation: ticket-sheen 1200ms ease-out 200ms 1; }
 .no-fx .ticket.lvl-or::after { display: none; }
 @keyframes ticket-sheen { from { background-position: 130% 0; } to { background-position: -30% 0; } }
-.lvl-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0; padding: 0; list-style: none; }
-.lvl-legend li { display: flex; align-items: baseline; gap: 4px; }
+.lvl-legend { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.lvl-legend button, .lvl-off { display: inline-flex; align-items: baseline; gap: 4px; }
+.lvl-legend button { min-height: 44px; align-items: center; padding: 0 12px; border: 1px solid var(--t-line); border-radius: 999px; background: none; font: inherit; cursor: pointer; }
+.lvl-legend button:hover { background: var(--t-bg); }
+.lvl-off { min-height: 44px; align-items: center; padding: 0 4px; opacity: 0.72; }
 .lvl-legend b { font-size: 15px; font-weight: 800; color: var(--t-acc); }
 .lvl-legend span { font-size: 13px; color: var(--fg-2); }
 .bar.lvl-stack { display: flex; }
@@ -1540,11 +1543,14 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   function buildDeck(pool, n) {
     const rank = (k) => { const st = cardState(k.id); return !st ? 1 : st.s === "todo" ? 0 : 2; };
     const when = (k) => cardState(k.id)?.d || "";
-    return pool.slice().sort((a, b) => rank(a) - rank(b) || when(a).localeCompare(when(b))).slice(0, n).map((k) => k.id);
+    const mixed = pool.slice();
+    for (let i = mixed.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [mixed[i], mixed[j]] = [mixed[j], mixed[i]]; }
+    /* a billet to review stays first, then new ones, then the oldest known; the mix decides everything else */
+    return mixed.sort((a, b) => rank(a) - rank(b) || (rank(a) === 2 ? when(a).localeCompare(when(b)) : 0)).slice(0, n).map((k) => k.id);
   }
-  function startDeck(ids, single, mod) {
+  function startDeck(ids, single, mod, lvl) {
     if (!ids.length) { toast("Aucun billet disponible pour l'instant."); return; }
-    S.deck = { ids, i: 0, flip: !!single, ok: 0, todo: 0, single: !!single, mod: mod || null, back: S.deck?.back || (S.view === "train" ? "train" : "cards") };
+    S.deck = { ids, i: 0, flip: !!single, ok: 0, todo: 0, single: !!single, mod: mod || null, lvl: lvl || null, back: S.deck?.back || (S.view === "train" ? "train" : "cards") };
     go("cardPlay");
   }
   function cardResults() {
@@ -1581,7 +1587,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       <section class="ladder" aria-label="Billets acquis">
         <div class="ladder-row"><span class="cards-count num">${n} sur ${all.length} billets acquis</span></div>
         <div class="bar lvl-stack" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Billets acquis"><i class="s-or" style="width:${(100 * lvAll.or / (all.length || 1)).toFixed(2)}%"></i><i class="s-ok" style="width:${(100 * lvAll.ok / (all.length || 1)).toFixed(2)}%"></i><i class="s-todo" style="width:${(100 * lvAll.todo / (all.length || 1)).toFixed(2)}%"></i></div>
-        <ul class="lvl-legend" aria-label="Billets par niveau">${["new", "todo", "ok", "or"].map((l) => `<li class="lvl-${l}"><b class="num">${lvAll[l]}</b><span>${LEVELS[l]}</span></li>`).join("")}</ul>
+        <ul class="lvl-legend" aria-label="Jouer les billets d'un niveau">${["new", "todo", "ok", "or"].map((l) => `<li class="lvl-${l}">${lvAll[l] ? `<button type="button" data-act="card-level" data-param="${l}" aria-label="Jouer les billets : ${LEVELS[l]}, ${lvAll[l]}"><b class="num">${lvAll[l]}</b><span>${LEVELS[l]}</span></button>` : `<span class="lvl-off"><b class="num">0</b><span>${LEVELS[l]}</span></span>`}</li>`).join("")}</ul>
       </section>
       <button class="btn btn-primary btn-block" data-act="card-play">${icon("play")}Jouer 10 billets</button>
       <div class="rev-search" role="search"><label for="card-q">Chercher un mot ou un article</label>
@@ -2412,7 +2418,12 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "exam-save": { const cur = examNow(), e = cur && examById(cur.id); if (!e) break; const m = examMark(cur, e);
         S.progress.examResults = [{ id: cur.id, date: today(), note: m.note, qcm: m.qcm, cas: m.cas }].concat(S.progress.examResults || []).slice(0, 30);
         S.progress.examCur = null; save(); go("match"); toast(`Note enregistrée : ${frNote(m.note)} / 20.`); break; }
-      case "card-play": { const mod = S.deck?.mod; startDeck(buildDeck(mod ? allCards().filter((k) => k.domaine === mod) : allCards(), 10), false, mod); break; }
+      case "card-play": {
+        const mod = S.deck?.mod, base = mod ? allCards().filter((k) => k.domaine === mod) : allCards();
+        const lvl = S.deck?.lvl, same = lvl ? base.filter((k) => cardLevel(k.id) === lvl) : [];
+        startDeck(buildDeck(same.length ? same : base, 10), false, mod, same.length ? lvl : null); break;
+      }
+      case "card-level": startDeck(buildDeck(allCards().filter((k) => cardLevel(k.id) === param), 10), false, null, param); break;
       case "card-module": startDeck(buildDeck(allCards().filter((k) => k.domaine === param), 10), false, param); break;
       case "card-open": startDeck([param], true); break;
       case "card-flip": if (S.deck) { S.deck.flip = true; S.deck.anim = true; render(); window.scrollTo(0, 0); focusH1(); S.deck.anim = false; } break;
