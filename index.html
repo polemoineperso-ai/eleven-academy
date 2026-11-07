@@ -192,6 +192,7 @@ h1, h2, h3 { margin: 0; text-wrap: balance; }
 .stat + .stat { border-left: 1px solid var(--line); padding-left: 14px; }
 .stat-val { font-size: 26px; font-weight: 800; font-style: italic; line-height: 1.1; font-variant-numeric: tabular-nums; }
 .stat-lab { font-size: 13px; color: var(--fg-2); font-weight: 500; }
+.stat-sub { font-size: 12px; line-height: 1.3; color: var(--fg-3); font-weight: 500; }
 
 .ladder { display: flex; flex-direction: column; gap: 10px; }
 .ladder-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
@@ -1170,9 +1171,9 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       </section>
       ${matchCard()}
       <div class="home-side"><section class="stats" aria-label="Statistiques">
-        <div class="stat"><span class="stat-val">${p.streak.count}</span><span class="stat-lab">${p.streak.count > 1 ? "jours de série" : "jour de série"}</span></div>
-        <div class="stat"><span class="stat-val">${fmt(p.xp)}</span><span class="stat-lab">points</span></div>
-        <div class="stat"><span class="stat-val">${p.total ? accuracy() + " %" : "–"}</span><span class="stat-lab">de bonnes réponses</span></div>
+        <div class="stat"><span class="stat-val">${p.streak.count}</span><span class="stat-lab">${p.streak.count > 1 ? "jours d'affilée" : "jour d'affilée"}</span></div>
+        <div class="stat"><span class="stat-val">${fmt(p.xp)}</span><span class="stat-lab">points</span><span class="stat-sub">${dv.next ? `encore ${fmt(dv.next.min - p.xp)} pour monter` : "division la plus haute"}</span></div>
+        <div class="stat"><span class="stat-val">${p.total ? accuracy() + " %" : "–"}</span><span class="stat-lab">de bonnes réponses${p.total ? `, sur ${fmt(p.total)}` : ""}</span><span class="stat-sub">Objectif : 50 %</span></div>
       </section>
       <section class="ladder" aria-label="Division">
         <div class="ladder-row"><span class="ladder-name">${icon("trophy")}${esc(dv.cur.name)}</span>
@@ -1355,7 +1356,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       <div class="score">
         <span class="score-big num ${fxOn() ? "pop" : ""}">${right}<small> / ${total}</small></span>
         <h1 class="h-sec">${word}</h1><span class="muted small">${esc(s.label)}</span></div>
-      <div class="gains"><span class="gain num">${icon("star")}+${gainXp} points</span><span class="gain num">${icon("flame")}${S.progress.streak.count} ${S.progress.streak.count > 1 ? "jours" : "jour"} de série</span></div>
+      <div class="gains"><span class="gain num">${icon("star")}+${gainXp} points</span><span class="gain num">${icon("flame")}${S.progress.streak.count} ${S.progress.streak.count > 1 ? "jours" : "jour"} d'affilée</span></div>
       ${divisionUp ? `<div class="trophy-new ${fxOn() ? "pop" : ""}">${pic("ic-trophy")}<div><b>Montée en ${esc(divisionUp)}</b><span>Tu changes de division.</span></div></div>` : ""}
       ${won.map((id) => { const t = TROPHIES.find((x) => x.id === id); return t ? `<div class="trophy-new ${fxOn() ? "pop" : ""}">${pic("ic-trophy")}<div><b>Trophée : ${esc(t.name)}</b><span>${esc(t.desc)}</span></div></div>` : ""; }).join("")}
       ${missed.length ? `<section class="sec" aria-labelledby="miss-t"><h2 class="h-sec" id="miss-t">À revoir demain</h2>
@@ -1996,7 +1997,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         <div class="stack" style="min-width:0"><p class="lic-name">${first ? esc(first) : "Ta licence"}</p><p class="lic-div">${icon("trophy")}${esc(division(p.xp).cur.name)}</p></div></div>
       <dl class="lic-stats">
         <div><dt>points</dt><dd>${fmt(p.xp)}</dd></div>
-        <div><dt>${p.streak.count > 1 ? "jours de série" : "jour de série"}</dt><dd>${p.streak.count}</dd></div>
+        <div><dt>${p.streak.count > 1 ? "jours d'affilée" : "jour d'affilée"}</dt><dd>${p.streak.count}</dd></div>
         <div><dt>${cardsKnown(allCards()) > 1 ? "billets acquis" : "billet acquis"}</dt><dd>${cardsKnown(allCards())}</dd></div>
       </dl>
       <p class="lic-foot">Épreuve générale du CNOSF : novembre 2027, dans environ ${months} mois.</p>
