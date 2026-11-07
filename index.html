@@ -349,11 +349,11 @@ a.row:hover .row-title { color: var(--green); }
 .arb-next { margin-top: 8px; }
 .arb-wait { margin: 0; font-size: 15px; color: var(--fg-2); }
 .arb-err { margin: 0; font-size: 15px; line-height: 1.45; color: var(--chalk); }
-#arb-dlg { max-height: 92vh; max-height: 92dvh; }
+#arb-dlg { max-height: 92vh; max-height: 92dvh; border: 1px solid var(--green); }
 .arb-form { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 8px; align-items: stretch; }
 .arb-form label { grid-column: 1 / -1; font-size: 14px; font-weight: 600; }
 .arb-form .btn { padding-inline: 16px; min-height: 48px; }
-.arb-form textarea { width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--r-s); background: var(--pitch); color: var(--chalk); font: inherit; font-size: 16px; line-height: 1.4; resize: none; }
+.arb-form textarea { width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid var(--green); border-radius: var(--r-s); background: var(--pitch); color: var(--chalk); font: inherit; font-size: 16px; line-height: 1.4; resize: none; }
 .arb-foot { margin: 0; font-size: 13px; line-height: 1.45; color: var(--fg-3); }
 .art-text p { margin: 0 0 10px; font-size: 16px; line-height: 1.6; max-width: 65ch; }
 @media (min-width: 620px) { .art-dlg { margin: auto; border-radius: var(--r-m); } }
@@ -499,6 +499,7 @@ a.row:hover .row-title { color: var(--green); }
 .opt.is-wrong { border-color: var(--red); background: var(--red-soft); }
 .opt.is-wrong .opt-letter { background: var(--red); color: var(--pitch); }
 .opt.is-dim { opacity: 0.72; }
+.opt:not(.is-right, .is-wrong, .is-dim, .is-picked) { border-color: var(--green); }
 
 /* Revue VAR: the signature panel */
 .var {
