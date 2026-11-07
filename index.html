@@ -315,6 +315,7 @@ a.row:hover .row-title { color: var(--green); }
 /* Article references */
 .ref { display: inline; padding: 0; border: 0; background: none; color: inherit; font: inherit; font-weight: 600; text-decoration: underline dotted var(--green-press) 2px; text-underline-offset: 3px; cursor: pointer; }
 .ref:hover { text-decoration-style: solid; }
+.ref-glue { white-space: nowrap; }
 .art-dlg { width: min(100%, 620px); max-width: 100%; max-height: 82vh; max-height: 82dvh; margin: auto auto 0; padding: 18px 18px calc(18px + env(safe-area-inset-bottom, 0px)); border: 0; border-radius: var(--r-m) var(--r-m) 0 0; background: var(--turf); color: var(--chalk); }
 .art-dlg[open] { display: flex; flex-direction: column; gap: 14px; }
 .art-dlg::backdrop { background: rgba(5, 8, 6, 0.72); }
@@ -322,8 +323,10 @@ a.row:hover .row-title { color: var(--green); }
 .art-title { margin: 0; font-size: 20px; font-weight: 800; }
 .art-dlg:focus, #arb-t:focus { outline: none; }
 .arb-acts { display: flex; gap: 16px; }
+.arb-ctx { display: flex; flex-direction: column; gap: 12px; }
+.arb-note.is-now { margin: 0; padding-top: 0; border-top: 0; font-size: 15px; font-weight: 600; color: var(--chalk); }
 .arb-note { margin: 4px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 14px; line-height: 1.45; color: var(--fg-2); }
-.arb-log { display: flex; flex-direction: column; gap: 16px; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+.arb-log { display: flex; flex-direction: column; gap: 16px; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-bottom: 20px; -webkit-mask-image: linear-gradient(#000 calc(100% - 20px), transparent); mask-image: linear-gradient(#000 calc(100% - 20px), transparent); }
 .arb-intro { margin: 0; font-size: 16px; line-height: 1.5; color: var(--fg-2); }
 .arb-sugg { display: flex; flex-direction: column; align-items: stretch; gap: 8px; }
 .arb-sugg button { min-height: 44px; padding: 10px 14px; border: 1px solid var(--line); border-radius: var(--r-s); background: none; color: var(--chalk); font: inherit; font-size: 15px; font-weight: 600; text-align: left; cursor: pointer; }
@@ -336,19 +339,23 @@ a.row:hover .row-title { color: var(--green); }
 .arb-ans ul { margin: 0 0 12px; padding-left: 20px; font-size: 16px; line-height: 1.5; }
 .arb-ans li { margin-bottom: 6px; }
 .arb-table { margin: 0 0 12px; overflow-x: auto; }
-.arb-table table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.4; }
+.arb-table table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 14px; line-height: 1.4; }
+.arb-table th:first-child, .arb-table td:first-child { width: 26%; padding-right: 12px; }
+.arb-table td:first-child { color: var(--fg-2); font-weight: 600; }
 .arb-table th, .arb-table td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
 .arb-table th { font-weight: 700; }
-.arb-src { display: flex; flex-direction: column; margin-top: 10px; }
-.arb-src-lab { font-size: 13px; color: var(--fg-3); }
+.arb-src { display: flex; flex-direction: column; margin-top: 16px; }
+.arb-src-lab { font-size: 14px; font-weight: 600; color: var(--fg-2); }
+.arb-src > :last-child { border-bottom: 0; }
 .arb-src-link { display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 0; border: 0; border-bottom: 1px solid var(--line); background: none; color: var(--chalk); font: inherit; font-size: 14px; line-height: 1.35; text-align: left; cursor: pointer; }
 .arb-src-link span { flex: 1; min-width: 0; }
 .arb-src-link svg { width: 18px; height: 18px; flex: none; color: var(--green); }
-.arb-src-note { padding: 6px 0; font-size: 14px; color: var(--fg-2); }
-.arb-more { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
-.arb-more button { min-height: 44px; padding: 8px; border: 1px solid var(--line); border-radius: var(--r-s); background: none; color: var(--chalk); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
-.arb-more button:hover { background: var(--turf-2); }
+.arb-src-note { padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14px; color: var(--fg-2); }
+.arb-more { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .arb-next { margin-top: 8px; }
+.arb-next button { font-size: 14px; font-weight: 500; }
+#arb-reset { color: var(--fg-2); }
+#arb-dlg .art-head { align-items: center; }
 .arb-wait { margin: 0; font-size: 15px; color: var(--fg-2); }
 .arb-err { margin: 0; font-size: 15px; line-height: 1.45; color: var(--chalk); }
 #arb-dlg { max-height: 92vh; max-height: 92dvh; border: 2px solid var(--green); }
@@ -390,6 +397,10 @@ a.row:hover .row-title { color: var(--green); }
 .exam-time.is-low { color: var(--red); }
 .exam-fix .seg { display: grid; grid-template-columns: repeat(3, 1fr); }
 .exam-fix .seg button { height: 44px; padding-inline: 6px; }
+.exam-fix .seg button:not([aria-pressed="true"]) { color: var(--chalk); }
+.exam-fix .seg button + button { border-left: 1px solid var(--line); }
+.exam-arb { align-self: flex-start; color: var(--fg-2); font-weight: 500; }
+.exam-arb .pic { width: 22px; height: 22px; border-radius: 6px; }
 .exam-yours { white-space: pre-wrap; overflow-wrap: anywhere; }
 .exam-q { display: flex; flex-direction: column; gap: 12px; padding-block: 8px; }
 .exam-case { margin: 0; font-size: 16px; line-height: 1.6; max-width: 65ch; }
@@ -430,24 +441,25 @@ a.row:hover .row-title { color: var(--green); }
 .lvl-todo { --t-line: #C88A52; --t-bg: #211810; --t-acc: #E0A46F; }
 .lvl-ok { --t-line: var(--green); --t-bg: var(--turf); --t-acc: var(--green); }
 .lvl-or { --t-line: var(--gold); --t-bg: #241C07; --t-acc: var(--gold); }
-.sheet.flash.ticket { position: relative; display: flex; flex-direction: column; gap: 0; padding: 0; overflow: hidden; border: 2px solid var(--t-line); border-radius: var(--r-m); background: var(--t-bg); color: var(--chalk); box-shadow: none; }
+.sheet.flash.ticket { position: relative; display: flex; flex-direction: column; gap: 0; padding: 0; border: 2px solid var(--t-line); border-radius: var(--r-m); background: var(--t-bg); color: var(--chalk); box-shadow: none; }
 .ticket-main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 32px 20px; text-align: center; }
 .ticket-main .pic { width: 88px; height: 88px; border-radius: 20px; }
 .ticket-main.back { align-items: stretch; justify-content: flex-start; padding: 20px; text-align: left; }
-.ticket-stub { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 22px; border-top: 2px dashed var(--t-line); text-align: left; }
-.ticket-stub::before, .ticket-stub::after { content: ""; position: absolute; top: -13px; width: 22px; height: 22px; border: 2px solid var(--t-line); border-radius: 50%; background: var(--pitch); }
-.ticket-stub::before { left: -13px; }
-.ticket-stub::after { right: -13px; }
+.ticket-stub { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 20px; border-top: 2px dashed var(--t-line); text-align: left; }
+.ticket-stub::before, .ticket-stub::after { content: ""; position: absolute; top: -13px; width: 24px; height: 24px; box-sizing: border-box; border: 2px solid var(--t-line); border-radius: 50%; background: #0A0B0A; }
+.ticket-stub::before { left: -14px; clip-path: inset(-1px -1px -1px 12px); }
+.ticket-stub::after { right: -14px; clip-path: inset(-1px 12px -1px -1px); }
+@media (min-height: 600px) { .sheet.flash.ticket { min-height: 58vh; } }
 .ticket-tribune { display: block; font-size: 15px; font-weight: 800; color: var(--chalk); }
 .ticket-sub { display: block; margin-top: 2px; font-size: 13px; font-weight: 500; color: var(--fg-2); }
 .ticket-lvl { flex: none; font-size: 14px; font-weight: 800; color: var(--t-acc); }
-.ticket.lvl-or::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 35%, rgba(255, 235, 170, 0.3) 50%, transparent 65%); transform: translateX(-100%); animation: ticket-sheen 1200ms ease-out 200ms 1; }
+.ticket.lvl-or::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: linear-gradient(105deg, transparent 40%, rgba(255, 235, 170, 0.3) 50%, transparent 60%) no-repeat; background-size: 300% 100%; background-position: 130% 0; animation: ticket-sheen 1200ms ease-out 200ms 1; }
 .no-fx .ticket.lvl-or::after { display: none; }
-@keyframes ticket-sheen { to { transform: translateX(100%); } }
-.lvl-legend { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
-.lvl-legend li { padding: 8px 10px; border: 1px solid var(--t-line); border-radius: var(--r-s); background: var(--t-bg); }
-.lvl-legend b { display: block; font-size: 18px; font-weight: 800; color: var(--t-acc); }
-.lvl-legend span { display: block; font-size: 12px; color: var(--fg-2); overflow-wrap: anywhere; }
+@keyframes ticket-sheen { from { background-position: 130% 0; } to { background-position: -30% 0; } }
+.lvl-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0; padding: 0; list-style: none; }
+.lvl-legend li { display: flex; align-items: baseline; gap: 4px; }
+.lvl-legend b { font-size: 15px; font-weight: 800; color: var(--t-acc); }
+.lvl-legend span { font-size: 13px; color: var(--fg-2); }
 .bar.lvl-stack { display: flex; }
 .bar.lvl-stack i { border-radius: 0; flex: none; }
 .bar.lvl-stack .s-or { background: var(--gold); }
@@ -641,7 +653,8 @@ a.row:hover .row-title { color: var(--green); }
 .arb-fab { position: fixed; z-index: 24; right: max(16px, calc((100vw - 560px) / 2 + 16px)); bottom: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px) + 12px); display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 18px 0 14px; border: 0; border-radius: 999px; background: var(--green); color: var(--on-green); font: inherit; font-size: 15px; font-weight: 800; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55); cursor: pointer; }
 .arb-fab:hover { background: var(--green-press); }
 .arb-fab[hidden] { display: none; }
-.arb-fab .pic, .btn .pic { width: 26px; height: 26px; border-radius: 7px; }
+@media (min-width: 900px) { .arb-fab { right: 24px; bottom: 24px; } }
+.arb-fab .pic, .btn .pic, .link-btn .pic { width: 26px; height: 26px; border-radius: 7px; }
 body.has-arb #app::after { content: ""; display: block; height: 64px; }
 .tabbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.45);
@@ -1469,12 +1482,14 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         ${cas.questions.map((x, j) => { const key = `${i}-${j}`, g = cur.grade[key]; return `<div class="exam-fix"><p class="exam-fq">${j + 1}. ${esc(x.q)}</p>
           <p class="small muted exam-yours" style="margin:0">Ta réponse : ${isBlank(cur, key) ? "aucune" : esc(cur.cas[key])}</p>
           <p class="exam-corr"><b>Corrigé :</b> ${esc(x.c)} <span class="muted small">(${esc(x.ref)})</span></p>
-          ${isBlank(cur, key) ? `<p class="small" style="margin:0"><b>Sans réponse : 0 point.</b></p>` : `<div class="seg" role="group" aria-label="Ta note pour cette réponse">${[[1, "Trouvé"], [0.5, "En partie"], [0, "Manqué"]].map(([v, l]) => `<button data-act="exam-grade" data-param="${key}:${v}" aria-pressed="${g === v}">${l}</button>`).join("")}</div>`}</div>`; }).join("")}</section>`).join("")}
+          ${isBlank(cur, key) ? `<p class="small" style="margin:0"><b>Sans réponse : 0 point.</b></p>` : `<div class="seg" role="group" aria-label="Ta note pour cette réponse">${[[1, "Trouvé"], [0.5, "En partie"], [0, "Manqué"]].map(([v, l]) => `<button data-act="exam-grade" data-param="${key}:${v}" aria-pressed="${g === v}">${l}</button>`).join("")}</div>`}
+          ${arbitreOn() ? `<button class="link-btn exam-arb" data-act="arbitre" data-param="x:${e.id}:${i}:${j}">${pic("ic-arbitre")}Appeler l'arbitre</button>` : ""}</div>`; }).join("")}</section>`).join("")}
       <button class="btn btn-primary btn-block" data-act="exam-save">${icon("check")}${m.todo ? `Enregistrer ma note (${m.todo} à noter)` : "Enregistrer ma note"}</button>
       <section class="sec" aria-labelledby="fq-t"><h2 class="h-sec" id="fq-t">Les QCM</h2>
         ${e.qcm.map((id, n) => { const q = C.q(id); if (!q) return ""; const c = cur.qcm[id], ok = c === q.bonne; return `<div class="exam-fix"><p class="exam-fq"><span class="exam-mark ${ok ? "ok" : "ko"}">${icon(ok ? "check" : "close")}<span class="sr">${ok ? "Juste." : "Faux."}</span></span>${n + 1}. ${esc(q.enonce)}</p>
           ${ok ? "" : `<p class="small muted" style="margin:0">Ta réponse : ${c === undefined ? "aucune" : esc(q.options[c])}</p>`}
-          <p class="exam-corr"><b>Bonne réponse :</b> ${esc(q.options[q.bonne])}</p><p class="small muted" style="margin:0">${esc(q.explication)}</p></div>`; }).join("")}</section>
+          <p class="exam-corr"><b>Bonne réponse :</b> ${esc(q.options[q.bonne])}</p><p class="small muted" style="margin:0">${esc(q.explication)}</p>
+          ${arbitreOn() && !ok ? `<button class="link-btn exam-arb" data-act="arbitre" data-param="q:${id}:${c ?? ""}">${pic("ic-arbitre")}Appeler l'arbitre</button>` : ""}</div>`; }).join("")}</section>
       <div class="lesson-end"><button class="btn btn-primary btn-block" data-act="exam-save">${icon("check")}${m.todo ? `Enregistrer ma note (${m.todo} à noter)` : "Enregistrer ma note"}</button></div>
     </main>`;
   }
@@ -1562,10 +1577,10 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     S.cardQ = S.cardQ || { q: "", kind: "all" };
     const all = allCards(), n = cardsKnown(all), pct = all.length ? Math.round(100 * n / all.length) : 0, lvAll = levelCounts(all);
     return `${header()}<main class="screen">
-      <div class="greet"><h1 class="h-screen">Billets</h1><p class="muted small">Une notion par billet. Retourne-le, puis dis si tu la connais.</p></div>
+      <div class="greet"><h1 class="h-screen">Billets</h1>${lvAll.new === all.length ? `<p class="muted small">Une notion par billet. Retourne-le, puis dis si tu la connais.</p>` : ""}</div>
       <section class="ladder" aria-label="Billets acquis">
         <div class="ladder-row"><span class="cards-count num">${n} sur ${all.length} billets acquis</span></div>
-        <div class="bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Billets acquis"><i style="width:${pct}%"></i></div>
+        <div class="bar lvl-stack" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Billets acquis"><i class="s-or" style="width:${(100 * lvAll.or / (all.length || 1)).toFixed(2)}%"></i><i class="s-ok" style="width:${(100 * lvAll.ok / (all.length || 1)).toFixed(2)}%"></i><i class="s-todo" style="width:${(100 * lvAll.todo / (all.length || 1)).toFixed(2)}%"></i></div>
         <ul class="lvl-legend" aria-label="Billets par niveau">${["new", "todo", "ok", "or"].map((l) => `<li class="lvl-${l}"><b class="num">${lvAll[l]}</b><span>${LEVELS[l]}</span></li>`).join("")}</ul>
       </section>
       <button class="btn btn-primary btn-block" data-act="card-play">${icon("play")}Jouer 10 billets</button>
@@ -2082,10 +2097,14 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
           const code = resolveRef(num, near, dom, !!m[1]);
           if (!code) continue;
           frag = frag || document.createDocumentFragment();
-          frag.append(t.slice(at, m.index));
+          const pre = t.slice(at, m.index), lead = (pre.match(/[(«\u00a0\u202f]$/) || [""])[0];
+          const trail = (t.slice(m.index + m[0].length).match(/^[).,;:»]+/) || [""])[0];
+          frag.append(pre.slice(0, pre.length - lead.length));
           const b = document.createElement("button");
           b.type = "button"; b.className = "ref"; b.dataset.act = "art"; b.dataset.param = code + "|" + num; b.textContent = m[0];
-          frag.append(b); at = m.index + m[0].length;
+          if (lead || trail) { const glue = document.createElement("span"); glue.className = "ref-glue"; glue.append(lead, b, trail); frag.append(glue); }
+          else frag.append(b);
+          at = m.index + m[0].length + trail.length;
         }
         if (frag) { frag.append(t.slice(at)); n.replaceWith(frag); }
       });
@@ -2125,6 +2144,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     other: "L'arbitre ne répond pas pour le moment. Vérifie ta connexion, puis réessaie."
   };
   function arbSuggestions() {
+    if (S.arb.ctx.ex) return ["Explique-moi ce corrigé simplement", "Pourquoi ce texte s'applique ici ?", "Comment rédiger cette réponse à l'examen ?"];
     if (S.arb.ctx.q) return ["Explique-moi ça plus simplement", "Donne-moi un exemple dans le football", "Pourquoi les autres réponses sont fausses ?"];
     if (S.arb.ctx.chapitre) return ["Explique-moi ce chapitre simplement", "Quels pièges éviter à l'examen ?"];
     return ["Quelle est la différence entre agrément et délégation ?", "Que fait un agent sportif, concrètement ?"];
@@ -2137,6 +2157,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     if (t.kind === "art") return `<button type="button" class="arb-src-link" data-act="art" data-param="${esc(t.ref)}">${inner}</button>`;
     if (t.kind === "cours" || t.kind === "fiche") return `<button type="button" class="arb-src-link" data-go="${t.kind}" data-param="${esc(t.ref)}" data-from="chapter">${inner}</button>`;
     if (t.kind === "outil") return `<button type="button" class="arb-src-link" data-go="outil" data-param="${esc(t.ref)}">${inner}</button>`;
+    if (t.titre === "Lexique des billets") return `<button type="button" class="arb-src-link" data-go="cards">${inner}</button>`;
     return `<span class="arb-src-note">${esc(t.titre)}</span>`;
   }
   function arbAnswer(m, last) {
@@ -2148,20 +2169,21 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
           : `<p>${arbBold(b.texte || "")}</p>`).join("")
       : paras.map((x) => `<p>${esc(x.trim())}</p>`).join("");
     const src = (m.sources || []).slice(0, 4);
-    const more = last ? `<div class="arb-more"><button type="button" data-act="arb-ask" data-param="Explique plus simplement">Plus simple</button><button type="button" data-act="arb-ask" data-param="Donne plus de détail">Plus de détail</button></div>
+    const more = last ? `<div class="arb-more"><button type="button" class="chip" data-act="arb-ask" data-param="Explique plus simplement">Plus simple</button><button type="button" class="chip" data-act="arb-ask" data-param="Donne plus de détail">Plus de détail</button></div>
       ${(m.suites || []).length ? `<div class="arb-sugg arb-next">${m.suites.map((t) => `<button type="button" data-act="arb-ask" data-param="${esc(t)}">${esc(t)}</button>`).join("")}</div>` : ""}` : "";
-    return `<div class="arb-turn"><div class="arb-ans">${body}</div>${src.length ? `<div class="arb-src"><span class="arb-src-lab">D'après tes cours</span>${src.map(arbSource).join("")}</div>` : ""}${more}</div>`;
+    return `<div class="arb-turn"><div class="arb-ans">${body}</div>${src.length ? `<div class="arb-src"><span class="arb-src-lab">Sources</span>${src.map(arbSource).join("")}</div>` : ""}${more}</div>`;
   }
   // What the next request sends back as conversation: plain text only
   const arbPlain = (m) => m.role === "user" || !m.blocs ? m.text : [m.text, ...m.blocs.flatMap((b) => b.type === "liste" ? b.items : b.type === "tableau" ? (b.lignes || []).map((l) => l.join(" : ")) : [b.texte])].join("\n");
   function arbLog() {
     const A = S.arb;
     const lastAns = A.msgs.length - 1;
-    const turns = A.msgs.map((m, i) => m.role === "user" ? `<p class="arb-me">${esc(m.text)}</p>` : m.role === "note" ? `<p class="arb-note">${esc(m.text)}</p>` : arbAnswer(m, i === lastAns && !A.busy)).join("");
+    const endsOnNote = A.msgs.at(-1)?.role === "note" && !A.busy;
+    const turns = A.msgs.map((m, i) => m.role === "user" ? `<p class="arb-me">${esc(m.text)}</p>` : m.role === "note" ? (endsOnNote && i === lastAns ? "" : `<p class="arb-note">${esc(m.text)}</p>`) : arbAnswer(m, i === lastAns && !A.busy)).join("");
     const chips = `<div class="arb-sugg">${arbSuggestions().map((t) => `<button type="button" data-act="arb-ask" data-param="${esc(t)}">${esc(t)}</button>`).join("")}</div>`;
     return `${A.msgs.length ? "" : `<p class="arb-intro">Pose ta question : je réponds à partir de tes cours, de tes fiches et des articles de l'appli.</p>${chips}`}
       ${turns}
-      ${A.msgs.at(-1)?.role === "note" && !A.busy ? chips : ""}
+      ${endsOnNote ? `<div class="arb-ctx"><p class="arb-note is-now">${esc(A.msgs.at(-1).text)}</p>${chips}</div>` : ""}
       ${A.busy ? `<p class="arb-wait">L'arbitre consulte tes cours…</p>` : ""}
       ${A.err ? `<p class="arb-err">${esc(A.err)}</p>` : ""}`;
   }
@@ -2169,13 +2191,16 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     const log = document.querySelector("#arb-dlg .arb-log"); if (!log) return;
     log.innerHTML = typo(arbLog());
     linkRefs(log);
-    const asked = [...log.querySelectorAll(".arb-me, .arb-note")].at(-1);
+    const ctx = log.querySelector(".arb-ctx"); if (ctx) ctx.style.minHeight = `${log.clientHeight}px`;
+    const asked = ctx || [...log.querySelectorAll(".arb-me, .arb-note")].at(-1);
     log.scrollTop = asked ? asked.offsetTop - log.offsetTop : 0; /* the start of the answer, not its end */
     const b = document.getElementById("arb-send"); if (b) b.disabled = !!S.arb.busy;
-    const again = document.getElementById("arb-reset"); if (again) again.hidden = !S.arb.msgs.length || !!S.arb.busy;
+    const again = document.getElementById("arb-reset"); if (again) { again.hidden = !S.arb.msgs.length || !!S.arb.busy; S.arb.sure = false; again.textContent = "Recommencer"; }
+    const box = document.getElementById("arb-q"), lab = document.querySelector("#arb-form label");
+    if (box && lab) { lab.classList.toggle("sr", S.arb.msgs.length > 0); box.placeholder = S.arb.msgs.length ? "Pose ta question" : ""; }
     if (!S.arb.busy) arbStore();
     const left = document.getElementById("arb-left");
-    if (left) left.textContent = (S.arb.left == null ? "" : `${S.arb.left} question${S.arb.left > 1 ? "s" : ""} restante${S.arb.left > 1 ? "s" : ""} aujourd'hui. `) + "L'arbitre peut se tromper : vérifie sur Légifrance.";
+    if (left) left.textContent = S.arb.left == null ? "L'arbitre peut se tromper : vérifie sur Légifrance." : `${S.arb.left} question${S.arb.left > 1 ? "s" : ""} aujourd'hui · À vérifier sur Légifrance`;
   }
   const arbStoreKey = () => `ea-arb-${S.uid}`;
   function arbRestore() {
@@ -2185,13 +2210,16 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     try { sessionStorage.setItem(arbStoreKey(), JSON.stringify({ msgs: S.arb.msgs.slice(-20), left: S.arb.left })); } catch (x) { /* kept in memory only */ }
   }
   function openArbitre(param) {
-    const [kind, id, pick] = String(param).split(":");
+    const [kind, id, pick, extra] = String(param).split(":");
     const key = String(param);
-    const ctx = kind === "q" ? { q: id, pick: Number(pick) } : kind === "c" ? { chapitre: id } : {};
+    const examCase = kind === "x" ? examById(id)?.cas?.[Number(pick)] : null;
+    const ctx = kind === "q" ? { q: id, pick: pick === "" ? null : Number(pick) } : kind === "c" ? { chapitre: id }
+      : kind === "x" ? { ex: id, cas: Number(pick), qn: Number(extra), rep: String(examNow()?.cas?.[`${pick}-${extra}`] || "").slice(0, 800) } : {};
     if (!S.arb) S.arb = Object.assign({ key, ctx, msgs: [], busy: false, err: "", left: null }, arbRestore());
     // The conversation follows the user from screen to screen; only the context of the next question changes
     if (S.arb.key !== key) {
-      if (kind === "q" && S.arb.msgs.length) S.arb.msgs.push({ role: "note", text: `À propos de la question : ${C.q(id)?.enonce || ""}` });
+      const about = kind === "q" ? C.q(id)?.enonce : examCase?.questions?.[Number(extra)]?.q;
+      if (about && S.arb.msgs.length) S.arb.msgs.push({ role: "note", text: `À propos de la question : ${about}` });
       S.arb.key = key; S.arb.err = "";
     }
     S.arb.ctx = ctx;
@@ -2403,7 +2431,9 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "art-close": document.getElementById("art-dlg")?.close(); break;
       case "arbitre": openArbitre(param); break;
       case "arb-close": document.getElementById("arb-dlg")?.close(); break;
-      case "arb-reset": S.arb.msgs = []; S.arb.err = ""; arbPaint(); document.getElementById("arb-q").focus(); break;
+      case "arb-reset":
+        if (!S.arb.sure) { S.arb.sure = true; el.textContent = "Effacer ?"; break; }
+        S.arb.sure = false; S.arb.msgs = []; S.arb.err = ""; arbPaint(); document.getElementById("arb-q").focus(); break;
       case "arb-ask": arbAsk(param); break;
       case "fiche-edit": openEditor(param); break;
       case "cours-edit": { const cut = param.lastIndexOf(":"); openEditor(param.slice(0, cut), Number(param.slice(cut + 1))); break; }
