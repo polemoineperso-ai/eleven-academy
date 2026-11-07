@@ -319,6 +319,8 @@ a.row:hover .row-title { color: var(--green); }
 .art-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .art-title { margin: 0; font-size: 20px; font-weight: 800; }
 .art-dlg:focus, #arb-t:focus { outline: none; }
+.arb-acts { display: flex; gap: 16px; }
+.arb-note { margin: 4px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 14px; line-height: 1.45; color: var(--fg-2); }
 .arb-log { display: flex; flex-direction: column; gap: 16px; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
 .arb-intro { margin: 0; font-size: 16px; line-height: 1.5; color: var(--fg-2); }
 .arb-sugg { display: flex; flex-direction: column; align-items: stretch; gap: 8px; }
@@ -2099,10 +2101,11 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   function arbLog() {
     const A = S.arb;
     const lastAns = A.msgs.length - 1;
-    const turns = A.msgs.map((m, i) => m.role === "user" ? `<p class="arb-me">${esc(m.text)}</p>` : arbAnswer(m, i === lastAns && !A.busy)).join("");
-    return `${A.msgs.length ? "" : `<p class="arb-intro">Pose ta question : je réponds à partir de tes cours, de tes fiches et des articles de l'appli.</p>
-        <div class="arb-sugg">${arbSuggestions().map((t) => `<button type="button" data-act="arb-ask" data-param="${esc(t)}">${esc(t)}</button>`).join("")}</div>`}
+    const turns = A.msgs.map((m, i) => m.role === "user" ? `<p class="arb-me">${esc(m.text)}</p>` : m.role === "note" ? `<p class="arb-note">${esc(m.text)}</p>` : arbAnswer(m, i === lastAns && !A.busy)).join("");
+    const chips = `<div class="arb-sugg">${arbSuggestions().map((t) => `<button type="button" data-act="arb-ask" data-param="${esc(t)}">${esc(t)}</button>`).join("")}</div>`;
+    return `${A.msgs.length ? "" : `<p class="arb-intro">Pose ta question : je réponds à partir de tes cours, de tes fiches et des articles de l'appli.</p>${chips}`}
       ${turns}
+      ${A.msgs.at(-1)?.role === "note" && !A.busy ? chips : ""}
       ${A.busy ? `<p class="arb-wait">L'arbitre consulte tes cours…</p>` : ""}
       ${A.err ? `<p class="arb-err">${esc(A.err)}</p>` : ""}`;
   }
@@ -2110,21 +2113,37 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     const log = document.querySelector("#arb-dlg .arb-log"); if (!log) return;
     log.innerHTML = typo(arbLog());
     linkRefs(log);
-    const asked = [...log.querySelectorAll(".arb-me")].at(-1);
+    const asked = [...log.querySelectorAll(".arb-me, .arb-note")].at(-1);
     log.scrollTop = asked ? asked.offsetTop - log.offsetTop : 0; /* the start of the answer, not its end */
     const b = document.getElementById("arb-send"); if (b) b.disabled = !!S.arb.busy;
+    const again = document.getElementById("arb-reset"); if (again) again.hidden = !S.arb.msgs.length || !!S.arb.busy;
+    if (!S.arb.busy) arbStore();
     const left = document.getElementById("arb-left");
     if (left) left.textContent = (S.arb.left == null ? "" : `${S.arb.left} question${S.arb.left > 1 ? "s" : ""} restante${S.arb.left > 1 ? "s" : ""} aujourd'hui. `) + "L'arbitre peut se tromper : vérifie sur Légifrance.";
+  }
+  const arbStoreKey = () => `ea-arb-${S.uid}`;
+  function arbRestore() {
+    try { const v = JSON.parse(sessionStorage.getItem(arbStoreKey())); return v && Array.isArray(v.msgs) ? { msgs: v.msgs, left: v.left ?? null } : null; } catch (x) { return null; }
+  }
+  function arbStore() {
+    try { sessionStorage.setItem(arbStoreKey(), JSON.stringify({ msgs: S.arb.msgs.slice(-20), left: S.arb.left })); } catch (x) { /* kept in memory only */ }
   }
   function openArbitre(param) {
     const [kind, id, pick] = String(param).split(":");
     const key = String(param);
-    if (S.arb?.key !== key) S.arb = { key, ctx: kind === "q" ? { q: id, pick: Number(pick) } : kind === "c" ? { chapitre: id } : {}, msgs: [], busy: false, err: "", left: S.arb?.left ?? null };
+    const ctx = kind === "q" ? { q: id, pick: Number(pick) } : kind === "c" ? { chapitre: id } : {};
+    if (!S.arb) S.arb = Object.assign({ key, ctx, msgs: [], busy: false, err: "", left: null }, arbRestore());
+    // The conversation follows the user from screen to screen; only the context of the next question changes
+    if (S.arb.key !== key) {
+      if (kind === "q" && S.arb.msgs.length) S.arb.msgs.push({ role: "note", text: `À propos de la question : ${C.q(id)?.enonce || ""}` });
+      S.arb.key = key; S.arb.err = "";
+    }
+    S.arb.ctx = ctx;
     let d = document.getElementById("arb-dlg");
     if (!d) {
       d = document.createElement("dialog"); d.id = "arb-dlg"; d.className = "art-dlg"; d.setAttribute("aria-labelledby", "arb-t"); document.body.append(d);
       d.addEventListener("click", (e) => { if (e.target === d) d.close(); });
-      d.innerHTML = `<div class="art-head"><h2 class="art-title" id="arb-t" tabindex="-1">L'arbitre</h2><button class="link-btn" data-act="arb-close">Fermer</button></div>
+      d.innerHTML = `<div class="art-head"><h2 class="art-title" id="arb-t" tabindex="-1">L'arbitre</h2><div class="arb-acts"><button class="link-btn" id="arb-reset" data-act="arb-reset">Recommencer</button><button class="link-btn" data-act="arb-close">Fermer</button></div></div>
         <div class="arb-log" aria-live="polite"></div>
         <form id="arb-form" class="arb-form" novalidate><label for="arb-q">Ta question</label><textarea id="arb-q" maxlength="500" rows="1" enterkeyhint="send"></textarea>
           <button class="btn btn-primary" id="arb-send" type="submit">Envoyer</button></form>
@@ -2135,7 +2154,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   async function arbAsk(text) {
     const A = S.arb, q = String(text || "").trim(); if (!A || A.busy) return;
     if (!q) { A.err = "Écris d'abord ta question."; arbPaint(); return; }
-    const history = A.msgs.map((m) => ({ role: m.role, text: arbPlain(m) }));
+    const history = A.msgs.filter((m) => m.role !== "note").map((m) => ({ role: m.role, text: arbPlain(m) }));
     A.msgs.push({ role: "user", text: q }); A.busy = true; A.err = ""; arbPaint();
     let code = null, data = null;
     try {
@@ -2325,6 +2344,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "art-close": document.getElementById("art-dlg")?.close(); break;
       case "arbitre": openArbitre(param); break;
       case "arb-close": document.getElementById("arb-dlg")?.close(); break;
+      case "arb-reset": S.arb.msgs = []; S.arb.err = ""; arbPaint(); document.getElementById("arb-q").focus(); break;
       case "arb-ask": arbAsk(param); break;
       case "fiche-edit": openEditor(param); break;
       case "cours-edit": { const cut = param.lastIndexOf(":"); openEditor(param.slice(0, cut), Number(param.slice(cut + 1))); break; }
