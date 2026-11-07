@@ -444,6 +444,15 @@ a.row:hover .row-title { color: var(--green); }
 .sheet.flash.ticket { position: relative; display: flex; flex-direction: column; gap: 0; padding: 0; border: 2px solid var(--t-line); border-radius: var(--r-m); background: var(--t-bg); color: var(--chalk); box-shadow: none; }
 .ticket-main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 32px 20px; text-align: center; }
 .ticket-main .pic { width: 88px; height: 88px; border-radius: 20px; }
+.ticket-main.is-front { position: relative; overflow: hidden; align-items: flex-start; justify-content: flex-end; padding: 20px; text-align: left; border-radius: calc(var(--r-m) - 2px) calc(var(--r-m) - 2px) 0 0; }
+.ticket-main.is-front > * { position: relative; z-index: 1; }
+.ticket-main.is-front > .ticket-bg { position: absolute; inset: 0; z-index: 0; background-position: center; background-size: cover; background-repeat: no-repeat; filter: brightness(0.7); }
+.ticket-main.is-front::after { content: ""; position: absolute; inset: 0; z-index: 0; background: linear-gradient(to top, rgba(0, 0, 0, 0.72), transparent 48%); }
+.ticket-main.is-front > .flash-pic { position: absolute; top: 14px; right: 14px; }
+.ticket-main.is-front .pic { width: 60px; height: 60px; border-radius: 14px; }
+.ticket-main.is-front .flash-recto { font-size: 30px; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6); }
+.ticket-main.is-front .flash-recto.is-long { font-size: 24px; }
+@media (max-width: 360px), (max-height: 620px) { .ticket-main.is-front .pic { width: 44px; height: 44px; border-radius: 11px; } .ticket-main.is-front .flash-recto { font-size: 24px; } .ticket-main.is-front .flash-recto.is-long { font-size: 20px; } }
 .ticket-main.back { align-items: stretch; justify-content: flex-start; padding: 20px; text-align: left; }
 .ticket-stub { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 20px; border-top: 2px dashed var(--t-line); text-align: left; }
 .ticket-stub::before, .ticket-stub::after { content: ""; position: absolute; top: -13px; width: 24px; height: 24px; box-sizing: border-box; border: 2px solid var(--t-line); border-radius: 50%; background: #0A0B0A; }
@@ -1522,9 +1531,12 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   const allCards = () => S.content?.cartes || [];
   const cardState = (id) => S.progress.cards?.[id];
   const cardsKnown = (list) => list.filter((k) => cardState(k.id)?.s === "ok").length;
+  const TICKET_BG = {"agents": "bg-agent", "contrats": "bg-contrats", "societes": "bg-societes", "associations": "bg-associations", "fiscal": "bg-fiscal", "travail": "bg-travail", "personnalite": "bg-personnalite", "assurances": "bg-assurances", "actualite": "bg-loi2026", "dopage": "bg-dopage"};
   const TRIBUNES = { agents: "Agent", contrats: "Contrats", societes: "Sociétés", associations: "Associations", fiscal: "Fiscal", travail: "Travail", personnalite: "Personnalité", assurances: "Assurances", actualite: "Loi 2026", dopage: "Dopage" };
   const LEVELS = { new: "Nouveau", todo: "À revoir", ok: "Connu", or: "Maîtrisé" };
   const MASTERED = 3; /* times in a row */
+  /* a reference such as 1231-1 never splits across two lines */
+  const noBreakRef = (t) => esc(t).replace(/(\d)-(?=\d)/g, "$1-\u2060");
   function cardLevel(id) {
     const st = cardState(id);
     if (!st) return "new";
@@ -1551,6 +1563,8 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   function startDeck(ids, single, mod, lvl) {
     if (!ids.length) { toast("Aucun billet disponible pour l'instant."); return; }
     S.deck = { ids, i: 0, flip: !!single, ok: 0, todo: 0, single: !!single, mod: mod || null, lvl: lvl || null, back: S.deck?.back || (S.view === "train" ? "train" : "cards") };
+    /* the backgrounds of the series load ahead, so a ticket never appears empty */
+    [...new Set(ids.map((id) => allCards().find((k) => k.id === id)?.domaine))].forEach((dom) => { if (TICKET_BG[dom]) new Image().src = `media/${TICKET_BG[dom]}.webp`; });
     go("cardPlay");
   }
   function cardResults() {
@@ -1613,9 +1627,9 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       <div class="flash-top"><button class="link-btn" data-act="card-quit">${D.single ? "Fermer" : "Quitter"}</button>${D.single ? "" : `<span class="quiz-count num">${D.i + 1} / ${D.ids.length}</span>`}</div>
       ${D.single ? "" : `<div class="bar" aria-hidden="true"><i style="width:${Math.round(100 * D.i / D.ids.length)}%"></i></div>`}
       ${D.flip
-        ? `<article class="sheet dark flash ticket lvl-${level}${D.anim && fxOn() ? " flash-turn" : ""}"><div class="ticket-main back"><h1 class="flash-title">${esc(k.recto)}</h1><p class="flash-text">${esc(k.verso)}</p>${k.exemple ? `<div class="callout cas"><p class="callout-lab">${icon("whistle")}Exemple football</p><p>${esc(k.exemple)}</p></div>` : ""}</div>${stub}</article>
+        ? `<article class="sheet dark flash ticket lvl-${level}${D.anim && fxOn() ? " flash-turn" : ""}"><div class="ticket-main back"><h1 class="flash-title">${noBreakRef(k.recto)}</h1><p class="flash-text">${esc(k.verso)}</p>${k.exemple ? `<div class="callout cas"><p class="callout-lab">${icon("whistle")}Exemple football</p><p>${esc(k.exemple)}</p></div>` : ""}</div>${stub}</article>
            ${D.single ? "" : `<div class="flash-actions"><button class="btn btn-ghost" data-act="card-answer" data-param="todo">${icon("refresh")}À revoir</button><button class="btn btn-primary" data-act="card-answer" data-param="ok">${icon("check")}Je sais</button></div>`}`
-        : `<article class="sheet dark flash ticket lvl-${level}" data-act="card-flip" style="cursor:pointer"><div class="ticket-main">${d ? `<span class="flash-pic">${domPic(k.domaine)}</span>` : ""}<h1 class="flash-recto">${esc(k.recto)}</h1></div>${stub}</article>
+        : `<article class="sheet dark flash ticket lvl-${level}" data-act="card-flip" style="cursor:pointer"><div class="ticket-main is-front">${TICKET_BG[k.domaine] ? `<span class="ticket-bg" style="background-image:url(media/${TICKET_BG[k.domaine]}.webp)" aria-hidden="true"></span>` : ""}${d ? `<span class="flash-pic">${domPic(k.domaine)}</span>` : ""}<h1 class="flash-recto${k.recto.length > 36 ? " is-long" : ""}">${noBreakRef(k.recto)}</h1></div>${stub}</article>
            <button class="btn btn-primary btn-block" data-act="card-flip">Retourner le billet</button>`}
     </main>`;
   }
