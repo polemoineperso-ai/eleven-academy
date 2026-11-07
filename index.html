@@ -1669,7 +1669,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       ${D.single ? "" : `<div class="bar" aria-hidden="true"><i style="width:${Math.round(100 * D.i / D.ids.length)}%"></i></div>`}
       ${D.flip
         ? `<article class="sheet dark flash ticket lvl-${level}${D.anim && fxOn() ? " flash-turn" : ""}"><div class="ticket-main back"><h1 class="flash-title">${noBreakRef(k.recto)}</h1><p class="flash-text">${esc(k.verso)}</p>${k.exemple ? `<div class="callout cas"><p class="callout-lab">${icon("whistle")}Exemple football</p><p>${esc(k.exemple)}</p></div>` : ""}</div>${stub}</article>
-           ${D.single ? "" : `<div class="flash-actions"><button class="btn btn-ghost" data-act="card-answer" data-param="todo">${icon("refresh")}À revoir</button><button class="btn btn-primary" data-act="card-answer" data-param="ok">${icon("check")}Je sais</button></div>`}`
+           ${`<div class="flash-actions"><button class="btn btn-ghost" data-act="card-answer" data-param="todo">${icon("refresh")}À revoir</button><button class="btn btn-primary" data-act="card-answer" data-param="ok">${icon("check")}Je sais</button></div>`}`
         : `<article class="sheet dark flash ticket lvl-${level}" data-act="card-flip" style="cursor:pointer"><div class="ticket-main is-front">${TICKET_BG[k.domaine] ? `<span class="ticket-bg" style="background-image:url(media/${TICKET_BG[k.domaine]}.webp)" aria-hidden="true"></span>` : ""}${d ? `<span class="flash-pic">${domPic(k.domaine)}</span>` : ""}<h1 class="flash-recto${k.recto.length > 36 ? " is-long" : ""}">${noBreakRef(k.recto)}</h1></div>${stub}</article>
            <button class="btn btn-primary btn-block" data-act="card-flip">Retourner le billet</button>`}
     </main>`;
@@ -2491,6 +2491,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         S.progress.cards = Object.assign({}, S.progress.cards, { [cid]: { s: param, d: today(), n: inRow } });
         if (inRow === MASTERED) toast(`Billet en or : ${allCards().find((x) => x.id === cid)?.recto || ""}`);
         if (param === "ok") D.ok++; else D.todo++;
+        if (D.single) { save(); toast(`Billet noté : ${LEVELS[cardLevel(cid)]}`); const back = D.back || "cards"; S.deck = null; go(back); break; }
         save(); D.i++; D.flip = false; render(); window.scrollTo(0, 0); focusH1();
       } break;
       case "card-quit": { const back = S.deck?.back || "cards"; S.deck = null; go(back); break; }
@@ -2610,7 +2611,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "7bdd0de971fb";
+  const BUILD = "e238f9c06c20";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
