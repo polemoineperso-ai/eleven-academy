@@ -554,7 +554,8 @@ a.row:hover .row-title { color: var(--green); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .sheet-list b { font-weight: 700; }
 .home-side { display: flex; flex-direction: column; gap: 28px; }
-.confirm { position: sticky; bottom: calc(env(safe-area-inset-bottom, 0px) + 12px); z-index: 16; background: var(--turf-2); border: 1px solid var(--line-strong); border-radius: var(--r-m); padding: 16px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
+.confirm-layer { position: fixed; inset: 0; z-index: 40; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(5, 8, 6, 0.72); }
+.confirm { width: min(100%, 440px); background: var(--turf-2); border: 2px solid var(--green); border-radius: var(--r-m); padding: 16px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
 .confirm-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .resume { display: flex; flex-direction: column; gap: 10px; }
 
@@ -1306,10 +1307,10 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         <h1 class="q-text" id="q-t">${esc(q.enonce)}</h1>
         <div class="opts" role="group" aria-labelledby="q-t">${opts}</div>
         ${var_}
-        ${s.confirmQuit ? `<div class="confirm" role="group" aria-labelledby="cq-t"><b id="cq-t">Quitter le match ?</b>
+        ${s.confirmQuit ? `<div class="confirm-layer"><div class="confirm" role="alertdialog" aria-modal="true" aria-labelledby="cq-t"><b id="cq-t">Quitter le match ?</b>
           <span class="small muted">${s.results.length > 1 ? `Tes ${s.results.length} réponses sont gardées` : "Ta réponse est gardée"} pour la révision, mais la séance ne compte pas comme jouée.</span>
-          <div class="confirm-actions"><button class="btn btn-primary" data-act="stay">Continuer</button><button class="btn btn-ghost" data-act="quit-yes">Quitter</button></div></div>`
-        : answered ? `<div class="quiz-next"><button class="btn btn-primary btn-block" data-act="next">${s.i + 1 < s.ids.length ? "Question suivante" : "Voir le score"}${icon("chevron")}</button></div>` : ""}
+          <div class="confirm-actions"><button class="btn btn-primary" data-act="stay">Continuer</button><button class="btn btn-ghost" data-act="quit-yes">Quitter</button></div></div></div>` : ""}
+        ${answered ? `<div class="quiz-next"><button class="btn btn-primary btn-block" data-act="next">${s.i + 1 < s.ids.length ? "Question suivante" : "Voir le score"}${icon("chevron")}</button></div>` : ""}
       </div></main>`;
   }
 
@@ -2391,6 +2392,9 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     S.rev.q = e.target.value;
     document.getElementById("rev-chips").hidden = normS(S.rev.q).trim().length < 2;
     document.getElementById("rev-out").innerHTML = typo(normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault());
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && S.session?.confirmQuit) { S.session.confirmQuit = false; render(); }
   });
   document.addEventListener("submit", (e) => {
     if (e.target.id !== "arb-form") return;
