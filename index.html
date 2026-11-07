@@ -1339,7 +1339,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         <div class="opts" role="group" aria-labelledby="q-t">${opts}</div>
         ${var_}
         ${s.confirmQuit ? `<div class="confirm-layer"><div class="confirm" role="alertdialog" aria-modal="true" aria-labelledby="cq-t"><b id="cq-t">Quitter le match ?</b>
-          <span class="small muted">${s.results.length > 1 ? `Tes ${s.results.length} réponses sont gardées` : "Ta réponse est gardée"} pour la révision, mais la séance ne compte pas comme jouée.</span>
+          <span class="small muted">${!s.results.length ? "Tu n'as pas encore répondu : ce match ne comptera pas comme joué." : `${s.results.length > 1 ? `Tes ${s.results.length} réponses sont gardées` : "Ta réponse est gardée"} pour la révision, mais la séance ne compte pas comme jouée.`}</span>
           <div class="confirm-actions"><button class="btn btn-primary" data-act="stay">Continuer</button><button class="btn btn-ghost" data-act="quit-yes">Quitter</button></div></div></div>` : ""}
         ${answered ? `<div class="quiz-next"><button class="btn btn-primary btn-block" data-act="next">${s.i + 1 < s.ids.length ? "Question suivante" : "Voir le score"}${icon("chevron")}</button></div>` : ""}
       </div></main>`;
@@ -2356,12 +2356,12 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         break;
       }
       case "quit": {
-        if (s && s.results.length && !s.summary) { s.confirmQuit = true; render(); document.querySelector("[data-act=stay]")?.focus(); }
+        if (s && !s.summary) { s.confirmQuit = true; render(); document.querySelector("[data-act=stay]")?.focus(); }
         else { S.session = null; keepSession(); go("home"); }
         break;
       }
       case "stay": if (s) { s.confirmQuit = false; render(); } break;
-      case "quit-yes": S.session = null; keepSession(); toast("Match quitté. Tes réponses sont gardées."); go("home"); break;
+      case "quit-yes": { const any = S.session?.results.length; S.session = null; keepSession(); toast(any ? "Match quitté. Tes réponses sont gardées." : "Match quitté."); go("home"); break; }
       case "resume": if (S.pending) { S.session = S.pending; S.session.confirmQuit = false; S.pending = null; go("quiz"); } break;
       case "report": go("me", param); requestAnimationFrame(() => document.getElementById("r-msg")?.focus()); break;
       case "per": S.progress.settings.perSession = Number(param); save(); render(); break;
