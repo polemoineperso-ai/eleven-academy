@@ -5,6 +5,6 @@
 window.EA_CONFIG = {
   supabaseUrl: "https://pwziiledutebgoyuvflm.supabase.co",
   // true une fois le modèle d'e-mail Supabase passé au code à 6 chiffres
-  loginCode: false,
+  loginCode: true,
   supabaseKey: "sb_publishable_kBA3GSSDoWY3QwUARbXWkg_uUhguGZs"
 };
