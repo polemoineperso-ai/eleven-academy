@@ -349,11 +349,11 @@ a.row:hover .row-title { color: var(--green); }
 .arb-next { margin-top: 8px; }
 .arb-wait { margin: 0; font-size: 15px; color: var(--fg-2); }
 .arb-err { margin: 0; font-size: 15px; line-height: 1.45; color: var(--chalk); }
-#arb-dlg { max-height: 92vh; max-height: 92dvh; border: 1px solid var(--green); }
+#arb-dlg { max-height: 92vh; max-height: 92dvh; border: 2px solid var(--green); }
 .arb-form { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 8px; align-items: stretch; }
 .arb-form label { grid-column: 1 / -1; font-size: 14px; font-weight: 600; }
 .arb-form .btn { padding-inline: 16px; min-height: 48px; }
-.arb-form textarea { width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid var(--green); border-radius: var(--r-s); background: var(--pitch); color: var(--chalk); font: inherit; font-size: 16px; line-height: 1.4; resize: none; }
+.arb-form textarea { width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--r-s); background: var(--pitch); color: var(--chalk); font: inherit; font-size: 16px; line-height: 1.4; resize: none; }
 .arb-foot { margin: 0; font-size: 13px; line-height: 1.45; color: var(--fg-3); }
 .art-text p { margin: 0 0 10px; font-size: 16px; line-height: 1.6; max-width: 65ch; }
 @media (min-width: 620px) { .art-dlg { margin: auto; border-radius: var(--r-m); } }
@@ -499,7 +499,10 @@ a.row:hover .row-title { color: var(--green); }
 .opt.is-wrong { border-color: var(--red); background: var(--red-soft); }
 .opt.is-wrong .opt-letter { background: var(--red); color: var(--pitch); }
 .opt.is-dim { opacity: 0.72; }
-.opt:not(.is-right, .is-wrong, .is-dim, .is-picked) { border-color: var(--green); }
+/* Question card: centred on the page and set apart from the background. Auto margins keep the top reachable when it grows taller than the screen */
+.quiz-stage { min-height: calc(100vh - 190px); min-height: calc(100dvh - 190px); padding-top: 12px; }
+.quiz-card { display: flex; flex-direction: column; gap: 20px; margin-block: auto; padding: 20px; border: 2px solid var(--green); border-radius: var(--r-m); background: var(--turf); }
+@media (max-width: 480px) { .quiz-card { padding: 16px 14px; } }
 
 /* Revue VAR: the signature panel */
 .var {
@@ -1299,7 +1302,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
           <span class="quiz-count">Question ${s.i + 1} / ${s.ids.length}</span><span class="quiz-chap">${esc(ch?.titre || "")}<br><span class="q-level">${q.niveau === 1 ? "Échauffement" : "Format examen"}</span></span></div>
         <div class="bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Avancement de la séance"><i style="width:${pct}%"></i></div>
       </div>
-      <main class="screen narrow" style="gap:20px">
+      <main class="screen narrow quiz-stage"><div class="quiz-card">
         <h1 class="q-text" id="q-t">${esc(q.enonce)}</h1>
         <div class="opts" role="group" aria-labelledby="q-t">${opts}</div>
         ${var_}
@@ -1307,7 +1310,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
           <span class="small muted">${s.results.length > 1 ? `Tes ${s.results.length} réponses sont gardées` : "Ta réponse est gardée"} pour la révision, mais la séance ne compte pas comme jouée.</span>
           <div class="confirm-actions"><button class="btn btn-primary" data-act="stay">Continuer</button><button class="btn btn-ghost" data-act="quit-yes">Quitter</button></div></div>`
         : answered ? `<div class="quiz-next"><button class="btn btn-primary btn-block" data-act="next">${s.i + 1 < s.ids.length ? "Question suivante" : "Voir le score"}${icon("chevron")}</button></div>` : ""}
-      </main>`;
+      </div></main>`;
   }
 
   function vResult() {
