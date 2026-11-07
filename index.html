@@ -1610,6 +1610,11 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       }).join("")}</div>
       ${without.length ? `<p class="note">Pas encore de billets pour : ${without.map((d) => esc(d.num ? "Module " + d.num : d.titre)).join(", ")}.</p>` : ""}</section>`;
   }
+  /* a search or a filter takes over from the open level */
+  function cardLeaveLevel() {
+    S.cardQ.lvl = null;
+    document.querySelectorAll("[data-act=card-show]").forEach((b) => b.setAttribute("aria-pressed", "false"));
+  }
   function miniTicket(k) {
     const d = C.domain(k.domaine), lv = cardLevel(k.id), bg = TICKET_BG[k.domaine];
     return `<button type="button" class="mini-ticket lvl-${lv}" data-act="card-open" data-param="${k.id}">
@@ -2473,7 +2478,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         const lvl = S.deck?.lvl, same = lvl ? base.filter((k) => cardLevel(k.id) === lvl) : [];
         startDeck(buildDeck(same.length ? same : base, 10), false, mod, same.length ? lvl : null); break;
       }
-      case "card-show": S.cardQ.lvl = S.cardQ.lvl === param ? null : param; S.cardQ.n = 24; render(); document.getElementById("gal-t")?.scrollIntoView({ block: "start" }); break;
+      case "card-show": S.cardQ.lvl = S.cardQ.lvl === param ? null : param; S.cardQ.n = 24; if (S.cardQ.lvl) { S.cardQ.q = ""; S.cardQ.kind = "all"; } render(); document.getElementById("gal-t")?.scrollIntoView({ block: "start" }); break;
       case "card-more": S.cardQ.n = (S.cardQ.n || 24) + 24; render(); break;
       case "card-level": startDeck(buildDeck(allCards().filter((k) => cardLevel(k.id) === param), 10), false, null, param); break;
       case "card-module": startDeck(buildDeck(allCards().filter((k) => k.domaine === param), 10), false, param); break;
@@ -2489,7 +2494,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         save(); D.i++; D.flip = false; render(); window.scrollTo(0, 0); focusH1();
       } break;
       case "card-quit": { const back = S.deck?.back || "cards"; S.deck = null; go(back); break; }
-      case "card-kind": S.cardQ.kind = param; document.querySelectorAll("#card-chips .chip").forEach((c) => c.setAttribute("aria-pressed", c.dataset.param === param)); document.getElementById("card-out").innerHTML = typo(cardOut()); break;
+      case "card-kind": S.cardQ.kind = param; cardLeaveLevel(); document.querySelectorAll("#card-chips .chip").forEach((c) => c.setAttribute("aria-pressed", c.dataset.param === param)); document.getElementById("card-out").innerHTML = typo(cardOut()); break;
       case "art": openArticle(param); break;
       case "art-close": document.getElementById("art-dlg")?.close(); break;
       case "arbitre": openArbitre(param); break;
@@ -2540,7 +2545,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       edTouched();
     }
     if (e.target.dataset?.cas) { const cur = examNow(); if (cur) { cur.cas[e.target.dataset.cas] = e.target.value; save(); } return; }
-    if (e.target.id === "card-q") { S.cardQ.q = e.target.value; document.getElementById("card-out").innerHTML = typo(cardOut()); return; }
+    if (e.target.id === "card-q") { S.cardQ.q = e.target.value; cardLeaveLevel(); document.getElementById("card-out").innerHTML = typo(cardOut()); return; }
     if (e.target.id !== "rev-q") return;
     S.rev.q = e.target.value;
     document.getElementById("rev-chips").hidden = normS(S.rev.q).trim().length < 2;
@@ -2605,7 +2610,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "2b95f8491945";
+  const BUILD = "7bdd0de971fb";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
