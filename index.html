@@ -581,6 +581,11 @@ a.row:hover .row-title { color: var(--green); }
 .plan li { padding: 12px 0; border-bottom: 1px solid var(--line); }
 
 /* Bottom nav */
+.arb-fab { position: fixed; z-index: 24; right: max(16px, calc((100vw - 560px) / 2 + 16px)); bottom: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px) + 12px); display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 18px 0 14px; border: 0; border-radius: 999px; background: var(--green); color: var(--on-green); font: inherit; font-size: 15px; font-weight: 800; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55); cursor: pointer; }
+.arb-fab:hover { background: var(--green-press); }
+.arb-fab[hidden] { display: none; }
+.arb-fab svg { width: 22px; height: 22px; flex: none; }
+body.has-arb #app::after { content: ""; display: block; height: 64px; }
 .tabbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.45);
   background: var(--pitch); border-top: 1px solid var(--line);
@@ -1017,6 +1022,7 @@ a.row:hover .row-title { color: var(--green); }
   function renderTabs() {
     const hidden = ["quiz", "ficheEdit", "cardPlay", "exam", "examIntro", "examFix", "tour"].includes(S.view);
     document.querySelector(".tabbar").hidden = hidden;
+    arbFab(!hidden && arbitreOn());
     const map = { home: "home", train: "train", chapter: "train", match: "match", cards: "cards", examIntro: "match", exam: "match", examFix: "match", fiche: "train", cours: "train", outil: "train", module: "train", progress: "progress", result: "home", me: "" };
     const cur = map[S.view];
     document.getElementById("tabs").innerHTML = TABS.map((t) =>
@@ -1028,7 +1034,6 @@ a.row:hover .row-title { color: var(--green); }
   function topActions() {
     const d = division(S.progress.xp).cur.name;
     return `<div class="top-actions">
-        ${arbitreOn() && S.view !== "exam" ? `<button class="icon-btn arb-open" data-act="arbitre" data-param="${arbParam()}" aria-label="Appeler l'arbitre">${icon("whistle")}</button>` : ""}
         <button class="division-chip" data-go="progress" aria-label="Division ${esc(d)}, voir la progression">${icon("trophy")}${esc(d)}</button>
         <button class="me-btn" data-go="me" aria-label="Mon espace">${initial() ? `<span class="me-initial" aria-hidden="true">${esc(initial())}</span>` : pic("ic-user")}</button>
       </div>`;
@@ -2028,12 +2033,19 @@ a.row:hover .row-title { color: var(--green); }
 
   /* ---------- L'Arbitre: questions answered from the app's own sources, by the "arbitre" server function ---------- */
   const arbitreOn = () => !!(CFG.arbitre && S.sb && S.uid);
+  function arbFab(show) {
+    let b = document.getElementById("arb-fab");
+    if (!b && show) { b = document.createElement("button"); b.id = "arb-fab"; b.className = "arb-fab"; b.type = "button"; b.dataset.act = "arbitre"; b.setAttribute("aria-label", "Appeler l'arbitre"); b.innerHTML = `${icon("whistle")}Arbitre`; document.body.append(b); }
+    if (b) { b.hidden = !show; if (show) b.dataset.param = arbParam(); }
+    document.body.classList.toggle("has-arb", !!show);
+  }
   const arbParam = () => ["fiche", "cours", "chapter"].includes(S.view) && S.param ? `c:${S.param}` : "g";
   const ARB_ERR = {
     limit_user: "Tu as posé tes 20 questions du jour. L'arbitre revient demain.",
     limit_all: "L'arbitre a reçu beaucoup de questions aujourd'hui. Il revient demain.",
     auth: "Ta connexion a expiré. Reconnecte-toi, puis repose ta question.",
     invalid: "Écris une question de 500 caractères au plus.",
+    upstream: "L'arbitre a un problème technique de notre côté. Ta question n'est pas décomptée : réessaie un peu plus tard.",
     other: "L'arbitre ne répond pas pour le moment. Vérifie ta connexion, puis réessaie."
   };
   function arbSuggestions() {
@@ -2106,7 +2118,7 @@ a.row:hover .row-title { color: var(--green); }
     { mark: () => pic("ic-cap"), title: "Apprends module par module", text: "Dans Programme, chaque chapitre suit le même parcours : le cours, la fiche, puis les questions. La recherche retrouve aussi un mot ou un article en quelques lettres." },
     { mark: () => pic("ic-stopwatch"), title: "Entraîne-toi comme à l'examen", text: "Dans Match, joue le match du jour ou un module de ton choix. Quand tu te sens à niveau, passe le match officiel : un vrai sujet, en 2 heures, noté sur 20." },
     { mark: () => tile("cards"), title: "Collectionne le vocabulaire", text: "Dans Cartes, retourne une carte et dis si tu la connais. Ta collection grandit, et les cartes à revoir reviennent en premier." },
-    { mark: () => pic("ic-var"), title: "Un doute ? Appelle l'arbitre", text: "Le sifflet en haut de l'écran ouvre l'arbitre : pose-lui ta question à tout moment, il répond à partir de tes cours. Il reste au vestiaire pendant le match officiel." },
+    { mark: () => pic("ic-var"), title: "Un doute ? Appelle l'arbitre", text: "Le bouton vert Arbitre, en bas de l'écran, s'ouvre à tout moment : pose ta question, il répond à partir de tes cours. Il reste au vestiaire pendant le match officiel." },
     { mark: () => pic("ic-chart"), title: "Monte de division", text: "Dans Progression, suis ta division, tes trophées et ce que tu maîtrises dans chaque module." }
   ];
   function vTour() {
@@ -2159,6 +2171,7 @@ a.row:hover .row-title { color: var(--green); }
   function render() {
     const app = document.getElementById("app");
     document.documentElement.classList.toggle("no-fx", !fxOn());
+    if (S.login || !S.progress || S.welcome) arbFab(false);
     if (S.login) { app.innerHTML = typo(vLogin()); document.querySelector(".tabbar").hidden = true; return; }
     if (!S.progress) { app.innerHTML = vLoading(); document.querySelector(".tabbar").hidden = true; return; }
     if (S.welcome) {
