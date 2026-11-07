@@ -678,6 +678,10 @@ a.row:hover .row-title { color: var(--green); }
 .arb-fab { position: fixed; z-index: 24; right: max(16px, calc((100vw - 560px) / 2 + 16px)); bottom: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px) + 12px); display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 18px 0 14px; border: 0; border-radius: 999px; background: var(--green); color: var(--on-green); font: inherit; font-size: 15px; font-weight: 800; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55); cursor: pointer; }
 .arb-fab:hover { background: var(--green-press); }
 .arb-fab[hidden] { display: none; }
+.upd-bar { position: fixed; z-index: 30; top: calc(env(safe-area-inset-top, 0px) + 8px); left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; width: min(calc(100vw - 16px), 560px); box-sizing: border-box; padding: 8px 8px 8px 14px; border: 2px solid var(--green); border-radius: var(--r-m); background: var(--turf); color: var(--chalk); font-size: 14px; font-weight: 600; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55); }
+.upd-bar > span { flex: 1; min-width: 0; }
+.upd-bar .btn { flex: none; min-height: 44px; padding-inline: 12px; font-size: 14px; }
+.upd-bar .icon-btn { flex: none; }
 @media (min-width: 900px) { .arb-fab { right: 24px; bottom: 24px; } }
 .arb-fab .pic, .btn .pic, .link-btn .pic { width: 26px; height: 26px; border-radius: 7px; }
 body.has-arb #app::after { content: ""; display: block; height: 64px; }
@@ -1119,6 +1123,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     const hidden = ["quiz", "ficheEdit", "cardPlay", "exam", "examIntro", "examFix", "tour"].includes(S.view);
     document.querySelector(".tabbar").hidden = hidden;
     arbFab(!hidden && arbitreOn());
+    updatePaint(!hidden);
     const map = { home: "home", train: "train", chapter: "train", match: "match", cards: "cards", examIntro: "match", exam: "match", examFix: "match", fiche: "train", cours: "train", outil: "train", module: "train", progress: "progress", result: "home", me: "" };
     const cur = map[S.view];
     document.getElementById("tabs").innerHTML = TABS.map((t) =>
@@ -2368,7 +2373,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   function render() {
     const app = document.getElementById("app");
     document.documentElement.classList.toggle("no-fx", !fxOn());
-    if (S.login || !S.progress || S.welcome) arbFab(false);
+    if (S.login || !S.progress || S.welcome) { arbFab(false); updatePaint(false); }
     if (S.login) { app.innerHTML = typo(vLogin()); document.querySelector(".tabbar").hidden = true; return; }
     if (!S.progress) { app.innerHTML = vLoading(); document.querySelector(".tabbar").hidden = true; return; }
     if (S.welcome) {
@@ -2488,6 +2493,12 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "art": openArticle(param); break;
       case "art-close": document.getElementById("art-dlg")?.close(); break;
       case "arbitre": openArbitre(param); break;
+      case "upd-close": UPD.closed = true; updatePaint(); break;
+      case "upd-go": {
+        el.disabled = true;
+        Promise.resolve(S.saving).catch(() => {}).then(() => location.replace(`${location.pathname}?v=${UPD.remote}`));
+        break;
+      }
       case "arb-close": document.getElementById("arb-dlg")?.close(); break;
       case "arb-reset":
         if (!S.arb.sure) { S.arb.sure = true; el.textContent = "Effacer ?"; break; }
@@ -2593,6 +2604,34 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
 
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
+  /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
+  const BUILD = "a4aa8816511e";
+  const UPD = { remote: null, last: 0 };
+  function updatePaint(allowed) {
+    if (allowed !== undefined) UPD.allowed = allowed;
+    let bar = document.getElementById("upd-bar");
+    const show = UPD.allowed && UPD.remote && !UPD.closed;
+    if (!show) { if (bar) bar.hidden = true; return; }
+    if (!bar) {
+      bar = document.createElement("div"); bar.id = "upd-bar"; bar.className = "upd-bar"; bar.setAttribute("role", "status");
+      bar.innerHTML = `<span>Nouvelle version disponible</span><button type="button" class="btn btn-primary" data-act="upd-go">Mettre à jour</button><button type="button" class="icon-btn" data-act="upd-close" aria-label="Plus tard">${icon("x")}</button>`;
+      document.body.append(bar);
+    }
+    bar.hidden = false;
+  }
+  async function updateCheck() {
+    if (!/^https?:/.test(location.protocol) || Date.now() - UPD.last < 300000) return;
+    UPD.last = Date.now();
+    try {
+      const r = await fetch(`version.json?t=${Date.now()}`, { cache: "no-store" });
+      if (!r.ok) return;
+      const v = (await r.json()).v;
+      /* already reloaded for this version: never loop on a stale copy */
+      if (v && v !== BUILD && new URLSearchParams(location.search).get("v") !== v) { UPD.remote = v; updatePaint(); }
+    } catch (x) { /* offline: try again later */ }
+  }
+  setTimeout(updateCheck, 3000);
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") updateCheck(); });
   async function afterAuth(hotData) {
     fetch("content/articles.json").then((r) => r.ok ? r.json() : null).then((j) => { S.arts = j; if (j && !S.welcome) linkRefs(document.getElementById("app")); }).catch(() => {});
     await Promise.all([loadContent(), loadProgress()]);
