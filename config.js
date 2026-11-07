@@ -7,7 +7,7 @@ window.EA_CONFIG = {
   // true une fois le modèle d'e-mail Supabase passé au code à 6 chiffres
   loginCode: true,
   // true une fois la fonction Supabase « arbitre » installée
-  arbitre: false,
+  arbitre: true,
   arbitreFn: "clever-handler",
   supabaseKey: "sb_publishable_kBA3GSSDoWY3QwUARbXWkg_uUhguGZs"
 };
