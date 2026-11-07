@@ -469,6 +469,19 @@ a.row:hover .row-title { color: var(--green); }
 .lvl-legend button, .lvl-off { display: inline-flex; align-items: baseline; gap: 4px; }
 .lvl-legend button { min-height: 44px; align-items: center; padding: 0 12px; border: 1px solid var(--t-line); border-radius: 999px; background: none; font: inherit; cursor: pointer; }
 .lvl-legend button:hover { background: var(--t-bg); }
+.lvl-legend button[aria-pressed="true"] { background: var(--t-line); }
+.lvl-legend button[aria-pressed="true"] b, .lvl-legend button[aria-pressed="true"] span { color: var(--pitch); }
+.mini-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 10px; }
+.mini-ticket { display: flex; flex-direction: column; min-width: 0; padding: 0; overflow: hidden; border: 2px solid var(--t-line); border-radius: var(--r-s); background: var(--t-bg); color: var(--chalk); font: inherit; text-align: left; cursor: pointer; }
+.mini-top { position: relative; display: flex; align-items: flex-end; height: 170px; padding: 10px; overflow: hidden; background: var(--turf); }
+.mini-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7); }
+.mini-top::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0, 0, 0, 0.78), transparent 60%); }
+.mini-pic { position: absolute; top: 8px; right: 8px; z-index: 1; }
+.mini-pic .pic, .mini-pic .tile { width: 32px; height: 32px; border-radius: 8px; }
+.mini-term { position: relative; z-index: 1; font-size: 15px; font-weight: 800; line-height: 1.2; overflow-wrap: anywhere; }
+.mini-stub { display: flex; justify-content: space-between; gap: 6px; padding: 8px 10px; border-top: 2px dashed var(--t-line); font-size: 12px; font-weight: 600; color: var(--fg-2); }
+.mini-stub > span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mini-lvl { flex: none; font-weight: 800; color: var(--t-acc); }
 .lvl-off { min-height: 44px; align-items: center; padding: 0 4px; opacity: 0.72; }
 .lvl-legend b { font-size: 15px; font-weight: 800; color: var(--t-acc); }
 .lvl-legend span { font-size: 13px; color: var(--fg-2); }
@@ -1592,7 +1605,25 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       }).join("")}</div>
       ${without.length ? `<p class="note">Pas encore de billets pour : ${without.map((d) => esc(d.num ? "Module " + d.num : d.titre)).join(", ")}.</p>` : ""}</section>`;
   }
-  const cardOut = () => normS(S.cardQ.q).trim().length >= 2 || S.cardQ.kind !== "all" ? cardResults() : cardCollection();
+  function miniTicket(k) {
+    const d = C.domain(k.domaine), lv = cardLevel(k.id), bg = TICKET_BG[k.domaine];
+    return `<button type="button" class="mini-ticket lvl-${lv}" data-act="card-open" data-param="${k.id}">
+      <span class="mini-top">${bg ? `<img class="mini-bg" src="media/${bg}.webp" alt="" loading="lazy" decoding="async">` : ""}<span class="mini-pic">${domPic(k.domaine)}</span><span class="mini-term">${noBreakRef(k.recto)}</span></span>
+      <span class="mini-stub"><span>${esc(TRIBUNES[k.domaine] || d?.titre || "")}</span><span class="mini-lvl">${LEVELS[lv]}</span></span></button>`;
+  }
+  function cardGallery(l) {
+    const list = allCards().filter((k) => cardLevel(k.id) === l).sort((a, b) => a.recto.localeCompare(b.recto, "fr"));
+    const n = S.cardQ.n || 24;
+    return `<section class="sec" aria-labelledby="gal-t"><div class="sec-head"><h2 class="h-sec" id="gal-t">${LEVELS[l]} : ${list.length} billet${list.length > 1 ? "s" : ""}</h2><button class="link-btn" data-act="card-show" data-param="${l}">Fermer</button></div>
+      <button class="btn btn-primary btn-block" data-act="card-level" data-param="${l}">${icon("play")}Jouer ${list.length > 10 ? "10 de ces billets" : list.length > 1 ? "ces billets" : "ce billet"}</button>
+      <div class="mini-grid">${list.slice(0, n).map(miniTicket).join("")}</div>
+      ${list.length > n ? `<button class="btn btn-ghost btn-block" data-act="card-more">Voir ${Math.min(24, list.length - n)} billets de plus</button>` : ""}</section>`;
+  }
+  const cardOut = () => {
+    if (S.cardQ.lvl && !allCards().some((k) => cardLevel(k.id) === S.cardQ.lvl)) S.cardQ.lvl = null;
+    if (S.cardQ.lvl) return cardGallery(S.cardQ.lvl);
+    return normS(S.cardQ.q).trim().length >= 2 || S.cardQ.kind !== "all" ? cardResults() : cardCollection();
+  };
   function vCards() {
     S.cardQ = S.cardQ || { q: "", kind: "all" };
     const all = allCards(), n = cardsKnown(all), pct = all.length ? Math.round(100 * n / all.length) : 0, lvAll = levelCounts(all);
@@ -1601,7 +1632,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       <section class="ladder" aria-label="Billets acquis">
         <div class="ladder-row"><span class="cards-count num">${n} sur ${all.length} billets acquis</span></div>
         <div class="bar lvl-stack" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Billets acquis"><i class="s-or" style="width:${(100 * lvAll.or / (all.length || 1)).toFixed(2)}%"></i><i class="s-ok" style="width:${(100 * lvAll.ok / (all.length || 1)).toFixed(2)}%"></i><i class="s-todo" style="width:${(100 * lvAll.todo / (all.length || 1)).toFixed(2)}%"></i></div>
-        <ul class="lvl-legend" aria-label="Jouer les billets d'un niveau">${["new", "todo", "ok", "or"].map((l) => `<li class="lvl-${l}">${lvAll[l] ? `<button type="button" data-act="card-level" data-param="${l}" aria-label="Jouer les billets : ${LEVELS[l]}, ${lvAll[l]}"><b class="num">${lvAll[l]}</b><span>${LEVELS[l]}</span></button>` : `<span class="lvl-off"><b class="num">0</b><span>${LEVELS[l]}</span></span>`}</li>`).join("")}</ul>
+        <ul class="lvl-legend" aria-label="Voir les billets d'un niveau">${["new", "todo", "ok", "or"].map((l) => `<li class="lvl-${l}">${lvAll[l] ? `<button type="button" data-act="card-show" data-param="${l}" aria-pressed="${S.cardQ.lvl === l}" aria-label="Voir les billets : ${LEVELS[l]}, ${lvAll[l]}"><b class="num">${lvAll[l]}</b><span>${LEVELS[l]}</span></button>` : `<span class="lvl-off"><b class="num">0</b><span>${LEVELS[l]}</span></span>`}</li>`).join("")}</ul>
       </section>
       <button class="btn btn-primary btn-block" data-act="card-play">${icon("play")}Jouer 10 billets</button>
       <div class="rev-search" role="search"><label for="card-q">Chercher un mot ou un article</label>
@@ -2437,6 +2468,8 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         const lvl = S.deck?.lvl, same = lvl ? base.filter((k) => cardLevel(k.id) === lvl) : [];
         startDeck(buildDeck(same.length ? same : base, 10), false, mod, same.length ? lvl : null); break;
       }
+      case "card-show": S.cardQ.lvl = S.cardQ.lvl === param ? null : param; S.cardQ.n = 24; render(); document.getElementById("gal-t")?.scrollIntoView({ block: "start" }); break;
+      case "card-more": S.cardQ.n = (S.cardQ.n || 24) + 24; render(); break;
       case "card-level": startDeck(buildDeck(allCards().filter((k) => cardLevel(k.id) === param), 10), false, null, param); break;
       case "card-module": startDeck(buildDeck(allCards().filter((k) => k.domaine === param), 10), false, param); break;
       case "card-open": startDeck([param], true); break;
