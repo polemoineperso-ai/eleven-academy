@@ -1,5 +1,5 @@
 {
-"version": "v12-2026-11-07",
+"version": "v13-2026-11-07",
 "domaines": [
 {
 "id": "agents",
@@ -5091,9 +5091,11 @@
 "fiche": [
 "L'agent sportif est une personne physique qui met en relation deux parties contre rémunération, pour un contrat de travail sportif, un contrat d'entraîneur ou une mutation (L. 222-7).",
 "Depuis le 5 août 2026, il doit détenir une carte professionnelle d'agent sportif, délivrée par la fédération délégataire compétente, avec une obligation de formation initiale et continue (L. 222-7). Les décrets parlent encore de « licence ».",
-"Incompatibilités : avoir exercé dans les douze mois précédents des fonctions de dirigeant, salarié ou encadrant dans un club employant des sportifs rémunérés, dans une fédération ou dans une organisation professionnelle ; être actionnaire d'un tel club ; être avocat inscrit au tableau sans omission (L. 222-9).",
-"Incapacités : condamnations mentionnées à L. 212-9, fraude fiscale (art. 1741 CGI), faillite personnelle (L. 222-11).",
-"Ses préposés, associés et dirigeants sont soumis aux mêmes règles ; les sportifs qu'il représente ne peuvent pas être associés de sa société (L. 222-12 à L. 222-14)."
+"Incompatibilités : avoir exercé dans les douze mois précédents, dans la discipline concernée, des fonctions de dirigeant, salarié ou encadrant dans un club employant des sportifs rémunérés, une fédération ou une organisation professionnelle (L. 222-9, I).",
+"Ne peuvent pas non plus l'obtenir : l'actionnaire ou l'associé d'un tel club, actuel ou dans les douze mois précédents, et l'avocat inscrit au tableau sans omission (L. 222-9, II).",
+"L'interdiction joue aussi dans l'autre sens : détenir la carte, ou l'avoir détenue dans les douze mois, interdit ces fonctions et ces participations (L. 222-10).",
+"Incapacités : condamnation définitive pour un crime ou un délit visé à L. 212-9 (I et III), condamnation pour fraude fiscale (art. 1741 CGI), faillite personnelle ou mesure d'interdiction ou de déchéance du livre VI du Code de commerce (L. 222-11).",
+"Son entourage est concerné : ses préposés, ainsi que les dirigeants, associés et actionnaires de sa société, sont soumis aux mêmes règles (L. 222-12 et L. 222-13). Les sportifs ou entraîneurs pour lesquels il peut intervenir ne peuvent pas en faire partie (L. 222-14)."
 ],
 "source": "Code du sport, version en vigueur au 3 novembre 2026 (loi n° 2026-725 du 3 août 2026)"
 },
@@ -5103,16 +5105,14 @@
 "ordre": 3,
 "titre": "Contrat et rémunération",
 "fiche": [
-"Pas d'intervention sans contrat écrit avec l'une des parties ; l'agent n'agit que pour le compte d'une seule partie (L. 222-17, I).",
-"Le contrat précise les services, leur exclusivité, une durée de trois ans au plus, et une rémunération plafonnée à 10 % du contrat conclu (L. 222-17, I).",
-"Il est communiqué à la fédération, avec ses avenants, dans le mois qui suit leur entrée en vigueur ; sinon il est réputé nul (L. 222-17).",
-"Plusieurs agents sur un même contrat : 10 % au total (L. 222-17, II).",
-"Contrat de travail sportif : rémunération calculée en pourcentage de la rémunération brute soumise à cotisations (A. 222-2 et A. 222-5). Avenant d'augmentation : 10 % au plus de la différence sur la durée restante (A. 222-6).",
-"Mineurs : aucune rémunération ni avantage pour l'intermédiaire (L. 222-5).",
+"Pas d'intervention sans contrat écrit avec l'une des parties, et l'agent n'agit que pour le compte d'une seule partie (L. 222-17, I).",
 "Plusieurs agents qui coopèrent, par exemple dans une même société, ne peuvent agir pour plus d'une partie dans l'ensemble des contrats d'une mutation (L. 222-17, I).",
+"Le contrat précise cinq points : les services et leur exclusivité ; la durée, trois ans au plus ; la rémunération, 10 % au plus du contrat conclu ; la partie qui paie ; la communication à la fédération (L. 222-17, I). La fédération peut fixer une durée ou un taux inférieurs.",
+"Le contrat et ses avenants sont communiqués à la fédération dans le mois qui suit leur entrée en vigueur, sinon ils sont réputés nuls et non écrits (L. 222-17). La rémunération n'est versée qu'après cette transmission (L. 222-18, 3°).",
+"Plusieurs agents sur un même contrat : 10 % au total. Une convention de collaboration n'est possible qu'entre agents titulaires de la carte professionnelle, dans la même discipline (L. 222-17, II).",
 "Convention tripartite : le club peut payer tout ou partie de la rémunération due par le joueur ; elle précise les conséquences fiscales et sociales, et l'agent donne quittance (L. 222-17, II).",
-"Convention de collaboration : seulement entre agents titulaires de la carte professionnelle, dans la même discipline (L. 222-17, II).",
-"La rémunération n'est versée qu'après la transmission du contrat de l'agent à la fédération (L. 222-18, 3°)."
+"Contrat de travail sportif : rémunération calculée en pourcentage de la rémunération brute soumise à cotisations (A. 222-2 et A. 222-5). Avenant d'augmentation : 10 % au plus de la différence sur la durée restante (A. 222-6).",
+"Contrat concernant un mineur : aucune rémunération ni avantage pour l'intermédiaire, même si le mineur devient majeur en cours de contrat (L. 222-5)."
 ],
 "source": "Code du sport, L. 222-5, L. 222-17, L. 222-18, A. 222-2 à A. 222-6 ; Module 02, partie C",
 "cours": {
@@ -5655,10 +5655,11 @@
 "ordre": 4,
 "titre": "Sanctions et examen",
 "fiche": [
-"Exercer sans licence ou en violation des articles L. 222-9 à L. 222-17 : cinq ans d'emprisonnement et 375 000 € d'amende, jusqu'au double des sommes indûment perçues (L. 222-20, depuis le 5 août 2026).",
-"Méconnaître L. 212-13 ou L. 222-11 : un an et 15 000 € (L. 222-20, II).",
-"L'examen compte deux épreuves : la première (CNOSF) sur les connaissances sociales, fiscales, contractuelles, d'assurance et de droit du sport ; la seconde (fédération) sur les règlements (R. 222-15).",
-"Seuls les admis à la première épreuve peuvent passer la seconde (R. 222-15). Résultats de la première épreuve notifiés dans les deux mois (R. 222-16)."
+"Cinq ans d'emprisonnement et 375 000 € d'amende : exercer sans licence d'agent sportif (le mot que le texte emploie encore), malgré une suspension ou un retrait, ou en violation des articles L. 222-9 à L. 222-17, sauf L. 222-11 (L. 222-20, I, depuis le 5 août 2026).",
+"Un an d'emprisonnement et 15 000 € d'amende : exercer malgré une incapacité (L. 222-11) ou en méconnaissant L. 212-13, qui permet notamment à l'administration d'interdire l'activité (L. 222-20, II).",
+"Dans les deux cas, l'amende peut être portée jusqu'au double des sommes indûment perçues (L. 222-20).",
+"L'examen compte deux épreuves. La première (CNOSF) porte sur les connaissances sociales, fiscales, contractuelles, d'assurance et de droit du sport ; la seconde (fédération) sur les règlements fédéraux et internationaux (R. 222-15).",
+"Seuls les admis à la première épreuve, ou ceux qui en sont dispensés, peuvent passer la seconde (R. 222-15). Les résultats de la première épreuve sont notifiés dans les deux mois (R. 222-16)."
 ],
 "source": "Code du sport, L. 222-20, R. 222-15 et R. 222-16"
 },
@@ -6368,7 +6369,8 @@
 "Résolution : clause résolutoire, notification du créancier à ses risques et périls, ou décision du juge (art. 1224 à 1227). Les clauses de confidentialité, de non-concurrence et de règlement des différends survivent (art. 1230).",
 "Dommages et intérêts : perte subie et gain manqué (art. 1231-2), limités au dommage prévisible sauf faute lourde ou dolosive (art. 1231-3), écartés en cas de force majeure (art. 1231-1).",
 "Clause pénale : le juge peut, même d'office, la modérer ou l'augmenter si elle est manifestement excessive ou dérisoire (art. 1231-5).",
-"Fin du contrat : engagements perpétuels interdits (art. 1210) ; durée indéterminée : résiliation avec préavis (art. 1211) ; durée déterminée : exécution jusqu'au terme (art. 1212) ; tacite reconduction : nouveau contrat à durée indéterminée (art. 1214 et 1215) ; caducité si un élément essentiel disparaît (art. 1186)."
+"Durée du contrat : engagements perpétuels interdits (art. 1210) ; à durée indéterminée, résiliation avec préavis (art. 1211) ; à durée déterminée, exécution jusqu'au terme (art. 1212) ; la tacite reconduction crée un nouveau contrat à durée indéterminée (art. 1214 et 1215).",
+"Caducité : le contrat tombe si l'un de ses éléments essentiels disparaît (art. 1186)."
 ],
 "source": "Code civil, art. 1186, 1210 à 1231-5 ; Module 02, partie A",
 "cours": {
@@ -14128,11 +14130,11 @@
 "ordre": 6,
 "titre": "Annales : fonds de dotation",
 "fiche": [
-"Personne morale de droit privé à but non lucratif qui capitalise des biens reçus à titre gratuit et irrévocable (art. 140, I).",
-"Déclaré en préfecture ; personnalité morale à la publication au Journal officiel (II).",
-"Dotation initiale : au moins un montant fixé par voie réglementaire, qui ne peut excéder 30 000 € (III). Avant la loi du 25 juin 2026, la règle à retenir était 15 000 €.",
-"Aucun fonds public, sauf dérogation exceptionnelle par arrêté des ministres de l'économie et du budget (III).",
-"Conseil d'administration d'au moins trois membres (V) ; commissaire aux comptes dès que les ressources dépassent 10 000 € (VI)."
+"Le fonds de dotation est régi par l'article 140 de la loi du 4 août 2008. C'est une personne morale de droit privé à but non lucratif, qui capitalise des biens reçus à titre gratuit et irrévocable (art. 140, I).",
+"Il est déclaré en préfecture et obtient la personnalité morale à la publication au Journal officiel (art. 140, II).",
+"Dotation initiale : au moins un montant fixé par voie réglementaire, qui ne peut excéder 30 000 € (art. 140, III). Avant la loi du 25 juin 2026, le chiffre à retenir était 15 000 €. Le montant réglementaire actuel reste à vérifier.",
+"Aucun fonds public, sauf dérogation exceptionnelle par arrêté des ministres de l'économie et du budget (art. 140, III).",
+"Conseil d'administration d'au moins trois membres (art. 140, V) ; commissaire aux comptes dès que les ressources dépassent 10 000 € (art. 140, VI)."
 ],
 "source": "Loi n° 2008-776 du 4 août 2008, art. 140, en vigueur depuis le 27 juin 2026"
 },
@@ -26749,7 +26751,8 @@
 "Substance ou méthode non spécifiée : quatre ans, ramenés à deux ans si le sportif démontre l'absence d'intention (L. 232-23-3-3, I, 1°).",
 "Substance ou méthode spécifiée : deux ans, portés à quatre ans si l'AFLD démontre l'intention (L. 232-23-3-3, I, 2°).",
 "Substance d'abus hors compétition et sans rapport avec la performance : trois mois, ramenés à un mois avec un traitement approuvé par l'AFLD (L. 232-23-3-3, II).",
-"Refus de se soumettre au prélèvement : quatre ans, avec des réductions possibles (L. 232-23-3-4)."
+"Ne pas se soumettre au prélèvement : quatre ans, ramenés à deux ans si le sportif établit que ce n'était pas intentionnel (L. 232-23-3-4).",
+"Personne protégée ou sportif de niveau récréatif : de l'avertissement à deux ans de suspension selon le degré de la faute (L. 232-23-3-4)."
 ],
 "source": "Code du sport, L. 232-23-3-3 et L. 232-23-3-4"
 },
@@ -26761,9 +26764,10 @@
 "fiche": [
 "Aide substantielle : deux conditions cumulatives, divulguer entièrement les informations et collaborer pleinement à l'enquête (L. 230-4).",
 "Elle permet un sursis jusqu'aux trois quarts de la suspension, selon la gravité de la violation et l'importance de l'aide (L. 232-23-3-2, I).",
-"Suspension définitive : la part ferme ne peut être inférieure à huit ans.",
-"Le sursis est accordé par la commission des sanctions de l'AFLD, ou par le collège dans le cadre d'un accord de composition administrative.",
-"Révocation, à la demande du collège : nouvelle violation dans les dix ans, ou arrêt de la coopération (L. 232-23-3-2, II)."
+"Si la sanction encourue est une suspension définitive, la part ferme ne peut pas être inférieure à huit ans (L. 232-23-3-2, I).",
+"Le sursis est accordé par la commission des sanctions de l'AFLD, ou par le collège dans le cadre d'un accord de composition administrative (L. 232-23-3-2, I).",
+"Circonstances exceptionnelles tenant à la qualité de l'aide : le sursis peut aller jusqu'à la totalité de la suspension, après avis de l'Agence mondiale antidopage (L. 232-23-3-2, I).",
+"Révocation, à la demande du collège : nouvelle violation dans les dix ans à compter du prononcé de la sanction, ou arrêt de la coopération (L. 232-23-3-2, II)."
 ],
 "source": "Code du sport, L. 230-4 et L. 232-23-3-2"
 },
