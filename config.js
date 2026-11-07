@@ -8,5 +8,6 @@ window.EA_CONFIG = {
   loginCode: true,
   // true une fois la fonction Supabase « arbitre » installée
   arbitre: false,
+  arbitreFn: "clever-handler",
   supabaseKey: "sb_publishable_kBA3GSSDoWY3QwUARbXWkg_uUhguGZs"
 };

@@ -2084,7 +2084,7 @@ a.row:hover .row-title { color: var(--green); }
     A.msgs.push({ role: "user", text: q }); A.busy = true; A.err = ""; arbPaint();
     let code = null, data = null;
     try {
-      const r = await S.sb.functions.invoke("arbitre", { body: { question: q, ctx: A.ctx, history } });
+      const r = await S.sb.functions.invoke(CFG.arbitreFn || "arbitre", { body: { question: q, ctx: A.ctx, history } });
       if (r.error) { const j = await r.error.context?.json?.().catch(() => null); code = j?.code || "other"; }
       else data = r.data;
     } catch (x) { code = "other"; }
