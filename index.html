@@ -607,6 +607,7 @@ a.row:hover .row-title { color: var(--green); }
 .login { max-width: 420px; margin: 0 auto; text-align: left; align-items: stretch; }
 .login .login-brand { display: flex; flex-direction: column; align-items: center; gap: 10px; }
 .login form { display: flex; flex-direction: column; gap: 14px; width: 100%; }
+.login-code { font-size: 24px; font-weight: 700; letter-spacing: 0.2em; text-align: center; font-variant-numeric: tabular-nums; }
 .login .err { color: var(--red); font-size: 14px; margin: 0; }
 .login .hint { margin: 0; font-size: 14px; color: var(--fg-2); }
 .splash .brand-wm { height: clamp(72px, 20vw, 104px); width: auto; }
@@ -2047,13 +2048,16 @@ a.row:hover .row-title { color: var(--green); }
     const L = S.login;
     const email = `<div class="field"><label for="l-email">Ton adresse e-mail</label><input id="l-email" type="email" autocomplete="email" inputmode="email" required value="${esc(L.email || "")}"></div>
         <div class="field"><label for="l-name">Ton prénom</label><input id="l-name" type="text" autocomplete="given-name" value="${esc(L.name || "")}"></div>
-        <button class="btn btn-primary btn-block" type="submit">Recevoir mon lien de connexion</button>`;
-    const code = `<p class="hint">Lien envoyé à <b>${esc(L.email)}</b>. Ouvre ce message sur cet appareil et clique sur le lien « Sign in ». Il peut mettre une minute à arriver ; regarde aussi dans les courriers indésirables.</p>
+        <button class="btn btn-primary btn-block" type="submit">${CFG.loginCode ? "Recevoir mon code" : "Recevoir mon lien de connexion"}</button>`;
+    const code = CFG.loginCode ? `<p class="hint">Code envoyé à <b>${esc(L.email)}</b>. Il peut mettre une minute à arriver ; regarde aussi dans les courriers indésirables.</p>
+        <div class="field"><label for="l-code">Ton code à 6 chiffres</label><input id="l-code" class="login-code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" maxlength="10" required></div>
+        <button class="btn btn-primary btn-block" type="submit">Valider</button>
+        <button class="link-btn" type="button" data-act="login-back">Changer d'adresse ou renvoyer un code</button>` : `<p class="hint">Lien envoyé à <b>${esc(L.email)}</b>. Ouvre ce message sur cet appareil et clique sur le lien « Sign in ». Il peut mettre une minute à arriver ; regarde aussi dans les courriers indésirables.</p>
         <button class="link-btn" type="button" data-act="login-back">Changer d'adresse e-mail</button>`;
     return `<main class="splash login" aria-labelledby="login-t">
       <div class="login-brand"><img class="hero-crest" src="${ASSET["crest"]}" alt="" width="371" height="416">${WORDMARK.replace('alt=""', 'alt="ELEVEN ACADEMY"')}</div>
       <h1 class="h-screen" id="login-t">Connexion</h1>
-      <p class="hint">Pas de mot de passe : tu reçois un lien par e-mail. Ta progression est ensuite la même sur ton téléphone et ton ordinateur.</p>
+      <p class="hint">Pas de mot de passe : tu reçois ${CFG.loginCode ? "un code" : "un lien"} par e-mail. Ta progression est ensuite la même sur ton téléphone et ton ordinateur.</p>
       <form id="login" novalidate>${L.step === "code" ? code : email}<p class="err" id="l-err" ${L.err ? "" : "hidden"}>${esc(L.err || "")}</p></form>
     </main>`;
   }

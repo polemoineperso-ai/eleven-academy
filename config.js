@@ -4,5 +4,7 @@
 // la sécurité repose sur les règles d'accès (RLS) de supabase/schema.sql.
 window.EA_CONFIG = {
   supabaseUrl: "https://pwziiledutebgoyuvflm.supabase.co",
+  // true une fois le modèle d'e-mail Supabase passé au code à 6 chiffres
+  loginCode: false,
   supabaseKey: "sb_publishable_kBA3GSSDoWY3QwUARbXWkg_uUhguGZs"
 };
