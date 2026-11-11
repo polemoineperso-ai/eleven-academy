@@ -14132,7 +14132,7 @@
 "fiche": [
 "Le fonds de dotation est régi par l'article 140 de la loi du 4 août 2008. C'est une personne morale de droit privé à but non lucratif, qui capitalise des biens reçus à titre gratuit et irrévocable (art. 140, I).",
 "Il est déclaré en préfecture et obtient la personnalité morale à la publication au Journal officiel (art. 140, II).",
-"Dotation initiale : au moins un montant fixé par voie réglementaire, qui ne peut excéder 30 000 € (art. 140, III). Avant la loi du 25 juin 2026, le chiffre à retenir était 15 000 €. Le montant réglementaire actuel reste à vérifier.",
+"Dotation initiale : au moins un montant fixé par voie réglementaire, qui ne peut excéder 30 000 € (art. 140, III). Ce montant réglementaire est toujours de 15 000 €, versés en numéraire au cours du premier exercice comptable (décret n° 2009-158 du 11 février 2009, art. 2 bis).",
 "Aucun fonds public, sauf dérogation exceptionnelle par arrêté des ministres de l'économie et du budget (art. 140, III).",
 "Conseil d'administration d'au moins trois membres (art. 140, V) ; commissaire aux comptes dès que les ressources dépassent 10 000 € (art. 140, VI)."
 ],
@@ -27006,7 +27006,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 1,
-"explication": "Depuis la loi du 25 juin 2026, la loi ne fixe plus le montant : elle renvoie au règlement, avec un plafond de 30 000 €. Le montant réglementaire actuel reste à vérifier.",
+"explication": "Depuis la loi du 25 juin 2026, la loi ne fixe plus le montant : elle renvoie au règlement, avec un plafond de 30 000 €. Le règlement maintient le minimum à 15 000 €, versés en numéraire au cours du premier exercice comptable (décret n° 2009-158, art. 2 bis).",
 "article": {
 "texte": "Loi n° 2008-776 du 4 août 2008",
 "ref": "art. 140, III",
@@ -31347,7 +31347,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 2,
-"explication": "Montant fixé par la CCNS à compter du 1er juillet 2023. Il a pu changer depuis : à vérifier dans le dernier avenant.",
+"explication": "Montant fixé par la CCNS à compter du 1er juillet 2023. Il a changé depuis : l'avenant n° 210 du 3 avril 2025 le porte à 42 879,55 € au 1er juillet 2025, puis à 43 308,35 € au 1er janvier 2026.",
 "origine": "Annale CNOSF 2023, QCM 6",
 "chapitre": "examen"
 }
