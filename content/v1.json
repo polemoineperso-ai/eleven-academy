@@ -27102,7 +27102,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 1,
-"explication": "La loi parle désormais de carte professionnelle, délivrée, suspendue ou retirée par la fédération délégataire. Les décrets d'application emploient encore le mot « licence ». La licence FIFA n'est pas applicable en France selon la FFF.",
+"explication": "La loi parle désormais de carte professionnelle, délivrée, suspendue ou retirée par la fédération délégataire (L. 222-7). Les décrets d'application emploient encore le mot « licence ». La licence FIFA relève d'un autre cadre : elle ne remplace pas la carte professionnelle française.",
 "article": {
 "texte": "Code du sport",
 "ref": "L. 222-7",
@@ -28798,13 +28798,13 @@
 "enonce": "Une convention tripartite permet au club de payer la rémunération que le joueur doit à son agent. Cette convention :",
 "options": [
 "Est conclue entre le joueur et l'agent seulement",
-"Précise les conséquences fiscales et sociales pour le cocontractant de l'agent, qui reçoit une quittance du paiement",
+"Précise les conséquences fiscales et sociales pour le cocontractant de l'agent ; l'agent donne quittance du paiement au club",
 "Doit être homologuée par le ministère des sports",
 "Prévoit une commission d'au moins 10 %",
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 1,
-"explication": "La convention est signée par toutes les parties au contrat. Elle précise les conséquences fiscales et sociales, et l'agent donne quittance du paiement (L. 222-17, II).",
+"explication": "La convention est signée par toutes les parties au contrat. Elle précise les conséquences fiscales et sociales, et l'agent donne quittance du paiement au cocontractant du sportif, c'est-à-dire au club qui a payé (L. 222-17, II).",
 "article": {
 "texte": "Code du sport",
 "ref": "L. 222-17, II",
@@ -29504,7 +29504,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 3,
-"explication": "Le Code du sport ne prévoit aucune de ces obligations pour la ligue (annexe I-5 et article R. 131-11).",
+"explication": "L'échéance du 31 décembre qui suit les Jeux d'été vaut pour les fédérations (annexe I-5). Pour la ligue, l'article R. 132-6 renvoie à ses statuts : le Code du sport ne lui impose aucune de ces obligations.",
 "origine": "Annale CNOSF 2024, QCM 10",
 "chapitre": "m01-1"
 },
@@ -29551,7 +29551,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 0,
-"explication": "L'article R. 132-2 du Code du sport impose la forme de l'association déclarée, pour une durée illimitée.",
+"explication": "L'article R. 132-2 du Code du sport impose la forme de l'association déclarée, pour une durée illimitée, à la ligue dotée de la personnalité morale. L'article L. 132-1 admet aussi une ligue interne à la fédération, sans personnalité juridique distincte.",
 "origine": "Annale CNOSF 2023, QCM 14",
 "chapitre": "m01-1"
 },
@@ -29762,7 +29762,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 2,
-"explication": "Le teneur du registre est seul habilité à délivrer cette attestation (article A. 123-293 du Code de commerce), et c'est l'INPI qui le tient (article R. 411-1 du Code de la propriété intellectuelle).",
+"explication": "Le teneur du registre est seul habilité à délivrer cette attestation (article A. 123-293 du Code de commerce), et c'est l'INPI qui tient le Registre national des entreprises (article L. 123-50 du Code de commerce).",
 "origine": "Annale CNOSF 2024, QCM 11",
 "chapitre": "m03-2"
 },
@@ -30199,7 +30199,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 0,
-"explication": "L'article 82 du Code général des impôts inclut dans la base imposable tous les avantages en argent ou en nature.",
+"explication": "Principe : l'article 82 du Code général des impôts inclut dans la base imposable tous les avantages en argent ou en nature. Il ne prévoit qu'une exception très étroite, pour certains logements de fonction (gendarmerie), sans rapport avec le sport.",
 "origine": "Annale CNOSF 2025, QCM 16",
 "chapitre": "m05-4"
 },
@@ -30230,7 +30230,7 @@
 "Rémunération, exclusivité et ancienneté"
 ],
 "bonne": 0,
-"explication": "La qualification repose sur une prestation de travail, une rémunération et un lien de subordination juridique, déterminant pour distinguer le salariat de l'indépendance.",
+"explication": "La qualification repose sur une prestation de travail, une rémunération et un lien de subordination juridique, déterminant pour distinguer le salariat de l'indépendance. Cette définition est posée par la jurisprudence (Cour de cassation), pas par un article du Code du travail.",
 "origine": "Module 06, QCM 1"
 },
 {
@@ -30456,7 +30456,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 0,
-"explication": "L'article L. 1242-13 du Code du travail impose la transmission au plus tard dans les deux jours ouvrables suivant l'embauche.",
+"explication": "L'article L. 222-2-5, II, du Code du sport impose la transmission au plus tard dans les deux jours ouvrables suivant l'embauche. L'article L. 1242-13 du Code du travail ne s'applique pas aux sportifs (L. 222-2-1).",
 "origine": "Annale CNOSF 2025, QCM 9",
 "chapitre": "m06-2"
 },
@@ -31332,7 +31332,7 @@
 "1er janvier 2028"
 ],
 "bonne": 2,
-"explication": "La loi prévoit expressément cette date différée. C'est l'un",
+"explication": "La loi prévoit expressément cette date différée. C'est l'un des pièges majeurs du module.",
 "origine": "Module 09, QCM 20, corrigé du module"
 },
 {
@@ -31472,7 +31472,7 @@
 "domaine": "agents",
 "genre": "terme",
 "recto": "Licence",
-"verso": "Autorisation délivrée dans le cadre fédéral permettant l'exercice d'une activité réglementée. d'agent sportif. Les anciens textes et documents d'examen continuent parfois à employer le terme licence."
+"verso": "Ancien nom de la carte professionnelle d'agent sportif. La loi dit « carte professionnelle » depuis le 5 août 2026, mais les articles R. 222-* et L. 222-20 emploient encore « licence ». À ne pas confondre avec la licence sportive du pratiquant."
 },
 {
 "id": "k-agents-17",
@@ -31556,7 +31556,7 @@
 "domaine": "societes",
 "genre": "terme",
 "recto": "SARL",
-"verso": "Société de 2 à 100 associés, sans capital minimum légal, dirigée par un ou plusieurs gérants. La responsabilité des associés est limitée à leurs apports."
+"verso": "Société de 1 à 100 associés (avec un associé unique, c'est une EURL), sans capital minimum légal, dirigée par un ou plusieurs gérants. La responsabilité des associés est limitée à leurs apports."
 },
 {
 "id": "k-societes-2",
@@ -31619,7 +31619,7 @@
 "domaine": "societes",
 "genre": "terme",
 "recto": "Mandat ad hoc",
-"verso": "Procédure amiable et confidentielle : un mandataire aide le dirigeant à négocier, sans cessation des paiements."
+"verso": "Procédure amiable et confidentielle : à la demande du débiteur, le président du tribunal désigne un mandataire ad hoc dont il fixe la mission (C. com., L. 611-3). En pratique, elle sert avant la cessation des paiements."
 },
 {
 "id": "k-societes-11",
@@ -32997,7 +32997,7 @@
 "id": "k-travail-45",
 "domaine": "travail",
 "genre": "article",
-"recto": "Code du travail L.911-1",
+"recto": "Code de la sécurité sociale L.911-1",
 "verso": "Protection sociale complémentaire : Mise en place des garanties collectives"
 },
 {
@@ -33040,14 +33040,14 @@
 "domaine": "personnalite",
 "genre": "terme",
 "recto": "Image collective",
-"verso": "Image exploitée dans le cadre particulier prévu par le Code du sport pour certains sportifs professionnels"
+"verso": "Image associée collective : l'employeur décide de son exploitation et en informe les salariés (convention collective du sport, art. 12.12.1.1)."
 },
 {
 "id": "k-personnalite-7",
 "domaine": "personnalite",
 "genre": "terme",
 "recto": "Image d'équipe",
-"verso": "Image montrant plusieurs joueurs réunis dans un contexte sportif ; elle n'est pas automatiquement soumise au régime de l'image collective du Code du sport"
+"verso": "Image montrant plusieurs joueurs : elle n'est une image associée collective que si elle réunit au moins 50 % de l'effectif présent sur le terrain (convention collective du sport, art. 12.12.1) ; en dessous, elle est individuelle."
 },
 {
 "id": "k-personnalite-8",
