@@ -30001,7 +30001,7 @@
 "Des revenus fonciers"
 ],
 "bonne": 0,
-"explication": "L'activité indépendante d'agent sportif relève en principe des bénéfices non commerciaux, selon la nature réelle de l'activité et le régime applicable.",
+"explication": "Un mandataire, qui agit au nom de son client, exerce une activité non commerciale : ses revenus sont des BNC. Seul un commissionnaire, qui agit en son propre nom, relève des BIC (BOFiP, BOI-BNC-CHAMP-10-10-20-40, § 130 et 140). L'agent sportif agit en principe comme mandataire.",
 "origine": "Module 05, QCM 3"
 },
 {
@@ -30792,7 +30792,7 @@
 "226-20"
 ],
 "bonne": 1,
-"explication": "L'article 226-8 vise la diffusion de certains montages et contenus générés algorithmiquement représentant une personne sans consentement lorsque leur nature artificielle n'est pas évidente ou signalée ; les peines sont aggravées en ligne.",
+"explication": "L'article 226-8 du Code pénal punit d'un an et de 15 000 € le fait de porter à la connaissance du public un montage, ou un contenu généré par un traitement algorithmique, représentant une personne sans son consentement, s'il n'apparaît pas à l'évidence qu'il s'agit d'un montage ou d'un contenu artificiel. Les peines passent à deux ans et 45 000 € en ligne (loi n° 2024-449 du 21 mai 2024).",
 "origine": "Module 07, QCM 14"
 },
 {
@@ -31332,7 +31332,7 @@
 "1er janvier 2028"
 ],
 "bonne": 2,
-"explication": "La loi prévoit expressément cette date différée. C'est l'un des pièges majeurs du module.",
+"explication": "La loi prévoit expressément cette date différée : la nouvelle rédaction de L. 222-8 entre en vigueur le 1er janvier 2028 (loi n° 2026-725, art. 13, V), et un décret en Conseil d'État fixera les mesures transitoires. C'est l'un des pièges majeurs du module.",
 "origine": "Module 09, QCM 20, corrigé du module"
 },
 {
