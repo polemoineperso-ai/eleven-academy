@@ -601,6 +601,25 @@ a.row:hover .row-title { color: var(--green); }
 .upd-tag { display: flex; align-items: center; gap: 6px; margin: 0; font-size: 13.5px; font-weight: 700; color: var(--chalk); }
 .upd-tag svg { width: 16px; height: 16px; flex: none; }
 .upd-tag.is-light { font-weight: 600; color: var(--fg-2); }
+/* Ce qui a changé : entrées séparées par des filets, pas des cartes */
+.news-group { display: flex; flex-direction: column; gap: 4px; margin-top: 28px; }
+.news-item { display: flex; flex-direction: column; gap: 10px; padding: 18px 0 8px; border-top: 1px solid var(--line); }
+.news-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; margin: 0; font-size: 13px; color: var(--fg-2); }
+.news-meta span { display: inline-flex; align-items: center; gap: 5px; }
+.news-meta svg { width: 15px; height: 15px; flex: none; }
+.news-meta .is-new { color: var(--chalk); font-weight: 700; }
+.news-item h3 { margin: 0; font-size: 17px; font-weight: 700; line-height: 1.35; text-wrap: balance; }
+.news-ba { display: grid; gap: 10px; margin: 0; }
+.news-ba dt { font-size: 13px; font-weight: 700; color: var(--fg-2); }
+.news-ba dd { margin: 2px 0 0; font-size: 15px; line-height: 1.55; max-width: 65ch; }
+.news-ba dd.was { color: var(--fg-2); }
+.news-src { margin: 0; font-size: 13px; color: var(--fg-3); }
+.news-acts { display: flex; flex-wrap: wrap; gap: 0 24px; }
+.news-acts:empty { display: none; }
+.news-fix { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.5; }
+.news-item details summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 600; color: var(--green); }
+.news-item details summary:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; border-radius: 8px; }
+.news-item details .news-fix { color: var(--fg-2); font-size: 14px; }
 .var-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .origin { font-size: 12.5px; color: var(--fg-3); }
 .quiz-next { position: sticky; bottom: calc(env(safe-area-inset-bottom, 0px) + 12px); z-index: 15; }
@@ -1232,6 +1251,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   }
 
   function vHome() {
+    S.newsFresh = null;
     const p = S.progress; const dv = division(p.xp);
     const months = Math.max(0, Math.round((EXAM_TARGET - new Date()) / (30.44 * 86400000)));
     const first = S.name ? esc(S.name.split(" ")[0]) : "";
@@ -1258,6 +1278,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
           <span class="tiny num">${dv.next ? `${fmt(p.xp)} / ${fmt(dv.next.min)} pts pour ${esc(dv.next.name)}` : "Division maximale"}</span></div>
         <div class="bar gold" role="progressbar" aria-valuenow="${dv.pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Progression vers la division suivante"><i style="width:${dv.pct}%"></i></div>
       </section>
+      ${newsCard()}
       ${next ? `<section class="side-card" aria-labelledby="nt-t"><div class="sec-head"><h2 class="h-sec" id="nt-t">Prochain trophée</h2><button class="link-btn" data-go="progress">Armoire</button></div>
         <div class="cabinet"><div class="trophy"><span class="trophy-mark">${next.t.mark()}</span><span style="min-width:0"><b>${esc(next.t.name)}</b><span class="row-sub">${esc(next.t.desc)}</span></span><span class="trophy-val">${esc(next.pr.label)}</span><span class="bar" aria-hidden="true"><i style="width:${next.pr.pct}%"></i></span></div></div></section>` : ""}
       ${p.sessions.length ? `<section class="side-card" aria-labelledby="lm-t"><h2 class="h-sec" id="lm-t">Derniers matchs</h2>
@@ -2063,6 +2084,57 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     </main>`;
   }
 
+  /* ---------- Ce qui a changé (VEILLE_DEFINITION.md, étape 2) ---------- */
+  const newsAll = () => S.content?.nouveautes || [];
+  const newsUnseen = () => { const seen = new Set(S.progress.newsSeen || []); return newsAll().filter((n) => !seen.has(n.id)); };
+  const newsCount = (n) => `${n} nouveauté${n > 1 ? "s" : ""}`;
+  function newsItem(n) {
+    const fresh = (S.newsFresh || []).includes(n.id);
+    const meta = (extra) => `<p class="news-meta">${fresh ? `<span class="is-new">Nouveau</span>` : ""}${extra}</p>`;
+    if (n.genre === "appli") {
+      const qs = n.erreurs.filter((e) => e.g === "q" && C.q(e.id)).map((e) => e.id), ks = n.erreurs.filter((e) => e.g === "k").map((e) => e.id);
+      return `<article class="news-item">${meta(`<span>${icon("refresh")}Publié le ${esc(frDate(n.d))}</span>`)}
+        <h3>${n.erreurs.length ? `${n.erreurs.length} erreur${n.erreurs.length > 1 ? "s" : ""} corrigée${n.erreurs.length > 1 ? "s" : ""}` : "Aucune erreur, des précisions"}</h3>
+        ${n.erreurs.length ? `<ul class="news-fix">${n.erreurs.map((e) => `<li>${esc(e.x)}</li>`).join("")}</ul>` : ""}
+        ${n.precisions.length ? `<details><summary>${n.precisions.length} précision${n.precisions.length > 1 ? "s" : ""} : ce que tu as appris reste juste</summary><ul class="news-fix">${n.precisions.map((e) => `<li>${esc(e.x)}</li>`).join("")}</ul></details>` : ""}
+        <div class="news-acts">${qs.length ? `<button class="link-btn" data-act="news-q" data-param="${n.id}">${icon("play")}Revoir ${qs.length > 1 ? `les ${qs.length} questions corrigées` : "la question corrigée"}</button>` : ""}
+        ${ks.length ? `<button class="link-btn" data-act="news-k" data-param="${n.id}">${icon("refresh")}Revoir ${ks.length > 1 ? `les ${ks.length} billets corrigés` : "le billet corrigé"}</button>` : ""}</div>
+      </article>`;
+    }
+    const later = n.vigueur > today();
+    const exam = n.examen
+      ? `<span>${icon("check")}S'applique à l'épreuve de novembre 2027</span>`
+      : `<span>${icon("clock")}Pas encore à l'épreuve de novembre 2027</span>`;
+    const qs = n.questions.filter((id) => C.q(id));
+    return `<article class="news-item">${meta(`<span>${icon("file")}En vigueur ${later ? "à partir du" : "depuis le"} ${esc(frDate(n.vigueur))}</span>${exam}`)}
+      <h3>${esc(n.titre)}</h3>
+      <dl class="news-ba"><div><dt>${later ? "Aujourd'hui" : "Avant"}</dt><dd class="was">${esc(n.avant)}</dd></div><div><dt>${later ? "À partir du " + esc(frDate(n.vigueur)) : "Maintenant"}</dt><dd>${esc(n.maintenant)}</dd></div></dl>
+      <p class="news-src">Source : ${esc(n.source)}</p>
+      <div class="news-acts">${qs.length ? `<button class="link-btn" data-act="news-q" data-param="${n.id}">${icon("play")}${qs.length > 1 ? `Revoir les ${qs.length} questions` : "Revoir la question"}</button>` : ""}
+      ${n.cartes.length ? `<button class="link-btn" data-act="news-k" data-param="${n.id}">${icon("refresh")}${n.cartes.length > 1 ? `Revoir les ${n.cartes.length} billets` : "Revoir le billet"}</button>` : ""}</div>
+    </article>`;
+  }
+  function vNews() {
+    if (!S.newsFresh) {
+      S.newsFresh = newsUnseen().map((n) => n.id);
+      if (S.newsFresh.length) { S.progress.newsSeen = newsAll().map((n) => n.id); save(); }
+    }
+    const droit = newsAll().filter((n) => n.genre === "droit"), appli = newsAll().filter((n) => n.genre === "appli");
+    return `${header()}<main class="screen narrow">
+      <div class="greet"><h1 class="h-screen">Ce qui a changé</h1>
+        <p class="muted small">Les règles qui ont évolué et les corrections de l'appli. À l'examen, c'est le droit en vigueur le jour de l'épreuve qui compte.</p></div>
+      ${droit.length ? `<section class="news-group" aria-labelledby="nd-t"><h2 class="h-sec" id="nd-t">Dans le droit</h2>${droit.map(newsItem).join("")}</section>` : ""}
+      ${appli.length ? `<section class="news-group" aria-labelledby="na-t"><h2 class="h-sec" id="na-t">Dans l'appli</h2>${appli.map(newsItem).join("")}</section>` : ""}
+    </main>`;
+  }
+  function newsCard() {
+    const all = newsAll(); if (!all.length) return "";
+    const fresh = newsUnseen(), show = (fresh.length ? fresh : all).filter((n) => n.genre === "droit").slice(0, 2);
+    return `<section class="side-card" aria-labelledby="nw-t"><div class="sec-head"><h2 class="h-sec" id="nw-t">Ce qui a changé</h2><button class="link-btn" data-go="news">Tout voir</button></div>
+      ${fresh.length ? `<p class="muted small" style="margin:0">${newsCount(fresh.length)} depuis ta dernière visite</p>` : ""}
+      <div class="rows">${show.map((n) => `<button class="row" data-go="news"><span class="stack"><span class="row-title">${esc(n.titre)}</span><span class="row-sub">${n.examen ? "En vigueur" : "À partir du " + esc(frDate(n.vigueur))}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div>
+    </section>`;
+  }
   function vProgress() {
     const p = S.progress; const dv = division(p.xp);
     return `${header()}<main class="screen">
@@ -2425,7 +2497,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       return;
     }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
-    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe };
+    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe, news: vNews };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
     linkRefs(app);
@@ -2521,6 +2593,12 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "card-level": startDeck(buildDeck(allCards().filter((k) => cardLevel(k.id) === param), 10), false, null, param); break;
       case "card-module": startDeck(buildDeck(allCards().filter((k) => k.domaine === param), 10), false, param); break;
       case "card-open": startDeck([param], true); break;
+      case "news-q": { const n = newsAll().find((x) => x.id === param); if (!n) break;
+        const ids = (n.genre === "appli" ? n.erreurs.filter((e) => e.g === "q").map((e) => e.id) : n.questions).filter((id) => C.q(id));
+        startSession("news", ids, "Ce qui a changé"); break; }
+      case "news-k": { const n = newsAll().find((x) => x.id === param); if (!n) break;
+        const ids = n.genre === "appli" ? n.erreurs.filter((e) => e.g === "k").map((e) => e.id) : n.cartes;
+        startDeck(ids, ids.length === 1); break; }
       case "card-flip": if (S.deck) { S.deck.flip = true; S.deck.anim = true; render(); window.scrollTo(0, 0); focusH1(); S.deck.anim = false; } break;
       case "card-answer": if (S.deck) {
         const D = S.deck;
@@ -2649,7 +2727,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "b2058ddf3997";
+  const BUILD = "27b2a0c7bdf0";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;

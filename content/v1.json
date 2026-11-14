@@ -27029,9 +27029,14 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 3
+"v": 4
 },
 {
 "id": "asso-11",
@@ -27138,9 +27143,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 3
+"v": 4
 },
 {
 "id": "agt-03",
@@ -28850,9 +28860,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 3
+"v": 4
 },
 {
 "id": "agt-32",
@@ -33861,6 +33876,229 @@
 "pts": 1
 }
 ]
+}
+]
+}
+],
+"nouveautes": [
+{
+"id": "n-carte",
+"d": "2026-11-14",
+"vigueur": "2026-08-05",
+"titre": "La licence d'agent sportif devient la carte professionnelle",
+"avant": "La loi parlait de « licence d'agent sportif », délivrée par la fédération délégataire.",
+"maintenant": "La loi parle de « carte professionnelle d'agent sportif », délivrée, suspendue ou retirée par la fédération délégataire (C. sport, L. 222-7). Les articles R. 222 et L. 222-20 disent encore « licence » : c'est le même titre.",
+"source": "Loi n° 2026-725 du 3 août 2026",
+"questions": [
+"agt-02"
+],
+"cartes": [
+"k-agents-16"
+],
+"genre": "droit",
+"examen": true
+},
+{
+"id": "n-peines",
+"d": "2026-11-14",
+"vigueur": "2026-08-05",
+"titre": "Exercer sans carte : des peines beaucoup plus lourdes",
+"avant": "Deux ans d'emprisonnement et 30 000 € d'amende.",
+"maintenant": "Cinq ans d'emprisonnement et 375 000 € d'amende, l'amende pouvant aller jusqu'au double des sommes indûment perçues (C. sport, L. 222-20). Les annales d'avant 2026 donnent l'ancienne réponse.",
+"source": "Loi n° 2026-725 du 3 août 2026",
+"questions": [
+"agt-14"
+],
+"cartes": [],
+"genre": "droit",
+"examen": true
+},
+{
+"id": "n-incompat",
+"d": "2026-11-14",
+"vigueur": "2026-08-05",
+"titre": "Incompatibilités : douze mois et une liste élargie",
+"avant": "Le texte visait les fonctions exercées « durant l'année écoulée ».",
+"maintenant": "Les fonctions exercées au cours des douze mois précédents, en droit ou en fait, bénévoles ou rémunérées. La liste couvre aussi l'encadrement médical, les arbitres, juges et officiels, et les membres de commission de la fédération (C. sport, L. 222-9).",
+"source": "Loi n° 2026-725 du 3 août 2026",
+"questions": [
+"agt-03"
+],
+"cartes": [],
+"genre": "droit",
+"examen": true
+},
+{
+"id": "n-blanchiment",
+"d": "2026-11-14",
+"vigueur": "2026-08-05",
+"titre": "Lutte contre le blanchiment : un nouveau contrôleur",
+"avant": "Le contrôle des agents était assuré par la fédération sportive.",
+"maintenant": "Le contrôle revient à l'organisme indépendant créé par la fédération (C. sport, L. 133-1) et, à défaut, à la fédération elle-même (C. mon. fin., L. 561-36).",
+"source": "Loi n° 2026-725 du 3 août 2026",
+"questions": [
+"agt-40"
+],
+"cartes": [],
+"genre": "droit",
+"examen": true
+},
+{
+"id": "n-dotation",
+"d": "2026-11-14",
+"vigueur": "2026-06-27",
+"titre": "Fonds de dotation : le montant minimal passe par le règlement",
+"avant": "La loi fixait elle-même la dotation initiale minimale à 15 000 €.",
+"maintenant": "La loi renvoie au règlement, avec un plafond de 30 000 €. Le règlement maintient le minimum à 15 000 €, versés en numéraire au cours du premier exercice (décret n° 2009-158, art. 2 bis).",
+"source": "Loi du 25 juin 2026 ; décret n° 2009-158 du 11 février 2009",
+"questions": [
+"asso-10"
+],
+"cartes": [],
+"genre": "droit",
+"examen": true
+},
+{
+"id": "n-salaire-d",
+"d": "2026-11-14",
+"vigueur": "2026-01-01",
+"titre": "Entraîneur classe D : nouveau salaire minimum",
+"avant": "41 855 € brut annuel au 1er juillet 2023, puis 42 879,55 € au 1er juillet 2025.",
+"maintenant": "43 308,35 € brut annuel au 1er janvier 2026 (convention collective du sport, avenant n° 210 du 3 avril 2025, étendu le 24 juin 2025).",
+"source": "Avenant n° 210 du 3 avril 2025",
+"questions": [
+"an23-q06"
+],
+"cartes": [],
+"genre": "droit",
+"examen": true
+},
+{
+"id": "n-l222-8",
+"d": "2026-11-14",
+"vigueur": "2028-01-01",
+"titre": "Sociétés d'agents : la règle change en 2028",
+"avant": "Aujourd'hui, l'agent peut constituer une société ou être préposé d'une société (rédaction de 2010, toujours en vigueur).",
+"maintenant": "Au 1er janvier 2028 : salarié d'une seule société d'agents, majorité du capital détenue par des titulaires de la carte, nombre maximal de sociétés fixé par décret (loi n° 2026-725, art. 13, V).",
+"source": "Loi n° 2026-725 du 3 août 2026, art. 13, V",
+"questions": [
+"m09-q20"
+],
+"cartes": [],
+"genre": "droit",
+"examen": false
+},
+{
+"id": "n-appli-2026-11-14",
+"d": "2026-11-14",
+"genre": "appli",
+"titre": "Corrections de l'appli",
+"erreurs": [
+{
+"g": "k",
+"id": "k-societes-1",
+"x": "Une SARL peut n'avoir qu'un seul associé (EURL) : de 1 à 100 associés, et non de 2 à 100."
+},
+{
+"g": "k",
+"id": "k-personnalite-6",
+"x": "L'image collective relève de la convention collective du sport (art. 12.12.1.1), et non du Code du sport."
+},
+{
+"g": "k",
+"id": "k-travail-45",
+"x": "L'article L. 911-1 vient du Code de la sécurité sociale, et non du Code du travail."
+},
+{
+"g": "q",
+"id": "an25-q09",
+"x": "Le délai de 2 jours vient de L. 222-2-5 du Code du sport : L. 1242-13 du Code du travail ne s'applique pas aux sportifs."
+}
+],
+"precisions": [
+{
+"g": "q",
+"id": "m09-q20",
+"x": "Explication complétée, avec la source : loi n° 2026-725, art. 13, V."
+},
+{
+"g": "q",
+"id": "agt-02",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"g": "q",
+"id": "agt-31",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"g": "q",
+"id": "an23-q14",
+"x": "L'explication distingue la ligue dotée de la personnalité morale."
+},
+{
+"g": "q",
+"id": "an24-q10",
+"x": "Référence corrigée : R. 132-6 du Code du sport."
+},
+{
+"g": "q",
+"id": "an24-q11",
+"x": "Référence corrigée : L. 123-50 du Code de commerce."
+},
+{
+"g": "q",
+"id": "an25-q16",
+"x": "L'exception prévue par l'article 82 du CGI est mentionnée."
+},
+{
+"g": "q",
+"id": "m05-q03",
+"x": "La distinction mandataire (BNC) et commissionnaire (BIC) est ajoutée."
+},
+{
+"g": "q",
+"id": "m06-q01",
+"x": "La définition vient de la jurisprudence, pas d'un article."
+},
+{
+"g": "q",
+"id": "m07-q14",
+"x": "Les peines de l'article 226-8 du Code pénal sont ajoutées."
+},
+{
+"g": "k",
+"id": "k-agents-16",
+"x": "La carte Licence est réécrite."
+},
+{
+"g": "k",
+"id": "k-personnalite-7",
+"x": "Le seuil de 50 % de l'effectif est ajouté."
+},
+{
+"g": "k",
+"id": "k-societes-10",
+"x": "La définition reprend l'article L. 611-3."
+}
+]
+},
+{
+"id": "n-appli-2026-11-11",
+"d": "2026-11-11",
+"genre": "appli",
+"titre": "Corrections de l'appli",
+"erreurs": [],
+"precisions": [
+{
+"g": "q",
+"id": "asso-10",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"g": "q",
+"id": "an23-q06",
+"x": "Les montants actuels de l'avenant n° 210 (2025 et 2026) sont ajoutés à l'explication."
 }
 ]
 }
