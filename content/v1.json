@@ -27018,7 +27018,20 @@
 "regle": "La réponse attendue à l'annale 2022 était une dotation initiale minimale de 15 000 €."
 },
 "origine": "Annale CNOSF 2022, QCM 2, mise à jour",
-"verifiee_le": "2026-11-03"
+"verifiee_le": "2026-11-03",
+"maj": [
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+}
+],
+"v": 3
 },
 {
 "id": "asso-11",
@@ -27114,7 +27127,20 @@
 "regle": "La loi parlait de « licence d'agent sportif » délivrée par la fédération délégataire."
 },
 "origine": "Rédigée d'après le texte",
-"verifiee_le": "2026-11-03"
+"verifiee_le": "2026-11-03",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+}
+],
+"v": 3
 },
 {
 "id": "agt-03",
@@ -28813,7 +28839,20 @@
 "modifie_par": "loi n° 2026-725 du 3 août 2026"
 },
 "origine": "Rédigée d'après le texte",
-"verifiee_le": "2026-11-03"
+"verifiee_le": "2026-11-03",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+}
+],
+"v": 3
 },
 {
 "id": "agt-32",
@@ -29506,7 +29545,15 @@
 "bonne": 3,
 "explication": "L'échéance du 31 décembre qui suit les Jeux d'été vaut pour les fédérations (annexe I-5). Pour la ligue, l'article R. 132-6 renvoie à ses statuts : le Code du sport ne lui impose aucune de ces obligations.",
 "origine": "Annale CNOSF 2024, QCM 10",
-"chapitre": "m01-1"
+"chapitre": "m01-1",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Référence corrigée : R. 132-6 du Code du sport."
+}
+],
+"v": 2
 },
 {
 "id": "an24-q16",
@@ -29553,7 +29600,15 @@
 "bonne": 0,
 "explication": "L'article R. 132-2 du Code du sport impose la forme de l'association déclarée, pour une durée illimitée, à la ligue dotée de la personnalité morale. L'article L. 132-1 admet aussi une ligue interne à la fédération, sans personnalité juridique distincte.",
 "origine": "Annale CNOSF 2023, QCM 14",
-"chapitre": "m01-1"
+"chapitre": "m01-1",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "L'explication distingue la ligue dotée de la personnalité morale."
+}
+],
+"v": 2
 },
 {
 "id": "an23-q17",
@@ -29764,7 +29819,15 @@
 "bonne": 2,
 "explication": "Le teneur du registre est seul habilité à délivrer cette attestation (article A. 123-293 du Code de commerce), et c'est l'INPI qui tient le Registre national des entreprises (article L. 123-50 du Code de commerce).",
 "origine": "Annale CNOSF 2024, QCM 11",
-"chapitre": "m03-2"
+"chapitre": "m03-2",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Référence corrigée : L. 123-50 du Code de commerce."
+}
+],
+"v": 2
 },
 {
 "id": "an23-q12",
@@ -30002,7 +30065,15 @@
 ],
 "bonne": 0,
 "explication": "Un mandataire, qui agit au nom de son client, exerce une activité non commerciale : ses revenus sont des BNC. Seul un commissionnaire, qui agit en son propre nom, relève des BIC (BOFiP, BOI-BNC-CHAMP-10-10-20-40, § 130 et 140). L'agent sportif agit en principe comme mandataire.",
-"origine": "Module 05, QCM 3"
+"origine": "Module 05, QCM 3",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La distinction mandataire (BNC) et commissionnaire (BIC) est ajoutée."
+}
+],
+"v": 2
 },
 {
 "id": "m05-q04",
@@ -30201,7 +30272,15 @@
 "bonne": 0,
 "explication": "Principe : l'article 82 du Code général des impôts inclut dans la base imposable tous les avantages en argent ou en nature. Il ne prévoit qu'une exception très étroite, pour certains logements de fonction (gendarmerie), sans rapport avec le sport.",
 "origine": "Annale CNOSF 2025, QCM 16",
-"chapitre": "m05-4"
+"chapitre": "m05-4",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "L'exception prévue par l'article 82 du CGI est mentionnée."
+}
+],
+"v": 2
 },
 {
 "id": "an24-q08",
@@ -30231,7 +30310,15 @@
 ],
 "bonne": 0,
 "explication": "La qualification repose sur une prestation de travail, une rémunération et un lien de subordination juridique, déterminant pour distinguer le salariat de l'indépendance. Cette définition est posée par la jurisprudence (Cour de cassation), pas par un article du Code du travail.",
-"origine": "Module 06, QCM 1"
+"origine": "Module 06, QCM 1",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La définition vient de la jurisprudence, pas d'un article."
+}
+],
+"v": 2
 },
 {
 "id": "m06-q02",
@@ -30458,7 +30545,15 @@
 "bonne": 0,
 "explication": "L'article L. 222-2-5, II, du Code du sport impose la transmission au plus tard dans les deux jours ouvrables suivant l'embauche. L'article L. 1242-13 du Code du travail ne s'applique pas aux sportifs (L. 222-2-1).",
 "origine": "Annale CNOSF 2025, QCM 9",
-"chapitre": "m06-2"
+"chapitre": "m06-2",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "erreur",
+"x": "Le délai de 2 jours vient de L. 222-2-5 du Code du sport : L. 1242-13 du Code du travail ne s'applique pas aux sportifs."
+}
+],
+"v": 2
 },
 {
 "id": "an25-q10",
@@ -30793,7 +30888,15 @@
 ],
 "bonne": 1,
 "explication": "L'article 226-8 du Code pénal punit d'un an et de 15 000 € le fait de porter à la connaissance du public un montage, ou un contenu généré par un traitement algorithmique, représentant une personne sans son consentement, s'il n'apparaît pas à l'évidence qu'il s'agit d'un montage ou d'un contenu artificiel. Les peines passent à deux ans et 45 000 € en ligne (loi n° 2024-449 du 21 mai 2024).",
-"origine": "Module 07, QCM 14"
+"origine": "Module 07, QCM 14",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Les peines de l'article 226-8 du Code pénal sont ajoutées."
+}
+],
+"v": 2
 },
 {
 "id": "m07-q15",
@@ -31333,7 +31436,15 @@
 ],
 "bonne": 2,
 "explication": "La loi prévoit expressément cette date différée : la nouvelle rédaction de L. 222-8 entre en vigueur le 1er janvier 2028 (loi n° 2026-725, art. 13, V), et un décret en Conseil d'État fixera les mesures transitoires. C'est l'un des pièges majeurs du module.",
-"origine": "Module 09, QCM 20, corrigé du module"
+"origine": "Module 09, QCM 20, corrigé du module",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication complétée, avec la source : loi n° 2026-725, art. 13, V."
+}
+],
+"v": 2
 },
 {
 "id": "an23-q06",
@@ -31349,7 +31460,15 @@
 "bonne": 2,
 "explication": "Montant fixé par la CCNS à compter du 1er juillet 2023. Il a changé depuis : l'avenant n° 210 du 3 avril 2025 le porte à 42 879,55 € au 1er juillet 2025, puis à 43 308,35 € au 1er janvier 2026.",
 "origine": "Annale CNOSF 2023, QCM 6",
-"chapitre": "examen"
+"chapitre": "examen",
+"maj": [
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Les montants actuels de l'avenant n° 210 (2025 et 2026) sont ajoutés à l'explication."
+}
+],
+"v": 2
 }
 ],
 "cartes": [
@@ -31472,7 +31591,15 @@
 "domaine": "agents",
 "genre": "terme",
 "recto": "Licence",
-"verso": "Ancien nom de la carte professionnelle d'agent sportif. La loi dit « carte professionnelle » depuis le 5 août 2026, mais les articles R. 222-* et L. 222-20 emploient encore « licence ». À ne pas confondre avec la licence sportive du pratiquant."
+"verso": "Ancien nom de la carte professionnelle d'agent sportif. La loi dit « carte professionnelle » depuis le 5 août 2026, mais les articles R. 222-* et L. 222-20 emploient encore « licence ». À ne pas confondre avec la licence sportive du pratiquant.",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La carte Licence est réécrite."
+}
+],
+"v": 2
 },
 {
 "id": "k-agents-17",
@@ -31556,7 +31683,15 @@
 "domaine": "societes",
 "genre": "terme",
 "recto": "SARL",
-"verso": "Société de 1 à 100 associés (avec un associé unique, c'est une EURL), sans capital minimum légal, dirigée par un ou plusieurs gérants. La responsabilité des associés est limitée à leurs apports."
+"verso": "Société de 1 à 100 associés (avec un associé unique, c'est une EURL), sans capital minimum légal, dirigée par un ou plusieurs gérants. La responsabilité des associés est limitée à leurs apports.",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "erreur",
+"x": "Une SARL peut n'avoir qu'un seul associé (EURL) : de 1 à 100 associés, et non de 2 à 100."
+}
+],
+"v": 2
 },
 {
 "id": "k-societes-2",
@@ -31619,7 +31754,15 @@
 "domaine": "societes",
 "genre": "terme",
 "recto": "Mandat ad hoc",
-"verso": "Procédure amiable et confidentielle : à la demande du débiteur, le président du tribunal désigne un mandataire ad hoc dont il fixe la mission (C. com., L. 611-3). En pratique, elle sert avant la cessation des paiements."
+"verso": "Procédure amiable et confidentielle : à la demande du débiteur, le président du tribunal désigne un mandataire ad hoc dont il fixe la mission (C. com., L. 611-3). En pratique, elle sert avant la cessation des paiements.",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La définition reprend l'article L. 611-3."
+}
+],
+"v": 2
 },
 {
 "id": "k-societes-11",
@@ -32998,7 +33141,15 @@
 "domaine": "travail",
 "genre": "article",
 "recto": "Code de la sécurité sociale L.911-1",
-"verso": "Protection sociale complémentaire : Mise en place des garanties collectives"
+"verso": "Protection sociale complémentaire : Mise en place des garanties collectives",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "erreur",
+"x": "L'article L. 911-1 vient du Code de la sécurité sociale, et non du Code du travail."
+}
+],
+"v": 2
 },
 {
 "id": "k-personnalite-1",
@@ -33040,14 +33191,30 @@
 "domaine": "personnalite",
 "genre": "terme",
 "recto": "Image collective",
-"verso": "Image associée collective : l'employeur décide de son exploitation et en informe les salariés (convention collective du sport, art. 12.12.1.1)."
+"verso": "Image associée collective : l'employeur décide de son exploitation et en informe les salariés (convention collective du sport, art. 12.12.1.1).",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "erreur",
+"x": "L'image collective relève de la convention collective du sport (art. 12.12.1.1), et non du Code du sport."
+}
+],
+"v": 2
 },
 {
 "id": "k-personnalite-7",
 "domaine": "personnalite",
 "genre": "terme",
 "recto": "Image d'équipe",
-"verso": "Image montrant plusieurs joueurs : elle n'est une image associée collective que si elle réunit au moins 50 % de l'effectif présent sur le terrain (convention collective du sport, art. 12.12.1) ; en dessous, elle est individuelle."
+"verso": "Image montrant plusieurs joueurs : elle n'est une image associée collective que si elle réunit au moins 50 % de l'effectif présent sur le terrain (convention collective du sport, art. 12.12.1) ; en dessous, elle est individuelle.",
+"maj": [
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Le seuil de 50 % de l'effectif est ajouté."
+}
+],
+"v": 2
 },
 {
 "id": "k-personnalite-8",
