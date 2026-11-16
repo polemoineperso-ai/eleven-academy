@@ -2882,9 +2882,11 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     if (msg.length < 5) { err.hidden = false; err.textContent = "Décris l'erreur en quelques mots avant d'envoyer."; document.getElementById("r-msg").focus(); return; }
     const item = { question: qid || null, message: msg, date: new Date().toISOString(), version: S.content?.version || "" };
     if (S.sb && S.uid) {
-      const r = await S.sb.from("reports").insert({ question: item.question, message: item.message, version: item.version }).catch((x) => ({ error: x }));
+      /* La requête Supabase n'a pas de .catch : une erreur réseau se rattrape avec try */
+      let r;
+      try { r = await S.sb.from("reports").insert({ question: item.question, message: item.message, version: item.version }); } catch (x) { r = { error: x }; }
       if (r && r.error) { const pend = lsGet("ea-reports") || []; pend.push(item); lsSet("ea-reports", pend); toast("Envoi impossible pour l'instant : le signalement est gardé sur cet appareil."); }
-      else toast("Signalement envoyé. Merci !");
+      else { toast("Signalement envoyé. Merci !"); if (S.canEdit) loadTodo().then(render); }
     } else if (S.db && S.uid) {
       try { await S.db.doc("reports/" + S.uid).collection("items").add(item); toast("Signalement envoyé. Merci !"); }
       catch { const pend = lsGet("ea-reports") || []; pend.push(item); lsSet("ea-reports", pend); toast("Envoi impossible pour l'instant : le signalement est gardé sur cet appareil."); }
@@ -2895,7 +2897,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "0e558a3af1e9";
+  const BUILD = "5d0a980738a3";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
