@@ -1263,8 +1263,11 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
 
   /* ---------- Views ---------- */
   function advice() {
-    const chs = C.domains().flatMap((d) => C.chapters().filter((c) => c.domaine === d.id));
+    const chs = C.domains().filter((d) => !leconsPleines(d.id)).flatMap((d) => C.chapters().filter((c) => c.domaine === d.id));
     const open = chs.filter((c) => chapterState(c).key !== "ok");
+    const nl = nextLecon(), rang = (dom) => C.domains().findIndex((d) => d.id === dom);
+    const viaLecon = nl && { go: "lecon", id: nl.l.id, t: `${nl.faites ? "Continue" : "Commence"} les leçons du ${nl.m.titre.split(" · ")[0].toLowerCase()} : « ${nl.l.titre} »`, w: `${nl.m.contenu[nl.l.id]?.minutes || 5} minutes, puis 3 questions. ${nl.faites} leçon${nl.faites > 1 ? "s" : ""} faite${nl.faites > 1 ? "s" : ""} sur ${nl.total}.` };
+    if (!open.length && viaLecon) return viaLecon;
     if (!open.length) return { id: null, t: "Tous les chapitres sont validés", w: "Garde le rythme avec la séance du jour : la révision espacée entretient ce que tu as acquis." };
     const fresh = open.find((c) => hasCours(c) && isRead(c.id) && chapterState(c).key === "new");
     if (fresh) return { id: fresh.id, t: `Passe aux questions de « ${fresh.titre} »`, w: "Tu as lu le cours : c'est le bon moment pour vérifier ce que tu as retenu." };
@@ -1274,13 +1277,14 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       return { id: run.id, t: `Termine « ${run.titre} »`, w: `Encore ${left} question${left > 1 ? "s" : ""} à acquérir pour valider ce chapitre.` };
     }
     const start = open.find((c) => hasCours(c) && c.id !== "agents-contrat") || open[0]; /* module order; agents-contrat builds on module 02 */
+    if (viaLecon && (nl.faites || rang(nl.m.domaine) < rang(start.domaine))) return viaLecon;
     return { id: start.id, t: `Commence « ${start.titre} »`, w: hasCours(start) ? `Le cours se lit en environ ${start.cours.minutes} min.` : `${start.fiche.length} points clés à retenir, puis ${C.qOf(start.id).length} questions.` };
   }
   function adviceBlock() {
     const a = advice();
     const inner = `<span class="stack"><span class="row-title">${esc(a.t)}</span><span class="row-sub">${esc(a.w)}</span></span>`;
     return `<div class="stack" style="gap:12px;margin-bottom:12px"><h2 class="h-sec">Ton conseil du jour</h2><div class="rows">${a.id
-      ? `<button class="row" data-go="chapter" data-param="${a.id}">${inner}<span class="row-side">${icon("chevron")}</span></button>`
+      ? `<button class="row" data-go="${a.go || "chapter"}" data-param="${a.id}">${inner}<span class="row-side">${icon("chevron")}</span></button>`
       : `<div class="row">${inner}</div>`}</div></div>`;
   }
 
@@ -1327,6 +1331,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
           <span class="tiny num">${dv.next ? `${fmt(p.xp)} / ${fmt(dv.next.min)} pts pour ${esc(dv.next.name)}` : "Division maximale"}</span></div>
         <div class="bar gold" role="progressbar" aria-valuenow="${dv.pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Progression vers la division suivante"><i style="width:${dv.pct}%"></i></div>
       </section>
+      ${leconCard()}
       ${newsCard()}
       ${next ? `<section class="side-card" aria-labelledby="nt-t"><div class="sec-head"><h2 class="h-sec" id="nt-t">Prochain trophée</h2><button class="link-btn" data-go="progress">Armoire</button></div>
         <div class="cabinet"><div class="trophy"><span class="trophy-mark">${next.t.mark()}</span><span style="min-width:0"><b>${esc(next.t.name)}</b><span class="row-sub">${esc(next.t.desc)}</span></span><span class="trophy-val">${esc(next.pr.label)}</span><span class="bar" aria-hidden="true"><i style="width:${next.pr.pct}%"></i></span></div></div></section>` : ""}
@@ -1339,7 +1344,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         <div class="rows">${C.domains().map((d) => {
           const qs = C.qOfDomain(d.id); const m = mastery(qs);
           return `<button class="row has-pic" data-go="module" data-param="${d.id}">${domPic(d.id)}
-            <span class="stack"><span class="row-title">${esc(d.titre)}</span><span class="row-sub">${esc(d.sous_titre)} · ${qs.length} questions</span></span>
+            <span class="stack"><span class="row-title">${esc(d.titre)}</span><span class="row-sub">${esc(d.sous_titre)} · ${qs.length} questions${leconsOf(d.id) ? ` · ${leconsOf(d.id).parties.flatMap((p) => p.lecons).filter((l) => l.dispo).length} leçons` : ""}</span></span>
             <span class="row-side num">${m} %${icon("chevron")}</span>
             <span class="bar" aria-hidden="true"><i style="width:${m}%"></i></span></button>`;
         }).join("")}</div>
@@ -1510,10 +1515,10 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       ${divisionUp ? `<div class="trophy-new ${fxOn() ? "pop" : ""}">${pic("ic-trophy")}<div><b>Montée en ${esc(divisionUp)}</b><span>Tu changes de division.</span></div></div>` : ""}
       ${won.map((id) => { const t = TROPHIES.find((x) => x.id === id); return t ? `<div class="trophy-new ${fxOn() ? "pop" : ""}">${pic("ic-trophy")}<div><b>Trophée : ${esc(t.name)}</b><span>${esc(t.desc)}</span></div></div>` : ""; }).join("")}
       ${missed.length ? `<section class="sec" aria-labelledby="miss-t"><h2 class="h-sec" id="miss-t">À revoir demain</h2>
-        <div class="rows">${missed.map((q) => `<button class="row" data-go="chapter" data-param="${q.chapitre}"><span class="stack"><span class="row-title">${q.article ? `${esc(q.article.texte)}, ${esc(q.article.ref)}` : esc(C.chapter(q.chapitre)?.titre || "")}</span><span class="row-sub">${esc(q.enonce)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div>
+        <div class="rows">${missed.map((q) => { const lq = leconsPleines(C.chapter(q.chapitre)?.domaine) && leconDeQ(q.id); return `<button class="row" data-go="${lq ? "lecon" : "chapter"}" data-param="${lq || q.chapitre}"><span class="stack"><span class="row-title">${q.article ? `${esc(q.article.texte)}, ${esc(q.article.ref)}` : esc(C.chapter(q.chapitre)?.titre || "")}</span><span class="row-sub">${esc(q.enonce)}</span></span><span class="row-side">${icon("chevron")}</span></button>`; }).join("")}</div>
         <p class="tiny">Ces questions reviendront dans ta séance de demain, puis à 3, 7, 14 et 30 jours une fois réussies.</p></section>` : ""}
       <div class="stack" style="gap:10px"><button class="btn btn-primary btn-block" data-go="home">Retour à l'accueil</button>
-        <button class="btn btn-ghost btn-block" data-go="train">Voir les chapitres</button></div>
+        <button class="btn btn-ghost btn-block" data-go="train">Voir le programme</button></div>
     </main>`;
   }
 
@@ -1786,16 +1791,18 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Révisions: search over everything, then one page per module ---------- */
   const normS = (t) => String(t || "").toLowerCase().replace(/œ/g, "oe").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, " ").replace(/\b([lrda])\.? ?(\d)/g, "$1$2");
   const blockText = (b) => b.t === "list" ? b.items.join(" ") : b.t === "table" ? [b.head, ...b.rows].map((r) => r.join(" ")).join(" ") : b.t === "cas" ? `${b.cas} ${b.analyse || ""}` : (b.x || "");
-  const REV_KINDS = [["all", "Tout"], ["cours", "Cours"], ["fiche", "Fiches"], ["question", "Questions"], ["outil", "Outils"], ["carte", "Billets"]];
-  const KIND_LABEL = { cours: "Cours", fiche: "Fiche", question: "Question", outil: "Outil", carte: "Carte" };
+  const REV_KINDS = [["all", "Tout"], ["cours", "Cours et leçons"], ["fiche", "Fiches"], ["question", "Questions"], ["outil", "Outils"], ["carte", "Billets"]];
+  const KIND_LABEL = { lecon: "Leçon", cours: "Cours", fiche: "Fiche", question: "Question", outil: "Outil", carte: "Carte" };
   function revIndex() {
     if (S.revIdx && S.revIdx.v === S.content.version) return S.revIdx.items;
     const items = [];
     const add = (kind, d, title, text, attrs) => items.push({ kind, title, text, mod: d?.num ? `Module ${d.num}` : (d?.titre || ""), attrs, nt: normS(title), nx: normS(text) });
     C.domains().forEach((d) => {
+      const pleines = leconsPleines(d.id), lm = leconsOf(d.id);
+      if (pleines) Object.entries(lm.contenu).forEach(([id, L]) => add("lecon", d, L.titre, `${L.situation.texte} ${L.blocs.map(blockText).join(" ")} ${L.piege} ${L.reponse} ${(L.sources || []).join(" ")}`, `data-go="lecon" data-param="${id}"`));
       C.chapters().filter((c) => c.domaine === d.id).forEach((c) => {
-        (c.cours?.sections || []).forEach((sec, i) => add("cours", d, `${sec.code ? sec.code + " " : ""}${sec.titre}`, `${sec.ref || ""} ${sec.blocs.map(blockText).join(" ")}`, `data-go="cours" data-param="${c.id}" data-from="revisions" data-anchor="ls-${i}"`));
-        add("fiche", d, c.titre, c.ficheTxt || c.fiche.join(" "), `data-go="fiche" data-param="${c.id}" data-from="revisions"`);
+        if (!pleines) (c.cours?.sections || []).forEach((sec, i) => add("cours", d, `${sec.code ? sec.code + " " : ""}${sec.titre}`, `${sec.ref || ""} ${sec.blocs.map(blockText).join(" ")}`, `data-go="cours" data-param="${c.id}" data-from="revisions" data-anchor="ls-${i}"`));
+        if (!pleines) add("fiche", d, c.titre, c.ficheTxt || c.fiche.join(" "), `data-go="fiche" data-param="${c.id}" data-from="revisions"`);
         C.qOf(c.id).forEach((q) => add("question", d, q.enonce, `${q.options[q.bonne]} ${q.explication} ${q.article ? q.article.ref + " " + q.article.texte : ""}`, `data-act="ask" data-param="${q.id}"`));
       });
       (d.outils || []).forEach((o) => add("outil", d, o.titre, o.sections.map((sec) => sec.blocs.map(blockText).join(" ")).join(" "), `data-go="outil" data-param="${d.id}:${o.id}"`));
@@ -1811,8 +1818,8 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     if (q.length < 2) return "";
     const terms = q.split(" ").filter(Boolean);
     const kind = S.rev.kind;
-    const hits = revIndex().filter((it) => (kind === "all" || it.kind === kind) && terms.every((t) => it.nt.includes(t) || it.nx.includes(t)))
-      .map((it) => ({ it, score: terms.filter((t) => it.nt.includes(t)).length * 3 + (it.kind === "cours" ? 1 : 0) })).sort((a, b) => b.score - a.score);
+    const hits = revIndex().filter((it) => (kind === "all" || it.kind === kind || (kind === "cours" && it.kind === "lecon")) && terms.every((t) => it.nt.includes(t) || it.nx.includes(t)))
+      .map((it) => ({ it, score: terms.filter((t) => it.nt.includes(t)).length * 3 + (it.kind === "cours" || it.kind === "lecon" ? 1 : 0) })).sort((a, b) => b.score - a.score);
     if (!hits.length) return `<p class="rev-count" role="status">Aucun résultat pour « ${esc(S.rev.q)} ». Essaie un autre mot, ou un numéro d'article comme L. 222-17.</p>`;
     const rx = new RegExp(terms.map(termRx).join("|"), "gi");
     return `<p class="rev-count" role="status">${hits.length} résultat${hits.length > 1 ? "s" : ""}${hits.length > 40 ? ", les 40 plus proches affichés" : ""}</p><div class="rows">${hits.slice(0, 40).map(({ it }) => {
@@ -1822,8 +1829,8 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     }).join("")}</div>`;
   }
   const revDefault = () => `<section class="sec" aria-labelledby="rev-mods"><h2 class="h-sec" id="rev-mods">Les modules</h2><div class="rows">${C.domains().map((d) => {
-      const n = C.chapters().filter((c) => c.domaine === d.id).length, m = mastery(C.qOfDomain(d.id));
-      return `<button class="row has-pic" data-go="module" data-param="${d.id}">${domPic(d.id)}<span class="stack"><span class="row-title">${esc(d.titre)}</span><span class="row-sub">${n} chapitre${n > 1 ? "s" : ""} · ${C.qOfDomain(d.id).length} questions</span></span><span class="row-side num">${m} %${icon("chevron")}</span><span class="bar" aria-hidden="true"><i style="width:${m}%"></i></span></button>`;
+      const n = C.chapters().filter((c) => c.domaine === d.id).length, m = mastery(C.qOfDomain(d.id)), nl = leconsPleines(d.id) && Object.keys(leconsOf(d.id).contenu).length;
+      return `<button class="row has-pic" data-go="module" data-param="${d.id}">${domPic(d.id)}<span class="stack"><span class="row-title">${esc(d.titre)}</span><span class="row-sub">${nl ? `${nl} leçons` : `${n} chapitre${n > 1 ? "s" : ""}`} · ${C.qOfDomain(d.id).length} questions</span></span><span class="row-side num">${m} %${icon("chevron")}</span><span class="bar" aria-hidden="true"><i style="width:${m}%"></i></span></button>`;
     }).join("")}</div></section>`;
   function vTrain() {
     S.rev = S.rev || { q: "", kind: "all" };
@@ -1848,6 +1855,26 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         ? `<button class="row lecon-row" data-go="lecon" data-param="${l.id}"><span class="stack"><span class="row-title">${esc(l.titre)}</span><span class="row-sub">${esc(m.contenu[l.id]?.minutes || 5)} min · ${esc(PRIO[l.priorite] || "")}</span></span><span class="row-side">${leconDone(l.id) ? `${icon("check")}Faite` : icon("chevron")}</span></button>`
         : `<div class="row lecon-row is-off" aria-disabled="true"><span class="stack"><span class="row-title">${esc(l.titre)}</span><span class="row-sub">Bientôt · ${esc(PRIO[l.priorite] || "")}</span></span></div>`).join("")}</div>`).join("")}
     </section>`;
+  }
+  /* Un module dont toutes les leçons sont prêtes n'affiche plus ses chapitres : un seul parcours d'apprentissage */
+  const leconsPleines = (dom) => { const m = leconsOf(dom); return !!m && m.parties.every((p) => p.lecons.every((l) => l.dispo)); };
+  const leconDeQ = (qid) => { for (const m of S.content?.lecons || []) for (const [id, L] of Object.entries(m.contenu)) if (L.questions.includes(qid)) return id; return null; };
+  /* Accueil : la première leçon disponible et pas encore faite */
+  function nextLecon() {
+    for (const m of S.content?.lecons || []) {
+      const dispo = m.parties.flatMap((p) => p.lecons).filter((l) => l.dispo);
+      const l = dispo.find((x) => !leconDone(x.id));
+      if (l) return { m, l, faites: dispo.filter((x) => leconDone(x.id)).length, total: dispo.length };
+    }
+    return null;
+  }
+  function leconCard() {
+    const n = nextLecon(); if (!n) return "";
+    const pct = Math.round((n.faites / n.total) * 100), mod = n.m.titre.split(" · ")[0];
+    return `<section class="side-card" aria-labelledby="nl-t"><div class="sec-head"><h2 class="h-sec" id="nl-t">Ta prochaine leçon</h2><button class="link-btn" data-go="module" data-param="${n.m.domaine}">${esc(mod)}</button></div>
+      <div class="rows"><button class="row" data-go="lecon" data-param="${n.l.id}"><span class="stack"><span class="row-title">${esc(n.l.titre)}</span><span class="row-sub">${esc(n.m.contenu[n.l.id]?.minutes || 5)} min · ${esc(PRIO[n.l.priorite] || "")}</span></span><span class="row-side">${icon("chevron")}</span></button></div>
+      <p class="tiny muted num" style="margin:0">${n.faites ? `${n.faites} leçon${n.faites > 1 ? "s" : ""} faite${n.faites > 1 ? "s" : ""} sur ${n.total} dans le ${esc(mod.toLowerCase())}` : `Aucune leçon faite pour l'instant, ${n.total} au programme du ${esc(mod.toLowerCase())}`}</p>
+      <span class="bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Leçons faites dans le ${esc(mod.toLowerCase())}"><i style="width:${pct}%"></i></span></section>`;
   }
   function vLecon() {
     const id = S.param, m = (S.content?.lecons || []).find((x) => x.contenu[id]), L = m?.contenu[id];
@@ -1890,7 +1917,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       <div class="stack" style="gap:6px"><button class="link-btn" data-go="train" style="align-self:flex-start">${icon("back")} Programme</button>
         <h1 class="h-screen">${esc(d.titre)}</h1><p class="muted small">${esc(d.sous_titre || "")}</p></div>
       ${leconsSection(d)}
-      <section class="sec" aria-labelledby="mod-ch"><h2 class="h-sec" id="mod-ch">Les chapitres</h2>
+      ${leconsPleines(d.id) ? (C.qOfDomain(d.id).length ? `<button class="btn btn-ghost btn-block" data-act="module-match" data-param="${d.id}">${icon("play")}Jouer un match sur ce module</button>` : "") : `<section class="sec" aria-labelledby="mod-ch"><h2 class="h-sec" id="mod-ch">Les chapitres</h2>
         <p class="muted small" style="margin:0">Chaque chapitre suit le même parcours : le cours, la fiche, puis les questions. Il est validé à 80 % de questions acquises.</p>
         <div class="rows">${chs.map((c) => {
           const st = chapterState(c);
@@ -1899,7 +1926,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
             <span class="row-side num">${st.m} %${icon("chevron")}</span>
             <span class="bar" aria-hidden="true"><i style="width:${st.m}%"></i></span></button>`;
         }).join("")}</div>
-        ${C.qOfDomain(d.id).length ? `<button class="btn btn-ghost btn-block" data-act="module-match" data-param="${d.id}">${icon("play")}Jouer un match sur ce module</button>` : ""}</section>
+        ${C.qOfDomain(d.id).length ? `<button class="btn btn-ghost btn-block" data-act="module-match" data-param="${d.id}">${icon("play")}Jouer un match sur ce module</button>` : ""}</section>`}
       ${d.outils?.length || d.pdf ? `<section class="sec" aria-labelledby="mod-out"><h2 class="h-sec" id="mod-out">La boîte à outils</h2>
         <div class="rows">${(d.outils || []).map((o) => `<button class="row" data-go="outil" data-param="${d.id}:${o.id}"><span class="stack"><span class="row-title">${esc(o.titre)}</span><span class="row-sub">${esc(o.sous)}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}
         ${d.pdf && !window.claude ? `<a class="row" href="${esc(d.pdf)}" target="_blank" rel="noopener"><span class="stack"><span class="row-title">Le module complet en PDF</span><span class="row-sub">Le document d'origine</span></span><span class="row-side">${icon("file")}</span></a>` : ""}</div></section>` : ""}
@@ -2977,7 +3004,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "c16beeb17bed";
+  const BUILD = "80b32b2ec648";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;

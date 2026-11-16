@@ -27125,9 +27125,19 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 16
+"v": 18
 },
 {
 "id": "asso-11",
@@ -27299,9 +27309,19 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 16
+"v": 18
 },
 {
 "id": "agt-03",
@@ -29076,9 +29096,19 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 16
+"v": 18
 },
 {
 "id": "agt-32",
@@ -35537,6 +35567,15 @@
 "examen": false
 },
 {
+"id": "n-lecons-2026-11-16",
+"d": "2026-11-16",
+"genre": "appli",
+"titre": "Des leçons de 5 minutes pour le module 03",
+"texte": "Le module 03, Droit des sociétés, propose 15 leçons courtes : une situation de club, la règle, le piège d'examen, puis 3 questions. Tu les trouves en haut de la page du module, ou sur l'accueil avec « Ta prochaine leçon ». Les autres modules suivront, en commençant par le module 01.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
@@ -36001,11 +36040,19 @@
 },
 {
 "t": "h",
+"x": "Sociétés de personnes, sociétés de capitaux"
+},
+{
+"t": "p",
+"x": "On distingue aussi les sociétés de personnes, où compte avant tout qui est associé, et les sociétés de capitaux, où compte surtout l'apport. Dans une SNC, une part ne peut être cédée qu'avec l'accord de tous les associés. Dans une SA, les actions se cèdent en principe librement, mais les statuts peuvent soumettre la cession à l'agrément de la société."
+},
+{
+"t": "h",
 "x": "Limitée ne veut pas dire sans risque"
 },
 {
 "t": "p",
-"x": "La responsabilité limitée protège l'associé, pas le dirigeant fautif. Le gérant ou le président répond de ses fautes de gestion. En cas de liquidation judiciaire, le tribunal peut lui faire supporter en tout ou en partie, le montant de l'insuffisance d'actif (les dettes que les biens de la société n'ont pas couvertes), si sa faute de gestion y a contribué. Une simple négligence ne suffit pas."
+"x": "La responsabilité limitée protège l'associé, pas le dirigeant fautif. Le gérant ou le président répond de ses fautes de gestion. En cas de liquidation judiciaire, le tribunal peut lui faire supporter, en tout ou en partie, le montant de l'insuffisance d'actif (les dettes que les biens de la société n'ont pas couvertes), si sa faute de gestion y a contribué. Une simple négligence ne suffit pas."
 }
 ],
 "piege": "Indéfinie ne veut pas dire solidaire : dans une société civile, l'associé répond des dettes sans limite mais à proportion de sa part ; dans une SNC, on peut lui réclamer le tout.",
@@ -36013,7 +36060,8 @@
 "sources": [
 "C. civ., art. 1857 et 1858",
 "C. com., L. 221-1, L. 223-1, L. 225-1 et L. 227-1",
-"C. com., L. 223-22 et L. 651-2"
+"C. com., L. 223-22 et L. 651-2",
+"C. com., L. 221-13 et L. 228-23"
 ],
 "questions": [
 "m03-q03",
@@ -36482,6 +36530,14 @@
 },
 {
 "t": "h",
+"x": "Quand l'accord de conciliation est trouvé"
+},
+{
+"t": "p",
+"x": "Deux voies sont possibles. Le président du tribunal peut constater l'accord, à la demande des parties : sa décision n'est pas publiée et ne peut pas être contestée. Le débiteur peut aussi demander au tribunal d'homologuer l'accord, c'est-à-dire de l'approuver officiellement. Le tribunal le fait si trois conditions sont réunies : l'entreprise n'est pas en cessation des paiements, ou l'accord y met fin ; l'accord assure la survie de l'activité ; il ne nuit pas aux créanciers qui ne l'ont pas signé."
+},
+{
+"t": "h",
 "x": "Et la sauvegarde ?"
 },
 {
@@ -36494,7 +36550,8 @@
 "sources": [
 "C. com., L. 611-3, L. 611-4, L. 611-6 et L. 611-7",
 "C. com., L. 611-15",
-"C. com., L. 620-1 et L. 631-1"
+"C. com., L. 620-1 et L. 631-1",
+"C. com., L. 611-8"
 ],
 "questions": [
 "m03-q09",
