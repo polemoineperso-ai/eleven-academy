@@ -645,6 +645,20 @@ a.row:hover .row-title { color: var(--green); }
 .veille-how { margin-top: 8px; }
 .veille-how ol { padding-left: 20px; color: var(--fg-2); }
 .veille-how li b { color: var(--chalk); }
+/* Micro-leçons : situation de départ, règle, piège, réponse, puis questions intégrées */
+.lecon-situation { display: flex; flex-direction: column; gap: 10px; padding: 18px; border: 2px solid var(--green); border-radius: var(--r-m); background: var(--turf); }
+.lecon-situation .callout-lab { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 13.5px; font-weight: 800; color: var(--green); }
+.lecon-situation .callout-lab svg { width: 18px; height: 18px; }
+.lecon-situation p { margin: 0; font-size: 16px; line-height: 1.6; max-width: 65ch; }
+.lecon-situation .lecon-q-ask { font-weight: 700; color: var(--chalk); }
+.lecon-sources { margin: 0; font-size: 13px; color: var(--fg-3); }
+.lecon-quiz { display: flex; flex-direction: column; gap: 22px; }
+.lecon-quiz .quiz-card { margin-block: 0; }
+.lecon-quiz .q-text { font-size: 17px; }
+.lecon-feedback { margin: 0; font-size: 15px; line-height: 1.55; color: var(--fg-2); }
+.lecon-feedback b { color: var(--chalk); }
+.lecon-row.is-off { opacity: 0.55; cursor: default; }
+.lecon-part { margin: 14px 0 4px; font-size: 13.5px; font-weight: 700; color: var(--fg-2); }
 .report-item p { margin: 0; font-size: 15px; line-height: 1.55; max-width: 65ch; }
 .veille-extrait p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--fg-2); white-space: pre-line; max-width: 65ch; }
 .news-fix { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.5; }
@@ -1821,12 +1835,61 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       <div id="rev-out" class="sec">${normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault()}</div>
     </main>`;
   }
+  /* ---------- Micro-leçons (content/lecons) ---------- */
+  const PRIO = { 3: "Très fréquent à l'examen", 2: "Fréquent à l'examen", 1: "Plus rare à l'examen" };
+  const leconsOf = (dom) => (S.content?.lecons || []).find((m) => m.domaine === dom);
+  const leconDone = (id) => !!S.progress.lecons?.[id];
+  function leconsSection(d) {
+    const m = leconsOf(d.id); if (!m) return "";
+    const toutes = m.parties.flatMap((p) => p.lecons), faites = toutes.filter((l) => leconDone(l.id)).length, dispo = toutes.filter((l) => l.dispo).length;
+    return `<section class="sec" aria-labelledby="mod-lec"><h2 class="h-sec" id="mod-lec">Les leçons</h2>
+      <p class="muted small" style="margin:0">Une notion par leçon, en 5 minutes : une situation, la règle, le piège, puis des questions. ${dispo < toutes.length ? `${dispo} leçon${dispo > 1 ? "s" : ""} prête${dispo > 1 ? "s" : ""} sur ${toutes.length}, les autres arrivent.` : ""}${faites ? ` ${faites} faite${faites > 1 ? "s" : ""}.` : ""}</p>
+      ${m.parties.map((p) => `<p class="lecon-part">${esc(p.titre)}</p><div class="rows">${p.lecons.map((l) => l.dispo
+        ? `<button class="row lecon-row" data-go="lecon" data-param="${l.id}"><span class="stack"><span class="row-title">${esc(l.titre)}</span><span class="row-sub">${esc(m.contenu[l.id]?.minutes || 5)} min · ${esc(PRIO[l.priorite] || "")}</span></span><span class="row-side">${leconDone(l.id) ? `${icon("check")}Faite` : icon("chevron")}</span></button>`
+        : `<div class="row lecon-row is-off" aria-disabled="true"><span class="stack"><span class="row-title">${esc(l.titre)}</span><span class="row-sub">Bientôt · ${esc(PRIO[l.priorite] || "")}</span></span></div>`).join("")}</div>`).join("")}
+    </section>`;
+  }
+  function vLecon() {
+    const id = S.param, m = (S.content?.lecons || []).find((x) => x.contenu[id]), L = m?.contenu[id];
+    if (!L) return vTrain();
+    const toutes = m.parties.flatMap((p) => p.lecons), k = toutes.findIndex((l) => l.id === id), suiv = toutes.slice(k + 1).find((l) => l.dispo);
+    const st = (S.leconQ ||= {});
+    const quiz = L.questions.map((qid, n) => {
+      const q = C.q(qid); if (!q) return "";
+      const pick = st[qid];
+      const opts = q.options.map((o, j) => {
+        const cls = pick === undefined ? "" : j === q.bonne ? "ok" : j === pick ? "ko" : "dim";
+        return `<button class="opt ${cls}" data-act="lecon-pick" data-param="${qid}:${j}" ${pick !== undefined ? "disabled" : ""}><span class="opt-letter">${LETTERS[j]}</span><span>${esc(o)}</span><span class="opt-mark">${pick !== undefined && j === q.bonne ? icon("check") : pick === j ? icon("x") : ""}</span></button>`;
+      }).join("");
+      return `<div class="quiz-card"><p class="tiny muted" style="margin:0">Question ${n + 1} sur ${L.questions.length}</p><p class="q-text" id="lq-${n}">${esc(q.enonce)}</p>
+        <div class="opts" role="group" aria-labelledby="lq-${n}">${opts}</div>
+        ${pick !== undefined ? `<p class="lecon-feedback" role="status"><b>${pick === q.bonne ? "Bonne réponse." : `La bonne réponse était ${LETTERS[q.bonne]}.`}</b> ${esc(q.explication)}</p>` : ""}</div>`;
+    }).join("");
+    const fini = L.questions.every((qid) => st[qid] !== undefined);
+    return `${header()}<main class="screen narrow">
+      <div class="stack" style="gap:6px"><button class="link-btn" data-go="module" data-param="${m.domaine}" style="align-self:flex-start">${icon("back")} ${esc(m.titre.split(" · ")[0])}</button>
+        <h1 class="h-screen">${esc(L.titre)}</h1><p class="muted small">Leçon ${k + 1} sur ${toutes.length} · ${L.minutes || 5} min · ${esc(PRIO[L.priorite] || "")}</p></div>
+      <section class="lecon-situation" aria-label="La situation"><p class="callout-lab">${icon("whistle")}La situation</p><p>${esc(L.situation.texte)}</p><p class="lecon-q-ask">${esc(L.situation.question)}</p></section>
+      <section class="sheet${sheetCls()} lesson-sec" aria-labelledby="lr-t"><h2 class="lesson-h2" id="lr-t">La règle</h2>
+        ${L.blocs.map(lessonBlock).join("")}
+        <div class="callout warn"><p class="callout-lab">${icon("flag")}Piège d'examen</p><p>${esc(L.piege)}</p></div>
+        <div class="callout memo"><p class="callout-lab">${icon("target")}Réponse à la situation</p><p>${esc(L.reponse)}</p></div>
+        <p class="lecon-sources">Sources : ${(L.sources || []).map(esc).join(" ; ")}</p>
+      </section>
+      <section class="sec lecon-quiz" aria-labelledby="lq-t"><h2 class="h-sec" id="lq-t">À toi de jouer</h2>${quiz}</section>
+      <div class="lesson-end">
+        <button class="btn btn-primary btn-block" data-act="lecon-done" data-param="${id}" ${fini ? "" : "disabled"}>${icon("check")}${fini ? "Leçon terminée" : "Réponds aux questions pour terminer"}</button>
+        ${suiv ? `<button class="link-btn" data-go="lecon" data-param="${suiv.id}" style="align-self:center">Leçon suivante : ${esc(suiv.titre)}${icon("chevron")}</button>` : ""}
+      </div>
+    </main>`;
+  }
   function vModule() {
     const d = C.domain(S.param); if (!d) return vTrain();
     const chs = C.chapters().filter((c) => c.domaine === d.id);
     return `${header()}<main class="screen narrow">
       <div class="stack" style="gap:6px"><button class="link-btn" data-go="train" style="align-self:flex-start">${icon("back")} Programme</button>
         <h1 class="h-screen">${esc(d.titre)}</h1><p class="muted small">${esc(d.sous_titre || "")}</p></div>
+      ${leconsSection(d)}
       <section class="sec" aria-labelledby="mod-ch"><h2 class="h-sec" id="mod-ch">Les chapitres</h2>
         <p class="muted small" style="margin:0">Chaque chapitre suit le même parcours : le cours, la fiche, puis les questions. Il est validé à 80 % de questions acquises.</p>
         <div class="rows">${chs.map((c) => {
@@ -2650,7 +2713,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       return;
     }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
-    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe, news: vNews, veille: vVeille };
+    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe, news: vNews, veille: vVeille, lecon: vLecon };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
     linkRefs(app);
@@ -2748,6 +2811,11 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "card-level": startDeck(buildDeck(allCards().filter((k) => cardLevel(k.id) === param), 10), false, null, param); break;
       case "card-module": startDeck(buildDeck(allCards().filter((k) => k.domaine === param), 10), false, param); break;
       case "card-open": startDeck([param], true); break;
+      case "lecon-pick": { const [qid, j] = String(param).split(":"); const q = C.q(qid); if (!q || (S.leconQ ||= {})[qid] !== undefined) break;
+        S.leconQ[qid] = Number(j); const right = grade(q, Number(j)); save(); render();
+        announce(right ? "Bonne réponse." : `La bonne réponse était ${LETTERS[q.bonne]}.`); break; }
+      case "lecon-done": S.progress.lecons = Object.assign({}, S.progress.lecons, { [param]: today() }); save(); S.leconQ = {};
+        toast("Leçon terminée"); { const m = (S.content?.lecons || []).find((x) => x.contenu[param]); go("module", m?.domaine); } break;
       case "veille-set": { const [id, statut] = String(param).split(":");
         S.sb.from("veille_items").update({ statut, decide_le: new Date().toISOString() }).eq("id", Number(id)).then((r) => {
           if (r.error) { toast("La décision n'a pas pu être enregistrée."); return; }
@@ -2909,7 +2977,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "7bc25849e7d5";
+  const BUILD = "c16beeb17bed";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;

@@ -27110,9 +27110,24 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 13
+"v": 16
 },
 {
 "id": "asso-11",
@@ -27269,9 +27284,24 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 13
+"v": 16
 },
 {
 "id": "agt-03",
@@ -29031,9 +29061,24 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 13
+"v": 16
 },
 {
 "id": "agt-32",
@@ -31650,6 +31695,486 @@
 }
 ],
 "v": 2
+},
+{
+"id": "soc-01-q1",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Selon le Code civil, les statuts d'une société doivent être établis :",
+"options": [
+"Par écrit",
+"Oralement ou par écrit, au choix des associés",
+"Devant notaire dans tous les cas",
+"Seulement après l'immatriculation"
+],
+"bonne": 0,
+"explication": "Les statuts doivent être établis par écrit. Ils déterminent notamment les apports, la forme, l'objet, l'appellation, le siège, le capital et la durée de la société (C. civ., art. 1835).",
+"origine": "Leçon soc-01"
+},
+{
+"id": "soc-01-q2",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Une société peut-elle être créée par une seule personne ?",
+"options": [
+"Non, il faut toujours au moins deux associés",
+"Oui, dans les cas prévus par la loi",
+"Oui, quelle que soit la forme de la société",
+"Oui, mais seulement pour une société civile"
+],
+"bonne": 1,
+"explication": "La société est en principe instituée par deux personnes ou plus, mais elle peut l'être, dans les cas prévus par la loi, par l'acte de volonté d'une seule personne : par exemple l'EURL ou la SASU (C. civ., art. 1832).",
+"origine": "Leçon soc-01"
+},
+{
+"id": "soc-02-q1",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Un associé apporte son savoir-faire et son réseau à une SARL. Cet apport :",
+"options": [
+"Entre dans le capital social",
+"N'entre pas dans le capital, mais donne droit aux bénéfices",
+"Est interdit dans une SARL",
+"Ne donne aucun droit à son auteur"
+],
+"bonne": 1,
+"explication": "C'est un apport en industrie : il ne concourt pas à la formation du capital, mais donne droit au partage des bénéfices, à charge de contribuer aux pertes (C. civ., art. 1843-2).",
+"origine": "Leçon soc-02"
+},
+{
+"id": "soc-02-q2",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "À la création d'une SARL, les apports en numéraire doivent être libérés d'au moins :",
+"options": [
+"La moitié",
+"Un cinquième",
+"Un dixième",
+"La totalité"
+],
+"bonne": 1,
+"explication": "Au moins un cinquième à la création, le reste dans les cinq ans qui suivent l'immatriculation (C. com., L. 223-7). Dans une SA, c'est la moitié (L. 225-3).",
+"origine": "Leçon soc-02"
+},
+{
+"id": "soc-03-q1",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Avant l'immatriculation d'une société commerciale, un associé signe un contrat au nom de la société. Tant que la société n'a pas repris ce contrat, qui en est tenu ?",
+"options": [
+"La société en formation",
+"La personne qui a agi au nom de la société",
+"Personne : le contrat est nul",
+"Tous les futurs associés, même ceux qui n'ont pas agi"
+],
+"bonne": 1,
+"explication": "Les personnes qui ont agi au nom d'une société en formation sont tenues des actes ainsi accomplis, solidairement et indéfiniment si la société est commerciale, sauf reprise des engagements par la société une fois immatriculée (C. civ., art. 1843 ; C. com., L. 210-6).",
+"origine": "Leçon soc-03"
+},
+{
+"id": "soc-04-q1",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Dans une SARL, les associés supportent les pertes :",
+"options": [
+"Sans limite, sur leurs biens personnels",
+"À concurrence de leurs apports",
+"À hauteur du double de leurs apports",
+"Seulement s'ils sont gérants"
+],
+"bonne": 1,
+"explication": "La SARL est instituée par une ou plusieurs personnes qui ne supportent les pertes qu'à concurrence de leurs apports (C. com., L. 223-1).",
+"origine": "Leçon soc-04"
+},
+{
+"id": "soc-04-q2",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Le créancier d'une SNC veut poursuivre un associé en paiement d'une dette de la société. Que doit-il avoir fait avant ?",
+"options": [
+"Rien : il peut agir directement contre l'associé",
+"Avoir vainement mis en demeure la société",
+"Avoir obtenu la liquidation judiciaire de la société",
+"Avoir obtenu l'accord des autres associés"
+],
+"bonne": 1,
+"explication": "Les créanciers ne peuvent poursuivre le paiement des dettes sociales contre un associé en nom collectif qu'après avoir vainement mis en demeure la société par acte extrajudiciaire (C. com., L. 221-1).",
+"origine": "Leçon soc-04"
+},
+{
+"id": "soc-05-q1",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Quel est le nombre maximal d'associés d'une SARL ?",
+"options": [
+"50",
+"100",
+"7",
+"Il n'y a pas de maximum"
+],
+"bonne": 1,
+"explication": "Le nombre des associés d'une SARL ne peut être supérieur à cent (C. com., L. 223-3).",
+"origine": "Leçon soc-05"
+},
+{
+"id": "soc-05-q2",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Le gérant d'une SARL :",
+"options": [
+"Peut être une personne morale",
+"Est obligatoirement une personne physique",
+"Est obligatoirement un associé",
+"Est obligatoirement l'associé majoritaire"
+],
+"bonne": 1,
+"explication": "La SARL est gérée par une ou plusieurs personnes physiques, qui peuvent être choisies en dehors des associés (C. com., L. 223-18).",
+"origine": "Leçon soc-05"
+},
+{
+"id": "soc-05-q3",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Dans une SARL, la cession de parts sociales à un tiers étranger à la société nécessite :",
+"options": [
+"Aucune formalité : la cession est libre",
+"Le consentement de la majorité des associés représentant au moins la moitié des parts sociales",
+"L'unanimité des associés",
+"L'autorisation du tribunal de commerce"
+],
+"bonne": 1,
+"explication": "Les parts ne peuvent être cédées à des tiers étrangers à la société qu'avec le consentement de la majorité des associés représentant au moins la moitié des parts sociales, sauf majorité plus forte prévue par les statuts (C. com., L. 223-14).",
+"origine": "Leçon soc-05"
+},
+{
+"id": "soc-06-q1",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Qui fixe les conditions dans lesquelles une SAS est dirigée ?",
+"options": [
+"La loi, de façon détaillée",
+"Les statuts",
+"Le tribunal de commerce",
+"Le commissaire aux comptes"
+],
+"bonne": 1,
+"explication": "Les statuts fixent les conditions dans lesquelles la société est dirigée (C. com., L. 227-5). La loi impose seulement un président, qui représente la société à l'égard des tiers (L. 227-6).",
+"origine": "Leçon soc-06"
+},
+{
+"id": "soc-06-q2",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Les statuts d'une SAS limitent les pouvoirs du président. Celui-ci signe malgré tout, avec un tiers, un contrat qui entre dans l'objet social. La société est-elle engagée ?",
+"options": [
+"Non, le contrat est nul",
+"Oui, car ces limites sont inopposables aux tiers",
+"Oui, mais seulement si les associés ratifient le contrat",
+"Non, seul le président est engagé"
+],
+"bonne": 1,
+"explication": "Les dispositions statutaires limitant les pouvoirs du président sont inopposables aux tiers (C. com., L. 227-6).",
+"origine": "Leçon soc-06"
+},
+{
+"id": "soc-07-q1",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Combien d'associés faut-il au minimum pour constituer une société anonyme non cotée ?",
+"options": [
+"Un",
+"Deux",
+"Sept",
+"Dix"
+],
+"bonne": 1,
+"explication": "La SA est constituée entre deux associés ou plus (C. com., L. 225-1). Le minimum de sept ne vaut que pour les sociétés dont les actions sont admises sur un marché réglementé ou un système multilatéral de négociation (L. 22-10-2).",
+"origine": "Leçon soc-07"
+},
+{
+"id": "soc-07-q2",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Dans une SNC, les parts sociales peuvent être cédées :",
+"options": [
+"Librement",
+"Avec l'accord de la majorité des associés",
+"Avec le consentement de tous les associés",
+"Avec la seule autorisation du gérant"
+],
+"bonne": 2,
+"explication": "Les parts sociales d'une SNC ne peuvent être cédées qu'avec le consentement de tous les associés ; toute clause contraire est réputée non écrite (C. com., L. 221-13).",
+"origine": "Leçon soc-07"
+},
+{
+"id": "soc-07-q3",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Dans une SA à directoire, quel organe contrôle la gestion de la société par le directoire ?",
+"options": [
+"Le conseil d'administration",
+"Le conseil de surveillance",
+"Le directeur général",
+"Le gérant"
+],
+"bonne": 1,
+"explication": "Le directoire exerce ses fonctions sous le contrôle d'un conseil de surveillance, qui exerce le contrôle permanent de la gestion (C. com., L. 225-58 et L. 225-68).",
+"origine": "Leçon soc-07"
+},
+{
+"id": "soc-08-q1",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Dans une SARL, quelle fraction minimale du bénéfice de l'exercice, diminué des pertes antérieures, doit être affectée à la réserve légale ?",
+"options": [
+"Un dixième",
+"Un vingtième",
+"Un quart",
+"La moitié"
+],
+"bonne": 1,
+"explication": "Dans les SARL et les sociétés par actions, il est fait sur le bénéfice de l'exercice, diminué des pertes antérieures, un prélèvement d'un vingtième au moins affecté à la réserve légale (C. com., L. 232-10).",
+"origine": "Leçon soc-08"
+},
+{
+"id": "soc-08-q2",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Dans quel délai après la clôture de l'exercice les comptes annuels d'une SARL doivent-ils être soumis à l'approbation des associés ?",
+"options": [
+"Trois mois",
+"Six mois",
+"Neuf mois",
+"Un an"
+],
+"bonne": 1,
+"explication": "Les comptes annuels sont soumis à l'approbation des associés dans le délai de six mois à compter de la clôture de l'exercice (C. com., L. 223-26). Neuf mois, c'est le délai maximal de paiement des dividendes (L. 232-13).",
+"origine": "Leçon soc-08"
+},
+{
+"id": "soc-08-q3",
+"chapitre": "m03-2",
+"niveau": 2,
+"enonce": "Les statuts d'une société attribuent la totalité des bénéfices à un seul associé. Cette clause est :",
+"options": [
+"Valable si tous les associés l'ont signée",
+"Réputée non écrite",
+"Valable seulement dans une SAS",
+"Une cause de dissolution immédiate de la société"
+],
+"bonne": 1,
+"explication": "La stipulation attribuant à un associé la totalité du profit, ou l'exonérant de la totalité des pertes, est réputée non écrite (C. civ., art. 1844-1).",
+"origine": "Leçon soc-08"
+},
+{
+"id": "soc-09-q1",
+"chapitre": "m03-3",
+"niveau": 2,
+"enonce": "Une association sportive dépasse l'un des seuils légaux. Dans quel délai doit-elle constituer une société sportive ?",
+"options": [
+"Six mois",
+"Un an",
+"Deux ans",
+"Aucun délai n'est fixé"
+],
+"bonne": 1,
+"explication": "Elle dispose d'un an à compter du dépassement, sinon elle est exclue des compétitions organisées par les fédérations (C. sport, L. 122-4).",
+"origine": "Leçon soc-09"
+},
+{
+"id": "soc-10-q1",
+"chapitre": "m03-3",
+"niveau": 2,
+"enonce": "Qui est détenteur du numéro d'affiliation délivré par la fédération ?",
+"options": [
+"La société sportive",
+"L'association sportive, seule",
+"L'association et la société, conjointement",
+"La ligue professionnelle"
+],
+"bonne": 1,
+"explication": "L'association est seule détentrice du numéro d'affiliation. La ou les sociétés sportives qu'elle a constituées disposent seulement d'un droit d'usage, dans le cadre de la convention (C. sport, L. 122-16-1).",
+"origine": "Leçon soc-10"
+},
+{
+"id": "soc-10-q2",
+"chapitre": "m03-3",
+"niveau": 2,
+"enonce": "La convention entre l'association et la société sportive est transmise à l'autorité administrative. Sans opposition de celle-ci, elle est réputée approuvée au bout de :",
+"options": [
+"Quinze jours",
+"Un mois",
+"Deux mois",
+"Six mois"
+],
+"bonne": 2,
+"explication": "Les conventions entrent en vigueur après leur approbation par l'autorité administrative. Elles sont réputées approuvées si celle-ci n'a pas fait connaître son opposition dans un délai de deux mois à compter de leur transmission (C. sport, L. 122-15).",
+"origine": "Leçon soc-10"
+},
+{
+"id": "soc-11-q1",
+"chapitre": "m03-3",
+"niveau": 2,
+"enonce": "L'agent sportif qui constitue une personne morale pour exercer doit communiquer à la fédération délégataire l'identité de ses dirigeants, associés ou actionnaires, ainsi que :",
+"options": [
+"Leur dernier avis d'imposition",
+"Le bulletin n° 3 de leur casier judiciaire",
+"Leurs diplômes",
+"Une attestation bancaire"
+],
+"bonne": 1,
+"explication": "Pour permettre le contrôle des incompatibilités et incapacités, l'agent communique à la fédération l'identité de ces personnes et le bulletin n° 3 de leur casier judiciaire, et l'informe sans délai de tout changement (C. sport, L. 222-13).",
+"origine": "Leçon soc-11"
+},
+{
+"id": "soc-11-q2",
+"chapitre": "m03-3",
+"niveau": 2,
+"enonce": "À quelle date la nouvelle rédaction de l'article L. 222-8 du Code du sport, issue de la loi du 3 août 2026, entre-t-elle en vigueur ?",
+"options": [
+"Le 5 août 2026",
+"Le 1er janvier 2027",
+"Le 1er janvier 2028",
+"Le 30 juin 2028"
+],
+"bonne": 2,
+"explication": "La loi n° 2026-725 prévoit que l'article L. 222-8, dans sa nouvelle rédaction, entre en vigueur le 1er janvier 2028. Jusque-là, l'agent peut constituer une société ou être préposé d'une société (C. sport, L. 222-8 ; loi n° 2026-725, art. 13).",
+"origine": "Leçon soc-11"
+},
+{
+"id": "soc-12-q1",
+"chapitre": "m03-4",
+"niveau": 2,
+"enonce": "Quelle est la durée totale maximale d'une procédure de conciliation, prorogation comprise ?",
+"options": [
+"Trois mois",
+"Quatre mois",
+"Cinq mois",
+"Dix mois"
+],
+"bonne": 2,
+"explication": "Le conciliateur est désigné pour une période n'excédant pas quatre mois, que le président du tribunal peut proroger sans que la durée totale de la procédure puisse excéder cinq mois (C. com., L. 611-6).",
+"origine": "Leçon soc-12"
+},
+{
+"id": "soc-12-q2",
+"chapitre": "m03-4",
+"niveau": 2,
+"enonce": "Une entreprise commerciale est en cessation des paiements depuis 30 jours. Peut-elle demander une conciliation ?",
+"options": [
+"Non, la conciliation est fermée dès la cessation des paiements",
+"Oui, car elle n'est pas en cessation des paiements depuis plus de 45 jours",
+"Oui, sans aucune limite de délai",
+"Non, seule la liquidation judiciaire est possible"
+],
+"bonne": 1,
+"explication": "La conciliation est ouverte aux débiteurs qui éprouvent une difficulté juridique, économique ou financière, avérée ou prévisible, et ne sont pas en cessation des paiements depuis plus de quarante-cinq jours (C. com., L. 611-4).",
+"origine": "Leçon soc-12"
+},
+{
+"id": "soc-13-q1",
+"chapitre": "m03-4",
+"niveau": 2,
+"enonce": "Dans quel délai après la cessation des paiements le débiteur doit-il demander l'ouverture d'un redressement judiciaire, s'il n'a pas demandé de conciliation ?",
+"options": [
+"15 jours",
+"30 jours",
+"45 jours",
+"Trois mois"
+],
+"bonne": 2,
+"explication": "L'ouverture doit être demandée par le débiteur au plus tard dans les quarante-cinq jours qui suivent la cessation des paiements, s'il n'a pas, dans ce délai, demandé l'ouverture d'une conciliation (C. com., L. 631-4).",
+"origine": "Leçon soc-13"
+},
+{
+"id": "soc-13-q2",
+"chapitre": "m03-4",
+"niveau": 2,
+"enonce": "La cessation des paiements se définit comme :",
+"options": [
+"Un résultat comptable négatif",
+"L'impossibilité de faire face au passif exigible avec l'actif disponible",
+"Un total de dettes supérieur au capital social",
+"Le non-paiement d'une seule facture"
+],
+"bonne": 1,
+"explication": "Est en cessation des paiements le débiteur dans l'impossibilité de faire face au passif exigible avec son actif disponible. Les réserves de crédit et les moratoires accordés par les créanciers sont pris en compte (C. com., L. 631-1).",
+"origine": "Leçon soc-13"
+},
+{
+"id": "soc-14-q1",
+"chapitre": "m03-4",
+"niveau": 2,
+"enonce": "Quelle est la durée maximale de la faillite personnelle fixée par le tribunal ?",
+"options": [
+"5 ans",
+"10 ans",
+"15 ans",
+"Elle est toujours définitive"
+],
+"bonne": 2,
+"explication": "Lorsque le tribunal prononce la faillite personnelle ou l'interdiction de gérer, il fixe la durée de la mesure, qui ne peut être supérieure à quinze ans (C. com., L. 653-11).",
+"origine": "Leçon soc-14"
+},
+{
+"id": "soc-14-q2",
+"chapitre": "m03-4",
+"niveau": 2,
+"enonce": "Une personne a été frappée d'une interdiction de gérer prévue au livre VI du Code de commerce. Quelle conséquence pour la carte professionnelle d'agent sportif ?",
+"options": [
+"Aucune : seule la faillite personnelle compte",
+"Elle ne peut ni l'obtenir ni la détenir",
+"La carte est seulement suspendue trois mois",
+"Elle la conserve si elle exerce en société"
+],
+"bonne": 1,
+"explication": "Nul ne peut obtenir ou détenir la carte s'il a été frappé de faillite personnelle ou de l'une des mesures d'interdiction ou de déchéance prévues au livre VI du Code de commerce (C. sport, L. 222-11, 2°).",
+"origine": "Leçon soc-14"
+},
+{
+"id": "soc-15-q1",
+"chapitre": "m03-4",
+"niveau": 2,
+"enonce": "Selon le Code du sport, qui assure le contrôle administratif, juridique et financier des associations et sociétés sportives ?",
+"options": [
+"Le tribunal de commerce",
+"Un organisme créé par la fédération, qui en garantit l'indépendance",
+"Le ministre chargé des sports",
+"Le CNOSF"
+],
+"bonne": 1,
+"explication": "Chaque fédération ayant constitué une ou deux ligues professionnelles crée un organisme dont elle garantit l'indépendance, chargé notamment de ce contrôle. Dans le football, c'est la DNCG (C. sport, L. 133-1).",
+"origine": "Leçon soc-15"
+},
+{
+"id": "soc-15-q2",
+"chapitre": "m03-4",
+"niveau": 2,
+"enonce": "Une association sportive fait l'objet d'un plan de redressement judiciaire. La société sportive qu'elle a constituée :",
+"options": [
+"N'est pas concernée par le plan",
+"Est tenue solidairement d'exécuter le plan",
+"Est automatiquement mise en liquidation judiciaire",
+"Est dissoute de plein droit"
+],
+"bonne": 1,
+"explication": "Lorsqu'une association sportive est soumise au livre VI du Code de commerce, la ou les sociétés sportives constituées par elle sont tenues solidairement d'exécuter le plan de sauvegarde ou de redressement judiciaire (C. sport, L. 122-18).",
+"origine": "Leçon soc-15"
+},
+{
+"id": "soc-15-q3",
+"chapitre": "m03-4",
+"niveau": 2,
+"enonce": "Qui peut ouvrir une procédure de redressement judiciaire à l'égard d'un club ?",
+"options": [
+"La DNCG",
+"La ligue professionnelle",
+"Le tribunal",
+"La fédération"
+],
+"bonne": 2,
+"explication": "Le redressement judiciaire est une procédure du Code de commerce, ouverte par jugement du tribunal (C. com., L. 631-1 et L. 631-5). L'organisme de contrôle de gestion exerce un contrôle sportif et financier distinct (C. sport, L. 133-1).",
+"origine": "Leçon soc-15"
 }
 ],
 "cartes": [
@@ -35133,6 +35658,1055 @@
 "x": "Les montants actuels de l'avenant n° 210 (2025 et 2026) sont ajoutés à l'explication."
 }
 ]
+}
+],
+"lecons": [
+{
+"domaine": "societes",
+"titre": "Module 03 · Droit des sociétés",
+"parties": [
+{
+"titre": "La société, les bases",
+"lecons": [
+{
+"id": "soc-01",
+"titre": "Qu'est-ce qu'une société ?",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "soc-02",
+"titre": "Les apports et le capital social",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "soc-03",
+"titre": "La personnalité morale et l'immatriculation",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "soc-04",
+"titre": "Responsabilité limitée ou illimitée",
+"priorite": 1,
+"dispo": true
+}
+]
+},
+{
+"titre": "Les formes de société",
+"lecons": [
+{
+"id": "soc-05",
+"titre": "La SARL et l'EURL",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "soc-06",
+"titre": "La SAS et la SASU",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "soc-07",
+"titre": "La SA et la SNC",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "soc-08",
+"titre": "Associés, assemblées et dividendes",
+"priorite": 3,
+"dispo": true
+}
+]
+},
+{
+"titre": "Les sociétés dans le sport",
+"lecons": [
+{
+"id": "soc-09",
+"titre": "Les sept formes de société sportive",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "soc-10",
+"titre": "La convention entre l'association et sa société",
+"priorite": 1,
+"dispo": true
+},
+{
+"id": "soc-11",
+"titre": "La société de l'agent sportif, aujourd'hui et en 2028",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "Les difficultés des entreprises",
+"lecons": [
+{
+"id": "soc-12",
+"titre": "Prévenir : mandat ad hoc et conciliation",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "soc-13",
+"titre": "Redressement et liquidation judiciaires",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "soc-14",
+"titre": "Les sanctions du dirigeant et la carte d'agent",
+"priorite": 1,
+"dispo": true
+},
+{
+"id": "soc-15",
+"titre": "Les clubs en difficulté : DNCG et tribunal",
+"priorite": 1,
+"dispo": true
+}
+]
+}
+],
+"contenu": {
+"soc-01": {
+"minutes": 5,
+"situation": {
+"texte": "Karim et Lucie, deux anciens joueurs, veulent ouvrir ensemble une structure de conseil aux jeunes footballeurs. Ils mettent chacun 5 000 € et comptent se partager les gains. Karim pense qu'une simple poignée de main suffit.",
+"question": "Ont-ils créé une société ? Que leur manque-t-il ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une société naît d'un contrat. Deux personnes ou plus décident de mettre en commun des biens ou leur travail dans une entreprise commune, pour partager le bénéfice ou profiter d'une économie. Dans les cas prévus par la loi, une seule personne peut créer une société : c'est le cas de l'EURL et de la SASU."
+},
+{
+"t": "h",
+"x": "Les ingrédients"
+},
+{
+"t": "list",
+"items": [
+"Des associés : deux ou plus, ou un seul quand la loi le permet.",
+"Des apports : chacun met quelque chose dans la société.",
+"Un but : partager un bénéfice ou profiter d'une économie.",
+"Une contribution aux pertes : si la société perd de l'argent, les associés en supportent leur part.",
+"La volonté de travailler ensemble, d'égal à égal. Les juges l'appellent « affectio societatis »."
+]
+},
+{
+"t": "h",
+"x": "Des statuts écrits"
+},
+{
+"t": "p",
+"x": "Les statuts sont le contrat de la société. Ils doivent être écrits. Ils fixent les apports de chacun, la forme, l'objet (l'activité), le nom, le siège, le capital, la durée et les règles de fonctionnement. L'objet doit être licite, c'est-à-dire permis par la loi. La société est constituée dans l'intérêt commun des associés. Une société commerciale dure 99 ans au plus."
+},
+{
+"t": "h",
+"x": "Société ou association ?"
+},
+{
+"t": "p",
+"x": "L'association, comme ton club, poursuit un but autre que le partage de bénéfices. La société, elle, est faite pour que les associés profitent du résultat."
+}
+],
+"piege": "Une société ne sert pas seulement à partager un bénéfice : elle peut aussi être créée pour profiter d'une économie, et les associés s'engagent toujours à contribuer aux pertes.",
+"reponse": "Ils ont bien le projet d'une société : des apports, une entreprise commune, un partage des gains. Mais la poignée de main ne suffit pas : il leur faut des statuts écrits, puis l'immatriculation pour que la société existe comme personne.",
+"sources": [
+"C. civ., art. 1832, 1833 et 1835",
+"C. com., L. 210-2",
+"Loi du 1er juillet 1901, art. 1er"
+],
+"questions": [
+"m03-q01",
+"soc-01-q1",
+"soc-01-q2"
+],
+"titre": "Qu'est-ce qu'une société ?",
+"priorite": 2
+},
+"soc-02": {
+"minutes": 5,
+"situation": {
+"texte": "Hugo, Malik et Sarah créent une société pour accompagner de jeunes joueurs. Hugo apporte 10 000 €. Malik apporte la voiture qui servira aux déplacements. Sarah ne met pas d'argent : elle apporte son travail et son réseau dans les clubs.",
+"question": "Sont-ils tous associés ? Et qui entre au capital ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Pour devenir associé, il faut apporter quelque chose à la société. La loi connaît trois sortes d'apports."
+},
+{
+"t": "table",
+"head": [
+"Apport",
+"Ce que c'est",
+"Dans le capital ?"
+],
+"rows": [
+[
+"En numéraire",
+"Une somme d'argent",
+"Oui"
+],
+[
+"En nature",
+"Un bien autre que de l'argent : véhicule, fonds de commerce, logiciel",
+"Oui"
+],
+[
+"En industrie",
+"Son travail, son savoir-faire, ses contacts",
+"Non"
+]
+]
+},
+{
+"t": "p",
+"x": "Les droits de chaque associé dans le capital sont proportionnels à ce qu'il a apporté. L'apport en industrie n'entre pas dans le capital, mais il donne des parts qui ouvrent droit aux bénéfices, avec l'obligation de contribuer aux pertes."
+},
+{
+"t": "h",
+"x": "Payer ce qu'on a promis"
+},
+{
+"t": "p",
+"x": "Un apport promis doit être versé : on dit qu'il est « libéré ». Dans une SARL, l'argent apporté est versé d'au moins un cinquième à la création, et le reste dans les cinq ans. Un apport en nature est versé en totalité tout de suite. Dans une SA, il faut verser au moins la moitié de l'argent à la création."
+},
+{
+"t": "h",
+"x": "Combien de capital ?"
+},
+{
+"t": "p",
+"x": "Dans une SARL, le montant du capital est fixé librement par les statuts. Dans une SA, il faut au moins 37 000 €."
+}
+],
+"piege": "L'apport en industrie ne compte pas dans le capital, et il est interdit dans une SA : les actions ne peuvent pas représenter des apports en industrie.",
+"reponse": "Oui, les trois sont associés. Mais le capital ne comprend que les 10 000 € d'Hugo et la valeur de la voiture de Malik. Sarah reçoit des parts d'industrie : elle partage les bénéfices sans entrer dans le capital.",
+"sources": [
+"C. civ., art. 1832, 1843-2 et 1843-3",
+"C. com., L. 223-2, L. 223-7, L. 224-2 et L. 225-3"
+],
+"questions": [
+"soc-02-q1",
+"soc-02-q2",
+"m03-q05"
+],
+"titre": "Les apports et le capital social",
+"priorite": 3
+},
+"soc-03": {
+"minutes": 5,
+"situation": {
+"texte": "Hugo et Malik ont signé lundi les statuts de leur SAS. Mardi, avant toute immatriculation, Hugo signe au nom de la société le bail d'un bureau. Le propriétaire réclame le premier loyer.",
+"question": "Qui doit payer : la société ou Hugo ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une personne morale est un groupement que le droit traite comme une personne. Elle a un nom, un siège, un patrimoine (ses biens et ses dettes). Elle peut signer des contrats et agir en justice. Elle est distincte de ses associés."
+},
+{
+"t": "h",
+"x": "Le moment clé : l'immatriculation"
+},
+{
+"t": "p",
+"x": "La société devient une personne morale le jour de son immatriculation, pas le jour où les statuts sont signés. Une société commerciale est immatriculée au registre du commerce et des sociétés (RCS). Avant cette date, les associés sont seulement liés entre eux par leur contrat."
+},
+{
+"t": "h",
+"x": "Avant l'immatriculation"
+},
+{
+"t": "p",
+"x": "On parle de « société en formation ». Ceux qui agissent en son nom sont tenus personnellement des actes qu'ils passent. Dans une société commerciale, ils le sont solidairement : le créancier peut réclamer toute la somme à l'un d'eux. Une fois immatriculée, la société peut reprendre ces engagements. Ils sont alors réputés avoir été pris par elle dès l'origine."
+},
+{
+"t": "h",
+"x": "Le registre national des entreprises"
+},
+{
+"t": "p",
+"x": "Il existe aussi un registre national des entreprises (RNE). Il est tenu par l'INPI, l'Institut national de la propriété industrielle. L'INPI est seul habilité à délivrer l'attestation d'immatriculation au RNE."
+}
+],
+"piege": "La personnalité morale naît à l'immatriculation, pas à la signature des statuts ni au dépôt du capital.",
+"reponse": "Tant que la société n'est pas immatriculée, elle n'existe pas comme personne : Hugo est tenu personnellement du bail qu'il a signé. Après l'immatriculation, la SAS pourra reprendre ce bail, qui sera alors réputé conclu par elle dès l'origine.",
+"sources": [
+"C. civ., art. 1842 et 1843",
+"C. com., L. 210-6, L. 123-1, L. 123-50 et A. 123-293"
+],
+"questions": [
+"m03-q02",
+"an24-q11",
+"soc-03-q1"
+],
+"titre": "La personnalité morale et l'immatriculation",
+"priorite": 2
+},
+"soc-04": {
+"minutes": 5,
+"situation": {
+"texte": "Deux agents sportifs hésitent entre une SARL et une SNC. Chacun apportera 5 000 €. Ils imaginent le pire : leur société laisse 200 000 € de dettes impayées.",
+"question": "Que risquent-ils sur leurs biens personnels dans chaque cas ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Quand une société ne peut plus payer, une question se pose : les créanciers (ceux à qui elle doit de l'argent) peuvent-ils se tourner vers les associés ? Tout dépend de la forme de la société."
+},
+{
+"t": "table",
+"head": [
+"Responsabilité",
+"Ce que risque l'associé",
+"Sociétés"
+],
+"rows": [
+[
+"Limitée",
+"Il ne perd que son apport",
+"SARL, EURL, SAS, SASU, SA"
+],
+[
+"Indéfinie et solidaire",
+"Il répond de toutes les dettes sur ses biens personnels, et on peut lui réclamer la totalité",
+"SNC"
+],
+[
+"Indéfinie, sans solidarité",
+"Il répond des dettes sur ses biens personnels, mais seulement à proportion de sa part dans le capital",
+"Société civile"
+]
+]
+},
+{
+"t": "h",
+"x": "D'abord la société"
+},
+{
+"t": "p",
+"x": "Même dans une SNC (société en nom collectif), le créancier doit d'abord s'adresser à la société. Il ne peut poursuivre un associé qu'après l'avoir mise en demeure de payer, par un acte officiel, sans résultat."
+},
+{
+"t": "h",
+"x": "Limitée ne veut pas dire sans risque"
+},
+{
+"t": "p",
+"x": "La responsabilité limitée protège l'associé, pas le dirigeant fautif. Le gérant ou le président répond de ses fautes de gestion. En cas de liquidation judiciaire, le tribunal peut lui faire supporter en tout ou en partie, le montant de l'insuffisance d'actif (les dettes que les biens de la société n'ont pas couvertes), si sa faute de gestion y a contribué. Une simple négligence ne suffit pas."
+}
+],
+"piege": "Indéfinie ne veut pas dire solidaire : dans une société civile, l'associé répond des dettes sans limite mais à proportion de sa part ; dans une SNC, on peut lui réclamer le tout.",
+"reponse": "En SARL, chacun ne risque que son apport de 5 000 €. En SNC, un créancier peut, après avoir vainement mis la société en demeure, réclamer les 200 000 € à un seul des deux associés, sur ses biens personnels.",
+"sources": [
+"C. civ., art. 1857 et 1858",
+"C. com., L. 221-1, L. 223-1, L. 225-1 et L. 227-1",
+"C. com., L. 223-22 et L. 651-2"
+],
+"questions": [
+"m03-q03",
+"soc-04-q1",
+"soc-04-q2"
+],
+"titre": "Responsabilité limitée ou illimitée",
+"priorite": 1
+},
+"soc-05": {
+"minutes": 5,
+"situation": {
+"texte": "Thomas, agent sportif, veut créer seul sa société. Son comptable lui propose une EURL. Thomas aimerait nommer comme gérante la société de conseil de sa sœur, qui s'occuperait de tout.",
+"question": "Une EURL, qu'est-ce que c'est ? Et le gérant peut-il être une société ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La SARL, société à responsabilité limitée, est la société des petites équipes. Ses associés ne supportent les pertes qu'à hauteur de leurs apports."
+},
+{
+"t": "list",
+"items": [
+"Associés : de 1 à 100. Avec un seul associé, on parle d'EURL. Ce n'est pas une autre forme : c'est une SARL à associé unique.",
+"Capital : montant libre, fixé par les statuts, divisé en parts sociales égales.",
+"Direction : un ou plusieurs gérants, toujours des personnes physiques (des êtres humains, pas des sociétés). Le gérant peut être choisi en dehors des associés."
+]
+},
+{
+"t": "h",
+"x": "Les décisions"
+},
+{
+"t": "p",
+"x": "Les décisions courantes, comme approuver les comptes, sont adoptées par les associés qui représentent plus de la moitié des parts. À défaut, les associés sont consultés une seconde fois et décident à la majorité des votes émis. Modifier les statuts demande une majorité renforcée : deux tiers des parts des associés présents ou représentés pour les SARL créées depuis août 2005, trois quarts des parts pour les plus anciennes."
+},
+{
+"t": "h",
+"x": "Faire entrer un nouvel associé"
+},
+{
+"t": "p",
+"x": "Les parts ne se vendent pas librement à une personne extérieure à la société. Il faut l'accord de la majorité des associés représentant au moins la moitié des parts. Cet accord s'appelle l'agrément."
+},
+{
+"t": "h",
+"x": "L'associé unique"
+},
+{
+"t": "p",
+"x": "Dans l'EURL, l'associé unique exerce seul les pouvoirs de l'assemblée. Ses décisions sont inscrites dans un registre."
+}
+],
+"piege": "Le gérant de SARL est obligatoirement une personne physique, alors que le président de SAS peut être une personne morale.",
+"reponse": "L'EURL est une SARL à un seul associé : Thomas ne risquera que son apport. Mais la gérance ne peut pas être confiée à la société de sa sœur : le gérant doit être une personne physique, Thomas lui-même ou quelqu'un d'autre.",
+"sources": [
+"C. com., L. 223-1, L. 223-2 et L. 223-3",
+"C. com., L. 223-14 et L. 223-18",
+"C. com., L. 223-29, L. 223-30 et L. 223-31"
+],
+"questions": [
+"soc-05-q1",
+"soc-05-q2",
+"soc-05-q3"
+],
+"titre": "La SARL et l'EURL",
+"priorite": 2
+},
+"soc-06": {
+"minutes": 5,
+"situation": {
+"texte": "Trois agents sportifs, Inès, Paul et Yanis, s'associent. Ils veulent choisir eux-mêmes leurs règles : qui décide, à quelle majorité, et comment empêcher l'un d'eux de vendre ses actions à un inconnu.",
+"question": "Quelle forme de société leur offre cette liberté ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La SAS, société par actions simplifiée, est la société de la liberté. La loi fixe peu de règles et laisse les statuts organiser le reste. Les associés ne supportent les pertes qu'à hauteur de leur apport."
+},
+{
+"t": "list",
+"items": [
+"Associés : un ou plusieurs. Avec un seul associé, on parle de SASU.",
+"Capital : pas de minimum légal, divisé en actions.",
+"Direction : les statuts fixent les conditions dans lesquelles la société est dirigée. Un seul organe est obligatoire : le président."
+]
+},
+{
+"t": "h",
+"x": "Le président"
+},
+{
+"t": "p",
+"x": "Le président représente la société à l'égard des tiers, c'est-à-dire des personnes extérieures : clients, banques, clubs. Il a les pouvoirs les plus étendus pour agir en son nom, dans la limite de l'objet social. Les statuts peuvent limiter ses pouvoirs, mais ces limites ne sont pas opposables aux tiers : la société reste engagée. Le président peut être une personne physique ou une personne morale. Les statuts peuvent aussi prévoir un directeur général."
+},
+{
+"t": "h",
+"x": "Les décisions et les actions"
+},
+{
+"t": "p",
+"x": "Les statuts choisissent les décisions prises collectivement, et la façon de les prendre. Certaines restent forcément collectives : comptes annuels, bénéfices, augmentation ou réduction du capital, dissolution. Les statuts peuvent aussi soumettre toute vente d'actions à l'agrément (l'accord préalable) de la société, ou interdire de vendre pendant dix ans au plus."
+}
+],
+"piege": "Les limites que les statuts apportent aux pouvoirs du président ne valent qu'à l'intérieur de la société : elles sont inopposables aux tiers.",
+"reponse": "La SAS. Ses statuts fixent librement la direction et les majorités, et peuvent prévoir une clause d'agrément pour contrôler toute vente d'actions. Seule contrainte : désigner un président.",
+"sources": [
+"C. com., L. 227-1, L. 227-5, L. 227-6 et L. 227-7",
+"C. com., L. 227-9, L. 227-13 et L. 227-14"
+],
+"questions": [
+"m03-q04",
+"soc-06-q1",
+"soc-06-q2"
+],
+"titre": "La SAS et la SASU",
+"priorite": 2
+},
+"soc-07": {
+"minutes": 5,
+"situation": {
+"texte": "Un club professionnel veut accueillir de gros investisseurs et pense à une SA. De leur côté, deux amis ouvrent une boutique de maillots et choisissent une SNC, « parce qu'il n'y a pas de capital minimum ».",
+"question": "Ces deux choix sont-ils sans risque ?"
+},
+"blocs": [
+{
+"t": "table",
+"head": [
+"",
+"SA (société anonyme)",
+"SNC (société en nom collectif)"
+],
+"rows": [
+[
+"Associés",
+"2 au moins (7 si la société est cotée)",
+"Tous ont la qualité de commerçant"
+],
+[
+"Capital",
+"37 000 € au moins, divisé en actions",
+"Pas de minimum, divisé en parts sociales"
+],
+[
+"Direction",
+"Conseil d'administration et directeur général, ou directoire et conseil de surveillance",
+"Un ou plusieurs gérants. Tous les associés sont gérants si les statuts ne disent rien"
+],
+[
+"Responsabilité",
+"Limitée aux apports",
+"Indéfinie et solidaire"
+]
+]
+},
+{
+"t": "h",
+"x": "La SA, deux modèles"
+},
+{
+"t": "p",
+"x": "Modèle classique : un conseil d'administration de 3 à 18 membres. La direction générale est assurée soit par le président du conseil, soit par une autre personne, le directeur général. Autre modèle : un directoire de 5 membres au plus dirige la société, sous le contrôle permanent d'un conseil de surveillance."
+},
+{
+"t": "h",
+"x": "La SNC, une société fermée"
+},
+{
+"t": "p",
+"x": "Les parts ne peuvent être cédées qu'avec l'accord de tous les associés. Les décisions qui dépassent les pouvoirs des gérants se prennent à l'unanimité, sauf si les statuts prévoient une autre majorité. En principe, la société prend fin au décès d'un associé, sauf clause contraire des statuts."
+}
+],
+"piege": "Pas de capital minimum ne veut pas dire pas de risque : dans la SNC, chaque associé est commerçant et répond de toutes les dettes sur ses biens personnels.",
+"reponse": "La SA convient au club : capital d'au moins 37 000 €, direction structurée, actionnaires qui ne risquent que leurs apports. La SNC est risquée pour les deux amis : chacun devient commerçant et répond indéfiniment et solidairement des dettes de la boutique.",
+"sources": [
+"C. com., L. 221-1, L. 221-3, L. 221-6, L. 221-13 et L. 221-15",
+"C. com., L. 224-2, L. 225-1 et L. 22-10-2",
+"C. com., L. 225-17, L. 225-51-1, L. 225-58, L. 225-68 et L. 225-69"
+],
+"questions": [
+"soc-07-q1",
+"soc-07-q2",
+"soc-07-q3"
+],
+"titre": "La SA et la SNC",
+"priorite": 2
+},
+"soc-08": {
+"minutes": 5,
+"situation": {
+"texte": "La SARL de Nadia et Rémi clôt son premier exercice le 31 décembre, avec 40 000 € de bénéfice. Dès janvier, Rémi veut que chacun se verse 20 000 €.",
+"question": "Peuvent-ils se partager tout le bénéfice tout de suite ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Tout associé a le droit de participer aux décisions collectives. Sauf clause contraire des statuts, sa part dans les bénéfices et dans les pertes est proportionnelle à sa part dans le capital."
+},
+{
+"t": "h",
+"x": "L'assemblée annuelle"
+},
+{
+"t": "p",
+"x": "Chaque année, les associés approuvent les comptes dans les six mois qui suivent la clôture de l'exercice (l'année comptable). Dans la SA, l'assemblée ordinaire décide à la majorité des voix exprimées par les actionnaires présents ou représentés. L'assemblée extraordinaire, seule habilitée à modifier les statuts, décide à la majorité des deux tiers de ces voix."
+},
+{
+"t": "h",
+"x": "Du bénéfice au dividende"
+},
+{
+"t": "list",
+"items": [
+"D'abord la réserve légale : dans les SARL et les sociétés par actions, au moins un vingtième (5 %) du bénéfice, diminué des pertes antérieures, est mis de côté.",
+"Ensuite le bénéfice distribuable : le bénéfice de l'exercice, moins les pertes antérieures et les sommes à mettre en réserve, plus le report bénéficiaire (le bénéfice des années passées non distribué).",
+"Enfin la décision : après avoir approuvé les comptes, l'assemblée fixe la part versée aux associés. C'est le dividende."
+]
+},
+{
+"t": "p",
+"x": "Le dividende est payé au plus tard neuf mois après la clôture de l'exercice. Un dividende versé sans respecter ces règles est un dividende fictif."
+}
+],
+"piege": "La clause qui attribue tout le bénéfice à un seul associé, ou qui l'exonère de toutes les pertes, est réputée non écrite : c'est la clause dite léonine.",
+"reponse": "Non. Il faut d'abord approuver les comptes en assemblée, puis mettre au moins 5 % du bénéfice en réserve légale, soit 2 000 €. Le reste, 38 000 € au plus, peut être distribué si les associés le décident.",
+"sources": [
+"C. civ., art. 1844 et 1844-1",
+"C. com., L. 221-7, L. 223-26 et L. 225-100",
+"C. com., L. 225-96 et L. 225-98",
+"C. com., L. 232-10, L. 232-11, L. 232-12 et L. 232-13"
+],
+"questions": [
+"soc-08-q1",
+"soc-08-q2",
+"soc-08-q3"
+],
+"titre": "Associés, assemblées et dividendes",
+"priorite": 3
+},
+"soc-09": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de ton district grandit. Les rémunérations de ses joueurs dépassent maintenant 800 000 € par an, en moyenne sur trois ans. Son président t'interroge.",
+"question": "« Doit-on créer une société ? Et sous quelle forme ? »"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une association sportive peut créer une société commerciale pour gérer ses activités payantes. Depuis la loi du 3 août 2026, elle peut en créer une seule pour les deux secteurs, ou deux : une pour le secteur masculin, une pour le secteur féminin."
+},
+{
+"t": "h",
+"x": "Quand c'est obligatoire"
+},
+{
+"t": "p",
+"x": "Elle doit créer une société au-delà de l'un des deux seuils, calculés en moyenne sur les trois derniers exercices : 1 200 000 € de recettes de manifestations sportives, ou 800 000 € de rémunérations de ses sportifs. Elle a un an pour le faire, sinon elle est exclue des compétitions."
+},
+{
+"t": "h",
+"x": "Les sept formes possibles"
+},
+{
+"t": "table",
+"head": [
+"Forme",
+"À retenir"
+],
+"rows": [
+[
+"EUSRL",
+"Entreprise unipersonnelle sportive à responsabilité limitée : une SARL à un seul associé"
+],
+[
+"SAOS",
+"Société anonyme à objet sportif : l'association garde au moins un tiers du capital et des droits de vote"
+],
+[
+"SASP",
+"Société anonyme sportive professionnelle"
+],
+[
+"SARL, SA, SAS",
+"Les formes de droit commun, ouvertes aux sociétés sportives"
+],
+[
+"SCIC",
+"Société coopérative d'intérêt collectif"
+]
+]
+}
+],
+"piege": "La liste est fermée : sept formes, pas une de plus. Une SNC ou une société civile ne peut pas être une société sportive.",
+"reponse": "Oui : au-delà de 800 000 € de rémunérations, le club doit créer une société dans l'année, sous peine d'exclusion des compétitions. Il choisit entre les sept formes, par exemple une SAS ou une SASP.",
+"sources": [
+"C. sport, L. 122-1, L. 122-2, L. 122-4 et L. 122-6",
+"C. sport, R. 122-1 (seuils)"
+],
+"questions": [
+"soc-09-q1",
+"an23-q12",
+"m03-q07"
+],
+"titre": "Les sept formes de société sportive",
+"priorite": 3
+},
+"soc-10": {
+"minutes": 5,
+"situation": {
+"texte": "Ton club a créé une SAS pour gérer son équipe première. Le président de l'association s'inquiète : « Qui garde le nom et le blason du club ? Et qui inscrit l'équipe en championnat ? »",
+"question": "Où ces questions sont-elles réglées ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'association et sa société sont deux personnes morales distinctes. Elles doivent organiser leurs relations par écrit, dans une convention."
+},
+{
+"t": "h",
+"x": "Les règles de la loi"
+},
+{
+"t": "list",
+"items": [
+"Durée : entre dix et quinze ans.",
+"Approbation interne : par les instances de l'association et de la société prévues par leurs statuts.",
+"Entrée en vigueur : après approbation par l'autorité administrative. La convention est adressée au préfet du département où l'association a son siège. Sans opposition dans les deux mois, elle est réputée approuvée."
+]
+},
+{
+"t": "h",
+"x": "Ce que l'association garde"
+},
+{
+"t": "p",
+"x": "L'association reste seule détentrice du numéro d'affiliation délivré par la fédération. La société en a seulement le droit d'usage, pour les activités qui lui sont confiées. L'association conserve aussi, gratuitement, la disposition des signes distinctifs (nom, marque, logo) utilisés par la société ou cédés à elle."
+},
+{
+"t": "h",
+"x": "Ce que la convention prévoit"
+},
+{
+"t": "p",
+"x": "Elle répartit les activités amateurs et professionnelles, ainsi que la formation des joueurs. Elle règle l'usage des terrains et des installations, et les conditions d'utilisation du nom et de la marque. Elle prévoit que les dirigeants de l'association et ceux de la société sont des personnes différentes."
+},
+{
+"t": "h",
+"x": "Avec deux sociétés"
+},
+{
+"t": "p",
+"x": "Si l'association a créé deux sociétés, une masculine et une féminine, elle signe soit une convention à trois, soit deux conventions séparées. La durée reste de dix à quinze ans."
+}
+],
+"piege": "Le numéro d'affiliation appartient toujours à l'association : la société sportive n'en a que le droit d'usage, dans le cadre de la convention.",
+"reponse": "Dans la convention entre l'association et la société, conclue pour dix à quinze ans. L'association garde la disposition gratuite du nom et du blason et reste seule détentrice du numéro d'affiliation. La société l'utilise pour engager l'équipe en compétition.",
+"sources": [
+"C. sport, L. 122-14, L. 122-15, L. 122-16, L. 122-16-1 et L. 122-19",
+"C. sport, R. 122-8 (contenu de la convention, hors durée : la loi fixe dix à quinze ans) et R. 122-9"
+],
+"questions": [
+"m03-q06",
+"soc-10-q1",
+"soc-10-q2"
+],
+"titre": "La convention entre l'association et sa société",
+"priorite": 1
+},
+"soc-11": {
+"minutes": 5,
+"situation": {
+"texte": "Léa vient d'obtenir sa carte professionnelle d'agent sportif. Elle crée une SASU, « Léa Sport Conseil ». Son frère, dirigeant d'un club de football qui emploie des joueurs rémunérés, voudrait entrer au capital.",
+"question": "La société devient-elle agent sportif ? Et le frère peut-il s'associer ?"
+},
+"blocs": [
+{
+"t": "h",
+"x": "Aujourd'hui"
+},
+{
+"t": "p",
+"x": "L'agent sportif est toujours une personne physique, titulaire de la carte professionnelle d'agent sportif. Pour exercer, il peut constituer une société ou être préposé d'une société, c'est-à-dire travailler pour elle et sous son autorité. La société est un cadre de travail. Elle n'a pas la carte."
+},
+{
+"t": "p",
+"x": "Les dirigeants, associés ou actionnaires de la société de l'agent sont soumis aux mêmes incompatibilités et incapacités que lui. L'agent communique à la fédération leur identité et le bulletin n° 3 de leur casier judiciaire. Il signale sans délai tout changement. La fédération publie chaque année la fiche d'identité de la société."
+},
+{
+"t": "h",
+"x": "À partir du 1er janvier 2028 (droit futur)"
+},
+{
+"t": "list",
+"items": [
+"L'agent pourra constituer une personne morale dont il est le représentant légal, ou être préposé ou salarié d'une seule personne morale dont l'objet principal est de fournir des services d'agent sportif.",
+"Un décret fixera le nombre maximal de personnes morales qu'un agent peut constituer.",
+"La société ne pourra pas exercer elle-même la profession d'agent sportif.",
+"La majorité du capital devra être détenue par des titulaires de la carte.",
+"L'identité des associés et des dirigeants devra être communiquée à la fédération dans le mois qui suit la constitution, et tout changement dans le mois."
+]
+}
+],
+"piege": "La nouvelle rédaction de l'article L. 222-8 n'entre en vigueur que le 1er janvier 2028 : d'ici là, la règle reste « l'agent peut constituer une société ou être préposé d'une société ».",
+"reponse": "Non : la carte reste à Léa, personne physique. La société n'est que son cadre d'exercice. Son frère ne peut pas s'associer : dirigeant d'un club qui emploie des joueurs rémunérés, il est frappé d'une incompatibilité, et celle-ci s'applique aussi aux associés de la société de l'agent.",
+"sources": [
+"C. sport, L. 222-7, L. 222-8 et L. 222-13",
+"C. sport, L. 222-9, L. 222-10 et L. 222-11",
+"Loi n° 2026-725 du 3 août 2026, art. 13 (nouvelle rédaction de L. 222-8, en vigueur le 1er janvier 2028)"
+],
+"questions": [
+"m03-q08",
+"soc-11-q1",
+"soc-11-q2"
+],
+"titre": "La société de l'agent sportif, aujourd'hui et en 2028",
+"priorite": 2
+},
+"soc-12": {
+"minutes": 5,
+"situation": {
+"texte": "La société de Samir, agent sportif, attend 90 000 € de commissions que deux clubs tardent à payer. Elle règle encore ses factures, mais la trésorerie fond. Samir ne veut surtout pas que ses clients l'apprennent.",
+"question": "Vers quelles solutions discrètes peut-il se tourner ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le mot clé est la cessation des paiements : l'entreprise ne peut plus payer son passif exigible (ses dettes arrivées à échéance) avec son actif disponible (l'argent mobilisable tout de suite). Avant d'en arriver là, la loi offre des outils de prévention."
+},
+{
+"t": "table",
+"head": [
+"",
+"Mandat ad hoc",
+"Conciliation"
+],
+"rows": [
+[
+"Qui demande ?",
+"Le débiteur (l'entreprise en difficulté)",
+"Le débiteur"
+],
+[
+"Qui désigne ?",
+"Le président du tribunal nomme un mandataire ad hoc et fixe sa mission",
+"Le président du tribunal nomme un conciliateur"
+],
+[
+"Condition",
+"Le texte ne fixe pas de condition précise",
+"Une difficulté juridique, économique ou financière, avérée ou prévisible, et pas de cessation des paiements depuis plus de 45 jours"
+],
+[
+"Durée",
+"Pas de durée maximale dans le texte",
+"4 mois au plus, prolongeables jusqu'à 5 mois au total"
+]
+]
+},
+{
+"t": "h",
+"x": "Deux points communs"
+},
+{
+"t": "p",
+"x": "Ces deux procédures sont amiables : le but est de négocier un accord avec les principaux créanciers. Elles sont aussi confidentielles : toute personne qui y participe ou en a connaissance est tenue au secret."
+},
+{
+"t": "h",
+"x": "Et la sauvegarde ?"
+},
+{
+"t": "p",
+"x": "C'est une procédure judiciaire, ouverte par le tribunal. Seul le débiteur peut la demander. Il doit justifier de difficultés qu'il ne peut pas surmonter, sans être en cessation des paiements. Elle aboutit à un plan arrêté par le tribunal après une période d'observation."
+}
+],
+"piege": "La conciliation reste ouverte à l'entreprise en cessation des paiements depuis 45 jours au plus ; la sauvegarde, elle, est fermée dès la cessation des paiements.",
+"reponse": "Samir peut demander au président du tribunal un mandat ad hoc ou une conciliation. Ces deux procédures amiables et confidentielles lui permettront de négocier des délais avec ses créanciers. Sa société n'est pas en cessation des paiements : les deux lui sont ouvertes.",
+"sources": [
+"C. com., L. 611-3, L. 611-4, L. 611-6 et L. 611-7",
+"C. com., L. 611-15",
+"C. com., L. 620-1 et L. 631-1"
+],
+"questions": [
+"m03-q09",
+"soc-12-q1",
+"soc-12-q2"
+],
+"titre": "Prévenir : mandat ad hoc et conciliation",
+"priorite": 2
+},
+"soc-13": {
+"minutes": 5,
+"situation": {
+"texte": "Depuis le 1er mars, la société d'agent sportif de Claire ne peut plus payer ses dettes échues avec l'argent dont elle dispose. Elle garde pourtant de bons contrats et des commissions à venir. Nous sommes le 20 mars et Claire hésite à saisir le tribunal.",
+"question": "Que doit-elle faire, et dans quel délai ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Point de départ commun : la cessation des paiements, c'est-à-dire l'impossibilité de faire face au passif exigible (les dettes échues) avec l'actif disponible. L'entreprise qui peut payer grâce à des réserves de crédit ou à des délais accordés par ses créanciers n'est pas en cessation des paiements."
+},
+{
+"t": "table",
+"head": [
+"",
+"Redressement judiciaire",
+"Liquidation judiciaire"
+],
+"rows": [
+[
+"Condition",
+"Cessation des paiements",
+"Cessation des paiements et redressement manifestement impossible"
+],
+[
+"But",
+"Poursuivre l'activité, maintenir l'emploi, apurer le passif (payer les dettes)",
+"Mettre fin à l'activité ou vendre les biens du débiteur"
+],
+[
+"Déroulement",
+"Période d'observation de 6 mois au plus, renouvelable une fois (12 mois), puis plan arrêté par le tribunal",
+"Un liquidateur exerce les droits du débiteur sur ses biens : le débiteur est dessaisi"
+]
+]
+},
+{
+"t": "h",
+"x": "Qui saisit le tribunal ?"
+},
+{
+"t": "p",
+"x": "Le débiteur doit demander l'ouverture au plus tard dans les 45 jours qui suivent la cessation des paiements, sauf s'il a demandé une conciliation dans ce délai. S'il n'y a pas de conciliation en cours, un créancier peut aussi assigner l'entreprise, et le ministère public peut saisir le tribunal."
+},
+{
+"t": "h",
+"x": "La fin de la société"
+},
+{
+"t": "p",
+"x": "La société prend fin par le jugement qui clôt la liquidation judiciaire pour insuffisance d'actif, c'est-à-dire quand les biens ne suffisent pas à payer les dettes."
+}
+],
+"piege": "Redressement et liquidation supposent tous les deux la cessation des paiements : ce qui les sépare, c'est la possibilité ou non de redresser l'entreprise.",
+"reponse": "Claire est en cessation des paiements : elle doit saisir le tribunal dans les 45 jours, donc au plus tard le 15 avril, sauf à demander une conciliation dans ce délai. Comme son activité peut repartir, c'est un redressement judiciaire qui convient, pas une liquidation.",
+"sources": [
+"C. com., L. 631-1, L. 631-4, L. 631-5 et L. 631-7",
+"C. com., L. 621-3",
+"C. com., L. 640-1, L. 640-4, L. 640-5 et L. 641-9",
+"C. civ., art. 1844-7"
+],
+"questions": [
+"m03-q10",
+"soc-13-q1",
+"soc-13-q2"
+],
+"titre": "Redressement et liquidation judiciaires",
+"priorite": 2
+},
+"soc-14": {
+"minutes": 5,
+"situation": {
+"texte": "La société d'Éric, agent sportif, est mise en liquidation judiciaire. Le tribunal lui reproche de graves fautes et prononce contre lui une faillite personnelle de huit ans.",
+"question": "Éric peut-il garder sa carte professionnelle d'agent sportif ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La liquidation judiciaire frappe la société. À elle seule, elle ne sanctionne pas le dirigeant. Pour l'atteindre personnellement, il faut une décision distincte du tribunal."
+},
+{
+"t": "table",
+"head": [
+"Sanction",
+"Ce qu'elle entraîne"
+],
+"rows": [
+[
+"Responsabilité pour insuffisance d'actif",
+"Le dirigeant paie tout ou partie des dettes que les biens de la société n'ont pas couvertes, si sa faute de gestion y a contribué. Une simple négligence ne suffit pas."
+],
+[
+"Faillite personnelle",
+"Interdiction de diriger, gérer, administrer ou contrôler toute entreprise et toute personne morale. 15 ans au plus."
+],
+[
+"Interdiction de gérer",
+"Prononcée à la place de la faillite personnelle. Elle vise toutes les entreprises ou seulement certaines. 15 ans au plus."
+],
+[
+"Banqueroute",
+"Délit pénal : par exemple détourner l'actif ou tenir une comptabilité fictive."
+]
+]
+},
+{
+"t": "p",
+"x": "Ces sanctions visent le dirigeant de droit (celui qui a le titre) comme le dirigeant de fait (celui qui dirige sans le titre)."
+},
+{
+"t": "h",
+"x": "Le lien avec la carte"
+},
+{
+"t": "p",
+"x": "Nul ne peut obtenir ou détenir la carte professionnelle d'agent sportif s'il a été frappé de faillite personnelle, ou d'une mesure d'interdiction ou de déchéance prévue par le livre VI du Code de commerce, celui des entreprises en difficulté. La règle vaut aussi pour les dirigeants et les associés de la société de l'agent."
+}
+],
+"piege": "Ce n'est pas la liquidation de la société qui fait perdre la carte, c'est la sanction personnelle prononcée contre le dirigeant : faillite personnelle ou interdiction de gérer.",
+"reponse": "Non. Frappé de faillite personnelle, Éric ne peut plus détenir la carte professionnelle d'agent sportif. La liquidation de sa société, seule, n'aurait pas eu cet effet.",
+"sources": [
+"C. com., L. 651-2",
+"C. com., L. 653-1, L. 653-2, L. 653-8 et L. 653-11",
+"C. com., L. 654-2",
+"C. sport, L. 222-11 et L. 222-13"
+],
+"questions": [
+"m03-q11",
+"soc-14-q1",
+"soc-14-q2"
+],
+"titre": "Les sanctions du dirigeant et la carte d'agent",
+"priorite": 1
+},
+"soc-15": {
+"minutes": 5,
+"situation": {
+"texte": "Un club professionnel perd une grosse partie de ses droits télé. La DNCG encadre sa masse salariale. Quelques mois plus tard, le club ne peut plus payer ses dettes échues. Tu négocies justement un contrat pour un joueur avec ce club.",
+"question": "Qui décide de quoi : la DNCG ou le tribunal ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un club en difficulté a deux interlocuteurs, qu'il ne faut pas confondre."
+},
+{
+"t": "table",
+"head": [
+"",
+"Organisme de contrôle de gestion",
+"Tribunal"
+],
+"rows": [
+[
+"Nature",
+"Organisme indépendant créé par la fédération",
+"Juridiction de l'État"
+],
+[
+"Mission",
+"Contrôle administratif, juridique et financier des clubs",
+"Procédures du Code de commerce : sauvegarde, redressement, liquidation"
+],
+[
+"Pouvoirs",
+"Contrôle des comptes, limitation des effectifs, plafonnement de la masse salariale. Sanctions financières et sportives en cas de comptes trompeurs",
+"Ouvre la procédure, arrête un plan ou prononce la liquidation"
+]
+]
+},
+{
+"t": "h",
+"x": "Ce que dit le Code du sport"
+},
+{
+"t": "p",
+"x": "Chaque fédération qui a créé une ligue professionnelle met en place cet organisme et garantit son indépendance. Dans le football, on l'appelle la DNCG, Direction nationale du contrôle de gestion. Ses buts : la pérennité des clubs, l'équité sportive et le respect de l'aléa sportif. Il contrôle aussi l'activité financière des agents sportifs et se prononce sur les projets de rachat des sociétés sportives."
+},
+{
+"t": "h",
+"x": "Association et société liées"
+},
+{
+"t": "p",
+"x": "Si l'association sportive fait l'objet d'une sauvegarde ou d'un redressement judiciaire, la ou les sociétés sportives qu'elle a créées sont tenues solidairement d'exécuter le plan."
+}
+],
+"piege": "Une décision de la DNCG n'est pas une procédure collective : seul le tribunal peut ouvrir une sauvegarde, un redressement ou une liquidation judiciaire.",
+"reponse": "La DNCG contrôle les finances du club et peut encadrer sa masse salariale, dans le cadre sportif. Mais une fois le club en cessation des paiements, c'est le tribunal qui ouvre un redressement ou une liquidation judiciaire. Pour ton joueur, vérifie la capacité du club à payer les salaires.",
+"sources": [
+"C. sport, L. 133-1 (ancien L. 132-2, renuméroté par la loi n° 2026-725 du 3 août 2026)",
+"C. sport, L. 122-18",
+"C. com., L. 620-1, L. 631-1 et L. 640-1"
+],
+"questions": [
+"soc-15-q1",
+"soc-15-q2",
+"soc-15-q3"
+],
+"titre": "Les clubs en difficulté : DNCG et tribunal",
+"priorite": 1
+}
+}
 }
 ]
 }
