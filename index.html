@@ -1130,7 +1130,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     let n = 0; return idx.map((k) => (FIXED.test(q.options[k]) ? k : shuffled[n++]));
   }
   const sessKey = () => "ea-session-" + (S.uid || "local");
-  const keepSession = () => lsSet(sessKey(), S.session && !S.session.summary ? S.session : null);
+  const keepSession = () => lsSet(sessKey(), S.session && !S.session.summary && S.session.kind !== "apercu" ? S.session : null);
   function startSession(kind, ids, label) {
     if (!ids.length) { toast("Aucune question disponible pour l'instant."); return; }
     const orders = {}; ids.forEach((id) => { const q = C.q(id); if (q) orders[id] = orderFor(q); });
@@ -1475,7 +1475,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         ${s.confirmQuit ? `<div class="confirm-layer"><div class="confirm" role="alertdialog" aria-modal="true" aria-labelledby="cq-t"><b id="cq-t">Quitter le match ?</b>
           <span class="small muted">${!s.results.length ? "Tu n'as pas encore répondu : ce match ne comptera pas comme joué." : `${s.results.length > 1 ? `Tes ${s.results.length} réponses sont gardées` : "Ta réponse est gardée"} pour la révision, mais la séance ne compte pas comme jouée.`}</span>
           <div class="confirm-actions"><button class="btn btn-primary" data-act="stay">Continuer</button><button class="btn btn-ghost" data-act="quit-yes">Quitter</button></div></div></div>` : ""}
-        ${answered ? `<div class="quiz-next"><button class="btn btn-primary btn-block" data-act="next">${s.i + 1 < s.ids.length ? "Question suivante" : "Voir le score"}${icon("chevron")}</button></div>` : ""}
+        ${answered ? `<div class="quiz-next"><button class="btn btn-primary btn-block" data-act="next">${s.i + 1 < s.ids.length ? "Question suivante" : s.kind === "apercu" ? "Fermer l'aperçu" : "Voir le score"}${icon("chevron")}</button></div>` : ""}
       </div></main>`;
   }
 
@@ -2681,7 +2681,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "pick": {
         if (!s || s.picked !== null) return;
         const q = C.q(s.ids[s.i]); const order = (s.orders && s.orders[q.id]) || q.options.map((_, k) => k);
-        s.picked = Number(param); const right = grade(q, order[s.picked]); keepSession(); render();
+        s.picked = Number(param); const right = s.kind === "apercu" ? order[s.picked] === q.bonne : grade(q, order[s.picked]); keepSession(); render();
         announce(right ? "But validé, bonne réponse." : `But refusé. La bonne réponse était ${LETTERS[order.indexOf(q.bonne)]}.`);
         requestAnimationFrame(() => {
           document.getElementById("var")?.scrollIntoView({ behavior: fxOn() ? "smooth" : "auto", block: "nearest" });
@@ -2692,6 +2692,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       }
       case "next": {
         if (!s) return;
+        if (s.kind === "apercu" && s.i + 1 >= s.ids.length) { const back = s.back || "home"; S.session = null; go(back); break; }
         if (s.summary) { go("result"); break; }
         s.i++; s.picked = null;
         if (s.i >= s.ids.length) finishSession();
@@ -2699,6 +2700,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         break;
       }
       case "quit": {
+        if (s && s.kind === "apercu") { const back = s.back || "home"; S.session = null; go(back); break; }
         if (s && !s.summary) { s.confirmQuit = true; render(); document.querySelector("[data-act=stay]")?.focus(); }
         else { S.session = null; keepSession(); go("home"); }
         break;
@@ -2746,7 +2748,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
           if (r.error) { toast("Le signalement n'a pas pu être marqué."); return; }
           toast("Signalement marqué traité"); loadTodo().then(render);
         }); break;
-      case "todo-question": startSession("news", [param], "Question signalée"); break;
+      case "todo-question": { const back = S.view; startSession("apercu", [param], "Aperçu de la question signalée"); if (S.session) S.session.back = back; break; }
       case "todo-revoir": { const { qs, ks } = correctedToReview();
         if (qs.length) startSession("news", qs.map((q) => q.id), "Notions corrigées"); else if (ks.length) startDeck(ks.map((k) => k.id), ks.length === 1); break; }
       case "veille-run": if (!S.veille?.running) (async () => {
@@ -2897,7 +2899,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "5d0a980738a3";
+  const BUILD = "e500304edec8";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
