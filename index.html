@@ -628,6 +628,21 @@ a.row:hover .row-title { color: var(--green); }
 .veille-item .news-acts { gap: 0 20px; }
 .veille-extrait summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 600; color: var(--green); }
 .veille-extrait summary:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; border-radius: 8px; }
+/* À faire : seulement quand une action est nécessaire ; la première action a le bouton principal */
+.todo { display: flex; flex-direction: column; padding: 6px 18px; border: 2px solid var(--green); border-radius: var(--r-m); background: var(--turf); }
+.todo-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 8px 0 2px; }
+.todo-head .tiny { color: var(--fg-2); }
+.todo-row { display: grid; grid-template-columns: 22px minmax(0, 1fr); column-gap: 12px; row-gap: 10px; padding: 14px 0; align-items: start; }
+.todo-row + .todo-row { border-top: 1px solid var(--line); }
+.todo-row > svg { width: 22px; height: 22px; color: var(--green); margin-top: 1px; }
+.todo-row b { display: block; font-size: 16px; font-weight: 700; line-height: 1.35; color: var(--chalk); }
+.todo-row .todo-sub { display: block; font-size: 14px; line-height: 1.45; color: var(--fg-2); margin-top: 2px; }
+.todo-row .btn, .todo-row .link-btn { grid-column: 2; justify-self: start; }
+.todo-row .btn { min-height: 44px; padding: 0 18px; }
+.home > .todo { order: 0; }
+.me-btn.has-todo { position: relative; overflow: visible; }
+.me-btn.has-todo::after { content: ""; position: absolute; top: -3px; right: -3px; width: 12px; height: 12px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 2px var(--pitch); }
+.report-item p { margin: 0; font-size: 15px; line-height: 1.55; max-width: 65ch; }
 .veille-extrait p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--fg-2); white-space: pre-line; max-width: 65ch; }
 .news-fix { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.5; }
 .news-item details summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 600; color: var(--green); }
@@ -799,6 +814,8 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   .tab { font-size: 11.5px; letter-spacing: 0; }
   .app { max-width: 1080px; padding-block: 0 48px; padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); }
   .screen.home { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); grid-template-areas: "hero hero" "match side" "dom side"; column-gap: 40px; row-gap: 28px; align-items: start; }
+  .screen.home.with-todo { grid-template-areas: "hero hero" "todo side" "match side" "dom side"; }
+  .home > .todo { grid-area: todo; }
   .home > .hero { grid-area: hero; padding-block: 14px 8px; grid-template-areas: "crest actions" "crest title" "crest sub"; row-gap: 0; }
   .hero-title { align-self: end; }
   .hero-more { align-self: start; }
@@ -1203,7 +1220,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     const d = division(S.progress.xp).cur.name;
     return `<div class="top-actions">
         <button class="division-chip" data-go="progress" aria-label="Division ${esc(d)}, voir la progression">${icon("trophy")}${esc(d)}</button>
-        <button class="me-btn" data-go="me" aria-label="Mon espace">${initial() ? `<span class="me-initial" aria-hidden="true">${esc(initial())}</span>` : pic("ic-user")}</button>
+        <button class="me-btn${S.canEdit && S.todoEd && todoActions().length ? " has-todo" : ""}" data-go="me" aria-label="Mon espace${S.canEdit && S.todoEd && todoActions().length ? ", action en attente" : ""}">${initial() ? `<span class="me-initial" aria-hidden="true">${esc(initial())}</span>` : pic("ic-user")}</button>
       </div>`;
   }
   function header() {
@@ -1272,7 +1289,8 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       : "";
     const askName = !S.owner && !first ? `<form class="ask-name" id="ask-name"><label for="s-name">Ton prénom, pour que l'appli s'adresse à toi</label><div class="ask-row"><input id="s-name" type="text" autocomplete="given-name" required><button class="btn btn-primary" type="submit">Valider</button></div></form>` : "";
     const next = nextTrophy();
-    return `${header()}<main class="screen home">
+    const acts = todoActions();
+    return `${header()}<main class="screen home${acts.length ? " with-todo" : ""}">
       <section class="hero" aria-labelledby="hero-t">
         <div class="hero-actions">${topActions()}</div>
         <span class="hero-brand"><img class="hero-crest" src="${ASSET["crest"]}" alt="" width="371" height="416"><img class="hero-wm" src="${ASSET["logo-wordmark"]}" alt="ELEVEN ACADEMY" width="274" height="134"></span>
@@ -1280,6 +1298,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         <div class="hero-more"><p class="hero-sub">Épreuve générale du CNOSF en novembre 2027, dans environ ${months} mois. Un match par jour, chaque réponse expliquée par la loi.</p>
           ${hello ? `<p class="hero-hello">${hello}</p>` : ""}${askName}</div>
       </section>
+      ${todoBlock(acts)}
       ${matchCard()}
       <div class="home-side"><section class="stats" aria-label="Statistiques">
         <div class="stat"><span class="stat-val">${p.streak.count}</span><span class="stat-lab">${p.streak.count > 1 ? "jours d'affilée" : "jour d'affilée"}</span></div>
@@ -2182,6 +2201,51 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         ${x.statut === "nouveau" ? act("a_traiter", "À traiter", "flag") : act("traite", "Traité", "check")}${act("ignore", "Ignorer", "x")}</div>
     </article>`;
   }
+  /* ---------- À faire : les actions nécessaires, pour l'éditeur puis pour l'apprenante ---------- */
+  async function loadTodo() {
+    if (!S.sb || !S.canEdit) return;
+    try {
+      const [v, r] = await Promise.all([
+        S.sb.from("veille_items").select("id,titre,avis,statut").in("statut", ["nouveau", "a_traiter"]).limit(300),
+        S.sb.from("reports").select("id,question,message,created_at").is("traite_le", null).order("created_at", { ascending: false }).limit(50),
+      ]);
+      S.todoEd = { veille: v.data || [], reports: r.data || [] };
+    } catch { /* bloc limité aux actions de l'apprenante */ }
+  }
+  const plural = (n, un, plusieurs) => `${n} ${n > 1 ? plusieurs : un}`;
+  function correctedToReview() {
+    const qs = (S.content?.questions || []).filter((q) => { const u = updOf(q, ans(q.id)); return u && u.strong; });
+    const ks = allCards().filter((k) => { const u = updOf(k, cardState(k.id)); return u && u.strong; });
+    return { qs, ks };
+  }
+  function todoActions() {
+    const out = [], E = S.todoEd;
+    if (S.canEdit) {
+      const e = S.veilleEtat, days = e?.verifie_le ? Math.floor((Date.now() - new Date(e.verifie_le)) / 86400000) : null;
+      const vi = E?.veille || [], examen = vi.filter((x) => x.statut === "nouveau" && x.avis === "examen"), aTraiter = vi.filter((x) => x.statut === "a_traiter"), autres = vi.filter((x) => x.statut === "nouveau" && x.avis !== "examen" && x.avis !== "non");
+      if (examen.length) out.push({ ic: "flag", titre: `${plural(examen.length, "changement de loi touche", "changements de loi touchent")} l'examen`, sous: `${examen[0].titre}${examen.length > 1 ? ` et ${examen.length - 1} autre${examen.length > 2 ? "s" : ""}` : ""}. À décider dans la veille.`, label: "Ouvrir la veille", go: "veille" });
+      if (e && (days === null || days > 8)) out.push({ ic: "clock", titre: days === null ? "La veille des textes n'a jamais tourné" : `La veille des textes n'a pas tourné depuis ${days} jours`, sous: "Sans elle, l'appli peut enseigner une règle dépassée.", label: "Vérifier maintenant", go: "veille" });
+      if (aTraiter.length) out.push({ ic: "edit", titre: `${plural(aTraiter.length, "correction", "corrections")} à faire avec Claude`, sous: "Points marqués « à traiter » dans la veille : ouvre une séance avec Claude pour les corriger.", label: "Voir les points", go: "veille" });
+      if (E?.reports?.length) out.push({ ic: "flag", titre: `${plural(E.reports.length, "signalement d'erreur", "signalements d'erreur")} à examiner`, sous: `${E.reports[0].question ? "Question " + E.reports[0].question + " : " : ""}« ${String(E.reports[0].message).slice(0, 90)}${String(E.reports[0].message).length > 90 ? "…" : ""} »`, label: "Lire les signalements", go: "veille" });
+      if (autres.length) out.push({ ic: "list", titre: `${plural(autres.length, "changement", "changements")} à trier`, sous: "Effet incertain sur l'examen : à ignorer ou à traiter.", label: "Trier", go: "veille" });
+    }
+    const { qs, ks } = correctedToReview(), n = qs.length + ks.length;
+    if (n) {
+      const noms = [...ks.map((k) => k.recto), ...qs.map((q) => q.enonce)].slice(0, 2).map((t) => `« ${t.length > 50 ? t.slice(0, 47).replace(/\s+\S*$/, "") + "…" : t} »`);
+      out.push({ ic: "refresh", titre: `${plural(n, "notion corrigée", "notions corrigées")} à revoir`, sous: `${noms.join(" et ")} ${n > 1 ? "ont été corrigées" : "a été corrigée"} depuis ta dernière révision.`, label: "Revoir maintenant", act: "todo-revoir" });
+    }
+    const loi = newsUnseen().filter((x) => x.genre === "droit");
+    if (loi.length) out.push({ ic: "file", titre: loi.length > 1 ? `${loi.length} règles ont changé` : "Nouveau : une règle a changé", sous: `${loi[0].titre}${loi.length > 1 ? ` et ${loi.length - 1} autre${loi.length > 2 ? "s" : ""}` : ""}.`, label: "Lire le changement", go: "news" });
+    return out;
+  }
+  function todoBlock(acts) {
+    if (!acts.length) return "";
+    return `<section class="todo" aria-labelledby="todo-t"><div class="todo-head"><h2 class="h-sec" id="todo-t">À faire</h2><span class="tiny">${plural(acts.length, "action", "actions")}</span></div>
+      ${acts.slice(0, 3).map((a, i) => {
+        const target = a.go ? `data-go="${a.go}"` : `data-act="${a.act}"`;
+        return `<div class="todo-row">${icon(a.ic)}<div><b>${esc(a.titre)}</b><span class="todo-sub">${esc(a.sous)}</span></div>${i === 0 ? `<button class="btn btn-primary" ${target}>${esc(a.label)}</button>` : `<button class="link-btn" ${target}>${esc(a.label)}${icon("chevron")}</button>`}</div>`;
+      }).join("")}${acts.length > 3 ? `<p class="tiny muted" style="margin:0 0 10px">Et ${plural(acts.length - 3, "autre action", "autres actions")} ensuite.</p>` : ""}</section>`;
+  }
   function vVeille() {
     if (!S.canEdit) return vMe();
     const V = S.veille || {};
@@ -2197,6 +2261,9 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         ${V.loading && !items.length ? `<p class="small muted">Chargement…</p>` : ""}${V.err ? `<p class="small muted">${esc(V.err)}</p>` : ""}
         ${!V.loading && !items.length && !V.err ? `<p class="small muted">Tout est traité : l'appli suit les textes en vigueur.</p>` : ""}
         ${items.map(veilleItem).join("")}</section>
+      ${(S.todoEd?.reports || []).length ? `<section class="news-group" aria-labelledby="rp-t"><h2 class="h-sec" id="rp-t">${plural(S.todoEd.reports.length, "signalement d'erreur", "signalements d'erreur")}</h2>
+        ${S.todoEd.reports.map((r) => `<article class="news-item report-item"><p class="news-meta"><span>${esc(frDate(String(r.created_at).slice(0, 10)))}</span>${r.question ? `<span>Question ${esc(r.question)}</span>` : ""}</p>
+          <p>« ${esc(r.message)} »</p><div class="news-acts">${r.question && C.q(r.question) ? `<button class="link-btn" data-act="todo-question" data-param="${esc(r.question)}">${icon("play")}Voir la question</button>` : ""}<button class="link-btn" data-act="report-done" data-param="${r.id}">${icon("check")}Traité</button></div></article>`).join("")}</section>` : ""}
       ${(V.hist || []).length ? `<section class="news-group"><details class="veille-extrait"><summary>Derniers points décidés (${V.hist.length})</summary>
         <ul class="news-fix">${V.hist.map((x) => `<li>${esc(x.statut === "traite" ? "Traité" : "Ignoré")} · ${esc(x.titre)}</li>`).join("")}</ul></details></section>` : ""}
     </main>`;
@@ -2673,8 +2740,15 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         S.sb.from("veille_items").update({ statut, decide_le: new Date().toISOString() }).eq("id", Number(id)).then((r) => {
           if (r.error) { toast("La décision n'a pas pu être enregistrée."); return; }
           toast(statut === "ignore" ? "Point ignoré" : statut === "traite" ? "Point marqué traité" : "Point à traiter avec Claude");
-          loadVeilleItems(); loadVeilleEtat();
+          loadVeilleItems(); Promise.all([loadVeilleEtat(), loadTodo()]).then(render);
         }); break; }
+      case "report-done": S.sb.from("reports").update({ traite_le: new Date().toISOString() }).eq("id", Number(param)).then((r) => {
+          if (r.error) { toast("Le signalement n'a pas pu être marqué."); return; }
+          toast("Signalement marqué traité"); loadTodo().then(render);
+        }); break;
+      case "todo-question": startSession("news", [param], "Question signalée"); break;
+      case "todo-revoir": { const { qs, ks } = correctedToReview();
+        if (qs.length) startSession("news", qs.map((q) => q.id), "Notions corrigées"); else if (ks.length) startDeck(ks.map((k) => k.id), ks.length === 1); break; }
       case "veille-run": if (!S.veille?.running) (async () => {
         const etapes = [["articles", "Comparaison des articles avec Légifrance"], ["jo", "Lecture du Journal officiel"], ["kali", "Convention collective du sport"], ["tri", "Tri des nouveautés par Claude"]];
         S.veille = Object.assign(S.veille || {}, { running: true });
@@ -2685,7 +2759,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         }
         S.veille.running = false;
         S.veille.msg = ko ? `Vérification terminée, ${ko} étape${ko > 1 ? "s" : ""} en échec : elle${ko > 1 ? "s" : ""} sera${ko > 1 ? "nt" : ""} reprise${ko > 1 ? "s" : ""} lundi.` : "Vérification terminée.";
-        await Promise.all([loadVeilleItems(), loadVeilleEtat()]); render();
+        await Promise.all([loadVeilleItems(), loadVeilleEtat(), loadTodo()]); render();
       })(); break;
       case "news-q": { const n = newsAll().find((x) => x.id === param); if (!n) break;
         const ids = (n.genre === "appli" ? n.erreurs.filter((e) => e.g === "q").map((e) => e.id) : n.questions).filter((id) => C.q(id));
@@ -2821,7 +2895,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "5d01f08bfa8d";
+  const BUILD = "0e558a3af1e9";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
@@ -2853,7 +2927,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     await Promise.all([loadContent(), loadProgress()]);
     syncVersions();
     await loadFicheEdits();
-    loadVeilleEtat().then(() => { if (S.content) render(); });
+    Promise.all([loadVeilleEtat(), loadTodo()]).then(() => { if (S.content) render(); });
     if (hotData && hotData.session && S.content) { S.session = hotData.session; S.view = hotData.view || "home"; S.param = hotData.param ?? null; }
     else if (S.content) {
       const kept = lsGet(sessKey());
