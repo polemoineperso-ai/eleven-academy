@@ -642,6 +642,9 @@ a.row:hover .row-title { color: var(--green); }
 .home > .todo { order: 0; }
 .me-btn.has-todo { position: relative; overflow: visible; }
 .me-btn.has-todo::after { content: ""; position: absolute; top: -3px; right: -3px; width: 12px; height: 12px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 2px var(--pitch); }
+.veille-how { margin-top: 8px; }
+.veille-how ol { padding-left: 20px; color: var(--fg-2); }
+.veille-how li b { color: var(--chalk); }
 .report-item p { margin: 0; font-size: 15px; line-height: 1.55; max-width: 65ch; }
 .veille-extrait p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--fg-2); white-space: pre-line; max-width: 65ch; }
 .news-fix { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.5; }
@@ -2255,6 +2258,13 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       <div class="greet"><h1 class="h-screen">Veille juridique</h1>
         <p class="muted small">Chaque lundi, les textes cités par l'appli sont comparés à Légifrance, avec le Journal officiel et la convention collective du sport. « À traiter » : à corriger en séance avec Claude. « Ignorer » : sans effet sur l'examen.</p></div>
       ${veilleLine(false)}
+      <details class="veille-extrait veille-how"><summary>Comment traiter un point</summary>
+        <ol class="news-fix">
+          <li><b>Trier.</b> Lis le résumé, l'extrait comparé ou le texte officiel. « Ignorer » si ça ne touche pas l'examen, « À traiter » sinon. Dans le doute, « À traiter ».</li>
+          <li><b>Signalements d'erreur.</b> « Voir la question » ouvre un aperçu, rien n'est noté. Fondé : garde-le pour la séance. Sinon : « Traité ».</li>
+          <li><b>Corriger avec Claude.</b> Ouvre une session Claude Code sur le projet ElevenAcademy et écris : « Veille : traitons les points à traiter ». Claude vérifie dans le texte officiel, propose les corrections, puis publie après ton accord.</li>
+          <li><b>Contrôler.</b> Le bloc « À faire » disparaît, les notions corrigées reviennent en révision chez l'apprenante, et le repère repasse à « aucun changement en attente ».</li>
+        </ol></details>
       <div class="veille-run"><button class="btn btn-ghost btn-block" data-act="veille-run" ${V.running ? "disabled" : ""}>${icon("refresh")}${V.running ? "Vérification en cours…" : "Vérifier maintenant"}</button>
         ${V.msg ? `<p class="small muted" role="status">${esc(V.msg)}</p>` : ""}</div>
       <section class="news-group" aria-labelledby="vw-t"><h2 class="h-sec" id="vw-t">${items.length ? `${items.length} point${items.length > 1 ? "s" : ""} en attente` : "Rien en attente"}</h2>
@@ -2899,7 +2909,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "e500304edec8";
+  const BUILD = "78e2e527dc34";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
