@@ -618,6 +618,17 @@ a.row:hover .row-title { color: var(--green); }
 .news-src { margin: 0; font-size: 13px; color: var(--fg-3); }
 .news-acts { display: flex; flex-wrap: wrap; gap: 0 24px; }
 .news-acts:empty { display: none; }
+/* Veille : repère « textes vérifiés » et page des éditeurs */
+.veille-line { display: flex; align-items: flex-start; gap: 8px; margin: 0; font-size: 14px; line-height: 1.5; color: var(--fg-2); }
+.veille-line svg { width: 18px; height: 18px; flex: none; margin-top: 1px; }
+.veille-line b { color: var(--chalk); font-weight: 700; }
+.veille-line.is-late b { color: var(--chalk); }
+.veille-run { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+.veille-run .small { margin: 0; }
+.veille-item .news-acts { gap: 0 20px; }
+.veille-extrait summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 600; color: var(--green); }
+.veille-extrait summary:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; border-radius: 8px; }
+.veille-extrait p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--fg-2); white-space: pre-line; max-width: 65ch; }
 .news-fix { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.5; }
 .news-item details summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 600; color: var(--green); }
 .news-item details summary:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; border-radius: 8px; }
@@ -2125,15 +2136,76 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     const droit = newsAll().filter((n) => n.genre === "droit"), appli = newsAll().filter((n) => n.genre === "appli");
     return `${header()}<main class="screen narrow">
       <div class="greet"><h1 class="h-screen">Ce qui a changé</h1>
-        <p class="muted small">Les règles qui ont évolué et les corrections de l'appli. À l'examen, c'est le droit en vigueur le jour de l'épreuve qui compte.</p></div>
+        <p class="muted small">Les règles qui ont évolué et les corrections de l'appli. À l'examen, c'est le droit en vigueur le jour de l'épreuve qui compte.</p>
+        ${veilleLine(true)}</div>
       ${droit.length ? `<section class="news-group" aria-labelledby="nd-t"><h2 class="h-sec" id="nd-t">Dans le droit</h2>${droit.map(newsItem).join("")}</section>` : ""}
       ${appli.length ? `<section class="news-group" aria-labelledby="na-t"><h2 class="h-sec" id="na-t">Dans l'appli</h2>${appli.map(newsItem).join("")}</section>` : ""}
+    </main>`;
+  }
+  /* ---------- Veille juridique (VEILLE_DEFINITION.md) ---------- */
+  const AVIS = { examen: "Touche l'examen", "peut-etre": "Peut-être", non: "Hors examen" };
+  const SOURCES_VEILLE = { article: "Article de l'appli", a_venir: "Version future", jo: "Journal officiel", kali: "Convention collective", web: "Web" };
+  async function loadVeilleEtat() {
+    if (!S.sb) return;
+    try { const r = await S.sb.rpc("veille_etat"); if (!r.error) S.veilleEtat = r.data; } catch { /* repère masqué */ }
+  }
+  function veilleLine(withLink) {
+    const e = S.veilleEtat; if (!e) return "";
+    if (!e.verifie_le) return `<p class="veille-line">${icon("clock")}<span>La veille des textes officiels n'a pas encore tourné.</span></p>`;
+    const d = new Date(e.verifie_le), days = Math.floor((Date.now() - d) / 86400000);
+    const quand = d.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
+    const late = days > 8, n = e.en_attente || 0;
+    const etat = n ? `${n} changement${n > 1 ? "s" : ""} en cours de vérification` : "aucun changement en attente";
+    return `<p class="veille-line${late ? " is-late" : ""}">${icon(late ? "clock" : "check")}<span><b>${late ? `Dernière vérification des textes il y a ${days} jours` : `Textes officiels vérifiés le ${esc(quand)}`}</b> · ${etat}${withLink && S.canEdit ? ` · <button class="link-btn" data-go="veille" style="min-height:0;padding:0">Voir la veille</button>` : ""}</span></p>`;
+  }
+  async function loadVeilleItems() {
+    S.veille = Object.assign(S.veille || {}, { loading: true });
+    const [a, h] = await Promise.all([
+      S.sb.from("veille_items").select("id,source,titre,url,date_texte,extrait,resume,avis,modules,statut").in("statut", ["nouveau", "a_traiter"]).order("id", { ascending: false }).limit(200),
+      S.sb.from("veille_items").select("id,source,titre,url,avis,statut,decide_le").in("statut", ["traite", "ignore"]).order("decide_le", { ascending: false, nullsFirst: false }).limit(20),
+    ]);
+    const ordre = { examen: 0, "peut-etre": 1, null: 1, non: 2 };
+    S.veille = Object.assign(S.veille, { loading: false, loaded: true, err: a.error || h.error ? "La liste n'a pas pu être chargée." : "",
+      items: (a.data || []).sort((x, y) => (ordre[x.avis] ?? 1) - (ordre[y.avis] ?? 1) || (x.statut === "a_traiter" ? -1 : 0)), hist: h.data || [] });
+    if (S.view === "veille") render();
+  }
+  function veilleItem(x) {
+    const mods = (x.modules || []).map((m) => TRIBUNES[m] || m).join(", ");
+    const meta = [AVIS[x.avis] || "Non trié", SOURCES_VEILLE[x.source] || x.source, x.date_texte ? frDate(x.date_texte) : "", mods && "Module " + mods].filter(Boolean);
+    const act = (statut, label, ic) => `<button class="link-btn" data-act="veille-set" data-param="${x.id}:${statut}">${icon(ic)}${label}</button>`;
+    return `<article class="news-item veille-item">
+      <p class="news-meta">${x.statut === "a_traiter" ? `<span class="is-new">À traiter</span>` : ""}${meta.map((m) => `<span>${esc(m)}</span>`).join("")}</p>
+      <h3>${esc(x.titre)}</h3>
+      ${x.resume ? `<p class="news-ba" style="margin:0"><span style="font-size:15px;line-height:1.55">${esc(x.resume)}</span></p>` : ""}
+      ${x.extrait ? `<details class="veille-extrait"><summary>Voir l'extrait comparé</summary><p>${esc(x.extrait)}</p></details>` : ""}
+      <div class="news-acts">${x.url ? `<a class="link-btn" href="${esc(x.url)}" target="_blank" rel="noopener">${icon("file")}Texte officiel</a>` : ""}
+        ${x.statut === "nouveau" ? act("a_traiter", "À traiter", "flag") : act("traite", "Traité", "check")}${act("ignore", "Ignorer", "x")}</div>
+    </article>`;
+  }
+  function vVeille() {
+    if (!S.canEdit) return vMe();
+    const V = S.veille || {};
+    if (!V.loaded && !V.loading) loadVeilleItems();
+    const items = V.items || [];
+    return `${header()}<main class="screen narrow">
+      <div class="greet"><h1 class="h-screen">Veille juridique</h1>
+        <p class="muted small">Chaque lundi, les textes cités par l'appli sont comparés à Légifrance, avec le Journal officiel et la convention collective du sport. « À traiter » : à corriger en séance avec Claude. « Ignorer » : sans effet sur l'examen.</p></div>
+      ${veilleLine(false)}
+      <div class="veille-run"><button class="btn btn-ghost btn-block" data-act="veille-run" ${V.running ? "disabled" : ""}>${icon("refresh")}${V.running ? "Vérification en cours…" : "Vérifier maintenant"}</button>
+        ${V.msg ? `<p class="small muted" role="status">${esc(V.msg)}</p>` : ""}</div>
+      <section class="news-group" aria-labelledby="vw-t"><h2 class="h-sec" id="vw-t">${items.length ? `${items.length} point${items.length > 1 ? "s" : ""} en attente` : "Rien en attente"}</h2>
+        ${V.loading && !items.length ? `<p class="small muted">Chargement…</p>` : ""}${V.err ? `<p class="small muted">${esc(V.err)}</p>` : ""}
+        ${!V.loading && !items.length && !V.err ? `<p class="small muted">Tout est traité : l'appli suit les textes en vigueur.</p>` : ""}
+        ${items.map(veilleItem).join("")}</section>
+      ${(V.hist || []).length ? `<section class="news-group"><details class="veille-extrait"><summary>Derniers points décidés (${V.hist.length})</summary>
+        <ul class="news-fix">${V.hist.map((x) => `<li>${esc(x.statut === "traite" ? "Traité" : "Ignoré")} · ${esc(x.titre)}</li>`).join("")}</ul></details></section>` : ""}
     </main>`;
   }
   function newsCard() {
     const all = newsAll(); if (!all.length) return "";
     const fresh = newsUnseen(), show = (fresh.length ? fresh : all).filter((n) => n.genre === "droit").slice(0, 2);
     return `<section class="side-card" aria-labelledby="nw-t"><div class="sec-head"><h2 class="h-sec" id="nw-t">Ce qui a changé</h2><button class="link-btn" data-go="news">Tout voir</button></div>
+      ${veilleLine(false)}
       ${fresh.length ? `<p class="muted small" style="margin:0">${newsCount(fresh.length)} depuis ta dernière visite</p>` : ""}
       <div class="rows">${show.map((n) => `<button class="row" data-go="news"><span class="stack"><span class="row-title">${esc(n.titre)}</span><span class="row-sub">${n.examen ? "En vigueur" : "À partir du " + esc(frDate(n.vigueur))}</span></span><span class="row-side">${icon("chevron")}</span></button>`).join("")}</div>
     </section>`;
@@ -2203,6 +2275,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         <p class="small muted">Connectée avec ${esc(S.email || "ton adresse e-mail")}.</p>
         <button class="btn btn-ghost btn-block" data-act="logout">Me déconnecter</button></section>` : ""}
       ${S.owner ? `<p class="owner-note">Tu vois l'application avec ton compte : la progression affichée ici est la tienne. Pour qu'la candidate ait la sienne, partage-lui l'application en Contributeur depuis le menu Partager ; elle verra son prénom et ses propres scores.</p>` : ""}
+      ${S.canEdit ? `<button class="row" data-go="veille"><span class="stack"><span class="row-title">Veille juridique</span><span class="row-sub">${S.veilleEtat ? `${S.veilleEtat.en_attente || 0} point${(S.veilleEtat.en_attente || 0) > 1 ? "s" : ""} en attente` : "Les changements de textes à vérifier"}</span></span><span class="row-side">${icon("chevron")}</span></button>` : ""}
       <section class="sec" aria-labelledby="set-t"><h2 class="h-sec" id="set-t">Réglages</h2>
         <div class="setting"><label for="s-per"><b>Questions par séance</b><span class="tiny">Environ 1 min 30 par question.</span></label>
           <div class="seg" id="s-per" role="group" aria-label="Questions par séance">${[10, 15, 20].map((n) => `<button data-act="per" data-param="${n}" aria-pressed="${st.perSession === n}">${n}</button>`).join("")}</div></div>
@@ -2500,7 +2573,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       return;
     }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
-    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe, news: vNews };
+    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe, news: vNews, veille: vVeille };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
     linkRefs(app);
@@ -2596,6 +2669,24 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "card-level": startDeck(buildDeck(allCards().filter((k) => cardLevel(k.id) === param), 10), false, null, param); break;
       case "card-module": startDeck(buildDeck(allCards().filter((k) => k.domaine === param), 10), false, param); break;
       case "card-open": startDeck([param], true); break;
+      case "veille-set": { const [id, statut] = String(param).split(":");
+        S.sb.from("veille_items").update({ statut, decide_le: new Date().toISOString() }).eq("id", Number(id)).then((r) => {
+          if (r.error) { toast("La décision n'a pas pu être enregistrée."); return; }
+          toast(statut === "ignore" ? "Point ignoré" : statut === "traite" ? "Point marqué traité" : "Point à traiter avec Claude");
+          loadVeilleItems(); loadVeilleEtat();
+        }); break; }
+      case "veille-run": if (!S.veille?.running) (async () => {
+        const etapes = [["articles", "Comparaison des articles avec Légifrance"], ["jo", "Lecture du Journal officiel"], ["kali", "Convention collective du sport"], ["tri", "Tri des nouveautés par Claude"]];
+        S.veille = Object.assign(S.veille || {}, { running: true });
+        let ko = 0;
+        for (const [e, label] of etapes) {
+          S.veille.msg = label + "…"; render();
+          try { const r = await S.sb.functions.invoke("veille", { body: { etape: e } }); if (r.error) ko++; } catch { ko++; }
+        }
+        S.veille.running = false;
+        S.veille.msg = ko ? `Vérification terminée, ${ko} étape${ko > 1 ? "s" : ""} en échec : elle${ko > 1 ? "s" : ""} sera${ko > 1 ? "nt" : ""} reprise${ko > 1 ? "s" : ""} lundi.` : "Vérification terminée.";
+        await Promise.all([loadVeilleItems(), loadVeilleEtat()]); render();
+      })(); break;
       case "news-q": { const n = newsAll().find((x) => x.id === param); if (!n) break;
         const ids = (n.genre === "appli" ? n.erreurs.filter((e) => e.g === "q").map((e) => e.id) : n.questions).filter((id) => C.q(id));
         startSession("news", ids, "Ce qui a changé"); break; }
@@ -2730,7 +2821,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "93ecd5c88262";
+  const BUILD = "5d01f08bfa8d";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
@@ -2762,6 +2853,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     await Promise.all([loadContent(), loadProgress()]);
     syncVersions();
     await loadFicheEdits();
+    loadVeilleEtat().then(() => { if (S.content) render(); });
     if (hotData && hotData.session && S.content) { S.session = hotData.session; S.view = hotData.view || "home"; S.param = hotData.param ?? null; }
     else if (S.content) {
       const kept = lsGet(sessKey());
