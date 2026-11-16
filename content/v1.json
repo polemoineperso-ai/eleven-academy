@@ -27135,9 +27135,19 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 18
+"v": 20
 },
 {
 "id": "asso-11",
@@ -27319,9 +27329,19 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 18
+"v": 20
 },
 {
 "id": "agt-03",
@@ -29106,9 +29126,19 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 18
+"v": 20
 },
 {
 "id": "agt-32",
@@ -31725,6 +31755,156 @@
 }
 ],
 "v": 2
+},
+{
+"id": "agt-l05-q1",
+"chapitre": "m01-1",
+"niveau": 2,
+"enonce": "Un supporter est condamné pour avoir allumé un fumigène dans un stade. Le juge peut y ajouter une interdiction de stade d'une durée maximale de :",
+"options": [
+"12 mois",
+"24 mois",
+"3 ans",
+"5 ans"
+],
+"bonne": 3,
+"explication": "L'interdiction judiciaire de stade est une peine complémentaire : elle ne peut pas dépasser cinq ans. Les douze mois sont le maximum de l'interdiction administrative, prononcée par le préfet (C. sport, L. 332-11 et L. 332-16).",
+"origine": "Leçon agt-l05"
+},
+{
+"id": "agt-l05-q2",
+"chapitre": "m01-1",
+"niveau": 2,
+"enonce": "Introduire, détenir ou utiliser des fusées ou des artifices dans une enceinte sportive pendant un match est puni de :",
+"options": [
+"7 500 € d'amende",
+"1 an d'emprisonnement et 7 500 € d'amende",
+"1 an d'emprisonnement et 15 000 € d'amende",
+"3 ans d'emprisonnement et 15 000 € d'amende"
+],
+"bonne": 3,
+"explication": "Le Code du sport punit ce fait de trois ans d'emprisonnement et de 15 000 € d'amende. Un an et 7 500 € sanctionnent l'introduction d'alcool par force ou par fraude (C. sport, L. 332-8 et L. 332-3).",
+"origine": "Leçon agt-l05"
+},
+{
+"id": "agt-l06-q1",
+"chapitre": "agents-qui",
+"niveau": 2,
+"enonce": "Un intermédiaire obtient la prolongation du contrat de travail d'un entraîneur avec son club. En échange, le club lui offre un avantage en nature. Cette activité :",
+"options": [
+"N'est pas celle d'un agent sportif, car aucun nouveau contrat n'est conclu",
+"N'est pas celle d'un agent sportif, car il n'est pas payé en argent",
+"Est celle d'un agent sportif, réservée au titulaire de la carte professionnelle",
+"Est libre, car elle concerne un entraîneur et non un joueur"
+],
+"bonne": 2,
+"explication": "L'agent sportif met en relation deux parties intéressées par la conclusion ou la prolongation d'un contrat, contre une rémunération, une indemnité ou un avantage. Les entraîneurs sont visés comme les sportifs (C. sport, L. 222-7).",
+"origine": "Leçon agt-l06"
+},
+{
+"id": "agt-l09-q1",
+"chapitre": "agents-qui",
+"niveau": 2,
+"enonce": "Un agent sportif s'adjoint les services d'un superviseur. Les missions de ce dernier :",
+"options": [
+"Peuvent inclure la négociation des contrats des joueurs",
+"Se limitent à des tâches administratives de prospection, comme la rédaction de rapports",
+"Sont libres, s'il est payé au pourcentage",
+"Supposent qu'il détienne lui-même la carte professionnelle"
+],
+"bonne": 1,
+"explication": "Les missions du superviseur se limitent à des tâches administratives de prospection, en particulier la rédaction de rapports et de comptes rendus d'activité. L'agent ne peut le rémunérer qu'à ce titre, après avoir conclu un contrat (C. sport, L. 222-12-1).",
+"origine": "Leçon agt-l09"
+},
+{
+"id": "agt-l10-q1",
+"chapitre": "agents-contrat",
+"niveau": 2,
+"enonce": "Un agent sportif a signé avec un joueur un contrat écrit conforme à la loi, mais il ne l'a jamais communiqué à la fédération délégataire. Ce contrat est :",
+"options": [
+"Valable entre l'agent et le joueur",
+"Réputé nul et non écrit",
+"Valable, mais l'agent doit payer une amende",
+"Suspendu jusqu'à la fin de la saison"
+],
+"bonne": 1,
+"explication": "Toute convention contraire à l'article L. 222-17, ou qui n'a pas été communiquée à la fédération délégataire compétente, est réputée nulle et non écrite (C. sport, L. 222-17).",
+"origine": "Leçon agt-l10"
+},
+{
+"id": "agt-l11-q1",
+"chapitre": "agents-contrat",
+"niveau": 2,
+"enonce": "Pour la rémunération des agents sportifs, une fédération délégataire peut :",
+"options": [
+"Fixer librement le taux, y compris au-dessus de 10 %",
+"Fixer un taux inférieur à 10 %, différent selon le type de contrat",
+"Supprimer tout plafond pour les transferts internationaux",
+"Porter le plafond à 15 % avec l'accord du ministre"
+],
+"bonne": 1,
+"explication": "La fédération délégataire peut fixer un taux inférieur à 10 %, différencié selon le type et l'objet du contrat, en tenant compte des règles de sa fédération internationale. Elle ne peut pas dépasser le plafond de 10 % (C. sport, L. 222-17, II).",
+"origine": "Leçon agt-l11"
+},
+{
+"id": "agt-l13-q1",
+"chapitre": "agents-contrat",
+"niveau": 2,
+"enonce": "Un ancien joueur, sans carte professionnelle, présente un jeune talent à un agent sportif. L'agent peut-il le rémunérer pour ce service ?",
+"options": [
+"Oui, librement",
+"Oui, dans la limite de 10 % de sa propre commission",
+"Non : seul un apporteur d'affaires titulaire de la carte peut être rémunéré, avec une convention de collaboration signée avant",
+"Oui, si le joueur présenté est majeur"
+],
+"bonne": 2,
+"explication": "L'agent ne peut rémunérer un apporteur d'affaires que si celui-ci est lui-même titulaire de la carte professionnelle et qu'une convention de collaboration a été conclue avant. Seule la première opération de placement peut alors donner lieu à rémunération (C. sport, L. 222-12-1).",
+"origine": "Leçon agt-l13"
+},
+{
+"id": "agt-l14-q1",
+"chapitre": "agents-contrat",
+"niveau": 2,
+"enonce": "Un agent sportif se fait rémunérer pour la signature du contrat d'un joueur de 16 ans. Il encourt :",
+"options": [
+"7 500 € d'amende",
+"1 an d'emprisonnement et 15 000 € d'amende",
+"2 ans d'emprisonnement et 30 000 € d'amende",
+"5 ans d'emprisonnement et 375 000 € d'amende"
+],
+"bonne": 2,
+"explication": "La rémunération perçue pour un contrat concernant un mineur est punie de deux ans d'emprisonnement et de 30 000 € d'amende. L'amende peut être portée jusqu'au double des sommes indûment perçues (C. sport, L. 222-5 et L. 222-6). Les 7 500 € visent une autre règle : la rémunération de l'enfant lui-même (C. sport, L. 222-6, al. 1).",
+"origine": "Leçon agt-l14"
+},
+{
+"id": "agt-l14-q2",
+"chapitre": "agents-contrat",
+"niveau": 2,
+"enonce": "Un agent sportif signe un contrat écrit avec les parents d'une joueuse de 15 ans, pour l'aider à trouver un club. Ce contrat doit :",
+"options": [
+"Prévoir une commission plafonnée à 5 %",
+"Mentionner l'interdiction de toute rémunération et être transmis à la fédération délégataire",
+"Être homologué par le juge des enfants",
+"Rester confidentiel jusqu'à la majorité de la joueuse"
+],
+"bonne": 1,
+"explication": "La convention de l'agent mentionne l'interdiction de toute contrepartie, rémunération, indemnité ou avantage. L'agent la transmet à la fédération délégataire compétente (C. sport, L. 222-5).",
+"origine": "Leçon agt-l14"
+},
+{
+"id": "agt-l15-q1",
+"chapitre": "agents-sanctions",
+"niveau": 2,
+"enonce": "Qui prononce les sanctions disciplinaires contre un agent sportif qui méconnaît les règles du Code du sport (contrat, incompatibilités, plafond de 10 %) ?",
+"options": [
+"Le tribunal administratif",
+"La commission des agents sportifs de la fédération délégataire",
+"La conférence des conciliateurs du CNOSF",
+"Le ministre chargé des sports"
+],
+"bonne": 1,
+"explication": "La commission des agents sportifs de la fédération prononce l'avertissement, la sanction pécuniaire, la suspension ou le retrait. Le tribunal administratif n'intervient qu'en cas de recours, après la conciliation du CNOSF (C. sport, L. 222-19, R. 222-1, R. 222-38 et R. 222-41).",
+"origine": "Leçon agt-l15"
 },
 {
 "id": "soc-01-q1",
@@ -35576,6 +35756,15 @@
 "precisions": []
 },
 {
+"id": "n-lecons-m01-2026-11-17",
+"d": "2026-11-17",
+"genre": "appli",
+"titre": "Le module 01 passe aux leçons, et chaque leçon compte",
+"texte": "Le module 01, Institutions et statut de l'agent, propose 17 leçons de 5 minutes, du CNOSF à la lutte contre le blanchiment. En fin de leçon, un bilan affiche tes points, ta série de jours et ta progression dans le module : une leçon terminée compte comme un jour de travail, et les trophées tombent tout de suite.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
@@ -35700,6 +35889,1282 @@
 }
 ],
 "lecons": [
+{
+"domaine": "agents",
+"titre": "Module 01 · Institutions et statut de l'agent",
+"parties": [
+{
+"titre": "Les institutions du sport",
+"lecons": [
+{
+"id": "agt-l01",
+"titre": "L'État, le CNOSF et l'organisation du sport",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "agt-l02",
+"titre": "Les fédérations : agrément et délégation",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "agt-l03",
+"titre": "Les ligues professionnelles",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "agt-l04",
+"titre": "Paris sportifs, dopage : les autorités de contrôle",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "agt-l05",
+"titre": "Les supporters et la sécurité des stades",
+"priorite": 1,
+"dispo": true
+}
+]
+},
+{
+"titre": "Devenir agent sportif",
+"lecons": [
+{
+"id": "agt-l06",
+"titre": "Qu'est-ce qu'un agent sportif ?",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "agt-l07",
+"titre": "La carte professionnelle et l'examen",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "agt-l08",
+"titre": "Incompatibilités et incapacités",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "agt-l09",
+"titre": "Les préposés et la société de l'agent",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "Le contrat et la rémunération",
+"lecons": [
+{
+"id": "agt-l10",
+"titre": "Le contrat écrit avec le client",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "agt-l11",
+"titre": "La rémunération : le plafond de 10 %",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "agt-l12",
+"titre": "Qui paie l'agent ? Une seule partie représentée",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "agt-l13",
+"titre": "Plusieurs agents sur une même opération",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "agt-l14",
+"titre": "Les sportifs mineurs",
+"priorite": 3,
+"dispo": true
+}
+]
+},
+{
+"titre": "Contrôles et sanctions",
+"lecons": [
+{
+"id": "agt-l15",
+"titre": "Exercer sans carte et autres sanctions",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "agt-l16",
+"titre": "Blanchiment : la vigilance de l'agent",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "agt-l17",
+"titre": "Blanchiment : contrôles et sanctions",
+"priorite": 1,
+"dispo": true
+}
+]
+}
+],
+"contenu": {
+"agt-l01": {
+"minutes": 5,
+"situation": {
+"texte": "La fédération inflige une sanction à ton club. Le président est furieux : il veut saisir le tribunal dès demain. La décision lui a été notifiée il y a dix jours.",
+"question": "Peut-il aller directement devant le juge ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le sport français repose sur deux piliers. L'État fixe les règles et contrôle. Le mouvement sportif, c'est-à-dire les clubs et les fédérations, organise la pratique."
+},
+{
+"t": "table",
+"head": [
+"Acteur",
+"Rôle"
+],
+"rows": [
+[
+"Ministre chargé des sports",
+"Contrôle les fédérations, leur accorde l'agrément et la délégation"
+],
+[
+"Agence nationale du sport (ANS)",
+"Développe la pratique pour tous et soutient le sport de haut niveau"
+],
+[
+"CNOSF",
+"Représente les clubs, les fédérations et leurs licenciés, et concilie leurs conflits"
+]
+]
+},
+{
+"t": "h",
+"x": "L'État et les sportifs de haut niveau"
+},
+{
+"t": "p",
+"x": "L'État peut signer avec une entreprise une convention pour faciliter l'emploi d'un sportif de haut niveau et sa reconversion. Le lien entre l'entreprise et le sportif est alors un contrat de travail, ou bien un contrat de prestation de services, de cession de droit à l'image ou de parrainage sans lien de subordination, c'est-à-dire sans rapport d'employeur à salarié."
+},
+{
+"t": "h",
+"x": "La conciliation du CNOSF"
+},
+{
+"t": "p",
+"x": "Le CNOSF est le Comité national olympique et sportif français. Il cherche un accord amiable dans les conflits entre licenciés, agents sportifs, clubs et fédérations, sauf en matière de dopage. Quand le conflit vient d'une décision qu'une fédération a prise en vertu de ses statuts ou de ses pouvoirs de service public, cette conciliation est obligatoire avant tout procès."
+},
+{
+"t": "list",
+"items": [
+"La demande part dans les quinze jours qui suivent la notification ou la publication de la décision.",
+"Le conciliateur propose une solution dans le mois.",
+"Cette solution est réputée acceptée, sauf opposition dans les quinze jours."
+]
+}
+],
+"piege": "La conciliation n'est obligatoire que si le conflit naît d'une décision fédérale : un litige de contrat entre un agent et un joueur n'y est pas soumis.",
+"reponse": "Non. La sanction est une décision de la fédération : il doit d'abord demander une conciliation au CNOSF. Il lui reste cinq jours, car la demande doit partir dans les quinze jours qui suivent la notification.",
+"sources": [
+"C. sport, L. 111-1, L. 112-10, L. 141-1 et L. 141-4",
+"C. sport, L. 221-8",
+"C. sport, R. 141-5, R. 141-7, R. 141-15 et R. 141-23"
+],
+"questions": [
+"an25-q06",
+"an25-q01",
+"m01-q04"
+],
+"titre": "L'État, le CNOSF et l'organisation du sport",
+"priorite": 3
+},
+"agt-l02": {
+"minutes": 5,
+"situation": {
+"texte": "Une jeune fédération, qui organise un nouveau sport de ballon, vient d'obtenir l'agrément du ministre. Son président annonce déjà un « championnat de France » et de futurs « champions de France ».",
+"question": "En a-t-elle le droit ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une fédération sportive est une association qui organise la pratique d'un ou de plusieurs sports. Elle agit en toute indépendance, sous le contrôle de l'État. L'État peut lui accorder deux reconnaissances, à ne pas confondre."
+},
+{
+"t": "table",
+"head": [
+"",
+"Agrément",
+"Délégation"
+],
+"rows": [
+[
+"Durée",
+"Huit ans, renouvelable",
+"Quatre ans"
+],
+[
+"Combien ?",
+"Plusieurs fédérations possibles",
+"Une seule par discipline"
+],
+[
+"Effet",
+"La fédération participe à une mission de service public",
+"Elle organise les compétitions qui délivrent les titres et fixe les règles de sa discipline"
+]
+]
+},
+{
+"t": "p",
+"x": "Les deux sont accordés par le ministre chargé des sports. La délégation n'est donnée qu'à une fédération déjà agréée, après la signature d'un contrat de délégation avec l'État. Seule la fédération délégataire peut décerner un titre de « champion de France » ou former une « équipe de France ». C'est aussi elle qui délivre la carte professionnelle d'agent sportif. Pour le football, c'est la FFF."
+},
+{
+"t": "h",
+"x": "Les conseillers techniques sportifs"
+},
+{
+"t": "p",
+"x": "Des agents de l'État travaillent auprès des fédérations agréées, par exemple le directeur technique national. Ils restent sous l'autorité du ministre chargé des sports ou de leur chef de service. Ils ne sont pas salariés de la fédération."
+},
+{
+"t": "h",
+"x": "Les élections"
+},
+{
+"t": "p",
+"x": "Le mandat des dirigeants d'une fédération agréée prend fin au plus tard le 31 décembre de l'année des Jeux olympiques d'été (le 30 juin pour les fédérations des sports d'hiver olympiques). Cette règle ne vise pas les ligues professionnelles : leurs élections sont organisées par leurs propres statuts."
+}
+],
+"piege": "Agréée ne veut pas dire délégataire : l'agrément ne donne ni le droit d'organiser les compétitions officielles, ni celui de décerner un titre de champion de France.",
+"reponse": "Non. Avec le seul agrément, elle participe au service public du sport. Mais seule la fédération qui a reçu la délégation délivre les titres nationaux. Utiliser l'appellation « Champion de France » sans délégation expose le président de la fédération à une amende de 7 500 €.",
+"sources": [
+"C. sport, L. 131-1, L. 131-2, L. 131-8 et L. 131-9",
+"C. sport, L. 131-12",
+"C. sport, L. 131-14 à L. 131-17 et R. 131-26-2",
+"C. sport, annexe I-5 (point 2.2.2.2.5)"
+],
+"questions": [
+"an24-q01",
+"an24-q10",
+"m01-q05"
+],
+"titre": "Les fédérations : agrément et délégation",
+"priorite": 3
+},
+"agt-l03": {
+"minutes": 5,
+"situation": {
+"texte": "Karim préside un club de Ligue 2. Il discute avec toi après un match : selon lui, la ligue professionnelle devrait devenir une société anonyme, « pour mieux vendre les droits télé ».",
+"question": "Une ligue professionnelle peut-elle être une société ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une fédération délégataire peut créer une ou deux ligues professionnelles. La ligue représente, gère et coordonne le sport professionnel de la discipline. Depuis la loi du 3 août 2026, la fédération peut créer une seule ligue pour les secteurs masculin et féminin, ou deux ligues : une par secteur."
+},
+{
+"t": "h",
+"x": "Sa forme"
+},
+{
+"t": "p",
+"x": "La ligue peut être un simple organe interne de la fédération. Quand elle a la personnalité morale, c'est-à-dire une existence juridique propre, elle est obligatoirement une association déclarée, créée pour une durée illimitée. La fédération lui confie une partie de ses pouvoirs par une convention : c'est la subdélégation."
+},
+{
+"t": "h",
+"x": "Qui la dirige ?"
+},
+{
+"t": "list",
+"items": [
+"Des représentants des clubs, élus par l'assemblée générale.",
+"Un ou plusieurs représentants de la fédération.",
+"Des représentants des sportifs et des entraîneurs, désignés par leurs organisations représentatives.",
+"Des personnalités qualifiées, élues par l'assemblée générale."
+]
+},
+{
+"t": "p",
+"x": "Un même président ne peut pas exercer plus de trois mandats de plein exercice. Les élections suivent la procédure prévue par les statuts de la ligue. Chaque année, la ligue remet un rapport à la fédération et au ministre chargé des sports."
+}
+],
+"piege": "Trois mandats au total, et non « trois mandats consécutifs » : le texte ne parle pas de mandats consécutifs.",
+"reponse": "Non. Une ligue dotée de la personnalité morale est obligatoirement une association déclarée. Elle peut passer par une société commerciale pour vendre ses droits audiovisuels, mais la ligue elle-même reste une association.",
+"sources": [
+"C. sport, L. 131-14 et L. 132-1",
+"C. sport, R. 132-1, R. 132-2, R. 132-4 et R. 132-6"
+],
+"questions": [
+"an23-q14",
+"an23-q13",
+"an25-q05"
+],
+"titre": "Les ligues professionnelles",
+"priorite": 3
+},
+"agt-l04": {
+"minutes": 5,
+"situation": {
+"texte": "Yanis joue au centre de formation d'un club professionnel. Il parie 20 € en ligne sur un match de son propre championnat. « Je ne joue même pas ce match », dit-il.",
+"question": "A-t-il le droit de parier ?"
+},
+"blocs": [
+{
+"t": "h",
+"x": "Les paris sportifs"
+},
+{
+"t": "p",
+"x": "L'Autorité nationale des jeux (ANJ) est une autorité administrative indépendante. Elle délivre les agréments aux opérateurs de paris en ligne et fixe la liste des compétitions sur lesquelles on peut parier. Son président peut interdire tout pari sur une compétition s'il existe des indices graves et concordants de manipulation."
+},
+{
+"t": "p",
+"x": "De leur côté, les fédérations délégataires interdisent trois choses aux « acteurs des compétitions » :"
+},
+{
+"t": "list",
+"items": [
+"parier, directement ou par personne interposée, sur une compétition de leur discipline, et communiquer à des tiers des informations privilégiées, inconnues du public ;",
+"détenir une participation chez un opérateur qui propose des paris sur leur discipline ;",
+"donner des pronostics sportifs quand ils sont liés par contrat à un opérateur de paris."
+]
+},
+{
+"t": "p",
+"x": "La liste des acteurs est large : sportifs, y compris ceux des centres de formation, encadrement, arbitres, dirigeants, salariés, bénévoles et membres des clubs, dirigeants des fédérations et des ligues, agents sportifs et avocats mandataires sportifs."
+},
+{
+"t": "h",
+"x": "Le dopage"
+},
+{
+"t": "p",
+"x": "L'Agence française de lutte contre le dopage (AFLD) est une autorité publique indépendante. Elle définit et mène la lutte contre le dopage : programme annuel de contrôles, contrôles pendant et hors des compétitions, enquêtes. Le sportif est responsable de ce qui entre dans son corps : la présence d'une substance interdite dans son échantillon suffit, sans qu'il faille prouver une intention."
+}
+],
+"piege": "L'interdiction de parier ne vise pas que les joueurs : l'agent sportif est lui aussi un acteur des compétitions, et il ne peut pas parier sur sa discipline.",
+"reponse": "Non. Joueur d'un centre de formation, Yanis est un acteur des compétitions. Il ne peut parier sur aucune compétition de sa discipline, même sur un match qu'il ne joue pas. Il s'expose à une sanction de la fédération.",
+"sources": [
+"C. sport, L. 131-16, L. 131-16-1 et D. 131-36-1",
+"Loi n° 2010-476 du 12 mai 2010, art. 12 et 34",
+"C. sport, L. 232-5 et L. 232-9"
+],
+"questions": [
+"an25-q14",
+"an24-q16",
+"m01-q09",
+"m01-q07"
+],
+"titre": "Paris sportifs, dopage : les autorités de contrôle",
+"priorite": 2
+},
+"agt-l05": {
+"minutes": 5,
+"situation": {
+"texte": "Après plusieurs bagarres autour du stade, Théo, supporter de ton club, reçoit un arrêté du préfet : interdiction de stade pendant dix-huit mois. Il n'avait jamais été interdit de stade auparavant.",
+"question": "Cette durée est-elle légale ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Les supporters et leurs associations participent au bon déroulement des compétitions. Mais la loi punit les débordements dans une enceinte sportive, pendant un match ou sa retransmission en public."
+},
+{
+"t": "h",
+"x": "Les principaux délits"
+},
+{
+"t": "table",
+"head": [
+"Fait",
+"Peine maximale"
+],
+"rows": [
+[
+"Introduire de l'alcool par force ou par fraude",
+"1 an et 7 500 €"
+],
+[
+"Entrer en état d'ivresse",
+"7 500 € d'amende"
+],
+[
+"Fusées, fumigènes et artifices",
+"3 ans et 15 000 €"
+],
+[
+"Jeter un projectile dangereux",
+"3 ans et 15 000 €"
+],
+[
+"Troubler le match en pénétrant sur l'aire de jeu",
+"1 an et 15 000 €"
+],
+[
+"Provoquer à la haine ou à la violence",
+"1 an et 15 000 €"
+]
+]
+},
+{
+"t": "h",
+"x": "Deux interdictions de stade"
+},
+{
+"t": "table",
+"head": [
+"",
+"Judiciaire",
+"Administrative"
+],
+"rows": [
+[
+"Qui décide ?",
+"Le juge pénal, en plus de la peine",
+"Le préfet, par arrêté motivé"
+],
+[
+"Quand ?",
+"Après une condamnation",
+"Sans condamnation, si la personne est une menace grave pour l'ordre public"
+],
+[
+"Durée maximale",
+"5 ans",
+"12 mois, ou 24 mois si une interdiction a déjà été prononcée dans les trois années précédentes"
+]
+]
+},
+{
+"t": "p",
+"x": "Celui qui ne respecte pas l'interdiction prononcée par le juge risque deux ans d'emprisonnement et 30 000 € d'amende."
+}
+],
+"piege": "Ne confonds pas les deux : l'interdiction du juge peut durer cinq ans, celle du préfet douze mois au plus, ou vingt-quatre mois en cas d'interdiction dans les trois années précédentes.",
+"reponse": "Non. Théo n'a jamais été interdit de stade : l'arrêté du préfet ne peut pas dépasser douze mois. Les vingt-quatre mois ne sont possibles que pour une personne déjà interdite dans les trois années précédentes.",
+"sources": [
+"C. sport, L. 224-1",
+"C. sport, L. 332-3 à L. 332-10",
+"C. sport, L. 332-11, L. 332-13 et L. 332-16"
+],
+"questions": [
+"an23-q17",
+"agt-l05-q1",
+"agt-l05-q2"
+],
+"titre": "Les supporters et la sécurité des stades",
+"priorite": 1
+},
+"agt-l06": {
+"minutes": 5,
+"situation": {
+"texte": "Marc, ancien joueur, présente un jeune attaquant au directeur sportif d'un club de National. Le joueur signe son contrat. Pour le remercier, le club verse 1 000 € à Marc. Marc n'a pas de carte professionnelle.",
+"question": "Marc a-t-il agi comme agent sportif ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'agent sportif est une personne physique, c'est-à-dire un être humain et non une société. C'est un intermédiaire : il met en relation deux parties, directement ou indirectement, pour qu'elles concluent ou prolongent un contrat."
+},
+{
+"t": "h",
+"x": "Trois critères"
+},
+{
+"t": "list",
+"items": [
+"Une mise en relation de deux parties.",
+"Une contrepartie : une rémunération, une indemnité ou un simple avantage.",
+"Un contrat visé par la loi."
+]
+},
+{
+"t": "h",
+"x": "Les contrats concernés"
+},
+{
+"t": "h",
+"x": "Trois mots à connaître"
+},
+{
+"t": "p",
+"x": "Celui qui confie une mission est le mandant ; celui qui la reçoit et l'exécute est le mandataire. Le joueur qui charge un agent de lui trouver un club est donc le mandant, et l'agent son mandataire. Enfin, la nullité est la sanction d'un acte qui ne respecte pas la loi : il est privé d'effet."
+},
+{
+"t": "table",
+"head": [
+"Contrat",
+"Entre qui ?"
+],
+"rows": [
+[
+"Contrat de travail ou accord de participation",
+"Un sportif ou un entraîneur, et un club ou un organisateur de compétitions"
+],
+[
+"Contrat d'exploitation commerciale de l'image, du nom ou de la voix",
+"Un sportif ou un entraîneur professionnel, et le club qui l'emploie"
+],
+[
+"Accord de mutation",
+"Deux clubs"
+]
+]
+},
+{
+"t": "p",
+"x": "La mutation est le passage d'un joueur d'un club à un autre : on parle souvent de transfert. Cette activité est réservée au titulaire d'une carte professionnelle d'agent sportif."
+},
+{
+"t": "p",
+"x": "À l'inverse, celui qui conseille un joueur sur sa carrière, sans le mettre en relation avec un club pour un contrat, n'exerce pas l'activité d'agent sportif. C'est la nature réelle de l'intervention qui compte."
+}
+],
+"piege": "Un simple avantage suffit, et la prolongation d'un contrat compte autant que sa conclusion : pas besoin d'une commission en argent ni d'un nouveau club.",
+"reponse": "Oui. Marc a mis en relation un joueur et un club pour un contrat de travail, et il a été payé pour cela. C'est l'activité d'agent sportif. Sans carte professionnelle, il l'a exercée illégalement et s'expose à des sanctions pénales.",
+"sources": [
+"C. sport, L. 222-7",
+"C. sport, L. 222-2-10-1 (contrat d'image)",
+"C. sport, L. 222-20"
+],
+"questions": [
+"agt-01",
+"m01-q01",
+"agt-l06-q1",
+"m01-q03"
+],
+"titre": "Qu'est-ce qu'un agent sportif ?",
+"priorite": 3
+},
+"agt-l07": {
+"minutes": 5,
+"situation": {
+"texte": "Inès réussit la première épreuve de l'examen en novembre. Au printemps, elle échoue à la seconde épreuve, celle de la FFF.",
+"question": "Doit-elle tout repasser l'année suivante ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Pour exercer, il faut une carte professionnelle d'agent sportif. Avant le 5 août 2026, on disait « licence », et les décrets emploient encore ce mot. La carte est délivrée, suspendue ou retirée par la fédération délégataire, à travers sa commission des agents sportifs. Elle vaut pour une seule discipline."
+},
+{
+"t": "h",
+"x": "L'examen : deux épreuves"
+},
+{
+"t": "table",
+"head": [
+"",
+"Première épreuve",
+"Seconde épreuve"
+],
+"rows": [
+[
+"Qui fixe le sujet ?",
+"La commission interfédérale des agents sportifs, créée par le CNOSF",
+"La commission des agents sportifs de la fédération"
+],
+[
+"Programme",
+"Droit social, fiscal, contrats, assurances, activités physiques et sportives",
+"Règlements de la fédération, de la ligue et des fédérations internationales"
+],
+[
+"Résultats notifiés",
+"Dans les deux mois",
+"Dans le mois"
+]
+]
+},
+{
+"t": "p",
+"x": "Une session a lieu chaque année. Il faut réussir la première épreuve pour passer la seconde. Celui qui échoue à la seconde garde le bénéfice de la première pour la session suivante, dans la même discipline. L'agent qui a déjà obtenu une carte dans un autre sport en passant la première épreuve en est dispensé."
+},
+{
+"t": "h",
+"x": "Une fois la carte obtenue"
+},
+{
+"t": "p",
+"x": "Depuis la loi du 3 août 2026, tout agent suit une formation initiale et continue : déontologie, prévention des violences sexistes et sexuelles, lutte contre le blanchiment. Un manquement peut entraîner la suspension de la carte. L'agent déclare aussi à la fédération toute somme versée ou perçue. La fédération contrôle son activité chaque année et publie la liste des agents autorisés."
+}
+],
+"piege": "Ni le CNOSF, ni le ministère, ni la FIFA ne délivrent la carte : c'est la fédération délégataire. Le CNOSF n'intervient que pour la première épreuve de l'examen.",
+"reponse": "Non. Admise à la première épreuve et ajournée à la seconde, elle garde le bénéfice de la première si elle se présente à la session suivante, dans la même discipline. Elle ne repassera que l'épreuve de la FFF.",
+"sources": [
+"C. sport, L. 222-7",
+"C. sport, R. 222-1, R. 222-7 et R. 222-10",
+"C. sport, R. 222-14 à R. 222-18"
+],
+"questions": [
+"agt-02",
+"agt-15",
+"agt-16",
+"m01-q02"
+],
+"titre": "La carte professionnelle et l'examen",
+"priorite": 3
+},
+"agt-l08": {
+"minutes": 5,
+"situation": {
+"texte": "Julien était directeur sportif salarié d'un club de Ligue 2 jusqu'au 30 juin 2026. Il a réussi l'examen et veut obtenir sa carte professionnelle d'agent sportif de football dès janvier 2027.",
+"question": "Peut-il l'obtenir ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Deux obstacles empêchent d'obtenir ou de garder la carte. L'incompatibilité est un cumul de fonctions interdit, pour éviter les conflits d'intérêts. L'incapacité vient d'une condamnation ou d'une sanction qui ferme la profession."
+},
+{
+"t": "h",
+"x": "Les incompatibilités"
+},
+{
+"t": "p",
+"x": "Pas de carte pour celui qui exerce, ou a exercé dans les douze mois précédents, dans la même discipline, l'une de ces fonctions, même bénévole, même sans titre officiel :"
+},
+{
+"t": "list",
+"items": [
+"dirigeant, salarié ou membre de l'encadrement sportif ou médical d'un club qui emploie des sportifs rémunérés, ou d'un organisateur de compétitions ouvertes aux professionnels ;",
+"dirigeant, salarié, conseiller technique, arbitre ou membre d'une commission de la fédération qui délivre la carte, sauf la commission des agents sportifs ;",
+"dirigeant ou salarié d'un syndicat de joueurs, d'entraîneurs, d'arbitres ou de clubs."
+]
+},
+{
+"t": "p",
+"x": "La règle vaut aussi pour l'associé ou l'actionnaire d'un club qui emploie des sportifs rémunérés, et pour l'avocat inscrit au barreau qui n'a pas demandé son omission du tableau. Elle joue dans les deux sens : l'agent ne peut pas prendre ces fonctions tant qu'il a la carte, ni dans les douze mois qui suivent."
+},
+{
+"t": "h",
+"x": "Les incapacités"
+},
+{
+"t": "list",
+"items": [
+"Une condamnation définitive pour un crime ou pour certains délits, par exemple des violences ou des agressions sexuelles.",
+"Une condamnation pour fraude fiscale.",
+"Une faillite personnelle ou une interdiction de gérer."
+]
+}
+],
+"piege": "Le délai est de douze mois, et il vaut même pour une fonction bénévole ou exercée « en fait », sans titre officiel.",
+"reponse": "Non, pas en janvier 2027. Il a été salarié d'un club qui emploie des joueurs rémunérés moins de douze mois avant sa demande. Il devra attendre l'été 2027, douze mois après la fin de ses fonctions.",
+"sources": [
+"C. sport, L. 222-9, L. 222-10 et L. 222-11",
+"C. sport, L. 212-9",
+"CGI, art. 1741"
+],
+"questions": [
+"agt-03",
+"agt-04",
+"agt-48"
+],
+"titre": "Incompatibilités et incapacités",
+"priorite": 3
+},
+"agt-l09": {
+"minutes": 5,
+"situation": {
+"texte": "Sofia, agent sportif, développe son cabinet. Elle veut embaucher Tom, qui travaille déjà à mi-temps pour un autre agent. Elle pense aussi payer un ancien joueur pour repérer des talents le week-end.",
+"question": "Que peut-elle faire ?"
+},
+"blocs": [
+{
+"t": "h",
+"x": "Les préposés"
+},
+{
+"t": "p",
+"x": "Un préposé est une personne qui travaille pour l'agent ou pour sa société, sous son autorité : un salarié, par exemple. Deux règles s'appliquent à lui."
+},
+{
+"t": "list",
+"items": [
+"Il est soumis aux mêmes incompatibilités et incapacités que l'agent.",
+"Il ne peut être préposé que d'un seul agent ou d'une seule société d'agent."
+]
+},
+{
+"t": "h",
+"x": "Les superviseurs"
+},
+{
+"t": "p",
+"x": "Depuis la loi du 3 août 2026, l'agent peut s'adjoindre des superviseurs. Leurs missions se limitent à des tâches administratives de prospection, comme la rédaction de rapports et de comptes rendus. L'agent ne les paie que pour cela, et seulement s'il a signé avant un contrat qui fixe leur rémunération. Celle-ci peut être une part de ce que l'agent gagnera sur ses opérations des trois années suivantes."
+},
+{
+"t": "h",
+"x": "La société de l'agent"
+},
+{
+"t": "p",
+"x": "L'agent peut créer une société pour exercer, ou être préposé d'une société. Mais la carte reste la sienne : seule une personne physique peut être agent sportif, la société ne l'est pas. Ses dirigeants et ses associés :"
+},
+{
+"t": "list",
+"items": [
+"sont soumis aux mêmes incompatibilités et incapacités que l'agent ;",
+"ne peuvent pas être des sportifs ou des entraîneurs que l'agent peut représenter ;",
+"sont déclarés à la fédération, avec le bulletin n° 3 de leur casier judiciaire."
+]
+}
+],
+"piege": "Un préposé, un seul employeur : il est interdit de travailler pour deux agents ou pour deux sociétés d'agent à la fois.",
+"reponse": "Elle ne peut pas embaucher Tom tant qu'il est préposé d'un autre agent. Elle peut en revanche prendre l'ancien joueur comme superviseur, avec un contrat signé avant, pour du repérage et des rapports seulement : il ne négocie pas et ne met personne en relation.",
+"sources": [
+"C. sport, L. 222-7",
+"C. sport, L. 222-8, L. 222-12 et L. 222-12-1",
+"C. sport, L. 222-13 et L. 222-14"
+],
+"questions": [
+"agt-06",
+"agt-05",
+"agt-l09-q1"
+],
+"titre": "Les préposés et la société de l'agent",
+"priorite": 2
+},
+"agt-l10": {
+"minutes": 5,
+"situation": {
+"texte": "Enzo, agent sportif, s'entend oralement avec un milieu de terrain de National : il lui cherchera un club pour la saison prochaine. « On signera le papier quand j'aurai une offre », dit Enzo.",
+"question": "Enzo peut-il commencer à démarcher les clubs ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Avant toute mise en relation, l'agent doit avoir signé un contrat écrit avec l'une des parties : le joueur, l'entraîneur, le club ou l'organisateur de compétitions. Dans la pratique, on l'appelle souvent « mandat »."
+},
+{
+"t": "h",
+"x": "Les cinq mentions obligatoires"
+},
+{
+"t": "list",
+"items": [
+"La nature des services, et leur caractère exclusif ou non.",
+"La durée : trois ans au plus. La fédération peut fixer une durée maximale plus courte.",
+"La rémunération de l'agent : 10 % au plus du contrat conclu.",
+"La partie qui paie l'agent.",
+"L'obligation de communiquer le contrat et tout avenant à la fédération, dans le mois qui suit leur entrée en vigueur."
+]
+},
+{
+"t": "p",
+"x": "Un avenant est un document qui modifie un contrat déjà signé."
+},
+{
+"t": "h",
+"x": "La sanction"
+},
+{
+"t": "p",
+"x": "Un contrat contraire à ces règles, ou qui n'a pas été communiqué à la fédération, est « réputé nul et non écrit » : on fait comme s'il n'avait jamais existé. L'agent ne peut alors plus s'en servir pour réclamer sa commission."
+},
+{
+"t": "p",
+"x": "De plus, la rémunération de l'agent ne peut être versée qu'après la transmission de son contrat à la fédération. Celle-ci peut aussi sanctionner l'agent qui ne communique pas ses contrats."
+}
+],
+"piege": "Trois ans, c'est un maximum fixé par la loi : la fédération peut imposer une durée plus courte, jamais plus longue.",
+"reponse": "Non. Sans contrat écrit signé avant, il n'a pas le droit de mettre le joueur en relation avec un club. Il doit d'abord signer, puis communiquer le contrat à la fédération dans le mois qui suit son entrée en vigueur.",
+"sources": [
+"C. sport, L. 222-17",
+"C. sport, L. 222-18 et L. 222-19",
+"C. sport, R. 222-32"
+],
+"questions": [
+"agt-08",
+"agt-10",
+"agt-l10-q1"
+],
+"titre": "Le contrat écrit avec le client",
+"priorite": 3
+},
+"agt-l11": {
+"minutes": 5,
+"situation": {
+"texte": "Grâce à son agent, Lucas signe un contrat de travail de deux ans dans un club de Ligue 2 : 10 000 € brut par mois, soit 240 000 € brut au total. L'agent demande 30 000 €.",
+"question": "Est-ce permis ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La rémunération de l'agent est plafonnée : 10 % au plus du montant du contrat conclu par les parties qu'il a mises en rapport. Son montant est écrit dans le contrat de l'agent."
+},
+{
+"t": "h",
+"x": "10 % de quoi ?"
+},
+{
+"t": "table",
+"head": [
+"Contrat conclu",
+"Base du calcul"
+],
+"rows": [
+[
+"Contrat de travail du joueur ou de l'entraîneur",
+"La rémunération brute prévue au contrat et soumise aux cotisations sociales"
+],
+[
+"Autre contrat",
+"Le montant hors taxe du contrat, celui qui sert au calcul de la TVA"
+]
+]
+},
+{
+"t": "p",
+"x": "« Brut » veut dire avant déduction des cotisations du salarié. « Hors taxe » veut dire sans la TVA."
+},
+{
+"t": "h",
+"x": "La fédération peut baisser le taux"
+},
+{
+"t": "p",
+"x": "Chaque fédération délégataire peut fixer un taux inférieur à 10 %, en tenant compte des règles de sa fédération internationale. Ce taux peut varier selon le type de contrat. Mais elle ne peut jamais dépasser 10 %."
+},
+{
+"t": "h",
+"x": "Quand l'agent est-il payé ?"
+},
+{
+"t": "p",
+"x": "Pas avant d'avoir transmis son contrat à la fédération."
+}
+],
+"piege": "Pour un contrat de travail, on calcule sur le brut, pas sur le net. Et 10 % est un plafond, pas un tarif obligatoire.",
+"reponse": "Non. Le plafond est de 10 % de la rémunération brute, soit 24 000 € pour 240 000 €. Les 30 000 € demandés le dépassent. Et si la FFF a fixé un taux plus bas, c'est ce taux qui s'applique.",
+"sources": [
+"C. sport, L. 222-17 et L. 222-18",
+"C. sport, R. 222-37",
+"C. sport, A. 222-2 à A. 222-5"
+],
+"questions": [
+"agt-07",
+"agt-12",
+"agt-l11-q1",
+"agt-13"
+],
+"titre": "La rémunération : le plafond de 10 %",
+"priorite": 3
+},
+"agt-l12": {
+"minutes": 5,
+"situation": {
+"texte": "Nora est l'agent de Bilal, défenseur. Elle négocie son contrat avec un club de Ligue 1. Le club lui propose de la prendre « aussi comme agent du club » sur ce dossier, et de la payer directement.",
+"question": "Nora peut-elle accepter ?"
+},
+"blocs": [
+{
+"t": "h",
+"x": "Une seule partie"
+},
+{
+"t": "p",
+"x": "L'agent n'agit que pour une seule des parties au contrat, en droit comme en fait. Il ne peut pas représenter à la fois le joueur et le club."
+},
+{
+"t": "p",
+"x": "Depuis la loi du 3 août 2026, la règle s'étend aux agents qui coopèrent, par exemple au sein d'une même société. Ensemble, ils n'agissent que pour une seule partie sur toutes les opérations qui aboutissent à la mutation d'un joueur ou d'un entraîneur."
+},
+{
+"t": "h",
+"x": "Qui paie ?"
+},
+{
+"t": "p",
+"x": "Le contrat de l'agent indique la partie qui le rémunère. La rémunération due par le joueur ou l'entraîneur peut toutefois être payée, en tout ou en partie, par le club. Il faut alors une convention tripartite, c'est-à-dire à trois."
+},
+{
+"t": "list",
+"items": [
+"Elle est signée par toutes les parties.",
+"Elle précise les conséquences fiscales et sociales de ce paiement.",
+"L'agent donne quittance au club : il lui remet un reçu du paiement."
+]
+},
+{
+"t": "p",
+"x": "Le club paie à la place du joueur, mais l'agent reste l'agent du joueur seul."
+},
+{
+"t": "h",
+"x": "Quand ?"
+},
+{
+"t": "p",
+"x": "Le paiement n'intervient qu'après la transmission du contrat de l'agent à la fédération."
+}
+],
+"piege": "Être payé par le club ne veut pas dire travailler pour le club : la convention tripartite change celui qui paie, pas le client de l'agent.",
+"reponse": "Elle ne peut pas devenir aussi l'agent du club : un agent n'agit que pour une seule partie. En revanche, le club peut payer sa commission à la place de Bilal, par une convention tripartite signée par tous.",
+"sources": [
+"C. sport, L. 222-17 (I et II)",
+"C. sport, L. 222-18"
+],
+"questions": [
+"agt-30",
+"agt-31",
+"agt-33"
+],
+"titre": "Qui paie l'agent ? Une seule partie représentée",
+"priorite": 3
+},
+"agt-l13": {
+"minutes": 5,
+"situation": {
+"texte": "Un attaquant signe son contrat de travail dans un nouveau club. Deux agents sont intervenus : l'un pour le joueur, l'autre pour le club. Chacun réclame 10 %. Un ami du joueur, sans carte, demande aussi une part pour l'avoir présenté à son agent.",
+"question": "Qui peut toucher quoi ?"
+},
+"blocs": [
+{
+"t": "h",
+"x": "Un plafond commun"
+},
+{
+"t": "p",
+"x": "Quand plusieurs agents interviennent pour les parties à un même contrat, le total de leurs rémunérations ne peut pas dépasser 10 % du montant de ce contrat. Le plafond se partage, il ne s'additionne pas."
+},
+{
+"t": "h",
+"x": "Travailler à plusieurs"
+},
+{
+"t": "table",
+"head": [
+"Situation",
+"Règle"
+],
+"rows": [
+[
+"Convention de collaboration entre agents",
+"Seulement entre agents titulaires de la carte, dans la même discipline"
+],
+[
+"Apporteur d'affaires : il présente un sportif ou un entraîneur à l'agent",
+"Rémunération interdite, sauf s'il a lui-même la carte et a signé avant une convention de collaboration. Seule la première opération de placement peut alors être payée"
+],
+[
+"Agent d'un pays de l'Union européenne ou de l'Espace économique européen, autorisé à exercer chez lui",
+"Convention de présentation possible avec un agent sportif : une seule par saison, transmise sans délai à la fédération"
+],
+[
+"Agent d'un autre pays, sans carte",
+"Convention de présentation obligatoire avec un titulaire de la carte, limitée à une opération et transmise à la fédération avant tout début d'activité"
+]
+]
+},
+{
+"t": "p",
+"x": "Un agent établi dans un État ou territoire non coopératif en matière fiscale ne peut pas exercer en France. Toute convention de présentation conclue avec lui est nulle."
+}
+],
+"piege": "Deux agents, ce n'est pas deux fois 10 % : c'est 10 % au total pour le même contrat.",
+"reponse": "Les deux agents se partagent 10 % du contrat au maximum, par exemple 5 % chacun. L'ami du joueur ne touche rien : sans carte professionnelle, un apporteur d'affaires ne peut pas être rémunéré par l'agent.",
+"sources": [
+"C. sport, L. 222-17 (II)",
+"C. sport, L. 222-12-1",
+"C. sport, L. 222-15-1 et L. 222-16"
+],
+"questions": [
+"agt-09",
+"agt-32",
+"agt-l13-q1"
+],
+"titre": "Plusieurs agents sur une même opération",
+"priorite": 2
+},
+"agt-l14": {
+"minutes": 5,
+"situation": {
+"texte": "Un club professionnel veut faire signer Noah, 16 ans, espoir de ton club. Un agent a organisé les rendez-vous. Il dit aux parents : « Je ne vous demande rien aujourd'hui. Je prendrai ma commission quand Noah aura 18 ans. »",
+"question": "En a-t-il le droit ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un agent sportif peut s'occuper d'un mineur, c'est-à-dire d'un joueur de moins de 18 ans. Mais il le fait gratuitement."
+},
+{
+"t": "h",
+"x": "L'interdiction"
+},
+{
+"t": "p",
+"x": "Aucune rémunération, aucune indemnité, aucun avantage ne peut être versé à celui qui met les parties en rapport ou qui agit au nom du mineur. Trois contrats sont visés :"
+},
+{
+"t": "list",
+"items": [
+"le contrat relatif à l'exercice d'un sport par un mineur ;",
+"le contrat dont la cause est l'exercice d'un sport par un mineur ;",
+"le contrat relatif à la mutation d'un mineur d'un club à un autre."
+]
+},
+{
+"t": "p",
+"x": "L'interdiction vaut quelle que soit la durée du contrat et de ses avenants. Elle continue même si le joueur devient majeur pendant le contrat. Personne ne peut payer l'agent : ni les parents, ni le club."
+},
+{
+"t": "h",
+"x": "Les obligations de l'agent"
+},
+{
+"t": "list",
+"items": [
+"Son contrat écrit rappelle cette interdiction.",
+"Il transmet ce contrat à la fédération."
+]
+},
+{
+"t": "h",
+"x": "La sanction"
+},
+{
+"t": "p",
+"x": "Deux ans d'emprisonnement et 30 000 € d'amende. L'amende peut monter jusqu'au double des sommes indûment perçues. La fédération peut aussi prononcer une sanction disciplinaire."
+}
+],
+"piege": "La commission « reportée à la majorité » est interdite elle aussi : un contrat conclu pendant la minorité ne rapporte rien à l'agent, même après les 18 ans du joueur.",
+"reponse": "Non. Le contrat est conclu alors que Noah est mineur : l'agent ne peut rien toucher, ni maintenant ni après ses 18 ans. S'il se fait payer, il risque deux ans d'emprisonnement et 30 000 € d'amende.",
+"sources": [
+"C. sport, L. 222-5 et L. 222-6",
+"C. sport, L. 222-19 et R. 222-32"
+],
+"questions": [
+"agt-11",
+"agt-l14-q1",
+"agt-l14-q2"
+],
+"titre": "Les sportifs mineurs",
+"priorite": 3
+},
+"agt-l15": {
+"minutes": 5,
+"situation": {
+"texte": "Depuis deux ans, Rayan place des joueurs dans des clubs de National contre des commissions. Il n'a jamais passé l'examen. Un club le sait, et continue pourtant de travailler avec lui.",
+"question": "Que risquent Rayan et le club ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Deux sortes de sanctions existent, et elles peuvent s'ajouter : les sanctions pénales, prononcées par un juge, et les sanctions disciplinaires, prononcées par la fédération."
+},
+{
+"t": "h",
+"x": "Les sanctions pénales"
+},
+{
+"t": "table",
+"head": [
+"Fait",
+"Peine maximale"
+],
+"rows": [
+[
+"Exercer sans carte, ou malgré une suspension ou un retrait",
+"5 ans et 375 000 €"
+],
+[
+"Exercer en violant une incompatibilité, les règles du contrat écrit ou le plafond de 10 %",
+"5 ans et 375 000 €"
+],
+[
+"Exercer malgré une incapacité ou une interdiction administrative",
+"1 an et 15 000 €"
+],
+[
+"Se faire payer pour le contrat d'un mineur",
+"2 ans et 30 000 €"
+]
+]
+},
+{
+"t": "p",
+"x": "L'amende peut être portée jusqu'au double des sommes indûment perçues. Le juge peut ajouter une interdiction d'exercer l'activité d'agent sportif, temporaire ou définitive."
+},
+{
+"t": "h",
+"x": "Les sanctions disciplinaires"
+},
+{
+"t": "p",
+"x": "La commission des agents sportifs de la fédération peut prononcer contre l'agent un avertissement, une sanction pécuniaire, la suspension de sa carte ou son retrait, avec interdiction d'en obtenir une autre pendant cinq ans au plus."
+},
+{
+"t": "p",
+"x": "Les clubs et les licenciés peuvent aussi être sanctionnés, par exemple s'ils font appel à une personne sans carte. Pour contester une sanction, il faut d'abord passer par la conciliation du CNOSF, puis saisir le tribunal administratif."
+}
+],
+"piege": "Ne mélange pas les trois peines : cinq ans et 375 000 € pour l'exercice sans carte, deux ans et 30 000 € pour la rémunération sur un mineur, un an et 15 000 € pour l'exercice malgré une incapacité.",
+"reponse": "Rayan exerce sans carte : il risque cinq ans d'emprisonnement et 375 000 € d'amende, voire le double des sommes perçues. Le club, lui, n'a pas le droit de recourir à une personne sans carte : la fédération peut le sanctionner.",
+"sources": [
+"C. sport, L. 222-18 à L. 222-21",
+"C. sport, L. 222-6",
+"C. sport, R. 222-38, R. 222-39 et R. 222-41"
+],
+"questions": [
+"agt-14",
+"agt-49",
+"agt-l15-q1"
+],
+"titre": "Exercer sans carte et autres sanctions",
+"priorite": 3
+},
+"agt-l16": {
+"minutes": 5,
+"situation": {
+"texte": "Un investisseur inconnu propose à Clara, agent sportif de football, de financer le transfert d'un joueur. L'argent viendrait d'une société installée à l'étranger. Il refuse de dire qui en sont les propriétaires.",
+"question": "Que doit faire Clara ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Blanchir de l'argent, c'est cacher l'origine illégale de fonds pour leur donner une apparence légale. On décrit souvent trois étapes."
+},
+{
+"t": "table",
+"head": [
+"Étape",
+"Ce qui se passe"
+],
+"rows": [
+[
+"Placement",
+"L'argent sale entre dans le système financier"
+],
+[
+"Empilage (ou dispersion)",
+"On multiplie les opérations complexes pour masquer l'origine des fonds"
+],
+[
+"Intégration",
+"L'argent revient dans l'économie légale"
+]
+]
+},
+{
+"t": "h",
+"x": "Qui est concerné ?"
+},
+{
+"t": "p",
+"x": "Les agents sportifs titulaires d'une carte professionnelle délivrée par une fédération dont le nombre d'agents dépasse un seuil fixé par décret."
+},
+{
+"t": "h",
+"x": "Les obligations de vigilance"
+},
+{
+"t": "list",
+"items": [
+"Classer les risques, selon les services, les conditions des transactions, les clients et les pays d'origine ou de destination des fonds.",
+"Avant de travailler avec un client, l'identifier et vérifier son identité sur un document probant. Même chose pour le bénéficiaire effectif : la personne physique qui contrôle le client en dernier lieu. Dans une société, c'est celle qui détient plus de 25 % du capital ou des droits de vote, ou qui la contrôle par un autre moyen.",
+"Se renseigner sur l'objet de la relation, puis rester vigilant pendant toute sa durée.",
+"Conserver les documents cinq ans après la fin de la relation.",
+"Déclarer à Tracfin, le service de renseignement financier, toute opération suspecte, même une simple tentative. Cette déclaration est confidentielle : le client ne doit pas en être informé."
+]
+}
+],
+"piege": "L'« empilage » n'est pas l'entrée de l'argent dans le circuit (c'est le placement) : c'est la multiplication des opérations pour brouiller les pistes.",
+"reponse": "Clara doit identifier son client et le bénéficiaire effectif de la société avant d'aller plus loin. Si on lui refuse ces informations, elle ne réalise aucune opération et n'engage pas la relation. Si elle soupçonne une origine illicite des fonds, elle doit le déclarer à Tracfin, même sans opération réalisée, et sans prévenir l'investisseur.",
+"sources": [
+"C. mon. fin., L. 561-2 (16°) et L. 561-2-2",
+"C. mon. fin., L. 561-4-1, L. 561-5, L. 561-5-1, L. 561-6 et L. 561-8",
+"C. mon. fin., L. 561-12, L. 561-15 et L. 561-18",
+"C. mon. fin., R. 561-1"
+],
+"questions": [
+"an25-q17",
+"agt-47",
+"agt-42",
+"agt-41"
+],
+"titre": "Blanchiment : la vigilance de l'agent",
+"priorite": 2
+},
+"agt-l17": {
+"minutes": 5,
+"situation": {
+"texte": "Un contrôle a lieu chez Samir, agent sportif de football. Il n'a aucun dossier sur ses clients : ni pièce d'identité, ni classement des risques. « De toute façon, seul un juge peut me sanctionner », dit-il.",
+"question": "A-t-il raison ?"
+},
+"blocs": [
+{
+"t": "h",
+"x": "Qui contrôle ?"
+},
+{
+"t": "p",
+"x": "Depuis le 5 août 2026, le contrôle anti-blanchiment des agents sportifs revient à l'organisme de contrôle indépendant de la fédération. Chaque fédération qui a constitué une ligue professionnelle, ou une société commerciale, doit créer cet organisme. Il contrôle aussi les comptes des clubs et l'activité financière des agents. Si la fédération ne l'a pas créé, elle contrôle elle-même."
+},
+{
+"t": "h",
+"x": "Après le contrôle"
+},
+{
+"t": "p",
+"x": "L'autorité qui inspecte peut adresser à l'agent une injonction, c'est-à-dire l'ordre de se mettre en conformité. En cas de manquement, l'organisme de contrôle ou la fédération saisit la Commission nationale des sanctions, placée auprès du ministre chargé de l'économie."
+},
+{
+"t": "h",
+"x": "Les sanctions de la Commission"
+},
+{
+"t": "list",
+"items": [
+"L'avertissement.",
+"Le blâme.",
+"L'interdiction temporaire d'exercer, pour cinq ans au plus.",
+"Le retrait de la carte professionnelle."
+]
+},
+{
+"t": "p",
+"x": "À la place ou en plus, elle peut prononcer une sanction pécuniaire : jusqu'à cinq millions d'euros, ou jusqu'au double de l'avantage retiré du manquement quand il peut être calculé. Ce sont des sanctions administratives, prononcées sans juge pénal."
+},
+{
+"t": "h",
+"x": "Et Tracfin ?"
+},
+{
+"t": "p",
+"x": "Tracfin reçoit et analyse les déclarations de soupçon. Il ne contrôle pas les agents et ne les sanctionne pas."
+}
+],
+"piege": "Tracfin ne contrôle pas et ne sanctionne pas : le contrôle revient à l'organisme de la fédération ou à la fédération, la sanction à la Commission nationale des sanctions.",
+"reponse": "Non. Sans passer par un juge pénal, la Commission nationale des sanctions peut lui infliger l'une de ces sanctions : blâme, interdiction d'exercer ou retrait de sa carte, à laquelle peut s'ajouter une amende pouvant atteindre cinq millions d'euros. L'autorité de contrôle peut aussi lui enjoindre de se mettre en règle.",
+"sources": [
+"C. mon. fin., L. 561-36 (I, 13°) et L. 561-36-2 (VI et VII)",
+"C. mon. fin., L. 561-37, L. 561-38 et L. 561-40",
+"C. mon. fin., L. 561-23",
+"C. sport, L. 133-1"
+],
+"questions": [
+"agt-40",
+"agt-45",
+"agt-46"
+],
+"titre": "Blanchiment : contrôles et sanctions",
+"priorite": 1
+}
+}
+},
 {
 "domaine": "societes",
 "titre": "Module 03 · Droit des sociétés",
