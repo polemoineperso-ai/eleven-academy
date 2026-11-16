@@ -3803,7 +3803,7 @@
 "titre": "Introduction",
 "blocs": [
 {
-"t": "p",
+"t": "h",
 "x": "Objectif pédagogique"
 },
 {
@@ -3966,7 +3966,7 @@
 "x": "L'agent sportif doit respecter plusieurs obligations."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Responsabilité contractuelle"
 },
 {
@@ -3974,7 +3974,7 @@
 "x": "Il doit respecter les engagements prévus dans le mandat signé avec son client."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Responsabilité civile"
 },
 {
@@ -3982,7 +3982,7 @@
 "x": "Il peut être tenu de réparer un préjudice causé par une faute dans l'exercice de son activité."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Responsabilité disciplinaire"
 },
 {
@@ -3990,7 +3990,7 @@
 "x": "Il peut faire l'objet de sanctions prononcées par les instances compétentes de la fédération."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Responsabilité pénale"
 },
 {
@@ -4178,7 +4178,7 @@
 "x": "Appliquer"
 },
 {
-"t": "p",
+"t": "h",
 "x": "Résoudre des situations concrètes"
 },
 {
@@ -4207,9 +4207,12 @@
 "Les règlements de la FFF.",
 "Les règlements de la FIFA.",
 "Les textes réglementaires relatifs à la profession.",
-"Chaque texte possède un champ d'application particulier.",
-"Le candidat doit être capable de déterminer quel texte s'applique à une situation donnée."
+"Chaque texte possède un champ d'application particulier."
 ]
+},
+{
+"t": "p",
+"x": "Le candidat doit être capable de déterminer quel texte s'applique à une situation donnée."
 },
 {
 "t": "h",
@@ -4358,7 +4361,7 @@
 "x": "Intégrité et conformité: 15%"
 },
 {
-"t": "p",
+"t": "h",
 "x": "Entraînement et examens blancs: 10%"
 },
 {
@@ -4403,7 +4406,7 @@
 },
 {
 "t": "cas",
-"cas": "un agent met en relation un joueur et un club pour négocier un contrat de travail.",
+"cas": "Un agent met en relation un joueur et un club pour négocier un contrat de travail.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -4417,7 +4420,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur confie à un agent la mission de négocier son futur contrat.",
+"cas": "Un joueur confie à un agent la mission de négocier son futur contrat.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -4431,7 +4434,7 @@
 },
 {
 "t": "cas",
-"cas": "l'agent sportif qui reçoit un mandat écrit du joueur.",
+"cas": "L'agent sportif qui reçoit un mandat écrit du joueur.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -4449,7 +4452,7 @@
 },
 {
 "t": "cas",
-"cas": "la FFF pour le football en France.",
+"cas": "La FFF pour le football en France.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -4463,7 +4466,7 @@
 },
 {
 "t": "cas",
-"cas": "la Ligue de football professionnel (LFP).",
+"cas": "La Ligue de football professionnel (LFP).",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -4477,7 +4480,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur, un entraîneur ou un agent sportif.",
+"cas": "Un joueur, un entraîneur ou un agent sportif.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -4491,7 +4494,7 @@
 },
 {
 "t": "cas",
-"cas": "une SAS représentant une société sportive.",
+"cas": "Une SAS représentant une société sportive.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -4527,7 +4530,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur s'engage à confier exclusivement à un agent la négociation de son prochain contrat.",
+"cas": "Un joueur s'engage à confier exclusivement à un agent la négociation de son prochain contrat.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -4549,9 +4552,9 @@
 },
 {
 "t": "cas",
-"cas": "modification de la rémunération prévue dans un mandat.",
+"cas": "Modification de la rémunération prévue dans un mandat.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "h",
@@ -5016,10 +5019,8 @@
 "x": "Retenir uniquement la réponse juridiquement conforme à l'ensemble des éléments de la question."
 },
 {
-"t": "cas",
-"cas": "de résolution complète",
-"analyse": "",
-"lab": "Exemple football"
+"t": "h",
+"x": "Exemple de résolution complète"
 },
 {
 "t": "lead",
@@ -5066,7 +5067,7 @@
 "x": "conclu. Le défaut d'autorisation peut entraîner des sanctions."
 },
 {
-"t": "p",
+"t": "h",
 "x": "10 questions d'entraînement"
 },
 {
@@ -7875,8 +7876,12 @@
 "x": "Pour constituer une société, les associés peuvent réaliser différents types d'apports."
 },
 {
+"t": "h",
+"x": "A. L'apport en numéraire"
+},
+{
 "t": "p",
-"x": "A. L'apport en numéraire Il s'agit d'une somme d'argent apportée à la société."
+"x": "Il s'agit d'une somme d'argent apportée à la société."
 },
 {
 "t": "cas",
@@ -7901,34 +7906,18 @@
 "x": "Chaque associé reçoit des actions en contrepartie de son apport."
 },
 {
+"t": "h",
+"x": "B. L'apport en nature"
+},
+{
 "t": "p",
-"x": "B. L'apport en nature Il s'agit d'un bien autre qu'une somme d'argent."
+"x": "Il s'agit d'un bien autre qu'une somme d'argent."
 },
 {
 "t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "Un ordinateur."
-},
-{
-"t": "p",
-"x": "Un véhicule."
-},
-{
-"t": "p",
-"x": "Du matériel professionnel."
-},
-{
-"t": "p",
-"x": "Un fonds de commerce."
-},
-{
-"t": "p",
-"x": "Un logiciel ou certains droits incorporels cessibles."
+"lab": "Exemples",
+"cas": "Un ordinateur, un véhicule, du matériel professionnel, un fonds de commerce, un logiciel ou certains droits incorporels cessibles.",
+"analyse": ""
 },
 {
 "t": "p",
@@ -7939,14 +7928,18 @@
 "x": "Selon la forme sociale et les conditions légales, l'intervention d'un commissaire aux apports peut être obligatoire ou faire l'objet d'une dispense."
 },
 {
+"t": "h",
+"x": "C. L'apport en industrie"
+},
+{
 "t": "p",
-"x": "C. L'apport en industrie Il correspond à la mise à disposition de compétences, de connaissances, de travail ou de services."
+"x": "Il correspond à la mise à disposition de compétences, de connaissances, de travail ou de services."
 },
 {
 "t": "cas",
 "cas": "Un associé apporte son expertise commerciale et son réseau professionnel à une société.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "p",
@@ -7980,15 +7973,18 @@
 "Le dividende effectivement versé.",
 "La perte comptable.",
 "La contribution aux pertes.",
-"L'obligation aux dettes sociales.",
-"Ces notions ne sont pas interchangeables."
+"L'obligation aux dettes sociales."
 ]
+},
+{
+"t": "p",
+"x": "Ces notions ne sont pas interchangeables."
 },
 {
 "t": "cas",
 "cas": "Une société réalise 100 000 € de bénéfice comptable.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "p",
@@ -8177,34 +8173,30 @@
 "x": "Sociétés civiles et sociétés commerciales"
 },
 {
+"t": "h",
+"x": "A. Les sociétés civiles"
+},
+{
 "t": "p",
-"x": "A. Les sociétés civiles Elles exercent en principe une activité de nature civile."
+"x": "Elles exercent en principe une activité de nature civile."
 },
 {
 "t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "Société civile immobilière (SCI)."
-},
-{
-"t": "p",
-"x": "Société civile professionnelle (SCP)."
-},
-{
-"t": "p",
-"x": "Société civile de moyens (SCM)."
+"lab": "Exemples",
+"cas": "Société civile immobilière (SCI), société civile professionnelle (SCP), société civile de moyens (SCM).",
+"analyse": ""
 },
 {
 "t": "p",
 "x": "Une SCI peut notamment permettre à plusieurs associés de détenir un patrimoine immobilier."
 },
 {
+"t": "h",
+"x": "B. Les sociétés commerciales"
+},
+{
 "t": "p",
-"x": "B. Les sociétés commerciales Elles exercent une activité commerciale ou possèdent une forme commerciale déterminée par la loi."
+"x": "Elles exercent une activité commerciale ou possèdent une forme commerciale déterminée par la loi."
 },
 {
 "t": "lead",
@@ -8218,18 +8210,28 @@
 "SAS.",
 "SASU.",
 "SA.",
-"SNC.",
-"Une société peut être commerciale par sa forme, même si son activité est civile.",
-"C'est notamment le cas de la SAS et de la SARL."
+"SNC."
 ]
+},
+{
+"t": "p",
+"x": "Une société peut être commerciale par sa forme, même si son activité est civile."
+},
+{
+"t": "p",
+"x": "C'est notamment le cas de la SAS et de la SARL."
 },
 {
 "t": "h",
 "x": "Sociétés de personnes et sociétés de capitaux"
 },
 {
+"t": "h",
+"x": "A. Les sociétés de personnes"
+},
+{
 "t": "p",
-"x": "A. Les sociétés de personnes La personnalité des associés joue un rôle important."
+"x": "La personnalité des associés joue un rôle important."
 },
 {
 "t": "p",
@@ -8237,13 +8239,17 @@
 },
 {
 "t": "cas",
-"cas": "la SNC.",
+"cas": "La SNC.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
+},
+{
+"t": "h",
+"x": "B. Les sociétés de capitaux"
 },
 {
 "t": "p",
-"x": "B. Les sociétés de capitaux La participation financière et la détention des titres jouent un rôle important."
+"x": "La participation financière et la détention des titres jouent un rôle important."
 },
 {
 "t": "p",
@@ -8251,28 +8257,16 @@
 },
 {
 "t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "SA."
-},
-{
-"t": "p",
-"x": "SAS."
-},
-{
-"t": "p",
-"x": "SARL, qui présente également certaines caractéristiques intermédiaires."
+"lab": "Exemples",
+"cas": "SA, SAS, SARL, qui présente également certaines caractéristiques intermédiaires.",
+"analyse": ""
 },
 {
 "t": "h",
 "x": "Sociétés à responsabilité limitée et illimitée"
 },
 {
-"t": "p",
+"t": "h",
 "x": "Responsabilité limitée"
 },
 {
@@ -8281,24 +8275,12 @@
 },
 {
 "t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"lab": "Exemples",
+"cas": "SARL, SAS, SA.",
+"analyse": ""
 },
 {
-"t": "p",
-"x": "SARL."
-},
-{
-"t": "p",
-"x": "SAS."
-},
-{
-"t": "p",
-"x": "SA."
-},
-{
-"t": "p",
+"t": "h",
 "x": "Responsabilité indéfinie"
 },
 {
@@ -8309,7 +8291,7 @@
 "t": "cas",
 "cas": "SNC.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "p",
@@ -8388,8 +8370,12 @@
 "x": "Code de commerce – Articles L. 223-1 et suivants"
 },
 {
+"t": "h",
+"x": "A. Définition"
+},
+{
 "t": "p",
-"x": "A. Définition La SARL est une société commerciale dans laquelle la responsabilité des associés est en principe limitée au montant de leurs apports."
+"x": "La SARL est une société commerciale dans laquelle la responsabilité des associés est en principe limitée au montant de leurs apports."
 },
 {
 "t": "lead",
@@ -8400,10 +8386,20 @@
 "items": [
 "Deux associés au minimum.",
 "Cent associés au maximum.",
-"Lorsqu'elle ne comporte qu'un seul associé, elle prend la forme d'une EURL.",
-"B. Le capital social Il n'existe pas de capital social minimum légal.",
-"Le capital est divisé en parts sociales."
+"Lorsqu'elle ne comporte qu'un seul associé, elle prend la forme d'une EURL."
 ]
+},
+{
+"t": "h",
+"x": "B. Le capital social"
+},
+{
+"t": "p",
+"x": "Il n'existe pas de capital social minimum légal."
+},
+{
+"t": "p",
+"x": "Le capital est divisé en parts sociales."
 },
 {
 "t": "lead",
@@ -8422,8 +8418,12 @@
 "x": "Les apports en numéraire doivent être libérés à hauteur d'au moins 20 % à la constitution. Le solde doit être versé dans les cinq ans."
 },
 {
+"t": "h",
+"x": "C. La direction"
+},
+{
 "t": "p",
-"x": "C. La direction La SARL est dirigée par un ou plusieurs gérants."
+"x": "La SARL est dirigée par un ou plusieurs gérants."
 },
 {
 "t": "p",
@@ -8474,7 +8474,7 @@
 ]
 },
 {
-"t": "p",
+"t": "h",
 "x": "E. La responsabilité"
 },
 {
@@ -8490,7 +8490,7 @@
 "x": "Il peut également être condamné dans certaines situations de responsabilité pour insuffisance d'actif."
 },
 {
-"t": "p",
+"t": "h",
 "x": "F. Le régime fiscal"
 },
 {
@@ -8519,9 +8519,12 @@
 "Agent A : 60 % du capital.",
 "Agent B : 40 % du capital.",
 "Capital : 10 000 €.",
-"La société est dirigée par un gérant.",
-"Les décisions sont prises selon les règles légales et statutaires."
+"La société est dirigée par un gérant."
 ]
+},
+{
+"t": "p",
+"x": "Les décisions sont prises selon les règles légales et statutaires."
 },
 {
 "t": "memo",
@@ -8537,8 +8540,12 @@
 "x": "Code de commerce – Articles L. 227-1 et suivants"
 },
 {
+"t": "h",
+"x": "A. Définition"
+},
+{
 "t": "p",
-"x": "A. Définition La SAS est une société commerciale caractérisée par une grande liberté statutaire."
+"x": "La SAS est une société commerciale caractérisée par une grande liberté statutaire."
 },
 {
 "t": "p",
@@ -8569,8 +8576,12 @@
 "x": "Les apports en numéraire doivent être libérés d'au moins la moitié lors de la constitution. Le solde doit être versé dans les cinq ans."
 },
 {
+"t": "h",
+"x": "C. La direction"
+},
+{
 "t": "p",
-"x": "C. La direction La SAS doit obligatoirement disposer d'un président."
+"x": "La SAS doit obligatoirement disposer d'un président."
 },
 {
 "t": "lead",
@@ -8598,8 +8609,12 @@
 ]
 },
 {
+"t": "h",
+"x": "D. Les décisions"
+},
+{
 "t": "p",
-"x": "D. Les décisions Les statuts déterminent largement les modalités de fonctionnement et de prise de décision."
+"x": "Les statuts déterminent largement les modalités de fonctionnement et de prise de décision."
 },
 {
 "t": "p",
@@ -8621,7 +8636,7 @@
 ]
 },
 {
-"t": "p",
+"t": "h",
 "x": "E. La responsabilité"
 },
 {
@@ -8633,7 +8648,7 @@
 "x": "Le président peut engager sa responsabilité personnelle en cas de faute de gestion ou de violation de ses obligations légales."
 },
 {
-"t": "p",
+"t": "h",
 "x": "F. Le régime fiscal et social"
 },
 {
@@ -8674,9 +8689,12 @@
 "Un président.",
 "Un directeur général.",
 "Un comité stratégique.",
-"Des clauses d'agrément pour contrôler l'entrée de nouveaux associés.",
-"La SAS permet d'organiser précisément la gouvernance."
+"Des clauses d'agrément pour contrôler l'entrée de nouveaux associés."
 ]
+},
+{
+"t": "p",
+"x": "La SAS permet d'organiser précisément la gouvernance."
 },
 {
 "t": "memo",
@@ -8692,8 +8710,12 @@
 "x": "Code de commerce – Articles L. 225-1 et suivants"
 },
 {
+"t": "h",
+"x": "A. Définition"
+},
+{
 "t": "p",
-"x": "A. Définition La SA est une société commerciale dont le capital est divisé en actions."
+"x": "La SA est une société commerciale dont le capital est divisé en actions."
 },
 {
 "t": "p",
@@ -8740,26 +8762,43 @@
 "t": "list",
 "items": [
 "Directoire.",
-"Conseil de surveillance.",
-"Le directoire assure la gestion de la société.",
-"Le conseil de surveillance contrôle sa gestion.",
-"C. La responsabilité Les actionnaires supportent les pertes à hauteur de leurs apports."
+"Conseil de surveillance."
 ]
+},
+{
+"t": "p",
+"x": "Le directoire assure la gestion de la société."
+},
+{
+"t": "p",
+"x": "Le conseil de surveillance contrôle sa gestion."
+},
+{
+"t": "h",
+"x": "C. La responsabilité"
+},
+{
+"t": "p",
+"x": "Les actionnaires supportent les pertes à hauteur de leurs apports."
 },
 {
 "t": "p",
 "x": "Les dirigeants peuvent engager leur responsabilité civile, pénale ou fiscale dans les conditions prévues par la loi."
 },
 {
+"t": "h",
+"x": "D. Le régime fiscal"
+},
+{
 "t": "p",
-"x": "D. Le régime fiscal La SA est en principe soumise à l'impôt sur les sociétés."
+"x": "La SA est en principe soumise à l'impôt sur les sociétés."
 },
 {
 "t": "p",
 "x": "Une option temporaire pour l'impôt sur le revenu peut être possible sous certaines conditions."
 },
 {
-"t": "p",
+"t": "h",
 "x": "E. Exemple dans le football"
 },
 {
@@ -8794,8 +8833,12 @@
 "lab": "Point de vigilance"
 },
 {
+"t": "h",
+"x": "A. Définition"
+},
+{
 "t": "p",
-"x": "A. Définition La SNC est une société commerciale dans laquelle les associés ont tous la qualité de commerçant."
+"x": "La SNC est une société commerciale dans laquelle les associés ont tous la qualité de commerçant."
 },
 {
 "t": "p",
@@ -8806,8 +8849,12 @@
 "x": "Il n'existe pas de capital minimum légal."
 },
 {
+"t": "h",
+"x": "B. La responsabilité"
+},
+{
 "t": "p",
-"x": "B. La responsabilité C'est sa caractéristique essentielle."
+"x": "C'est sa caractéristique essentielle."
 },
 {
 "t": "lead",
@@ -8829,8 +8876,12 @@
 "x": "L'associé pourra ensuite exercer un recours contre les autres associés selon les règles applicables."
 },
 {
+"t": "h",
+"x": "C. La direction"
+},
+{
 "t": "p",
-"x": "C. La direction La SNC est dirigée par un ou plusieurs gérants."
+"x": "La SNC est dirigée par un ou plusieurs gérants."
 },
 {
 "t": "p",
@@ -8841,8 +8892,12 @@
 "x": "Les décisions sont prises selon les règles prévues par les statuts et le Code de commerce."
 },
 {
+"t": "h",
+"x": "D. Le régime fiscal"
+},
+{
 "t": "p",
-"x": "D. Le régime fiscal La SNC relève en principe de l'impôt sur le revenu, selon le régime des sociétés de personnes."
+"x": "La SNC relève en principe de l'impôt sur le revenu, selon le régime des sociétés de personnes."
 },
 {
 "t": "p",
@@ -8947,11 +9002,20 @@
 "Du fonctionnement souhaité.",
 "Du régime social du dirigeant.",
 "De la fiscalité.",
-"Des contraintes propres au Code du sport.",
-"Pour un agent qui démarre seul, la SASU ou l'EURL peuvent être étudiées.",
-"Pour plusieurs agents souhaitant travailler ensemble, une SAS ou une SARL peuvent être envisagées.",
-"Mais le choix doit être confronté aux dispositions particulières du Code du sport."
+"Des contraintes propres au Code du sport."
 ]
+},
+{
+"t": "p",
+"x": "Pour un agent qui démarre seul, la SASU ou l'EURL peuvent être étudiées."
+},
+{
+"t": "p",
+"x": "Pour plusieurs agents souhaitant travailler ensemble, une SAS ou une SARL peuvent être envisagées."
+},
+{
+"t": "p",
+"x": "Mais le choix doit être confronté aux dispositions particulières du Code du sport."
 }
 ]
 },
@@ -9004,7 +9068,7 @@
 ]
 },
 {
-"t": "p",
+"t": "h",
 "x": "Étape 4 : déposer les apports"
 },
 {
@@ -9012,7 +9076,7 @@
 "x": "Les fonds sont déposés selon les modalités applicables."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Étape 5 : publier une annonce légale"
 },
 {
@@ -9020,7 +9084,7 @@
 "x": "La constitution doit faire l'objet des formalités de publicité requises."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Étape 6 : immatriculer la société"
 },
 {
@@ -9051,7 +9115,7 @@
 "t": "cas",
 "cas": "Dans une SAS, les statuts peuvent prévoir une clause d'agrément empêchant la vente d'actions à un tiers sans accord préalable.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "h",
@@ -9093,9 +9157,12 @@
 "items": [
 "Le bilan.",
 "Le compte de résultat.",
-"L'annexe, lorsque celle-ci est requise.",
-"Ils permettent de connaître la situation financière de la société."
+"L'annexe, lorsque celle-ci est requise."
 ]
+},
+{
+"t": "p",
+"x": "Ils permettent de connaître la situation financière de la société."
 },
 {
 "t": "h",
@@ -9330,7 +9397,7 @@
 "x": "Deux configurations sont possibles."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Configuration 1 : une seule société sportive"
 },
 {
@@ -9398,7 +9465,7 @@
 "x": "Rémunérations des sportifs"
 },
 {
-"t": "p",
+"t": "h",
 "x": "800 000 €"
 },
 {
@@ -9482,16 +9549,19 @@
 "SARL.",
 "SA.",
 "SAS.",
-"Société coopérative d'intérêt collectif (SCIC).",
-"Il faut comprendre les caractéristiques des trois formes historiques spécifiquement sportives."
+"Société coopérative d'intérêt collectif (SCIC)."
 ]
+},
+{
+"t": "p",
+"x": "Il faut comprendre les caractéristiques des trois formes historiques spécifiquement sportives."
 },
 {
 "t": "h",
 "x": "L'EUSRL – Entreprise unipersonnelle sportive à responsabilité limitée"
 },
 {
-"t": "p",
+"t": "h",
 "x": "Définition"
 },
 {
@@ -9546,7 +9616,7 @@
 "x": "La SAOS – Société anonyme à objet sportif"
 },
 {
-"t": "p",
+"t": "h",
 "x": "Définition"
 },
 {
@@ -9582,7 +9652,7 @@
 "x": "Particularités concernant la rémunération des membres élus des organes de direction."
 },
 {
-"t": "p",
+"t": "h",
 "x": "La participation de l'association"
 },
 {
@@ -9598,7 +9668,7 @@
 "x": "Elle permet de maintenir un lien institutionnel entre l'association et la société sportive."
 },
 {
-"t": "p",
+"t": "h",
 "x": "La rémunération des dirigeants"
 },
 {
@@ -9619,7 +9689,7 @@
 "x": "La SASP – Société anonyme sportive professionnelle"
 },
 {
-"t": "p",
+"t": "h",
 "x": "Définition"
 },
 {
@@ -9682,9 +9752,12 @@
 "SARL.",
 "SA.",
 "SAS.",
-"SCIC.",
-"Cela permet aux clubs de choisir une structure adaptée à leur organisation."
+"SCIC."
 ]
+},
+{
+"t": "p",
+"x": "Cela permet aux clubs de choisir une structure adaptée à leur organisation."
 },
 {
 "t": "vigilance",
@@ -10285,7 +10358,7 @@
 "x": "Il faut distinguer deux mécanismes."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Impôt sur les sociétés (IS)"
 },
 {
@@ -10293,7 +10366,7 @@
 "x": "La société est imposée directement sur son bénéfice fiscal."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Impôt sur le revenu (IR)"
 },
 {
@@ -10334,25 +10407,9 @@
 },
 {
 "t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "EURL détenue par une personne physique, sous réserve des options exercées."
-},
-{
-"t": "p",
-"x": "SNC."
-},
-{
-"t": "p",
-"x": "SARL de famille sous conditions."
-},
-{
-"t": "p",
-"x": "Certaines sociétés ayant opté temporairement pour l'IR."
+"lab": "Exemples",
+"cas": "EURL détenue par une personne physique, sous réserve des options exercées, SNC, SARL de famille sous conditions, certaines sociétés ayant opté temporairement pour l'IR.",
+"analyse": ""
 },
 {
 "t": "h",
@@ -10374,9 +10431,9 @@
 },
 {
 "t": "cas",
-"cas": "une SASU",
+"cas": "Une SASU",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "p",
@@ -10481,7 +10538,7 @@
 "titre": "Introduction",
 "blocs": [
 {
-"t": "p",
+"t": "h",
 "x": "Droit des entreprises en difficulté"
 },
 {
@@ -10529,29 +10586,9 @@
 },
 {
 "t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "Factures fournisseurs échues."
-},
-{
-"t": "p",
-"x": "Salaires dus."
-},
-{
-"t": "p",
-"x": "Cotisations sociales exigibles."
-},
-{
-"t": "p",
-"x": "Dettes fiscales exigibles."
-},
-{
-"t": "p",
-"x": "Échéances bancaires arrivées à terme."
+"lab": "Exemples",
+"cas": "Factures fournisseurs échues, salaires dus, cotisations sociales exigibles, dettes fiscales exigibles, échéances bancaires arrivées à terme.",
+"analyse": ""
 },
 {
 "t": "p",
@@ -10559,43 +10596,15 @@
 },
 {
 "t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "Solde bancaire disponible."
-},
-{
-"t": "p",
-"x": "Espèces."
-},
-{
-"t": "p",
-"x": "Réserves de crédit mobilisables."
-},
-{
-"t": "p",
-"x": "Moratoires obtenus auprès des créanciers, dans les conditions légales."
+"lab": "Exemples",
+"cas": "Solde bancaire disponible, espèces, réserves de crédit mobilisables, moratoires obtenus auprès des créanciers, dans les conditions légales.",
+"analyse": ""
 },
 {
 "t": "cas",
-"cas": "Une société dispose de :",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "30 000 € de trésorerie disponible."
-},
-{
-"t": "p",
-"x": "120 000 € de dettes immédiatement exigibles."
-},
-{
-"t": "p",
-"x": "Elle ne dispose d'aucune réserve de crédit ni d'aucun moratoire."
+"lab": "Exemples",
+"cas": "30 000 € de trésorerie disponible, 120 000 € de dettes immédiatement exigibles, elle ne dispose d'aucune réserve de crédit ni d'aucun moratoire.",
+"analyse": ""
 },
 {
 "t": "p",
@@ -10641,8 +10650,12 @@
 "x": "Le mandat ad hoc"
 },
 {
+"t": "h",
+"x": "A. Définition"
+},
+{
 "t": "p",
-"x": "A. Définition Le mandat ad hoc est une procédure amiable permettant à une entreprise en difficulté de demander au président du tribunal la désignation d'un mandataire ad hoc."
+"x": "Le mandat ad hoc est une procédure amiable permettant à une entreprise en difficulté de demander au président du tribunal la désignation d'un mandataire ad hoc."
 },
 {
 "t": "p",
@@ -10657,8 +10670,12 @@
 "x": "Article L. 611-3 du Code de commerce."
 },
 {
+"t": "h",
+"x": "C. Conditions"
+},
+{
 "t": "p",
-"x": "C. Conditions Le mandat ad hoc peut être demandé par le dirigeant lorsqu'il rencontre des difficultés."
+"x": "Le mandat ad hoc peut être demandé par le dirigeant lorsqu'il rencontre des difficultés."
 },
 {
 "t": "p",
@@ -10742,8 +10759,12 @@
 "x": "La conciliation"
 },
 {
+"t": "h",
+"x": "A. Définition"
+},
+{
 "t": "p",
-"x": "A. Définition La conciliation est une procédure amiable destinée à favoriser un accord entre une entreprise en difficulté et ses principaux créanciers."
+"x": "La conciliation est une procédure amiable destinée à favoriser un accord entre une entreprise en difficulté et ses principaux créanciers."
 },
 {
 "t": "p",
@@ -10758,7 +10779,7 @@
 "x": "Articles L. 611-4 et suivants du Code de commerce."
 },
 {
-"t": "p",
+"t": "h",
 "x": "C. Conditions d'ouverture"
 },
 {
@@ -10818,7 +10839,7 @@
 "x": "Cette décision reste confidentielle."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Homologation de l'accord"
 },
 {
@@ -10830,7 +10851,7 @@
 "x": "L'homologation donne notamment accès à certains effets juridiques spécifiques."
 },
 {
-"t": "p",
+"t": "h",
 "x": "G. Exemple"
 },
 {
@@ -10878,7 +10899,7 @@
 "x": "ARTICLE L. 620-1 DU CODE DE COMMERCE"
 },
 {
-"t": "p",
+"t": "h",
 "x": "A. Définition"
 },
 {
@@ -10895,22 +10916,63 @@
 "Poursuivre l'activité.",
 "Maintenir les emplois.",
 "Réorganiser les dettes.",
-"Préparer un plan de sauvegarde.",
-"B. Condition fondamentale L'entreprise ne doit pas être en état de cessation des paiements.",
-"C'est la différence essentielle avec le redressement judiciaire.",
-"C. Qui peut demander la sauvegarde ? La procédure est demandée par le débiteur lui-même.",
-"Un créancier ne peut pas imposer l'ouverture d'une procédure de sauvegarde à l'entreprise.",
-"D. Déroulement Dépôt de la demande.",
-"Examen par le tribunal.",
-"Ouverture de la procédure.",
-"Période d'observation.",
-"Établissement d'un bilan économique et social.",
-"Élaboration d'un plan.",
-"Adoption du plan par le tribunal si les conditions sont réunies."
+"Préparer un plan de sauvegarde."
 ]
 },
 {
+"t": "h",
+"x": "B. Condition fondamentale"
+},
+{
 "t": "p",
+"x": "L'entreprise ne doit pas être en état de cessation des paiements."
+},
+{
+"t": "p",
+"x": "C'est la différence essentielle avec le redressement judiciaire."
+},
+{
+"t": "h",
+"x": "C. Qui peut demander la sauvegarde ?"
+},
+{
+"t": "p",
+"x": "La procédure est demandée par le débiteur lui-même."
+},
+{
+"t": "p",
+"x": "Un créancier ne peut pas imposer l'ouverture d'une procédure de sauvegarde à l'entreprise."
+},
+{
+"t": "p",
+"x": "D. Déroulement Dépôt de la demande."
+},
+{
+"t": "p",
+"x": "Examen par le tribunal."
+},
+{
+"t": "p",
+"x": "Ouverture de la procédure."
+},
+{
+"t": "p",
+"x": "Période d'observation."
+},
+{
+"t": "p",
+"x": "Établissement d'un bilan économique et social."
+},
+{
+"t": "p",
+"x": "Élaboration d'un plan."
+},
+{
+"t": "p",
+"x": "Adoption du plan par le tribunal si les conditions sont réunies."
+},
+{
+"t": "h",
 "x": "E. Conséquences"
 },
 {
@@ -11068,9 +11130,12 @@
 "Un portefeuille de clients.",
 "Des contrats en cours.",
 "Une activité rentable potentielle.",
-"Des perspectives de recettes.",
-"Un redressement judiciaire peut être envisagé."
+"Des perspectives de recettes."
 ]
+},
+{
+"t": "p",
+"x": "Un redressement judiciaire peut être envisagé."
 },
 {
 "t": "h",
@@ -11117,7 +11182,7 @@
 "x": "Il veille au bon déroulement de la procédure et à la protection des intérêts en présence."
 },
 {
-"t": "p",
+"t": "h",
 "x": "L'administrateur judiciaire"
 },
 {
@@ -11155,9 +11220,12 @@
 "Analyser les difficultés.",
 "Évaluer les perspectives.",
 "Préparer un plan de redressement.",
-"Étudier les possibilités de cession.",
-"La durée initiale est de six mois, renouvelable dans les conditions légales."
+"Étudier les possibilités de cession."
 ]
+},
+{
+"t": "p",
+"x": "La durée initiale est de six mois, renouvelable dans les conditions légales."
 },
 {
 "t": "h",
@@ -11544,9 +11612,12 @@
 "Les partenariats commerciaux.",
 "Les dépenses d'infrastructures.",
 "Les coûts de formation.",
-"Leur équilibre financier dépend souvent de recettes variables.",
-"Une baisse importante des revenus peut rapidement provoquer des difficultés de trésorerie."
+"Leur équilibre financier dépend souvent de recettes variables."
 ]
+},
+{
+"t": "p",
+"x": "Une baisse importante des revenus peut rapidement provoquer des difficultés de trésorerie."
 },
 {
 "t": "h",
@@ -11571,9 +11642,12 @@
 "Contrôler les budgets prévisionnels.",
 "Vérifier les engagements financiers.",
 "Encadrer la masse salariale.",
-"Prononcer des mesures relevant de ses compétences réglementaires.",
-"Il faut distinguer ce contrôle sportif et financier des procédures judiciaires du Code de commerce."
+"Prononcer des mesures relevant de ses compétences réglementaires."
 ]
+},
+{
+"t": "p",
+"x": "Il faut distinguer ce contrôle sportif et financier des procédures judiciaires du Code de commerce."
 },
 {
 "t": "h",
@@ -11656,7 +11730,7 @@
 "x": "Parallèlement, la DNCG peut prendre des mesures relevant de son règlement."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Situation B : cessation des paiements"
 },
 {
@@ -12086,7 +12160,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur évolue dans un club amateur constitué en association. Le président signe un document avec un agent pour organiser le recrutement du joueur. L’agent doit vérifier que le président est habilité à engager l’association, que le mandat est conforme au Code du sport et que la rémunération est prévue dans un cadre juridiquement valable.",
+"cas": "Un joueur évolue dans un club amateur constitué en association. Le président signe un document avec un agent pour organiser le recrutement du joueur. L’agent doit vérifier que le président est habilité à engager l’association, que le mandat est conforme au Code du sport et que la rémunération est prévue dans un cadre juridiquement valable.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -12191,7 +12265,7 @@
 },
 {
 "t": "cas",
-"cas": "football : Un club amateur encaisse 150 000 € de recettes et dépense 135 000 €. Il réalise un excédent de 15 000 €.",
+"cas": "Football : Un club amateur encaisse 150 000 € de recettes et dépense 135 000 €. Il réalise un excédent de 15 000 €.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -12450,9 +12524,9 @@
 },
 {
 "t": "cas",
-"cas": "si les statuts prévoient que seul le conseil d’administration peut autoriser un engagement financier supérieur à 10 000 €, le président ne peut pas ignorer cette règle et engager seul l’association pour 30 000 €.",
+"cas": "Si les statuts prévoient que seul le conseil d’administration peut autoriser un engagement financier supérieur à 10 000 €, le président ne peut pas ignorer cette règle et engager seul l’association pour 30 000 €.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "h",
@@ -12703,7 +12777,7 @@
 },
 {
 "t": "cas",
-"cas": "agent : avant de signer un contrat avec un club, l’agent ne se contente pas de vérifier que son interlocuteur est président. Il vérifie aussi que celui-ci dispose du pouvoir de signer l’acte concerné et que les éventuelles autorisations internes ont été obtenues.",
+"cas": "Agent : avant de signer un contrat avec un club, l’agent ne se contente pas de vérifier que son interlocuteur est président. Il vérifie aussi que celui-ci dispose du pouvoir de signer l’acte concerné et que les éventuelles autorisations internes ont été obtenues.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -12742,7 +12816,7 @@
 },
 {
 "t": "cas",
-"cas": "un club change de siège social. Il doit respecter la procédure prévue dans ses statuts, puis effectuer la déclaration administrative correspondante.",
+"cas": "Un club change de siège social. Il doit respecter la procédure prévue dans ses statuts, puis effectuer la déclaration administrative correspondante.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -12817,7 +12891,7 @@
 },
 {
 "t": "cas",
-"cas": "un club amateur est dissous. Après paiement des dettes et liquidation des biens, il reste 20 000 €. Les membres ne peuvent pas se partager cette somme à titre de bénéfice. Elle doit être dévolue selon les règles applicables.",
+"cas": "Un club amateur est dissous. Après paiement des dettes et liquidation des biens, il reste 20 000 €. Les membres ne peuvent pas se partager cette somme à titre de bénéfice. Elle doit être dévolue selon les règles applicables.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -13032,7 +13106,7 @@
 },
 {
 "t": "cas",
-"cas": "un club amateur agréé peut bénéficier de certains dispositifs de soutien public. Cela ne signifie pas que son président peut signer n’importe quel contrat sans respecter les statuts.",
+"cas": "Un club amateur agréé peut bénéficier de certains dispositifs de soutien public. Cela ne signifie pas que son président peut signer n’importe quel contrat sans respecter les statuts.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -13389,10 +13463,8 @@
 "x": "Une association qui exerce une activité lucrative peut être soumise à ces impôts, selon les règles applicables."
 },
 {
-"t": "cas",
-"cas": "football : Un club amateur :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple : football : Un club amateur :"
 },
 {
 "t": "list",
@@ -13451,7 +13523,7 @@
 "x": "Si non, elle n'est en principe pas soumise aux impôts commerciaux pour cette activité. Si oui, passer à l'étape 3."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Étape 3"
 },
 {
@@ -13489,7 +13561,7 @@
 },
 {
 "t": "cas",
-"cas": "le président d’un club utilise régulièrement les fonds de l’association pour régler ses dépenses personnelles. Cette situation peut remettre en cause le caractère désintéressé de la gestion.",
+"cas": "Le président d’un club utilise régulièrement les fonds de l’association pour régler ses dépenses personnelles. Cette situation peut remettre en cause le caractère désintéressé de la gestion.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -13570,7 +13642,7 @@
 "x": "P2"
 },
 {
-"t": "p",
+"t": "h",
 "x": "Public"
 },
 {
@@ -13582,7 +13654,7 @@
 "x": "P3"
 },
 {
-"t": "p",
+"t": "h",
 "x": "Prix"
 },
 {
@@ -13934,7 +14006,7 @@
 },
 {
 "t": "cas",
-"cas": "le président d’un club se fait rembourser un billet de train acheté pour accompagner l’équipe en déplacement. Il s’agit d’un remboursement de frais si la dépense est réelle, justifiée et engagée pour l’association.",
+"cas": "Le président d’un club se fait rembourser un billet de train acheté pour accompagner l’équipe en déplacement. Il s’agit d’un remboursement de frais si la dépense est réelle, justifiée et engagée pour l’association.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -14176,7 +14248,7 @@
 ]
 },
 {
-"t": "p",
+"t": "h",
 "x": "Actualisation"
 },
 {
@@ -14241,14 +14313,13 @@
 "x": "L'impôt sur le revenu est calculé sur les revenus perçus pendant une année civile."
 },
 {
-"t": "cas",
-"cas": "revenus perçus en 2025 ;",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple :"
 },
 {
 "t": "list",
 "items": [
+"revenus perçus en 2025",
 "déclaration effectuée au printemps 2026",
 "calcul de l'impôt en 2026",
 "régularisation après prise en compte des prélèvements déjà effectués."
@@ -14296,7 +14367,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur professionnel marié et ayant deux enfants à charge peut bénéficier d'un nombre de parts supérieur à celui d'un joueur célibataire percevant le même revenu.",
+"cas": "Un joueur professionnel marié et ayant deux enfants à charge peut bénéficier d'un nombre de parts supérieur à celui d'un joueur célibataire percevant le même revenu.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -14556,10 +14627,8 @@
 "x": "Le bénéfice imposable correspond schématiquement aux recettes professionnelles diminuées des dépenses déductibles."
 },
 {
-"t": "cas",
-"cas": "Un agent sportif indépendant réalise :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple : un agent sportif indépendant réalise :"
 },
 {
 "t": "list",
@@ -14654,10 +14723,10 @@
 "t": "cas",
 "cas": "Un couple marié dispose de 84 000 € de revenu net imposable et de deux parts.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
-"t": "p",
+"t": "h",
 "x": "\\\\[ 84\\\\,000 \\div 2 = 42\\\\,000\\ € \\\\]"
 },
 {
@@ -14906,7 +14975,7 @@
 },
 {
 "t": "cas",
-"cas": "football : Un joueur professionnel perçoit 15 000 € brut par mois.",
+"cas": "Football : Un joueur professionnel perçoit 15 000 € brut par mois.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -14977,19 +15046,23 @@
 "x": "Dans une structure relevant de l'IR, le bénéfice est imposé directement entre les mains de l'entrepreneur ou des associés."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
 "items": [
 "entreprise individuelle",
-"société en nom collectif (SNC), en principe",
-"EURL dont l'associé unique est une personne physique, en principe",
-"certaines sociétés civiles."
+"société en nom collectif (SNC), en principe"
 ]
+},
+{
+"t": "p",
+"x": "EURL dont l'associé unique est une personne physique, en principe"
+},
+{
+"t": "p",
+"x": "certaines sociétés civiles."
 },
 {
 "t": "p",
@@ -14997,7 +15070,7 @@
 },
 {
 "t": "cas",
-"cas": "un agent sportif exerce en entreprise individuelle. Il réalise 100 000 € de recettes et supporte 30 000 € de charges déductibles.",
+"cas": "Un agent sportif exerce en entreprise individuelle. Il réalise 100 000 € de recettes et supporte 30 000 € de charges déductibles.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -15018,10 +15091,8 @@
 "x": "À l'IS, c'est la société qui paie l'impôt sur son bénéfice."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -15381,7 +15452,7 @@
 "t": "cas",
 "cas": "60 000 € de recettes × 2,2 % = 1 320 € d'impôt sur le revenu.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "p",
@@ -15419,7 +15490,7 @@
 "t": "cas",
 "cas": "Le cas chiffré est présenté dans le tableau ci-dessous.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "table",
@@ -15594,7 +15665,7 @@
 "x": "Lorsqu'il bénéficie de la franchise en base, l'agent doit faire figurer la mention :"
 },
 {
-"t": "p",
+"t": "h",
 "x": "« TVA non applicable, article 293 B du CGI »"
 },
 {
@@ -15924,14 +15995,13 @@
 "x": "La TVA déductible est celle supportée sur les dépenses professionnelles ouvrant droit à déduction."
 },
 {
-"t": "cas",
-"cas": "commission facturée : 10 000 € HT ;",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple :"
 },
 {
 "t": "list",
 "items": [
+"commission facturée : 10 000 € HT",
 "TVA collectée à 20 % : 2 000 €",
 "frais professionnels : 2 000 € HT",
 "TVA déductible sur ces frais : 400 €."
@@ -16279,7 +16349,7 @@
 "t": "cas",
 "cas": "Le cas chiffré est présenté dans le tableau ci-dessous.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "table",
@@ -16321,7 +16391,7 @@
 "x": "Bénéfice moyen sur trois ans :"
 },
 {
-"t": "p",
+"t": "h",
 "x": "\\\\[ 290\\\\,000 \\div 3 = 96\\\\,666,67\\ € \\\\]"
 },
 {
@@ -16364,7 +16434,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur professionnel perçoit 100 000 € de rémunération sportive une année, puis 600 000 € l'année suivante à la suite d'un changement de club et d'un contrat très favorable. Le dispositif permet, s'il est éligible et a valablement opté, d'atténuer les effets de cette variation.",
+"cas": "Un joueur professionnel perçoit 100 000 € de rémunération sportive une année, puis 600 000 € l'année suivante à la suite d'un changement de club et d'un contrat très favorable. Le dispositif permet, s'il est éligible et a valablement opté, d'atténuer les effets de cette variation.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -16393,7 +16463,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur perçoit 400 000 € de salaire sportif et 150 000 € de revenus publicitaires. Il ne faut pas considérer automatiquement que les 550 000 € entrent dans le dispositif d'étalement sportif.",
+"cas": "Un joueur perçoit 400 000 € de salaire sportif et 150 000 € de revenus publicitaires. Il ne faut pas considérer automatiquement que les 550 000 € entrent dans le dispositif d'étalement sportif.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -16513,9 +16583,12 @@
 "Le dispositif concerne les primes visées par le texte.",
 "L'option est expresse.",
 "Elle est irrévocable.",
-"L'étalement se fait sur quatre années.",
-"L'option est incompatible avec celle prévue à l'article 163-0 A du CGI."
+"L'étalement se fait sur quatre années."
 ]
+},
+{
+"t": "p",
+"x": "L'option est incompatible avec celle prévue à l'article 163-0 A du CGI."
 },
 {
 "t": "vigilance",
@@ -16797,7 +16870,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur réside en Croatie et participe à un événement sportif en France. La convention fiscale entre la France et la Croatie doit être examinée pour déterminer les droits d'imposition respectifs.",
+"cas": "Un joueur réside en Croatie et participe à un événement sportif en France. La convention fiscale entre la France et la Croatie doit être examinée pour déterminer les droits d'imposition respectifs.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -16912,14 +16985,13 @@
 "x": "Lorsque l'activité est exercée dans une société soumise à l'IS, c'est la société qui est imposée sur son bénéfice."
 },
 {
-"t": "cas",
-"cas": "chiffre d'affaires : 200 000 € ;",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple :"
 },
 {
 "t": "list",
 "items": [
+"chiffre d'affaires : 200 000 €",
 "charges déductibles : 70 000 €",
 "bénéfice imposable : 130 000 €."
 ]
@@ -16944,7 +17016,7 @@
 "t": "cas",
 "cas": "Le cas chiffré est présenté dans le tableau ci-dessous.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "table",
@@ -17009,7 +17081,7 @@
 "t": "cas",
 "cas": "Le contrat prévoit une commission de 10 000 € HT.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "lead",
@@ -17079,7 +17151,7 @@
 },
 {
 "t": "cas",
-"cas": "un agent établi en France facture une prestation à un club espagnol assujetti à la TVA. Il faut examiner la règle B2B de territorialité et le mécanisme d'autoliquidation, plutôt que facturer automatiquement 20 % de TVA française.",
+"cas": "Un agent établi en France facture une prestation à un club espagnol assujetti à la TVA. Il faut examiner la règle B2B de territorialité et le mécanisme d'autoliquidation, plutôt que facturer automatiquement 20 % de TVA française.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -17241,7 +17313,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur reçoit une proposition de contrat de trois saisons. Le club lui propose un salaire mensuel fixe, une prime de matchs joués, une prime de maintien et une prime de signature. L'agent doit distinguer les éléments garantis des éléments conditionnels, vérifier leur rédaction et mesurer leurs conséquences en cas de blessure, de non-sélection ou de rupture anticipée.",
+"cas": "Un joueur reçoit une proposition de contrat de trois saisons. Le club lui propose un salaire mensuel fixe, une prime de matchs joués, une prime de maintien et une prime de signature. L'agent doit distinguer les éléments garantis des éléments conditionnels, vérifier leur rédaction et mesurer leurs conséquences en cas de blessure, de non-sélection ou de rupture anticipée.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -17407,7 +17479,7 @@
 },
 {
 "t": "cas",
-"cas": "un club verse chaque année une prime de fin de saison selon des modalités constantes à une catégorie de salariés.",
+"cas": "Un club verse chaque année une prime de fin de saison selon des modalités constantes à une catégorie de salariés.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -17439,7 +17511,7 @@
 },
 {
 "t": "cas",
-"cas": "football : un contrat de joueur prévoit une rémunération inférieure au minimum conventionnel applicable. La clause contractuelle ne peut pas permettre à l'employeur de payer moins que le minimum obligatoire.",
+"cas": "Football : un contrat de joueur prévoit une rémunération inférieure au minimum conventionnel applicable. La clause contractuelle ne peut pas permettre à l'employeur de payer moins que le minimum obligatoire.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -17478,7 +17550,7 @@
 "x": "Le salarié reçoit une contrepartie financière ou un avantage ayant une valeur économique."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Un lien de subordination"
 },
 {
@@ -17957,7 +18029,7 @@
 },
 {
 "t": "cas",
-"cas": "un club recrute un joueur en janvier pour terminer la saison sportive en juin. Le contrat peut être inférieur à 12 mois si les conditions légales et conventionnelles permettant cette dérogation sont réunies.",
+"cas": "Un club recrute un joueur en janvier pour terminer la saison sportive en juin. Le contrat peut être inférieur à 12 mois si les conditions légales et conventionnelles permettant cette dérogation sont réunies.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -18105,7 +18177,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur signe avec un club disposant de plusieurs centres d'entraînement. Une clause peut organiser ses déplacements entre les installations dans les limites prévues au contrat.",
+"cas": "Un joueur signe avec un club disposant de plusieurs centres d'entraînement. Une clause peut organiser ses déplacements entre les installations dans les limites prévues au contrat.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -18231,7 +18303,7 @@
 },
 {
 "t": "cas",
-"cas": "une prime de 10 000 € est due si le joueur participe à au moins 20 rencontres officielles avec l'équipe première.",
+"cas": "Une prime de 10 000 € est due si le joueur participe à au moins 20 rencontres officielles avec l'équipe première.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -18392,10 +18464,8 @@
 "x": "Elles doivent être rédigées de manière suffisamment précise."
 },
 {
-"t": "cas",
-"cas": "Un joueur perçoit :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple : un joueur perçoit :"
 },
 {
 "t": "list",
@@ -18429,10 +18499,8 @@
 "x": "Un avantage en nature correspond à un bien ou un service fourni par l'employeur à titre personnel."
 },
 {
-"t": "cas",
-"cas": "s dans le football :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples dans le football :"
 },
 {
 "t": "list",
@@ -18612,7 +18680,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur est convoqué à 9 h au centre d'entraînement et doit rester à la disposition du club jusqu'à 13 h. Il ne peut pas librement organiser son temps personnel durant cette période. La qualification de temps de travail dépend des conditions concrètes de cette disponibilité.",
+"cas": "Un joueur est convoqué à 9 h au centre d'entraînement et doit rester à la disposition du club jusqu'à 13 h. Il ne peut pas librement organiser son temps personnel durant cette période. La qualification de temps de travail dépend des conditions concrètes de cette disponibilité.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -19225,7 +19293,7 @@
 },
 {
 "t": "cas",
-"cas": "un club décide de réduire le salaire fixe d'un joueur de 30 000 € à 20 000 € brut par mois.",
+"cas": "Un club décide de réduire le salaire fixe d'un joueur de 30 000 € à 20 000 € brut par mois.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -19242,10 +19310,8 @@
 "x": "Certains changements relèvent du pouvoir de direction de l'employeur."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -19324,7 +19390,7 @@
 },
 {
 "t": "cas",
-"cas": "football : Un club connaît des difficultés financières et propose à un joueur une réduction de 30 % de son salaire fixe.",
+"cas": "Football : Un club connaît des difficultés financières et propose à un joueur une réduction de 30 % de son salaire fixe.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -19499,10 +19565,8 @@
 "x": "Il repose sur des éléments concernant le salarié."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -19796,10 +19860,8 @@
 "x": "La prise d'acte permet au salarié de rompre immédiatement son CDI en invoquant des manquements suffisamment graves de l'employeur."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -20255,10 +20317,8 @@
 "x": "Un assuré ou un employeur peut contester certaines décisions prises par un organisme de Sécurité sociale."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -20544,9 +20604,12 @@
 "le visage",
 "la silhouette",
 "l'apparence physique",
-"les signes permettant d'identifier la personne",
-"certaines représentations indirectes lorsque l'identification est possible."
+"les signes permettant d'identifier la personne"
 ]
+},
+{
+"t": "p",
+"x": "certaines représentations indirectes lorsque l'identification est possible."
 },
 {
 "t": "p",
@@ -20554,7 +20617,7 @@
 },
 {
 "t": "cas",
-"cas": "une marque publie une publicité montrant un joueur de dos, avec son numéro, son nom sur le maillot et un tatouage distinctif. Même si son visage n'apparaît pas, il peut être identifiable.",
+"cas": "Une marque publie une publicité montrant un joueur de dos, avec son numéro, son nom sur le maillot et un tatouage distinctif. Même si son visage n'apparaît pas, il peut être identifiable.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -20609,7 +20672,7 @@
 },
 {
 "t": "cas",
-"cas": "football : un photographe réalise une photo d'un joueur pendant un match. Une marque veut utiliser cette photo dans une campagne publicitaire.",
+"cas": "Football : un photographe réalise une photo d'un joueur pendant un match. Une marque veut utiliser cette photo dans une campagne publicitaire.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -20765,10 +20828,8 @@
 "x": "Le contrat doit préciser où et comment l'image sera exploitée."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -20880,7 +20941,7 @@
 },
 {
 "t": "cas",
-"cas": "une photographie générale des tribunes d'un stade peut être publiée pour illustrer l'ambiance d'un match.",
+"cas": "Une photographie générale des tribunes d'un stade peut être publiée pour illustrer l'ambiance d'un match.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -20937,10 +20998,8 @@
 "x": "Certaines utilisations peuvent être justifiées par une démarche artistique, documentaire ou historique."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -20973,7 +21032,7 @@
 },
 {
 "t": "cas",
-"cas": "un club souhaite publier la photographie d'un jeune joueur de 15 ans dans une campagne de recrutement de son centre de formation. Il doit obtenir les autorisations appropriées et respecter les règles relatives à la protection du mineur.",
+"cas": "Un club souhaite publier la photographie d'un jeune joueur de 15 ans dans une campagne de recrutement de son centre de formation. Il doit obtenir les autorisations appropriées et respecter les règles relatives à la protection du mineur.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -21028,7 +21087,7 @@
 },
 {
 "t": "cas",
-"cas": "une marque utilise sans autorisation l'image d'un joueur dans une campagne publicitaire diffusée sur les réseaux sociaux.",
+"cas": "Une marque utilise sans autorisation l'image d'un joueur dans une campagne publicitaire diffusée sur les réseaux sociaux.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -21113,7 +21172,7 @@
 },
 {
 "t": "cas",
-"cas": "une personne filme clandestinement un joueur dans son domicile et transmet la vidéo à un média.",
+"cas": "Une personne filme clandestinement un joueur dans son domicile et transmet la vidéo à un média.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -21135,7 +21194,7 @@
 },
 {
 "t": "cas",
-"cas": "une vidéo obtenue illicitement dans l'espace privé d'un joueur est ensuite diffusée sur un réseau social.",
+"cas": "Une vidéo obtenue illicitement dans l'espace privé d'un joueur est ensuite diffusée sur un réseau social.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -21156,7 +21215,7 @@
 "x": "Il vise également certains contenus visuels ou sonores générés par traitement algorithmique."
 },
 {
-"t": "p",
+"t": "h",
 "x": "1 an d'emprisonnement et 15 000 € d'amende"
 },
 {
@@ -21289,10 +21348,8 @@
 "x": "Le second peut percevoir une redevance si les conditions légales sont respectées."
 },
 {
-"t": "cas",
-"cas": "Un club verse à un joueur :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple : un club verse à un joueur :"
 },
 {
 "t": "list",
@@ -21415,10 +21472,8 @@
 "x": "Le contrat doit correspondre à une véritable exploitation commerciale."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -21460,10 +21515,8 @@
 "x": "Cela signifie que l'exploitation doit pouvoir exister indépendamment de la prestation sportive ou d'une obligation de présence personnelle du joueur."
 },
 {
-"t": "cas",
-"cas": "valable :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple : valable :"
 },
 {
 "t": "p",
@@ -21474,10 +21527,8 @@
 "x": "Le joueur n'a pas besoin d'être physiquement présent lors de la diffusion."
 },
 {
-"t": "cas",
-"cas": "problématique :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple : problématique :"
 },
 {
 "t": "p",
@@ -21504,10 +21555,8 @@
 "x": "Elle doit être fonction des recettes générées par l'exploitation commerciale de son image, de son nom ou de sa voix."
 },
 {
-"t": "cas",
-"cas": "valable :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple : valable :"
 },
 {
 "t": "p",
@@ -21519,13 +21568,9 @@
 },
 {
 "t": "cas",
-"cas": "problématique :",
-"analyse": "",
-"lab": "Exemple football"
-},
-{
-"t": "p",
-"x": "Le joueur gagne 400 000 € de salaire annuel."
+"lab": "Exemples",
+"cas": "Le joueur gagne 400 000 € de salaire annuel.",
+"analyse": ""
 },
 {
 "t": "p",
@@ -21657,7 +21702,7 @@
 "t": "cas",
 "cas": "La redevance est calculée à partir d'un pourcentage défini des recettes nettes générées par les contrats de parrainage et de commercialisation de produits dérivés entrant dans le champ du dispositif.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "p",
@@ -21718,7 +21763,7 @@
 "t": "cas",
 "cas": "Un contrat prévoit une redevance de 100 000 € par an, mais ne précise ni les recettes servant au calcul, ni le plafond applicable, ni les conditions d'exploitation.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "p",
@@ -21793,10 +21838,8 @@
 "x": "Première catégorie : les contrats de parrainage"
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -21812,10 +21855,8 @@
 "x": "Deuxième catégorie : les produits dérivés"
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -22033,7 +22074,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur signe un contrat avec un équipementier sportif.",
+"cas": "Un joueur signe un contrat avec un équipementier sportif.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -22097,7 +22138,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur est sous contrat avec un équipementier qui lui interdit de promouvoir une marque concurrente. Un second sponsor ne peut pas lui demander de porter des chaussures concurrentes sans vérifier les engagements existants.",
+"cas": "Un joueur est sous contrat avec un équipementier qui lui interdit de promouvoir une marque concurrente. Un second sponsor ne peut pas lui demander de porter des chaussures concurrentes sans vérifier les engagements existants.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -22688,10 +22729,8 @@
 "x": "L'article 61 du Code civil permet également de demander un changement de nom pour un motif légitime."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -22750,7 +22789,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur peut être connu du public sous un surnom différent de son nom officiel.",
+"cas": "Un joueur peut être connu du public sous un surnom différent de son nom officiel.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -22970,10 +23009,8 @@
 "x": "Une personne peut agir lorsqu'un tiers utilise son nom pour créer une confusion ou exploiter abusivement son identité."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -23112,7 +23149,7 @@
 },
 {
 "t": "cas",
-"cas": "pendant un match, un joueur commet une faute qui blesse gravement un adversaire. La responsabilité civile du joueur peut être engagée et son assurance RC peut indemniser la victime.",
+"cas": "Pendant un match, un joueur commet une faute qui blesse gravement un adversaire. La responsabilité civile du joueur peut être engagée et son assurance RC peut indemniser la victime.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -23128,7 +23165,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur se blesse seul en retombant après un duel aérien. Son assurance individuelle accident peut intervenir selon les garanties souscrites.",
+"cas": "Un joueur se blesse seul en retombant après un duel aérien. Son assurance individuelle accident peut intervenir selon les garanties souscrites.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -23210,7 +23247,7 @@
 },
 {
 "t": "cas",
-"cas": "un club paie une cotisation annuelle pour garantir sa responsabilité civile en cas d'accident impliquant un joueur, un entraîneur ou un spectateur.",
+"cas": "Un club paie une cotisation annuelle pour garantir sa responsabilité civile en cas d'accident impliquant un joueur, un entraîneur ou un spectateur.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -23269,7 +23306,7 @@
 },
 {
 "t": "cas",
-"cas": "un club déclare organiser uniquement des entraînements amateurs, puis développe une activité événementielle importante avec accueil régulier du public. Il doit vérifier si cette nouvelle activité modifie le risque déclaré et doit être signalée à l'assureur.",
+"cas": "Un club déclare organiser uniquement des entraînements amateurs, puis développe une activité événementielle importante avec accueil régulier du public. Il doit vérifier si cette nouvelle activité modifie le risque déclaré et doit être signalée à l'assureur.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -23354,10 +23391,8 @@
 "x": "Le futur assuré communique les informations permettant à l'assureur d'évaluer le risque."
 },
 {
-"t": "cas",
-"cas": "un club indique :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemple : un club indique :"
 },
 {
 "t": "list",
@@ -23450,7 +23485,7 @@
 },
 {
 "t": "cas",
-"cas": "un club dissimule volontairement une activité présentant un risque important afin d'obtenir une cotisation moins élevée. Si l'assureur démontre la mauvaise foi et le caractère déterminant de la déclaration, il peut invoquer la nullité du contrat.",
+"cas": "Un club dissimule volontairement une activité présentant un risque important afin d'obtenir une cotisation moins élevée. Si l'assureur démontre la mauvaise foi et le caractère déterminant de la déclaration, il peut invoquer la nullité du contrat.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -23503,7 +23538,7 @@
 },
 {
 "t": "cas",
-"cas": "incendie du siège du club, dégradation du matériel ou vol d'équipements.",
+"cas": "Incendie du siège du club, dégradation du matériel ou vol d'équipements.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -23517,7 +23552,7 @@
 },
 {
 "t": "cas",
-"cas": "un spectateur est blessé à cause d'un défaut de sécurité dans un stade et engage la responsabilité du club.",
+"cas": "Un spectateur est blessé à cause d'un défaut de sécurité dans un stade et engage la responsabilité du club.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -23530,10 +23565,8 @@
 "x": "Elles concernent directement la personne assurée."
 },
 {
-"t": "cas",
-"cas": "s :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples :"
 },
 {
 "t": "list",
@@ -23574,7 +23607,7 @@
 },
 {
 "t": "cas",
-"cas": "la responsabilité civile du club pour les dommages causés aux pratiquants et aux tiers.",
+"cas": "La responsabilité civile du club pour les dommages causés aux pratiquants et aux tiers.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -23587,10 +23620,8 @@
 "x": "Elle écarte certains événements ou certaines situations de la couverture."
 },
 {
-"t": "cas",
-"cas": "s possibles selon le contrat :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples possibles selon le contrat :"
 },
 {
 "t": "list",
@@ -23615,9 +23646,9 @@
 },
 {
 "t": "cas",
-"cas": "dommage de 20 000 euros, franchise de 2 000 euros. L'assureur intervient à hauteur de 18 000 euros, sous réserve des autres clauses.",
+"cas": "Dommage de 20 000 euros, franchise de 2 000 euros. L'assureur intervient à hauteur de 18 000 euros, sous réserve des autres clauses.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "h",
@@ -23629,15 +23660,13 @@
 },
 {
 "t": "cas",
-"cas": "garantie plafonnée à 2 millions d'euros. Si le dommage garanti atteint 3 millions, l'assureur n'intervient pas au-delà du plafond, sous réserve des règles contractuelles et légales applicables.",
+"cas": "Garantie plafonnée à 2 millions d'euros. Si le dommage garanti atteint 3 millions, l'assureur n'intervient pas au-delà du plafond, sous réserve des règles contractuelles et légales applicables.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
-"t": "cas",
-"cas": "de lecture d'une garantie RC",
-"analyse": "",
-"lab": "Exemple football"
+"t": "h",
+"x": "Exemple de lecture d'une garantie RC"
 },
 {
 "t": "lead",
@@ -23673,9 +23702,9 @@
 },
 {
 "t": "cas",
-"cas": "simplifié : le calcul réel dépend des conditions générales et particulières du contrat.",
+"cas": "Simplifié : le calcul réel dépend des conditions générales et particulières du contrat.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 }
 ]
 },
@@ -23744,7 +23773,7 @@
 },
 {
 "t": "cas",
-"cas": "football : un joueur est blessé pendant un entraînement. Le club doit effectuer les démarches nécessaires auprès de l'assureur dans le délai contractuel. Le joueur doit également vérifier les conditions de son éventuelle garantie individuelle accident.",
+"cas": "Football : un joueur est blessé pendant un entraînement. Le club doit effectuer les démarches nécessaires auprès de l'assureur dans le délai contractuel. Le joueur doit également vérifier les conditions de son éventuelle garantie individuelle accident.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -23837,7 +23866,7 @@
 },
 {
 "t": "cas",
-"cas": "pendant un entraînement, un joueur blesse un autre joueur dans des circonstances engageant sa responsabilité civile. La garantie RC sportive peut intervenir.",
+"cas": "Pendant un entraînement, un joueur blesse un autre joueur dans des circonstances engageant sa responsabilité civile. La garantie RC sportive peut intervenir.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -24519,7 +24548,7 @@
 },
 {
 "t": "cas",
-"cas": "un agent commet une erreur professionnelle en 2026. Le joueur ne découvre le préjudice qu'en 2027 et adresse une réclamation après la fin du contrat d'assurance.",
+"cas": "Un agent commet une erreur professionnelle en 2026. Le joueur ne découvre le préjudice qu'en 2027 et adresse une réclamation après la fin du contrat d'assurance.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -24532,10 +24561,8 @@
 "x": "Les exclusions à examiner"
 },
 {
-"t": "cas",
-"cas": "s possibles, selon le contrat :",
-"analyse": "",
-"lab": "Exemple football"
+"t": "lead",
+"x": "Exemples possibles, selon le contrat :"
 },
 {
 "t": "list",
@@ -24634,7 +24661,7 @@
 },
 {
 "t": "cas",
-"cas": "un agent conserve des contrats, pièces d'identité et informations financières de joueurs. Une assurance cyber-risque peut compléter ses mesures de sécurité informatique.",
+"cas": "Un agent conserve des contrats, pièces d'identité et informations financières de joueurs. Une assurance cyber-risque peut compléter ses mesures de sécurité informatique.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -24833,7 +24860,7 @@
 "x": "Licence, carte professionnelle, interdictions, contrats, rémunération et sanctions."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Sociétés sportives"
 },
 {
@@ -25133,7 +25160,7 @@
 },
 {
 "t": "cas",
-"cas": "un agent perçoit une commission de 80 000 euros à la suite d'une opération de transfert. Il doit communiquer cette somme et l'identité de la personne liée à cette opération à la fédération compétente.",
+"cas": "Un agent perçoit une commission de 80 000 euros à la suite d'une opération de transfert. Il doit communiquer cette somme et l'identité de la personne liée à cette opération à la fédération compétente.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -25313,8 +25340,12 @@
 "x": "Deux grandes catégories sont visées."
 },
 {
+"t": "h",
+"x": "A. Certaines condamnations pénales"
+},
+{
 "t": "p",
-"x": "A. Certaines condamnations pénales La personne ne doit pas avoir été condamnée définitivement pour les crimes ou délits mentionnés aux I et III de l'article L.212-9 du Code du sport."
+"x": "La personne ne doit pas avoir été condamnée définitivement pour les crimes ou délits mentionnés aux I et III de l'article L.212-9 du Code du sport."
 },
 {
 "t": "p",
@@ -25434,7 +25465,7 @@
 "x": "Un décret en Conseil d'État doit fixer le nombre maximal de personnes morales qu'un agent peut constituer."
 },
 {
-"t": "p",
+"t": "h",
 "x": "Non applicable au 3 novembre 2026"
 },
 {
@@ -25531,7 +25562,7 @@
 },
 {
 "t": "cas",
-"cas": "un agent rémunère un salarié chargé de rédiger des rapports de prospection. C'est une mission de superviseur envisageable.",
+"cas": "Un agent rémunère un salarié chargé de rédiger des rapports de prospection. C'est une mission de superviseur envisageable.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -25662,7 +25693,7 @@
 "t": "cas",
 "cas": "Mandat de 12 mois : possible.",
 "analyse": "",
-"lab": "Exemple football"
+"lab": "Exemple"
 },
 {
 "t": "list",
@@ -25998,7 +26029,7 @@
 "x": "Amende"
 },
 {
-"t": "p",
+"t": "h",
 "x": "Amende majorée possible"
 },
 {
@@ -26253,7 +26284,7 @@
 },
 {
 "t": "cas",
-"cas": "football : Un club possède une équipe masculine professionnelle et une équipe féminine professionnelle.",
+"cas": "Football : Un club possède une équipe masculine professionnelle et une équipe féminine professionnelle.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -26535,7 +26566,7 @@
 },
 {
 "t": "cas",
-"cas": "le club conserve la propriété et la maîtrise de ses signes distinctifs, mais la société sportive peut les utiliser dans les conditions fixées par la convention.",
+"cas": "Le club conserve la propriété et la maîtrise de ses signes distinctifs, mais la société sportive peut les utiliser dans les conditions fixées par la convention.",
 "analyse": "",
 "lab": "Exemple football"
 }
@@ -26636,7 +26667,7 @@
 },
 {
 "t": "cas",
-"cas": "le club utilise une photographie du joueur sur une campagne publicitaire sans nécessiter sa présence lors de la campagne.",
+"cas": "Le club utilise une photographie du joueur sur une campagne publicitaire sans nécessiter sa présence lors de la campagne.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -26654,7 +26685,7 @@
 },
 {
 "t": "cas",
-"cas": "un joueur reçoit une redevance calculée en fonction des recettes publicitaires effectivement générées par une campagne exploitant son image.",
+"cas": "Un joueur reçoit une redevance calculée en fonction des recettes publicitaires effectivement générées par une campagne exploitant son image.",
 "analyse": "",
 "lab": "Exemple football"
 },
@@ -27049,9 +27080,39 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 7
+"v": 13
 },
 {
 "id": "asso-11",
@@ -27178,9 +27239,39 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 7
+"v": 13
 },
 {
 "id": "agt-03",
@@ -28910,9 +29001,39 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 7
+"v": 13
 },
 {
 "id": "agt-32",
