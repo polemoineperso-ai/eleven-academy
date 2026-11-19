@@ -32881,7 +32881,7 @@
 "Le fait de travailler pour un club"
 ],
 "bonne": 1,
-"explication": "Le salarié travaille sous l'autorité de son employeur, qui donne des ordres, contrôle et sanctionne. La rémunération se retrouve aussi chez l'indépendant (définition issue de la jurisprudence).",
+"explication": "Le salarié travaille sous l'autorité de son employeur, qui donne des ordres, contrôle et sanctionne. La rémunération se retrouve aussi chez l'indépendant (définition de la Cour de cassation, 13 nov. 1996). [explication de la question trv-l02-q1, modification facultative]",
 "origine": "Leçon trv-l02"
 },
 {
@@ -41707,7 +41707,7 @@
 },
 {
 "t": "p",
-"x": "Une redevance versée par un club à un joueur pour exploiter son image n'est pas un salaire lorsque les conditions du Code du sport sont réunies (la présence physique du joueur n'est pas requise, et la redevance dépend des recettes tirées de son image, non de son salaire). Selon le BOFiP, elle est imposée en BNC si elle ne relève pas d'une autre catégorie. Selon une instruction de 2019, reprise par l'annale de 2025, elle supporte aussi les prélèvements sociaux sur les revenus du patrimoine."
+"x": "Une redevance versée par un club à un joueur pour exploiter son image n'est pas un salaire lorsque les conditions du Code du sport sont réunies (la présence physique du joueur n'est pas requise, et la redevance dépend des recettes tirées de son image, non de son salaire). Selon le BOFiP, elle est imposée en BNC si elle ne relève pas d'une autre catégorie. Selon l'instruction interministérielle du 2 juillet 2019, elle supporte aussi, quand le joueur réside fiscalement en France, les prélèvements sociaux sur les revenus du patrimoine (CSG, CRDS, prélèvement de solidarité), mais pas les cotisations de Sécurité sociale."
 }
 ],
 "piege": "Un même sportif peut cumuler deux catégories : son salaire (traitements et salaires) et sa redevance d'image (BNC) ne s'imposent pas de la même façon.",
@@ -41718,7 +41718,9 @@
 "CGI, art. 92 (BNC)",
 "CGI, art. 34 (BIC)",
 "C. sport, L. 222-2-10-1 (contrat d'exploitation de l'image)",
-"BOI-BNC-CHAMP-10-10-20-40, § 475 (redevances d'image en BNC)"
+"BOI-BNC-CHAMP-10-10-20-40, § 475 (redevances d'image en BNC)",
+"Instruction interministérielle DSS/5B/2019/152 du 2 juillet 2019, § 1.2 et 2.4 (redevance d'image : régime social)",
+"CSS, L. 136-6, I, f et V (prélèvements sociaux sur les revenus du patrimoine)"
 ],
 "questions": [
 "an25-q08",
@@ -42153,17 +42155,18 @@
 },
 {
 "t": "p",
-"x": "Si le plafond de l'année en cours est dépassé, la franchise cesse à la date du dépassement. La franchise est indépendante du micro-BNC : on peut rester en micro-BNC et devenir redevable de TVA."
+"x": "Si le plafond de l'année en cours est dépassé, la franchise cesse à la date du dépassement. Si seul le plafond de l'année précédente (37 500 €) est dépassé, elle dure jusqu'à la fin de l'année et cesse le 1er janvier suivant. La franchise est indépendante du micro-BNC : on peut rester en micro-BNC et devenir redevable de TVA."
 }
 ],
 "piege": "Dépasser 37 500 € en cours d'année ne fait pas perdre la franchise tout de suite, car le plafond de l'année en cours est de 41 250 €. Mais ce chiffre d'affaires compte ensuite comme celui de l'année précédente.",
-"reponse": "En 2026, Élodie reste en franchise : 30 000 € en 2025 est sous 37 500 € et 39 000 € en 2026 est sous 41 250 €, donc pas de TVA à facturer. Son chiffre d'affaires 2026 dépasse 37 500 € (39 000 €) : elle perdra la franchise en 2027 et devra facturer la TVA.",
+"reponse": "En 2026, Élodie reste en franchise : 30 000 € en 2025 est sous 37 500 € et 39 000 € en 2026 est sous 41 250 €, donc pas de TVA à facturer. Son chiffre d'affaires 2026 dépasse 37 500 € (39 000 €) : elle perdra la franchise le 1er janvier 2027 et devra alors facturer la TVA, sauf si elle dépasse 41 250 € avant la fin de 2026 : la franchise cesserait dès ce dépassement.",
 "sources": [
 "CGI, art. 256, I (opérations imposables) et 256 A (assujetti)",
 "CGI, art. 271, I (TVA déductible)",
 "CGI, art. 278 (taux normal de 20 %)",
 "CGI, art. 283, 1 (redevable)",
-"CGI, art. 293 B (franchise en base : plafonds, dépassement)"
+"CGI, art. 293 B (franchise en base : plafonds, dépassement)",
+"BOI-TVA-DECLA-40-10-10-20260701, § 130 (plafonds, dépassement, perte de la franchise au 1er janvier suivant)"
 ],
 "questions": [
 "m05-q08",
@@ -42212,7 +42215,8 @@
 "CGI, art. 259, 1° et 2° (lieu des prestations de services)",
 "CGI, art. 259 A, 7° (intermédiaire agissant au nom et pour le compte d'autrui)",
 "CGI, art. 269, 1, a et 2, c (fait générateur, exigibilité à l'encaissement ou sur option d'après les débits)",
-"CGI, art. 283, 2 (TVA acquittée par le preneur)"
+"CGI, art. 283, 2 (TVA acquittée par le preneur)",
+"BOI-TVA-CHAMP-20-50-20181107, § 10 (règles générales : preneur assujetti, preneur non assujetti)"
 ],
 "questions": [
 "m05-q10",
@@ -42248,7 +42252,7 @@
 ],
 [
 "CVAE",
-"En 2026, les entreprises dont le chiffre d'affaires dépasse 152 500 €",
+"En 2026, les entreprises dont le chiffre d'affaires dépasse 500 000 € (elles déclarent leur valeur ajoutée dès 152 500 €)",
 "Valeur ajoutée produite"
 ]
 ]
@@ -42259,17 +42263,18 @@
 },
 {
 "t": "p",
-"x": "La CVAE est une fraction de la valeur ajoutée, c'est-à-dire de la richesse produite par l'entreprise. En 2026, son taux est nul pour un chiffre d'affaires inférieur à 500 000 €. Le cours annonce sa suppression progressive : vérifie son calendrier chaque année."
+"x": "La CVAE est une fraction de la valeur ajoutée, c'est-à-dire de la richesse produite par l'entreprise. En 2026, son taux est nul pour un chiffre d'affaires inférieur à 500 000 €. Sa suppression a été reportée : la fiche Service-Public donne encore des taux pour 2026 et 2027. Vérifie son calendrier chaque année."
 }
 ],
 "piege": "Ne confonds pas la CFE, assise sur la valeur locative des biens, et la CVAE, assise sur la valeur ajoutée : ce sont deux impôts différents.",
-"reponse": "Paola ne doit pas de CFE pour 2026, année de la création. Elle la devra pour 2027, pour l'année entière, puisqu'elle exercera encore l'activité au 1er janvier. La CVAE ne la concerne pas : son chiffre d'affaires prévu (60 000 €) est sous 152 500 €, et le taux est nul sous 500 000 €.",
+"reponse": "Paola ne doit pas de CFE pour 2026, année de la création. Elle la devra pour 2027, pour l'année entière, puisqu'elle exercera encore l'activité au 1er janvier. La CVAE ne la concerne pas : elle n'est pas due l'année de la création, et son chiffre d'affaires prévu (60 000 €) est sous 500 000 €, seuil à partir duquel elle est payée.",
 "sources": [
 "CGI, art. 1447 (redevables de la CFE)",
 "CGI, art. 1467 (base : valeur locative)",
 "CGI, art. 1478, I et II (redevable au 1er janvier, année de création)",
 "CGI, art. 1647 D (cotisation minimum, exonération sous 5 000 € de chiffre d'affaires)",
-"CGI, art. 1586 ter (CVAE : redevables) et 1586 quater (taux)"
+"CGI, art. 1586 ter (CVAE : redevables) et 1586 quater (taux)",
+"Service-Public, fiche CVAE (Cotisation sur la valeur ajoutée des entreprises, vérifiée le 22 juillet 2026)"
 ],
 "questions": [
 "fis-l12-q1",
@@ -42361,9 +42366,9 @@
 {
 "t": "list",
 "items": [
-"ne pas avoir été fiscalement domicilié en France pendant les cinq années civiles précédant la prise de fonctions ;",
+"ne pas avoir été fiscalement domicilié en France pendant les cinq années civiles précédant celle de la prise de fonctions, quelle que soit la nationalité ; [modification facultative]",
 "le régime dure jusqu'au 31 décembre de la huitième année civile suivant celle de la prise de fonctions ;",
-"le salarié occupe un emploi dans une entreprise établie en France."
+"le salarié est recruté à l'étranger, ou appelé par une entreprise étrangère, pour occuper un emploi dans une entreprise établie en France, et il y est fiscalement domicilié."
 ]
 },
 {
@@ -42376,11 +42381,12 @@
 }
 ],
 "piege": "Un joueur étranger recruté par un club français n'est pas automatiquement un impatrié : tout dépend de sa résidence fiscale pendant les cinq années précédentes.",
-"reponse": "Diego peut relever du régime des impatriés s'il n'a pas été domicilié fiscalement en France pendant les cinq années civiles précédant sa prise de fonctions, et jusqu'au 31 décembre de la huitième année suivante. Marco subit une retenue à la source de 15 % sur 100 000 € bruts, soit 15 000 €, et reçoit 85 000 €, sous réserve d'une convention fiscale.",
+"reponse": "Diego peut relever du régime des impatriés s'il n'a pas été domicilié fiscalement en France pendant les cinq années civiles précédant sa prise de fonctions et s'il s'y domicilie fiscalement, jusqu'au 31 décembre de la huitième année suivante. Marco subit une retenue à la source de 15 % sur 100 000 € bruts, soit 15 000 €, et reçoit 85 000 €, sous réserve d'une convention fiscale.",
 "sources": [
 "CGI, art. 155 B (régime des impatriés)",
 "CGI, art. 182 B, I, d, I bis et II (retenue sur prestations sportives, base brute, taux de 15 %)",
-"CGI, art. 197 A (imputation de la retenue sur l'impôt)"
+"CGI, art. 197 A (imputation de la retenue sur l'impôt)",
+"BOI-RSA-GEO-40-10-10-20250811, § 10 à 90 (salariés appelés ou recrutés), 130 à 160 (cinq années, domiciliation en France), 250 (31 décembre de la huitième année)"
 ],
 "questions": [
 "m05-q14",
@@ -42687,7 +42693,7 @@
 "items": [
 "Une prestation de travail : le salarié accomplit une activité pour l'employeur.",
 "Une rémunération : il reçoit une contrepartie, en général un salaire.",
-"Un lien de subordination : l'employeur donne des ordres, contrôle leur exécution et peut sanctionner les manquements."
+"Un lien de subordination : la Cour de cassation juge que c'est le travail sous l'autorité d'un employeur qui donne des ordres et des directives, en contrôle l'exécution et sanctionne les manquements (Cass. soc., 13 nov. 1996)."
 ]
 },
 {
@@ -42727,7 +42733,8 @@
 "C. trav., L. 1221-2 (CDI, forme normale et générale)",
 "C. trav., L. 8221-6 (présomption de non-salariat des personnes immatriculées)",
 "C. trav., L. 3123-6 (temps partiel : contrat écrit)",
-"C. sport, L. 222-2 (sportif et entraîneur professionnels salariés)"
+"C. sport, L. 222-2 (sportif et entraîneur professionnels salariés)",
+"Cass. soc., 13 nov. 1996, n° 94-13.187 (définition du lien de subordination)"
 ],
 "questions": [
 "m06-q01",
@@ -43286,7 +43293,7 @@
 "items": [
 "Nul ne peut être sanctionné ou licencié pour avoir subi ou refusé de subir un harcèlement, ou pour l'avoir, de bonne foi, relaté ou en avoir témoigné. Une telle rupture du contrat est nulle.",
 "L'employeur doit prendre toutes les mesures nécessaires pour prévenir le harcèlement.",
-"L'auteur du harcèlement est passible d'une sanction disciplinaire."
+"L'auteur du harcèlement est passible d'une sanction disciplinaire et de sanctions pénales : deux ans de prison et 30 000 € d'amende (art. 222-33-2 du Code pénal pour le harcèlement moral, art. 222-33 pour le harcèlement sexuel, avec trois ans et 45 000 € si l'auteur abuse de son autorité)."
 ]
 },
 {
@@ -43303,7 +43310,9 @@
 "C. trav., L. 1152-5 et L. 1153-6 (sanction disciplinaire de l'auteur)",
 "C. trav., L. 1153-1 (harcèlement sexuel)",
 "C. trav., L. 1154-1 (aménagement de la preuve)",
-"C. trav., L. 1321-2 (rappel dans le règlement intérieur)"
+"C. trav., L. 1321-2 (rappel dans le règlement intérieur)",
+"C. pén., art. 222-33-2 (harcèlement moral : sanctions pénales)",
+"C. pén., art. 222-33, III (harcèlement sexuel : sanctions pénales)"
 ],
 "questions": [
 "an25-q10",
@@ -43749,7 +43758,7 @@
 ],
 [
 "3. Recours devant le juge",
-"Le tribunal judiciaire (pôle social) doit être saisi dans les 2 mois de la notification de la décision de la commission de recours amiable, ou de son rejet implicite."
+"Le tribunal judiciaire spécialement désigné pour ces litiges (le pôle social) doit être saisi dans les 2 mois de la notification de la décision de la commission de recours amiable, ou de son rejet implicite."
 ]
 ]
 },
@@ -43761,7 +43770,7 @@
 "t": "list",
 "items": [
 "Ces délais ne sont opposables que s'ils figurent, avec les voies de recours, dans la notification de la décision.",
-"Certaines contestations, notamment médicales, suivent une procédure particulière, tout comme certains litiges de recouvrement des cotisations."
+"Certaines contestations, notamment médicales, suivent une procédure particulière, tout comme certains litiges de recouvrement des cotisations. Les décisions fixant le taux de cotisation accidents du travail (L. 142-1, 7°) ne relèvent pas de ce tribunal. [modification facultative]"
 ]
 }
 ],
@@ -43772,7 +43781,8 @@
 "C. séc. soc., L. 142-4 (recours préalable)",
 "C. séc. soc., R. 142-1 (commission de recours amiable, délai de deux mois)",
 "C. séc. soc., R. 142-1-A, III (délais de recours préalable et contentieux, mention dans la notification)",
-"C. séc. soc., R. 142-6 (rejet implicite)"
+"C. séc. soc., R. 142-6 (rejet implicite)",
+"COJ, art. L. 211-16, 1° (tribunaux judiciaires spécialement désignés pour le contentieux de la sécurité sociale, sauf le 7° de L. 142-1)"
 ],
 "questions": [
 "m06-q15",
@@ -44416,7 +44426,7 @@
 },
 {
 "t": "p",
-"x": "Aucun texte n'oblige tous les licenciés à souscrire une individuelle accident. Ce qui est obligatoire, c'est l'information."
+"x": "Le Conseil d'État juge qu'une fédération ne peut pas obliger ses licenciés (hors sportifs de haut niveau) à souscrire une assurance couvrant leurs dommages corporels, par contrat collectif ou individuel (CE, 27 juin 2024). Ce qui est obligatoire, c'est l'information."
 },
 {
 "t": "h",
@@ -44436,13 +44446,14 @@
 }
 ],
 "piege": "Informer n'est pas obliger : l'obligation légale porte sur l'information du licencié, pas sur la souscription d'une individuelle accident.",
-"reponse": "Non. La loi n'oblige pas les licenciés à souscrire une individuelle accident : elle oblige les associations et les fédérations à les informer de l'intérêt d'une assurance de personnes. Le club ne peut donc pas affirmer que la loi impose cette assurance. Il doit en revanche informer ses joueurs de l'intérêt d'une garantie complémentaire : annoncer une obligation qui n'existe pas, ce n'est pas les informer.",
+"reponse": "Non. La loi n'oblige pas les licenciés à souscrire une individuelle accident, et le Conseil d'État juge qu'une fédération ne peut pas l'imposer (CE, 27 juin 2024) : la loi oblige les associations et les fédérations à les informer de l'intérêt d'une assurance de personnes. Le club ne peut donc pas affirmer que la loi impose cette assurance. Il doit en revanche informer ses joueurs de l'intérêt d'une garantie complémentaire : annoncer une obligation qui n'existe pas, ce n'est pas les informer.",
 "sources": [
 "C. sport, L. 321-4 (obligation d'information des adhérents)",
 "C. sport, L. 321-6 (proposition d'adhésion à un contrat collectif d'assurance de personnes)",
 "C. assur., L. 131-1 (assurance contre les accidents : sommes fixées par le contrat)",
 "Règlements généraux de la FFF 2026-2027, art. 32 (régime d'assurance lié à la licence)",
-"Règlements généraux de la FFF 2026-2027, art. 32"
+"Règlements généraux de la FFF 2026-2027, art. 32",
+"CE, 27 juin 2024, n° 489391 (une fédération ne peut pas imposer à ses licenciés la souscription d'une assurance de personnes)"
 ],
 "questions": [
 "m08-q06",
@@ -44544,7 +44555,7 @@
 },
 {
 "t": "p",
-"x": "Une faute sifflée par l'arbitre ne suffit donc pas à engager la responsabilité civile. Le juge regarde les circonstances."
+"x": "Une faute sifflée par l'arbitre ne suffit donc pas à engager la responsabilité civile. Le juge regarde les circonstances. La Cour de cassation juge aussi que le club répond des dommages causés par ses joueurs seulement si l'un d'eux commet une faute caractérisée par une violation des règles du jeu (Cass. 2e civ., 13 janv. 2005 ; Cass. ass. plén., 29 juin 2007)."
 },
 {
 "t": "h",
@@ -44563,9 +44574,11 @@
 "reponse": "Non. Bastien a joué un duel normal : sa responsabilité civile n'est pas automatiquement engagée. Tom a frappé volontairement l'arbitre, hors de toute action de jeu : sa responsabilité civile peut être engagée, sans compter les sanctions disciplinaires et pénales possibles. Et si le juge retient que Tom voulait causer le dommage, c'est une faute intentionnelle : l'assurance RC ne la couvre pas.",
 "sources": [
 "C. civ., art. 1240 et 1241 (responsabilité pour faute, négligence, imprudence)",
-"C. civ., art. 1242, al. 1 (responsabilité du fait des choses sous sa garde)",
+"C. civ., art. 1242, al. 1 (responsabilité du fait des choses sous sa garde et du fait des personnes dont on doit répondre) [ligne de la liste sources]",
 "C. sport, L. 321-3-1 (pratiquants : pas de responsabilité du fait des choses pour les dommages matériels entre pratiquants)",
-"C. assur., L. 113-1 (faute intentionnelle ou dolosive exclue)"
+"C. assur., L. 113-1 (faute intentionnelle ou dolosive exclue)",
+"Cass. 2e civ., 13 janv. 2005, n° 03-18.617 (responsabilité du club : faute caractérisée par une violation des règles du jeu)",
+"Cass. ass. plén., 29 juin 2007, n° 06-18.141 (même principe, joueurs même non identifiés)"
 ],
 "questions": [
 "ass-l10-q1",
