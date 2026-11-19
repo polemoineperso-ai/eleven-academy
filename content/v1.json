@@ -31003,9 +31003,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Les peines de l'article 226-8 du Code pénal sont ajoutées."
+},
+{
+"d": "2026-11-20",
+"t": "precision",
+"x": "L'explication reprend la double condition de l'article 226-8."
 }
 ],
-"v": 2
+"v": 3
 },
 {
 "id": "m07-q15",
@@ -31044,14 +31049,22 @@
 "options": [
 "Le Code de la sécurité sociale",
 "Un décret",
-"La Convention collective nationale du sport",
+"La Convention collective nationale du sport, commune à tous les sports",
 "Un accord collectif national conclu par discipline",
 "Un règlement de la fédération ou de la ligue"
 ],
 "bonne": 3,
-"explication": "L'article L. 222-2-10-1 du Code du sport renvoie à une convention ou un accord collectif national conclu par discipline.",
+"explication": "L'article L. 222-2-10-1 du Code du sport renvoie à une convention ou un accord collectif national conclu par discipline. Un décret ne fixe que les catégories de recettes, et la convention collective nationale du sport, commune à tous les sports, ne fixe pas ce plafond.",
 "origine": "Annale CNOSF 2024, QCM 9",
-"chapitre": "m07-3"
+"chapitre": "m07-3",
+"maj": [
+{
+"d": "2026-11-20",
+"t": "precision",
+"x": "Une proposition est reformulée : la convention collective du sport ne fixe pas ce plafond."
+}
+],
+"v": 2
 },
 {
 "id": "m08-q01",
@@ -33213,6 +33226,276 @@
 "bonne": 0,
 "explication": "Faute de décision portée à sa connaissance dans le délai de deux mois, l'intéressé peut considérer sa demande comme rejetée (C. séc. soc., R. 142-6).",
 "origine": "Leçon trv-l17"
+},
+{
+"id": "per-l01-q1",
+"chapitre": "m07-2",
+"niveau": 2,
+"enonce": "Qui dispose d'un droit à l'image ?",
+"options": [
+"Seulement les sportifs professionnels",
+"Toute personne physique, même amateur ou peu connue",
+"Seulement les personnes qui ne sont pas célèbres",
+"Seulement les mineurs"
+],
+"bonne": 1,
+"explication": "Toute personne physique a un droit à l'image, quelle que soit sa notoriété. Il se rattache à l'article 9 du Code civil (respect de la vie privée).",
+"origine": "Leçon per-l01"
+},
+{
+"id": "per-l01-q2",
+"chapitre": "m07-2",
+"niveau": 2,
+"enonce": "Une marque veut utiliser dans une publicité la photo originale qu'un photographe a prise d'un joueur pendant un match. Que doit-elle vérifier ?",
+"options": [
+"Seulement les droits du photographe",
+"Seulement l'accord du joueur",
+"À la fois les droits du photographe et l'accord du joueur",
+"Rien, car la photo a été prise en public"
+],
+"bonne": 2,
+"explication": "Le photographe a des droits d'auteur sur sa photo, et le joueur garde son droit à l'image : ce sont deux droits distincts, à vérifier tous les deux (droit à l'image : C. civ., art. 9 ; droits d'auteur du photographe : Code de la propriété intellectuelle).",
+"origine": "Leçon per-l01"
+},
+{
+"id": "per-l02-q1",
+"chapitre": "m07-2",
+"niveau": 2,
+"enonce": "Un club veut publier la photo d'un joueur de 15 ans dans une campagne de recrutement de son centre de formation. Qui doit donner l'autorisation ?",
+"options": [
+"Le joueur seul",
+"En principe, les titulaires de l'autorité parentale, de préférence par écrit",
+"L'entraîneur du centre de formation",
+"Personne, car la campagne est celle du club"
+],
+"bonne": 1,
+"explication": "Pour un mineur, l'accord émane en principe des titulaires de l'autorité parentale (C. pén., art. 226-1 pour la vie privée ; principe repris par le cours pour l'usage de l'image).",
+"origine": "Leçon per-l02"
+},
+{
+"id": "per-l02-q2",
+"chapitre": "m07-2",
+"niveau": 2,
+"enonce": "Un joueur accepte une campagne limitée à la France pendant 12 mois. La marque veut la diffuser dans le monde entier. L'accord initial le permet-il automatiquement ?",
+"options": [
+"Oui, car la campagne est la même",
+"Oui, si la marque paie plus",
+"Non, l'accord vaut pour l'étendue prévue, un nouvel accord est en principe nécessaire",
+"Oui, car internet n'a pas de frontières"
+],
+"bonne": 2,
+"explication": "L'accord doit être précis quant au territoire et à la durée. Une campagne française ne couvre pas automatiquement une campagne mondiale (C. civ., art. 9).",
+"origine": "Leçon per-l02"
+},
+{
+"id": "per-l03-q1",
+"chapitre": "m07-2",
+"niveau": 2,
+"enonce": "Un journal télévisé diffuse des images d'un joueur pendant un match de championnat pour illustrer le résultat. Faut-il, en principe, son accord individuel ?",
+"options": [
+"Oui, toujours, pour chaque image",
+"Non, en principe : cela relève du droit d'informer sur un événement d'actualité",
+"Oui, mais seulement si le joueur est mineur",
+"Non, car le joueur est professionnel et n'a plus aucun droit à l'image"
+],
+"bonne": 1,
+"explication": "La diffusion d'images d'un match pour informer relève normalement du droit à l'information. La notoriété du joueur ne supprime pas pour autant son droit à l'image, notamment pour un usage commercial.",
+"origine": "Leçon per-l03"
+},
+{
+"id": "per-l03-q2",
+"chapitre": "m07-2",
+"niveau": 2,
+"enonce": "Un club isole un supporter vu dans les tribunes pour l'utiliser dans une publicité commerciale. L'exception de la photo de foule permet-elle de se passer de son accord ?",
+"options": [
+"Oui, car la photo a été prise dans un lieu public",
+"Non, en principe : isoler un supporter dans une publicité ne relève pas de cette exception",
+"Oui, si le supporter est abonné du club",
+"Oui, si le club est professionnel"
+],
+"bonne": 1,
+"explication": "Une photo générale des tribunes peut illustrer l'ambiance d'un match, mais isoler une personne dans une publicité commerciale ne relève pas nécessairement de cette exception : son accord est en principe nécessaire.",
+"origine": "Leçon per-l03"
+},
+{
+"id": "per-l04-q1",
+"chapitre": "m07-2",
+"niveau": 2,
+"enonce": "Selon l'article 9 du Code civil, que peut faire le juge en cas d'urgence face à une atteinte à l'intimité de la vie privée ?",
+"options": [
+"Ordonner en référé des mesures comme le séquestre ou la saisie pour faire cesser l'atteinte",
+"Seulement prononcer une peine de prison",
+"Attendre la fin du procès pénal",
+"Rien : il ne peut statuer qu'après un jugement au fond"
+],
+"bonne": 0,
+"explication": "Le juge peut prescrire toutes mesures propres à empêcher ou faire cesser l'atteinte, et s'il y a urgence, elles peuvent être ordonnées en référé (C. civ., art. 9).",
+"origine": "Leçon per-l04"
+},
+{
+"id": "per-l04-q2",
+"chapitre": "m07-2",
+"niveau": 2,
+"enonce": "Quelle peine l'article 226-1 du Code pénal prévoit-il pour avoir fixé ou transmis, sans son consentement, l'image d'une personne se trouvant dans un lieu privé ?",
+"options": [
+"Une amende de 750 €",
+"Un an d'emprisonnement et 45 000 € d'amende",
+"Deux ans d'emprisonnement et 60 000 € d'amende",
+"Trois ans d'emprisonnement et 75 000 € d'amende"
+],
+"bonne": 1,
+"explication": "L'article 226-1 punit d'un an d'emprisonnement et de 45 000 € d'amende le fait de fixer, enregistrer ou transmettre sans son consentement l'image d'une personne se trouvant dans un lieu privé.",
+"origine": "Leçon per-l04"
+},
+{
+"id": "per-l05-q1",
+"chapitre": "m07-3",
+"niveau": 2,
+"enonce": "Selon la Charte du football professionnel, à partir de combien de joueurs de l'effectif, exploités de façon rigoureusement identique, l'utilisation de l'image est-elle collective ?",
+"options": [
+"3 joueurs",
+"5 joueurs au moins",
+"11 joueurs",
+"Tout l'effectif"
+],
+"bonne": 1,
+"explication": "La Charte vise l'utilisation collective de l'image dès que 5 joueurs au moins de l'effectif sont exploités de façon rigoureusement identique. En deçà, un accord spécifique du joueur est nécessaire pour chaque opération (Charte du football professionnel, art. 280).",
+"origine": "Leçon per-l05"
+},
+{
+"id": "per-l06-q1",
+"chapitre": "m07-3",
+"niveau": 2,
+"enonce": "Un sponsor organise une séance d'autographes et le club verse au joueur une somme pour sa présence. Selon l'instruction interministérielle du 2 juillet 2019, cette somme est :",
+"options": [
+"Une redevance au sens de L. 222-2-10-1",
+"Une rémunération au sens de L. 242-1 du Code de la sécurité sociale (revenu d'activité)",
+"Une subvention publique",
+"Un remboursement de frais"
+],
+"bonne": 1,
+"explication": "La redevance ne peut pas rémunérer la présence physique du sportif à un événement : la somme versée pour une séance d'autographes constitue une rémunération au sens de L. 242-1 du Code de la sécurité sociale (instruction DSS/5B/2019/152, § 1.2).",
+"origine": "Leçon per-l06"
+},
+{
+"id": "per-l08-q1",
+"chapitre": "m07-3",
+"niveau": 2,
+"enonce": "Laquelle de ces recettes du club est exclue des recettes pouvant donner lieu à une redevance d'image ?",
+"options": [
+"Les recettes d'un contrat de parrainage sur les tenues des joueurs",
+"Les recettes de produits dérivés portant le nom d'un joueur",
+"Les recettes de la cession des droits d'exploitation audiovisuelle des compétitions",
+"Les recettes d'un contrat de parrainage sur des supports publicitaires"
+],
+"bonne": 2,
+"explication": "Sont exclues les recettes tirées de la cession des droits d'exploitation audiovisuelle, de la vente des titres d'accès aux manifestations et les subventions publiques (C. sport, D. 222-50).",
+"origine": "Leçon per-l08"
+},
+{
+"id": "per-l09-q1",
+"chapitre": "m07-4",
+"niveau": 2,
+"enonce": "Selon la Charte du football professionnel, un joueur professionnel peut-il faire réaliser à son profit des actions publicitaires sur son image ou son nom ?",
+"options": [
+"Non, jamais",
+"Oui, sans les équipements et marques du club, sans concurrencer les inscriptions publicitaires figurant sur les équipements officiels, en informant le club",
+"Oui, sans aucune condition",
+"Oui, mais seulement avec l'accord écrit de la LFP"
+],
+"bonne": 1,
+"explication": "La Charte permet ces actions, sans les équipements et marques du club (le nom du club peut être mentionné). Elles ne doivent pas entrer en concurrence, directement ou indirectement, avec les inscriptions publicitaires figurant sur les équipements officiels du championnat et des coupes d'Europe et doivent être communiquées au club pour information (art. 280, c).",
+"origine": "Leçon per-l09"
+},
+{
+"id": "per-l09-q2",
+"chapitre": "m07-4",
+"niveau": 2,
+"enonce": "Un joueur est lié à un équipementier qui lui interdit de promouvoir une marque concurrente. Un second sponsor lui demande de porter des chaussures concurrentes. Que faut-il faire d'abord ?",
+"options": [
+"Signer, puisque le second sponsor paie davantage",
+"Vérifier les engagements existants, notamment l'exclusivité de l'équipementier",
+"Rien, car l'exclusivité ne concerne que le club",
+"Demander une redevance au club"
+],
+"bonne": 1,
+"explication": "Le sportif doit avoir les droits nécessaires pour consentir à une nouvelle exploitation : on vérifie d'abord les engagements déjà pris, notamment une exclusivité accordée à un équipementier.",
+"origine": "Leçon per-l09"
+},
+{
+"id": "per-l10-q1",
+"chapitre": "m07-4",
+"niveau": 2,
+"enonce": "Un club verse à un joueur, sous l'intitulé « droit à l'image », une somme fixe, sans lien avec les recettes, en échange de sa présence à des opérations promotionnelles. Cette somme remplit-elle les conditions de la redevance de L. 222-2-10-1 ?",
+"options": [
+"Oui, l'intitulé suffit",
+"Non : elle ne dépend pas des recettes et rémunère la présence du joueur",
+"Oui, si le joueur est d'accord",
+"Oui, si elle est inférieure au salaire"
+],
+"bonne": 1,
+"explication": "La redevance ne doit pas exiger la présence physique du joueur et doit être fonction des recettes de l'exploitation de l'image, pas du salaire. L'intitulé ne suffit pas (C. sport, L. 222-2-10-1).",
+"origine": "Leçon per-l10"
+},
+{
+"id": "per-l10-q2",
+"chapitre": "m07-4",
+"niveau": 2,
+"enonce": "Un joueur signe directement avec une marque de boissons, sans passer par son club. De quel type de contrat s'agit-il ?",
+"options": [
+"Un contrat de travail avec le club",
+"Un contrat de redevance de L. 222-2-10-1",
+"Un sponsoring personnel",
+"Un accord de mutation"
+],
+"bonne": 2,
+"explication": "Le contrat de redevance de L. 222-2-10-1 se conclut avec le club. Un contrat signé directement entre le joueur et une marque est un sponsoring personnel.",
+"origine": "Leçon per-l10"
+},
+{
+"id": "per-l10-q3",
+"chapitre": "m07-4",
+"niveau": 2,
+"enonce": "Parmi ces contrats, lequel entre dans la mission de l'agent sportif définie à l'article L. 222-7 du Code du sport ?",
+"options": [
+"Un contrat relatif à l'exploitation commerciale de l'image, de L. 222-2-10-1",
+"Un bail du stade du club",
+"Un contrat d'assurance du club",
+"Un contrat de fourniture d'équipements du club"
+],
+"bonne": 0,
+"explication": "L'article L. 222-7 vise la mise en relation pour la conclusion ou la prolongation d'un contrat de travail ou de tout accord de participation, d'un contrat de L. 222-2-10-1 ou d'un accord de mutation.",
+"origine": "Leçon per-l10"
+},
+{
+"id": "per-l11-q1",
+"chapitre": "m07-5",
+"niveau": 2,
+"enonce": "Comment s'acquiert la propriété d'une marque ?",
+"options": [
+"Par l'usage répété du nom",
+"Par l'enregistrement de la marque",
+"Par la notoriété du joueur",
+"Par une déclaration à l'officier de l'état civil"
+],
+"bonne": 1,
+"explication": "La propriété de la marque s'acquiert par l'enregistrement, pour dix ans indéfiniment renouvelables (CPI, art. L. 712-1).",
+"origine": "Leçon per-l11"
+},
+{
+"id": "per-l11-q2",
+"chapitre": "m07-5",
+"niveau": 2,
+"enonce": "Un joueur est connu du public sous un surnom depuis dix ans. Ce pseudonyme est-il devenu son nom de famille ?",
+"options": [
+"Oui, après dix ans d'usage",
+"Oui, si la fédération l'accepte",
+"Non, un pseudonyme ne remplace pas automatiquement le nom inscrit à l'état civil",
+"Oui, s'il dépose une marque"
+],
+"bonne": 2,
+"explication": "Le pseudonyme est un nom choisi pour se faire connaître. Il ne remplace pas le nom civil, qui relève de l'état civil (C. civ., art. 311-21 et suivants ; art. 61 pour un changement).",
+"origine": "Leçon per-l11"
 },
 {
 "id": "ass-l01-q1",
@@ -36917,6 +37200,15 @@
 "precisions": []
 },
 {
+"id": "n-lecons-m07-2026-11-20",
+"d": "2026-11-20",
+"genre": "appli",
+"titre": "Le module 07, Droit de la personnalité, passe aux leçons",
+"texte": "11 leçons de 5 minutes pour ne plus confondre trois régimes : le droit à l'image de chacun, la redevance d'image versée par le club au joueur professionnel, et le sponsoring personnel avec une marque. Avec les deepfakes, le droit au nom et la marque.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
@@ -36924,6 +37216,25 @@
 "texte": "Chaque billet donne maintenant la règle avec ses conditions, un exemple de football, le piège d'examen quand il y en a un, et sa source. Ce que tu avais appris reste juste : aucun billet ne repasse en révision.",
 "erreurs": [],
 "precisions": []
+},
+{
+"id": "n-appli-2026-11-20",
+"d": "2026-11-20",
+"genre": "appli",
+"titre": "Corrections de l'appli",
+"erreurs": [],
+"precisions": [
+{
+"g": "q",
+"id": "an24-q09",
+"x": "Une proposition est reformulée : la convention collective du sport ne fixe pas ce plafond."
+},
+{
+"g": "q",
+"id": "m07-q14",
+"x": "L'explication reprend la double condition de l'article 226-8."
+}
+]
 },
 {
 "id": "n-appli-2026-11-19",
@@ -40759,15 +41070,16 @@
 },
 {
 "t": "p",
-"x": "L'association est un contrat : sa validité dépend des principes généraux du droit des contrats. Dans le Bas-Rhin, le Haut-Rhin et la Moselle, le droit civil local s'applique aux associations sportives, avec ses propres règles : le minimum de deux personnes est celui de la loi de 1901."
+"x": "L'association est un contrat : sa validité dépend des principes généraux du droit des contrats. Dans le Bas-Rhin, le Haut-Rhin et la Moselle, la loi de 1901 ne s'applique pas : une association sportive y est constituée selon le code civil local (art. 21 à 79-XII). Il faut sept fondateurs au minimum pour l'inscrire au tribunal, puis au moins trois membres. Un but lucratif y est possible si les statuts le prévoient, mais c'est très rare."
 }
 ],
 "piege": "Une association peut avoir une activité économique et faire un excédent. Ce que la loi exclut, c'est de le partager entre les membres.",
-"reponse": "Oui pour la création : deux personnes suffisent. Non pour le partage : les 3 000 € sont un excédent, et une association ne peut pas le répartir entre ses membres. Il doit servir son objet, par exemple acheter des ballons ou financer des déplacements.",
+"reponse": "Oui pour la création, hors Alsace-Moselle : deux personnes suffisent (il en faut sept en Alsace-Moselle). Non pour le partage : les 3 000 € sont un excédent, et une association ne peut pas le répartir entre ses membres. Il doit servir son objet, par exemple acheter des ballons ou financer des déplacements.",
 "sources": [
 "Loi du 1er juillet 1901, art. 1",
 "Loi du 1er juillet 1901, art. 2",
-"C. sport, L. 121-1 (associations sportives et droit local d'Alsace-Moselle)"
+"C. sport, L. 121-1 (associations sportives et droit local d'Alsace-Moselle)",
+"Guide « Créer une association en Alsace-Moselle » (Alsace Mouvement associatif, éd. 02.2026), p. 4, 24, 26 et 32 (code civil local, art. 21 à 79-XII : 7 fondateurs au minimum, 3 membres en cours de vie, but lucratif possible)"
 ],
 "questions": [
 "m04-q01",
@@ -41327,7 +41639,7 @@
 },
 {
 "t": "p",
-"x": "Les 4P sont examinés dans cet ordre d'importance et se jugent ensemble, jamais isolément."
+"x": "Les 4P forment un faisceau d'indices : ils sont classés par ordre d'importance décroissante et se jugent ensemble."
 },
 {
 "t": "h",
@@ -41338,12 +41650,12 @@
 "x": "Même une activité lucrative accessoire échappe à l'impôt sur les sociétés si trois conditions sont réunies : gestion désintéressée, activités non lucratives significativement prépondérantes, recettes lucratives de l'année ne dépassant pas 81 051 € (seuil 2026, réindexé chaque année)."
 }
 ],
-"piege": "Le seuil de 81 051 € vise seulement les recettes lucratives, pas toutes les ressources de l'association.",
+"piege": "Le seuil de 81 051 € vise seulement les recettes lucratives, pas toutes les ressources de l'association. Pour la TVA, on compare avec les recettes de l'année précédente.",
 "reponse": "Probablement pas. La gestion est désintéressée. L'examen des 4P est partagé : le prix très inférieur au marché (120 € contre 300 €) joue en faveur de la non-lucrativité, mais le produit comparable, le public large et la publicité en ligne jouent plutôt contre. Cela importe peu : même si le stage était jugé lucratif, les 30 000 € de recettes sont sous le seuil 2026 de 81 051 €, avec des activités non lucratives qui dominent.",
 "sources": [
 "CGI, art. 206, 1 bis (impôt sur les sociétés, franchise, seuil de 81 051 €)",
 "CGI, art. 261, 7, 1° (TVA, seuil de recettes de l'année précédente)",
-"BOFiP (doctrine de l'administration fiscale : méthode en 3 étapes et règle des 4P)"
+"BOI-IS-CHAMP-10-50-10-10-20260805, § 30 à 75 (démarche en trois étapes, règle des 4P classés par ordre d'importance décroissante), 90 (activité par activité), 140 à 170 (franchise, seuil de 81 051 €)"
 ],
 "questions": [
 "m04-q08",
@@ -41362,7 +41674,7 @@
 "blocs": [
 {
 "t": "p",
-"x": "En principe, les dirigeants sont bénévoles : la gestion désintéressée suppose qu'ils n'aient aucun intérêt direct ou indirect dans les résultats et qu'il n'y ait aucune distribution de bénéfice. Une exception existe pour rémunérer certains dirigeants sans remettre en cause cette gestion."
+"x": "En principe, les dirigeants sont bénévoles : la gestion désintéressée suppose qu'ils n'aient aucun intérêt direct ou indirect dans les résultats et qu'il n'y ait aucune distribution de bénéfice. Deux voies existent pour rémunérer des dirigeants sans perdre cette gestion : la tolérance (rémunération brute mensuelle de chacun sous les trois quarts du SMIC) ou le régime légal ci-dessous. On choisit l'une ou l'autre."
 },
 {
 "t": "table",
@@ -41405,14 +41717,15 @@
 },
 {
 "t": "p",
-"x": "Un remboursement de frais réels et justifiés n'est pas une rémunération. Un forfait sans justificatifs peut être requalifié."
+"x": "Un remboursement de frais réels, engagés pour l'action de l'association et justifiés, n'est pas une rémunération. Si l'usage des sommes n'est pas justifié, le remboursement en devient une."
 }
 ],
-"piege": "Le seuil de 200 000 € s'apprécie en moyenne sur les trois derniers exercices clos, hors versements des personnes publiques : ni le dernier exercice seul, ni l'ensemble des ressources subventions publiques comprises.",
+"piege": "Le seuil de 200 000 € s'apprécie en moyenne sur les trois derniers exercices clos (donc au plus tôt la quatrième année d'existence), hors versements des personnes publiques : ni le dernier exercice seul, ni l'ensemble des ressources subventions publiques comprises.",
 "reponse": "Pas en l'état. Hors subventions publiques, les ressources moyennes sont de 290 000 €, soit plus de 200 000 € : le club pourrait rémunérer un dirigeant. Mais il faut d'abord que les statuts le prévoient explicitement, qu'une décision à la majorité des deux tiers soit prise et qu'un commissaire aux comptes constate le montant des ressources. Les billets de train remboursés sur justificatifs ne sont pas une rémunération.",
 "sources": [
 "CGI, art. 261, 7, 1° d (gestion désintéressée, rémunération des dirigeants, seuils de ressources, plafond de 3 fois le plafond de la Sécurité sociale)",
-"CGI, art. 206, 1 bis (gestion désintéressée)"
+"CGI, art. 206, 1 bis (gestion désintéressée)",
+"BOI-IS-CHAMP-10-50-10-20-20170607, § 100 et 370 (tolérance des trois quarts du SMIC), 140 (notion de rémunération, remboursement de frais), 180 (transparence financière), 270 à 300 (ressources hors versements publics, moyenne des trois exercices clos, quatrième année d'existence), 410 (choix exclusif, frais remboursés non comptés)"
 ],
 "questions": [
 "m04-q10",
@@ -41707,7 +42020,7 @@
 },
 {
 "t": "p",
-"x": "Une redevance versée par un club à un joueur pour exploiter son image n'est pas un salaire lorsque les conditions du Code du sport sont réunies (la présence physique du joueur n'est pas requise, et la redevance dépend des recettes tirées de son image, non de son salaire). Selon le BOFiP, elle est imposée en BNC si elle ne relève pas d'une autre catégorie. Selon l'instruction interministérielle du 2 juillet 2019, elle supporte aussi, quand le joueur réside fiscalement en France, les prélèvements sociaux sur les revenus du patrimoine (CSG, CRDS, prélèvement de solidarité), mais pas les cotisations de Sécurité sociale."
+"x": "Une redevance versée par un club à un joueur pour exploiter son image n'est pas un salaire lorsque les conditions du Code du sport sont réunies (la présence physique du joueur n'est pas requise, et la redevance dépend des recettes tirées de son image, non de son salaire). Selon le BOFiP, elle est imposée en BNC si elle ne relève pas d'une autre catégorie. Selon l'instruction interministérielle du 2 juillet 2019, elle supporte aussi, quand le joueur réside fiscalement en France, les prélèvements sociaux sur les revenus du patrimoine (CSG, CRDS, prélèvement de solidarité), mais pas les cotisations de Sécurité sociale (un joueur qui réside à l'étranger tout en restant affilié en France paie à la place une cotisation d'assurance maladie de 18,5 %)."
 }
 ],
 "piege": "Un même sportif peut cumuler deux catégories : son salaire (traitements et salaires) et sa redevance d'image (BNC) ne s'imposent pas de la même façon.",
@@ -42299,7 +42612,7 @@
 "t": "list",
 "items": [
 "Article 100 bis : le sportif imposé en BNC, à la déclaration contrôlée, peut demander que son bénéfice soit la moyenne des recettes moins la moyenne des dépenses de l'année et des deux années précédentes. Il peut choisir cinq ans : l'année et les quatre précédentes, sans pouvoir revenir sur ce choix.",
-"Article 84 A : les mêmes règles s'appliquent aux salaires des sportifs perçus au titre de la pratique d'un sport.",
+"Article 84 A : même mécanisme pour les salaires des sportifs. Demande écrite avec la déclaration de revenus, choix de 3 ou 5 ans définitif, calcul sur les salaires nets de frais professionnels. Les entraîneurs sont exclus.",
 "Article 163-0 A ter : les primes versées par l'État aux sportifs médaillés aux Jeux olympiques et paralympiques (et à leur guide), ainsi que celles versées par les fédérations à leur encadrement, peuvent, sur demande expresse et irrévocable, être réparties par parts égales sur l'année de perception et les trois années suivantes. Cette option est incompatible avec celle de l'article 163-0 A (revenu exceptionnel)."
 ]
 },
@@ -42334,11 +42647,13 @@
 }
 ],
 "piege": "Ne confonds pas l'étalement des revenus sportifs (articles 100 bis et 84 A : moyenne sur 3 ou 5 ans) et celui des primes olympiques (article 163-0 A ter : quatre parts égales sur quatre ans).",
-"reponse": "Oui. L'article 84 A étend aux salaires des sportifs le mécanisme de l'article 100 bis. Sur option, Thomas peut faire calculer son impôt à partir d'une moyenne sur trois ans (l'année et les deux précédentes) ou sur cinq ans (l'année et les quatre précédentes), ce qui lisse son pic de 600 000 €.",
+"reponse": "Oui. L'article 84 A étend aux salaires des sportifs le mécanisme de l'article 100 bis. Sur demande écrite avec sa déclaration de revenus, Thomas peut faire calculer son impôt à partir d'une moyenne sur trois ans (l'année et les deux précédentes) ou sur cinq ans (l'année et les quatre précédentes), ce qui lisse son pic de 600 000 €.",
 "sources": [
 "CGI, art. 100 bis (moyenne sur 3 ou 5 ans, déclaration contrôlée)",
 "CGI, art. 84 A (extension aux salaires des sportifs)",
-"CGI, art. 163-0 A (revenu exceptionnel) et 163-0 A ter (primes olympiques et paralympiques)"
+"CGI, art. 163-0 A (revenu exceptionnel) et 163-0 A ter (primes olympiques et paralympiques)",
+"BOI-RSA-BASE-10-20160530, II, § 30 à 90 (art. 84 A : salaires des sportifs, demande écrite, période de 3 ou 5 ans irrévocable, entraîneurs exclus)",
+"BOI-BNC-SECT-20-20-20120912, § 10 à 20, 70 à 90, 110 à 120, 160 (art. 100 bis : moyenne sur 3 ou 5 ans, option, calcul)"
 ],
 "questions": [
 "m05-q12",
@@ -42361,12 +42676,12 @@
 },
 {
 "t": "p",
-"x": "Un salarié appelé de l'étranger pour occuper un emploi dans une entreprise établie en France, pour une période limitée, peut être exonéré d'impôt sur les éléments de rémunération directement liés à cette situation. Sur option, l'exonération peut aussi être de 30 % de sa rémunération. Les conditions sont strictes :"
+"x": "Un salarié appelé de l'étranger pour occuper un emploi dans une entreprise établie en France peut, pendant une période limitée, être exonéré d'impôt sur sa prime d'impatriation, c'est-à-dire les éléments de rémunération directement liés à cette situation. Sur option, cette prime est fixée à 30 % de sa rémunération nette. Les conditions sont strictes :"
 },
 {
 "t": "list",
 "items": [
-"ne pas avoir été fiscalement domicilié en France pendant les cinq années civiles précédant celle de la prise de fonctions, quelle que soit la nationalité ; [modification facultative]",
+"ne pas avoir été fiscalement domicilié en France pendant les cinq années civiles précédant celle de la prise de fonctions, quelle que soit la nationalité ;",
 "le régime dure jusqu'au 31 décembre de la huitième année civile suivant celle de la prise de fonctions ;",
 "le salarié est recruté à l'étranger, ou appelé par une entreprise étrangère, pour occuper un emploi dans une entreprise établie en France, et il y est fiscalement domicilié."
 ]
@@ -42377,16 +42692,18 @@
 },
 {
 "t": "p",
-"x": "Un non-résident sans installation professionnelle permanente en France subit une retenue à la source, quand il est payé par un débiteur qui exerce une activité en France, sur les sommes, salaires compris, qui rémunèrent des prestations sportives fournies ou utilisées en France. En 2026, le taux interne est de 15 %. La base est le montant brut versé. Les conventions fiscales entre États peuvent modifier ce résultat."
+"x": "Un non-résident sans installation professionnelle permanente en France subit une retenue à la source, quand il est payé par un débiteur qui exerce une activité en France, sur les sommes, salaires compris, qui rémunèrent des prestations sportives fournies ou utilisées en France. En 2026, le taux interne est de 15 %. La base est le montant brut versé. La retenue s'impute ensuite sur son impôt sur le revenu en France. Les conventions fiscales entre États peuvent modifier ce résultat."
 }
 ],
-"piege": "Un joueur étranger recruté par un club français n'est pas automatiquement un impatrié : tout dépend de sa résidence fiscale pendant les cinq années précédentes.",
+"piege": "Un joueur étranger recruté par un club français n'est pas automatiquement un impatrié : tout dépend de sa résidence fiscale pendant les cinq années précédentes, et il doit avoir été recruté depuis l'étranger.",
 "reponse": "Diego peut relever du régime des impatriés s'il n'a pas été domicilié fiscalement en France pendant les cinq années civiles précédant sa prise de fonctions et s'il s'y domicilie fiscalement, jusqu'au 31 décembre de la huitième année suivante. Marco subit une retenue à la source de 15 % sur 100 000 € bruts, soit 15 000 €, et reçoit 85 000 €, sous réserve d'une convention fiscale.",
 "sources": [
 "CGI, art. 155 B (régime des impatriés)",
 "CGI, art. 182 B, I, d, I bis et II (retenue sur prestations sportives, base brute, taux de 15 %)",
 "CGI, art. 197 A (imputation de la retenue sur l'impôt)",
-"BOI-RSA-GEO-40-10-10-20250811, § 10 à 90 (salariés appelés ou recrutés), 130 à 160 (cinq années, domiciliation en France), 250 (31 décembre de la huitième année)"
+"BOI-RSA-GEO-40-10-10-20250811, § 10 à 90 (salariés appelés ou recrutés), 130 à 160 (cinq années, domiciliation en France), 250 (31 décembre de la huitième année)",
+"BOI-RSA-GEO-40-10-20-20250811, § 40 à 102 (prime d'impatriation, option forfaitaire de 30 %), 110 (rémunération de fonctions analogues), 170 (31 décembre de la huitième année), 280 à 310 (plafonnements à 50 % et 20 %)",
+"BOI-IR-DOMIC-10-20-20-50-20240703, § 20 à 40 (conditions de la retenue), 50 (base brute), 90 (taux de 15 % pour les sportifs), 110 (imputation sur l'impôt sur le revenu)"
 ],
 "questions": [
 "m05-q14",
@@ -43770,7 +44087,7 @@
 "t": "list",
 "items": [
 "Ces délais ne sont opposables que s'ils figurent, avec les voies de recours, dans la notification de la décision.",
-"Certaines contestations, notamment médicales, suivent une procédure particulière, tout comme certains litiges de recouvrement des cotisations. Les décisions fixant le taux de cotisation accidents du travail (L. 142-1, 7°) ne relèvent pas de ce tribunal. [modification facultative]"
+"Certaines contestations, notamment médicales, suivent une procédure particulière, tout comme certains litiges de recouvrement des cotisations. Les décisions fixant le taux de cotisation accidents du travail (L. 142-1, 7°) ne relèvent pas de ce tribunal."
 ]
 }
 ],
@@ -43791,6 +44108,917 @@
 ],
 "titre": "Contester une décision d'un organisme social",
 "priorite": 1
+}
+}
+},
+{
+"domaine": "personnalite",
+"titre": "Module 07 · Droit de la personnalité",
+"parties": [
+{
+"titre": "Le droit à l'image",
+"lecons": [
+{
+"id": "per-l01",
+"titre": "Le droit à l'image, article 9 du Code civil",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "per-l02",
+"titre": "Le consentement et ses limites",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "per-l03",
+"titre": "Les exceptions au consentement",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "per-l04",
+"titre": "Sanctions civiles et pénales, montages et deepfakes",
+"priorite": 3,
+"dispo": true
+}
+]
+},
+{
+"titre": "La redevance d'image du sportif professionnel",
+"lecons": [
+{
+"id": "per-l05",
+"titre": "De l'image collective à la redevance",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "per-l06",
+"titre": "Les deux conditions de la redevance",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "per-l07",
+"titre": "Le contrat de redevance : mentions et plafond",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "per-l08",
+"titre": "Les recettes qui comptent",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "Sponsoring et rôle de l'agent",
+"lecons": [
+{
+"id": "per-l09",
+"titre": "Le contrat de sponsoring",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "per-l10",
+"titre": "Redevance, sponsoring ou salaire",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "Le droit au nom",
+"lecons": [
+{
+"id": "per-l11",
+"titre": "Nom civil, pseudonyme et marque",
+"priorite": 2,
+"dispo": true
+}
+]
+}
+],
+"contenu": {
+"per-l01": {
+"minutes": 5,
+"situation": {
+"texte": "Une marque de boissons publie une affiche avec une photo d'un joueur du club de Nadia, vu de dos. On lit son numéro et son nom sur le maillot, et son tatouage est visible. Le joueur n'a rien signé.",
+"question": "Le joueur peut-il invoquer son droit à l'image alors que son visage n'apparaît pas ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le droit à l'image est le droit de chacun de contrôler l'utilisation de son image : la prendre, la reproduire, la diffuser. Il se rattache à l'article 9 du Code civil : « Chacun a droit au respect de sa vie privée. » Le mot « image » n'apparaît pas dans ce texte : la protection de l'image s'y rattache et a été précisée par les juges."
+},
+{
+"t": "h",
+"x": "Qui est protégé ?"
+},
+{
+"t": "p",
+"x": "Toute personne physique : joueur professionnel ou amateur, entraîneur, arbitre, dirigeant, supporter, salarié, mineur. La notoriété ne supprime pas ce droit : un joueur célèbre garde le contrôle de l'usage commercial de son image."
+},
+{
+"t": "h",
+"x": "Qu'est-ce qui est protégé ?"
+},
+{
+"t": "p",
+"x": "Pas seulement le visage. La silhouette, l'apparence ou tout signe qui permet de reconnaître la personne (tatouage, numéro, équipement) peuvent suffire. Le critère : la personne est-elle identifiable ?"
+},
+{
+"t": "h",
+"x": "Un droit qui a des limites"
+},
+{
+"t": "p",
+"x": "Ce droit doit être concilié avec d'autres libertés : liberté d'expression, droit à l'information. Le juge pèse les intérêts en présence. Le photographe, lui, a ses propres droits d'auteur sur sa photo : ils sont distincts du droit à l'image du joueur."
+},
+{
+"t": "h",
+"x": "Ne pas confondre trois régimes"
+},
+{
+"t": "table",
+"head": [
+"Régime",
+"Qui, et pour quoi"
+],
+"rows": [
+[
+"Droit à l'image (C. civ., art. 9)",
+"Toute personne contrôle l'usage de son image"
+],
+[
+"Redevance d'image (C. sport, L. 222-2-10-1)",
+"Un club et son sportif professionnel salarié"
+],
+[
+"Sponsoring personnel",
+"Un sportif et une marque"
+]
+]
+}
+],
+"piege": "Le droit à l'image ne se limite pas au visage, et la notoriété d'un joueur ne le prive pas de ce droit.",
+"reponse": "Oui. La protection ne dépend pas de la présence du visage, mais de la possibilité de reconnaître la personne. Ici, le numéro, le nom sur le maillot et le tatouage rendent le joueur identifiable. Comme il n'a rien signé, rien n'indique qu'il ait donné son accord pour une publicité : il peut en principe s'y opposer.",
+"sources": [
+"C. civ., art. 9 (respect de la vie privée, mesures en référé)"
+],
+"questions": [
+"m07-q01",
+"per-l01-q1",
+"per-l01-q2"
+],
+"titre": "Le droit à l'image, article 9 du Code civil",
+"priorite": 3
+},
+"per-l02": {
+"minutes": 5,
+"situation": {
+"texte": "Samuel, joueur du club d'Inès, autorise le club à publier sa photo sur le site officiel pour annoncer sa signature. Quelques mois plus tard, le club transmet cette photo à un fabricant de boissons énergisantes, qui l'utilise dans une publicité nationale.",
+"question": "L'accord donné par Samuel couvre-t-il cette publicité ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le consentement est l'accord donné par la personne pour que son image soit utilisée. Quand une personne est identifiable, son image ne s'utilise en principe qu'avec son accord, surtout pour un usage commercial."
+},
+{
+"t": "h",
+"x": "Plusieurs accords différents"
+},
+{
+"t": "p",
+"x": "Accepter d'être photographié, accepter d'être filmé, accepter la diffusion, accepter l'usage commercial : ce ne sont pas les mêmes accords. L'un ne vaut pas automatiquement pour les autres."
+},
+{
+"t": "h",
+"x": "Un accord précis"
+},
+{
+"t": "table",
+"head": [
+"À préciser",
+"Exemple"
+],
+"rows": [
+[
+"Objet",
+"Campagne pour une marque de chaussures"
+],
+[
+"Supports",
+"Affiches, site internet, réseaux sociaux"
+],
+[
+"Durée",
+"12 mois"
+],
+[
+"Territoire",
+"France et Belgique"
+],
+[
+"Rémunération",
+"Forfait ou part variable"
+]
+]
+},
+{
+"t": "h",
+"x": "Ses limites"
+},
+{
+"t": "list",
+"items": [
+"L'accord vaut pour l'usage prévu, pas pour un autre. Une campagne en France ne couvre pas automatiquement une campagne mondiale.",
+"Une autorisation générale, sans limite de durée ni de but, est risquée.",
+"Une clause générale ne prive pas une personne de ses droits. Mais rompre un engagement peut avoir un coût financier : on négocie les conditions de retrait.",
+"Pour un mineur, l'accord doit en principe venir des titulaires de l'autorité parentale, de préférence par écrit."
+]
+}
+],
+"piege": "Accepter d'être photographié ne veut pas dire accepter une publicité : l'accord doit viser l'usage réel de l'image.",
+"reponse": "Non, pas automatiquement. Samuel avait accepté un usage précis : annoncer sa signature sur le site du club. Une publicité nationale pour une marque est un autre usage, qui demande un accord pour cet usage.",
+"sources": [
+"C. civ., art. 9",
+"C. pén., art. 226-1 (consentement du mineur donné par les titulaires de l'autorité parentale)"
+],
+"questions": [
+"m07-q02",
+"an25-q18",
+"per-l02-q1",
+"per-l02-q2"
+],
+"titre": "Le consentement et ses limites",
+"priorite": 3
+},
+"per-l03": {
+"minutes": 5,
+"situation": {
+"texte": "Un journal télévisé diffuse des images du match du club de Lucas pour montrer comment le but a été marqué. Le même soir, une marque de vêtements reprend une photo du buteur, sans lui demander son avis, pour une affiche publicitaire.",
+"question": "Les deux utilisations sont-elles traitées de la même façon ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le droit à l'image doit être concilié avec la liberté d'information et la liberté d'expression. Certaines utilisations peuvent donc se faire sans accord individuel. Il n'y a pas de règle automatique : le juge examine le contexte."
+},
+{
+"t": "table",
+"head": [
+"Situation",
+"En principe"
+],
+"rows": [
+[
+"Images d'un match dans un journal, pour informer",
+"Possible sans accord individuel"
+],
+[
+"Photo générale des tribunes pour l'ambiance",
+"Possible"
+],
+[
+"Supporter isolé dans une publicité",
+"Pas couvert par cette exception"
+],
+[
+"Photo de conférence de presse pour une actualité sportive",
+"Possible"
+],
+[
+"La même photo pour vendre un produit",
+"Accord spécifique nécessaire"
+]
+]
+},
+{
+"t": "h",
+"x": "Ce que regarde le juge"
+},
+{
+"t": "list",
+"items": [
+"La personne est-elle isolée et identifiable ?",
+"L'image sert-elle à informer ?",
+"Sa dignité est-elle respectée ?",
+"L'usage est-il commercial ou non ?"
+]
+},
+{
+"t": "h",
+"x": "Cas particuliers"
+},
+{
+"t": "p",
+"x": "Un joueur est une personnalité publique : on peut montrer son image dans le cadre de son activité publique. Mais sa notoriété ne supprime pas son droit à l'image. Une démarche artistique, documentaire ou historique (exposition, livre sur un club) peut aussi justifier une utilisation, si l'atteinte reste proportionnée."
+}
+],
+"piege": "Une image prise en public ou lors d'un match peut être montrée pour informer, mais pas reprise pour vendre sans accord.",
+"reponse": "Non. Les images du match dans le journal servent à informer sur un événement d'actualité : en principe, aucun accord individuel n'est nécessaire. L'affiche de la marque sert à vendre des vêtements : l'accord du joueur est en principe nécessaire.",
+"sources": [
+"C. civ., art. 9 (respect de la vie privée ; conciliation avec les libertés concurrentes)"
+],
+"questions": [
+"m07-q03",
+"per-l03-q1",
+"per-l03-q2"
+],
+"titre": "Les exceptions au consentement",
+"priorite": 2
+},
+"per-l04": {
+"minutes": 5,
+"situation": {
+"texte": "Une marque de chaussures diffuse sur internet une vidéo générée par intelligence artificielle. On y voit Paul, gardien du club d'Inès, vanter ses produits. Paul n'a jamais donné son accord et rien n'indique que la vidéo est artificielle.",
+"question": "Que peut faire Paul, au civil et au pénal ?"
+},
+"blocs": [
+{
+"t": "h",
+"x": "Au civil"
+},
+{
+"t": "p",
+"x": "Paul peut saisir le juge civil. Selon l'article 9, le juge peut prendre toutes mesures (séquestre, saisie...) pour faire cesser l'atteinte, en plus de la réparation du dommage. En cas d'urgence, il peut le faire en référé : une procédure rapide qui permet d'obtenir une mesure provisoire. Garder des preuves aide : captures d'écran, publications."
+},
+{
+"t": "h",
+"x": "Au pénal"
+},
+{
+"t": "p",
+"x": "Un montage est une image ou des paroles retouchées ou assemblées. Un hypertrucage (deepfake) est un contenu fabriqué par intelligence artificielle qui fait dire ou faire à une personne ce qu'elle n'a pas dit ni fait."
+},
+{
+"t": "table",
+"head": [
+"Texte",
+"Fait puni",
+"Peine"
+],
+"rows": [
+[
+"226-1",
+"Fixer ou transmettre sans accord l'image d'une personne dans un lieu privé",
+"1 an, 45 000 €"
+],
+[
+"226-2",
+"Conserver ou diffuser un enregistrement obtenu ainsi",
+"Mêmes peines"
+],
+[
+"226-8",
+"Diffuser un montage ou un contenu généré par algorithme avec l'image ou la voix d'une personne, sans son accord, sans que l'artifice soit évident ou indiqué",
+"1 an, 15 000 € ; 2 ans, 45 000 € en ligne"
+],
+[
+"226-8-1",
+"Même fait, pour un montage à caractère sexuel",
+"2 ans, 60 000 € ; 3 ans, 75 000 € en ligne"
+]
+]
+}
+],
+"piege": "L'absence de consentement ne suffit pas à une condamnation pénale : il faut réunir les éléments d'une infraction précise.",
+"reponse": "Au civil, Paul peut demander au juge de faire cesser l'atteinte, en urgence par un référé, et obtenir des dommages-intérêts. Au pénal, la diffusion en ligne d'un contenu généré par algorithme avec son image, sans son accord et sans mention de son caractère artificiel, est punie de 2 ans de prison et 45 000 € d'amende (art. 226-8).",
+"sources": [
+"C. civ., art. 9",
+"C. pén., art. 226-1",
+"C. pén., art. 226-2",
+"C. pén., art. 226-6 (poursuites sur plainte de la victime pour 226-1 à 226-2-1)",
+"C. pén., art. 226-8 (montage et contenu généré par algorithme)",
+"C. pén., art. 226-8-1 (montage à caractère sexuel)"
+],
+"questions": [
+"m07-q14",
+"per-l04-q1",
+"per-l04-q2"
+],
+"titre": "Sanctions civiles et pénales, montages et deepfakes",
+"priorite": 3
+},
+"per-l05": {
+"minutes": 5,
+"situation": {
+"texte": "Le club professionnel d'Inès prépare une affiche avec son écusson et la photo de quatre de ses joueurs, présentés de la même façon. Le club veut l'utiliser pour un sponsor.",
+"question": "Selon la Charte du football professionnel, s'agit-il d'une image collective ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Avant 2017, un dispositif spécial, le droit à l'image collective (DIC), existait pour les sportifs professionnels. La loi du 1er mars 2017 a créé le régime actuel, qui lui a succédé : le contrat d'exploitation de l'image, du nom ou de la voix, avec une redevance (une somme versée en échange de cette exploitation)."
+},
+{
+"t": "h",
+"x": "Image collective ou individuelle ?"
+},
+{
+"t": "p",
+"x": "Dans le football professionnel, le joueur donne à son club, par son contrat de travail et un avenant, l'autorisation d'utiliser son image. Tout dépend du nombre de joueurs présentés."
+},
+{
+"t": "table",
+"head": [
+"Cas",
+"Règle"
+],
+"rows": [
+[
+"5 joueurs au moins de l'effectif, exploités de façon rigoureusement identique",
+"Image collective : l'autorisation donnée au club suffit"
+],
+[
+"Moins de 5 joueurs",
+"Chaque joueur doit avoir donné un accord spécifique pour l'opération"
+]
+]
+},
+{
+"t": "h",
+"x": "Et la redevance ?"
+},
+{
+"t": "p",
+"x": "La redevance est autre chose. Elle repose sur un contrat distinct du contrat de travail, conclu entre le club et le sportif ou l'entraîneur professionnel qu'il emploie. Ce contrat porte sur l'exploitation de l'image, du nom ou de la voix. Il doit remplir des conditions précises, vues dans les leçons suivantes."
+},
+{
+"t": "h",
+"x": "Trois régimes à ne pas mélanger"
+},
+{
+"t": "list",
+"items": [
+"Le droit à l'image (art. 9), exercé dans le football par l'autorisation donnée au club dans le contrat de travail.",
+"La redevance, par un contrat distinct avec le club.",
+"Le sponsoring personnel, signé directement avec une marque."
+]
+}
+],
+"piege": "L'autorisation d'image donnée au club dans le contrat de travail n'est pas le contrat de redevance : ce dernier exige un contrat distinct.",
+"reponse": "Non. Selon la Charte, l'image collective suppose qu'au moins 5 joueurs de l'effectif soient exploités de façon rigoureusement identique. Avec 4 joueurs, chacun doit avoir donné un accord spécifique pour cette opération.",
+"sources": [
+"Loi n° 2017-261 du 1er mars 2017 (régime ayant succédé au droit à l'image collective, d'après le cours)",
+"C. sport, L. 222-2-10-1",
+"Charte du football professionnel 2026-2027, art. 280 (actions publicitaires, image du joueur)",
+"CCNS, art. 12.12 (applicable à défaut d'accord collectif de discipline)",
+"Instruction interministérielle DSS/5B/2019/152 du 2 juillet 2019, § 1.2 (contrat indépendant du contrat de travail)"
+],
+"questions": [
+"m07-q04",
+"m07-q05",
+"per-l05-q1"
+],
+"titre": "De l'image collective à la redevance",
+"priorite": 2
+},
+"per-l06": {
+"minutes": 5,
+"situation": {
+"texte": "Le club professionnel de Lucas verse à Samir, en plus de son salaire de 400 000 €, une « redevance d'image » égale à 10 % de ce salaire, soit 40 000 €. Le contrat oblige aussi Samir à venir à dix séances photo organisées par le club.",
+"question": "Cette somme peut-elle être une redevance au sens du Code du sport ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un club peut conclure avec son sportif professionnel un contrat sur l'exploitation de son image, de son nom ou de sa voix. La somme versée s'appelle une redevance. Elle n'est pas un salaire si deux conditions sont réunies, toutes les deux."
+},
+{
+"t": "table",
+"head": [
+"Condition",
+"Ce que dit le texte",
+"Exemple"
+],
+"rows": [
+[
+"1. Pas de présence physique",
+"La présence du sportif n'est pas requise pour exploiter son image",
+"Valable : photo déjà prise, utilisée sur une affiche. Non : séances imposées"
+],
+[
+"2. Lien avec les recettes",
+"La redevance dépend des recettes de cette exploitation, pas du salaire",
+"Valable : part des recettes de parrainage. Non : 10 % du salaire"
+]
+]
+},
+{
+"t": "h",
+"x": "Si les deux conditions sont réunies"
+},
+{
+"t": "list",
+"items": [
+"Le sportif n'est pas lié au club par un lien de subordination (obéir aux ordres de l'employeur) pour ce contrat.",
+"La redevance n'est ni un salaire ni une rémunération du travail : elle est exclue de l'assiette des cotisations de Sécurité sociale.",
+"L'impôt et les prélèvements sociaux sont vus dans la leçon sur la fiscalité (module 05)."
+]
+},
+{
+"t": "h",
+"x": "Si une condition manque"
+},
+{
+"t": "p",
+"x": "Le régime spécial ne joue pas. Par exemple, payer le joueur pour sa présence à un événement rémunère une activité, pas une exploitation d'image. Le mot « redevance » ou « droit à l'image » sur le contrat ne suffit jamais."
+}
+],
+"piege": "Les deux conditions sont cumulatives : il suffit qu'une seule manque, par exemple un calcul en pourcentage du salaire, pour que la somme ne soit pas une redevance.",
+"reponse": "Non. La somme est calculée sur le salaire, alors qu'elle doit dépendre des recettes générées par l'exploitation de l'image. De plus, le club exige la présence de Samir à des séances photo, alors que sa présence physique ne doit pas être requise. Les deux conditions manquent.",
+"sources": [
+"C. sport, L. 222-2-10-1 (les deux conditions)",
+"CSS, art. L. 242-1 (assiette des cotisations)",
+"Instruction interministérielle DSS/5B/2019/152 du 2 juillet 2019, § 1.2 (séance d'autographes = rémunération d'activité)",
+"Leçon fis-l03 (module 05) : fiscalité de la redevance d'image"
+],
+"questions": [
+"m07-q06",
+"m07-q07",
+"m07-q08",
+"per-l06-q1"
+],
+"titre": "Les deux conditions de la redevance",
+"priorite": 3
+},
+"per-l07": {
+"minutes": 5,
+"situation": {
+"texte": "Le club professionnel d'Inès signe avec Karim, joueur salarié, un contrat de redevance d'image de 100 000 € par an. Le contrat ne dit rien des recettes qui servent au calcul, ni de la durée d'exploitation, ni du plafond de la redevance.",
+"question": "Ce contrat est-il valable ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le contrat d'exploitation de l'image doit contenir trois mentions obligatoires. Elles sont prescrites à peine de nullité : si elles manquent, le contrat risque d'être annulé."
+},
+{
+"t": "table",
+"head": [
+"Mention",
+"Contenu"
+],
+"rows": [
+[
+"Étendue de l'exploitation",
+"Durée, objet, contexte, supports, zone géographique"
+],
+[
+"Calcul de la redevance",
+"Comment elle est calculée, notamment selon les recettes générées"
+],
+[
+"Plafond et rémunération minimale",
+"Plafond de la redevance, et rémunération minimale du contrat de travail à partir de laquelle ce contrat peut être conclu"
+]
+]
+},
+{
+"t": "h",
+"x": "Qui fixe le plafond ?"
+},
+{
+"t": "p",
+"x": "Ni la loi ni un décret. Le plafond et la rémunération minimale sont fixés par une convention ou un accord collectif national, conclu par discipline. Il n'existe donc pas de plafond unique pour tous les sports : il faut regarder le texte de la discipline concernée."
+},
+{
+"t": "h",
+"x": "Transmission"
+},
+{
+"t": "p",
+"x": "Le club transmet sans délai le contrat à l'organisme de contrôle mentionné à l'article L. 133-1 du Code du sport."
+},
+{
+"t": "h",
+"x": "Pourquoi autant de précisions ?"
+},
+{
+"t": "p",
+"x": "Pour éviter qu'un contrat d'image serve à cacher une partie du salaire : on doit pouvoir contrôler la réalité de l'exploitation, son étendue et le calcul de la somme."
+}
+],
+"piege": "Le plafond de la redevance n'est pas fixé par la loi ou par un décret, mais par un accord collectif national conclu par discipline.",
+"reponse": "Non. Les mentions obligatoires sont prescrites à peine de nullité. Ici il manque le calcul de la redevance (les recettes prises en compte), l'étendue de l'exploitation (la durée) et le plafond. Le contrat risque d'être annulé.",
+"sources": [
+"C. sport, L. 222-2-10-1 (mentions a, b, c ; plafond fixé par accord collectif national par discipline ; transmission), version en vigueur depuis le 5 août 2026"
+],
+"questions": [
+"m07-q09",
+"m07-q10",
+"an24-q09"
+],
+"titre": "Le contrat de redevance : mentions et plafond",
+"priorite": 3
+},
+"per-l08": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Lucas gagne 300 000 € avec le sponsor de son maillot, 80 000 € avec la vente de maillots portant le nom des joueurs, 500 000 € avec la billetterie et 2 000 000 € avec les droits de télévision. Il veut calculer les redevances d'image de ses joueurs.",
+"question": "Quelles recettes peuvent entrer dans le calcul ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un décret fixe quelles recettes du club peuvent donner lieu à une redevance. Il vise l'exploitation individuelle : l'utilisation ou la reproduction, sur un même support, de l'image, du nom ou de la voix d'au moins un sportif professionnel, associée à celle du club, de manière identique ou similaire. Exemple : une affiche avec le logo du club et la photo d'un joueur."
+},
+{
+"t": "table",
+"head": [
+"Recette du club",
+"Compte ?"
+],
+"rows": [
+[
+"Contrats de parrainage (supports publicitaires, tenues, équipements)",
+"Oui"
+],
+[
+"Contrats de produits dérivés (maillot au nom du joueur)",
+"Oui"
+],
+[
+"Droits d'exploitation audiovisuelle des compétitions",
+"Non"
+],
+[
+"Titres d'accès aux matchs (billetterie)",
+"Non"
+],
+[
+"Subventions publiques de l'article L. 113-2",
+"Non"
+]
+]
+},
+{
+"t": "h",
+"x": "Deux précisions"
+},
+{
+"t": "list",
+"items": [
+"Les recettes d'un contrat qui ne prévoit pas expressément l'exploitation individuelle de l'image, du nom ou de la voix d'un joueur ne peuvent pas être incluses.",
+"Seule la part des recettes qui correspond à cette exploitation individuelle donne lieu à redevance.",
+"Pour la redevance d'un exercice (une année comptable), on retient les recettes générées pendant ce même exercice."
+]
+},
+{
+"t": "h",
+"x": "Exemple"
+},
+{
+"t": "p",
+"x": "Le club vend un maillot au nom et au numéro d'un joueur et utilise sa photo dans une campagne associée au club. Les recettes de parrainage et de produits dérivés peuvent entrer dans le calcul. Les ventes de billets du stade n'y entrent pas."
+}
+],
+"piege": "Toutes les recettes commerciales du club ne comptent pas : billetterie, droits audiovisuels et subventions publiques de l'article L. 113-2 sont exclus.",
+"reponse": "Le sponsor du maillot (parrainage) et la vente de maillots portant le nom des joueurs (produits dérivés) peuvent entrer dans le calcul, si les contrats prévoient l'exploitation individuelle de l'image, du nom ou de la voix des joueurs. La billetterie et les droits de télévision sont exclus.",
+"sources": [
+"C. sport, D. 222-50 (exploitation individuelle, catégories de recettes, exclusions)",
+"C. sport, L. 222-2-10-1 (décret fixant les catégories de recettes)",
+"Instruction interministérielle DSS/5B/2019/152 du 2 juillet 2019, § 1.3 et 2.1"
+],
+"questions": [
+"m07-q11",
+"m07-q12",
+"per-l08-q1"
+],
+"titre": "Les recettes qui comptent",
+"priorite": 2
+},
+"per-l09": {
+"minutes": 5,
+"situation": {
+"texte": "Karim, joueur professionnel du club d'Inès, signe directement avec une marque de chaussures de sport : 50 000 € HT pour deux campagnes publicitaires et quatre publications sur ses réseaux. Mais il est déjà lié à un équipementier qui lui interdit de promouvoir une marque concurrente.",
+"question": "Est-ce un contrat de redevance avec le club, et que faut-il vérifier avant de signer ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le sponsoring (ou parrainage) est un contrat par lequel une entreprise soutient un sportif, avec de l'argent ou du matériel, en échange de visibilité. Le joueur devient l'ambassadeur de la marque. Les parties sont le sportif et la marque. Le sponsoring ne figure pas parmi les contrats de la mission d'agent sportif définie par la loi (contrat de travail ou accord de participation, contrat de redevance, accord de mutation)."
+},
+{
+"t": "table",
+"head": [
+"Clause",
+"À régler"
+],
+"rows": [
+[
+"Prestations",
+"Campagnes, publications, événements, équipements portés"
+],
+[
+"Durée, territoire, supports",
+"Où, quand et comment l'image est utilisée"
+],
+[
+"Exclusivité",
+"Interdiction de travailler avec des concurrents : catégorie de produits, durée, territoire"
+],
+[
+"Rémunération",
+"Forfait, part variable, avantages"
+],
+[
+"Fin du contrat",
+"Résiliation ; clause de réputation, qui doit rester précise"
+]
+]
+},
+{
+"t": "h",
+"x": "Avant de signer"
+},
+{
+"t": "list",
+"items": [
+"Vérifier les engagements déjà pris : club, équipementier, exclusivités.",
+"Dans le football professionnel, le joueur peut faire des actions publicitaires à son profit, sans les équipements et marques du club. Il peut citer le nom de son club, ne doit pas entrer en concurrence avec les inscriptions publicitaires des équipements officiels du championnat et des coupes d'Europe, et doit communiquer ces actions au club pour information.",
+"Le contrat n'est pas une redevance : il est signé avec une marque, sans passer par le club."
+]
+},
+{
+"t": "h",
+"x": "TVA"
+},
+{
+"t": "p",
+"x": "Une prestation publicitaire faite à titre onéreux par un sportif indépendant peut être soumise à la TVA : elle frappe les prestations de services payantes d'un assujetti, c'est-à-dire d'une personne qui exerce une activité économique."
+}
+],
+"piege": "Le sponsoring personnel n'est pas la redevance du club : il se signe avec une marque et doit respecter les engagements déjà pris envers le club et l'équipementier.",
+"reponse": "Non : le contrat est conclu directement entre le joueur et une marque, sans le club. C'est un sponsoring personnel. Avant de signer, il faut vérifier l'exclusivité de l'équipementier (la nouvelle marque est-elle concurrente au sens de son contrat ?), informer le club si le joueur relève de la Charte du football professionnel, et définir précisément les prestations attendues.",
+"sources": [
+"CGI, art. 256, I (TVA sur les prestations de services à titre onéreux) et art. 256 A (assujettis)",
+"CCNS, art. 12.12.2 (utilisation par le salarié de son image individuelle, à défaut d'accord de discipline)",
+"Charte du football professionnel 2026-2027, art. 280, c)"
+],
+"questions": [
+"m07-q13",
+"per-l09-q1",
+"per-l09-q2"
+],
+"titre": "Le contrat de sponsoring",
+"priorite": 2
+},
+"per-l10": {
+"minutes": 5,
+"situation": {
+"texte": "Le club d'Inès verse à Samir 500 000 € de salaire, plus 100 000 € « pour son droit à l'image ». Cette somme est fixe, ne dépend d'aucune recette, et n'est versée que si Samir participe à des opérations promotionnelles du club. Samir a aussi signé seul un contrat avec une marque de boissons.",
+"question": "Comment qualifier chacune des deux sommes ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un joueur professionnel peut avoir trois relations distinctes. Pour chacune, on regarde la réalité de l'opération, pas l'étiquette."
+},
+{
+"t": "table",
+"head": [
+"Régime",
+"Parties et objet",
+"À retenir"
+],
+"rows": [
+[
+"Salaire",
+"Club et joueur : le travail sportif",
+"Lien de subordination"
+],
+[
+"Redevance (L. 222-2-10-1)",
+"Club et sportif professionnel salarié : le club exploite l'image, le nom ou la voix",
+"Contrat distinct, deux conditions, mentions obligatoires, recettes de D. 222-50"
+],
+[
+"Sponsoring personnel",
+"Joueur et marque : prestations publicitaires",
+"Droit commun des contrats ; revenu à qualifier selon les faits"
+]
+]
+},
+{
+"t": "h",
+"x": "Pour trancher"
+},
+{
+"t": "list",
+"items": [
+"Qui paie, et qui exploite l'image ? Le club, avec son image associée : redevance possible. Une marque, par un contrat direct : sponsoring.",
+"La somme dépend-elle des recettes, et la présence du joueur est-elle exigée ? Sinon, elle n'est pas une redevance.",
+"Le droit à l'image de l'article 9 protège toute personne : ce n'est pas un des trois régimes de rémunération."
+]
+},
+{
+"t": "h",
+"x": "Le rôle de l'agent"
+},
+{
+"t": "p",
+"x": "L'agent sportif met en relation deux parties pour la conclusion ou la prolongation d'un contrat de travail ou de tout accord de participation, d'un contrat de l'article L. 222-2-10-1 ou d'un accord de mutation. Il doit savoir distinguer ces contrats entre eux, et du sponsoring."
+}
+],
+"piege": "Appeler une somme « droit à l'image » ne suffit pas à en faire une redevance : ce sont les conditions réelles qui comptent.",
+"reponse": "Les 100 000 € du club ne remplissent aucune des deux conditions de la redevance : la somme est fixe, sans lien avec les recettes, et versée en contrepartie de la présence de Samir. Malgré son intitulé, elle ne peut pas être traitée comme une redevance : elle rémunère une activité. Le contrat signé seul avec la marque de boissons n'est pas conclu avec le club : ce n'est pas une redevance mais un sponsoring personnel, qui relève du droit commun des contrats.",
+"sources": [
+"C. sport, L. 222-2-10-1 (deux conditions, contrat distinct)",
+"C. sport, D. 222-50",
+"C. sport, L. 222-7, 2° (mission de l'agent, version en vigueur depuis le 5 août 2026)",
+"Instruction interministérielle DSS/5B/2019/152 du 2 juillet 2019, § 1.2",
+"Leçon fis-l03 (module 05) : fiscalité de la redevance d'image"
+],
+"questions": [
+"per-l10-q1",
+"per-l10-q2",
+"per-l10-q3"
+],
+"titre": "Redevance, sponsoring ou salaire",
+"priorite": 2
+},
+"per-l11": {
+"minutes": 5,
+"situation": {
+"texte": "Un joueur du club de Nadia, connu de tous sous le surnom « K. Silva », veut vendre des vêtements sous ce nom. Son état civil mentionne un nom bien plus long. Un ami lui dit qu'à force d'être utilisé, le surnom est devenu son vrai nom de famille.",
+"question": "Cet ami a-t-il raison, et comment le joueur peut-il protéger ce nom pour ses vêtements ?"
+},
+"blocs": [
+{
+"t": "table",
+"head": [
+"Notion",
+"Ce que c'est",
+"Règle"
+],
+"rows": [
+[
+"Nom civil",
+"Le nom inscrit à l'état civil : il identifie juridiquement la personne",
+"Attribué à la naissance ; changement possible seulement dans les cas prévus par la loi"
+],
+[
+"Pseudonyme",
+"Un nom choisi pour se faire connaître du public, comme un surnom sportif",
+"Ne remplace pas le nom civil"
+],
+[
+"Marque",
+"Un signe qui distingue les produits ou services d'une personne de ceux des autres",
+"Propriété acquise par l'enregistrement"
+]
+]
+},
+{
+"t": "h",
+"x": "Le nom civil"
+},
+{
+"t": "p",
+"x": "À la naissance, les parents choisissent le nom du père, celui de la mère, ou les deux accolés. En principe, pour changer de nom, il faut un intérêt légitime et un décret. Un majeur peut aussi, une seule fois, demander à l'officier de l'état civil de porter le nom de l'un de ses parents, ou leurs deux noms accolés. Un majeur peut aussi porter, à titre d'usage, l'un des noms de ses parents."
+},
+{
+"t": "h",
+"x": "Le pseudonyme"
+},
+{
+"t": "p",
+"x": "Un surnom très connu reste un pseudonyme : il ne devient pas un nom de famille. Il peut être protégé s'il est utilisé de façon constante et identifie la personne."
+},
+{
+"t": "h",
+"x": "La marque"
+},
+{
+"t": "p",
+"x": "La propriété d'une marque s'acquiert par l'enregistrement, qui produit ses effets à compter du dépôt pour dix ans indéfiniment renouvelables. Elle vaut pour les produits ou services désignés, sans préjudice des droits acquis avant le dépôt par d'autres personnes : il faut donc chercher les droits antérieurs avant de déposer. Déposer son nom comme marque ne donne pas tous les droits sur son nom ou son image."
+}
+],
+"piege": "Un surnom connu du public n'est pas un nom de famille, et une marque ne s'acquiert pas par l'usage mais par l'enregistrement.",
+"reponse": "Non. Le surnom est un pseudonyme : il ne remplace pas automatiquement le nom inscrit à l'état civil. Pour vendre des vêtements sous ce nom, le joueur peut le faire enregistrer comme marque, après avoir vérifié que personne n'a de droit antérieur.",
+"sources": [
+"C. civ., art. 311-21 (choix du nom de famille)",
+"C. civ., art. 311-24-2 (nom d'usage)",
+"C. civ., art. 61 (changement de nom pour intérêt légitime, par décret)",
+"C. civ., art. 61-3-1 (changement simplifié, modifié par la loi n° 2026-667 du 27 juillet 2026)",
+"CPI, art. L. 711-1 (définition de la marque)",
+"CPI, art. L. 712-1 (propriété acquise par l'enregistrement, dix ans)",
+"CPI, art. L. 713-1 (droit de propriété, droits antérieurs des tiers)"
+],
+"questions": [
+"m07-q15",
+"per-l11-q1",
+"per-l11-q2"
+],
+"titre": "Nom civil, pseudonyme et marque",
+"priorite": 2
 }
 }
 },
@@ -44574,7 +45802,7 @@
 "reponse": "Non. Bastien a joué un duel normal : sa responsabilité civile n'est pas automatiquement engagée. Tom a frappé volontairement l'arbitre, hors de toute action de jeu : sa responsabilité civile peut être engagée, sans compter les sanctions disciplinaires et pénales possibles. Et si le juge retient que Tom voulait causer le dommage, c'est une faute intentionnelle : l'assurance RC ne la couvre pas.",
 "sources": [
 "C. civ., art. 1240 et 1241 (responsabilité pour faute, négligence, imprudence)",
-"C. civ., art. 1242, al. 1 (responsabilité du fait des choses sous sa garde et du fait des personnes dont on doit répondre) [ligne de la liste sources]",
+"C. civ., art. 1242, al. 1 (responsabilité du fait des choses sous sa garde et du fait des personnes dont on doit répondre)",
 "C. sport, L. 321-3-1 (pratiquants : pas de responsabilité du fait des choses pour les dommages matériels entre pratiquants)",
 "C. assur., L. 113-1 (faute intentionnelle ou dolosive exclue)",
 "Cass. 2e civ., 13 janv. 2005, n° 03-18.617 (responsabilité du club : faute caractérisée par une violation des règles du jeu)",
