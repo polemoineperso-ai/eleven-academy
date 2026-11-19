@@ -26890,12 +26890,12 @@
 "id": "asso-04",
 "chapitre": "asso-1901",
 "niveau": 2,
-"enonce": "Selon la loi du 1er juillet 1901, une association régulièrement déclarée peut, sans délai et sans autorisation spéciale :",
+"enonce": "Selon la loi du 1er juillet 1901, une association régulièrement déclarée peut, sans autorisation spéciale :",
 "options": [
 "Recevoir des dons manuels",
 "Recevoir des dons d'établissements d'utilité publique",
 "Acquérir à titre onéreux le local destiné à son administration",
-"Administrer les immeubles nécessaires à l'accomplissement de son but",
+"Posséder et administrer les immeubles strictement nécessaires à l'accomplissement de son but",
 "Toutes les réponses ci-dessus sont correctes"
 ],
 "bonne": 4,
@@ -26907,7 +26907,15 @@
 "version_du": "2014-08-02"
 },
 "origine": "Annale CNOSF 2024, QCM 2 (réponse recoupée avec deux corrigés privés)",
-"verifiee_le": "2026-11-03"
+"verifiee_le": "2026-11-03",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "L'énoncé et une proposition reprennent exactement l'article 6 (immeubles strictement nécessaires)."
+}
+],
+"v": 2
 },
 {
 "id": "asso-05",
@@ -26936,12 +26944,12 @@
 "id": "asso-06",
 "chapitre": "asso-1901",
 "niveau": 2,
-"enonce": "Une association déclarée est rendue publique, et peut se prévaloir de sa capacité juridique :",
+"enonce": "Selon l'article 5 de la loi du 1er juillet 1901, l'association qui veut obtenir la capacité juridique n'est rendue publique :",
 "options": [
 "Dès la signature des statuts",
 "Dès le dépôt de la déclaration en préfecture",
 "Dès la délivrance du récépissé",
-"Par une insertion au Journal officiel, sur production du récépissé",
+"Que par une insertion au Journal officiel, sur production du récépissé",
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 3,
@@ -26953,7 +26961,15 @@
 "version_du": "2015-07-25"
 },
 "origine": "Rédigée d'après le texte",
-"verifiee_le": "2026-11-03"
+"verifiee_le": "2026-11-03",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "L'énoncé cite l'article 5 de la loi de 1901 (insertion au Journal officiel)."
+}
+],
+"v": 2
 },
 {
 "id": "asso-07",
@@ -27055,124 +27071,9 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
-},
-{
-"d": "2026-11-11",
-"t": "precision",
-"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 25
+"v": 2
 },
 {
 "id": "asso-11",
@@ -27274,124 +27175,9 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 25
+"v": 2
 },
 {
 "id": "agt-03",
@@ -29128,124 +28914,9 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
-},
-{
-"d": "2026-11-14",
-"t": "precision",
-"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 25
+"v": 2
 },
 {
 "id": "agt-32",
@@ -30260,13 +29931,21 @@
 "enonce": "Une association non déclarée :",
 "options": [
 "N’existe pas juridiquement",
-"Dispose automatiquement de la personnalité morale",
-"Peut exister mais ne dispose pas de la personnalité morale",
+"Dispose automatiquement de la capacité juridique",
+"Peut exister mais ne dispose pas de la capacité juridique",
 "Peut recevoir librement des subventions en son nom"
 ],
 "bonne": 2,
 "explication": "La formation est libre ; la capacité juridique de l'association suppose les formalités de déclaration et de publicité de l'article 5.",
-"origine": "Module 04, QCM 2"
+"origine": "Module 04, QCM 2",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "Les propositions parlent de capacité juridique, comme l'article 2 de la loi de 1901."
+}
+],
+"v": 2
 },
 {
 "id": "m04-q03",
@@ -30340,8 +30019,16 @@
 "Aucune de ces réponses"
 ],
 "bonne": 3,
-"explication": "Le retrait n'entraîne pas automatiquement dissolution, liquidation judiciaire ou perte de personnalité morale ; il peut affecter les aides publiques et les relations fédérales.",
-"origine": "Module 04, QCM 7"
+"explication": "Le retrait n'entraîne pas automatiquement dissolution, liquidation judiciaire ou perte de personnalité morale ; l'autorité qui a accordé une subvention ou mis à disposition des équipements publics peut les retirer par décision motivée (C. sport, L. 121-4).",
+"origine": "Module 04, QCM 7",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "L'explication cite l'effet prévu par l'article L. 121-4 du Code du sport."
+}
+],
+"v": 2
 },
 {
 "id": "m04-q08",
@@ -30355,8 +30042,16 @@
 "Produit, Prix, Publicité, Public"
 ],
 "bonne": 1,
-"explication": "La méthode fiscale des 4P examine le Produit proposé, le Public visé, le Prix pratiqué et la Publicité/communication. Ces critères aident à apprécier si l'association concurrence le secteur marchand.",
-"origine": "Module 04, QCM 8"
+"explication": "La méthode fiscale des 4P examine le Produit proposé, le Public visé, le Prix pratiqué et la Publicité/communication. Ces critères servent à apprécier si une activité concurrentielle est exercée dans des conditions similaires à celles d'une entreprise.",
+"origine": "Module 04, QCM 8",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "L'explication situe les 4P dans la méthode d'analyse."
+}
+],
+"v": 2
 },
 {
 "id": "m04-q09",
@@ -32543,6 +32238,186 @@
 "bonne": 2,
 "explication": "Le redressement judiciaire est une procédure du Code de commerce, ouverte par jugement du tribunal (C. com., L. 631-1 et L. 631-5). L'organisme de contrôle de gestion exerce un contrôle sportif et financier distinct (C. sport, L. 133-1).",
 "origine": "Leçon soc-15"
+},
+{
+"id": "asso-l01-q1",
+"chapitre": "m04-2",
+"niveau": 2,
+"enonce": "Selon l'article 1er de la loi du 1er juillet 1901, les personnes qui forment une association mettent en commun leurs connaissances ou leur activité dans un but autre que de :",
+"options": [
+"Pratiquer un sport",
+"Partager des bénéfices",
+"Percevoir des cotisations",
+"Organiser des compétitions"
+],
+"bonne": 1,
+"explication": "L'association est la convention par laquelle deux ou plusieurs personnes mettent en commun, d'une façon permanente, leurs connaissances ou leur activité dans un but autre que de partager des bénéfices (loi du 1er juillet 1901, art. 1).",
+"origine": "Leçon asso-l01"
+},
+{
+"id": "asso-l04-q1",
+"chapitre": "m04-2",
+"niveau": 2,
+"enonce": "Un mineur de 16 ans révolus souhaite participer à la constitution d'une association. Selon la loi de 1901 :",
+"options": [
+"Il doit obtenir l'accord écrit préalable de son représentant légal",
+"Il y participe librement, ses représentants légaux en étant informés sans délai par l'association",
+"Il ne le peut qu'à sa majorité",
+"Il peut aussi vendre seul un immeuble de l'association"
+],
+"bonne": 1,
+"explication": "À partir de 16 ans révolus, le mineur participe librement à la constitution et peut être chargé de l'administration ; ses représentants légaux sont informés sans délai. Il ne peut pas accomplir seul d'acte de disposition (loi de 1901, art. 2 bis).",
+"origine": "Leçon asso-l04"
+},
+{
+"id": "asso-l05-q1",
+"chapitre": "m04-2",
+"niveau": 2,
+"enonce": "En cas de dissolution volontaire d'une association, que deviennent ses biens ?",
+"options": [
+"Ils sont partagés à parts égales entre les membres",
+"Ils sont dévolus selon les statuts ou, à défaut, selon les règles fixées par l'assemblée générale",
+"Ils reviennent automatiquement à l'État",
+"Ils sont attribués au maire de la commune du siège"
+],
+"bonne": 1,
+"explication": "Les biens sont dévolus conformément aux statuts ou, à défaut, suivant les règles déterminées en assemblée générale (loi de 1901, art. 9). La loi ne prévoit aucun partage automatique entre les membres.",
+"origine": "Leçon asso-l05"
+},
+{
+"id": "asso-l05-q2",
+"chapitre": "m04-2",
+"niveau": 2,
+"enonce": "Que risquent les dirigeants d'une association qui se maintient ou se reconstitue illégalement après un jugement de dissolution ?",
+"options": [
+"Un simple avertissement du préfet",
+"Une amende de 5e classe seulement",
+"Trois ans d'emprisonnement et 45 000 € d'amende",
+"Rien, si l'association change de nom"
+],
+"bonne": 2,
+"explication": "Les fondateurs, directeurs ou administrateurs encourent trois ans d'emprisonnement et 45 000 € d'amende (loi de 1901, art. 8).",
+"origine": "Leçon asso-l05"
+},
+{
+"id": "asso-l06-q1",
+"chapitre": "m04-2",
+"niveau": 2,
+"enonce": "Que permet notamment la reconnaissance d'utilité publique à une association, selon l'article 11 de la loi de 1901 ?",
+"options": [
+"Distribuer ses bénéfices à ses membres",
+"Accepter des libéralités entre vifs et testamentaires",
+"Être exonérée de tous les impôts",
+"Obtenir automatiquement l'agrément sportif"
+],
+"bonne": 1,
+"explication": "Les associations reconnues d'utilité publique peuvent accepter les libéralités entre vifs et testamentaires, dans les conditions de l'article 910 du code civil (loi de 1901, art. 11).",
+"origine": "Leçon asso-l06"
+},
+{
+"id": "asso-l08-q1",
+"chapitre": "m04-3",
+"niveau": 2,
+"enonce": "Qui suspend ou retire l'agrément d'une association sportive qui ne respecte pas le contrat d'engagement républicain qu'elle a souscrit ?",
+"options": [
+"Le maire de la commune du siège",
+"Le représentant de l'État dans le département (le préfet)",
+"Le tribunal judiciaire",
+"Le président de la fédération"
+],
+"bonne": 1,
+"explication": "Le représentant de l'État dans le département suspend ou retire l'agrément, et en informe la fédération (C. sport, L. 121-4).",
+"origine": "Leçon asso-l08"
+},
+{
+"id": "asso-l08-q2",
+"chapitre": "m04-3",
+"niveau": 2,
+"enonce": "Selon les règlements généraux de la FFF, peuvent seules être affiliées à la fédération :",
+"options": [
+"Les associations de fait",
+"Les associations déclarées selon la loi de 1901 (ou le droit civil local d'Alsace-Moselle)",
+"Les sociétés commerciales",
+"Les associations reconnues d'utilité publique"
+],
+"bonne": 1,
+"explication": "Seules les associations déclarées selon la loi du 1er juillet 1901, ou le droit civil local dans le Bas-Rhin, le Haut-Rhin et la Moselle, peuvent être affiliées (règlements généraux de la FFF 2026-2027, art. 22).",
+"origine": "Leçon asso-l08"
+},
+{
+"id": "asso-l09-q1",
+"chapitre": "m04-3",
+"niveau": 2,
+"enonce": "Selon l'article L. 222-17 du Code du sport, la rémunération de l'agent sportif ne peut excéder :",
+"options": [
+"5 % du montant du contrat",
+"10 % du montant du contrat ou de l'accord conclu par les parties qu'il a mises en rapport",
+"15 % du salaire annuel du joueur",
+"20 % du montant de l'indemnité de transfert"
+],
+"bonne": 1,
+"explication": "Le contrat écrit fixe une rémunération qui ne peut excéder 10 % du montant du contrat ou de l'accord conclu par les parties mises en rapport. Les fédérations peuvent fixer un taux inférieur (C. sport, L. 222-17).",
+"origine": "Leçon asso-l09"
+},
+{
+"id": "asso-l09-q2",
+"chapitre": "m04-3",
+"niveau": 2,
+"enonce": "Avant de signer avec une association sportive, que doit surtout vérifier l'agent sportif pour être sûr que le contrat engage le club ?",
+"options": [
+"Que le club est reconnu d'utilité publique",
+"Que le signataire a le pouvoir d'engager l'association au regard des statuts, des décisions des organes et des délégations",
+"Que le club dispose d'un stade",
+"Que le signataire est le membre le plus ancien"
+],
+"bonne": 1,
+"explication": "Le président ne dispose pas automatiquement de tous les pouvoirs : ses pouvoirs dépendent des statuts, des décisions du conseil d'administration ou de l'assemblée générale et des délégations (la loi de 1901 laisse les statuts organiser le fonctionnement de l'association).",
+"origine": "Leçon asso-l09"
+},
+{
+"id": "asso-l10-q1",
+"chapitre": "m04-4",
+"niveau": 2,
+"enonce": "Pour la franchise de l'impôt sur les sociétés (CGI, art. 206, 1 bis), les recettes d'exploitation lucratives encaissées dans l'année ne doivent pas dépasser, en 2026 :",
+"options": [
+"15 000 €",
+"60 000 €",
+"81 051 €",
+"200 000 €"
+],
+"bonne": 2,
+"explication": "Le seuil est de 81 051 €, indexé chaque année sur les prix. Il s'ajoute à la gestion désintéressée et à la prépondérance significative des activités non lucratives (CGI, art. 206, 1 bis).",
+"origine": "Leçon asso-l10"
+},
+{
+"id": "asso-l11-q1",
+"chapitre": "m04-4",
+"niveau": 2,
+"enonce": "Dans le régime général de rémunération des dirigeants (hors associations de jeunesse et d'éducation populaire), la rémunération de chaque dirigeant ne peut pas excéder :",
+"options": [
+"Le SMIC mensuel",
+"Une fois le plafond de la Sécurité sociale",
+"Trois fois le plafond de la Sécurité sociale",
+"Dix fois le plafond de la Sécurité sociale"
+],
+"bonne": 2,
+"explication": "Le montant de toutes les rémunérations versées à chaque dirigeant ne peut excéder trois fois le plafond de la Sécurité sociale (CGI, art. 261, 7, 1° d).",
+"origine": "Leçon asso-l11"
+},
+{
+"id": "asso-l11-q2",
+"chapitre": "m04-4",
+"niveau": 2,
+"enonce": "Une association a des ressources de 600 000 € en moyenne sur les trois exercices clos précédents, sans aucune subvention publique. Ses statuts et son organe délibérant ont validé le régime légal. Combien de dirigeants peut-elle rémunérer ?",
+"options": [
+"Aucun",
+"Un",
+"Deux",
+"Trois"
+],
+"bonne": 2,
+"explication": "Au-delà de 500 000 € de ressources moyennes, et jusqu'à 1 000 000 €, l'association peut rémunérer deux dirigeants (CGI, art. 261, 7, 1° d).",
+"origine": "Leçon asso-l11"
 },
 {
 "id": "fis-l01-q1",
@@ -37033,6 +36908,15 @@
 "precisions": []
 },
 {
+"id": "n-lecons-m04-2026-11-19",
+"d": "2026-11-19",
+"genre": "appli",
+"titre": "Le module 04, Droit des associations, passe aux leçons",
+"texte": "11 leçons de 5 minutes, au plus près de la vie d'un club amateur : créer et faire vivre une association, son agrément sportif, traiter avec un agent, la fiscalité et la rémunération des dirigeants. Les questions des annales sur la loi de 1901 et les fonds de dotation y sont toutes reprises.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
@@ -37082,6 +36966,31 @@
 "g": "q",
 "id": "ctr-45",
 "x": "L'explication cite la durée de deux ans fixée par la FFF."
+},
+{
+"g": "q",
+"id": "asso-06",
+"x": "L'énoncé cite l'article 5 de la loi de 1901 (insertion au Journal officiel)."
+},
+{
+"g": "q",
+"id": "asso-04",
+"x": "L'énoncé et une proposition reprennent exactement l'article 6 (immeubles strictement nécessaires)."
+},
+{
+"g": "q",
+"id": "m04-q02",
+"x": "Les propositions parlent de capacité juridique, comme l'article 2 de la loi de 1901."
+},
+{
+"g": "q",
+"id": "m04-q07",
+"x": "L'explication cite l'effet prévu par l'article L. 121-4 du Code du sport."
+},
+{
+"g": "q",
+"id": "m04-q08",
+"x": "L'explication situe les 4P dans la méthode d'analyse."
 }
 ]
 },
@@ -40718,6 +40627,801 @@
 ],
 "titre": "Les clubs en difficulté : DNCG et tribunal",
 "priorite": 1
+}
+}
+},
+{
+"domaine": "associations",
+"titre": "Module 04 · Droit des associations",
+"parties": [
+{
+"titre": "L'association, loi de 1901",
+"lecons": [
+{
+"id": "asso-l01",
+"titre": "Qu'est-ce qu'une association ?",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "asso-l02",
+"titre": "Association déclarée ou non déclarée",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "asso-l03",
+"titre": "Statuts, assemblée générale et dirigeants",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "asso-l04",
+"titre": "Membres, mineurs et capacité juridique",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "asso-l05",
+"titre": "Dissolution et nullité",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "asso-l06",
+"titre": "La reconnaissance d'utilité publique",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "asso-l07",
+"titre": "Le fonds de dotation",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "Les associations sportives",
+"lecons": [
+{
+"id": "asso-l08",
+"titre": "L'association sportive et son agrément",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "asso-l09",
+"titre": "Traiter avec un club amateur",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "La fiscalité des associations",
+"lecons": [
+{
+"id": "asso-l10",
+"titre": "Non-lucrativité et règle des 4P",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "asso-l11",
+"titre": "Rémunérer les dirigeants",
+"priorite": 2,
+"dispo": true
+}
+]
+}
+],
+"contenu": {
+"asso-l01": {
+"minutes": 5,
+"situation": {
+"texte": "Karim et Julie, deux parents, lancent une école de football pour les enfants de leur quartier. Chaque famille paie une cotisation de 80 € par an. En fin de saison, il reste 3 000 € en caisse. Karim propose de se les partager.",
+"question": "Peuvent-ils créer une association à deux, et se partager cet argent ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une association est un contrat : une convention entre au moins deux personnes. Elles mettent en commun, de façon permanente, leurs connaissances ou leur activité (leur temps, leur savoir-faire, leurs moyens). Leur but ne doit pas être de partager des bénéfices."
+},
+{
+"t": "table",
+"head": [
+"Élément",
+"Ce que cela veut dire"
+],
+"rows": [
+[
+"Au moins deux personnes",
+"Une seule personne ne peut pas créer une association."
+],
+[
+"Mise en commun permanente",
+"Une activité durable, pas une opération unique."
+],
+[
+"But autre que partager des bénéfices",
+"Les membres ne s'enrichissent pas avec les excédents."
+]
+]
+},
+{
+"t": "h",
+"x": "Une association peut-elle gagner de l'argent ?"
+},
+{
+"t": "p",
+"x": "Oui. Elle peut encaisser des cotisations, vendre des billets et dégager un excédent, c'est-à-dire une recette supérieure aux dépenses. Cet excédent doit servir son objet (équipements, formation, déplacements). Il ne se partage pas entre les membres."
+},
+{
+"t": "p",
+"x": "L'association est un contrat : sa validité dépend des principes généraux du droit des contrats. Dans le Bas-Rhin, le Haut-Rhin et la Moselle, le droit civil local s'applique aux associations sportives, avec ses propres règles : le minimum de deux personnes est celui de la loi de 1901."
+}
+],
+"piege": "Une association peut avoir une activité économique et faire un excédent. Ce que la loi exclut, c'est de le partager entre les membres.",
+"reponse": "Oui pour la création : deux personnes suffisent. Non pour le partage : les 3 000 € sont un excédent, et une association ne peut pas le répartir entre ses membres. Il doit servir son objet, par exemple acheter des ballons ou financer des déplacements.",
+"sources": [
+"Loi du 1er juillet 1901, art. 1",
+"Loi du 1er juillet 1901, art. 2",
+"C. sport, L. 121-1 (associations sportives et droit local d'Alsace-Moselle)"
+],
+"questions": [
+"m04-q01",
+"m04-q03",
+"asso-l01-q1"
+],
+"titre": "Qu'est-ce qu'une association ?",
+"priorite": 3
+},
+"asso-l02": {
+"minutes": 5,
+"situation": {
+"texte": "Des amis ont fondé un club de football loisir il y a un an, sans aucune démarche en préfecture. Le club veut maintenant acheter le petit local qui lui sert de siège et de salle de réunion. Un ami juriste dit qu'il faut d'abord déclarer l'association.",
+"question": "Le club existe-t-il juridiquement ? Peut-il acheter ce local en son nom ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une association se forme librement, sans autorisation ni déclaration préalable. Non déclarée, elle existe, mais elle n'a pas la capacité juridique : l'aptitude à agir en son nom (posséder, recevoir, agir en justice). Pour l'obtenir, elle doit se déclarer, puis être rendue publique par une insertion au Journal officiel."
+},
+{
+"t": "h",
+"x": "Les étapes de la déclaration"
+},
+{
+"t": "list",
+"items": [
+"Déclaration préalable à la préfecture du département du siège : titre, objet, siège, identité des dirigeants, avec un exemplaire des statuts.",
+"Récépissé (le reçu de la préfecture) remis dans les 5 jours.",
+"Insertion au Journal officiel, sur production du récépissé : l'association est alors rendue publique (en pratique, au JOAFE)."
+]
+},
+{
+"t": "h",
+"x": "Ce que peut faire l'association déclarée"
+},
+{
+"t": "p",
+"x": "Sans autorisation spéciale, elle peut agir en justice, recevoir des dons manuels et des dons d'établissements d'utilité publique, et acquérir à titre onéreux (en payant) le local destiné à son administration et à la réunion de ses membres, ainsi que les immeubles strictement nécessaires à son but."
+},
+{
+"t": "p",
+"x": "Les changements d'administration et les modifications des statuts se déclarent dans les 3 mois. Ils ne sont opposables aux tiers (on ne peut pas les leur imposer) qu'à partir de leur déclaration."
+},
+{
+"t": "p",
+"x": "Pour s'affilier à la Fédération française de football, il faut être une association déclarée."
+}
+],
+"piege": "Une association non déclarée existe bel et bien : c'est la capacité juridique qui lui manque, pas l'existence.",
+"reponse": "Le club existe, car la loi permet de former une association librement. En revanche, il n'a pas la capacité juridique tant qu'il n'est pas déclaré. Pour acquérir le local en son nom, il doit déclarer l'association en préfecture, obtenir le récépissé, puis faire insérer la déclaration au Journal officiel.",
+"sources": [
+"Loi du 1er juillet 1901, art. 2",
+"Loi du 1er juillet 1901, art. 5",
+"Loi du 1er juillet 1901, art. 6",
+"Règlements généraux de la FFF 2026-2027, art. 22 (seules les associations déclarées peuvent s'affilier)"
+],
+"questions": [
+"m04-q02",
+"asso-05",
+"asso-06",
+"asso-04"
+],
+"titre": "Association déclarée ou non déclarée",
+"priorite": 3
+},
+"asso-l03": {
+"minutes": 5,
+"situation": {
+"texte": "Le président du club d'Amine veut signer seul un contrat de 30 000 € pour refaire l'éclairage du stade. Les statuts prévoient que le conseil d'administration doit autoriser toute dépense de plus de 10 000 €. Par ailleurs, le club a élu un nouveau président il y a six mois, mais rien n'a été déclaré en préfecture.",
+"question": "Le président peut-il signer seul ? Et son élection est-elle opposable à l'entreprise d'éclairage ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Les statuts sont le contrat de base de l'association. Ils s'imposent aux membres et aux dirigeants. La loi de 1901 laisse aux associations une grande liberté pour organiser leur fonctionnement : c'est à leurs statuts de le faire."
+},
+{
+"t": "h",
+"x": "Les organes habituels"
+},
+{
+"t": "list",
+"items": [
+"L'assemblée générale (AG) réunit les membres : comptes, élection des dirigeants, modification des statuts, selon les statuts.",
+"Le conseil d'administration (CA) est un organe collégial, s'il est prévu par les statuts.",
+"Le bureau (président, secrétaire, trésorier) assure la gestion courante.",
+"Le règlement intérieur précise la vie pratique du club, sans contredire les statuts."
+]
+},
+{
+"t": "p",
+"x": "La loi de 1901 n'impose aucun de ces organes (mais l'agrément sportif exige des statuts prévoyant une assemblée générale et un conseil d'administration), et la loi ne fixe pas de quorum ni de majorité communs à toutes les associations : il faut lire les statuts. Les pouvoirs du président dépendent aussi des statuts et des délégations."
+},
+{
+"t": "h",
+"x": "Déclarer les changements"
+},
+{
+"t": "p",
+"x": "Une association doit faire connaître dans les 3 mois tous les changements survenus dans son administration (dirigeants), ainsi que toute modification des statuts. Tant qu'ils ne sont pas déclarés, ces changements ne sont pas opposables aux tiers : on ne peut pas s'en prévaloir contre eux."
+}
+],
+"piege": "Un vote de l'AG ne suffit pas : un changement de statuts ou de dirigeants n'est opposable aux tiers qu'à partir de sa déclaration, à faire dans les 3 mois.",
+"reponse": "Non : les statuts imposent l'autorisation du CA au-delà de 10 000 €, et le président ne peut pas les ignorer pour un contrat de 30 000 €. Quant à son élection, elle n'a pas été déclarée : elle n'est donc pas opposable aux tiers, comme l'entreprise d'éclairage. La déclaration devait être faite dans les 3 mois.",
+"sources": [
+"Loi du 1er juillet 1901, art. 5 (déclaration dans les 3 mois, opposabilité aux tiers)",
+"Loi du 1er juillet 1901, art. 1 (convention, principes du droit des contrats)",
+"C. sport, R. 121-3"
+],
+"questions": [
+"asso-01",
+"asso-02",
+"m04-q04"
+],
+"titre": "Statuts, assemblée générale et dirigeants",
+"priorite": 3
+},
+"asso-l04": {
+"minutes": 5,
+"situation": {
+"texte": "Léo a 14 ans et Inès, sa sœur, en a 17. Tous deux veulent participer à la création d'une association de jeunes supporters du club, et même la faire fonctionner. Leurs parents n'ont encore rien signé. Plus tard, Léo voudra peut-être quitter l'association en cours d'année.",
+"question": "Que dit la loi pour Léo et pour Inès ? Et si Léo veut partir ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Tout mineur peut librement devenir membre d'une association. La loi encadre seulement sa participation à la création et à l'administration (la gestion) de l'association. Le représentant légal est le parent ou le tuteur du mineur."
+},
+{
+"t": "table",
+"head": [
+"Âge du mineur",
+"Créer et administrer"
+],
+"rows": [
+[
+"Moins de 16 ans",
+"Possible avec l'accord écrit préalable de son représentant légal. Même condition pour les actes utiles à l'administration."
+],
+[
+"16 ans révolus",
+"Possible librement. L'association informe sans délai les représentants légaux. Sauf opposition expresse, le mineur agit seul pour l'administration."
+]
+]
+},
+{
+"t": "p",
+"x": "Dans les deux cas, un mineur ne peut pas accomplir seul d'acte de disposition, c'est-à-dire un acte qui fait sortir un bien de l'association (vendre un immeuble, par exemple)."
+},
+{
+"t": "h",
+"x": "Quitter l'association"
+},
+{
+"t": "p",
+"x": "Tout membre peut se retirer à tout moment, après avoir payé les cotisations échues et celle de l'année en cours. Les statuts ne peuvent pas l'interdire : le texte dit « nonobstant toute clause contraire », c'est-à-dire malgré toute clause contraire."
+},
+{
+"t": "p",
+"x": "La capacité juridique de l'association elle-même dépend de sa déclaration et de sa publication au Journal officiel (voir la leçon sur les associations déclarées)."
+}
+],
+"piege": "Le seuil est 16 ans, pas 18. Avant 16 ans il faut l'accord écrit préalable du représentant légal ; à 16 ans révolus, le mineur est libre et ses parents sont seulement informés.",
+"reponse": "Léo, 14 ans, peut participer à la création et à l'administration seulement avec l'accord écrit préalable de son représentant légal. Inès, 17 ans, peut le faire librement : l'association informe simplement ses représentants légaux sans délai. Si Léo veut partir, il le peut à tout moment, après paiement des cotisations échues et de l'année en cours.",
+"sources": [
+"Loi du 1er juillet 1901, art. 2 bis",
+"Loi du 1er juillet 1901, art. 4",
+"Code civil, art. 1990 (renvoi de l'art. 2 bis)"
+],
+"questions": [
+"asso-07",
+"asso-08",
+"asso-l04-q1"
+],
+"titre": "Membres, mineurs et capacité juridique",
+"priorite": 3
+},
+"asso-l05": {
+"minutes": 5,
+"situation": {
+"texte": "Un groupe fonde une association de « supporters » dont les statuts annoncent l'objectif d'organiser des bagarres avec les supporters adverses. Le procureur veut la faire disparaître. Un autre club, tout à fait légal, vote sa dissolution en assemblée générale : il lui reste 20 000 € en caisse, et ses statuts ne disent rien sur leur sort.",
+"question": "Qui peut faire prononcer la nullité de la première association ? Que deviennent les 20 000 € du second club ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une association fondée sur une cause ou un objet illicite, contraire aux lois ou aux bonnes moeurs, est nulle et de nul effet. La loi vise aussi le but d'atteindre à l'intégrité du territoire national ou à la forme républicaine du gouvernement."
+},
+{
+"t": "h",
+"x": "Qui prononce la dissolution en cas de nullité ?"
+},
+{
+"t": "p",
+"x": "Le tribunal judiciaire, à la requête de tout intéressé ou à la diligence du ministère public (le procureur). Il peut aussi ordonner la fermeture des locaux et interdire toute réunion des membres."
+},
+{
+"t": "p",
+"x": "Les dirigeants qui maintiennent ou reconstituent illégalement l'association après le jugement risquent 3 ans d'emprisonnement et 45 000 € d'amende. Même peine pour qui prête un local à ses réunions."
+},
+{
+"t": "table",
+"head": [
+"Type de dissolution",
+"Qui décide ?"
+],
+"rows": [
+[
+"Volontaire",
+"Les membres, selon les statuts"
+],
+[
+"Statutaire",
+"Les statuts eux-mêmes (par exemple un terme fixé)"
+],
+[
+"Judiciaire",
+"Le tribunal judiciaire"
+]
+]
+},
+{
+"t": "h",
+"x": "Et les biens ?"
+},
+{
+"t": "p",
+"x": "Quelle que soit la dissolution, les biens sont dévolus (attribués) comme le prévoient les statuts. À défaut de clause, l'assemblée générale fixe les règles."
+}
+],
+"piege": "La dissolution pour nullité est prononcée par le tribunal judiciaire, pas par le préfet ni par l'assemblée générale. Ne la confonds pas avec la dissolution administrative, par décret, des groupements violents.",
+"reponse": "La première association est nulle car son objet est contraire aux lois : la dissolution est prononcée par le tribunal judiciaire, à la demande de tout intéressé ou du procureur. Pour le second club, les statuts ne disent rien : l'assemblée générale détermine l'attribution des 20 000 €. Pour rester désintéressée au sens fiscal, l'association ne doit pas attribuer une part de l'actif à ses membres, sauf reprise de leurs apports.",
+"sources": [
+"Loi du 1er juillet 1901, art. 3",
+"Loi du 1er juillet 1901, art. 7",
+"Loi du 1er juillet 1901, art. 8",
+"Loi du 1er juillet 1901, art. 9",
+"CGI, art. 261, 7, 1°, d (actif non partageable)",
+"CSI, L. 212-1, 1°",
+"C. sport, L. 332-18"
+],
+"questions": [
+"asso-09",
+"asso-l05-q1",
+"asso-l05-q2"
+],
+"titre": "Dissolution et nullité",
+"priorite": 2
+},
+"asso-l06": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Nadia a été déclaré il y a un an. Son président voudrait faire reconnaître le club d'utilité publique pour pouvoir recevoir des legs. Il écrit à la fédération pour qu'elle accorde cette reconnaissance.",
+"question": "La fédération peut-elle l'accorder ? Le club peut-il l'obtenir dès maintenant ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La reconnaissance d'utilité publique (RUP) est un statut particulier, réservé à certaines associations d'intérêt général. Elle est accordée par décret en Conseil d'État, jamais par une fédération."
+},
+{
+"t": "table",
+"head": [
+"Sujet",
+"Règle"
+],
+"rows": [
+[
+"Qui l'accorde",
+"Un décret en Conseil d'État"
+],
+[
+"Durée",
+"Une période probatoire (d'essai) de fonctionnement d'au moins 3 ans"
+],
+[
+"Exception",
+"Pas de période probatoire si les ressources prévisibles sur 3 ans assurent l'équilibre financier"
+],
+[
+"Condition",
+"Respecter les principes du contrat d'engagement républicain"
+],
+[
+"Retrait",
+"Dans les mêmes formes : décret en Conseil d'État"
+]
+]
+},
+{
+"t": "h",
+"x": "Ce que la RUP change"
+},
+{
+"t": "p",
+"x": "L'association reconnue d'utilité publique peut faire tous les actes de la vie civile que ses statuts n'interdisent pas. Elle peut accepter des libéralités, c'est-à-dire des donations et des legs (dons par testament). Une association simplement déclarée ne le peut que si elle est déclarée depuis 3 ans au moins et si toutes ses activités sont d'intérêt général au sens du code général des impôts."
+},
+{
+"t": "p",
+"x": "Ne confonds pas RUP et agrément sportif : ce sont deux régimes distincts. La Fédération française de football, elle, est reconnue d'utilité publique."
+}
+],
+"piege": "La RUP vient d'un décret en Conseil d'État, après 3 ans de fonctionnement en principe : ni la fédération, ni le préfet, ni le maire ne l'accordent.",
+"reponse": "Non : la RUP est accordée par décret en Conseil d'État, pas par la fédération. Le club n'est déclaré que depuis un an, alors qu'il faut en principe une période probatoire d'au moins 3 ans. Il pourrait être dispensé seulement si ses ressources prévisibles sur trois ans assurent son équilibre financier.",
+"sources": [
+"Loi du 1er juillet 1901, art. 10",
+"Loi du 1er juillet 1901, art. 11",
+"Loi du 1er juillet 1901, art. 6 (libéralités des associations déclarées)",
+"Statuts de la FFF 2026-2027, art. 1 (FFF reconnue d'utilité publique)"
+],
+"questions": [
+"m04-q05",
+"asso-03",
+"asso-l06-q1"
+],
+"titre": "La reconnaissance d'utilité publique",
+"priorite": 2
+},
+"asso-l07": {
+"minutes": 5,
+"situation": {
+"texte": "Trois anciens joueurs du club de Marc veulent aider ce club chaque année avec les revenus d'un capital. Ils créent un fonds de dotation. Ils prévoient d'apporter 10 000 € en tout, de n'avoir qu'un seul administrateur, et de demander 20 000 € de subvention à la commune pour démarrer.",
+"question": "Quels points de ce projet ne respectent pas les règles du fonds de dotation ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le fonds de dotation est une personne morale de droit privé à but non lucratif. Il reçoit des biens donnés gratuitement et de façon irrévocable, les gère en les capitalisant (il les place pour en tirer des revenus) et utilise ces revenus pour une mission d'intérêt général, ou les redistribue à un organisme non lucratif, comme un club."
+},
+{
+"t": "table",
+"head": [
+"Sujet",
+"Règle"
+],
+"rows": [
+[
+"Création",
+"Déclaration à la préfecture, avec les statuts. Personnalité morale à la publication au Journal officiel."
+],
+[
+"Dotation initiale",
+"Montant fixé par règlement, plafonné par la loi à 30 000 €. Le règlement fixe un minimum de 15 000 €, versés en numéraire (en argent) au 1er exercice."
+],
+[
+"Gouvernance",
+"Conseil d'administration de 3 membres au minimum."
+],
+[
+"Fonds publics",
+"Interdits, sauf dérogation exceptionnelle par arrêté conjoint des ministres de l'économie et du budget."
+],
+[
+"Commissaire aux comptes",
+"Obligatoire dès que les ressources dépassent 10 000 € en fin d'exercice."
+],
+[
+"Comptes",
+"Rapport d'activité et comptes transmis à l'autorité de contrôle dans les 6 mois de la clôture."
+]
+]
+},
+{
+"t": "p",
+"x": "En principe, le fonds ne consomme pas son capital : il n'utilise que les revenus, sauf si ses statuts organisent autrement la consommation de la dotation."
+}
+],
+"piege": "Depuis juin 2026, la loi ne fixe plus les 15 000 € : elle renvoie au règlement, avec un plafond de 30 000 €. Le règlement garde 15 000 € au minimum.",
+"reponse": "Trois points posent problème. La dotation de 10 000 € est inférieure au minimum de 15 000 €, à verser en numéraire. Un seul administrateur ne suffit pas : il en faut au moins trois. Enfin, aucun fonds public ne peut être versé à un fonds de dotation, sauf dérogation exceptionnelle : la subvention de la commune est donc exclue en principe.",
+"sources": [
+"Loi n° 2008-776, art. 140, I (définition)",
+"Loi n° 2008-776, art. 140, II (déclaration, personnalité morale)",
+"Loi n° 2008-776, art. 140, III (dotation, fonds publics, ressources)",
+"Loi n° 2008-776, art. 140, V (conseil d'administration)",
+"Loi n° 2008-776, art. 140, V bis et VI (rapport, comptes, commissaire aux comptes)",
+"Décret n° 2009-158, art. 2 bis (dotation en numéraire, 15 000 € minimum)"
+],
+"questions": [
+"asso-10",
+"asso-11",
+"asso-12"
+],
+"titre": "Le fonds de dotation",
+"priorite": 2
+},
+"asso-l08": {
+"minutes": 5,
+"situation": {
+"texte": "Le club d'Hugo est une association déclarée, affiliée à la Fédération française de football, qui est une fédération agréée par l'État. Il vient de souscrire le contrat d'engagement républicain. Hugo se demande s'il doit demander un agrément au préfet pour recevoir des aides de l'État. Plus tard, un contrôle montre que le club ne respecte pas ce contrat.",
+"question": "Le club doit-il demander l'agrément ? Que risque-t-il ensuite ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une association sportive est constituée selon la loi de 1901 (ou le droit civil local en Alsace-Moselle). Elle ne peut recevoir l'aide de l'État que si elle est agréée. L'agrément est une reconnaissance administrative, fondée sur des statuts qui garantissent un fonctionnement démocratique, la transparence de la gestion et l'égal accès des femmes et des hommes aux instances dirigeantes, et sur la souscription du contrat d'engagement républicain."
+},
+{
+"t": "p",
+"x": "Ce contrat comprend aussi l'engagement de protéger l'intégrité physique et morale des personnes, surtout des mineurs, contre les violences sexistes et sexuelles."
+},
+{
+"t": "h",
+"x": "Deux voies pour être agréé"
+},
+{
+"t": "list",
+"items": [
+"Être affiliée (devenue membre) à une fédération agréée par l'État et souscrire le contrat d'engagement républicain : cela vaut agrément. La fédération informe le préfet du département du siège.",
+"Ne pas être affiliée : l'agrément est alors attribué par le préfet, mais seulement si l'objet de l'association n'est pas la pratique sportive elle-même ; un club de pratique doit être affilié."
+]
+},
+{
+"t": "h",
+"x": "Suspension et retrait"
+},
+{
+"t": "p",
+"x": "Le préfet peut retirer l'agrément si l'association emploie des personnes qui ne remplissent pas les obligations d'encadrement sportif, ou méconnaît ses obligations de sécurité. Il suspend ou retire l'agrément si le contrat d'engagement républicain n'est pas respecté."
+},
+{
+"t": "p",
+"x": "Conséquences : l'autorité qui a versé une subvention ou prêté des équipements publics peut les retirer par décision motivée, et demander la restitution des sommes dans un délai maximal de 6 mois à compter de la décision de retrait. Mais le retrait n'entraîne pas la dissolution de l'association."
+},
+{
+"t": "p",
+"x": "Ne confonds pas agrément sportif et reconnaissance d'utilité publique."
+}
+],
+"piege": "L'affiliation seule ne vaut pas agrément : il faut aussi avoir souscrit le contrat d'engagement républicain.",
+"reponse": "Non : l'affiliation à une fédération agréée par l'État et la souscription du contrat d'engagement républicain valent agrément, sans demande au préfet. Si le club ne respecte pas ce contrat, le préfet suspend ou retire l'agrément, et, si le club en bénéficie, l'autorité concernée peut retirer ses subventions ou la mise à disposition d'équipements publics. Le club n'est pas pour autant dissous.",
+"sources": [
+"C. sport, L. 121-1",
+"C. sport, L. 121-4 (agrément, affiliation, contrat d'engagement républicain, suspension et retrait)",
+"C. sport, R. 121-2 et suivants (agrément par le préfet, statuts exigés)",
+"Règlements généraux de la FFF 2026-2027, art. 22 et 23 (affiliation)",
+"C. sport, R. 121-2, R. 121-3, R. 121-5 et R. 121-5-1"
+],
+"questions": [
+"m04-q06",
+"m04-q07",
+"asso-l08-q1",
+"asso-l08-q2"
+],
+"titre": "L'association sportive et son agrément",
+"priorite": 3
+},
+"asso-l09": {
+"minutes": 5,
+"situation": {
+"texte": "Yanis, agent sportif, négocie pour Maxime un contrat de 40 000 € avec un club amateur associatif. Maxime l'a mandaté. Le président veut signer seul, alors que les statuts exigent l'autorisation du conseil d'administration au-delà de 10 000 €. Le club propose de payer lui-même la commission de Yanis, fixée à 4 000 €.",
+"question": "Que doit vérifier Yanis ? Que faut-il pour que le club paie sa commission ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un club amateur est le plus souvent une association. Avant de négocier, l'agent sportif identifie sa vraie partie : nom exact (le nom d'usage peut différer), forme juridique, siège, représentant légal. Il vérifie les statuts, les décisions du CA ou de l'AG et les délégations de signature : le président n'a pas forcément tous les pouvoirs."
+},
+{
+"t": "h",
+"x": "Le contrat de l'agent"
+},
+{
+"t": "p",
+"x": "L'agent exerce sous contrat écrit avec l'une des parties, et n'agit que pour une seule. Le contrat précise notamment la durée (3 ans au plus selon la loi ; 2 ans au plus en football, sans reconduction tacite, selon le règlement de la FFF), la rémunération (10 % au plus du contrat conclu) et la partie qui le rémunère. Il est communiqué à la fédération dans le mois."
+},
+{
+"t": "table",
+"head": [
+"Qui mandate ? Qui paie ?",
+"Règle"
+],
+"rows": [
+[
+"Mandaté par le club",
+"Le club rémunère."
+],
+[
+"Mandaté par le joueur, le joueur paie",
+"La rémunération est due par le joueur."
+],
+[
+"Mandaté par le joueur, le club paie tout ou partie",
+"Une convention tripartite, signée par toutes les parties aux contrats, est nécessaire. Elle précise les conséquences fiscales et sociales pour le club. L'agent donne quittance au club."
+]
+]
+},
+{
+"t": "p",
+"x": "La forme associative du club n'interdit pas de payer un agent. Si une société sportive du club est partie au contrat (depuis la loi du 3 août 2026, il peut y en avoir deux, une par secteur masculin et féminin), il faut identifier la bonne personne morale (voir la leçon soc-10)."
+}
+],
+"piege": "Un club peut payer la commission due par le joueur, mais seulement avec une convention tripartite. Toute convention contraire à ces règles, ou non communiquée à la fédération, est réputée nulle et non écrite.",
+"reponse": "Yanis doit d'abord vérifier le pouvoir du président : les statuts exigent l'accord du CA au-delà de 10 000 €, et le contrat est de 40 000 €. Maxime l'ayant mandaté, le club ne peut payer la commission qu'avec une convention tripartite signée par toutes les parties. La commission de 4 000 € représente 10 % du contrat, soit le plafond légal, que le règlement de la FFF reprend.",
+"sources": [
+"C. sport, L. 222-17, I (contrat écrit, durée, rémunération maximale de 10 %, partie qui rémunère, communication dans le mois)",
+"C. sport, L. 222-17, II (convention tripartite, quittance, taux fédéral, convention nulle si non communiquée)",
+"Loi du 1er juillet 1901, art. 5 (déclaration des changements d'administration)",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.1 et 6.2.2",
+"C. sport, L. 122-1 (loi n° 2026-725, art. 25)"
+],
+"questions": [
+"m04-q12",
+"asso-l09-q1",
+"asso-l09-q2"
+],
+"titre": "Traiter avec un club amateur",
+"priorite": 2
+},
+"asso-l10": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Bastien est une association à gestion désintéressée. Chaque été, il organise un stage de football à 120 € la semaine, ouvert à tous les enfants du secteur, annoncé sur les réseaux sociaux. Une entreprise voisine propose des stages comparables à 300 €. Ses entraînements et ses matchs restent l'essentiel de son activité. En 2026, le stage lui procure 30 000 € de recettes encaissées, et le club n'a pas d'autre recette lucrative.",
+"question": "Le club risque-t-il d'être soumis à l'impôt sur les sociétés ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une association loi 1901 n'est pas exonérée d'impôts par principe. Il faut distinguer : le but non lucratif (pas de partage des bénéfices entre membres) et la non-lucrativité fiscale (pas d'activité exercée dans les conditions d'une entreprise, donc pas d'impôts commerciaux comme l'impôt sur les sociétés ou la TVA)."
+},
+{
+"t": "h",
+"x": "La méthode de l'administration fiscale, en 3 étapes"
+},
+{
+"t": "list",
+"items": [
+"La gestion est-elle désintéressée ? Si non, impôts commerciaux. Si oui, étape 2.",
+"L'association concurrence-t-elle une entreprise ? Si non, pas d'impôts commerciaux pour cette activité. Si oui, étape 3.",
+"L'activité est-elle exercée dans des conditions similaires à celles d'une entreprise ? On applique la règle des 4P."
+]
+},
+{
+"t": "table",
+"head": [
+"Critère",
+"Question posée"
+],
+"rows": [
+[
+"Produit",
+"Le service est-il différent ou répond-il à un besoin peu couvert ?"
+],
+[
+"Public",
+"Vise-t-il un public qui n'accède pas aux offres commerciales ?"
+],
+[
+"Prix",
+"Les tarifs sont-ils inférieurs au marché ou adaptés au public ?"
+],
+[
+"Publicité",
+"Communique-t-on pour informer ou démarcher comme une entreprise ?"
+]
+]
+},
+{
+"t": "p",
+"x": "Les 4P sont examinés dans cet ordre d'importance et se jugent ensemble, jamais isolément."
+},
+{
+"t": "h",
+"x": "La franchise"
+},
+{
+"t": "p",
+"x": "Même une activité lucrative accessoire échappe à l'impôt sur les sociétés si trois conditions sont réunies : gestion désintéressée, activités non lucratives significativement prépondérantes, recettes lucratives de l'année ne dépassant pas 81 051 € (seuil 2026, réindexé chaque année)."
+}
+],
+"piege": "Le seuil de 81 051 € vise seulement les recettes lucratives, pas toutes les ressources de l'association.",
+"reponse": "Probablement pas. La gestion est désintéressée. L'examen des 4P est partagé : le prix très inférieur au marché (120 € contre 300 €) joue en faveur de la non-lucrativité, mais le produit comparable, le public large et la publicité en ligne jouent plutôt contre. Cela importe peu : même si le stage était jugé lucratif, les 30 000 € de recettes sont sous le seuil 2026 de 81 051 €, avec des activités non lucratives qui dominent.",
+"sources": [
+"CGI, art. 206, 1 bis (impôt sur les sociétés, franchise, seuil de 81 051 €)",
+"CGI, art. 261, 7, 1° (TVA, seuil de recettes de l'année précédente)",
+"BOFiP (doctrine de l'administration fiscale : méthode en 3 étapes et règle des 4P)"
+],
+"questions": [
+"m04-q08",
+"m04-q09",
+"asso-l10-q1"
+],
+"titre": "Non-lucrativité et règle des 4P",
+"priorite": 3
+},
+"asso-l11": {
+"minutes": 5,
+"situation": {
+"texte": "Les ressources du club de Chloé ont atteint en moyenne 350 000 € sur les trois derniers exercices clos, dont, en moyenne, 60 000 € par an de subventions de la commune. Le président, Paul, voudrait être payé 2 000 € par mois, mais les statuts du club ne prévoient pas de rémunération des dirigeants. Paul se fait aussi rembourser sur justificatifs ses billets de train pour les déplacements de l'équipe.",
+"question": "Le club peut-il rémunérer Paul sans perdre la gestion désintéressée ? Et ses billets de train ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "En principe, les dirigeants sont bénévoles : la gestion désintéressée suppose qu'ils n'aient aucun intérêt direct ou indirect dans les résultats et qu'il n'y ait aucune distribution de bénéfice. Une exception existe pour rémunérer certains dirigeants sans remettre en cause cette gestion."
+},
+{
+"t": "table",
+"head": [
+"Ressources annuelles, en moyenne sur les 3 derniers exercices clos (hors versements de personnes publiques)",
+"Dirigeants rémunérables"
+],
+"rows": [
+[
+"Plus de 200 000 €",
+"1"
+],
+[
+"Plus de 500 000 €",
+"2"
+],
+[
+"Plus de 1 000 000 €",
+"3"
+],
+[
+"200 000 € ou moins",
+"Aucun par ce régime"
+]
+]
+},
+{
+"t": "h",
+"x": "Les autres conditions"
+},
+{
+"t": "list",
+"items": [
+"Les statuts le prévoient explicitement.",
+"L'organe délibérant l'a décidé à la majorité des deux tiers de ses membres.",
+"Un commissaire aux comptes constate le montant des ressources.",
+"La rémunération de chaque dirigeant ne dépasse pas 3 fois le plafond de la Sécurité sociale.",
+"Les statuts assurent la transparence financière, l'élection régulière des dirigeants, le contrôle de la gestion par les membres, et une rémunération adaptée aux sujétions (contraintes) du dirigeant."
+]
+},
+{
+"t": "p",
+"x": "Un remboursement de frais réels et justifiés n'est pas une rémunération. Un forfait sans justificatifs peut être requalifié."
+}
+],
+"piege": "Le seuil de 200 000 € s'apprécie en moyenne sur les trois derniers exercices clos, hors versements des personnes publiques : ni le dernier exercice seul, ni l'ensemble des ressources subventions publiques comprises.",
+"reponse": "Pas en l'état. Hors subventions publiques, les ressources moyennes sont de 290 000 €, soit plus de 200 000 € : le club pourrait rémunérer un dirigeant. Mais il faut d'abord que les statuts le prévoient explicitement, qu'une décision à la majorité des deux tiers soit prise et qu'un commissaire aux comptes constate le montant des ressources. Les billets de train remboursés sur justificatifs ne sont pas une rémunération.",
+"sources": [
+"CGI, art. 261, 7, 1° d (gestion désintéressée, rémunération des dirigeants, seuils de ressources, plafond de 3 fois le plafond de la Sécurité sociale)",
+"CGI, art. 206, 1 bis (gestion désintéressée)"
+],
+"questions": [
+"m04-q10",
+"m04-q11",
+"asso-l11-q1",
+"asso-l11-q2"
+],
+"titre": "Rémunérer les dirigeants",
+"priorite": 2
 }
 }
 },
