@@ -27150,9 +27150,14 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 21
+"v": 22
 },
 {
 "id": "asso-11",
@@ -27349,9 +27354,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 21
+"v": 22
 },
 {
 "id": "agt-03",
@@ -29151,9 +29161,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 21
+"v": 22
 },
 {
 "id": "agt-32",
@@ -36179,6 +36194,15 @@
 "precisions": []
 },
 {
+"id": "n-lecons-sources-2026-11-19",
+"d": "2026-11-19",
+"genre": "appli",
+"titre": "9 leçons précisées avec les règlements du football",
+"texte": "Les leçons s'appuient maintenant aussi sur le règlement des agents sportifs de la FFF, le règlement de la DNCG, la Charte du football professionnel et la convention collective du sport. À retenir : le CDD spécifique du sportif ne comporte pas de période d'essai ; à la FFF, le contrat d'agent dure deux ans au plus ; en football professionnel, le contrat du joueur ne prend effet qu'une fois homologué par la LFP.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
@@ -36870,7 +36894,7 @@
 "blocs": [
 {
 "t": "p",
-"x": "Pour exercer, il faut une carte professionnelle d'agent sportif. Avant le 5 août 2026, on disait « licence », et les décrets emploient encore ce mot. La carte est délivrée, suspendue ou retirée par la fédération délégataire, à travers sa commission des agents sportifs. Elle vaut pour une seule discipline."
+"x": "Pour exercer, il faut une carte professionnelle d'agent sportif. Avant le 5 août 2026, on disait « licence ». Les décrets et le règlement de la FFF emploient encore ce mot. La carte est délivrée, suspendue ou retirée par la fédération délégataire, à travers sa commission des agents sportifs. Elle vaut pour une seule discipline."
 },
 {
 "t": "h",
@@ -36903,7 +36927,7 @@
 },
 {
 "t": "p",
-"x": "Une session a lieu chaque année. Il faut réussir la première épreuve pour passer la seconde. Celui qui échoue à la seconde garde le bénéfice de la première pour la session suivante, dans la même discipline. L'agent qui a déjà obtenu une carte dans un autre sport en passant la première épreuve en est dispensé."
+"x": "Une session a lieu chaque année. La commission de la FFF fixe les dates. Il faut réussir la première épreuve pour passer la seconde. Celui qui échoue à la seconde garde le bénéfice de la première pour la session suivante, dans la même discipline. L'agent qui a déjà obtenu une carte dans un autre sport en passant la première épreuve en est dispensé. Après la seconde épreuve, il faut payer 300 € de frais, une seule fois, et finir les formalités dans les six mois. Sinon, la réussite est perdue."
 },
 {
 "t": "h",
@@ -36919,7 +36943,8 @@
 "sources": [
 "C. sport, L. 222-7",
 "C. sport, R. 222-1, R. 222-7 et R. 222-10",
-"C. sport, R. 222-14 à R. 222-18"
+"C. sport, R. 222-14 à R. 222-18",
+"Règlement des agents sportifs FFF 2026-2027, art. 3.4 et 3.5"
 ],
 "questions": [
 "agt-02",
@@ -37070,7 +37095,7 @@
 "t": "list",
 "items": [
 "La nature des services, et leur caractère exclusif ou non.",
-"La durée : trois ans au plus. La fédération peut fixer une durée maximale plus courte.",
+"La durée : trois ans au plus. La fédération peut fixer une durée plus courte : à la FFF, c'est deux ans au plus, sans reconduction tacite.",
 "La rémunération de l'agent : 10 % au plus du contrat conclu.",
 "La partie qui paie l'agent.",
 "L'obligation de communiquer le contrat et tout avenant à la fédération, dans le mois qui suit leur entrée en vigueur."
@@ -37093,12 +37118,13 @@
 "x": "De plus, la rémunération de l'agent ne peut être versée qu'après la transmission de son contrat à la fédération. Celle-ci peut aussi sanctionner l'agent qui ne communique pas ses contrats."
 }
 ],
-"piege": "Trois ans, c'est un maximum fixé par la loi : la fédération peut imposer une durée plus courte, jamais plus longue.",
-"reponse": "Non. Sans contrat écrit signé avant, il n'a pas le droit de mettre le joueur en relation avec un club. Il doit d'abord signer, puis communiquer le contrat à la fédération dans le mois qui suit son entrée en vigueur.",
+"piege": "Trois ans, c'est un maximum fixé par la loi : la fédération peut imposer une durée plus courte, jamais plus longue. La FFF a choisi deux ans.",
+"reponse": "Non. Sans contrat écrit signé avant, il n'a pas le droit de mettre le joueur en relation avec un club. Il doit d'abord signer, puis communiquer le contrat à la fédération dans le mois qui suit son entrée en vigueur. Le règlement de la FFF compte ce mois depuis la signature : le plus sûr est de l'envoyer dès la signature.",
 "sources": [
 "C. sport, L. 222-17",
 "C. sport, L. 222-18 et L. 222-19",
-"C. sport, R. 222-32"
+"C. sport, R. 222-32",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.1 et 6.3.1"
 ],
 "questions": [
 "agt-08",
@@ -37117,7 +37143,7 @@
 "blocs": [
 {
 "t": "p",
-"x": "La rémunération de l'agent est plafonnée : 10 % au plus du montant du contrat conclu par les parties qu'il a mises en rapport. Son montant est écrit dans le contrat de l'agent."
+"x": "La rémunération de l'agent est plafonnée : 10 % au plus du montant du contrat conclu par les parties qu'il a mises en rapport. Son montant est écrit dans le contrat de l'agent. Pour un avenant qui augmente le salaire, il ne peut toucher que 10 % de l'augmentation, sur la durée restante du contrat."
 },
 {
 "t": "h",
@@ -37150,7 +37176,7 @@
 },
 {
 "t": "p",
-"x": "Chaque fédération délégataire peut fixer un taux inférieur à 10 %, en tenant compte des règles de sa fédération internationale. Ce taux peut varier selon le type de contrat. Mais elle ne peut jamais dépasser 10 %."
+"x": "Chaque fédération délégataire peut fixer un taux inférieur à 10 %, en tenant compte des règles de sa fédération internationale. Ce taux peut varier selon le type de contrat. Mais elle ne peut jamais dépasser 10 %. Le règlement de la FFF reprend ce plafond de 10 %."
 },
 {
 "t": "h",
@@ -37162,11 +37188,12 @@
 }
 ],
 "piege": "Pour un contrat de travail, on calcule sur le brut, pas sur le net. Et 10 % est un plafond, pas un tarif obligatoire.",
-"reponse": "Non. Le plafond est de 10 % de la rémunération brute, soit 24 000 € pour 240 000 €. Les 30 000 € demandés le dépassent. Et si la FFF a fixé un taux plus bas, c'est ce taux qui s'applique.",
+"reponse": "Non. Le plafond est de 10 % de la rémunération brute, soit 24 000 € pour 240 000 €. Les 30 000 € demandés le dépassent. Le règlement de la FFF ne fixe pas de taux plus bas : le plafond reste 10 %.",
 "sources": [
 "C. sport, L. 222-17 et L. 222-18",
 "C. sport, R. 222-37",
-"C. sport, A. 222-2 à A. 222-5"
+"C. sport, A. 222-2 à A. 222-6",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.2"
 ],
 "questions": [
 "agt-07",
@@ -37418,11 +37445,11 @@
 },
 {
 "t": "p",
-"x": "La commission des agents sportifs de la fédération peut prononcer contre l'agent un avertissement, une sanction pécuniaire, la suspension de sa carte ou son retrait, avec interdiction d'en obtenir une autre pendant cinq ans au plus."
+"x": "La commission des agents sportifs de la fédération peut prononcer contre l'agent un avertissement, une amende (au plus celle d'une contravention de 5e classe), la suspension de sa carte ou son retrait, avec interdiction d'en obtenir une autre pendant cinq ans au plus."
 },
 {
 "t": "p",
-"x": "Les clubs et les licenciés peuvent aussi être sanctionnés, par exemple s'ils font appel à une personne sans carte. Pour contester une sanction, il faut d'abord passer par la conciliation du CNOSF, puis saisir le tribunal administratif."
+"x": "Les clubs et les licenciés peuvent aussi être sanctionnés, par exemple s'ils font appel à une personne sans carte : avertissement, amende ou sanction sportive (perte de points, interdiction de recruter). Pour contester une sanction, il faut d'abord passer par la conciliation du CNOSF, puis saisir le tribunal administratif."
 }
 ],
 "piege": "Ne mélange pas les trois peines : cinq ans et 375 000 € pour l'exercice sans carte, deux ans et 30 000 € pour la rémunération sur un mineur, un an et 15 000 € pour l'exercice malgré une incapacité.",
@@ -37430,7 +37457,9 @@
 "sources": [
 "C. sport, L. 222-18 à L. 222-21",
 "C. sport, L. 222-6",
-"C. sport, R. 222-38, R. 222-39 et R. 222-41"
+"C. sport, R. 222-38, R. 222-39 et R. 222-41",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.7 et 7.2",
+"Règlements généraux de la FFF 2026-2027, art. 200"
 ],
 "questions": [
 "agt-14",
@@ -38605,8 +38634,8 @@
 ],
 [
 "Pouvoirs",
-"Contrôle des comptes, limitation des effectifs, plafonnement de la masse salariale. Sanctions financières et sportives en cas de comptes trompeurs",
-"Ouvre la procédure, arrête un plan ou prononce la liquidation"
+"Contrôle des comptes, limitation des effectifs, plafonnement de la masse salariale. Peut interdire ou encadrer les recrutements, limiter les joueurs mutés, rétrograder un club. Sanctions financières et sportives en cas de comptes trompeurs",
+"Ouvre la procédure, arrête un plan ou prononce la liquidation. Le règlement de la FFF en tire des suites sportives : rétrogradation en cas de sauvegarde ou de redressement, perte des droits sportifs en cas de liquidation"
 ]
 ]
 },
@@ -38628,11 +38657,14 @@
 }
 ],
 "piege": "Une décision de la DNCG n'est pas une procédure collective : seul le tribunal peut ouvrir une sauvegarde, un redressement ou une liquidation judiciaire.",
-"reponse": "La DNCG contrôle les finances du club et peut encadrer sa masse salariale, dans le cadre sportif. Mais une fois le club en cessation des paiements, c'est le tribunal qui ouvre un redressement ou une liquidation judiciaire. Pour ton joueur, vérifie la capacité du club à payer les salaires.",
+"reponse": "La DNCG contrôle les finances du club et peut encadrer sa masse salariale, dans le cadre sportif. Mais une fois le club en cessation des paiements, c'est le tribunal qui ouvre un redressement ou une liquidation judiciaire. Pour ton joueur, vérifie si la DNCG a interdit ou limité les recrutements du club, et sa capacité à payer les salaires.",
 "sources": [
 "C. sport, L. 133-1 (ancien L. 132-2, renuméroté par la loi n° 2026-725 du 3 août 2026)",
 "C. sport, L. 122-18",
-"C. com., L. 620-1, L. 631-1 et L. 640-1"
+"C. com., L. 620-1, L. 631-1 et L. 640-1",
+"Règlement de la DNCG 2026-2027, art. 1 et 11.1",
+"Règlements généraux de la FFF 2026-2027, art. 234",
+"Charte du football professionnel, art. 254"
 ],
 "questions": [
 "soc-15-q1",
@@ -39109,7 +39141,7 @@
 },
 {
 "t": "p",
-"x": "L'homologation est un contrôle du contrat par la fédération ou la ligue professionnelle. Elle n'existe que si le règlement de la fédération ou de la ligue la prévoit. Ce règlement fixe aussi ses conséquences sportives en cas d'absence. Le défaut d'homologation ne peut empêcher le contrat d'entrer en vigueur que dans les conditions fixées par une convention ou un accord collectif national. Ne confonds pas trois choses : la validité du contrat de travail, son homologation et l'enregistrement du joueur pour les compétitions."
+"x": "L'homologation est un contrôle du contrat par la fédération ou la ligue professionnelle, pour garantir l'équité des compétitions. Elle n'existe que si le règlement de la fédération ou de la ligue la prévoit. Ce règlement fixe aussi ses conséquences sportives en cas d'absence. Le défaut d'homologation ne peut empêcher le contrat d'entrer en vigueur que dans les conditions fixées par une convention ou un accord collectif national. En football (Ligue 1 et Ligue 2), la Charte prévoit que le contrat prend effet sous la condition de son homologation par la LFP. Ne confonds pas trois choses : la validité du contrat de travail, son homologation et l'enregistrement du joueur pour les compétitions."
 },
 {
 "t": "h",
@@ -39117,17 +39149,19 @@
 },
 {
 "t": "p",
-"x": "Elle ne se présume pas : elle doit être écrite dans le contrat. Le Code du sport ne fixe pas de durée propre. Les règles du Code du travail sur l'essai d'un CDD paraissent s'appliquer : un jour par semaine, dans la limite de deux semaines pour un contrat de six mois ou moins, et d'un mois au-delà, sauf usages ou accord prévoyant moins."
+"x": "La convention collective du sport le dit clairement : le CDD spécifique du sportif ou de l'entraîneur professionnel ne comporte pas de période d'essai. Le Code du sport n'en prévoit pas non plus. Pour un joueur professionnel, il n'y a donc pas d'essai : le club s'engage dès la signature."
 }
 ],
 "piege": "L'homologation est une procédure sportive : elle ne répare pas un contrat qui ne respecte pas les règles de forme et de contenu du Code du sport.",
-"reponse": "Non. Le contrat doit être établi en trois exemplaires au moins, remis dans les 2 jours ouvrables, et indiquer toutes les composantes de la rémunération, primes comprises. Le défaut d'homologation n'est pas la question : elle ne dépend que du règlement de la fédération ou de la ligue et ne corrige pas ces défauts de forme.",
+"reponse": "Non. Le contrat doit être établi en trois exemplaires au moins, remis dans les 2 jours ouvrables, et indiquer toutes les composantes de la rémunération, primes comprises. Le défaut d'homologation n'excuse rien : il dépend du règlement de la fédération ou de la ligue et d'un accord collectif (en football, la Charte), et il ne corrige pas ces défauts de forme. Un contrat qui ne respecte pas ces règles de forme est même réputé à durée indéterminée.",
 "sources": [
 "C. sport, L. 222-2-5 (écrit, trois exemplaires, mentions, remise sous deux jours ouvrables)",
 "C. sport, L. 222-2-6 (homologation), tel que modifié par la loi n° 2026-725 du 3 août 2026, art. 8",
 "C. sport, L. 222-2-1 (articles du Code du travail écartés pour le CDD spécifique)",
-"C. trav., L. 1221-23 (période d'essai expressément stipulée)",
-"C. trav., L. 1242-10 (durée de l'essai d'un CDD)"
+"CCNS, art. 4.7.3.2 (pas de période d'essai)",
+"CCNS, art. 12.4.1 et 12.4.2",
+"Charte du football professionnel, art. 254 et 256",
+"C. sport, L. 222-2-8"
 ],
 "questions": [
 "m06-q04",
@@ -39346,11 +39380,11 @@
 },
 {
 "t": "p",
-"x": "Pour un joueur professionnel, le temps de travail ne se limite pas au match : entraînements, déplacements et séances imposées peuvent compter selon les conditions réelles."
+"x": "Pour un sportif professionnel, le temps de travail ne se limite pas au match : entraînements collectifs, déplacements, musculation imposée et rendez-vous médicaux comptent aussi. Ses congés sont de 3 jours ouvrables par mois, 36 au plus. En football, la Charte garde 2,5 jours par mois."
 }
 ],
 "piege": "Les congés payés se calculent en jours ouvrables, à 2,5 jours par mois de travail effectif : ne les confonds pas avec les jours ouvrés (25 jours pour cinq semaines).",
-"reponse": "Non. Amina a droit à 2,5 jours ouvrables de congés par mois travaillé, soit 10 jours pour quatre mois, ou à une indemnité compensatrice si elle ne peut pas les prendre. Elle a aussi fait 8 heures supplémentaires cette semaine-là (43 moins 35) : à défaut d'accord, elles sont majorées de 25 %.",
+"reponse": "Non. Amina a droit à 2,5 jours ouvrables de congés par mois travaillé, soit 10 jours pour quatre mois, ou à une indemnité compensatrice si elle ne peut pas les prendre. Elle a aussi fait 8 heures supplémentaires cette semaine-là (43 moins 35) : à défaut d'accord, elles sont majorées de 25 %. Si le club applique la CCNS, ces heures et leur majoration donnent d'abord droit à un repos compensateur, sauf accord pour les payer.",
 "sources": [
 "C. trav., L. 3121-1 (temps de travail effectif)",
 "C. trav., L. 3121-18, L. 3121-20, L. 3121-22 (durées maximales)",
@@ -39359,7 +39393,10 @@
 "C. trav., L. 3121-33 et L. 3121-36 (majoration des heures supplémentaires)",
 "C. trav., L. 3141-1, L. 3141-3 et L. 3141-24 (congés payés et indemnité)",
 "C. trav., L. 3141-15 et L. 3141-16 (fixation des départs en congés)",
-"C. trav., L. 1242-16 (indemnité de congés payés du CDD)"
+"C. trav., L. 1242-16 (indemnité de congés payés du CDD)",
+"CCNS, art. 5.1.2.2.1",
+"CCNS, art. 12.8.1.2 et 12.8.2.2.1",
+"Charte du football professionnel, art. 259 bis"
 ],
 "questions": [
 "m06-q08",
@@ -39513,7 +39550,7 @@
 },
 {
 "t": "p",
-"x": "Il vise les sportifs et entraîneurs professionnels salariés, et doit se lire avec les règles du CDD spécifique du Code du sport. Il ne s'applique pas automatiquement à tous les salariés d'un club : un éducateur ou un salarié administratif n'est pas concerné d'office. En football professionnel, il faut aussi regarder les textes propres à la discipline."
+"x": "Il vise les sportifs et entraîneurs professionnels salariés, et doit se lire avec les règles du CDD spécifique du Code du sport. Il ne s'applique pas automatiquement à tous les salariés d'un club : un éducateur ou un salarié administratif n'est pas concerné d'office. En football professionnel, il faut aussi regarder la Charte du football professionnel, qui vise les clubs de Ligue 1 et de Ligue 2."
 },
 {
 "t": "h",
@@ -39531,8 +39568,10 @@
 "reponse": "Karim doit être classé dans le groupe supérieur si ces tâches dépassent 20 % de son temps hebdomadaire. Léo gagne moins que le minimum de 22 289,19 € brut par an applicable depuis le 1er janvier 2026 : le club doit relever son salaire.",
 "sources": [
 "CCNS, art. 9.1.2 (polyvalence, seuil de 20 %)",
-"CCNS, art. 12.6.2.1, tel que remplacé par l'avenant n° 210 du 3 avril 2025 (salaire minimal du sportif)",
-"Avenant n° 210 du 3 avril 2025 relatif aux salaires, art. 2"
+"CCNS, art. 12.7.2.1 (ancien 12.6.2.1, renuméroté par l'avenant n° 200), tel que remplacé par l'avenant n° 210 du 3 avril 2025, étendu par arrêté du 24 juin 2025 (salaire minimal du sportif)",
+"Avenant n° 210 du 3 avril 2025 relatif aux salaires, art. 2",
+"CCNS, art. 12.1 (champ d'application du chapitre 12)",
+"Charte du football professionnel, art. 01"
 ],
 "questions": [
 "an24-q13",
@@ -39759,7 +39798,7 @@
 "items": [
 "L'accord des deux parties.",
 "La faute grave.",
-"La force majeure (un événement imprévisible et irrésistible qui rend impossible la poursuite du contrat).",
+"La force majeure (un événement extérieur, qu'on ne pouvait pas raisonnablement prévoir et dont on ne peut pas éviter les effets, qui empêche de poursuivre le contrat).",
 "L'inaptitude constatée par le médecin du travail.",
 "À l'initiative du salarié, la justification d'un CDI ailleurs."
 ]
@@ -39798,7 +39837,7 @@
 },
 {
 "t": "p",
-"x": "Pour le sportif professionnel, une clause permettant au club de rompre le CDD sans motif est nulle."
+"x": "Pour le sportif professionnel, une clause permettant à l'une des parties de rompre le CDD sans motif est nulle. Il n'a pas non plus droit à l'indemnité de fin de contrat. En football, la Charte interdit aussi les clauses libératoires et résolutoires."
 }
 ],
 "piege": "En cas d'inaptitude d'origine professionnelle, l'indemnité n'est pas égale à l'indemnité légale de licenciement : elle ne peut pas être inférieure au double.",
@@ -39810,7 +39849,10 @@
 "C. trav., L. 1243-4 (rupture par l'employeur hors cas permis)",
 "C. trav., L. 1226-20 (inaptitude d'origine professionnelle, CDD)",
 "C. sport, L. 222-2-1 (articles du Code du travail applicables au sportif)",
-"C. sport, L. 222-2-7 (clause de rupture unilatérale pure et simple nulle)"
+"C. sport, L. 222-2-7 (clause de rupture unilatérale pure et simple nulle)",
+"CCNS, art. 4.7.3.3",
+"Charte du football professionnel, art. 257 et 265",
+"C. civ., art. 1218"
 ],
 "questions": [
 "an23-q11",
