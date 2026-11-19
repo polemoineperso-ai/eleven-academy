@@ -31354,7 +31354,7 @@
 "id": "m09-q06",
 "chapitre": "m09-2",
 "niveau": 1,
-"enonce": "Quelle est la durée maximale du contrat écrit d'agent sportif ?",
+"enonce": "Selon la loi (L. 222-17), quelle est la durée maximale du contrat écrit d'agent sportif ?",
 "options": [
 "Un an",
 "Trois ans",
@@ -31362,7 +31362,15 @@
 ],
 "bonne": 1,
 "explication": "Les fédérations peuvent prévoir une durée maximale inférieure.",
-"origine": "Module 09, QCM 6, corrigé du module"
+"origine": "Module 09, QCM 6, corrigé du module",
+"maj": [
+{
+"d": "2026-11-20",
+"t": "precision",
+"x": "L'énoncé précise qu'il s'agit de la durée fixée par la loi (la FFF retient deux ans)."
+}
+],
+"v": 2
 },
 {
 "id": "m09-q07",
@@ -33766,6 +33774,200 @@
 "bonne": 1,
 "explication": "La garantie déclenchée par la réclamation couvre l'assuré si le fait dommageable est antérieur à la résiliation ou à l'expiration et si la première réclamation intervient pendant la garantie ou le délai subséquent prévu au contrat (C. assur., L. 124-5).",
 "origine": "Leçon ass-l11"
+},
+{
+"id": "act-l01-q1",
+"chapitre": "m09-2",
+"niveau": 2,
+"enonce": "Selon l'échéancier de la loi n° 2026-725, quand est attendu le décret sur la délivrance, la suspension et le retrait de la carte professionnelle d'agent sportif ?",
+"options": [
+"Décembre 2026",
+"Février 2027",
+"Janvier 2028",
+"Il est déjà paru"
+],
+"bonne": 1,
+"explication": "L'échéancier annonce ce décret pour février 2027 (loi n° 2026-725, art. 13, I, 3°, L. 222-7). Il n'est pas paru au 20 novembre 2026.",
+"origine": "Leçon act-l01"
+},
+{
+"id": "act-l01-q2",
+"chapitre": "m09-2",
+"niveau": 2,
+"enonce": "Au 20 novembre 2026, laquelle de ces règles voit son entrée en vigueur reportée par la loi elle-même après cette date ?",
+"options": [
+"La carte professionnelle remplace la licence d'agent sportif",
+"L'agent ne peut pas être payé pour un contrat conclu pendant la minorité du joueur, même s'il devient majeur en cours de contrat",
+"La majorité du capital de la société de l'agent doit être détenue par des titulaires de la carte",
+"Un agent ne peut agir que pour une seule partie au contrat"
+],
+"bonne": 2,
+"explication": "La règle sur la majorité du capital figure dans la nouvelle rédaction de L. 222-8, qui n'entre en vigueur que le 1er janvier 2028 (loi n° 2026-725, art. 13, V). Les trois autres règles s'appliquent depuis le 5 août 2026.",
+"origine": "Leçon act-l01"
+},
+{
+"id": "act-l05-q1",
+"chapitre": "m09-2",
+"niveau": 2,
+"enonce": "Deux agents travaillent dans la même société. Peuvent-ils agir, l'un pour le joueur et l'autre pour le club, sur les contrats menant au transfert de ce joueur ?",
+"options": [
+"Oui, si chacun a signé son propre contrat écrit",
+"Non : des agents qui coopèrent ne peuvent agir que pour une seule partie sur l'ensemble de ces contrats",
+"Oui, si leurs rémunérations ne dépassent pas 10 % au total"
+],
+"bonne": 1,
+"explication": "Les agents qui coopèrent, en particulier au sein d'une même société, ne peuvent agir pour le compte de plus d'une partie dans l'ensemble des contrats menant à la mutation (C. sport, L. 222-17, I).",
+"origine": "Leçon act-l05"
+},
+{
+"id": "act-l07-q1",
+"chapitre": "m09-2",
+"niveau": 2,
+"enonce": "Dans la nouvelle rédaction de L. 222-8 (à partir du 1er janvier 2028), qui doit détenir la majorité du capital de la société constituée par l'agent ?",
+"options": [
+"Une ou plusieurs personnes titulaires de la carte professionnelle",
+"Les salariés de la société",
+"La fédération délégataire",
+"Des clubs employant des sportifs"
+],
+"bonne": 0,
+"explication": "La majorité du capital social doit être détenue par une ou plusieurs personnes titulaires de la carte professionnelle (C. sport, L. 222-8, nouvelle rédaction, art. 13, I, 3°).",
+"origine": "Leçon act-l07"
+},
+{
+"id": "act-l07-q2",
+"chapitre": "m09-2",
+"niveau": 2,
+"enonce": "Au 20 novembre 2026, que dit L. 222-8 sur l'exercice de l'agent sportif ?",
+"options": [
+"L'agent peut constituer une société ou être préposé d'une société",
+"L'agent doit être salarié d'une seule société de services d'agent sportif",
+"La majorité du capital de sa société doit être détenue par des titulaires de la carte",
+"Il ne peut pas constituer de société"
+],
+"bonne": 0,
+"explication": "Jusqu'au 31 décembre 2027, c'est l'ancienne rédaction de L. 222-8 qui s'applique : l'agent peut constituer une société ou être préposé d'une société. La nouvelle rédaction entre en vigueur le 1er janvier 2028 (loi n° 2026-725, art. 13, V).",
+"origine": "Leçon act-l07"
+},
+{
+"id": "act-l08-q1",
+"chapitre": "m09-3",
+"niveau": 2,
+"enonce": "Selon L. 122-1, II, dans sa rédaction de la loi du 3 août 2026, quel texte fixe les seuils qui obligent une association sportive à constituer une société commerciale ?",
+"options": [
+"Un décret en Conseil d'État",
+"La loi elle-même, avec des montants chiffrés",
+"Le règlement de chaque fédération",
+"Le préfet du département"
+],
+"bonne": 0,
+"explication": "L. 122-1, II renvoie à un décret en Conseil d'État pour fixer les seuils de recettes et de rémunérations (loi n° 2026-725, art. 25, 1°). L'échéancier annonce ce décret pour janvier 2027 ; d'ici là, les montants de R. 122-1 (1 200 000 € de recettes, 800 000 € de rémunérations) restent applicables.",
+"origine": "Leçon act-l08"
+},
+{
+"id": "act-l08-q2",
+"chapitre": "m09-3",
+"niveau": 2,
+"enonce": "Dans quel cas les seuils de L. 122-1 sont-ils calculés séparément pour le secteur masculin et le secteur féminin ?",
+"options": [
+"Lorsque l'association décide de constituer deux sociétés commerciales",
+"Toujours, même avec une seule société",
+"Seulement pour une association de football",
+"Jamais : un seuil unique s'applique à l'association"
+],
+"bonne": 0,
+"explication": "Les seuils sont calculés de manière indépendante pour chaque secteur lorsque l'association décide de constituer deux sociétés commerciales (C. sport, L. 122-1, II).",
+"origine": "Leçon act-l08"
+},
+{
+"id": "act-l09-q1",
+"chapitre": "m09-3",
+"niveau": 2,
+"enonce": "Une association sportive a créé deux sociétés sportives. Comment peut-elle définir leurs relations ?",
+"options": [
+"Par une convention tripartite, ou par deux conventions séparées",
+"Par une seule convention avec la société masculine",
+"Par une convention renouvelée chaque année",
+"Elle n'a pas à signer de convention"
+],
+"bonne": 0,
+"explication": "Avec deux sociétés, les relations sont définies soit par une convention tripartite, soit par deux conventions, d'une durée de dix à quinze ans (C. sport, L. 122-14).",
+"origine": "Leçon act-l09"
+},
+{
+"id": "act-l10-q1",
+"chapitre": "m09-3",
+"niveau": 2,
+"enonce": "Sous quel numéro l'ancien article L. 132-2 du Code du sport (organisme de contrôle de gestion) est-il désormais codifié ?",
+"options": [
+"L. 133-1",
+"L. 131-14",
+"L. 122-1",
+"L. 111-12-1"
+],
+"bonne": 0,
+"explication": "La loi n° 2026-725 (art. 26, III) renumérote L. 132-2 en L. 133-1, dans un nouveau chapitre « Contrôle de gestion ».",
+"origine": "Leçon act-l10"
+},
+{
+"id": "act-l10-q2",
+"chapitre": "m09-3",
+"niveau": 2,
+"enonce": "Au moins quelle part des membres de l'organisme de contrôle de gestion doit être composée de professionnels qualifiés sans mandat dans la fédération ou la ligue ?",
+"options": [
+"Un tiers",
+"La moitié",
+"Les deux tiers",
+"Les trois quarts"
+],
+"bonne": 2,
+"explication": "L'organisme est constitué, pour au moins les deux tiers de ses membres, de professionnels qualifiés en droit, comptabilité, audit ou finance, sans mandat dans la fédération ou la ligue (C. sport, L. 133-1, I).",
+"origine": "Leçon act-l10"
+},
+{
+"id": "act-l10-q3",
+"chapitre": "m09-3",
+"niveau": 2,
+"enonce": "Dans quel délai l'organisme se prononce-t-il sur un projet d'achat, de cession ou de changement d'actionnaires d'une société sportive ?",
+"options": [
+"Un mois à compter de la notification du projet",
+"Deux mois à compter de la notification du projet",
+"Trois mois à compter de la notification du projet",
+"Six mois à compter de la notification du projet"
+],
+"bonne": 2,
+"explication": "L'organisme se prononce dans un délai de trois mois à compter du jour où le projet lui a été notifié (C. sport, L. 133-1, III).",
+"origine": "Leçon act-l10"
+},
+{
+"id": "act-l11-q1",
+"chapitre": "m09-3",
+"niveau": 2,
+"enonce": "À quel organisme le club transmet-il sans délai le contrat d'exploitation de l'image du sportif ?",
+"options": [
+"L'organisme mentionné à l'article L. 133-1 du Code du sport",
+"L'URSSAF",
+"La ligue professionnelle",
+"Le conseil de prud'hommes"
+],
+"bonne": 0,
+"explication": "L'association ou la société sportive transmet sans délai le contrat à l'organisme mentionné à l'article L. 133-1 (C. sport, L. 222-2-10-1).",
+"origine": "Leçon act-l11"
+},
+{
+"id": "act-l11-q2",
+"chapitre": "m09-3",
+"niveau": 2,
+"enonce": "Un club a deux sociétés sportives. Qui peut conclure un contrat d'image avec une joueuse professionnelle ?",
+"options": [
+"La société sportive qui l'emploie",
+"Seulement l'association sportive",
+"Seulement la société du secteur masculin",
+"Personne : le contrat d'image est interdit avec deux sociétés"
+],
+"bonne": 0,
+"explication": "L. 222-2-10-1 permet à une association ou à une société sportive de conclure ce contrat avec le sportif ou l'entraîneur professionnel qu'elle emploie (loi n° 2026-725, art. 25, 14°).",
+"origine": "Leçon act-l11"
 }
 ],
 "cartes": [
@@ -37209,6 +37411,15 @@
 "precisions": []
 },
 {
+"id": "n-lecons-m09-2026-11-20",
+"d": "2026-11-20",
+"genre": "appli",
+"titre": "Le module 09, La loi du 3 août 2026, passe aux leçons",
+"texte": "11 leçons de 5 minutes qui montrent ce que la loi a changé, avec un tableau « avant / après » : carte professionnelle, formation, contrat et rémunération de l'agent, mineurs, société de l'agent en 2028, sociétés sportives et contrôle de gestion. Les décrets attendus en 2027 y sont signalés.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
@@ -37233,6 +37444,11 @@
 "g": "q",
 "id": "m07-q14",
 "x": "L'explication reprend la double condition de l'article 226-8."
+},
+{
+"g": "q",
+"id": "m09-q06",
+"x": "L'énoncé précise qu'il s'agit de la durée fixée par la loi (la FFF retient deux ans)."
 }
 ]
 },
@@ -45895,6 +46111,759 @@
 "ass-l11-q2"
 ],
 "titre": "L'assurance responsabilité civile de l'agent",
+"priorite": 2
+}
+}
+},
+{
+"domaine": "actualite",
+"titre": "Module 09 · La loi du 3 août 2026",
+"parties": [
+{
+"titre": "La réforme de l'agent sportif",
+"lecons": [
+{
+"id": "act-l01",
+"titre": "La loi du 3 août 2026 en bref",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "act-l02",
+"titre": "De la licence à la carte professionnelle",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "act-l03",
+"titre": "Formation, préposés, superviseurs, apporteurs",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "act-l04",
+"titre": "Le contrat et la rémunération après la réforme",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "act-l05",
+"titre": "Plusieurs agents sur une opération",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "act-l06",
+"titre": "Les sportifs mineurs après la réforme",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "act-l07",
+"titre": "La société de l'agent en 2028",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "Les clubs professionnels après la réforme",
+"lecons": [
+{
+"id": "act-l08",
+"titre": "Une ou deux sociétés sportives",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "act-l09",
+"titre": "La nouvelle convention entre l'association et ses sociétés",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "act-l10",
+"titre": "Le nouvel organisme de contrôle de gestion",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "act-l11",
+"titre": "Le contrat d'image après la réforme",
+"priorite": 2,
+"dispo": true
+}
+]
+}
+],
+"contenu": {
+"act-l01": {
+"minutes": 5,
+"situation": {
+"texte": "Le président du club de Karim lit un article : « La nouvelle loi sur le sport professionnel change tout pour les agents, dès aujourd'hui. » Il te demande ce qui s'applique réellement en novembre 2026.",
+"question": "Toutes les règles de la loi s'appliquent-elles déjà ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La loi n° 2026-725 du 3 août 2026 porte sur l'organisation, la gestion et le financement du sport professionnel. Elle ne s'applique pas d'un seul coup : il faut regarder la date de chaque règle."
+},
+{
+"t": "table",
+"head": [
+"Date",
+"Ce qui se passe"
+],
+"rows": [
+[
+"3 août 2026",
+"Promulgation de la loi"
+],
+[
+"4 août 2026",
+"Publication au Journal officiel"
+],
+[
+"5 août 2026",
+"Entrée en vigueur de la plupart des règles étudiées : carte professionnelle, contrat de l'agent, mineurs, sociétés sportives, organisme de contrôle de gestion"
+],
+[
+"Janvier et février 2027",
+"Décrets d'application attendus pour les règles de ce module, d'après l'échéancier de la loi"
+],
+[
+"1er janvier 2028",
+"Nouvelle rédaction de L. 222-8 : la société de l'agent"
+],
+[
+"Au plus tard le 10 juillet 2029",
+"Date limite, fixée par décret, d'entrée en vigueur de la partie du IV de l'art. 26 non applicable dès le 5 août 2026, notamment le régime anti-blanchiment propre au football (art. 26, V)"
+]
+]
+},
+{
+"t": "h",
+"x": "Deux raisons d'attendre"
+},
+{
+"t": "list",
+"items": [
+"Une règle peut dépendre d'un décret. Ceux attendus en janvier et février 2027 ne sont pas parus : on ne peut pas connaître leur contenu.",
+"Une règle peut avoir une date d'entrée en vigueur différée, comme L. 222-8."
+]
+},
+{
+"t": "p",
+"x": "Pour chaque règle de ce module, demande-toi : qu'est-ce qui change, et à partir de quand ?"
+}
+],
+"piege": "Promulgation (3 août), entrée en vigueur (5 août) et date différée (1er janvier 2028) sont trois choses différentes : une règle écrite dans la loi n'est pas forcément applicable.",
+"reponse": "Non. La plupart des règles s'appliquent depuis le 5 août 2026, mais la nouvelle rédaction de L. 222-8 n'entrera en vigueur que le 1er janvier 2028. Plusieurs règles attendent aussi des décrets, annoncés pour janvier et février 2027.",
+"sources": [
+"Loi n° 2026-725 du 3 août 2026 relative à l'organisation, à la gestion et au financement du sport professionnel (JORF du 4 août 2026)",
+"Loi n° 2026-725 du 3 août 2026, art. 13, V (L. 222-8 en vigueur le 1er janvier 2028)",
+"Loi n° 2026-725 du 3 août 2026, art. 26, V (IV de l'art. 26, sauf le a des 1°, 2° et 5°, en vigueur à une date fixée par décret et au plus tard le 10 juillet 2029, notamment le régime propre au football)",
+"Échéancier d'application de la loi n° 2026-725 (Légifrance, 28 septembre 2026)"
+],
+"questions": [
+"m09-q01",
+"act-l01-q1",
+"act-l01-q2"
+],
+"titre": "La loi du 3 août 2026 en bref",
+"priorite": 3
+},
+"act-l02": {
+"minutes": 5,
+"situation": {
+"texte": "Mehdi a obtenu sa licence d'agent sportif de football en 2024. Elle est toujours valable. En septembre 2026, un ami lui dit : « Ta licence ne vaut plus rien, il faut tout repasser pour avoir la nouvelle carte. »",
+"question": "Mehdi doit-il repasser l'examen ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Depuis le 5 août 2026, la loi parle de « carte professionnelle d'agent sportif » et non plus de « licence ». La carte est délivrée, suspendue ou retirée par la fédération délégataire : pour le football, la FFF. L'agent reste une personne physique."
+},
+{
+"t": "table",
+"head": [
+"Avant la loi",
+"Depuis la loi"
+],
+"rows": [
+[
+"Le mot : licence d'agent sportif",
+"Le mot : carte professionnelle d'agent sportif (L. 222-7, L. 222-11, L. 222-15, L. 222-18)"
+],
+[
+"Contrats visés : un contrat relatif à l'exercice rémunéré d'une activité sportive, ou prévoyant un contrat de travail (règlement FFF 2025-2026)",
+"Contrat de travail ou accord de participation, contrat d'exploitation de l'image, accord de mutation entre deux clubs"
+],
+[
+"Licence délivrée par la fédération délégataire",
+"La fédération délégataire lui délivre une carte professionnelle (art. 13, III)"
+]
+]
+},
+{
+"t": "h",
+"x": "Ce qui reste à venir"
+},
+{
+"t": "p",
+"x": "Les conditions de délivrance, de suspension et de retrait de la carte sont fixées par décret. Ce décret est attendu en février 2027 et n'est pas paru. Le règlement de la FFF 2026-2027 emploie encore le mot « licence » : la loi prime, mais on ne sait pas ce que le décret changera."
+},
+{
+"t": "p",
+"x": "L'intermédiaire reste visé par trois critères : une mise en relation de deux parties, contre une rémunération, une indemnité ou un avantage, pour conclure ou prolonger l'un de ces contrats."
+}
+],
+"piege": "Ne confonds pas changement de mot et nouvel examen : la loi prévoit que la fédération délivre une carte à toute personne titulaire d'une licence valable à la promulgation.",
+"reponse": "Non. La loi prévoit que toute personne titulaire d'une licence en cours de validité à la promulgation reçoit une carte professionnelle, délivrée par la fédération délégataire. Mehdi n'a donc pas à repasser l'examen, même si le décret qui précisera la délivrance de la carte n'est pas encore paru.",
+"sources": [
+"C. sport, L. 222-7",
+"Loi n° 2026-725 du 3 août 2026, art. 13, I, 3° (L. 222-7) et III (délivrance de la carte aux titulaires d'une licence)",
+"C. sport, L. 222-11, L. 222-15 et L. 222-18 (mot « carte professionnelle »)",
+"Règlement des agents sportifs FFF 2025-2026 et 2026-2027 (emploi du mot « licence »)",
+"Échéancier d'application de la loi n° 2026-725"
+],
+"questions": [
+"m09-q02",
+"m09-q03",
+"m09-q04"
+],
+"titre": "De la licence à la carte professionnelle",
+"priorite": 3
+},
+"act-l03": {
+"minutes": 5,
+"situation": {
+"texte": "Hugo, agent sportif de football, veut s'adjoindre les services de Tom, qui ne ferait que rédiger des rapports sur de jeunes joueurs repérés. Il pense aussi verser une part de sa commission à un ami, sans carte, qui lui a présenté un attaquant.",
+"question": "Qui Hugo peut-il rémunérer ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'article L. 222-12-1 est nouveau : la loi du 3 août 2026 l'a créé. Il encadre les superviseurs et les apporteurs d'affaires. La loi ajoute aussi une obligation de formation."
+},
+{
+"t": "table",
+"head": [
+"Sujet",
+"Règle depuis le 5 août 2026"
+],
+"rows": [
+[
+"Formation",
+"Formation initiale et continue : déontologie, prévention des violences sexistes et sexuelles, lutte contre le blanchiment. Le contenu et le rythme sont fixés par un décret attendu en février 2027. Un manquement peut entraîner la suspension de la carte."
+],
+[
+"Superviseur",
+"Missions limitées à des tâches administratives de prospection : rapports, comptes rendus. L'agent le paie pour cela seulement, avec un contrat signé avant."
+],
+[
+"Apporteur d'affaires",
+"Il présente un sportif ou un entraîneur à l'agent. Il ne peut pas être payé, sauf s'il a lui-même la carte et a signé avant une convention de collaboration. Seule la première opération de placement peut être rémunérée."
+],
+[
+"Préposé",
+"Règle inchangée (L. 222-12, texte de 2010) : mêmes incompatibilités que l'agent, et un seul agent ou une seule société d'agent."
+]
+]
+},
+{
+"t": "p",
+"x": "Le superviseur ne négocie pas et ne représente pas le joueur. L'apporteur sans carte ne reçoit aucune rémunération, sous aucune forme."
+}
+],
+"piege": "Ne confonds pas le superviseur, payé pour des tâches administratives, et l'apporteur d'affaires sans carte, qui ne peut être payé sous aucune forme.",
+"reponse": "Hugo peut rémunérer Tom comme superviseur, parce que sa mission se limite à des rapports, à condition d'avoir signé avant un contrat qui prévoit sa rémunération. Il ne peut pas payer son ami : un apporteur d'affaires sans carte professionnelle ne peut être rémunéré sous aucune forme.",
+"sources": [
+"C. sport, L. 222-12-1 (créé par la loi n° 2026-725 du 3 août 2026, art. 13, I, 5°)",
+"C. sport, L. 222-7 (obligation de formation initiale et continue)",
+"C. sport, L. 222-12 (préposés)",
+"Échéancier d'application de la loi n° 2026-725 (décret sur les formations, février 2027)"
+],
+"questions": [
+"m09-q05",
+"m09-q14",
+"m09-q15"
+],
+"titre": "Formation, préposés, superviseurs, apporteurs",
+"priorite": 3
+},
+"act-l04": {
+"minutes": 5,
+"situation": {
+"texte": "Un agent met en rapport un défenseur et un club. Le contrat écrit signé avec le joueur dure quatre ans et prévoit une commission de 12 % du contrat de travail. L'agent ne l'a jamais envoyé à la fédération.",
+"question": "Ce contrat d'agent est-il en règle ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'agent ne peut mettre deux parties en rapport qu'après avoir signé un contrat écrit avec l'une d'elles. La loi a réécrit L. 222-17 : le détail est vu dans le module 01, voici les chiffres à retenir."
+},
+{
+"t": "table",
+"head": [
+"Sujet",
+"Règle depuis le 5 août 2026"
+],
+"rows": [
+[
+"Durée",
+"3 ans au plus. Une fédération peut fixer moins : la FFF retient 2 ans."
+],
+[
+"Rémunération",
+"10 % au plus du montant du contrat conclu. Une fédération peut fixer un taux plus bas, jamais plus haut."
+],
+[
+"Qui paie",
+"Le contrat indique la partie qui paie. Le club peut payer la part du joueur par une convention tripartite, qui précise les conséquences fiscales et sociales."
+],
+[
+"Communication",
+"Contrat et avenants envoyés à la fédération dans le mois qui suit leur entrée en vigueur."
+],
+[
+"Sanction civile",
+"Une convention contraire à L. 222-17, ou non communiquée, est réputée nulle et non écrite."
+]
+]
+},
+{
+"t": "h",
+"x": "Une peine plus lourde"
+},
+{
+"t": "p",
+"x": "Exercer en violation de L. 222-9 à L. 222-17 (sauf L. 222-11) est puni de 5 ans de prison et 375 000 € d'amende. Avant la loi, la peine était de 2 ans et 30 000 €."
+}
+],
+"piege": "Les limites de la loi sont 3 ans et 10 % : une fédération peut en fixer de plus basses, comme les 2 ans de la FFF, mais jamais de plus hautes.",
+"reponse": "Non. Quatre ans dépassent le maximum légal de trois ans, et 12 % dépassent le plafond de 10 % du contrat. Le contrat n'a pas non plus été communiqué à la fédération : une convention non communiquée est réputée nulle et non écrite.",
+"sources": [
+"C. sport, L. 222-17 (I et II)",
+"Loi n° 2026-725 du 3 août 2026, art. 13, I, 9° (nouvelle rédaction de L. 222-17)",
+"C. sport, L. 222-20, I (peine portée à cinq ans et 375 000 euros par l'art. 13, I, 13°)",
+"Règlement des agents sportifs FFF 2026-2027 (durée maximale de deux ans)"
+],
+"questions": [
+"m09-q06",
+"m09-q07",
+"m09-q10"
+],
+"titre": "Le contrat et la rémunération après la réforme",
+"priorite": 3
+},
+"act-l05": {
+"minutes": 5,
+"situation": {
+"texte": "Pour le transfert d'un milieu de terrain d'un club vers un autre, Ali travaille pour le joueur et Nina pour le club acheteur. Ils sont associés dans la même société d'agents. Chacun réclame 10 % du contrat.",
+"question": "Ce montage est-il permis ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Quand plusieurs agents interviennent sur une même opération, la loi du 3 août 2026 fixe des limites précises, dans L. 222-17, L. 222-12-1 et L. 222-16."
+},
+{
+"t": "table",
+"head": [
+"Sujet",
+"Règle depuis le 5 août 2026"
+],
+"rows": [
+[
+"Une seule partie",
+"Un agent n'agit que pour une partie au contrat. Les agents qui coopèrent, par exemple dans une même société, ne peuvent agir que pour une seule partie sur l'ensemble des contrats menant à la mutation d'un sportif d'un club vers un autre."
+],
+[
+"Plafond commun",
+"Pour un même contrat, le total des rémunérations de tous les agents ne dépasse pas 10 % du montant du contrat."
+],
+[
+"Collaboration",
+"La convention de collaboration n'est possible qu'entre agents titulaires de la carte, dans la même discipline."
+],
+[
+"Apporteur d'affaires",
+"Payé seulement s'il a la carte et une convention de collaboration préalable, pour la première opération de placement."
+],
+[
+"Ressortissant d'un État hors Union européenne ou Espace économique européen, sans carte",
+"Convention de présentation avec un titulaire de la carte, limitée à l'opération, transmise à la fédération avant tout début d'activité."
+]
+]
+}
+],
+"piege": "Les 10 % ne sont pas un plafond par agent : c'est un plafond commun, pour tous les agents d'un même contrat.",
+"reponse": "Non. Ali et Nina coopèrent dans la même société : ils ne peuvent pas agir pour deux parties différentes, le joueur et le club, sur les contrats menant à ce transfert. Même sans cela, leurs rémunérations réunies ne pourraient pas dépasser 10 % du montant du contrat.",
+"sources": [
+"C. sport, L. 222-17 (I, 3e alinéa, et II)",
+"C. sport, L. 222-12-1",
+"C. sport, L. 222-16",
+"Loi n° 2026-725 du 3 août 2026, art. 13, I, 5°, 8° et 9°"
+],
+"questions": [
+"m09-q08",
+"m09-q09",
+"act-l05-q1"
+],
+"titre": "Plusieurs agents sur une opération",
+"priorite": 2
+},
+"act-l06": {
+"minutes": 5,
+"situation": {
+"texte": "Un club engage Maé, 17 ans, venue d'un autre club. Un agent a organisé la mutation. Il dit aux parents : « Je ne demande rien maintenant. Je serai payé quand elle aura 18 ans, avant la fin de son contrat. »",
+"question": "L'agent a-t-il le droit d'être payé à ses 18 ans ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un agent peut s'occuper d'un mineur, mais sans être payé. Cette interdiction existait déjà. La loi du 3 août 2026 l'a précisée et durcie."
+},
+{
+"t": "table",
+"head": [
+"Avant la loi",
+"Depuis la loi"
+],
+"rows": [
+[
+"Contrats visés : l'exercice d'une activité sportive par un mineur, ou un contrat dont c'est la cause",
+"Même chose, plus le contrat relatif à la mutation d'un mineur d'un club à un autre"
+],
+[
+"Rien n'était écrit sur la durée du contrat ni sur la majorité",
+"L'interdiction vaut quelle que soit la durée du contrat et de ses avenants, même si le mineur devient majeur pendant l'exécution"
+],
+[
+"La convention écrite visait « une personne physique ou morale »",
+"La convention doit mentionner l'interdiction, et c'est l'agent sportif qui la transmet à la fédération"
+],
+[
+"L. 222-6 ne punissait que les infractions au premier alinéa de L. 222-5 : 7 500 € d'amende, et 6 mois de prison et 15 000 € d'amende en cas de récidive (ces peines subsistent)",
+"Pour le deuxième alinéa : 2 ans de prison et 30 000 € d'amende, jusqu'au double des sommes indûment perçues"
+]
+]
+},
+{
+"t": "p",
+"x": "Personne ne peut payer l'agent : ni les parents, ni le club. Un paiement différé à la majorité est donc interdit lui aussi."
+}
+],
+"piege": "Devenir majeur en cours de contrat ne libère pas l'agent : depuis la loi, c'est écrit expressément, alors que beaucoup raisonnent encore avec l'ancien droit.",
+"reponse": "Non. Depuis la loi, l'interdiction vaut quelle que soit la durée du contrat, même si le mineur atteint 18 ans pendant son exécution. Le contrat de Maé est un contrat de mutation d'un mineur, expressément visé : l'agent risque 2 ans de prison et 30 000 € d'amende.",
+"sources": [
+"C. sport, L. 222-5 (deuxième et troisième alinéas)",
+"C. sport, L. 222-6 (deux derniers alinéas)",
+"Loi n° 2026-725 du 3 août 2026, art. 13, I, 1° et 2°"
+],
+"questions": [
+"m09-q11",
+"m09-q12",
+"m09-q13"
+],
+"titre": "Les sportifs mineurs après la réforme",
+"priorite": 3
+},
+"act-l07": {
+"minutes": 5,
+"situation": {
+"texte": "Karim, agent sportif, crée en novembre 2026 une société pour exercer. Il veut donner 60 % du capital à son frère, qui n'est pas agent et ne travaille dans aucun club. Il a lu que la loi exige la majorité du capital pour les agents.",
+"question": "Peut-il le faire dès maintenant ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La loi réécrit L. 222-8, mais cette nouvelle rédaction n'entre en vigueur que le 1er janvier 2028. D'ici là, deux textes s'appliquent : l'ancien L. 222-8 et le nouveau L. 222-13, en vigueur depuis le 5 août 2026."
+},
+{
+"t": "table",
+"head": [
+"Aujourd'hui (jusqu'au 31 décembre 2027)",
+"À partir du 1er janvier 2028"
+],
+"rows": [
+[
+"L'agent peut constituer une société ou être préposé d'une société.",
+"L'agent peut constituer une personne morale dont il est le représentant légal, ou être préposé ou salarié d'une seule personne morale dont l'objet principal est de fournir des services d'agent. S'il en a constitué une, il ne peut pas être préposé ou salarié d'une autre."
+],
+[
+"L. 222-8 ne limite pas le nombre de sociétés et ne fixe aucune règle sur le capital.",
+"Un décret en Conseil d'État fixera le nombre maximal de personnes morales. La majorité du capital doit être détenue par des titulaires de la carte."
+],
+[
+"Dirigeants, associés et actionnaires sont soumis aux mêmes incompatibilités que l'agent. L'agent communique leur identité et leur bulletin n° 3 à la fédération (L. 222-13).",
+"Identité des actionnaires, associés et dirigeants communiquée à la fédération dans le mois qui suit la constitution, et tout changement dans le mois."
+]
+]
+},
+{
+"t": "p",
+"x": "La société n'est jamais agent sportif. Un décret en Conseil d'État doit encore fixer les mesures transitoires : il n'est pas paru."
+}
+],
+"piege": "Appliquer trop tôt la règle de 2028 : la majorité du capital détenue par des titulaires de la carte n'est exigée qu'à partir du 1er janvier 2028.",
+"reponse": "Oui, tant que la nouvelle rédaction de L. 222-8 n'est pas en vigueur, c'est-à-dire avant le 1er janvier 2028, à condition que le frère n'ait aucune des incompatibilités des articles L. 222-9 à L. 222-11. Karim doit le déclarer à la fédération avec le bulletin n° 3 de son casier judiciaire. À partir du 1er janvier 2028, la majorité du capital devra être détenue par des titulaires de la carte ; le décret sur les mesures transitoires dira ce qu'il advient des sociétés déjà créées.",
+"sources": [
+"Loi n° 2026-725 du 3 août 2026, art. 13, V (L. 222-8 en vigueur le 1er janvier 2028 ; décret en Conseil d'État pour les mesures transitoires)",
+"C. sport, L. 222-8 (rédaction de la loi du 9 juin 2010, applicable jusqu'au 31 décembre 2027)",
+"C. sport, L. 222-8 (nouvelle rédaction, à partir du 1er janvier 2028)",
+"C. sport, L. 222-13",
+"Échéancier d'application de la loi n° 2026-725"
+],
+"questions": [
+"m09-q20",
+"act-l07-q1",
+"act-l07-q2"
+],
+"titre": "La société de l'agent en 2028",
+"priorite": 2
+},
+"act-l08": {
+"minutes": 5,
+"situation": {
+"texte": "Un club de district a une équipe masculine et une équipe féminine. Ses dirigeants hésitent : « Si on crée une société sportive, doit-on en faire une pour les hommes et une pour les femmes ? »",
+"question": "Si elle crée une société, l'association a-t-elle le choix du nombre de sociétés ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une association sportive peut constituer une société commerciale pour gérer ses activités payantes. Depuis le 5 août 2026, L. 122-1 prévoit un choix que la loi n'offrait pas avant."
+},
+{
+"t": "table",
+"head": [
+"Avant la loi",
+"Depuis la loi"
+],
+"rows": [
+[
+"Une société commerciale",
+"Une ou deux sociétés commerciales"
+],
+[
+"Pas de distinction entre secteur masculin et secteur féminin",
+"Une seule société peut gérer les deux secteurs. Avec deux sociétés, l'une gère obligatoirement le secteur masculin, l'autre le secteur féminin."
+],
+[
+"Montants fixés par décret (R. 122-1) : 1 200 000 € de recettes ou 800 000 € de rémunérations, en moyenne sur les trois derniers exercices connus",
+"La loi renvoie à un nouveau décret en Conseil d'État, attendu en janvier 2027, avec des seuils calculés séparément pour chaque secteur si l'association crée deux sociétés. Tant qu'il n'est pas paru, R. 122-1 continue de s'appliquer : 1 200 000 € de recettes ou 800 000 € de rémunérations"
+]
+]
+},
+{
+"t": "p",
+"x": "Quand elle dépasse l'un des seuils, l'association a un an pour constituer une société : masculine, féminine, ou regroupant les deux secteurs. Sinon, elle est exclue des compétitions organisées par les fédérations. Les seuils de R. 122-1 restent applicables tant que le décret annoncé pour janvier 2027 n'est pas paru."
+},
+{
+"t": "p",
+"x": "Les formes possibles de société (EUSRL, SAOS, SASP, SARL, SA, SAS, SCIC) ne changent pas : voir le module 03."
+}
+],
+"piege": "Deux sociétés ne se choisissent pas librement : l'une est obligatoirement masculine, l'autre féminine. Deux sociétés pour le même secteur sont impossibles.",
+"reponse": "Oui. L'association peut constituer une seule société pour les deux équipes, ou deux sociétés : une pour le secteur masculin et une pour le secteur féminin. Elle ne peut pas créer deux sociétés pour le même secteur. L'obligation d'en créer une dépend toujours des seuils de R. 122-1 (1 200 000 € de recettes ou 800 000 € de rémunérations) tant que le nouveau décret n'est pas paru.",
+"sources": [
+"C. sport, L. 122-1 (I et II)",
+"C. sport, L. 122-4",
+"Loi n° 2026-725 du 3 août 2026, art. 25, 1° et 2°",
+"C. sport, R. 122-1 (montants de 2007, en vigueur tant que le nouveau décret n'est pas paru)",
+"Échéancier d'application de la loi n° 2026-725 (art. 25, 1° : décret sur les seuils, janvier 2027)"
+],
+"questions": [
+"m09-q16",
+"act-l08-q1",
+"act-l08-q2"
+],
+"titre": "Une ou deux sociétés sportives",
+"priorite": 3
+},
+"act-l09": {
+"minutes": 5,
+"situation": {
+"texte": "Une association de football a créé deux sociétés sportives, une masculine et une féminine. Son président demande : « Faut-il une seule convention ou deux ? Et combien de temps doit-elle durer ? »",
+"question": "Que lui répondre ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le principe ne change pas : l'association et ses sociétés organisent leurs relations par écrit, dans une convention (voir le module 03). Ce que la loi a changé, c'est le cas de deux sociétés."
+},
+{
+"t": "table",
+"head": [
+"Avant la loi",
+"Depuis la loi"
+],
+"rows": [
+[
+"Une convention entre l'association et « la société qu'elle a constituée »",
+"Une convention entre l'association et la ou les sociétés qu'elle a constituées"
+],
+[
+"Le cas de deux sociétés n'existait pas",
+"Soit une convention tripartite (association et les deux sociétés), soit deux conventions : association et société masculine, association et société féminine"
+],
+[
+"Durée de dix à quinze ans",
+"Toujours dix à quinze ans, pour chaque convention"
+],
+[
+"Approbation par l'autorité administrative, sans opposition dans les deux mois",
+"Même règle, pour la ou les conventions"
+]
+]
+},
+{
+"t": "h",
+"x": "Ce qui reste valable"
+},
+{
+"t": "list",
+"items": [
+"L'association garde seule le numéro d'affiliation. Les sociétés n'ont que le droit de l'utiliser.",
+"L'association garde gratuitement la disposition des signes distinctifs.",
+"Si l'association est en sauvegarde ou en redressement judiciaire, ses sociétés sont tenues solidairement d'exécuter le plan.",
+"Un décret en Conseil d'État précise le contenu de la ou des conventions."
+]
+}
+],
+"piege": "La durée de dix à quinze ans et le délai de deux mois ne sont pas des nouveautés : la loi ajoute la convention tripartite ou les deux conventions quand il y a deux sociétés.",
+"reponse": "Au choix : une convention tripartite entre l'association et ses deux sociétés, ou deux conventions séparées, une par société. Dans les deux cas, la durée est comprise entre dix et quinze ans et l'autorité administrative doit approuver la convention, ou ne pas s'y opposer dans les deux mois.",
+"sources": [
+"C. sport, L. 122-14 et L. 122-15",
+"C. sport, L. 122-16, L. 122-16-1, L. 122-18 et L. 122-19",
+"Loi n° 2026-725 du 3 août 2026, art. 25, 4° à 10°"
+],
+"questions": [
+"m09-q17",
+"m09-q18",
+"act-l09-q1"
+],
+"titre": "La nouvelle convention entre l'association et ses sociétés",
+"priorite": 2
+},
+"act-l10": {
+"minutes": 5,
+"situation": {
+"texte": "Une fédération a créé une ligue professionnelle. Un investisseur étranger prépare le rachat d'un club professionnel de cette discipline. Une association agréée de supporters du club s'inquiète et demande à être entendue.",
+"question": "Qui évalue le projet de rachat, et les supporters peuvent-ils être entendus ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Dans le football, cet organisme est la DNCG (module 03). La loi l'a renuméroté : l'ancien L. 132-2 devient L. 133-1, dans un chapitre « Contrôle de gestion »."
+},
+{
+"t": "table",
+"head": [
+"Avant la loi",
+"Depuis la loi"
+],
+"rows": [
+[
+"Les fédérations qui ont constitué une ligue professionnelle créent en leur sein un organisme doté d'un pouvoir d'appréciation indépendant",
+"Chaque fédération ayant constitué une ou deux ligues professionnelles, ou une société commerciale, crée un organisme dont elle garantit l'indépendance"
+],
+[
+"Pérennité des clubs, équité sportive",
+"S'y ajoute le respect du principe d'aléa sportif"
+]
+]
+},
+{
+"t": "h",
+"x": "Ce que la loi ajoute"
+},
+{
+"t": "list",
+"items": [
+"Au moins deux tiers des membres sont des professionnels qualifiés (droit, comptabilité, audit, finance), sans mandat dans la fédération ou la ligue et sans droit de vote ni part de capital dans une société sportive ou dans la société commerciale créée en application de L. 333-1 ou L. 333-2-1.",
+"Pour un rachat ou un changement d'actionnaires, l'organisme se prononce de façon motivée dans les trois mois après la notification : projet approuvé (avec conditions possibles), suspendu trois mois au plus, ou rejeté.",
+"Une association agréée de supporters du club, ou une collectivité locale, est entendue à sa demande, dans des conditions fixées par décret attendu en janvier 2027.",
+"Pour les agents sportifs, il contrôle la transparence des rémunérations et la conformité financière, et il peut enquêter sur les montages de contournement."
+]
+}
+],
+"piege": "L'organisme ne peut rejeter un projet de rachat que s'il présente un risque prévu par la loi et si aucune condition ni réserve ne permet de l'éviter.",
+"reponse": "C'est l'organisme de contrôle créé par la fédération (L. 133-1) : il doit se prononcer de façon motivée dans les trois mois après la notification du projet. L'association agréée de supporters peut, si elle le demande, être entendue, dans des conditions qu'un décret attendu en janvier 2027 doit encore fixer.",
+"sources": [
+"C. sport, L. 133-1 (ancien L. 132-2, I, II, III et IV)",
+"Loi n° 2026-725 du 3 août 2026, art. 26, III",
+"Échéancier d'application de la loi n° 2026-725 (art. 26, III, 2°, c et d : décret en janvier 2027)"
+],
+"questions": [
+"act-l10-q1",
+"act-l10-q2",
+"act-l10-q3"
+],
+"titre": "Le nouvel organisme de contrôle de gestion",
+"priorite": 2
+},
+"act-l11": {
+"minutes": 5,
+"situation": {
+"texte": "Un club a une société masculine et une société féminine. La société féminine verse à Inès, joueuse professionnelle qu'elle emploie, une redevance calculée sur les recettes de parrainage. La présence d'Inès n'est pas requise pour exploiter son image.",
+"question": "Cette société peut-elle conclure ce contrat d'image, et la redevance est-elle un salaire ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Pour le contrat d'image, la loi a peu changé : les règles de fond restent celles du module 07. Les changements sont des adaptations de texte."
+},
+{
+"t": "table",
+"head": [
+"Avant la loi",
+"Depuis la loi"
+],
+"rows": [
+[
+"Le sportif n'est pas lié « à l'association ou à la société sportive » par un lien de subordination pour l'exécution du contrat (deuxième alinéa)",
+"« À une association ou à une société sportive » : le texte vise aussi les clubs qui ont deux sociétés"
+],
+[
+"Le club transmet le contrat à l'organisme de l'ancien L. 132-2",
+"Il le transmet sans délai à l'organisme de L. 133-1 : c'est le même organisme, renuméroté"
+]
+]
+},
+{
+"t": "h",
+"x": "Ce qui n'a pas changé"
+},
+{
+"t": "list",
+"items": [
+"Deux conditions cumulatives : la présence du sportif n'est pas requise, et la redevance dépend des recettes de l'exploitation, pas du salaire.",
+"Trois mentions obligatoires, à peine de nullité : étendue de l'exploitation, calcul de la redevance, plafond et rémunération minimale.",
+"Le plafond est fixé par une convention ou un accord collectif national, par discipline.",
+"Un décret fixe les catégories de recettes concernées."
+]
+},
+{
+"t": "p",
+"x": "L'article L. 222-7 vise aussi ce contrat : celui qui met en relation les parties contre un avantage doit détenir la carte professionnelle d'agent sportif."
+}
+],
+"piege": "La loi n'a pas changé les deux conditions de la redevance : avoir deux sociétés ne permet ni de calculer la redevance sur le salaire, ni d'exiger la présence du joueur.",
+"reponse": "Oui. Le texte vise « une association ou une société sportive » : la société féminine peut conclure ce contrat avec Inès, qu'elle emploie. Les deux conditions de fond sont réunies (présence non requise, redevance calculée sur les recettes), donc la redevance n'est ni un salaire ni une rémunération du travail, à condition que le contrat comporte les trois mentions obligatoires et que les recettes de parrainage retenues proviennent de contrats prévoyant l'exploitation individuelle de l'image d'Inès.",
+"sources": [
+"C. sport, L. 222-2-10-1",
+"Loi n° 2026-725 du 3 août 2026, art. 25, 14° et art. 27 (renvoi à L. 133-1)",
+"C. sport, L. 222-7, 2°",
+"C. sport, D. 222-50"
+],
+"questions": [
+"m09-q19",
+"act-l11-q1",
+"act-l11-q2"
+],
+"titre": "Le contrat d'image après la réforme",
 "priorite": 2
 }
 }
