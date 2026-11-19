@@ -27155,9 +27155,14 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 22
+"v": 23
 },
 {
 "id": "asso-11",
@@ -27359,9 +27364,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 22
+"v": 23
 },
 {
 "id": "agt-03",
@@ -29166,9 +29176,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 22
+"v": 23
 },
 {
 "id": "agt-32",
@@ -30430,8 +30445,16 @@
 "203 100 €"
 ],
 "bonne": 1,
-"explication": "Le seuil actualisé pour 2026 à 2028 est de 83 600 € de recettes hors taxes, apprécié selon l'article 102 ter du CGI.",
-"origine": "Module 05, QCM 6"
+"explication": "En 2026, le seuil du régime micro-BNC est de 83 600 € de recettes hors taxes (CGI, art. 102 ter). Ce seuil est actualisé tous les trois ans.",
+"origine": "Module 05, QCM 6",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "L'explication précise que le seuil est actualisé tous les trois ans."
+}
+],
+"v": 2
 },
 {
 "id": "m05-q07",
@@ -30571,9 +30594,17 @@
 "Toutes les réponses ci-dessus sont correctes"
 ],
 "bonne": 4,
-"explication": "Selon l'instruction interministérielle du 2 juillet 2019, ces redevances ne sont pas du salaire : elles relèvent de l'impôt sur le revenu et des prélèvements sociaux sur le patrimoine.",
+"explication": "Selon l'instruction interministérielle du 2 juillet 2019, ces redevances ne sont pas du salaire : elles relèvent de l'impôt sur le revenu et des prélèvements sociaux sur le patrimoine. Pour la CSG et la CRDS, cela découle aussi du Code de la sécurité sociale (L. 136-6, I, f).",
 "origine": "Annale CNOSF 2025, QCM 8",
-"chapitre": "m05-2"
+"chapitre": "m05-2",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "L'explication cite le Code de la sécurité sociale pour la CSG et la CRDS."
+}
+],
+"v": 2
 },
 {
 "id": "an25-q16",
@@ -30586,7 +30617,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 0,
-"explication": "Principe : l'article 82 du Code général des impôts inclut dans la base imposable tous les avantages en argent ou en nature. Il ne prévoit qu'une exception très étroite, pour certains logements de fonction (gendarmerie), sans rapport avec le sport.",
+"explication": "Principe : l'article 82 du Code général des impôts inclut dans la base imposable tous les avantages en argent ou en nature. L'article 81 exonère quelques avantages précis (titres-restaurant, par exemple) : « toujours » est donc à lire comme « en principe ». Parmi les propositions, c'est la seule juste.",
 "origine": "Annale CNOSF 2025, QCM 16",
 "chapitre": "m05-4",
 "maj": [
@@ -30594,9 +30625,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "L'exception prévue par l'article 82 du CGI est mentionnée."
+},
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "L'explication mentionne les exonérations de l'article 81 du CGI."
 }
 ],
-"v": 2
+"v": 3
 },
 {
 "id": "an24-q08",
@@ -32415,6 +32451,411 @@
 "bonne": 2,
 "explication": "Le redressement judiciaire est une procédure du Code de commerce, ouverte par jugement du tribunal (C. com., L. 631-1 et L. 631-5). L'organisme de contrôle de gestion exerce un contrôle sportif et financier distinct (C. sport, L. 133-1).",
 "origine": "Leçon soc-15"
+},
+{
+"id": "fis-l01-q1",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Une personne a son domicile fiscal en France. Elle est imposée à l'impôt sur le revenu :",
+"options": [
+"Sur ses seuls revenus de source française",
+"Sur l'ensemble de ses revenus, en France et à l'étranger",
+"Sur son seul salaire",
+"Sur ses seuls revenus de l'année en cours, sans déclaration"
+],
+"bonne": 1,
+"explication": "Les personnes domiciliées en France sont imposées sur l'ensemble de leurs revenus ; celles domiciliées hors de France, sur leurs seuls revenus de source française (CGI, art. 4 A).",
+"origine": "Leçon fis-l01"
+},
+{
+"id": "fis-l01-q2",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Dans le calcul de l'impôt sur le revenu, l'impôt brut est égal à :",
+"options": [
+"Le revenu imposable multiplié par le taux marginal",
+"L'impôt calculé pour une part, multiplié par le nombre de parts",
+"Le revenu imposable divisé par le nombre de parts",
+"L'impôt dû diminué des crédits d'impôt"
+],
+"bonne": 1,
+"explication": "Le revenu d'une part est taxé selon le barème ; l'impôt brut est égal à la cotisation ainsi obtenue multipliée par le nombre de parts (CGI, art. 193).",
+"origine": "Leçon fis-l01"
+},
+{
+"id": "fis-l02-q1",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Pour les revenus de 2025 (barème 2026), un célibataire sans enfant a un revenu imposable de 12 600 €. Quel est son impôt calculé par le barème, avant décote ?",
+"options": [
+"0 €",
+"110 €",
+"1 260 €",
+"1 386 €"
+],
+"bonne": 1,
+"explication": "Seule la fraction au-dessus de 11 600 € est taxée à 11 % : (12 600 − 11 600) × 11 % = 110 € (CGI, art. 197, I, 1).",
+"origine": "Leçon fis-l02"
+},
+{
+"id": "fis-l02-q2",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Pour un revenu de 30 000 € par part (barème 2026), le taux moyen d'imposition est d'environ :",
+"options": [
+"7 %",
+"11 %",
+"20 %",
+"30 %"
+],
+"bonne": 0,
+"explication": "L'impôt est de 2 103,99 € pour 30 000 € de revenu, soit environ 7,01 % : le taux moyen est inférieur au TMI de 30 % (Service-Public F1419).",
+"origine": "Leçon fis-l02"
+},
+{
+"id": "fis-l03-q1",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Selon le BOFiP, une redevance versée par un club à un joueur pour l'exploitation commerciale de son image est en principe imposée dans la catégorie :",
+"options": [
+"Des traitements et salaires",
+"Des bénéfices non commerciaux (BNC)",
+"Des revenus fonciers",
+"Des bénéfices industriels et commerciaux (BIC)"
+],
+"bonne": 1,
+"explication": "Ces redevances sont imposables en BNC en application de l'article 92 du CGI, si elles ne se rattachent pas à une autre catégorie (BOI-BNC-CHAMP-10-10-20-40, § 475).",
+"origine": "Leçon fis-l03"
+},
+{
+"id": "fis-l04-q1",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Un couple marié sans enfant à charge compte, pour le quotient familial :",
+"options": [
+"1 part",
+"1,5 part",
+"2 parts",
+"2,5 parts"
+],
+"bonne": 2,
+"explication": "Un couple marié sans enfant à charge a 2 parts ; un couple marié avec 1 enfant en a 2,5 (CGI, art. 194).",
+"origine": "Leçon fis-l04"
+},
+{
+"id": "fis-l04-q2",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Pour les revenus de 2025 (barème 2026), la réduction d'impôt due au quotient familial ne peut en principe pas dépasser, par demi-part :",
+"options": [
+"897 €",
+"1 483 €",
+"1 807 €",
+"11 600 €"
+],
+"bonne": 2,
+"explication": "Le plafonnement est de 1 807 € par demi-part (CGI, art. 197, I, 2). Les montants de 897 € et 1 483 € sont ceux de la décote.",
+"origine": "Leçon fis-l04"
+},
+{
+"id": "fis-l04-q3",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Une personne seule a 1 000 € d'impôt avant décote (barème 2026). Quel impôt paie-t-elle après décote ?",
+"options": [
+"444,50 €",
+"555,50 €",
+"897 €",
+"1 000 €"
+],
+"bonne": 1,
+"explication": "Décote = 897 − 45,25 % × 1 000 = 444,50 €. Impôt final = 1 000 − 444,50 = 555,50 € (CGI, art. 197, I, 4).",
+"origine": "Leçon fis-l04"
+},
+{
+"id": "fis-l05-q1",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Pour une personne seule, le taux de la CEHR sur la fraction du revenu fiscal de référence supérieure à 500 000 € est de :",
+"options": [
+"3 %",
+"4 %",
+"20 %",
+"45 %"
+],
+"bonne": 1,
+"explication": "La CEHR est de 3 % de 250 000 à 500 000 € puis de 4 % au-delà pour une personne seule (CGI, art. 223 sexies).",
+"origine": "Leçon fis-l05"
+},
+{
+"id": "fis-l05-q2",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "La CEHR est calculée à partir :",
+"options": [
+"Du seul salaire du foyer",
+"Du revenu fiscal de référence du foyer fiscal",
+"Du bénéfice de la société du contribuable",
+"Du montant de l'impôt sur le revenu"
+],
+"bonne": 1,
+"explication": "La contribution porte sur le revenu fiscal de référence du foyer fiscal (CGI, art. 223 sexies, I).",
+"origine": "Leçon fis-l05"
+},
+{
+"id": "fis-l05-q3",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "La contribution différentielle sur les hauts revenus (CDHR) vise à garantir un taux d'imposition minimal de :",
+"options": [
+"10 %",
+"15 %",
+"20 %",
+"30 %"
+],
+"bonne": 2,
+"explication": "La CDHR est égale à la différence, si elle est positive, entre 20 % du revenu défini par la loi et l'impôt déjà payé, après certaines majorations (CGI, art. 224, III).",
+"origine": "Leçon fis-l05"
+},
+{
+"id": "fis-l06-q1",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "En principe, les salaires donnent lieu, pour le prélèvement à la source de l'impôt sur le revenu :",
+"options": [
+"À un acompte payé par le salarié",
+"À une retenue effectuée par le débiteur lors du paiement",
+"À un paiement unique en septembre",
+"À aucun prélèvement"
+],
+"bonne": 1,
+"explication": "Les revenus imposés comme des salaires ou des pensions donnent lieu à une retenue à la source effectuée par le débiteur lors du paiement (CGI, art. 204 A et 204 B).",
+"origine": "Leçon fis-l06"
+},
+{
+"id": "fis-l06-q2",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Selon l'article 1663 C du CGI, l'acompte de prélèvement à la source calculé par l'administration est versé, sauf option pour le paiement trimestriel :",
+"options": [
+"En une seule fois le 15 septembre",
+"Par douzième, au plus tard le 15 de chaque mois",
+"Par l'employeur du contribuable",
+"À la date de la déclaration de revenus"
+],
+"bonne": 1,
+"explication": "L'acompte est versé par douzième au plus tard le 15 de chaque mois de l'année (CGI, art. 1663 C, 1).",
+"origine": "Leçon fis-l06"
+},
+{
+"id": "fis-l06-q3",
+"chapitre": "m05-2",
+"niveau": 2,
+"enonce": "Le prélèvement à la source de l'impôt sur le revenu :",
+"options": [
+"Remplace le barème progressif",
+"Avance le paiement de l'impôt, calculé définitivement après la déclaration",
+"Supprime l'impôt pour les indépendants",
+"S'applique uniquement aux salariés"
+],
+"bonne": 1,
+"explication": "Le prélèvement s'impute sur l'impôt dû pour l'année ; s'il l'excède, l'excédent est restitué (CGI, art. 204 A, 3). Il concerne aussi des revenus d'indépendants, par acompte.",
+"origine": "Leçon fis-l06"
+},
+{
+"id": "fis-l07-q1",
+"chapitre": "m05-3",
+"niveau": 2,
+"enonce": "Par défaut, qui est imposé sur les bénéfices d'une société en nom collectif (SNC) dont les associés sont des personnes physiques ?",
+"options": [
+"La société, à l'impôt sur les sociétés",
+"Chaque associé, à l'impôt sur le revenu, pour sa part de bénéfice",
+"Le seul gérant, à l'impôt sur le revenu",
+"Personne, tant que les bénéfices ne sont pas distribués"
+],
+"bonne": 1,
+"explication": "Les associés en nom des SNC sont personnellement soumis à l'IR pour la part de bénéfices correspondant à leurs droits, sauf option pour l'IS (CGI, art. 8).",
+"origine": "Leçon fis-l07"
+},
+{
+"id": "fis-l07-q2",
+"chapitre": "m05-3",
+"niveau": 2,
+"enonce": "Une société anonyme (SA) est en principe soumise :",
+"options": [
+"À l'impôt sur le revenu de ses actionnaires",
+"À l'impôt sur les sociétés",
+"À aucun impôt sur ses bénéfices",
+"À la seule TVA"
+],
+"bonne": 1,
+"explication": "Les sociétés anonymes sont passibles de l'impôt sur les sociétés, quel que soit leur objet (CGI, art. 206, 1).",
+"origine": "Leçon fis-l07"
+},
+{
+"id": "fis-l07-q3",
+"chapitre": "m05-3",
+"niveau": 2,
+"enonce": "Une société de personnes qui veut opter pour l'IS doit notifier son option :",
+"options": [
+"Avant la fin du premier mois de l'exercice",
+"Avant la fin du troisième mois de l'exercice",
+"Avant la fin du sixième mois de l'exercice",
+"À tout moment, sans délai"
+],
+"bonne": 1,
+"explication": "L'option doit être notifiée avant la fin du troisième mois de l'exercice au titre duquel la société veut être soumise pour la première fois à l'IS (CGI, art. 239, 1).",
+"origine": "Leçon fis-l07"
+},
+{
+"id": "fis-l08-q1",
+"chapitre": "m05-3",
+"niveau": 2,
+"enonce": "Le taux réduit d'IS de 15 % suppose notamment que le chiffre d'affaires de l'exercice n'excède pas :",
+"options": [
+"1 million d'euros",
+"5 millions d'euros",
+"10 millions d'euros",
+"50 millions d'euros"
+],
+"bonne": 2,
+"explication": "Le taux réduit est réservé aux redevables dont le chiffre d'affaires n'excède pas 10 millions d'euros, avec capital entièrement libéré et détenu à 75 % au moins par des personnes physiques (CGI, art. 219, I, b).",
+"origine": "Leçon fis-l08"
+},
+{
+"id": "fis-l10-q1",
+"chapitre": "m05-3",
+"niveau": 2,
+"enonce": "La franchise en base de TVA (CGI, art. 293 B) dispense l'assujetti :",
+"options": [
+"Du paiement de la TVA",
+"De toute déclaration de chiffre d'affaires",
+"De l'impôt sur le revenu",
+"De la cotisation foncière des entreprises"
+],
+"bonne": 0,
+"explication": "La franchise dispense l'assujetti établi en France du paiement de la TVA tant que son chiffre d'affaires reste sous les plafonds ; elle ne touche ni l'impôt sur le revenu ni la CFE (CGI, art. 293 B, I).",
+"origine": "Leçon fis-l10"
+},
+{
+"id": "fis-l11-q1",
+"chapitre": "m05-3",
+"niveau": 2,
+"enonce": "Un club français assujetti reçoit une prestation de services, taxable en France, d'un prestataire qui n'est pas établi en France. Qui acquitte la TVA française ?",
+"options": [
+"Le prestataire étranger",
+"Le club preneur",
+"L'administration fiscale",
+"Personne : la prestation est exonérée"
+],
+"bonne": 1,
+"explication": "Lorsque la prestation relève de l'article 259, 1° et que le prestataire n'est pas établi en France, la taxe est acquittée par le preneur (CGI, art. 283, 2).",
+"origine": "Leçon fis-l11"
+},
+{
+"id": "fis-l12-q1",
+"chapitre": "m05-3",
+"niveau": 2,
+"enonce": "La base d'imposition de la cotisation foncière des entreprises (CFE) est :",
+"options": [
+"Le bénéfice de l'entreprise",
+"La valeur ajoutée produite",
+"La valeur locative des biens passibles de taxe foncière utilisés pour l'activité",
+"Le chiffre d'affaires hors taxes"
+],
+"bonne": 2,
+"explication": "La CFE a pour base la valeur locative des biens passibles d'une taxe foncière dont le redevable a disposé pour son activité (CGI, art. 1467).",
+"origine": "Leçon fis-l12"
+},
+{
+"id": "fis-l12-q2",
+"chapitre": "m05-3",
+"niveau": 2,
+"enonce": "Une personne crée son activité professionnelle indépendante en septembre 2026. Pour l'année 2026, la CFE :",
+"options": [
+"Est due en totalité",
+"N'est pas due, car c'est l'année de la création",
+"Est due pour quatre mois",
+"Est due seulement si elle a des salariés"
+],
+"bonne": 1,
+"explication": "En cas de création d'un établissement, la CFE n'est pas due pour l'année de la création (CGI, art. 1478, II).",
+"origine": "Leçon fis-l12"
+},
+{
+"id": "fis-l12-q3",
+"chapitre": "m05-3",
+"niveau": 2,
+"enonce": "Pour une entreprise dont le chiffre d'affaires est inférieur à 500 000 €, le taux de la CVAE prévu à l'article 1586 quater du CGI est :",
+"options": [
+"Nul",
+"0,094 %",
+"0,28 %",
+"1,5 %"
+],
+"bonne": 0,
+"explication": "Pour les entreprises dont le chiffre d'affaires est inférieur à 500 000 €, le taux est nul (CGI, art. 1586 quater, I, a).",
+"origine": "Leçon fis-l12"
+},
+{
+"id": "fis-l13-q1",
+"chapitre": "m05-4",
+"niveau": 2,
+"enonce": "L'article 84 A du CGI étend le mécanisme de l'article 100 bis :",
+"options": [
+"Aux salaires des sportifs perçus au titre de la pratique d'un sport",
+"Aux commissions des agents sportifs",
+"Aux indemnités de transfert",
+"Aux seules primes olympiques"
+],
+"bonne": 0,
+"explication": "Les dispositions de l'article 100 bis sont applicables, sous les mêmes conditions, aux salaires imposables des sportifs perçus au titre de la pratique d'un sport (CGI, art. 84 A).",
+"origine": "Leçon fis-l13"
+},
+{
+"id": "fis-l14-q1",
+"chapitre": "m05-4",
+"niveau": 2,
+"enonce": "Pour bénéficier du régime des impatriés de l'article 155 B, la personne ne doit pas avoir été fiscalement domiciliée en France pendant les années civiles précédant sa prise de fonctions, au nombre de :",
+"options": [
+"Deux",
+"Trois",
+"Cinq",
+"Dix"
+],
+"bonne": 2,
+"explication": "Le régime suppose que le salarié n'ait pas été fiscalement domicilié en France au cours des cinq années civiles précédant celle de sa prise de fonctions (CGI, art. 155 B, I, 1).",
+"origine": "Leçon fis-l14"
+},
+{
+"id": "fis-l15-q1",
+"chapitre": "m05-4",
+"niveau": 2,
+"enonce": "Selon le BOFiP, l'intermédiaire qui agit en son propre nom ou sous un nom social, pour le compte d'un commettant, est un commissionnaire. Ses bénéfices relèvent en principe :",
+"options": [
+"Des BNC",
+"Des BIC",
+"Des traitements et salaires",
+"Des revenus fonciers"
+],
+"bonne": 1,
+"explication": "Le commissionnaire a en principe la qualité de commerçant et relève des BIC ; l'intermédiaire qui agit au nom d'un commettant est un mandataire, imposé en BNC (BOI-BNC-CHAMP-10-10-20-40, § 130 et 140).",
+"origine": "Leçon fis-l15"
+},
+{
+"id": "fis-l15-q2",
+"chapitre": "m05-4",
+"niveau": 2,
+"enonce": "Un agent sportif facture 30 000 € HT de commission à un club français assujetti. Si la TVA de 20 % s'applique, le montant TTC est de :",
+"options": [
+"31 500 €",
+"33 000 €",
+"36 000 €",
+"60 000 €"
+],
+"bonne": 2,
+"explication": "TVA = 30 000 × 20 % = 6 000 € ; TTC = 30 000 + 6 000 = 36 000 € (CGI, art. 278).",
+"origine": "Leçon fis-l15"
 },
 {
 "id": "trv-l01-q1",
@@ -36203,6 +36644,15 @@
 "precisions": []
 },
 {
+"id": "n-lecons-m05-2026-11-19",
+"d": "2026-11-19",
+"genre": "appli",
+"titre": "Le module 05, Droit fiscal, passe aux leçons",
+"texte": "15 leçons de 5 minutes : impôt sur le revenu, impôt sur les sociétés, micro-entreprise, TVA, et la fiscalité propre au sportif et à l'agent. Les chiffres sont ceux de 2026 ; ils seront mis à jour après la loi de finances pour 2027.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
@@ -36210,6 +36660,30 @@
 "texte": "Chaque billet donne maintenant la règle avec ses conditions, un exemple de football, le piège d'examen quand il y en a un, et sa source. Ce que tu avais appris reste juste : aucun billet ne repasse en révision.",
 "erreurs": [],
 "precisions": []
+},
+{
+"id": "n-appli-2026-11-19",
+"d": "2026-11-19",
+"genre": "appli",
+"titre": "Corrections de l'appli",
+"erreurs": [],
+"precisions": [
+{
+"g": "q",
+"id": "an25-q16",
+"x": "L'explication mentionne les exonérations de l'article 81 du CGI."
+},
+{
+"g": "q",
+"id": "m05-q06",
+"x": "L'explication précise que le seuil est actualisé tous les trois ans."
+},
+{
+"g": "q",
+"id": "an25-q08",
+"x": "L'explication cite le Code de la sécurité sociale pour la CSG et la CRDS."
+}
+]
 },
 {
 "id": "n-appli-2026-11-14",
@@ -38673,6 +39147,1037 @@
 ],
 "titre": "Les clubs en difficulté : DNCG et tribunal",
 "priorite": 1
+}
+}
+},
+{
+"domaine": "fiscal",
+"titre": "Module 05 · Droit fiscal",
+"parties": [
+{
+"titre": "L'impôt sur le revenu",
+"lecons": [
+{
+"id": "fis-l01",
+"titre": "Les principes de l'impôt sur le revenu",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "fis-l02",
+"titre": "Le barème : tranches et taux marginal",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "fis-l03",
+"titre": "Les catégories de revenus : salaires, BNC, BIC",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "fis-l04",
+"titre": "Le quotient familial et la décote",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "fis-l05",
+"titre": "Les hauts revenus : CEHR et CDHR",
+"priorite": 1,
+"dispo": true
+},
+{
+"id": "fis-l06",
+"titre": "Le prélèvement à la source",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "La fiscalité des entreprises",
+"lecons": [
+{
+"id": "fis-l07",
+"titre": "IR ou IS : le choix selon la forme",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "fis-l08",
+"titre": "L'impôt sur les sociétés",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "fis-l09",
+"titre": "La micro-entreprise",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "fis-l10",
+"titre": "La TVA : principe et franchise",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "fis-l11",
+"titre": "La TVA : territorialité et exigibilité",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "fis-l12",
+"titre": "La CFE et la CVAE",
+"priorite": 1,
+"dispo": true
+}
+]
+},
+{
+"titre": "Le sportif et l'agent",
+"lecons": [
+{
+"id": "fis-l13",
+"titre": "L'étalement des revenus du sportif",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "fis-l14",
+"titre": "Impatriés et sportifs non-résidents",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "fis-l15",
+"titre": "La fiscalité de l'agent sportif",
+"priorite": 3,
+"dispo": true
+}
+]
+}
+],
+"contenu": {
+"fis-l01": {
+"minutes": 5,
+"situation": {
+"texte": "Inès est éducatrice salariée du club de Lucas. Elle est mariée, vit en France avec son mari et leur fils, et remplit sa déclaration de revenus au printemps 2026. Elle se demande si son impôt porte sur ses revenus de 2026 ou de 2025, et si son mari et elle sont imposés ensemble.",
+"question": "Sur quels revenus l'impôt porte-t-il, et qui est imposé ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'impôt sur le revenu (IR) est un impôt annuel. Il frappe le revenu net global du contribuable : le total de ses revenus nets, classés par catégories (salaires, bénéfices, revenus fonciers, etc.). Il porte sur les revenus d'une année civile, déclarés l'année suivante. Le barème 2026 s'applique donc aux revenus de 2025."
+},
+{
+"t": "h",
+"x": "Qui est imposé, et sur quoi ?"
+},
+{
+"t": "list",
+"items": [
+"Une personne qui a son domicile fiscal en France est imposée sur tous ses revenus. Un seul critère suffit : son foyer ou son séjour principal, son activité professionnelle (sauf si elle n'est exercée en France qu'à titre accessoire), ou le centre de ses intérêts économiques est en France.",
+"Une personne domiciliée hors de France n'est imposée que sur ses revenus de source française.",
+"Les époux et les partenaires de PACS sont imposés ensemble : ils forment en principe un foyer fiscal, avec une seule déclaration."
+]
+},
+{
+"t": "h",
+"x": "Le calcul en trois temps"
+},
+{
+"t": "p",
+"x": "On divise le revenu imposable par un nombre de parts (c'est le quotient familial). On applique le barème à une part. On multiplie le résultat par le nombre de parts : c'est l'impôt brut. On retire ensuite les réductions et crédits d'impôt et les sommes déjà prélevées à la source : on obtient l'impôt dû."
+}
+],
+"piege": "L'impôt de 2026 porte sur les revenus de 2025 : ne confonds pas l'année du barème avec l'année des revenus.",
+"reponse": "L'impôt payé en 2026 porte sur les revenus de 2025, déclarés au printemps 2026 : c'est le barème 2026. Inès a son domicile fiscal en France, donc tous ses revenus sont imposés. Comme elle est mariée, son mari et elle forment un seul foyer fiscal et sont imposés ensemble.",
+"sources": [
+"CGI, art. 1 A (impôt annuel sur le revenu net global)",
+"CGI, art. 4 A et 4 B (domicile fiscal)",
+"CGI, art. 6 (imposition commune des époux et des partenaires de PACS)",
+"CGI, art. 193 (parts, impôt brut, impôt dû)",
+"Service-Public F1419 (barème 2026 applicable aux revenus de 2025)"
+],
+"questions": [
+"m05-q01",
+"fis-l01-q1",
+"fis-l01-q2"
+],
+"titre": "Les principes de l'impôt sur le revenu",
+"priorite": 2
+},
+"fis-l02": {
+"minutes": 5,
+"situation": {
+"texte": "Karim, entraîneur salarié d'un club amateur, vit seul et n'a pas d'enfant. Son revenu net imposable sur les revenus de 2025 est de 30 000 €. Il pense être taxé à 30 % sur tout son revenu, soit 9 000 € d'impôt.",
+"question": "Karim a-t-il raison ? Combien paie-t-il ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le barème de l'impôt est progressif : le revenu d'une part est découpé en tranches, chacune avec son taux. Voici le barème 2026, applicable aux revenus de 2025."
+},
+{
+"t": "table",
+"head": [
+"Revenu d'une part",
+"Taux de la tranche"
+],
+"rows": [
+[
+"Jusqu'à 11 600 €",
+"0 %"
+],
+[
+"De 11 601 € à 29 579 €",
+"11 %"
+],
+[
+"De 29 580 € à 84 577 €",
+"30 %"
+],
+[
+"De 84 578 € à 181 917 €",
+"41 %"
+],
+[
+"Plus de 181 917 €",
+"45 %"
+]
+]
+},
+{
+"t": "p",
+"x": "Chaque taux ne s'applique qu'à la part du revenu qui se trouve dans sa tranche. Le taux marginal d'imposition (TMI) est le taux de la tranche la plus haute atteinte. Le taux moyen est l'impôt divisé par le revenu : il est plus bas que le TMI."
+},
+{
+"t": "h",
+"x": "Exemple : une part, 30 000 €"
+},
+{
+"t": "list",
+"items": [
+"Jusqu'à 11 600 € : 0 €.",
+"De 11 600 à 29 579 € : 17 979 € × 11 % = 1 977,69 €.",
+"De 29 579 à 30 000 € : 421 € × 30 % = 126,30 €.",
+"Total : 2 103,99 €. TMI : 30 %. Taux moyen : 7,01 %."
+]
+},
+{
+"t": "p",
+"x": "Le barème est fixé chaque année par la loi de finances : retiens le mécanisme avant les chiffres."
+}
+],
+"piege": "Le TMI n'est pas le taux moyen : être dans la tranche à 30 % ne veut pas dire payer 30 % de tout son revenu.",
+"reponse": "Non. Seuls 421 € de son revenu sont taxés à 30 % : Karim paie 2 103,99 €, soit un taux moyen de 7,01 %. Son TMI est bien de 30 %, mais ce n'est pas le taux de tout son revenu.",
+"sources": [
+"CGI, art. 197, I, 1 (barème progressif)",
+"Service-Public F1419 (barème 2026 et exemples de calcul, vérifié le 15 avril 2026)"
+],
+"questions": [
+"m05-q02",
+"fis-l02-q1",
+"fis-l02-q2"
+],
+"titre": "Le barème : tranches et taux marginal",
+"priorite": 3
+},
+"fis-l03": {
+"minutes": 5,
+"situation": {
+"texte": "Trois personnes gravitent autour du club de Nadia. Paul, entraîneur, reçoit un salaire du club. Inès, agent sportif indépendante, encaisse des commissions en négociant des contrats au nom de ses clients. Sam exploite en son nom une buvette près du stade et revend des boissons.",
+"question": "Dans quelle catégorie de revenus chacun est-il imposé ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le revenu global est la somme de revenus classés par catégories. Chaque catégorie a ses propres règles pour calculer le revenu net."
+},
+{
+"t": "table",
+"head": [
+"Catégorie",
+"Qui est concerné",
+"Exemple"
+],
+"rows": [
+[
+"Traitements et salaires (art. 79)",
+"Les salariés",
+"Joueur professionnel, entraîneur"
+],
+[
+"BNC, bénéfices non commerciaux (art. 92)",
+"Professions libérales et activités lucratives non commerciales",
+"Agent sportif indépendant"
+],
+[
+"BIC, bénéfices industriels et commerciaux (art. 34)",
+"Activités commerciales, industrielles, artisanales",
+"Buvette, boutique"
+]
+]
+},
+{
+"t": "p",
+"x": "Pour un salarié, tout avantage en argent ou en nature accordé en plus du salaire s'ajoute au revenu imposable. Pour un indépendant, on part des recettes et on retire les dépenses professionnelles : c'est le bénéfice."
+},
+{
+"t": "h",
+"x": "L'image du sportif"
+},
+{
+"t": "p",
+"x": "Une redevance versée par un club à un joueur pour exploiter son image n'est pas un salaire lorsque les conditions du Code du sport sont réunies (la présence physique du joueur n'est pas requise, et la redevance dépend des recettes tirées de son image, non de son salaire). Selon le BOFiP, elle est imposée en BNC si elle ne relève pas d'une autre catégorie. Selon une instruction de 2019, reprise par l'annale de 2025, elle supporte aussi les prélèvements sociaux sur les revenus du patrimoine."
+}
+],
+"piege": "Un même sportif peut cumuler deux catégories : son salaire (traitements et salaires) et sa redevance d'image (BNC) ne s'imposent pas de la même façon.",
+"reponse": "Paul est imposé en traitements et salaires. Inès, qui agit au nom de ses clients, est imposée en BNC. Sam, qui exerce une activité commerciale en son nom, est imposé en BIC.",
+"sources": [
+"CGI, art. 79 (traitements et salaires)",
+"CGI, art. 82 (avantages en argent ou en nature)",
+"CGI, art. 92 (BNC)",
+"CGI, art. 34 (BIC)",
+"C. sport, L. 222-2-10-1 (contrat d'exploitation de l'image)",
+"BOI-BNC-CHAMP-10-10-20-40, § 475 (redevances d'image en BNC)"
+],
+"questions": [
+"an25-q08",
+"an25-q16",
+"fis-l03-q1"
+],
+"titre": "Les catégories de revenus : salaires, BNC, BIC",
+"priorite": 3
+},
+"fis-l04": {
+"minutes": 5,
+"situation": {
+"texte": "Sofia et Yann sont mariés et ont un enfant. Leur revenu net imposable est de 60 000 € sur les revenus de 2025. Ils veulent savoir combien d'impôt ils paient et ce que leur enfant leur fait gagner.",
+"question": "Quel est leur impôt, et que leur apporte l'enfant ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le quotient familial tient compte de la famille : on divise le revenu imposable par le nombre de parts, on applique le barème à une part, puis on remultiplie par le nombre de parts. Plus il y a de parts, moins l'impôt est élevé."
+},
+{
+"t": "table",
+"head": [
+"Situation",
+"Parts"
+],
+"rows": [
+[
+"Célibataire sans enfant",
+"1"
+],
+[
+"Couple marié sans enfant",
+"2"
+],
+[
+"Couple marié avec 1 enfant",
+"2,5"
+],
+[
+"Couple marié avec 2 enfants",
+"3"
+]
+]
+},
+{
+"t": "p",
+"x": "L'avantage lié aux enfants est plafonné : 1 807 € par demi-part en 2026 (revenus de 2025), sauf plafonds particuliers (par exemple pour la part du premier enfant d'un parent isolé)."
+},
+{
+"t": "list",
+"items": [
+"Quotient : 60 000 ÷ 2,5 = 24 000 €.",
+"Impôt pour une part : (24 000 − 11 600) × 11 % = 1 364 €.",
+"Impôt du foyer : 1 364 × 2,5 = 3 410 €.",
+"Sans enfant : 4 207,98 €. L'enfant fait gagner 797,98 €, sous le plafond."
+]
+},
+{
+"t": "h",
+"x": "La décote"
+},
+{
+"t": "p",
+"x": "La décote allège l'impôt des foyers peu imposés. En 2026 (revenus de 2025), elle se calcule sur l'impôt après quotient et plafonnement : 897 € moins 45,25 % de l'impôt pour une personne seule, 1 483 € moins 45,25 % de l'impôt pour un couple. Elle ne peut pas dépasser l'impôt. Exemple : pour 1 000 € d'impôt, une personne seule a 897 − 452,50 = 444,50 € de décote et paie 555,50 €."
+}
+],
+"piege": "Le quotient familial n'est pas illimité : l'avantage procuré par les parts supplémentaires est plafonné par demi-part.",
+"reponse": "Le quotient est de 60 000 ÷ 2,5 = 24 000 €, d'où 1 364 € d'impôt pour une part et 1 364 × 2,5 = 3 410 € pour le foyer. Sans enfant, ils paieraient 4 207,98 € : l'enfant leur fait gagner 797,98 €, ce qui est inférieur au plafond de 1 807 €. La décote ne joue pas à ce niveau d'impôt.",
+"sources": [
+"CGI, art. 193 (impôt brut)",
+"CGI, art. 194 (nombre de parts)",
+"CGI, art. 197, I, 2 (plafonnement par demi-part) et I, 4 (décote)",
+"Service-Public F1419 (exemple du couple avec 1 enfant, revenu de 60 000 €)"
+],
+"questions": [
+"fis-l04-q1",
+"fis-l04-q2",
+"fis-l04-q3"
+],
+"titre": "Le quotient familial et la décote",
+"priorite": 2
+},
+"fis-l05": {
+"minutes": 5,
+"situation": {
+"texte": "Mathieu, joueur professionnel, est célibataire. Son revenu fiscal de référence (RFR) est de 400 000 €. Il entend parler de la CEHR et de la CDHR et se demande ce qu'elles ajoutent à son impôt sur le revenu.",
+"question": "Combien de CEHR doit-il, et la CDHR est-elle la même chose ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Deux contributions visent les très hauts revenus. Elles s'ajoutent à l'impôt sur le revenu. Le revenu fiscal de référence (RFR) est le revenu que l'administration retient pour apprécier la situation du foyer."
+},
+{
+"t": "h",
+"x": "La CEHR : contribution exceptionnelle sur les hauts revenus"
+},
+{
+"t": "p",
+"x": "Seuils pour l'impôt de 2026 (revenus de 2025) :"
+},
+{
+"t": "table",
+"head": [
+"Taux",
+"Personne seule",
+"Couple"
+],
+"rows": [
+[
+"3 %",
+"RFR de 250 000 à 500 000 €",
+"RFR de 500 000 à 1 000 000 €"
+],
+[
+"4 %",
+"RFR au-dessus de 500 000 €",
+"RFR au-dessus de 1 000 000 €"
+]
+]
+},
+{
+"t": "p",
+"x": "Chaque taux porte seulement sur la fraction du RFR comprise dans sa tranche. Un lissage existe pour un revenu exceptionnel, sous conditions strictes."
+},
+{
+"t": "h",
+"x": "La CDHR : contribution différentielle"
+},
+{
+"t": "p",
+"x": "En 2026, elle concerne les foyers dont le revenu dépasse 250 000 € (personne seule) ou 500 000 € (couple). Elle est égale, si elle est positive, à la différence entre 20 % de ce revenu et la somme de l'impôt déjà payé (impôt sur le revenu, CEHR et certains prélèvements) et de 1 500 € par personne à charge, plus 12 500 € pour un couple (ces ajouts réduisent la contribution). Elle garantit donc un taux d'imposition minimal d'environ 20 %."
+}
+],
+"piege": "Les 3 % et les 4 % de la CEHR ne portent pas sur tout le revenu : ils s'appliquent tranche par tranche, comme le barème.",
+"reponse": "La CEHR s'ajoute à l'impôt sur le revenu : avec un RFR de 400 000 €, Mathieu paie 3 % sur 150 000 €, soit 4 500 €. La CDHR est une autre contribution. Elle ne joue que si son impôt est inférieur à 20 % de son revenu défini par la loi.",
+"sources": [
+"CGI, art. 223 sexies (CEHR : taux, tranches, lissage)",
+"CGI, art. 224 (CDHR : seuils, taux de 20 %, majorations)"
+],
+"questions": [
+"fis-l05-q1",
+"fis-l05-q2",
+"fis-l05-q3"
+],
+"titre": "Les hauts revenus : CEHR et CDHR",
+"priorite": 1
+},
+"fis-l06": {
+"minutes": 5,
+"situation": {
+"texte": "Au club de Zoé, Marc est salarié et Léa est éducatrice indépendante : elle facture ses séances et relève des BNC. Zoé doit prélever l'impôt sur le salaire de Marc. Léa demande si le club doit aussi prélever l'impôt sur ses factures.",
+"question": "Qui prélève l'impôt de Marc, et comment Léa le paie-t-elle ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le prélèvement à la source (PAS) ne change ni le barème ni le montant de l'impôt. Il change le moment du paiement : l'impôt est payé au fil de l'année où le revenu est perçu, et non l'année suivante. Le débiteur est la personne qui verse le revenu."
+},
+{
+"t": "table",
+"head": [
+"Revenus",
+"Forme du prélèvement",
+"Qui paie ?"
+],
+"rows": [
+[
+"Salaires, pensions",
+"Retenue à la source",
+"Le débiteur (l'employeur, la caisse de retraite)"
+],
+[
+"BNC, BIC, revenus fonciers",
+"Acompte",
+"Le contribuable, prélevé par l'administration par douzième, au plus tard le 15 de chaque mois (ou par trimestre sur option)"
+]
+]
+},
+{
+"t": "p",
+"x": "L'administration calcule un taux pour chaque foyer. De janvier à août, elle se fonde sur les revenus de l'avant-dernière année ; de septembre à décembre, sur ceux de l'année précédente. Le contribuable peut demander une modulation."
+},
+{
+"t": "h",
+"x": "La régularisation"
+},
+{
+"t": "p",
+"x": "L'impôt définitif est calculé après la déclaration annuelle. Les prélèvements déjà payés s'imputent dessus. S'ils dépassent l'impôt dû, la différence est restituée. Les revenus pris en compte sont ceux de l'année où le contribuable en dispose."
+}
+],
+"piege": "Le prélèvement à la source n'est pas un nouvel impôt : il avance seulement le paiement de l'impôt sur le revenu, qui reste calculé après la déclaration.",
+"reponse": "Le club retient l'impôt sur le salaire de Marc (retenue à la source, au taux transmis par l'administration). Léa, indépendante en BNC, n'a pas de retenue : l'administration prélève un acompte par douzième, au plus tard le 15 de chaque mois (ou par trimestre sur option). Dans les deux cas, l'impôt définitif est calculé après la déclaration et le trop-perçu est restitué.",
+"sources": [
+"CGI, art. 204 A (principe, imputation, restitution)",
+"CGI, art. 204 B (retenue sur salaires et pensions)",
+"CGI, art. 204 C (acompte sur BIC, BNC, revenus fonciers)",
+"CGI, art. 204 E, 204 H et 204 J (taux, année de référence, modulation)",
+"CGI, art. 1663 C (acompte par douzième, le 15 de chaque mois)"
+],
+"questions": [
+"fis-l06-q1",
+"fis-l06-q2",
+"fis-l06-q3"
+],
+"titre": "Le prélèvement à la source",
+"priorite": 2
+},
+"fis-l07": {
+"minutes": 5,
+"situation": {
+"texte": "Hugo veut exercer comme agent sportif. Il hésite entre trois solutions : rester en entreprise individuelle, créer une société en nom collectif (SNC) avec Inès, ou créer une SAS dont il serait le seul associé. Il se demande qui paiera l'impôt sur le bénéfice dans chaque cas.",
+"question": "Qui paie l'impôt sur le bénéfice dans chacune des trois formes ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Deux impôts peuvent frapper le bénéfice d'une activité. L'impôt sur le revenu (IR) est payé par la personne physique : le bénéfice s'ajoute à ses autres revenus. L'impôt sur les sociétés (IS) est payé par la société elle-même, sur son résultat."
+},
+{
+"t": "table",
+"head": [
+"Forme",
+"Impôt sur le bénéfice"
+],
+"rows": [
+[
+"Entreprise individuelle",
+"IR de l'entrepreneur, dans sa catégorie (BNC ou BIC)"
+],
+[
+"SNC, EURL d'une personne physique",
+"IR des associés, pour leur part du bénéfice ; option possible pour l'IS"
+],
+[
+"SA, SAS, SARL (sauf option pour l'IR, dans des cas limités)",
+"IS payé par la société"
+]
+]
+},
+{
+"t": "p",
+"x": "Une société dont les associés paient l'IR est dite transparente : l'impôt est établi à leur nom, pour la part de bénéfice qui correspond à leurs droits."
+},
+{
+"t": "h",
+"x": "L'option pour l'IS"
+},
+{
+"t": "p",
+"x": "Une société de personnes peut opter pour l'IS. L'option se notifie avant la fin du troisième mois de l'exercice à partir duquel elle s'applique. La société peut y renoncer jusqu'au début du cinquième exercice qui suit celui de l'option ; passé ce délai, l'option devient irrévocable."
+},
+{
+"t": "p",
+"x": "Une association loi de 1901 à gestion désintéressée n'est pas soumise à l'IS tant que ses activités non lucratives restent significativement prépondérantes et que ses recettes lucratives restent sous un plafond."
+}
+],
+"piege": "C'est d'abord la forme choisie qui détermine l'impôt ; l'activité ne compte que pour certaines sociétés civiles et associations. Une SNC n'échappe pas à l'impôt : ses associés paient l'IR sur leur part de bénéfice, même s'ils ne l'ont pas retirée.",
+"reponse": "En entreprise individuelle, Hugo paie l'IR sur son bénéfice. Dans la SNC, Hugo et Inès paient chacun l'IR sur leur part, sauf option pour l'IS. Dans la SAS, c'est la société qui paie l'IS sur son résultat.",
+"sources": [
+"CGI, art. 8 (associés des sociétés de personnes soumis à l'IR)",
+"CGI, art. 206, 1 (sociétés soumises à l'IS) et 206, 1 bis (associations)",
+"CGI, art. 206, 3 (sociétés de personnes pouvant opter pour l'IS)",
+"CGI, art. 239, 1 (option pour l'IS : délai de notification, irrévocabilité)"
+],
+"questions": [
+"fis-l07-q1",
+"fis-l07-q2",
+"fis-l07-q3"
+],
+"titre": "IR ou IS : le choix selon la forme",
+"priorite": 3
+},
+"fis-l08": {
+"minutes": 5,
+"situation": {
+"texte": "La société d'Inès, agent sportif, réalise 100 000 € de bénéfice imposable pour un chiffre d'affaires de 400 000 €. Son capital est entièrement libéré et détenu à 100 % par Inès. Inès pense que la société paie 25 % de 400 000 €.",
+"question": "Quel impôt sur les sociétés la société paie-t-elle ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'impôt sur les sociétés (IS) porte sur le bénéfice imposable de la société : ses produits moins ses charges déductibles. L'assiette, c'est-à-dire la somme sur laquelle on applique le taux, est donc le bénéfice, pas le chiffre d'affaires."
+},
+{
+"t": "p",
+"x": "En 2026, le taux normal est de 25 %. Un taux réduit de 15 % s'applique à la première part du bénéfice, dans la limite de 42 500 € par période de douze mois, si trois conditions sont réunies :"
+},
+{
+"t": "list",
+"items": [
+"le chiffre d'affaires de l'exercice n'excède pas 10 millions d'euros ;",
+"le capital est entièrement libéré ;",
+"il est détenu de manière continue pour 75 % au moins par des personnes physiques, ou par une société qui remplit elle-même cette condition."
+]
+},
+{
+"t": "h",
+"x": "Exemple : bénéfice de 100 000 €"
+},
+{
+"t": "list",
+"items": [
+"42 500 € × 15 % = 6 375 €.",
+"57 500 € × 25 % = 14 375 €.",
+"IS : 6 375 + 14 375 = 20 750 €."
+]
+},
+{
+"t": "p",
+"x": "C'est la société qui paie l'IS. La rémunération de son dirigeant est traitée séparément, à son niveau."
+}
+],
+"piege": "Le taux réduit de 15 % ne s'applique ni au chiffre d'affaires ni à tout le bénéfice : il s'arrête à 42 500 € de bénéfice. Au-delà, c'est 25 %.",
+"reponse": "L'IS se calcule sur le bénéfice, pas sur le chiffre d'affaires. Les conditions du taux réduit sont réunies : 42 500 € à 15 % font 6 375 €, et 57 500 € à 25 % font 14 375 €. La société paie donc 20 750 € d'IS.",
+"sources": [
+"CGI, art. 219, I (taux normal de 25 %)",
+"CGI, art. 219, I, b (taux réduit de 15 % jusqu'à 42 500 € : conditions de chiffre d'affaires, de capital et de détention)"
+],
+"questions": [
+"m05-q04",
+"m05-q05",
+"fis-l08-q1"
+],
+"titre": "L'impôt sur les sociétés",
+"priorite": 3
+},
+"fis-l09": {
+"minutes": 5,
+"situation": {
+"texte": "Léa est agent sportif indépendante : elle agit au nom de ses clients et a choisi la micro-entreprise. Ses commissions encaissées en 2026 sont de 60 000 €. Elle a payé 25 000 € de frais réels et pense pouvoir les déduire.",
+"question": "Quel est son bénéfice imposable en micro-BNC ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La micro-entreprise n'est pas une forme juridique : c'est un régime d'imposition simplifié pour l'entrepreneur individuel dont les recettes restent sous un seuil. Il ne déduit pas ses dépenses réelles : il applique à ses recettes un abattement forfaitaire."
+},
+{
+"t": "table",
+"head": [
+"Activité",
+"Seuil de recettes",
+"Abattement"
+],
+"rows": [
+[
+"BNC (art. 102 ter)",
+"83 600 €",
+"34 %"
+],
+[
+"BIC, prestations de services (art. 50-0)",
+"83 600 €",
+"50 %"
+],
+[
+"BIC, vente de marchandises (art. 50-0)",
+"203 100 €",
+"71 %"
+]
+]
+},
+{
+"t": "p",
+"x": "Ces montants valent en 2026. L'abattement ne peut pas être inférieur à 305 €. Le seuil se mesure sur le chiffre d'affaires hors taxes de l'année civile précédente ou de la pénultième année (l'année d'avant). Il est actualisé tous les trois ans."
+},
+{
+"t": "p",
+"x": "Le régime est facultatif. L'entrepreneur peut opter pour le régime réel : l'option vaut un an et se reconduit tacitement chaque année."
+},
+{
+"t": "p",
+"x": "Le micro-BNC concerne l'impôt sur le revenu. La franchise en base de TVA est un autre régime, avec d'autres seuils."
+}
+],
+"piege": "En micro, l'abattement remplace toutes les dépenses : on ne déduit pas ses frais réels en plus.",
+"reponse": "Le bénéfice imposable est de 60 000 € moins 34 %, soit 60 000 − 20 400 = 39 600 €. Léa ne déduit pas ses 25 000 € de frais réels : l'abattement les remplace. Elle pourrait opter pour le régime réel si ses frais dépassaient l'abattement.",
+"sources": [
+"CGI, art. 102 ter (micro-BNC : seuil de 83 600 €, abattement de 34 %, minimum de 305 €, option pour le régime réel)",
+"CGI, art. 50-0 (micro-BIC : seuils de 203 100 € et 83 600 €, abattements de 71 % et 50 %)"
+],
+"questions": [
+"m05-q06",
+"m05-q07",
+"an24-q08"
+],
+"titre": "La micro-entreprise",
+"priorite": 3
+},
+"fis-l10": {
+"minutes": 5,
+"situation": {
+"texte": "Élodie, agent sportif, est en micro-BNC. Elle a facturé 30 000 € HT de commissions en 2025. En octobre 2026, elle atteint 39 000 € HT sur l'année. Elle se demande si elle doit ajouter 20 % de TVA à ses factures, et ce qu'il se passera en 2027.",
+"question": "Doit-elle facturer la TVA en 2026 ? Et en 2027 ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La TVA (taxe sur la valeur ajoutée) frappe les livraisons de biens et les prestations de services faites à titre onéreux par un assujetti. Un assujetti est une personne qui exerce une activité économique de manière indépendante. En 2026, le taux normal est de 20 %."
+},
+{
+"t": "p",
+"x": "L'assujetti ajoute la TVA à sa facture (TVA collectée). Il déduit la TVA payée sur ses achats professionnels. Il reverse la différence à l'État : il est le redevable, c'est-à-dire celui qui acquitte la taxe."
+},
+{
+"t": "h",
+"x": "La franchise en base"
+},
+{
+"t": "p",
+"x": "Un assujetti établi en France peut être dispensé de payer la TVA s'il reste sous des plafonds de chiffre d'affaires. Pour les prestations de services en 2026 :"
+},
+{
+"t": "table",
+"head": [
+"Chiffre d'affaires évalué sur",
+"Plafond"
+],
+"rows": [
+[
+"L'année civile précédente",
+"37 500 €"
+],
+[
+"L'année en cours",
+"41 250 €"
+]
+]
+},
+{
+"t": "p",
+"x": "Si le plafond de l'année en cours est dépassé, la franchise cesse à la date du dépassement. La franchise est indépendante du micro-BNC : on peut rester en micro-BNC et devenir redevable de TVA."
+}
+],
+"piege": "Dépasser 37 500 € en cours d'année ne fait pas perdre la franchise tout de suite, car le plafond de l'année en cours est de 41 250 €. Mais ce chiffre d'affaires compte ensuite comme celui de l'année précédente.",
+"reponse": "En 2026, Élodie reste en franchise : 30 000 € en 2025 est sous 37 500 € et 39 000 € en 2026 est sous 41 250 €, donc pas de TVA à facturer. Son chiffre d'affaires 2026 dépasse 37 500 € (39 000 €) : elle perdra la franchise en 2027 et devra facturer la TVA.",
+"sources": [
+"CGI, art. 256, I (opérations imposables) et 256 A (assujetti)",
+"CGI, art. 271, I (TVA déductible)",
+"CGI, art. 278 (taux normal de 20 %)",
+"CGI, art. 283, 1 (redevable)",
+"CGI, art. 293 B (franchise en base : plafonds, dépassement)"
+],
+"questions": [
+"m05-q08",
+"m05-q09",
+"fis-l10-q1"
+],
+"titre": "La TVA : principe et franchise",
+"priorite": 3
+},
+"fis-l11": {
+"minutes": 5,
+"situation": {
+"texte": "Karim, agent sportif établi en France et redevable de la TVA (il a dépassé la franchise), a deux clients. Un club français, assujetti à la TVA, lui doit 10 000 € HT pour une mission terminée en décembre 2026 et payée en janvier 2027. Un club espagnol, aussi assujetti, lui doit 10 000 € HT.",
+"question": "Quelle TVA facturer à chaque club, et quand devient-elle exigible ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Deux questions se posent pour la TVA d'une prestation de services. Où est-elle taxable ? C'est la territorialité. Quand l'État peut-il réclamer la taxe ? C'est l'exigibilité."
+},
+{
+"t": "h",
+"x": "Territorialité"
+},
+{
+"t": "list",
+"items": [
+"Client assujetti (B2B, entre professionnels) : la prestation est taxable là où le client est établi.",
+"Client non assujetti, comme un particulier : en principe, la prestation est taxable là où le prestataire est établi.",
+"Un prestataire non établi en France facture à un client assujetti établi en France : c'est le client qui acquitte la TVA française. C'est l'autoliquidation.",
+"Pour un intermédiaire qui agit au nom et pour le compte d'autrui envers un non-assujetti, la prestation est située en France lorsque l'opération principale y est située."
+]
+},
+{
+"t": "h",
+"x": "Exigibilité"
+},
+{
+"t": "p",
+"x": "Le fait générateur d'une prestation de services est son exécution. La TVA est exigible à l'encaissement des acomptes ou du prix. L'assujetti peut opter pour l'exigibilité d'après les débits, c'est-à-dire à la facturation. Ainsi, une mission terminée en décembre mais payée en janvier devient exigible en janvier."
+}
+],
+"piege": "La nationalité du joueur ou du club ne décide pas du lieu de taxation : c'est l'établissement du client (le preneur) qui compte.",
+"reponse": "Pour le club français, le lieu est en France : Karim facture 2 000 € de TVA à 20 %, exigible à l'encaissement en janvier 2027, sauf option pour les débits. Pour le club espagnol, le lieu est en Espagne : pas de TVA française sur la facture, le client déclare la TVA selon les règles de son pays.",
+"sources": [
+"CGI, art. 259, 1° et 2° (lieu des prestations de services)",
+"CGI, art. 259 A, 7° (intermédiaire agissant au nom et pour le compte d'autrui)",
+"CGI, art. 269, 1, a et 2, c (fait générateur, exigibilité à l'encaissement ou sur option d'après les débits)",
+"CGI, art. 283, 2 (TVA acquittée par le preneur)"
+],
+"questions": [
+"m05-q10",
+"m05-q11",
+"fis-l11-q1"
+],
+"titre": "La TVA : territorialité et exigibilité",
+"priorite": 2
+},
+"fis-l12": {
+"minutes": 5,
+"situation": {
+"texte": "Paola crée son activité d'agent sportif indépendante le 1er septembre 2026. Elle travaille depuis un bureau loué. Elle craint de recevoir tout de suite un avis de cotisation foncière des entreprises pour 2026, et se demande si la CVAE la concerne. Elle prévoit environ 60 000 € de chiffre d'affaires par an.",
+"question": "Doit-elle la CFE en 2026, puis en 2027 ? La CVAE la concerne-t-elle ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La CFE (cotisation foncière des entreprises) et la CVAE (cotisation sur la valeur ajoutée des entreprises) sont deux impôts locaux distincts. Ils forment ensemble la contribution économique territoriale."
+},
+{
+"t": "table",
+"head": [
+"Impôt",
+"Qui le paie",
+"Sur quelle base"
+],
+"rows": [
+[
+"CFE",
+"Toute personne qui exerce à titre habituel une activité professionnelle non salariée",
+"Valeur locative (loyer théorique annuel) des biens passibles de taxe foncière utilisés pour l'activité"
+],
+[
+"CVAE",
+"En 2026, les entreprises dont le chiffre d'affaires dépasse 152 500 €",
+"Valeur ajoutée produite"
+]
+]
+},
+{
+"t": "p",
+"x": "La CFE est due pour l'année entière par celui qui exerce l'activité au 1er janvier. Elle n'est pas due l'année de la création. Même sans local, une cotisation minimum est due, fixée par la commune dans une fourchette légale. En 2026, un chiffre d'affaires de 5 000 € au plus en exonère, sous conditions."
+},
+{
+"t": "p",
+"x": "La CVAE est une fraction de la valeur ajoutée, c'est-à-dire de la richesse produite par l'entreprise. En 2026, son taux est nul pour un chiffre d'affaires inférieur à 500 000 €. Le cours annonce sa suppression progressive : vérifie son calendrier chaque année."
+}
+],
+"piege": "Ne confonds pas la CFE, assise sur la valeur locative des biens, et la CVAE, assise sur la valeur ajoutée : ce sont deux impôts différents.",
+"reponse": "Paola ne doit pas de CFE pour 2026, année de la création. Elle la devra pour 2027, pour l'année entière, puisqu'elle exercera encore l'activité au 1er janvier. La CVAE ne la concerne pas : son chiffre d'affaires prévu (60 000 €) est sous 152 500 €, et le taux est nul sous 500 000 €.",
+"sources": [
+"CGI, art. 1447 (redevables de la CFE)",
+"CGI, art. 1467 (base : valeur locative)",
+"CGI, art. 1478, I et II (redevable au 1er janvier, année de création)",
+"CGI, art. 1647 D (cotisation minimum, exonération sous 5 000 € de chiffre d'affaires)",
+"CGI, art. 1586 ter (CVAE : redevables) et 1586 quater (taux)"
+],
+"questions": [
+"fis-l12-q1",
+"fis-l12-q2",
+"fis-l12-q3"
+],
+"titre": "La CFE et la CVAE",
+"priorite": 1
+},
+"fis-l13": {
+"minutes": 5,
+"situation": {
+"texte": "Thomas, footballeur professionnel salarié, a perçu 100 000 € en 2025. En 2026, après un transfert, il perçoit 600 000 €. Il craint que ce pic de revenu soit très lourdement taxé par le barème progressif.",
+"question": "Peut-il atténuer cet effet ? Sur quelle base ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'impôt est progressif : un revenu concentré sur une année coûte plus cher qu'un revenu étalé. Les revenus des sportifs étant irréguliers, le CGI prévoit des mécanismes d'étalement."
+},
+{
+"t": "list",
+"items": [
+"Article 100 bis : le sportif imposé en BNC, à la déclaration contrôlée, peut demander que son bénéfice soit la moyenne des recettes moins la moyenne des dépenses de l'année et des deux années précédentes. Il peut choisir cinq ans : l'année et les quatre précédentes, sans pouvoir revenir sur ce choix.",
+"Article 84 A : les mêmes règles s'appliquent aux salaires des sportifs perçus au titre de la pratique d'un sport.",
+"Article 163-0 A ter : les primes versées par l'État aux sportifs médaillés aux Jeux olympiques et paralympiques (et à leur guide), ainsi que celles versées par les fédérations à leur encadrement, peuvent, sur demande expresse et irrévocable, être réparties par parts égales sur l'année de perception et les trois années suivantes. Cette option est incompatible avec celle de l'article 163-0 A (revenu exceptionnel)."
+]
+},
+{
+"t": "table",
+"head": [
+"Exemple en BNC",
+"Recettes",
+"Dépenses"
+],
+"rows": [
+[
+"2024",
+"80 000 €",
+"20 000 €"
+],
+[
+"2025",
+"100 000 €",
+"30 000 €"
+],
+[
+"2026",
+"200 000 €",
+"40 000 €"
+]
+]
+},
+{
+"t": "p",
+"x": "Moyenne des recettes : 126 666,67 €. Moyenne des dépenses : 30 000 €. Bénéfice retenu : 96 666,67 €, au lieu d'un bénéfice réel de 160 000 € en 2026."
+}
+],
+"piege": "Ne confonds pas l'étalement des revenus sportifs (articles 100 bis et 84 A : moyenne sur 3 ou 5 ans) et celui des primes olympiques (article 163-0 A ter : quatre parts égales sur quatre ans).",
+"reponse": "Oui. L'article 84 A étend aux salaires des sportifs le mécanisme de l'article 100 bis. Sur option, Thomas peut faire calculer son impôt à partir d'une moyenne sur trois ans (l'année et les deux précédentes) ou sur cinq ans (l'année et les quatre précédentes), ce qui lisse son pic de 600 000 €.",
+"sources": [
+"CGI, art. 100 bis (moyenne sur 3 ou 5 ans, déclaration contrôlée)",
+"CGI, art. 84 A (extension aux salaires des sportifs)",
+"CGI, art. 163-0 A (revenu exceptionnel) et 163-0 A ter (primes olympiques et paralympiques)"
+],
+"questions": [
+"m05-q12",
+"m05-q13",
+"fis-l13-q1"
+],
+"titre": "L'étalement des revenus du sportif",
+"priorite": 2
+},
+"fis-l14": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Nadia recrute Diego, joueur brésilien, jamais domicilié fiscalement en France. Par ailleurs, Marco, joueur étranger non résident et sans installation professionnelle permanente en France, reçoit 100 000 € pour un tournoi organisé en France.",
+"question": "Quel régime fiscal pour Diego et pour Marco ?"
+},
+"blocs": [
+{
+"t": "h",
+"x": "Les impatriés (art. 155 B)"
+},
+{
+"t": "p",
+"x": "Un salarié appelé de l'étranger pour occuper un emploi dans une entreprise établie en France, pour une période limitée, peut être exonéré d'impôt sur les éléments de rémunération directement liés à cette situation. Sur option, l'exonération peut aussi être de 30 % de sa rémunération. Les conditions sont strictes :"
+},
+{
+"t": "list",
+"items": [
+"ne pas avoir été fiscalement domicilié en France pendant les cinq années civiles précédant la prise de fonctions ;",
+"le régime dure jusqu'au 31 décembre de la huitième année civile suivant celle de la prise de fonctions ;",
+"le salarié occupe un emploi dans une entreprise établie en France."
+]
+},
+{
+"t": "h",
+"x": "Les non-résidents (art. 182 B)"
+},
+{
+"t": "p",
+"x": "Un non-résident sans installation professionnelle permanente en France subit une retenue à la source, quand il est payé par un débiteur qui exerce une activité en France, sur les sommes, salaires compris, qui rémunèrent des prestations sportives fournies ou utilisées en France. En 2026, le taux interne est de 15 %. La base est le montant brut versé. Les conventions fiscales entre États peuvent modifier ce résultat."
+}
+],
+"piege": "Un joueur étranger recruté par un club français n'est pas automatiquement un impatrié : tout dépend de sa résidence fiscale pendant les cinq années précédentes.",
+"reponse": "Diego peut relever du régime des impatriés s'il n'a pas été domicilié fiscalement en France pendant les cinq années civiles précédant sa prise de fonctions, et jusqu'au 31 décembre de la huitième année suivante. Marco subit une retenue à la source de 15 % sur 100 000 € bruts, soit 15 000 €, et reçoit 85 000 €, sous réserve d'une convention fiscale.",
+"sources": [
+"CGI, art. 155 B (régime des impatriés)",
+"CGI, art. 182 B, I, d, I bis et II (retenue sur prestations sportives, base brute, taux de 15 %)",
+"CGI, art. 197 A (imputation de la retenue sur l'impôt)"
+],
+"questions": [
+"m05-q14",
+"m05-q15",
+"fis-l14-q1"
+],
+"titre": "Impatriés et sportifs non-résidents",
+"priorite": 2
+},
+"fis-l15": {
+"minutes": 5,
+"situation": {
+"texte": "Deux intermédiaires interviennent dans le football. Karim, agent sportif, agit au nom d'un club français qui l'a mandaté et lui facture 30 000 € HT de commission. Marc agit en son propre nom, pour le compte d'un client, comme commissionnaire.",
+"question": "Dans quelle catégorie chacun est-il imposé, et quelle TVA sur la facture de Karim ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une question décide de tout : l'intermédiaire agit-il au nom de son client, ou en son propre nom ? L'agent sportif met en relation, contre rémunération, deux parties intéressées (Code du sport, L. 222-7)."
+},
+{
+"t": "table",
+"head": [
+"Intermédiaire",
+"Il agit",
+"Catégorie"
+],
+"rows": [
+[
+"Mandataire",
+"Au nom de son client",
+"BNC"
+],
+[
+"Commissionnaire",
+"En son propre nom, pour le compte d'un commettant",
+"BIC (il est commerçant)"
+]
+]
+},
+{
+"t": "p",
+"x": "Le BOFiP le dit ainsi : les commissionnaires relèvent des BIC, les autres intermédiaires, mandataires, des BNC. L'agent sportif agit en principe au nom de son client : ses commissions sont des BNC."
+},
+{
+"t": "h",
+"x": "Les autres impôts de l'agent"
+},
+{
+"t": "list",
+"items": [
+"Impôt sur le revenu : au micro-BNC (seuil de 83 600 € en 2026) ou au régime réel. S'il exerce en société à l'IS, c'est la société qui paie l'IS.",
+"TVA : la commission est une prestation de services, taxée à 20 % si elle est localisée en France et sans franchise. 30 000 € HT + 6 000 € de TVA = 36 000 € TTC. La TVA collectée n'est pas un revenu : elle est reversée, après déduction de la TVA récupérable.",
+"CFE : due, comme pour tout indépendant, sous réserve des exonérations."
+]
+}
+],
+"piege": "Ce n'est pas le titre d'agent qui fixe la catégorie, c'est la manière d'agir : au nom du client (mandataire, BNC) ou en son propre nom (commissionnaire, BIC).",
+"reponse": "Karim agit au nom du club qui l'a mandaté : il est mandataire, donc imposé en BNC. Marc agit en son propre nom pour le compte d'un client : il est commissionnaire, donc imposé en BIC. La commission de Karim supporte 6 000 € de TVA à 20 % si elle est taxable en France et sans franchise, soit 36 000 € TTC.",
+"sources": [
+"C. sport, L. 222-7 (définition de l'agent sportif)",
+"BOI-BNC-CHAMP-10-10-20-40, § 130 (commissionnaire, BIC) et § 140 (mandataire, BNC)",
+"CGI, art. 92 (BNC) et art. 34 (BIC)",
+"CGI, art. 102 ter (micro-BNC) et art. 278 (TVA à 20 %)"
+],
+"questions": [
+"m05-q03",
+"fis-l15-q1",
+"fis-l15-q2"
+],
+"titre": "La fiscalité de l'agent sportif",
+"priorite": 3
 }
 }
 },
