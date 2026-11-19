@@ -27145,9 +27145,14 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 20
+"v": 21
 },
 {
 "id": "asso-11",
@@ -27339,9 +27344,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 20
+"v": 21
 },
 {
 "id": "agt-03",
@@ -29136,9 +29146,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 20
+"v": 21
 },
 {
 "id": "agt-32",
@@ -32385,6 +32400,396 @@
 "bonne": 2,
 "explication": "Le redressement judiciaire est une procédure du Code de commerce, ouverte par jugement du tribunal (C. com., L. 631-1 et L. 631-5). L'organisme de contrôle de gestion exerce un contrôle sportif et financier distinct (C. sport, L. 133-1).",
 "origine": "Leçon soc-15"
+},
+{
+"id": "trv-l01-q1",
+"chapitre": "m06-2",
+"niveau": 2,
+"enonce": "Une convention collective peut-elle prévoir une règle plus favorable au salarié que la loi ?",
+"options": [
+"Non : la loi s'applique seule, sans exception",
+"Oui, mais elle ne peut pas déroger aux règles d'ordre public",
+"Oui, et elle peut aussi réduire les droits prévus par la loi",
+"Non : seul le contrat de travail peut être plus favorable"
+],
+"bonne": 1,
+"explication": "Une convention ou un accord peut comporter des stipulations plus favorables aux salariés que la loi. Il ne peut pas déroger aux règles d'ordre public (C. trav., L. 2251-1).",
+"origine": "Leçon trv-l01"
+},
+{
+"id": "trv-l01-q2",
+"chapitre": "m06-2",
+"niveau": 2,
+"enonce": "Le contrat de travail d'un salarié prévoit un salaire inférieur au minimum de la convention collective applicable. Que dit la règle ?",
+"options": [
+"La clause du contrat l'emporte, car le salarié l'a signée",
+"Le contrat est annulé en entier",
+"Les clauses de la convention s'appliquent au contrat, sauf clauses plus favorables au salarié",
+"Le salarié perd son droit au minimum conventionnel"
+],
+"bonne": 2,
+"explication": "Lorsque l'employeur est lié par une convention, ses clauses s'appliquent aux contrats de travail, sauf stipulations plus favorables (C. trav., L. 2254-1).",
+"origine": "Leçon trv-l01"
+},
+{
+"id": "trv-l01-q3",
+"chapitre": "m06-2",
+"niveau": 2,
+"enonce": "Pour les salaires minima hiérarchiques, quelle règle s'applique entre la convention de branche et un accord d'entreprise ?",
+"options": [
+"La convention de branche prévaut, sauf si l'accord d'entreprise assure des garanties au moins équivalentes",
+"L'accord d'entreprise prévaut toujours",
+"Le texte le plus ancien prévaut",
+"Aucun des deux : seul le contrat de travail compte"
+],
+"bonne": 0,
+"explication": "Les salaires minima hiérarchiques font partie des matières où la convention de branche prévaut sur l'accord d'entreprise, sauf garanties au moins équivalentes (C. trav., L. 2253-1).",
+"origine": "Leçon trv-l01"
+},
+{
+"id": "trv-l02-q1",
+"chapitre": "m06-2",
+"niveau": 2,
+"enonce": "Quel élément distingue le salarié du travailleur indépendant ?",
+"options": [
+"Le versement d'une rémunération",
+"Le lien de subordination",
+"La signature d'un contrat écrit",
+"Le fait de travailler pour un club"
+],
+"bonne": 1,
+"explication": "Le salarié travaille sous l'autorité de son employeur, qui donne des ordres, contrôle et sanctionne. La rémunération se retrouve aussi chez l'indépendant (définition issue de la jurisprudence).",
+"origine": "Leçon trv-l02"
+},
+{
+"id": "trv-l02-q2",
+"chapitre": "m06-2",
+"niveau": 2,
+"enonce": "Un club fait signer à un entraîneur un « contrat de prestation de service », mais lui impose ses horaires, ses consignes et des sanctions. Que fera le juge s'il est saisi ?",
+"options": [
+"Il s'en tiendra au titre du contrat, qui lie les parties",
+"Il regardera les conditions réelles du travail et pourra requalifier le contrat en contrat de travail",
+"Il annulera le contrat sans autre conséquence",
+"Il refusera d'examiner l'affaire, faute d'écrit de travail"
+],
+"bonne": 1,
+"explication": "Le juge examine les conditions réelles d'exercice de l'activité, pas le titre donné au contrat. Une personne immatriculée est seulement présumée non salariée : cette présomption peut être renversée (C. trav., L. 8221-6).",
+"origine": "Leçon trv-l02"
+},
+{
+"id": "trv-l05-q1",
+"chapitre": "m06-2",
+"niveau": 2,
+"enonce": "Le CDD du sportif professionnel doit être établi par écrit en au moins combien d'exemplaires ?",
+"options": [
+"1 exemplaire",
+"2 exemplaires",
+"3 exemplaires",
+"4 exemplaires"
+],
+"bonne": 2,
+"explication": "Le contrat est établi par écrit en au moins trois exemplaires (C. sport, L. 222-2-5).",
+"origine": "Leçon trv-l05"
+},
+{
+"id": "trv-l05-q2",
+"chapitre": "m06-2",
+"niveau": 2,
+"enonce": "Qui peut prévoir une procédure d'homologation du CDD d'un sportif professionnel ?",
+"options": [
+"Le règlement de la fédération sportive ou de l'une des ligues professionnelles",
+"Le conseil de prud'hommes",
+"L'URSSAF",
+"L'agent sportif du joueur"
+],
+"bonne": 0,
+"explication": "Le règlement de la fédération ou, le cas échéant, de l'une des ligues professionnelles peut prévoir une procédure d'homologation du contrat (C. sport, L. 222-2-6).",
+"origine": "Leçon trv-l05"
+},
+{
+"id": "trv-l06-q1",
+"chapitre": "m06-2",
+"niveau": 2,
+"enonce": "Laquelle de ces conditions n'est PAS exigée pour qu'une clause de non-concurrence soit valable ?",
+"options": [
+"Elle est limitée dans le temps",
+"Elle est limitée dans l'espace",
+"Elle prévoit une contrepartie financière",
+"Elle est approuvée par l'inspection du travail"
+],
+"bonne": 3,
+"explication": "La clause doit être indispensable à l'intérêt légitime de l'entreprise, limitée dans le temps et dans l'espace, et prévoir une contrepartie financière. Aucune approbation de l'inspection du travail n'est exigée (jurisprudence, cours du module 06).",
+"origine": "Leçon trv-l06"
+},
+{
+"id": "trv-l06-q2",
+"chapitre": "m06-2",
+"niveau": 2,
+"enonce": "Quelle clause interdit au salarié d'exercer une autre activité professionnelle pendant l'exécution du contrat ?",
+"options": [
+"La clause de non-concurrence",
+"La clause d'exclusivité",
+"La clause de mobilité",
+"La clause de dédit-formation"
+],
+"bonne": 1,
+"explication": "La clause d'exclusivité joue pendant le contrat. La clause de non-concurrence, elle, produit ses effets après la rupture (jurisprudence, cours du module 06).",
+"origine": "Leçon trv-l06"
+},
+{
+"id": "trv-l06-q3",
+"chapitre": "m06-2",
+"niveau": 2,
+"enonce": "Quelle condition doit respecter une clause de dédit-formation ?",
+"options": [
+"Être signée après la formation, une fois les frais connus",
+"Fixer un remboursement sans rapport avec les frais réels",
+"Être signée avant la formation et prévoir un remboursement proportionné aux dépenses réelles",
+"Empêcher le salarié de démissionner avant la date fixée"
+],
+"bonne": 2,
+"explication": "La clause doit correspondre à des dépenses réelles, être conclue avant la formation et prévoir un remboursement proportionné, sans priver le salarié de sa liberté de démissionner (jurisprudence, cours du module 06).",
+"origine": "Leçon trv-l06"
+},
+{
+"id": "trv-l07-q1",
+"chapitre": "m06-3",
+"niveau": 2,
+"enonce": "Le minimum prévu par la convention collective pour un salarié est supérieur au SMIC. Que doit payer l'employeur ?",
+"options": [
+"Le SMIC, car c'est le minimum légal",
+"Le minimum conventionnel, plus favorable au salarié, s'il lui est applicable",
+"Le montant fixé librement dans le contrat",
+"La moyenne entre le SMIC et le minimum conventionnel"
+],
+"bonne": 1,
+"explication": "Les clauses de la convention applicable s'appliquent aux contrats de travail, sauf stipulations plus favorables. Le SMIC reste un plancher (C. trav., L. 2254-1 et L. 3231-2).",
+"origine": "Leçon trv-l07"
+},
+{
+"id": "trv-l07-q2",
+"chapitre": "m06-3",
+"niveau": 2,
+"enonce": "Que remet l'employeur au salarié lors du paiement du salaire ?",
+"options": [
+"Une facture",
+"Un bulletin de paie",
+"Un avis d'imposition",
+"Un relevé de la caisse primaire d'assurance maladie"
+],
+"bonne": 1,
+"explication": "Lors du paiement du salaire, l'employeur remet au salarié une pièce justificative dite bulletin de paie (C. trav., L. 3243-2).",
+"origine": "Leçon trv-l07"
+},
+{
+"id": "trv-l08-q1",
+"chapitre": "m06-3",
+"niveau": 2,
+"enonce": "Sans accord collectif, de quel taux sont majorées les 8 premières heures supplémentaires ?",
+"options": [
+"10 %",
+"25 %",
+"50 %",
+"100 %"
+],
+"bonne": 1,
+"explication": "À défaut d'accord, chacune des huit premières heures supplémentaires est majorée de 25 %, les suivantes de 50 % (C. trav., L. 3121-36).",
+"origine": "Leçon trv-l08"
+},
+{
+"id": "trv-l10-q1",
+"chapitre": "m06-3",
+"niveau": 2,
+"enonce": "Un salarié s'estime victime de harcèlement moral et saisit le juge. Que doit-il apporter ?",
+"options": [
+"La preuve complète et certaine du harcèlement, seul",
+"Des éléments de fait laissant supposer un harcèlement : l'employeur doit alors prouver le contraire",
+"Rien : l'employeur est toujours condamné",
+"Un certificat de la caisse primaire d'assurance maladie"
+],
+"bonne": 1,
+"explication": "Le salarié présente des éléments de fait laissant supposer l'existence d'un harcèlement. Il incombe alors à l'employeur de prouver que ces agissements n'en constituent pas un (C. trav., L. 1154-1).",
+"origine": "Leçon trv-l10"
+},
+{
+"id": "trv-l10-q2",
+"chapitre": "m06-3",
+"niveau": 2,
+"enonce": "Que devient un licenciement prononcé parce que le salarié a, de bonne foi, relaté des agissements de harcèlement moral ?",
+"options": [
+"Il est valable si l'employeur respecte la procédure",
+"Il est nul",
+"Il est valable, mais ouvre droit à une indemnité plus élevée",
+"Il devient une simple démission"
+],
+"bonne": 1,
+"explication": "Toute rupture du contrat de travail intervenue en méconnaissance de la protection contre le harcèlement moral est nulle (C. trav., L. 1152-2 et L. 1152-3).",
+"origine": "Leçon trv-l10"
+},
+{
+"id": "trv-l11-q1",
+"chapitre": "m06-3",
+"niveau": 2,
+"enonce": "Le chapitre 12 de la CCNS concerne :",
+"options": [
+"Tous les salariés d'un club sportif, sans exception",
+"Les sportifs et entraîneurs professionnels salariés, tels que définis par les textes",
+"Uniquement les bénévoles du club",
+"Uniquement les dirigeants élus"
+],
+"bonne": 1,
+"explication": "Le chapitre 12 vise les sportifs et entraîneurs professionnels salariés. Il ne s'applique pas automatiquement à tous les éducateurs ou salariés administratifs d'un club (cours du module 06, section sur la CCNS).",
+"origine": "Leçon trv-l11"
+},
+{
+"id": "trv-l12-q1",
+"chapitre": "m06-4",
+"niveau": 2,
+"enonce": "Un employeur propose à un salarié, par lettre recommandée, la modification d'un élément essentiel du contrat pour un motif économique. De quel délai le salarié dispose-t-il pour refuser, hors redressement ou liquidation judiciaire ?",
+"options": [
+"15 jours",
+"Un mois",
+"Deux mois",
+"Trois mois"
+],
+"bonne": 1,
+"explication": "Le salarié dispose d'un mois à compter de la réception de la lettre pour faire connaître son refus. À défaut de réponse, il est réputé avoir accepté (C. trav., L. 1222-6).",
+"origine": "Leçon trv-l12"
+},
+{
+"id": "trv-l13-q1",
+"chapitre": "m06-4",
+"niveau": 2,
+"enonce": "L'entretien préalable à un licenciement ne peut pas avoir lieu moins de combien de jours ouvrables après la présentation de la lettre de convocation recommandée ou sa remise en main propre ?",
+"options": [
+"2 jours ouvrables",
+"3 jours ouvrables",
+"5 jours ouvrables",
+"10 jours ouvrables"
+],
+"bonne": 2,
+"explication": "L'entretien préalable ne peut avoir lieu moins de cinq jours ouvrables après la présentation de la lettre recommandée ou la remise en main propre de la convocation (C. trav., L. 1232-2).",
+"origine": "Leçon trv-l13"
+},
+{
+"id": "trv-l14-q1",
+"chapitre": "m06-4",
+"niveau": 2,
+"enonce": "Après le délai de rétractation, qui homologue la convention de rupture conventionnelle individuelle ?",
+"options": [
+"L'autorité administrative",
+"Le conseil de prud'hommes",
+"L'URSSAF",
+"Le comité social et économique"
+],
+"bonne": 0,
+"explication": "La partie la plus diligente adresse une demande d'homologation à l'autorité administrative, qui dispose de quinze jours ouvrables. La validité de la convention est subordonnée à l'homologation (C. trav., L. 1237-14).",
+"origine": "Leçon trv-l14"
+},
+{
+"id": "trv-l15-q1",
+"chapitre": "m06-4",
+"niveau": 2,
+"enonce": "Un employeur rompt un CDD avant son terme, hors faute grave, force majeure, inaptitude ou accord. Quel est le minimum des dommages-intérêts dus au salarié ?",
+"options": [
+"Un mois de salaire",
+"Les rémunérations que le salarié aurait perçues jusqu'au terme du contrat",
+"Le double de l'indemnité légale de licenciement",
+"Aucun dommage-intérêt n'est dû"
+],
+"bonne": 1,
+"explication": "La rupture anticipée par l'employeur hors cas permis ouvre droit à des dommages-intérêts au moins égaux aux rémunérations jusqu'au terme du contrat, sans préjudice de l'indemnité de fin de contrat (C. trav., L. 1243-4).",
+"origine": "Leçon trv-l15"
+},
+{
+"id": "trv-l15-q2",
+"chapitre": "m06-4",
+"niveau": 2,
+"enonce": "Un salarié en CDD justifie de la conclusion d'un CDI ailleurs. Peut-il rompre son CDD avant le terme ?",
+"options": [
+"Non, jamais avant le terme",
+"Oui, sans aucun préavis",
+"Oui, avec un préavis d'un jour par semaine de contrat, au plus deux semaines, sauf accord des parties",
+"Oui, mais seulement avec l'accord écrit de l'employeur"
+],
+"bonne": 2,
+"explication": "Le salarié peut rompre son CDD lorsqu'il justifie d'un CDI. Il respecte un préavis d'un jour par semaine, sans dépasser deux semaines, sauf accord des parties (C. trav., L. 1243-2).",
+"origine": "Leçon trv-l15"
+},
+{
+"id": "trv-l16-q1",
+"chapitre": "m06-5",
+"niveau": 2,
+"enonce": "Combien de branches le régime général de la Sécurité sociale comprend-il ?",
+"options": [
+"Trois",
+"Quatre",
+"Cinq",
+"Six"
+],
+"bonne": 2,
+"explication": "Le régime général comprend cinq branches : maladie, accidents du travail et maladies professionnelles, vieillesse, famille et autonomie (C. séc. soc., L. 200-2).",
+"origine": "Leçon trv-l16"
+},
+{
+"id": "trv-l16-q2",
+"chapitre": "m06-5",
+"niveau": 2,
+"enonce": "Quel organisme assure le recouvrement des cotisations de sécurité sociale des salariés et de leurs employeurs ?",
+"options": [
+"La CPAM",
+"La CAF",
+"L'Urssaf",
+"La Carsat"
+],
+"bonne": 2,
+"explication": "Les unions de recouvrement des cotisations de sécurité sociale et d'allocations familiales (Urssaf) assurent ce recouvrement (C. séc. soc., L. 213-1).",
+"origine": "Leçon trv-l16"
+},
+{
+"id": "trv-l16-q3",
+"chapitre": "m06-5",
+"niveau": 2,
+"enonce": "Une prime versée à un joueur salarié en contrepartie de son travail entre-t-elle dans l'assiette des cotisations sociales ?",
+"options": [
+"Oui : elle est versée en contrepartie ou à l'occasion du travail",
+"Non : seul le salaire de base entre dans l'assiette",
+"Non, sauf si elle dépasse 10 000 €",
+"Oui, mais seulement pour les joueurs de moins de 25 ans"
+],
+"bonne": 0,
+"explication": "L'assiette comprend toutes les sommes et avantages dus en contrepartie ou à l'occasion d'un travail, quelle que soit leur dénomination. Seuls certains éléments en sont exclus, comme les remboursements de frais professionnels dans les limites fixées (C. séc. soc., L. 136-1-1 et L. 242-1).",
+"origine": "Leçon trv-l16"
+},
+{
+"id": "trv-l17-q1",
+"chapitre": "m06-5",
+"niveau": 2,
+"enonce": "Dans quel délai la commission de recours amiable doit-elle être saisie, à compter de la notification de la décision contestée ?",
+"options": [
+"15 jours",
+"Un mois",
+"Deux mois",
+"Six mois"
+],
+"bonne": 2,
+"explication": "La commission doit être saisie dans le délai de deux mois à compter de la notification de la décision (C. séc. soc., R. 142-1).",
+"origine": "Leçon trv-l17"
+},
+{
+"id": "trv-l17-q2",
+"chapitre": "m06-5",
+"niveau": 2,
+"enonce": "L'organisme de sécurité sociale ne répond pas à la réclamation dans le délai de deux mois. Que peut faire l'intéressé ?",
+"options": [
+"Considérer sa demande comme rejetée et poursuivre son recours",
+"Considérer sa demande comme acceptée",
+"Attendre : aucun recours n'est plus possible",
+"Saisir directement le conseil de prud'hommes"
+],
+"bonne": 0,
+"explication": "Faute de décision portée à sa connaissance dans le délai de deux mois, l'intéressé peut considérer sa demande comme rejetée (C. séc. soc., R. 142-6).",
+"origine": "Leçon trv-l17"
 }
 ],
 "cartes": [
@@ -35765,6 +36170,15 @@
 "precisions": []
 },
 {
+"id": "n-lecons-m06-2026-11-19",
+"d": "2026-11-19",
+"genre": "appli",
+"titre": "Le module 06, Droit du travail, passe aux leçons",
+"texte": "17 leçons de 5 minutes, du CDD spécifique du sportif à la rupture du contrat et à la protection sociale. Elles reprennent toutes les questions du module : en les terminant, tu couvres tout le droit du travail de l'examen.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
@@ -38226,6 +38640,1324 @@
 "soc-15-q3"
 ],
 "titre": "Les clubs en difficulté : DNCG et tribunal",
+"priorite": 1
+}
+}
+},
+{
+"domaine": "travail",
+"titre": "Module 06 · Droit du travail",
+"parties": [
+{
+"titre": "Le contrat de travail",
+"lecons": [
+{
+"id": "trv-l01",
+"titre": "Les sources du droit du travail",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "trv-l02",
+"titre": "Le contrat de travail et le lien de subordination",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "trv-l03",
+"titre": "CDI, CDD et intérim",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "trv-l04",
+"titre": "Le CDD spécifique du sportif professionnel",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "trv-l05",
+"titre": "Le contrat sportif : contenu, homologation, essai",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "trv-l06",
+"titre": "Les clauses du contrat de travail",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "La relation de travail",
+"lecons": [
+{
+"id": "trv-l07",
+"titre": "Le salaire : SMIC, minima et primes",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "trv-l08",
+"titre": "Temps de travail et congés payés",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "trv-l09",
+"titre": "Sanctionner un salarié : discipline et règlement intérieur",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "trv-l10",
+"titre": "Le harcèlement au travail",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "trv-l11",
+"titre": "La convention collective du sport",
+"priorite": 3,
+"dispo": true
+}
+]
+},
+{
+"titre": "Modifier et rompre le contrat",
+"lecons": [
+{
+"id": "trv-l12",
+"titre": "Modifier le contrat, transférer l'entreprise",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "trv-l13",
+"titre": "Le licenciement",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "trv-l14",
+"titre": "Démission, rupture conventionnelle, abandon de poste",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "trv-l15",
+"titre": "Rompre un CDD avant son terme",
+"priorite": 3,
+"dispo": true
+}
+]
+},
+{
+"titre": "La protection sociale",
+"lecons": [
+{
+"id": "trv-l16",
+"titre": "La Sécurité sociale et les cotisations",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "trv-l17",
+"titre": "Contester une décision d'un organisme social",
+"priorite": 1,
+"dispo": true
+}
+]
+}
+],
+"contenu": {
+"trv-l01": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Thomas emploie Julie, éducatrice à temps plein. Son contrat prévoit un salaire inférieur au minimum fixé par la convention collective applicable. Le président du club dit : « Julie a signé, c'est le contrat qui compte. »",
+"question": "Le président a-t-il raison ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Plusieurs textes fixent les règles du travail. Il faut savoir lesquels s'appliquent, et dans quel ordre."
+},
+{
+"t": "table",
+"head": [
+"Source",
+"Qui l'établit",
+"Exemple"
+],
+"rows": [
+[
+"Constitution, traités, droit européen",
+"L'État, l'Union européenne",
+"Liberté syndicale, droit de grève"
+],
+[
+"Loi et Code du travail",
+"Le Parlement",
+"Durée légale, congés payés, licenciement"
+],
+[
+"Convention collective de branche",
+"Syndicats de salariés et organisations d'employeurs, pour tout un secteur",
+"Convention collective nationale du sport, salaires minima"
+],
+[
+"Accord d'entreprise",
+"L'employeur et les représentants du personnel",
+"Primes, horaires de l'entreprise"
+],
+[
+"Contrat de travail",
+"L'employeur et le salarié",
+"Fonctions, salaire"
+]
+]
+},
+{
+"t": "h",
+"x": "La règle la plus favorable"
+},
+{
+"t": "p",
+"x": "Un texte peut améliorer les droits du salarié, mais il ne peut pas les réduire. Une convention collective peut donc être plus favorable que la loi, sauf si la règle est d'ordre public (une règle obligatoire, à laquelle on ne peut pas déroger). De même, les clauses d'une convention s'appliquent aux contrats de travail, sauf clauses plus favorables au salarié."
+},
+{
+"t": "h",
+"x": "Branche ou entreprise ?"
+},
+{
+"t": "p",
+"x": "Pour certaines matières, dont les salaires minima et les classifications (le classement des emplois), la convention de branche l'emporte sur l'accord d'entreprise, sauf si celui-ci offre des garanties au moins équivalentes. Dans les autres matières, l'accord d'entreprise l'emporte sur la convention de branche, sauf pour quatre matières (par exemple le handicap ou les primes pour travaux dangereux) que la branche peut verrouiller en le prévoyant expressément."
+},
+{
+"t": "h",
+"x": "Les usages"
+},
+{
+"t": "p",
+"x": "Un usage est une pratique de l'employeur générale, constante et fixe, comme une prime de fin de saison toujours versée de la même façon. Il peut créer des droits pour les salariés, même s'il n'est pas écrit dans leur contrat."
+}
+],
+"piege": "Il n'existe pas de règle « la convention collective l'emporte toujours » : la branche prévaut pour certaines matières, l'accord d'entreprise pour la plupart des autres, et le texte le plus favorable au salarié joue en sa faveur.",
+"reponse": "Non. Le contrat ne peut pas prévoir un salaire inférieur au minimum de la convention collective applicable : la clause de la convention s'applique au contrat, sauf clause plus favorable au salarié. Julie peut réclamer la différence de salaire.",
+"sources": [
+"C. trav., L. 2251-1 (stipulations plus favorables, ordre public)",
+"C. trav., L. 2253-1 (matières où la branche prévaut)",
+"C. trav., L. 2253-3 (autres matières, primauté de l'accord d'entreprise)",
+"C. trav., L. 2254-1 (clauses de la convention et contrat de travail)"
+],
+"questions": [
+"trv-l01-q1",
+"trv-l01-q2",
+"trv-l01-q3"
+],
+"titre": "Les sources du droit du travail",
+"priorite": 2
+},
+"trv-l02": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Marc fait travailler Yanis comme entraîneur des jeunes. Yanis est payé sur facture et le contrat parle de « prestation de service ». Mais le club fixe son planning, lui donne des consignes sur les séances et peut le sanctionner s'il manque un entraînement.",
+"question": "Yanis est-il vraiment un travailleur indépendant ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le contrat de travail repose sur trois éléments, qui doivent être réunis."
+},
+{
+"t": "list",
+"items": [
+"Une prestation de travail : le salarié accomplit une activité pour l'employeur.",
+"Une rémunération : il reçoit une contrepartie, en général un salaire.",
+"Un lien de subordination : l'employeur donne des ordres, contrôle leur exécution et peut sanctionner les manquements."
+]
+},
+{
+"t": "p",
+"x": "Le lien de subordination est l'élément décisif. C'est lui qui distingue le salarié du travailleur indépendant."
+},
+{
+"t": "h",
+"x": "Le nom du contrat ne compte pas"
+},
+{
+"t": "p",
+"x": "Le juge regarde les conditions réelles du travail, pas le titre donné au contrat. Un « contrat de prestation » peut être requalifié en contrat de travail si, dans les faits, l'employeur dirige le travail. Un joueur professionnel suit les entraînements imposés, les horaires et les consignes du club : il est donc en principe salarié."
+},
+{
+"t": "h",
+"x": "Les présomptions"
+},
+{
+"t": "p",
+"x": "Une personne immatriculée comme indépendante (au registre du commerce, par exemple) est présumée ne pas être salariée. Une présomption est un point de départ que la preuve contraire peut renverser : le salarié peut établir qu'il travaille en réalité sous la subordination du donneur d'ordre."
+},
+{
+"t": "h",
+"x": "Faut-il un écrit ?"
+},
+{
+"t": "p",
+"x": "Le contrat de travail peut être établi sous la forme que les parties choisissent. Un CDI à temps plein peut donc exister sans écrit. Certains contrats doivent en revanche être écrits : le CDD, le contrat à temps partiel, le contrat de travail temporaire et le CDD du sportif professionnel."
+}
+],
+"piege": "Appeler un contrat « prestation de service » ou facturer ses heures ne suffit pas à écarter le salariat : seule compte la réalité du lien de subordination.",
+"reponse": "Pas forcément. Le club donne des ordres, fixe le planning et peut sanctionner : ce sont les marques d'un lien de subordination. Yanis peut demander au juge de requalifier son contrat en contrat de travail, malgré les factures et le titre du contrat. S'il est immatriculé comme indépendant, il devra apporter cette preuve.",
+"sources": [
+"Jurisprudence de la Cour de cassation (définition du contrat de travail et du lien de subordination)",
+"C. trav., L. 1221-1 (liberté de forme du contrat de travail)",
+"C. trav., L. 1221-2 (CDI, forme normale et générale)",
+"C. trav., L. 8221-6 (présomption de non-salariat des personnes immatriculées)",
+"C. trav., L. 3123-6 (temps partiel : contrat écrit)",
+"C. sport, L. 222-2 (sportif et entraîneur professionnels salariés)"
+],
+"questions": [
+"m06-q01",
+"trv-l02-q1",
+"trv-l02-q2"
+],
+"titre": "Le contrat de travail et le lien de subordination",
+"priorite": 3
+},
+"trv-l03": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Sophie embauche Lucas en CDD de six mois à l'accueil, pour un surcroît d'activité en début de saison. Le contrat se termine. Dès le lendemain, le club veut embaucher quelqu'un d'autre en CDD sur ce même poste, car il est utile toute l'année.",
+"question": "Le club peut-il faire cela ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le CDI (contrat à durée indéterminée), sans date de fin, est la forme normale et générale de la relation de travail. Le CDD (contrat à durée déterminée) est une exception : il ne peut pas servir à pourvoir durablement un emploi lié à l'activité normale et permanente de l'entreprise."
+},
+{
+"t": "table",
+"head": [
+"Contrat",
+"Règle"
+],
+"rows": [
+[
+"CDD : motifs",
+"Seulement pour une tâche précise et temporaire : remplacer un salarié absent, faire face à un accroissement temporaire d'activité, emploi saisonnier, emploi d'usage."
+],
+[
+"CDD : forme",
+"Un écrit avec le motif précis : sinon, le CDD est réputé à durée indéterminée. Il est remis au salarié dans les 2 jours ouvrables suivant l'embauche : un retard seul ne requalifie pas le contrat, mais ouvre droit à une indemnité d'un mois de salaire au plus."
+],
+[
+"CDD : durée",
+"À défaut d'accord de branche : 18 mois au plus, renouvellements compris (9 mois pour attendre l'arrivée d'un salarié en CDI) et deux renouvellements."
+],
+[
+"CDD : fin",
+"Prime de précarité : 10 % du salaire brut total, sauf cas prévus par la loi."
+],
+[
+"Intérim",
+"Trois acteurs : l'entreprise de travail temporaire, le salarié intérimaire (contrat de mission) et l'entreprise utilisatrice."
+]
+]
+},
+{
+"t": "h",
+"x": "Après un CDD : le délai de carence"
+},
+{
+"t": "p",
+"x": "Le délai de carence est le temps à attendre avant de reprendre un CDD ou un intérimaire sur le même poste. Sauf accord de branche, il est du tiers de la durée du contrat terminé si celui-ci a duré 14 jours ou plus, et de la moitié s'il a duré moins de 14 jours."
+}
+],
+"piege": "Pour un CDD de 14 jours ou plus, le délai de carence est du tiers de la durée du contrat, et non de la moitié, qui vaut seulement pour les contrats de moins de 14 jours.",
+"reponse": "Non. Un CDD ne peut pas servir à pourvoir durablement un emploi lié à l'activité normale et permanente du club : ce poste relève d'un CDI, sinon le contrat risque d'être requalifié en CDI. De plus, le club doit respecter le délai de carence : un tiers de six mois, soit environ deux mois, sauf accord de branche.",
+"sources": [
+"C. trav., L. 1221-2 (CDI, forme normale)",
+"C. trav., L. 1242-1 et L. 1242-2 (CDD : objet et cas de recours)",
+"C. trav., L. 1242-8-1 (durée maximale de 18 mois)",
+"C. trav., L. 1243-13-1 (deux renouvellements)",
+"C. trav., L. 1242-12 et L. 1242-13 (écrit, transmission sous deux jours ouvrables)",
+"C. trav., L. 1243-8 et L. 1243-10 (indemnité de fin de contrat)",
+"C. trav., L. 1244-3 et L. 1244-3-1 (délai de carence)",
+"C. trav., L. 1245-1 (requalification en CDI)",
+"C. trav., L. 1251-1 (travail temporaire)"
+],
+"questions": [
+"m06-q02",
+"m06-q03",
+"an23-q04"
+],
+"titre": "CDI, CDD et intérim",
+"priorite": 3
+},
+"trv-l04": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Lucas engage Samir, joueur professionnel, pour sept saisons. Le contrat prévoit que le club peut y mettre fin quand il le veut, sans motif. Le club ne remet le contrat signé à Samir que dix jours après son arrivée.",
+"question": "Ce contrat respecte-t-il les règles du CDD spécifique ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un club qui engage un sportif professionnel salarié, ou un entraîneur professionnel salarié, le fait toujours par un CDD (contrat à durée déterminée) spécifique. Ce n'est pas un CDI. Il suit des règles propres, fixées par le Code du sport. Le Code du travail s'applique aussi, sauf pour les règles du CDD de droit commun que le Code du sport écarte."
+},
+{
+"t": "table",
+"head": [
+"Sujet",
+"Règle"
+],
+"rows": [
+[
+"Durée minimale",
+"Une saison sportive, fixée à 12 mois. Un contrat signé en cours de saison peut être plus court, dans les conditions fixées par une convention ou un accord collectif national ou, à défaut, par le règlement de la fédération ou de la ligue : s'il court au moins jusqu'à la fin de la saison, ou s'il remplace un sportif ou un entraîneur absent ou dont le contrat est suspendu."
+],
+[
+"Durée maximale",
+"5 ans. Le club peut renouveler le contrat ou en signer un nouveau avec le même joueur."
+],
+[
+"Forme",
+"Un écrit en 3 exemplaires au moins, avec des mentions obligatoires (rémunération, dates, conventions applicables)."
+],
+[
+"Remise du contrat",
+"Au joueur, au plus tard 2 jours ouvrables après l'embauche."
+],
+[
+"Rupture libre",
+"Une clause qui permet au club de rompre le contrat sans motif est nulle."
+]
+]
+},
+{
+"t": "h",
+"x": "Qui est concerné ?"
+},
+{
+"t": "p",
+"x": "Le sportif et l'entraîneur professionnels salariés. Avec l'accord des parties, les règles peuvent aussi viser un sportif salarié de sa fédération comme membre d'une équipe de France, ses entraîneurs, et les arbitres ou juges professionnels salariés de leur fédération."
+},
+{
+"t": "h",
+"x": "Si les règles ne sont pas respectées"
+},
+{
+"t": "p",
+"x": "Un contrat conclu sans respecter les règles de fond et de forme est réputé à durée indéterminée. L'employeur risque aussi une amende de 3 750 €."
+}
+],
+"piege": "Les 5 ans sont la durée maximale d'un contrat, pas de la relation : le club peut renouveler ou signer un nouveau contrat avec le même joueur.",
+"reponse": "Non, sur trois points. Sept saisons dépassent le maximum de 5 ans. La clause de rupture sans motif est nulle. Le contrat doit être remis au joueur sous 2 jours ouvrables, pas dix. Le contrat risque d'être réputé à durée indéterminée.",
+"sources": [
+"C. sport, L. 222-2 (sportif et entraîneur professionnels salariés)",
+"C. sport, L. 222-2-1 (Code du travail applicable, sauf certaines règles du CDD)",
+"C. sport, L. 222-2-2 (équipe de France, arbitres et juges)",
+"C. sport, L. 222-2-3 (CDD spécifique)",
+"C. sport, L. 222-2-4 (durée minimale et maximale)",
+"C. sport, L. 222-2-5 (forme, mentions, transmission sous deux jours ouvrables)",
+"C. sport, L. 222-2-7 (clause de rupture unilatérale pure et simple nulle)",
+"C. sport, L. 222-2-8 (contrat réputé à durée indéterminée, amende)"
+],
+"questions": [
+"an24-q12",
+"an25-q09",
+"m06-q05",
+"m06-q06"
+],
+"titre": "Le CDD spécifique du sportif professionnel",
+"priorite": 3
+},
+"trv-l05": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Sarah engage Idriss, joueur professionnel. Le contrat est signé en un seul exemplaire, remis à Idriss cinq jours ouvrables après son arrivée. Il indique le salaire mensuel, mais pas la prime de match, prévue à part. Le club ajoute que tout va bien, car la ligue n'a pas encore homologué le contrat.",
+"question": "Le contrat respecte-t-il les règles ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le CDD spécifique du sportif ou de l'entraîneur professionnel salarié doit être écrit, avec un contenu obligatoire."
+},
+{
+"t": "h",
+"x": "Forme et contenu"
+},
+{
+"t": "list",
+"items": [
+"Un écrit en trois exemplaires au moins, qui mentionne les règles du Code du sport applicables.",
+"L'identité et l'adresse des parties, la date d'embauche et la durée du contrat.",
+"L'emploi occupé et les activités du salarié.",
+"Le montant de la rémunération et de toutes ses composantes, primes comprises.",
+"Les caisses de retraite complémentaire et de prévoyance, et l'organisme de complémentaire santé.",
+"L'intitulé des conventions ou accords collectifs applicables."
+]
+},
+{
+"t": "p",
+"x": "L'employeur remet le contrat au salarié au plus tard 2 jours ouvrables après l'embauche."
+},
+{
+"t": "h",
+"x": "L'homologation"
+},
+{
+"t": "p",
+"x": "L'homologation est un contrôle du contrat par la fédération ou la ligue professionnelle. Elle n'existe que si le règlement de la fédération ou de la ligue la prévoit. Ce règlement fixe aussi ses conséquences sportives en cas d'absence. Le défaut d'homologation ne peut empêcher le contrat d'entrer en vigueur que dans les conditions fixées par une convention ou un accord collectif national. Ne confonds pas trois choses : la validité du contrat de travail, son homologation et l'enregistrement du joueur pour les compétitions."
+},
+{
+"t": "h",
+"x": "La période d'essai"
+},
+{
+"t": "p",
+"x": "Elle ne se présume pas : elle doit être écrite dans le contrat. Le Code du sport ne fixe pas de durée propre. Les règles du Code du travail sur l'essai d'un CDD paraissent s'appliquer : un jour par semaine, dans la limite de deux semaines pour un contrat de six mois ou moins, et d'un mois au-delà, sauf usages ou accord prévoyant moins."
+}
+],
+"piege": "L'homologation est une procédure sportive : elle ne répare pas un contrat qui ne respecte pas les règles de forme et de contenu du Code du sport.",
+"reponse": "Non. Le contrat doit être établi en trois exemplaires au moins, remis dans les 2 jours ouvrables, et indiquer toutes les composantes de la rémunération, primes comprises. Le défaut d'homologation n'est pas la question : elle ne dépend que du règlement de la fédération ou de la ligue et ne corrige pas ces défauts de forme.",
+"sources": [
+"C. sport, L. 222-2-5 (écrit, trois exemplaires, mentions, remise sous deux jours ouvrables)",
+"C. sport, L. 222-2-6 (homologation), tel que modifié par la loi n° 2026-725 du 3 août 2026, art. 8",
+"C. sport, L. 222-2-1 (articles du Code du travail écartés pour le CDD spécifique)",
+"C. trav., L. 1221-23 (période d'essai expressément stipulée)",
+"C. trav., L. 1242-10 (durée de l'essai d'un CDD)"
+],
+"questions": [
+"m06-q04",
+"trv-l05-q1",
+"trv-l05-q2"
+],
+"titre": "Le contrat sportif : contenu, homologation, essai",
+"priorite": 3
+},
+"trv-l06": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Karim propose un contrat à Nina, éducatrice. Il contient trois clauses : interdiction de travailler pour tout autre club pendant trois ans après son départ, sans aucune compensation financière ; une amende de 50 € à chaque retard ; un salaire fixé à la moitié du minimum de la convention collective.",
+"question": "Ces clauses sont-elles valables ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une clause organise les droits et obligations des parties. Elle doit respecter le Code du travail, la convention collective et les libertés du salarié : une restriction doit être justifiée par la tâche à accomplir et proportionnée au but recherché."
+},
+{
+"t": "table",
+"head": [
+"Clause",
+"Ce qu'elle fait",
+"Conditions"
+],
+"rows": [
+[
+"Mobilité",
+"Permet à l'employeur de changer le lieu de travail dans une zone",
+"Zone définie avec précision, intérêt de l'entreprise, bonne foi"
+],
+[
+"Non-concurrence",
+"Limite l'activité concurrente après la rupture du contrat",
+"Indispensable à l'entreprise, limitée dans le temps et l'espace, avec contrepartie financière"
+],
+[
+"Exclusivité",
+"Interdit une autre activité pendant le contrat",
+"Justifiée par les fonctions, proportionnée"
+],
+[
+"Dédit-formation",
+"Fait rembourser des frais de formation si le salarié part trop tôt",
+"Frais réels, clause signée avant la formation, montant proportionné"
+],
+[
+"Confidentialité",
+"Protège les informations de l'entreprise",
+"Ne peut pas empêcher de signaler des faits illicites"
+]
+]
+},
+{
+"t": "h",
+"x": "Les primes variables"
+},
+{
+"t": "p",
+"x": "Dans le football, une prime peut dépendre des matchs joués, des buts ou du classement. La clause doit dire précisément quand la prime est due, faute de quoi le litige est presque certain. Un critère vague, comme « une bonne saison », crée des litiges."
+},
+{
+"t": "h",
+"x": "Les clauses interdites"
+},
+{
+"t": "p",
+"x": "Une clause ne peut pas supprimer les droits légaux du salarié, comme les congés payés. Elle ne peut pas contourner le salaire minimum, prévoir une amende (les sanctions pécuniaires sont interdites), ni créer une discrimination."
+}
+],
+"piege": "La clause de non-concurrence joue après la fin du contrat et exige une contrepartie financière. La clause d'exclusivité joue pendant le contrat : ne les confonds pas.",
+"reponse": "Non, aucune des trois. La clause de non-concurrence est invalide sans contrepartie financière. L'amende est interdite : elle est réputée non écrite. Le salaire ne peut pas être inférieur au minimum de la convention collective, qui s'applique malgré le contrat.",
+"sources": [
+"C. trav., L. 1121-1 (restrictions aux libertés justifiées et proportionnées)",
+"C. trav., L. 1222-1 (exécution de bonne foi)",
+"C. trav., L. 1132-1 et L. 1132-4 (discrimination, nullité)",
+"C. trav., L. 1331-2 (sanctions pécuniaires interdites)",
+"C. trav., L. 2254-1 (convention collective et contrat de travail)",
+"Jurisprudence de la Cour de cassation (clauses de mobilité, de non-concurrence, d'exclusivité, de dédit-formation)"
+],
+"questions": [
+"trv-l06-q1",
+"trv-l06-q2",
+"trv-l06-q3"
+],
+"titre": "Les clauses du contrat de travail",
+"priorite": 2
+},
+"trv-l07": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Paul paie Inès, éducatrice à temps plein, au SMIC. Pourtant, la convention collective applicable au club fixe un minimum plus élevé pour son groupe de classification. Inès s'en aperçoit en juin 2026 et veut réclamer la différence depuis 2021.",
+"question": "Le club est-il en règle ? Que peut-elle réclamer ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le salaire est la contrepartie du travail. Il comprend le salaire de base, les primes, les majorations et les avantages en nature (un logement ou un véhicule fourni par l'employeur à titre personnel)."
+},
+{
+"t": "h",
+"x": "Les minima"
+},
+{
+"t": "p",
+"x": "Le SMIC est le salaire minimum de croissance, fixé par la loi : aucun salarié ne peut être payé moins. Une convention collective peut fixer des minima plus élevés pour certaines catégories. L'employeur doit alors payer le minimum le plus favorable au salarié parmi ceux qui s'appliquent à lui."
+},
+{
+"t": "table",
+"head": [
+"Terme",
+"Sens"
+],
+"rows": [
+[
+"Salaire brut",
+"Rémunération avant déduction des cotisations salariales"
+],
+[
+"Salaire net",
+"Somme restant après ces cotisations"
+],
+[
+"Bulletin de paie",
+"Document remis à chaque paiement du salaire"
+]
+]
+},
+{
+"t": "h",
+"x": "Les primes"
+},
+{
+"t": "p",
+"x": "Une prime est un élément de salaire. Dans le football, le contrat gagne à préciser ce qui la déclenche (matchs joués, buts, classement), sa date de paiement et son sort en cas de rupture ; pour un joueur professionnel, il doit au moins mentionner les primes dans la rémunération. Une rédaction vague crée des litiges."
+},
+{
+"t": "h",
+"x": "Retenues et réclamations"
+},
+{
+"t": "p",
+"x": "L'employeur ne peut pas retenir de l'argent sur le salaire à titre de punition : les amendes sont interdites. Pour réclamer un salaire impayé, le salarié a trois ans à partir du jour où il a connu ou aurait dû connaître les faits. Il peut demander les sommes dues pour les trois dernières années, ou, si le contrat est rompu, pour les trois années avant la rupture."
+}
+],
+"piege": "Le délai pour réclamer un salaire est de trois ans, et non d'un ou deux ans.",
+"reponse": "Non. Le SMIC est un plancher : le club doit appliquer le minimum de la convention collective s'il est plus favorable. Inès peut réclamer la différence, mais seulement pour les trois dernières années, soit depuis juin 2023, et non depuis 2021.",
+"sources": [
+"C. trav., L. 3231-2 (SMIC)",
+"C. trav., L. 2251-1 et L. 2254-1 (convention collective et contrat de travail)",
+"C. trav., L. 3243-2 (bulletin de paie)",
+"C. trav., L. 1331-2 (amendes interdites)",
+"C. trav., L. 3245-1 (prescription de trois ans de l'action en paiement du salaire)"
+],
+"questions": [
+"an24-q14",
+"trv-l07-q1",
+"trv-l07-q2"
+],
+"titre": "Le salaire : SMIC, minima et primes",
+"priorite": 3
+},
+"trv-l08": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Hugo emploie Amina à temps plein, en CDD de quatre mois. Pendant la semaine d'un tournoi, elle travaille 43 heures et le club ne lui verse rien de plus. À la fin du contrat, il dit qu'elle n'a pas de congés payés, car elle est en CDD.",
+"question": "Le club a-t-il raison ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La durée légale du travail est de 35 heures par semaine à temps complet. C'est le seuil à partir duquel on compte les heures supplémentaires, et non un maximum. Le temps de travail effectif est le temps où le salarié est à la disposition de l'employeur, suit ses directives et ne peut pas vaquer librement à ses occupations."
+},
+{
+"t": "table",
+"head": [
+"Limite",
+"Durée"
+],
+"rows": [
+[
+"Par jour",
+"10 heures"
+],
+[
+"Par semaine",
+"48 heures, et 44 heures en moyenne sur 12 semaines"
+],
+[
+"Repos quotidien",
+"11 heures consécutives"
+],
+[
+"Repos hebdomadaire",
+"24 heures, plus le repos quotidien, soit 35 heures consécutives"
+]
+]
+},
+{
+"t": "h",
+"x": "Les heures supplémentaires"
+},
+{
+"t": "p",
+"x": "Ce sont les heures au-delà de 35 heures. Sans accord collectif, chacune des 8 premières est majorée de 25 %, les suivantes de 50 %. Un accord peut fixer un autre taux, jamais sous 10 %."
+},
+{
+"t": "h",
+"x": "Les congés payés"
+},
+{
+"t": "p",
+"x": "Tout salarié en a, quel que soit son contrat : CDI, CDD, intérim, temps plein ou partiel. Il acquiert 2,5 jours ouvrables par mois de travail effectif, soit 30 jours ouvrables pour une année complète, c'est-à-dire cinq semaines. L'indemnité est le plus favorable entre le dixième de la rémunération brute et le maintien du salaire. Le salarié ne peut pas partir en congé sans l'accord de l'employeur, qui organise les départs."
+},
+{
+"t": "p",
+"x": "Pour un joueur professionnel, le temps de travail ne se limite pas au match : entraînements, déplacements et séances imposées peuvent compter selon les conditions réelles."
+}
+],
+"piege": "Les congés payés se calculent en jours ouvrables, à 2,5 jours par mois de travail effectif : ne les confonds pas avec les jours ouvrés (25 jours pour cinq semaines).",
+"reponse": "Non. Amina a droit à 2,5 jours ouvrables de congés par mois travaillé, soit 10 jours pour quatre mois, ou à une indemnité compensatrice si elle ne peut pas les prendre. Elle a aussi fait 8 heures supplémentaires cette semaine-là (43 moins 35) : à défaut d'accord, elles sont majorées de 25 %.",
+"sources": [
+"C. trav., L. 3121-1 (temps de travail effectif)",
+"C. trav., L. 3121-18, L. 3121-20, L. 3121-22 (durées maximales)",
+"C. trav., L. 3131-1 et L. 3132-2 (repos quotidien et hebdomadaire)",
+"C. trav., L. 3121-27 (durée légale de 35 heures)",
+"C. trav., L. 3121-33 et L. 3121-36 (majoration des heures supplémentaires)",
+"C. trav., L. 3141-1, L. 3141-3 et L. 3141-24 (congés payés et indemnité)",
+"C. trav., L. 3141-15 et L. 3141-16 (fixation des départs en congés)",
+"C. trav., L. 1242-16 (indemnité de congés payés du CDD)"
+],
+"questions": [
+"m06-q08",
+"m06-q09",
+"trv-l08-q1"
+],
+"titre": "Temps de travail et congés payés",
+"priorite": 2
+},
+"trv-l09": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Camille emploie 12 salariés. Le 3 septembre, il apprend qu'un éducateur a falsifié des feuilles de présence. Il décide de lui retirer 100 € sur son salaire, puis, le 5 décembre, de le convoquer à un entretien pour envisager un avertissement.",
+"question": "Le club peut-il agir ainsi ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le pouvoir disciplinaire permet à l'employeur de sanctionner un agissement qu'il juge fautif. Une sanction est toute mesure, autre qu'une observation verbale, prise à la suite de cet agissement. Elle doit être justifiée, proportionnée à la faute, et ne pas viser deux fois les mêmes faits."
+},
+{
+"t": "list",
+"items": [
+"Les sanctions : avertissement, blâme, mise à pied (suspension du contrat et du salaire), rétrogradation, licenciement.",
+"L'amende et toute sanction pécuniaire sont interdites, même si une clause du contrat ou du règlement intérieur les prévoit.",
+"Les poursuites doivent être engagées dans un délai de 2 mois à partir du jour où l'employeur connaît les faits, sauf poursuites pénales dans ce délai."
+]
+},
+{
+"t": "h",
+"x": "La procédure"
+},
+{
+"t": "p",
+"x": "Le salarié est informé par écrit des griefs. Sauf pour un avertissement ou une sanction de même nature sans incidence sur sa présence, sa fonction, sa carrière ou sa rémunération, il est convoqué à un entretien, peut être assisté par une personne de l'entreprise, et donne ses explications. La sanction ne peut venir moins de 2 jours ouvrables ni plus d'un mois après l'entretien. Elle est motivée et notifiée."
+},
+{
+"t": "h",
+"x": "Le règlement intérieur"
+},
+{
+"t": "p",
+"x": "C'est un document écrit qui fixe les règles de santé et de sécurité, et les règles générales de discipline avec l'échelle des sanctions. Il est obligatoire dans les entreprises d'au moins 50 salariés, mais seulement après un délai de douze mois une fois le seuil atteint. En dessous, il reste facultatif. Il est soumis à l'avis du comité social et économique (CSE, l'instance des représentants du personnel), communiqué à l'inspecteur du travail et ne s'applique qu'un mois après sa publicité."
+}
+],
+"piege": "Même un règlement intérieur ne peut pas prévoir d'amende : toute sanction pécuniaire est interdite et réputée non écrite.",
+"reponse": "Non, deux fois. La retenue de 100 € est une sanction pécuniaire, interdite. Le club a connu les faits le 3 septembre : il avait deux mois, jusqu'au 3 novembre, pour engager des poursuites. Une convocation le 5 décembre arrive trop tard, sauf poursuites pénales engagées dans ce délai. Avec 12 salariés, le club n'avait pas non plus l'obligation d'avoir un règlement intérieur.",
+"sources": [
+"C. trav., L. 1331-1 (définition de la sanction)",
+"C. trav., L. 1331-2 (sanctions pécuniaires interdites)",
+"C. trav., L. 1332-1 et L. 1332-2 (information écrite, entretien, délai de la sanction)",
+"C. trav., L. 1332-3 (mise à pied conservatoire)",
+"C. trav., L. 1332-4 (prescription de deux mois)",
+"C. trav., L. 1311-2 (règlement intérieur obligatoire à partir de 50 salariés)",
+"C. trav., L. 1321-1 à L. 1321-4 (contenu et adoption du règlement intérieur)"
+],
+"questions": [
+"m06-q10",
+"m06-q11",
+"m06-q13"
+],
+"titre": "Sanctionner un salarié : discipline et règlement intérieur",
+"priorite": 3
+},
+"trv-l10": {
+"minutes": 5,
+"situation": {
+"texte": "Dans le club de Claire, une salariée de l'accueil reçoit chaque semaine, depuis trois mois, des remarques humiliantes de son responsable et se voit retirer ses missions. Elle tombe malade. Le club, prévenu, ne fait rien et propose de la licencier pour « mauvaise ambiance ».",
+"question": "De quoi s'agit-il, et que doit prouver la salariée ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le Code du travail interdit deux formes de harcèlement."
+},
+{
+"t": "table",
+"head": [
+"Forme",
+"Définition"
+],
+"rows": [
+[
+"Harcèlement moral",
+"Des agissements répétés qui dégradent les conditions de travail et peuvent porter atteinte aux droits, à la dignité, à la santé ou à l'avenir professionnel du salarié."
+],
+[
+"Harcèlement sexuel",
+"Des propos ou comportements à connotation sexuelle ou sexiste répétés, qui portent atteinte à la dignité ou créent une situation intimidante, hostile ou offensante. Une pression grave pour obtenir un acte sexuel est aussi visée, même sans répétition."
+]
+]
+},
+{
+"t": "h",
+"x": "La preuve"
+},
+{
+"t": "p",
+"x": "Le salarié n'a pas à tout prouver. Il présente des éléments de fait qui laissent supposer un harcèlement. L'employeur doit alors prouver que ces agissements n'en sont pas, et que sa décision repose sur des éléments objectifs étrangers à tout harcèlement."
+},
+{
+"t": "h",
+"x": "Les protections"
+},
+{
+"t": "list",
+"items": [
+"Nul ne peut être sanctionné ou licencié pour avoir subi ou refusé de subir un harcèlement, ou pour l'avoir, de bonne foi, relaté ou en avoir témoigné. Une telle rupture du contrat est nulle.",
+"L'employeur doit prendre toutes les mesures nécessaires pour prévenir le harcèlement.",
+"L'auteur du harcèlement est passible d'une sanction disciplinaire."
+]
+},
+{
+"t": "p",
+"x": "Le règlement intérieur doit rappeler les règles sur les harcèlements moral et sexuel."
+}
+],
+"piege": "Le harcèlement moral suppose des agissements répétés : un acte isolé ne suffit pas à le caractériser.",
+"reponse": "Il s'agit d'un possible harcèlement moral : des agissements répétés qui dégradent ses conditions de travail. Elle doit présenter des éléments de fait qui le laissent supposer, par exemple les remarques et le retrait de ses missions. Au club de prouver le contraire. Un licenciement lié à ces faits serait nul, et le club doit prendre toutes les dispositions nécessaires pour prévenir ces agissements.",
+"sources": [
+"C. trav., L. 1152-1 (harcèlement moral)",
+"C. trav., L. 1152-2 et L. 1152-3 (protection, nullité de la rupture)",
+"C. trav., L. 1152-4 et L. 1153-5 (obligation de prévention)",
+"C. trav., L. 1152-5 et L. 1153-6 (sanction disciplinaire de l'auteur)",
+"C. trav., L. 1153-1 (harcèlement sexuel)",
+"C. trav., L. 1154-1 (aménagement de la preuve)",
+"C. trav., L. 1321-2 (rappel dans le règlement intérieur)"
+],
+"questions": [
+"an25-q10",
+"trv-l10-q1",
+"trv-l10-q2"
+],
+"titre": "Le harcèlement au travail",
+"priorite": 2
+},
+"trv-l11": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de basket de Nadia emploie Karim, éducateur à temps plein, qui assure aussi chaque semaine, de manière permanente, des tâches d'un groupe de classification supérieur. Il emploie aussi Léo, sportif salarié à temps plein, payé 20 000 € brut par an en 2026.",
+"question": "Que doit vérifier le club dans la convention collective du sport ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Une convention collective est un accord signé entre syndicats de salariés et organisations d'employeurs. Elle complète le Code du travail pour tout un secteur. La convention collective nationale du sport (CCNS, numéro IDCC 2511) concerne de nombreux clubs, associations et structures sportives, selon son champ d'application."
+},
+{
+"t": "h",
+"x": "Le chapitre 12 : le sport professionnel"
+},
+{
+"t": "p",
+"x": "Il vise les sportifs et entraîneurs professionnels salariés, et doit se lire avec les règles du CDD spécifique du Code du sport. Il ne s'applique pas automatiquement à tous les salariés d'un club : un éducateur ou un salarié administratif n'est pas concerné d'office. En football professionnel, il faut aussi regarder les textes propres à la discipline."
+},
+{
+"t": "h",
+"x": "Deux règles à retenir"
+},
+{
+"t": "list",
+"items": [
+"Salaire minimal du sportif : depuis le 1er janvier 2026, un sportif salarié à temps plein, hors jeunes sportifs en formation, doit gagner au moins 22 289,19 € brut pour une année complète, hors avantage en nature (au prorata des mois écoulés). Ce montant change avec les avenants (modifications de la convention) : il faut vérifier le dernier en vigueur.",
+"Tâches de plusieurs groupes : un salarié qui exerce de manière permanente des tâches de groupes de classification différents passe dans le groupe le plus élevé si ces tâches dépassent 20 % de son temps de travail hebdomadaire."
+]
+}
+],
+"piege": "Le passage au groupe supérieur n'est pas automatique : il faut dépasser 20 % du temps de travail hebdomadaire, et non exercer une seule tâche du groupe supérieur.",
+"reponse": "Karim doit être classé dans le groupe supérieur si ces tâches dépassent 20 % de son temps hebdomadaire. Léo gagne moins que le minimum de 22 289,19 € brut par an applicable depuis le 1er janvier 2026 : le club doit relever son salaire.",
+"sources": [
+"CCNS, art. 9.1.2 (polyvalence, seuil de 20 %)",
+"CCNS, art. 12.6.2.1, tel que remplacé par l'avenant n° 210 du 3 avril 2025 (salaire minimal du sportif)",
+"Avenant n° 210 du 3 avril 2025 relatif aux salaires, art. 2"
+],
+"questions": [
+"an24-q13",
+"an25-q04",
+"trv-l11-q1"
+],
+"titre": "La convention collective du sport",
+"priorite": 3
+},
+"trv-l12": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Léa traverse des difficultés financières. Il annonce à Bruno, joueur sous contrat, que son salaire passe de 3 000 € à 2 000 € brut par mois. Quelques mois plus tard, une société reprend toute l'activité du club, avec ses salariés et ses installations.",
+"question": "Le club peut-il imposer la baisse ? Que deviennent les contrats lors de la reprise ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Il faut distinguer deux cas. La modification du contrat touche un élément essentiel : la rémunération, la qualification, la durée du travail, ou un lieu de travail hors du secteur géographique. L'accord du salarié est nécessaire. Le changement des conditions de travail relève du pouvoir de direction de l'employeur : nouvelle organisation, tâches correspondant à la qualification, lieu dans le même secteur."
+},
+{
+"t": "list",
+"items": [
+"Le refus d'une modification essentielle n'est pas une faute en soi.",
+"L'employeur doit alors renoncer, ou engager une procédure de rupture s'il a un motif légal.",
+"Pour un motif économique, la proposition est faite par lettre recommandée. Le salarié a un mois pour refuser (quinze jours en redressement ou liquidation judiciaire). Sans réponse, il est réputé avoir accepté."
+]
+},
+{
+"t": "h",
+"x": "Le transfert d'entreprise"
+},
+{
+"t": "p",
+"x": "Quand l'employeur change (vente, fusion, succession, mise en société), tous les contrats de travail en cours subsistent avec le nouvel employeur. Ce transfert automatique suppose en pratique que soit repris un ensemble qui garde son identité et dont l'activité continue. Le nouvel employeur reprend les obligations de l'ancien envers les salariés (sauf, notamment, en cas de sauvegarde, de redressement ou de liquidation judiciaire)."
+},
+{
+"t": "h",
+"x": "Ne pas confondre"
+},
+{
+"t": "table",
+"head": [
+"Transfert d'entreprise",
+"Transfert de joueur"
+],
+"rows": [
+[
+"Droit du travail, C. trav., L. 1224-1",
+"Droit du sport et règlements sportifs"
+],
+[
+"Les contrats suivent automatiquement",
+"Changement de club : accord du joueur et mécanismes contractuels et sportifs"
+]
+]
+}
+],
+"piege": "Le transfert d'un joueur d'un club à un autre n'est pas un transfert d'entreprise : l'article L. 1224-1 ne concerne pas ce cas.",
+"reponse": "Non : la rémunération est un élément essentiel du contrat, donc Bruno doit donner son accord. Des difficultés financières ne suffisent pas à l'imposer, et il peut refuser. Pour la reprise, si la société reprend un ensemble qui garde son identité, les contrats en cours subsistent avec elle (L. 1224-1).",
+"sources": [
+"C. trav., L. 1222-6 (modification pour motif économique)",
+"C. trav., L. 1224-1 (maintien des contrats en cas de changement d'employeur)",
+"C. trav., L. 1224-2 (obligations du nouvel employeur)",
+"Jurisprudence de la Cour de cassation (modification du contrat et changement des conditions de travail ; entité économique autonome)"
+],
+"questions": [
+"m06-q07",
+"m06-q12",
+"trv-l12-q1"
+],
+"titre": "Modifier le contrat, transférer l'entreprise",
+"priorite": 2
+},
+"trv-l13": {
+"minutes": 5,
+"situation": {
+"texte": "Le club d'Inès veut licencier Paul, responsable de la billetterie, pour un motif lié à son travail. Il lui remet en main propre, un lundi, une convocation à un entretien prévu le mercredi. Le jeudi, le club lui envoie en recommandé la lettre de licenciement.",
+"question": "La procédure de licenciement est-elle régulière ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le licenciement pour motif personnel (lié au salarié) doit être motivé et justifié par une cause réelle et sérieuse. Le licenciement pour motif économique, lui, ne tient pas à la personne du salarié : il vient par exemple d'une suppression d'emploi ou de difficultés économiques."
+},
+{
+"t": "table",
+"head": [
+"Étape",
+"Règle"
+],
+"rows": [
+[
+"Convocation",
+"Lettre recommandée ou remise en main propre contre décharge, avant toute décision. Elle indique l'objet : un licenciement possible."
+],
+[
+"Entretien préalable",
+"Pas moins de 5 jours ouvrables après la présentation ou la remise de la lettre. Le salarié peut se faire assister. L'employeur donne ses motifs et écoute le salarié."
+],
+[
+"Lettre de licenciement",
+"Recommandée avec avis de réception, avec les motifs. Elle ne peut pas être expédiée moins de 2 jours ouvrables après la date prévue de l'entretien."
+]
+]
+},
+{
+"t": "h",
+"x": "Les conséquences"
+},
+{
+"t": "list",
+"items": [
+"Procédure irrégulière mais cause réelle et sérieuse : le juge accorde au salarié une indemnité d'un mois de salaire au plus.",
+"Sans faute grave, le salarié a droit à un préavis : au minimum un mois entre 6 mois et 2 ans d'ancienneté, deux mois à partir de 2 ans (sauf préavis ou ancienneté plus favorables prévus par la convention, le contrat ou les usages). Il a aussi droit à une indemnité de licenciement dès 8 mois d'ancienneté.",
+"Licenciement économique : le salarié a une priorité de réembauche pendant un an, s'il la demande dans ce délai."
+]
+},
+{
+"t": "p",
+"x": "Pour contester la rupture, le salarié a douze mois à partir de la notification."
+}
+],
+"piege": "Il y a deux délais : 5 jours ouvrables entre la convocation et l'entretien, puis au moins 2 jours ouvrables entre l'entretien et l'envoi de la lettre. Ne les confonds pas.",
+"reponse": "Non. L'entretien a lieu trop tôt : il faut au moins 5 jours ouvrables après la remise de la convocation. La lettre est aussi partie trop vite : elle ne peut pas être expédiée moins de 2 jours ouvrables après la date prévue de l'entretien. Si la cause est réelle et sérieuse, Paul peut obtenir une indemnité d'un mois de salaire au plus.",
+"sources": [
+"C. trav., L. 1232-1 (cause réelle et sérieuse)",
+"C. trav., L. 1232-2 à L. 1232-4 (convocation, entretien préalable, assistance)",
+"C. trav., L. 1232-6 (lettre de licenciement, délai de deux jours ouvrables)",
+"C. trav., L. 1233-3 (motif économique)",
+"C. trav., L. 1233-45 (priorité de réembauche)",
+"C. trav., L. 1234-1 (préavis) et L. 1234-9 (indemnité de licenciement)",
+"C. trav., L. 1235-2 (irrégularité de procédure)",
+"C. trav., L. 1471-1 (prescription de douze mois)"
+],
+"questions": [
+"an23-q05",
+"an25-q11",
+"trv-l13-q1"
+],
+"titre": "Le licenciement",
+"priorite": 3
+},
+"trv-l14": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Rémi n'a plus de nouvelles d'Ahmed, salarié en CDI, depuis deux semaines. Il lui envoie une mise en demeure recommandée de reprendre son poste sous huit jours. Ahmed ne répond pas, et le club déclare qu'il est présumé démissionnaire.",
+"question": "Le club a-t-il respecté la règle ? Et quel délai de rétractation aurait une rupture conventionnelle ?"
+},
+"blocs": [
+{
+"t": "table",
+"head": [
+"Mode de rupture",
+"Points clés"
+],
+"rows": [
+[
+"Démission",
+"Décision du salarié, qui doit être libre et claire. Il respecte un préavis si la loi, la convention ou les usages en prévoient un."
+],
+[
+"Rupture conventionnelle",
+"Rupture d'un CDI décidée d'un commun accord. Elle ne peut être imposée par aucune des parties."
+],
+[
+"Abandon de poste",
+"Le salarié qui abandonne volontairement son poste est présumé démissionnaire, après une mise en demeure restée sans effet."
+]
+]
+},
+{
+"t": "h",
+"x": "La rupture conventionnelle, étape par étape"
+},
+{
+"t": "list",
+"items": [
+"Un ou plusieurs entretiens, où le salarié peut se faire assister.",
+"Une convention signée par les deux parties, avec une indemnité au moins égale à l'indemnité légale de licenciement.",
+"Un délai de rétractation de 15 jours calendaires à partir de la signature.",
+"Une demande d'homologation à l'autorité administrative, qui a 15 jours ouvrables pour répondre. Le silence vaut homologation. Sans homologation, la convention n'est pas valable.",
+"Le contrat ne peut pas prendre fin avant le lendemain de l'homologation."
+]
+},
+{
+"t": "h",
+"x": "L'abandon de poste"
+},
+{
+"t": "p",
+"x": "L'employeur met le salarié en demeure, par lettre recommandée ou remise en main propre contre décharge, de justifier son absence et de reprendre son poste. Il fixe un délai, qui ne peut pas être inférieur à quinze jours à compter de la présentation de la lettre. Si le salarié ne reprend pas, il est présumé démissionnaire à l'expiration de ce délai. Il peut contester devant le conseil de prud'hommes."
+}
+],
+"piege": "Pour l'abandon de poste, le délai est fixé par l'employeur, mais il ne peut pas être inférieur à quinze jours. Ne le confonds pas avec le délai de rétractation de la rupture conventionnelle, qui est de 15 jours calendaires à partir de la signature de la convention, et non de la présentation de la mise en demeure.",
+"reponse": "Non. Le délai laissé à Ahmed doit être d'au moins quinze jours à compter de la présentation de la mise en demeure : huit jours sont trop courts. Pour une rupture conventionnelle, chaque partie aurait 15 jours calendaires à compter de la signature pour se rétracter.",
+"sources": [
+"C. trav., L. 1237-1 (préavis de démission)",
+"C. trav., L. 1237-1-1 (présomption de démission en cas d'abandon de poste)",
+"C. trav., R. 1237-13 (mise en demeure, délai d'au moins quinze jours)",
+"C. trav., L. 1237-11 à L. 1237-14 (rupture conventionnelle)"
+],
+"questions": [
+"m06-q14",
+"an23-q10",
+"trv-l14-q1"
+],
+"titre": "Démission, rupture conventionnelle, abandon de poste",
+"priorite": 3
+},
+"trv-l15": {
+"minutes": 5,
+"situation": {
+"texte": "Le club d'Ilyes a embauché Karim en CDD de douze mois comme éducateur. Au bout de quatre mois, il met fin au contrat parce que Karim ne convient plus, sans faute grave. De son côté, Salomé, en CDD dans le même club, vient de signer un CDI ailleurs et veut partir tout de suite.",
+"question": "Ces deux ruptures avant le terme sont-elles permises ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un CDD ne peut pas être rompu librement avant son terme. Il ne peut l'être que dans les cas prévus par la loi."
+},
+{
+"t": "list",
+"items": [
+"L'accord des deux parties.",
+"La faute grave.",
+"La force majeure (un événement imprévisible et irrésistible qui rend impossible la poursuite du contrat).",
+"L'inaptitude constatée par le médecin du travail.",
+"À l'initiative du salarié, la justification d'un CDI ailleurs."
+]
+},
+{
+"t": "h",
+"x": "Si la rupture n'est pas permise"
+},
+{
+"t": "table",
+"head": [
+"Qui rompt",
+"Conséquence"
+],
+"rows": [
+[
+"L'employeur",
+"Dommages-intérêts au moins égaux aux rémunérations que le salarié aurait touchées jusqu'au terme, sans préjudice de l'indemnité de fin de contrat"
+],
+[
+"Le salarié",
+"Dommages-intérêts pour le préjudice de l'employeur"
+]
+]
+},
+{
+"t": "h",
+"x": "Deux précisions"
+},
+{
+"t": "list",
+"items": [
+"Le salarié qui justifie d'un CDI ailleurs doit respecter un préavis d'un jour par semaine de contrat, au plus deux semaines, sauf accord des parties.",
+"En cas d'inaptitude d'origine professionnelle, le salarié reçoit une indemnité qui ne peut être inférieure au double de l'indemnité légale de licenciement."
+]
+},
+{
+"t": "p",
+"x": "Pour le sportif professionnel, une clause permettant au club de rompre le CDD sans motif est nulle."
+}
+],
+"piege": "En cas d'inaptitude d'origine professionnelle, l'indemnité n'est pas égale à l'indemnité légale de licenciement : elle ne peut pas être inférieure au double.",
+"reponse": "Karim : non. Le club n'a invoqué ni faute grave, ni force majeure, ni inaptitude, et il n'y a pas d'accord. Karim peut obtenir des dommages-intérêts au moins égaux aux salaires des huit mois restants, en plus de l'indemnité de fin de contrat. Salomé : oui, en justifiant de son CDI, avec un préavis de deux semaines au plus.",
+"sources": [
+"C. trav., L. 1243-1 (cas de rupture anticipée)",
+"C. trav., L. 1243-2 (CDI trouvé par le salarié, préavis)",
+"C. trav., L. 1243-3 (rupture par le salarié hors cas permis)",
+"C. trav., L. 1243-4 (rupture par l'employeur hors cas permis)",
+"C. trav., L. 1226-20 (inaptitude d'origine professionnelle, CDD)",
+"C. sport, L. 222-2-1 (articles du Code du travail applicables au sportif)",
+"C. sport, L. 222-2-7 (clause de rupture unilatérale pure et simple nulle)"
+],
+"questions": [
+"an23-q11",
+"trv-l15-q1",
+"trv-l15-q2"
+],
+"titre": "Rompre un CDD avant son terme",
+"priorite": 3
+},
+"trv-l16": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Mia verse à Kévin, joueur salarié, 2 500 € brut par mois, une prime de qualification de 500 € et lui prête un logement. Mia pense que seuls les 2 500 € comptent pour les cotisations sociales, et que Kévin coûte 2 500 € au club.",
+"question": "A-t-elle raison sur ces deux points ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La Sécurité sociale repose sur la solidarité nationale : les cotisations financent les prestations. Le régime général comprend cinq branches."
+},
+{
+"t": "table",
+"head": [
+"Branche",
+"Risque couvert"
+],
+"rows": [
+[
+"Maladie, maternité, invalidité, décès",
+"Soins, maternité, invalidité"
+],
+[
+"Accidents du travail et maladies professionnelles",
+"Risques liés au travail"
+],
+[
+"Vieillesse et veuvage",
+"Retraite"
+],
+[
+"Famille",
+"Prestations familiales"
+],
+[
+"Autonomie",
+"Soutien à l'autonomie"
+]
+]
+},
+{
+"t": "p",
+"x": "L'Urssaf collecte les cotisations. Les caisses (CPAM pour la maladie, CAF pour la famille, Carsat pour la retraite) versent les prestations."
+},
+{
+"t": "h",
+"x": "Salarié ou indépendant"
+},
+{
+"t": "p",
+"x": "Les salariés sont affiliés au régime général, quels que soient le montant de leur rémunération et la forme ou la validité de leur contrat. Un joueur professionnel salarié en relève en principe. Un agent sportif indépendant relève du régime des travailleurs indépendants : il déclare lui-même ses revenus et paie ses cotisations. Facturer ne suffit pas à être indépendant."
+},
+{
+"t": "h",
+"x": "L'assiette des cotisations"
+},
+{
+"t": "p",
+"x": "L'assiette est la base de calcul des cotisations. Elle comprend toutes les sommes et avantages en nature ou en argent versés en contrepartie ou à l'occasion du travail : salaire, primes, avantages en nature. Les remboursements de frais professionnels, dans les limites fixées, n'en font pas partie. Les cotisations salariales sont déduites du brut. Les cotisations patronales sont payées par l'employeur en plus : le brut n'est donc pas le coût total pour le club."
+}
+],
+"piege": "Le salaire brut n'est pas le coût total du salarié : l'employeur paie en plus ses cotisations patronales.",
+"reponse": "Non, sur les deux points. La prime et le logement prêté (un avantage en nature) sont versés en contrepartie du travail : ils entrent dans l'assiette des cotisations, en principe. Et le coût pour le club dépasse le brut, car les cotisations patronales s'y ajoutent.",
+"sources": [
+"C. séc. soc., L. 111-1 (solidarité nationale)",
+"C. séc. soc., L. 200-2 (cinq branches du régime général)",
+"C. séc. soc., L. 213-1 (recouvrement par les Urssaf)",
+"C. séc. soc., L. 311-2 (affiliation des salariés au régime général)",
+"C. séc. soc., L. 611-1 (travailleurs non salariés)",
+"C. séc. soc., L. 242-1 et L. 136-1-1 (assiette des cotisations)"
+],
+"questions": [
+"trv-l16-q1",
+"trv-l16-q2",
+"trv-l16-q3"
+],
+"titre": "La Sécurité sociale et les cotisations",
+"priorite": 2
+},
+"trv-l17": {
+"minutes": 5,
+"situation": {
+"texte": "Nolan, joueur salarié du club de Chloé, se blesse à l'entraînement. Le 10 mars, la CPAM lui notifie par lettre qu'elle refuse de reconnaître l'accident comme un accident du travail. Nolan veut saisir directement le tribunal.",
+"question": "Quelle est la première démarche, et dans quel délai ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un assuré ou un employeur peut contester une décision d'un organisme de Sécurité sociale : refus d'affiliation, de remboursement ou d'indemnités, décision sur les cotisations. Il faut d'abord identifier la nature de la décision, car la voie de recours en dépend."
+},
+{
+"t": "table",
+"head": [
+"Étape",
+"Règle"
+],
+"rows": [
+[
+"1. Recours préalable",
+"Dans la plupart des litiges, il faut d'abord saisir la commission de recours amiable (CRA) de l'organisme, dans les 2 mois de la notification de la décision."
+],
+[
+"2. Réponse de la CRA",
+"Si l'organisme ne répond pas dans les 2 mois, le requérant peut considérer sa demande comme rejetée."
+],
+[
+"3. Recours devant le juge",
+"Le tribunal judiciaire (pôle social) doit être saisi dans les 2 mois de la notification de la décision de la commission de recours amiable, ou de son rejet implicite."
+]
+]
+},
+{
+"t": "h",
+"x": "Deux précautions"
+},
+{
+"t": "list",
+"items": [
+"Ces délais ne sont opposables que s'ils figurent, avec les voies de recours, dans la notification de la décision.",
+"Certaines contestations, notamment médicales, suivent une procédure particulière, tout comme certains litiges de recouvrement des cotisations."
+]
+}
+],
+"piege": "On ne saisit pas directement le tribunal : dans la plupart des litiges, le recours devant la commission de recours amiable est un préalable obligatoire.",
+"reponse": "Nolan doit d'abord saisir la commission de recours amiable de la CPAM, dans les deux mois de la notification, donc avant le 10 mai. Il pourra ensuite saisir le tribunal judiciaire si la commission rejette sa demande ou ne répond pas.",
+"sources": [
+"C. séc. soc., L. 142-1 (contentieux de la sécurité sociale)",
+"C. séc. soc., L. 142-4 (recours préalable)",
+"C. séc. soc., R. 142-1 (commission de recours amiable, délai de deux mois)",
+"C. séc. soc., R. 142-1-A, III (délais de recours préalable et contentieux, mention dans la notification)",
+"C. séc. soc., R. 142-6 (rejet implicite)"
+],
+"questions": [
+"m06-q15",
+"trv-l17-q1",
+"trv-l17-q2"
+],
+"titre": "Contester une décision d'un organisme social",
 "priorite": 1
 }
 }
