@@ -27165,9 +27165,14 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 24
+"v": 25
 },
 {
 "id": "asso-11",
@@ -27379,9 +27384,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 24
+"v": 25
 },
 {
 "id": "agt-03",
@@ -28680,16 +28690,16 @@
 "id": "ctr-31",
 "chapitre": "contrats-mandat",
 "niveau": 2,
-"enonce": "Mandaté pour négocier le contrat d'un joueur, un agent signe seul l'engagement définitif avec le club, sans en avoir reçu le pouvoir. Le joueur :",
+"enonce": "Mandaté pour négocier le contrat d'un joueur, un agent signe seul l'engagement définitif avec le club, sans en avoir reçu le pouvoir, et sans que le joueur ait rien dit ni fait qui puisse faire croire au club à ce pouvoir. Le joueur :",
 "options": [
 "Est engagé, puisque l'agent est son mandataire",
 "N'est tenu que s'il ratifie l'acte, expressément ou tacitement",
-"Est engagé si le club était de bonne foi",
+"Est engagé dès lors que le club était de bonne foi, quel qu'ait été le comportement du joueur",
 "Doit indemniser le club",
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 1,
-"explication": "Le mandataire ne peut pas dépasser son mandat (art. 1989). Ce qu'il fait au-delà n'engage le mandant que s'il le ratifie (art. 1998).",
+"explication": "Le mandataire ne peut pas dépasser son mandat (art. 1989). Ce qu'il fait au-delà n'engage le mandant que s'il le ratifie (art. 1998). L'article 1156 ne fait exception que si le tiers a légitimement cru aux pouvoirs, notamment à cause du comportement du représenté.",
 "article": {
 "texte": "Code civil",
 "ref": "art. 1998",
@@ -28698,7 +28708,15 @@
 "version_note": "Rédaction d'origine du Code civil (1804)"
 },
 "origine": "Rédigée d'après le texte",
-"verifiee_le": "2026-11-03"
+"verifiee_le": "2026-11-03",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "L'énoncé exclut l'exception de l'article 1156 (croyance légitime du tiers)."
+}
+],
+"v": 2
 },
 {
 "id": "ctr-32",
@@ -28924,11 +28942,11 @@
 "Est valable, puisque le joueur est majeur",
 "Est valable, puisque le mandat est exclusif",
 "Dépasse le maximum légal de trois ans",
-"Dépasse le maximum légal de deux ans",
+"Respecte le maximum fixé par la loi, mais dépasse celui du règlement FFF",
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 2,
-"explication": "Le contrat de l'agent ne peut excéder trois ans, et la fédération peut fixer une durée plus courte. Quatre ans, c'est non conforme.",
+"explication": "Le contrat de l'agent ne peut excéder trois ans (L. 222-17), et la fédération peut fixer une durée plus courte : à la FFF, c'est deux ans (règlement, art. 6.2.1). Quatre ans, c'est non conforme dans les deux cas.",
 "article": {
 "texte": "Code du sport",
 "ref": "L. 222-17, I, 2°",
@@ -28937,7 +28955,15 @@
 "modifie_par": "loi n° 2026-725 du 3 août 2026"
 },
 "origine": "Module 02, cas pratique transversal",
-"verifiee_le": "2026-11-03"
+"verifiee_le": "2026-11-03",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "Une proposition est reformulée, et l'explication cite la durée de deux ans fixée par la FFF."
+}
+],
+"v": 2
 },
 {
 "id": "ctr-42",
@@ -28995,12 +29021,12 @@
 "options": [
 "Est valable, la transmission étant facultative",
 "Est valable, le joueur étant majeur",
-"Est contraire à la loi : le contrat et ses avenants sont communiqués dans le mois de leur entrée en vigueur, sinon le contrat est réputé nul",
+"Est contraire à la loi : le contrat et ses avenants sont communiqués dans le mois de leur entrée en vigueur, sinon la convention est réputée nulle et non écrite",
 "Oblige seulement l'agent à transmettre dans l'année",
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 2,
-"explication": "La communication à la fédération est obligatoire, dans le mois qui suit l'entrée en vigueur. Un contrat non communiqué est réputé nul et non écrit (L. 222-17).",
+"explication": "La communication à la fédération est obligatoire, dans le mois qui suit l'entrée en vigueur. Un contrat non communiqué est réputé nul et non écrit (L. 222-17). Le règlement FFF compte ce mois depuis la signature (art. 6.2.1 et 6.3.1).",
 "article": {
 "texte": "Code du sport",
 "ref": "L. 222-17, I, 5° et dernier alinéa",
@@ -29009,7 +29035,15 @@
 "modifie_par": "loi n° 2026-725 du 3 août 2026"
 },
 "origine": "Module 02, cas pratique transversal",
-"verifiee_le": "2026-11-03"
+"verifiee_le": "2026-11-03",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "La sanction est citée exactement (convention réputée nulle et non écrite)."
+}
+],
+"v": 2
 },
 {
 "id": "ctr-45",
@@ -29024,7 +29058,7 @@
 "Aucune réponse ci-dessus n'est correcte"
 ],
 "bonne": 2,
-"explication": "Les engagements perpétuels sont prohibés (art. 1210). De plus, le mandat d'agent sportif ne peut excéder trois ans (L. 222-17).",
+"explication": "Les engagements perpétuels sont prohibés (art. 1210). De plus, le mandat d'agent sportif ne peut excéder trois ans (L. 222-17), et deux ans à la FFF (règlement, art. 6.2.1).",
 "article": {
 "texte": "Code civil",
 "ref": "art. 1210",
@@ -29033,7 +29067,15 @@
 "modifie_par": "Ordonnance n° 2016-131 du 10 février 2016"
 },
 "origine": "Module 02, cas pratique transversal",
-"verifiee_le": "2026-11-03"
+"verifiee_le": "2026-11-03",
+"maj": [
+{
+"d": "2026-11-19",
+"t": "precision",
+"x": "L'explication cite la durée de deux ans fixée par la FFF."
+}
+],
+"v": 2
 },
 {
 "id": "agt-30",
@@ -29196,9 +29238,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 24
+"v": 25
 },
 {
 "id": "agt-32",
@@ -31986,6 +32033,36 @@
 "bonne": 1,
 "explication": "La commission des agents sportifs de la fédération prononce l'avertissement, la sanction pécuniaire, la suspension ou le retrait. Le tribunal administratif n'intervient qu'en cas de recours, après la conciliation du CNOSF (C. sport, L. 222-19, R. 222-1, R. 222-38 et R. 222-41).",
 "origine": "Leçon agt-l15"
+},
+{
+"id": "ctr-l02-q1",
+"chapitre": "contrats-bases",
+"niveau": 2,
+"enonce": "Selon l'article 1102 du Code civil, la liberté contractuelle comprend :",
+"options": [
+"La liberté de contracter ou non, de choisir son cocontractant et de fixer le contenu et la forme du contrat, dans les limites de la loi",
+"Seulement la liberté de choisir son cocontractant",
+"La liberté d'écarter toute règle légale, y compris d'ordre public, si les parties sont d'accord",
+"La liberté de modifier seul un contrat déjà signé"
+],
+"bonne": 0,
+"explication": "Chacun est libre de contracter ou non, de choisir son cocontractant et de déterminer le contenu et la forme du contrat, mais dans les limites fixées par la loi et sans déroger à l'ordre public (C. civ., art. 1102).",
+"origine": "Leçon ctr-l02"
+},
+{
+"id": "ctr-l05-q1",
+"chapitre": "contrats-bases",
+"niveau": 2,
+"enonce": "Selon l'article 1146 du Code civil, sont incapables de contracter, dans la mesure définie par la loi :",
+"options": [
+"Les mineurs non émancipés et les majeurs protégés",
+"Tous les joueurs de moins de 21 ans",
+"Les salariés d'un club",
+"Les personnes qui n'ont jamais signé de contrat"
+],
+"bonne": 0,
+"explication": "Les mineurs non émancipés et les majeurs protégés sont incapables de contracter dans la mesure définie par la loi (C. civ., art. 1146). L'incapacité est une cause de nullité relative (art. 1147).",
+"origine": "Leçon ctr-l05"
 },
 {
 "id": "soc-01-q1",
@@ -36947,6 +37024,15 @@
 "precisions": []
 },
 {
+"id": "n-lecons-m02-2026-11-19",
+"d": "2026-11-19",
+"genre": "appli",
+"titre": "Le module 02, Droit des contrats, passe aux leçons",
+"texte": "16 leçons de 5 minutes, du contrat en général au mandat de l'agent sportif. Chaque leçon part du Code civil, puis montre la règle spéciale de l'agent, qui l'emporte : écrit obligatoire, durée limitée, rémunération plafonnée, transmission à la fédération.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
@@ -36976,6 +37062,26 @@
 "g": "q",
 "id": "an25-q08",
 "x": "L'explication cite le Code de la sécurité sociale pour la CSG et la CRDS."
+},
+{
+"g": "q",
+"id": "ctr-31",
+"x": "L'énoncé exclut l'exception de l'article 1156 (croyance légitime du tiers)."
+},
+{
+"g": "q",
+"id": "ctr-41",
+"x": "Une proposition est reformulée, et l'explication cite la durée de deux ans fixée par la FFF."
+},
+{
+"g": "q",
+"id": "ctr-44",
+"x": "La sanction est citée exactement (convention réputée nulle et non écrite)."
+},
+{
+"g": "q",
+"id": "ctr-45",
+"x": "L'explication cite la durée de deux ans fixée par la FFF."
 }
 ]
 },
@@ -38373,6 +38479,1177 @@
 ],
 "titre": "Blanchiment : contrôles et sanctions",
 "priorite": 1
+}
+}
+},
+{
+"domaine": "contrats",
+"titre": "Module 02 · Droit des contrats",
+"parties": [
+{
+"titre": "Le contrat et sa formation",
+"lecons": [
+{
+"id": "ctr-l01",
+"titre": "Qu'est-ce qu'un contrat ?",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "ctr-l02",
+"titre": "La liberté contractuelle et ses limites",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "ctr-l03",
+"titre": "Force obligatoire, bonne foi et effet relatif",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ctr-l04",
+"titre": "Modifier le contrat, l'imprévision",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "ctr-l05",
+"titre": "Les conditions de validité",
+"priorite": 3,
+"dispo": true
+}
+]
+},
+{
+"titre": "Les vices du consentement",
+"lecons": [
+{
+"id": "ctr-l06",
+"titre": "Erreur, dol et violence",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ctr-l07",
+"titre": "La nullité et son délai",
+"priorite": 3,
+"dispo": true
+}
+]
+},
+{
+"titre": "Inexécution et fin du contrat",
+"lecons": [
+{
+"id": "ctr-l08",
+"titre": "Les sanctions de l'inexécution",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ctr-l09",
+"titre": "La résolution et la clause pénale",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ctr-l10",
+"titre": "Dommages et intérêts, fin du contrat",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "Le mandat",
+"lecons": [
+{
+"id": "ctr-l11",
+"titre": "Le mandat et les pouvoirs du mandataire",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ctr-l12",
+"titre": "Les obligations du mandataire",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ctr-l13",
+"titre": "Les obligations du mandant",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "ctr-l14",
+"titre": "La fin du mandat",
+"priorite": 3,
+"dispo": true
+}
+]
+},
+{
+"titre": "Contrats voisins et mandat de l'agent",
+"lecons": [
+{
+"id": "ctr-l15",
+"titre": "Mandat, commission, courtage, entreprise",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ctr-l16",
+"titre": "Cas pratique : corriger le mandat d'un agent",
+"priorite": 3,
+"dispo": true
+}
+]
+}
+],
+"contenu": {
+"ctr-l01": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Hugo s'accorde au téléphone avec un électricien : il refera l'éclairage du terrain pour 800 euros, payés à la fin des travaux. Rien n'est signé. Le chantier terminé, le club refuse de payer : « Sans papier, il n'y a pas de contrat. »",
+"question": "Le club a-t-il raison ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un contrat est un accord de volontés entre deux personnes ou plus. Il a un but : créer, modifier, transmettre ou mettre fin à des obligations, c'est-à-dire des devoirs que l'on doit respecter, comme payer ou livrer."
+},
+{
+"t": "h",
+"x": "Un écrit n'est pas nécessaire"
+},
+{
+"t": "p",
+"x": "En principe, un contrat se forme par le seul accord des parties : on dit qu'il est consensuel. Un écrit n'est exigé que si la loi l'impose, comme pour le contrat de l'agent sportif. Le reste du temps, l'écrit sert surtout à prouver ce qui a été promis."
+},
+{
+"t": "h",
+"x": "Les grandes familles de contrats"
+},
+{
+"t": "table",
+"head": [
+"Famille",
+"Sens",
+"Exemple"
+],
+"rows": [
+[
+"Synallagmatique",
+"Chacun s'engage envers l'autre",
+"Le club paie, l'électricien travaille"
+],
+[
+"Unilatéral",
+"Une seule partie s'engage",
+"Un mécène promet 2 000 euros au club"
+],
+[
+"Onéreux ou gratuit",
+"Avec ou sans contrepartie",
+"Un sponsor paie, le club affiche son logo"
+],
+[
+"Instantané ou successif",
+"Une seule prestation, ou des prestations étalées",
+"Un contrat d'agent de deux ans"
+]
+]
+},
+{
+"t": "h",
+"x": "Le nom du contrat ne compte pas"
+},
+{
+"t": "p",
+"x": "Les règles générales du Code civil valent pour tous les contrats, qu'ils aient ou non un nom connu. Quand une règle particulière existe, comme celles du Code du sport pour l'agent, elle l'emporte. Ce qui compte, c'est ce que font vraiment les parties. L'agent sportif est défini par sa mission : mettre en relation, contre rémunération, deux parties intéressées (par exemple un joueur et un club). Intituler son contrat « conseil » ou « courtage » ne le fait pas sortir de la réglementation."
+}
+],
+"piege": "Contrat ne veut pas dire document signé : sans écrit, un accord de volontés reste un contrat, sauf quand la loi exige un écrit, comme pour l'agent sportif.",
+"reponse": "Non. Un contrat est un accord de volontés : le club et l'électricien se sont mis d'accord sur les travaux et le prix, et rien dans la situation n'impose un écrit, donc le club doit payer les 800 euros. L'écrit aurait seulement servi de preuve.",
+"sources": [
+"C. civ., art. 1101 (définition du contrat)",
+"C. civ., art. 1105 (contrats nommés ou non, règles particulières)",
+"C. civ., art. 1106, 1107 et 1111-1 (familles de contrats)",
+"C. civ., art. 1172 et 1173 (contrat consensuel, écrit et preuve)",
+"C. sport, L. 222-7 (définition de l'agent sportif)",
+"C. sport, L. 222-17 (contrat écrit de l'agent)"
+],
+"questions": [
+"ctr-01",
+"ctr-09",
+"ctr-40"
+],
+"titre": "Qu'est-ce qu'un contrat ?",
+"priorite": 2
+},
+"ctr-l02": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Nadia refuse de travailler avec un agent sportif précis et choisit un autre agent, sans donner de raison. Dans le contrat signé, le club et le nouvel agent écrivent que l'agent touchera 14 % du contrat de travail du joueur, « taux librement accepté ».",
+"question": "Le club est-il libre de son choix, et la clause de 14 % est-elle valable ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La liberté contractuelle est le principe de départ. Chacun est libre de signer ou non, de choisir son cocontractant (la personne avec qui il contracte), et de fixer le contenu et la forme du contrat."
+},
+{
+"t": "h",
+"x": "Les limites"
+},
+{
+"t": "list",
+"items": [
+"La loi : la liberté s'exerce dans les limites qu'elle fixe.",
+"L'ordre public : ce sont les règles essentielles, qui protègent l'intérêt général. On ne peut pas y déroger, même d'un commun accord, même par écrit.",
+"Un contrat ne peut pas non plus violer l'ordre public par son but, que toutes les parties le connaissent ou non."
+]
+},
+{
+"t": "h",
+"x": "Droit commun et règles spéciales"
+},
+{
+"t": "p",
+"x": "Les règles générales du Code civil s'appliquent à tous les contrats. Mais les règles particulières à un contrat l'emportent. Pour l'agent sportif, le Code du sport fixe des règles impératives, c'est-à-dire auxquelles on ne peut pas déroger : contrat écrit, durée de trois ans au plus (deux ans à la FFF), rémunération de 10 % au plus du contrat conclu, communication à la fédération."
+},
+{
+"t": "p",
+"x": "Toute convention contraire à ces règles, ou non communiquée à la fédération, est réputée nulle et non écrite : on fait comme si elle n'avait jamais été écrite."
+}
+],
+"piege": "L'accord des deux parties, même écrit et signé, ne rend jamais valable une clause contraire à une règle d'ordre public.",
+"reponse": "Oui pour le choix : le club est libre de choisir son cocontractant. Non pour la clause : 14 % dépasse le plafond de 10 %, qui est une règle impérative. Que les deux parties soient d'accord n'y change rien : la convention contraire est réputée nulle et non écrite.",
+"sources": [
+"C. civ., art. 1102 (liberté contractuelle, ordre public)",
+"C. civ., art. 1105 (règles particulières)",
+"C. civ., art. 1162 (ordre public)",
+"C. sport, L. 222-17 (plafond de 10 %, convention contraire réputée nulle et non écrite)",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.1 et 6.2.2"
+],
+"questions": [
+"ctr-02",
+"ctr-06",
+"ctr-l02-q1"
+],
+"titre": "La liberté contractuelle et ses limites",
+"priorite": 2
+},
+"ctr-l03": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Théo a signé avec Yanis un contrat qui prévoit 500 euros de prime par victoire. Après quelques matchs, le président trouve la prime trop chère et ne veut plus la verser. Le frère de Yanis, qui n'a rien signé, réclame lui aussi la prime au club.",
+"question": "Le club peut-il refuser de payer, et le frère peut-il l'exiger ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Trois principes encadrent les effets d'un contrat."
+},
+{
+"t": "table",
+"head": [
+"Principe",
+"Ce qu'il veut dire"
+],
+"rows": [
+[
+"Force obligatoire",
+"Un contrat légalement formé tient lieu de loi à ceux qui l'ont fait. Chacun doit tenir sa promesse, même si le contrat devient moins avantageux."
+],
+[
+"Bonne foi",
+"Les parties négocient, signent et exécutent le contrat loyalement. Cette règle est d'ordre public : aucune clause ne peut l'écarter."
+],
+[
+"Effet relatif",
+"Le contrat ne crée d'obligations qu'entre les parties. Un tiers, c'est-à-dire quelqu'un qui n'a pas signé, ne peut ni en demander l'exécution ni être forcé de l'exécuter."
+]
+]
+},
+{
+"t": "h",
+"x": "Deux précisions"
+},
+{
+"t": "list",
+"items": [
+"Bonne foi et information : une partie qui connaît une information déterminante pour l'autre doit la lui donner, si l'autre l'ignore légitimement. Cela ne vaut pas pour son estimation de la valeur de la prestation.",
+"Un tiers n'est pas lié, mais il doit respecter la situation créée par le contrat : on peut le lui opposer, c'est-à-dire s'en prévaloir contre lui."
+]
+},
+{
+"t": "p",
+"x": "Exemple pour l'agent : le contrat entre un agent et un joueur n'oblige pas le club, qui n'a pas signé. Le club n'a donc pas à payer l'agent du joueur, sauf s'il a signé une convention tripartite avec lui et le joueur."
+}
+],
+"piege": "L'effet relatif ne veut pas dire que les tiers peuvent ignorer le contrat : ils ne sont pas liés par lui, mais ils doivent respecter la situation qu'il crée.",
+"reponse": "Non pour le club : le contrat tient lieu de loi à ceux qui l'ont signé, et le club doit verser la prime même si elle lui paraît trop chère. Non pour le frère : il n'est pas partie au contrat, qui ne crée d'obligations qu'entre le club et Yanis.",
+"sources": [
+"C. civ., art. 1103 (force obligatoire)",
+"C. civ., art. 1104 (bonne foi, ordre public)",
+"C. civ., art. 1112-1 (devoir d'information)",
+"C. civ., art. 1199 et 1200 (effet relatif, opposabilité aux tiers)",
+"C. sport, L. 222-17, II (convention tripartite)"
+],
+"questions": [
+"ctr-03",
+"ctr-07",
+"ctr-47"
+],
+"titre": "Force obligatoire, bonne foi et effet relatif",
+"priorite": 3
+},
+"ctr-l04": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Sofiane a signé avec une société de transport un contrat pour les déplacements de l'équipe. Six mois plus tard, le prix du carburant triple à la suite d'une crise que personne n'avait prévue, et la société perd de l'argent sur chaque trajet. Elle annonce qu'elle arrête les trajets tant que le club n'accepte pas un prix doublé.",
+"question": "La société a-t-elle le droit d'arrêter les trajets ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un contrat ne change que par le consentement mutuel des parties, ou pour une cause que la loi autorise. Un club ne peut donc pas changer seul le prix, la durée ou les obligations d'un contrat signé. Un avenant est le document qui modifie un contrat déjà signé."
+},
+{
+"t": "h",
+"x": "L'imprévision"
+},
+{
+"t": "p",
+"x": "Parfois, un événement imprévisible rend le contrat très coûteux pour une partie. Elle peut alors demander une renégociation si trois conditions sont réunies :"
+},
+{
+"t": "list",
+"items": [
+"le changement de circonstances était imprévisible à la signature ;",
+"l'exécution devient excessivement onéreuse (très coûteuse) ;",
+"cette partie n'avait pas accepté d'en assumer le risque."
+]
+},
+{
+"t": "h",
+"x": "Les étapes"
+},
+{
+"t": "list",
+"items": [
+"Elle demande la renégociation à son cocontractant et continue d'exécuter ses obligations pendant ce temps.",
+"En cas de refus ou d'échec, les parties peuvent convenir de mettre fin au contrat, ou demander ensemble au juge de l'adapter.",
+"À défaut d'accord dans un délai raisonnable, le juge peut, à la demande d'une partie, réviser le contrat ou y mettre fin."
+]
+},
+{
+"t": "p",
+"x": "Pour l'agent sportif, tout avenant est à communiquer à la fédération dans le mois qui suit son entrée en vigueur (le règlement FFF compte ce mois depuis la signature : le plus sûr est de l'envoyer dès la signature)."
+}
+],
+"piege": "L'imprévision ne permet ni de suspendre ses obligations ni de relever le prix de sa propre autorité : on renégocie en continuant d'exécuter.",
+"reponse": "Non. La société peut demander une renégociation (changement imprévisible, exécution très coûteuse, à condition qu'elle n'ait pas accepté d'en assumer le risque), mais elle doit continuer d'assurer les trajets pendant ce temps. En cas d'échec, il faudra un accord des parties ou une décision du juge.",
+"sources": [
+"C. civ., art. 1193 (modification du contrat)",
+"C. civ., art. 1195 (imprévision)",
+"C. sport, L. 222-17, I, 5° (communication de tout avenant à la fédération)"
+],
+"questions": [
+"ctr-05",
+"ctr-10",
+"ctr-08"
+],
+"titre": "Modifier le contrat, l'imprévision",
+"priorite": 2
+},
+"ctr-l05": {
+"minutes": 5,
+"situation": {
+"texte": "Axel, 16 ans, non émancipé, signe seul un contrat avec un agent sportif, à l'insu de ses parents. L'agent doit lui trouver un club et touchera 8 % du contrat de travail qu'Axel signera.",
+"question": "Ce contrat est-il valable ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'article 1128 pose trois conditions, qu'il faut réunir toutes les trois."
+},
+{
+"t": "table",
+"head": [
+"Condition",
+"Ce qu'elle veut dire"
+],
+"rows": [
+[
+"Consentement",
+"Chaque partie accepte librement, en connaissance de cause, et il faut être sain d'esprit. Le consentement ne doit pas être vicié par une erreur, un dol ou une violence (leçon suivante)."
+],
+[
+"Capacité",
+"Il faut avoir le droit de contracter. Les mineurs non émancipés et les majeurs protégés sont incapables, dans la mesure fixée par la loi. Ils peuvent seuls faire les actes courants, à des conditions normales."
+],
+[
+"Contenu licite et certain",
+"Le contrat ne viole pas la loi ni l'ordre public. Ce qui est promis est possible, et déterminé ou déterminable, c'est-à-dire que l'on peut le déduire du contrat."
+]
+]
+},
+{
+"t": "p",
+"x": "L'écrit n'est pas une condition de validité en droit commun. La loi ne l'exige que pour certains contrats, comme celui de l'agent sportif."
+},
+{
+"t": "h",
+"x": "Si une condition manque"
+},
+{
+"t": "p",
+"x": "Le contrat est nul : le juge peut l'annuler, et il est alors censé n'avoir jamais existé. L'incapacité donne lieu à une nullité relative, que seule la personne protégée peut demander."
+},
+{
+"t": "p",
+"x": "Pour un joueur mineur, le règlement FFF exige aussi la signature de ses représentants légaux sur le contrat d'agent. Et la loi interdit toute rémunération de l'agent pour un contrat concernant un mineur."
+}
+],
+"piege": "L'écrit ne fait pas partie des trois conditions de validité du droit commun. Mais pour l'agent sportif, la loi l'exige avant toute mise en rapport.",
+"reponse": "Non, pas valablement. Axel est mineur non émancipé, donc incapable de contracter seul : ses représentants légaux devaient signer. De plus, la clause de 8 % est illicite, car aucune rémunération ne peut être versée à l'agent pour un contrat concernant un mineur : le contrat est annulable (nullité relative, que seul Axel ou son représentant peut demander).",
+"sources": [
+"C. civ., art. 1128 (conditions de validité)",
+"C. civ., art. 1129 (sain d'esprit)",
+"C. civ., art. 1146 à 1149 (incapacité, actes courants, nullité relative)",
+"C. civ., art. 1163 (objet de l'obligation)",
+"C. civ., art. 1178 (nullité)",
+"C. sport, L. 222-5 (aucune rémunération pour un mineur)",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.3"
+],
+"questions": [
+"ctr-04",
+"ctr-11",
+"ctr-l05-q1"
+],
+"titre": "Les conditions de validité",
+"priorite": 3
+},
+"ctr-l06": {
+"minutes": 5,
+"situation": {
+"texte": "Clément signe un contrat avec un agent sportif. L'agent savait qu'une sanction de la fédération lui interdisait d'exercer pendant un an. Il n'en a rien dit, en sachant que Clément n'aurait pas signé s'il l'avait su.",
+"question": "Quel vice du consentement caractérise le comportement de l'agent ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le consentement est vicié quand une partie a signé à cause d'une erreur, d'un dol ou d'une violence. Le vice doit être déterminant : sans lui, la partie n'aurait pas contracté, ou à des conditions très différentes."
+},
+{
+"t": "table",
+"head": [
+"Vice",
+"Définition",
+"Exemple"
+],
+"rows": [
+[
+"Erreur",
+"Se tromper sur les qualités essentielles de la prestation ou du cocontractant, si l'erreur n'est pas inexcusable. Se tromper sur la seule valeur n'annule pas le contrat.",
+"Un club engage un entraîneur qu'il croit titulaire du diplôme exigé par le contrat : il ne l'a pas."
+],
+[
+"Dol",
+"Obtenir le consentement par des manœuvres ou des mensonges, ou cacher volontairement une information que l'on sait déterminante. Taire son estimation de la valeur n'est pas un dol.",
+"Un agent invente des offres de clubs pour faire signer un joueur."
+],
+[
+"Violence",
+"Signer sous la crainte d'un mal considérable pour sa personne, sa fortune ou ses proches. Abuser de la dépendance de l'autre pour obtenir un avantage manifestement excessif en est aussi une.",
+"Un agent exploite la dépendance d'un jeune joueur isolé pour lui imposer des conditions manifestement excessives."
+]
+]
+},
+{
+"t": "p",
+"x": "Menacer d'agir en justice n'est pas une violence, sauf si la menace sert à obtenir un avantage manifestement excessif. Le dol peut aussi venir du représentant de l'autre partie ou d'un tiers de connivence."
+},
+{
+"t": "p",
+"x": "Ces trois vices entraînent une nullité relative du contrat, que la leçon suivante détaille."
+}
+],
+"piege": "Mal évaluer la valeur d'une prestation (signer trop bas ou trop cher) n'est pas une erreur qui annule le contrat. Taire sa propre estimation de la valeur n'est pas un dol non plus.",
+"reponse": "Le dol. En cachant volontairement une information qu'il savait déterminante pour Clément, l'agent a obtenu un consentement vicié. Clément peut demander la nullité du contrat.",
+"sources": [
+"C. civ., art. 1130 (vices du consentement, caractère déterminant)",
+"C. civ., art. 1132, 1133 et 1136 (erreur, erreur sur la valeur)",
+"C. civ., art. 1137 et 1138 (dol)",
+"C. civ., art. 1140 à 1143 (violence, abus de dépendance)",
+"C. civ., art. 1131 (nullité relative)"
+],
+"questions": [
+"ctr-13",
+"ctr-15",
+"ctr-16",
+"ctr-17"
+],
+"titre": "Erreur, dol et violence",
+"priorite": 3
+},
+"ctr-l07": {
+"minutes": 5,
+"situation": {
+"texte": "Romain signe en mars 2025 un contrat avec un agent qui lui a menti sur ses références ; sans ce mensonge, Romain n'aurait pas signé. Il découvre le mensonge le 10 septembre 2026. Il veut faire annuler le contrat.",
+"question": "Romain peut-il encore agir, et jusqu'à quand ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un contrat qui ne remplit pas ses conditions de validité est nul. Il existe deux sortes de nullité."
+},
+{
+"t": "table",
+"head": [
+"Nullité",
+"Règle violée",
+"Qui agit, et confirmation ?"
+],
+"rows": [
+[
+"Absolue",
+"Protège l'intérêt général",
+"Toute personne intéressée et le ministère public. Pas de confirmation possible."
+],
+[
+"Relative",
+"Protège un intérêt privé",
+"Seule la partie protégée. Confirmation possible."
+]
+]
+},
+{
+"t": "p",
+"x": "Les vices du consentement et l'incapacité donnent lieu à une nullité relative."
+},
+{
+"t": "h",
+"x": "Les effets"
+},
+{
+"t": "p",
+"x": "Le juge prononce la nullité, sauf si les parties la constatent d'un commun accord. Le contrat annulé est censé n'avoir jamais existé : les prestations déjà exécutées sont restituées."
+},
+{
+"t": "h",
+"x": "Le délai"
+},
+{
+"t": "p",
+"x": "L'action se prescrit par cinq ans : passé ce délai, on ne peut plus agir. Pour l'erreur et le dol, le délai part du jour où ils ont été découverts. Pour la violence, il part du jour où elle a cessé."
+},
+{
+"t": "h",
+"x": "La confirmation"
+},
+{
+"t": "p",
+"x": "La partie qui peut demander la nullité relative peut y renoncer : c'est la confirmation. Exécuter volontairement le contrat en connaissant la cause de nullité vaut confirmation."
+},
+{
+"t": "p",
+"x": "À ne pas confondre : un contrat d'agent contraire à la loi, ou non communiqué à la fédération, est « réputé nul et non écrit ». C'est une sanction spéciale du Code du sport."
+}
+],
+"piege": "Pour l'erreur et le dol, le délai de cinq ans ne part pas de la signature, mais du jour où le vice est découvert (pour la violence : du jour où elle cesse).",
+"reponse": "Oui. Le mensonge est un dol, qui donne lieu à une nullité relative que Romain peut demander. Le délai de cinq ans part de la découverte, le 10 septembre 2026 : il peut agir jusqu'en septembre 2031, à condition de ne pas exécuter volontairement le contrat entre-temps, ce qui vaudrait confirmation.",
+"sources": [
+"C. civ., art. 1131 (vices du consentement, nullité relative)",
+"C. civ., art. 1144 (point de départ du délai)",
+"C. civ., art. 1178 à 1181 (nullité, absolue ou relative)",
+"C. civ., art. 1182 (confirmation)",
+"C. civ., art. 2224 (prescription de cinq ans)",
+"C. sport, L. 222-17, dernier alinéa (convention contraire ou non communiquée réputée nulle et non écrite)"
+],
+"questions": [
+"ctr-12",
+"ctr-14",
+"an23-q07"
+],
+"titre": "La nullité et son délai",
+"priorite": 3
+},
+"ctr-l08": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Bastien a commandé 20 survêtements à une société, payables à la livraison complète. À la date prévue, il n'en reçoit que 12, et la société ne donne plus de nouvelles.",
+"question": "Que peut faire le club ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Il y a inexécution quand une partie ne fait pas ce qu'elle a promis : en tout, en partie ou en retard. Celui à qui l'on doit est le créancier, celui qui doit est le débiteur. Le créancier a cinq remèdes."
+},
+{
+"t": "list",
+"items": [
+"Refuser ou suspendre sa propre obligation (exception d'inexécution) : possible si l'autre n'exécute pas la sienne et si c'est suffisamment grave. On peut aussi suspendre s'il est manifeste que l'autre ne s'exécutera pas à l'échéance et que les conséquences sont assez graves pour soi, en le notifiant sans tarder.",
+"Exiger l'exécution en nature, après mise en demeure, sauf impossibilité ou coût manifestement disproportionné.",
+"Réduire le prix, en cas d'exécution imparfaite : après mise en demeure, si le prix n'est pas déjà payé, le créancier notifie une réduction proportionnelle.",
+"Provoquer la résolution : mettre fin au contrat (leçon suivante).",
+"Demander réparation du préjudice : dommages et intérêts (leçon 10)."
+]
+},
+{
+"t": "p",
+"x": "La mise en demeure est une demande formelle faite au débiteur de s'exécuter dans un délai raisonnable. Elle précède l'exécution forcée, la réduction du prix, la résolution par notification (sauf urgence) et, en principe, les dommages et intérêts."
+},
+{
+"t": "p",
+"x": "Les sanctions compatibles se cumulent, et des dommages et intérêts peuvent toujours s'y ajouter. Prolonger le contrat n'est pas l'une des sanctions."
+},
+{
+"t": "p",
+"x": "La force majeure est un événement qui échappe au contrôle du débiteur, imprévisible et inévitable. Si l'empêchement est temporaire, l'exécution est suspendue, sauf si le retard justifie la résolution. S'il est définitif, le contrat est résolu de plein droit."
+}
+],
+"piege": "Le Code civil ne prévoit que cinq sanctions, et prolonger le contrat n'en fait pas partie. Suspendre ses obligations suppose une inexécution suffisamment grave.",
+"reponse": "Après mise en demeure, le club peut exiger les 8 survêtements manquants, ou réduire le prix en proportion puisqu'il n'a pas payé. Si le manquement est suffisamment grave, il peut aussi refuser de payer ou résoudre le contrat. Il peut y ajouter des dommages et intérêts.",
+"sources": [
+"C. civ., art. 1217 (les cinq sanctions)",
+"C. civ., art. 1218 (force majeure)",
+"C. civ., art. 1219 et 1220 (exception d'inexécution)",
+"C. civ., art. 1221 et 1222 (exécution forcée en nature)",
+"C. civ., art. 1223 (réduction du prix)",
+"C. civ., art. 1226 (mise en demeure avant résolution)"
+],
+"questions": [
+"ctr-18",
+"ctr-19",
+"ctr-20"
+],
+"titre": "Les sanctions de l'inexécution",
+"priorite": 3
+},
+"ctr-l09": {
+"minutes": 5,
+"situation": {
+"texte": "Mehdi, président d'un club, a signé avec une entreprise un contrat d'entretien du terrain à 3 000 euros par an. Elle n'est pas venue depuis deux mois. Le contrat prévoit une pénalité de 20 000 euros en cas de manquement. Mehdi veut mettre fin au contrat et réclamer cette pénalité.",
+"question": "Comment Mehdi doit-il procéder, et la pénalité sera-t-elle forcément due ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La résolution met fin au contrat à cause d'une inexécution. Elle passe par trois voies."
+},
+{
+"t": "list",
+"items": [
+"La clause résolutoire : le contrat liste les engagements dont l'inexécution le résout. Il faut en principe une mise en demeure qui mentionne cette clause.",
+"La notification du créancier, en cas d'inexécution suffisamment grave : il résout lui-même, à ses risques et périls. Sauf urgence, il met d'abord le débiteur en demeure, dans un délai raisonnable, en précisant que le contrat sera résolu. Le débiteur peut ensuite contester devant le juge.",
+"Le juge : la résolution peut toujours lui être demandée. Il peut aussi ordonner l'exécution, donner un délai, ou allouer seulement des dommages et intérêts."
+]
+},
+{
+"t": "h",
+"x": "Les effets"
+},
+{
+"t": "p",
+"x": "Si les prestations n'avaient d'utilité que par l'exécution complète du contrat, tout est restitué. Si elles ont servi au fur et à mesure, on ne restitue pas le passé : la résolution s'appelle alors résiliation. Certaines clauses survivent : règlement des différends, confidentialité, non-concurrence."
+},
+{
+"t": "h",
+"x": "La clause pénale"
+},
+{
+"t": "p",
+"x": "Une clause pénale fixe à l'avance la somme due par la partie qui n'exécute pas. En principe, on ne peut allouer ni plus ni moins. Mais le juge peut, même d'office (sans qu'on le lui demande), modérer une pénalité manifestement excessive ou augmenter une pénalité dérisoire. Sauf inexécution définitive, elle n'est due qu'après mise en demeure."
+}
+],
+"piege": "Une clause pénale n'est pas intouchable : même signée, le juge peut la modérer ou l'augmenter d'office si elle est manifestement excessive ou dérisoire.",
+"reponse": "Mehdi doit d'abord mettre l'entreprise en demeure d'entretenir le terrain dans un délai raisonnable, en précisant que le contrat sera résolu à défaut. Si elle ne s'exécute toujours pas et que l'inexécution est suffisamment grave, il peut notifier la résolution, à ses risques et périls. La pénalité de 20 000 euros, très supérieure au prix du contrat, paraît manifestement excessive : le juge peut la réduire, même d'office.",
+"sources": [
+"C. civ., art. 1224 (les voies de la résolution)",
+"C. civ., art. 1225 (clause résolutoire)",
+"C. civ., art. 1226 (résolution par notification, mise en demeure)",
+"C. civ., art. 1227 et 1228 (résolution judiciaire)",
+"C. civ., art. 1229 (effets, résiliation)",
+"C. civ., art. 1230 (clauses qui survivent)",
+"C. civ., art. 1231-5 (clause pénale)"
+],
+"questions": [
+"ctr-46",
+"ctr-21",
+"ctr-22"
+],
+"titre": "La résolution et la clause pénale",
+"priorite": 3
+},
+"ctr-l10": {
+"minutes": 5,
+"situation": {
+"texte": "Le contrat de sponsoring entre le club de Mathis et une société, conclu pour deux ans, arrive à son terme. Pendant deux mois, les deux continuent de l'exécuter : la société paie, le club affiche son logo. Un matin, la société écrit : « Le terme est dépassé, nous arrêtons dès demain. »",
+"question": "Que devient le contrat, et la société peut-elle arrêter dès demain ?"
+},
+"blocs": [
+{
+"t": "h",
+"x": "Dommages et intérêts"
+},
+{
+"t": "p",
+"x": "Le débiteur qui n'exécute pas, ou exécute en retard, répare la perte subie et le gain manqué. Sauf inexécution définitive, il faut d'abord le mettre en demeure. Il ne doit que les dommages prévus ou prévisibles à la signature, sauf faute lourde ou dolosive (grave ou intentionnelle) ; même alors, seulement les suites immédiates et directes. La force majeure l'en dispense."
+},
+{
+"t": "h",
+"x": "La fin du contrat"
+},
+{
+"t": "table",
+"head": [
+"Situation",
+"Règle"
+],
+"rows": [
+[
+"Durée déterminée",
+"Chacun exécute jusqu'au terme. Nul ne peut exiger un renouvellement."
+],
+[
+"Durée indéterminée",
+"Chaque partie peut y mettre fin à tout moment, avec le préavis prévu ou un délai raisonnable."
+],
+[
+"Engagement perpétuel",
+"Prohibé : chacun peut y mettre fin comme pour un contrat à durée indéterminée."
+],
+[
+"Prorogation",
+"Prolongation décidée avant l'expiration du contrat."
+],
+[
+"Renouvellement, tacite reconduction",
+"Nouveau contrat au contenu identique, mais à durée indéterminée. Il y a tacite reconduction quand les parties continuent d'exécuter après le terme."
+],
+[
+"Caducité",
+"Un contrat valable devient caduc si un élément essentiel disparaît."
+]
+]
+},
+{
+"t": "p",
+"x": "Pour l'agent sportif, le règlement FFF limite le contrat à deux ans et interdit la reconduction tacite."
+}
+],
+"piege": "La tacite reconduction ne prolonge pas l'ancien contrat : elle crée un nouveau contrat, à durée indéterminée. Mais le contrat d'agent sportif ne peut pas être reconduit tacitement à la FFF.",
+"reponse": "Les deux parties ont continué d'exécuter le contrat après son terme : il y a tacite reconduction. C'est un nouveau contrat, au contenu identique, mais à durée indéterminée. La société peut y mettre fin, mais en respectant le préavis prévu ou un délai raisonnable, pas du jour au lendemain.",
+"sources": [
+"C. civ., art. 1186 et 1187 (caducité)",
+"C. civ., art. 1210 et 1211 (engagements perpétuels, durée indéterminée)",
+"C. civ., art. 1212 à 1215 (terme, prorogation, renouvellement, tacite reconduction)",
+"C. civ., art. 1231 à 1231-4 (dommages et intérêts)",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.1 (deux ans, pas de reconduction tacite)"
+],
+"questions": [
+"ctr-23",
+"ctr-24",
+"ctr-25"
+],
+"titre": "Dommages et intérêts, fin du contrat",
+"priorite": 2
+},
+"ctr-l11": {
+"minutes": 5,
+"situation": {
+"texte": "Le président d'un club donne à Noah, bénévole, un mandat écrit « pour s'occuper des affaires du club ». Noah achète des ballons d'entraînement, puis vend le minibus du club à un ami.",
+"question": "Le club est-il engagé par ces deux actes ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le mandat, ou procuration, est l'acte par lequel une personne, le mandant, donne à une autre, le mandataire, le pouvoir de faire quelque chose pour lui et en son nom. Le contrat ne se forme que par l'acceptation du mandataire, qui peut être tacite : il commence à exécuter. Il peut être écrit ou verbal."
+},
+{
+"t": "h",
+"x": "Les pouvoirs du mandataire"
+},
+{
+"t": "table",
+"head": [
+"Type de mandat",
+"Pouvoirs"
+],
+"rows": [
+[
+"Spécial",
+"Une ou certaines affaires seulement."
+],
+[
+"Général",
+"Toutes les affaires du mandant, mais seulement les actes d'administration, c'est-à-dire la gestion courante."
+],
+[
+"Vendre, hypothéquer, acte de propriété",
+"Il faut un mandat exprès : une mention claire dans le mandat."
+]
+]
+},
+{
+"t": "p",
+"x": "Le mandataire ne peut rien faire au-delà de ce qui est prévu dans son mandat. Ce qu'il fait en dépassant ses pouvoirs n'engage le mandant que s'il le ratifie, c'est-à-dire s'il l'approuve après coup, expressément ou tacitement. Exception : le tiers qui a légitimement cru aux pouvoirs du mandataire, notamment à cause du comportement du mandant, peut s'en prévaloir."
+},
+{
+"t": "h",
+"x": "Droit commun et agent sportif"
+},
+{
+"t": "p",
+"x": "Le mandat de droit commun est libre dans sa forme. Pour l'agent sportif, le Code du sport est plus strict : il ne peut exercer qu'après avoir conclu un contrat écrit avec l'une des parties, qui précise la nature de ses services. Le règlement FFF ajoute qu'il ne peut représenter un joueur, un entraîneur ou un club que s'il a ce contrat écrit."
+}
+],
+"piege": "Un mandat « général » ne permet pas de vendre : seul un mandat exprès couvre les actes de propriété.",
+"reponse": "Pour les ballons, oui : acheter est un acte d'administration, couvert par un mandat général. Pour le minibus, non : vendre est un acte de propriété, qui exige un mandat exprès. Le club n'est donc pas engagé par la vente, sauf s'il la ratifie ; rien dans la situation n'indique que l'acheteur ait pu légitimement croire aux pouvoirs de Noah.",
+"sources": [
+"C. civ., art. 1984 (définition du mandat)",
+"C. civ., art. 1985 (forme, acceptation tacite)",
+"C. civ., art. 1987 et 1988 (mandat spécial ou général, acte d'administration, mandat exprès)",
+"C. civ., art. 1989 (pas de dépassement du mandat)",
+"C. civ., art. 1998 (ratification)",
+"C. sport, L. 222-7 et L. 222-17, I (contrat écrit de l'agent, nature des services)",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.1",
+"C. civ., art. 1156"
+],
+"questions": [
+"ctr-26",
+"ctr-28",
+"ctr-35"
+],
+"titre": "Le mandat et les pouvoirs du mandataire",
+"priorite": 3
+},
+"ctr-l12": {
+"minutes": 5,
+"situation": {
+"texte": "Karim, agent rémunéré d'un joueur, reçoit du club 3 000 euros destinés au joueur. Il les garde sans rien dire. Il a aussi, par négligence, laissé passer la date limite d'une offre intéressante.",
+"question": "Que doit Karim à son joueur ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le mandataire a plusieurs obligations envers son mandant."
+},
+{
+"t": "list",
+"items": [
+"Accomplir le mandat tant qu'il en reste chargé, sous peine de dommages et intérêts s'il ne l'exécute pas.",
+"Rester dans les limites de son mandat. Au-delà, le mandant n'est tenu que s'il ratifie (sauf croyance légitime du tiers).",
+"Répondre de son dol et de ses fautes de gestion. Cette responsabilité est appliquée moins rigoureusement si le mandat est gratuit que s'il est payé.",
+"Rendre compte de sa gestion et remettre au mandant tout ce qu'il a reçu pour lui, même si cela n'était pas dû au mandant.",
+"Répondre de la personne qu'il s'est substituée, c'est-à-dire qui l'a remplacé, quand il n'en avait pas le pouvoir, ou quand son choix était notoirement incapable ou insolvable.",
+"Payer l'intérêt des sommes du mandant qu'il a employées à son usage."
+]
+},
+{
+"t": "h",
+"x": "L'agent sportif"
+},
+{
+"t": "p",
+"x": "L'agent est rémunéré : sa responsabilité pour faute est donc appréciée plus sévèrement que celle d'un mandataire gratuit. Il doit aussi communiquer à la fédération toute somme qu'il a versée ou perçue, avec l'identité de la personne concernée. Et sa rémunération ne peut lui être versée qu'après la transmission de son contrat à la fédération."
+}
+],
+"piege": "Le mandataire doit remettre au mandant tout ce qu'il a reçu en vertu du mandat, même si cela n'était pas dû au mandant.",
+"reponse": "Karim doit rendre compte de sa gestion et remettre au joueur les 3 000 euros reçus pour lui. Il répond aussi de ses fautes de gestion, plus sévèrement puisqu'il est payé : laisser passer l'offre peut l'obliger à indemniser le joueur. Il devait enfin communiquer cette somme à la fédération.",
+"sources": [
+"C. civ., art. 1989 (limites du mandat)",
+"C. civ., art. 1991 (accomplir le mandat)",
+"C. civ., art. 1992 (dol et fautes de gestion)",
+"C. civ., art. 1993 (rendre compte)",
+"C. civ., art. 1994 (substitution)",
+"C. civ., art. 1996 (intérêts)",
+"C. civ., art. 1998 (ratification)",
+"C. sport, L. 222-7 (communication des sommes versées ou perçues)",
+"C. sport, L. 222-18, 3° (rémunération versée après transmission du contrat)"
+],
+"questions": [
+"ctr-29",
+"ctr-31",
+"ctr-33"
+],
+"titre": "Les obligations du mandataire",
+"priorite": 3
+},
+"ctr-l13": {
+"minutes": 5,
+"situation": {
+"texte": "Noémie, joueuse majeure, a mandaté un agent pour négocier avec des clubs. L'agent a avancé 600 euros de frais de déplacement justifiés. Aucun club n'a signé, sans faute de l'agent. Noémie refuse de rembourser : « Rien n'a abouti, et il aurait pu voyager moins cher. »",
+"question": "Noémie peut-elle refuser de rembourser ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le mandant a lui aussi des obligations envers le mandataire."
+},
+{
+"t": "list",
+"items": [
+"Exécuter les engagements pris par le mandataire dans les limites de son pouvoir. Pour ce qui dépasse, il n'est tenu que s'il ratifie.",
+"Rembourser les avances et frais du mandataire et lui payer la rémunération promise. Sans faute du mandataire, il ne peut pas s'en dispenser parce que l'affaire a échoué, ni faire réduire les frais en disant qu'ils pouvaient être moindres.",
+"Indemniser le mandataire des pertes subies à l'occasion de sa gestion, sans imprudence de sa part.",
+"Payer l'intérêt des avances faites par le mandataire, à compter du jour où elles sont constatées.",
+"Si plusieurs mandants ont donné mandat pour une affaire commune, chacun est tenu solidairement, c'est-à-dire pour le tout, envers le mandataire."
+]
+},
+{
+"t": "h",
+"x": "La rémunération : droit commun et agent sportif"
+},
+{
+"t": "table",
+"head": [
+"Sujet",
+"Droit commun",
+"Agent sportif"
+],
+"rows": [
+[
+"Rémunération",
+"Mandat gratuit, sauf convention contraire",
+"Prévue au contrat : 10 % au plus du contrat conclu (moins si la fédération le fixe)"
+],
+[
+"Qui paie",
+"Le mandant",
+"La partie désignée au contrat ; le club peut payer par convention tripartite"
+],
+[
+"Quand",
+"Selon la convention",
+"Seulement après transmission du contrat à la fédération"
+]
+]
+}
+],
+"piege": "En droit commun, le mandat est gratuit sauf convention contraire. L'agent sportif, lui, est rémunéré, et sa rémunération est plafonnée à 10 % du contrat conclu.",
+"reponse": "Non. Sans faute de l'agent, le mandant doit rembourser les avances et frais, même si l'affaire n'a pas réussi. Il ne peut pas non plus les faire réduire sous prétexte qu'ils auraient pu être moindres.",
+"sources": [
+"C. civ., art. 1986 (mandat gratuit sauf convention contraire)",
+"C. civ., art. 1998 (engagements du mandataire, ratification)",
+"C. civ., art. 1999 (avances, frais, rémunération)",
+"C. civ., art. 2000 à 2002 (pertes, intérêts, plusieurs mandants)",
+"C. sport, L. 222-17, I, 3° et 4°, et II (rémunération, partie qui paie, convention tripartite)",
+"C. sport, L. 222-18, 3° (versement après transmission du contrat)",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.2 et 6.4"
+],
+"questions": [
+"ctr-27",
+"ctr-30",
+"ctr-32"
+],
+"titre": "Les obligations du mandant",
+"priorite": 2
+},
+"ctr-l14": {
+"minutes": 5,
+"situation": {
+"texte": "Yanis a confié à l'agent Romain un mandat de deux ans pour négocier son prochain contrat. Au bout de six mois, mécontent, Yanis écrit à Romain qu'il met fin au mandat, sans donner de motif. Romain répond : « Le mandat dure deux ans, tu n'en as pas le droit. »",
+"question": "Yanis peut-il mettre fin au mandat ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le mandat finit par la révocation du mandataire, sa renonciation au mandat, ou la mort, la tutelle (protection d'un majeur) ou la déconfiture (insolvabilité) du mandant ou du mandataire. Le changement de club du joueur ne figure pas dans cette liste."
+},
+{
+"t": "table",
+"head": [
+"Cause",
+"Règle"
+],
+"rows": [
+[
+"Révocation par le mandant",
+"Il peut révoquer quand bon lui semble et exiger la remise du mandat écrit. Nommer un nouveau mandataire pour la même affaire vaut révocation du premier, dès que celui-ci en est informé. Notifiée au seul mandataire, la révocation n'est pas opposable aux tiers qui l'ignoraient."
+],
+[
+"Renonciation du mandataire",
+"Il la notifie au mandant. Si elle lui cause un préjudice, il l'indemnise, sauf s'il ne pouvait continuer sans subir lui-même un préjudice considérable."
+],
+[
+"Mort, tutelle, déconfiture",
+"Ce que le mandataire a fait en ignorant la cause de fin reste valable, et ses engagements envers les tiers de bonne foi sont exécutés. À la mort du mandataire, ses héritiers avisent le mandant."
+]
+]
+},
+{
+"t": "h",
+"x": "Pas d'engagement perpétuel"
+},
+{
+"t": "p",
+"x": "Une clause qui interdit à une partie de mettre fin au mandat, sans limite de durée, est un engagement perpétuel : il est prohibé. Chacun peut y mettre fin, comme pour un contrat à durée indéterminée. Pour l'agent sportif, la durée est de toute façon limitée : trois ans au plus, deux ans à la FFF."
+}
+],
+"piege": "Le changement de club du mandant ne figure pas parmi les causes de fin du mandat dans le Code civil. Ne le confonds pas avec la révocation ou la renonciation.",
+"reponse": "Oui. En droit commun, le mandant peut révoquer sa procuration quand bon lui semble, en le notifiant à Romain, et la durée de deux ans ne l'en empêche pas. Ce que le contrat de l'agent prévoit pour une rupture anticipée est une autre question.",
+"sources": [
+"C. civ., art. 2003 (causes de fin du mandat)",
+"C. civ., art. 2004 à 2006 (révocation)",
+"C. civ., art. 2007 (renonciation)",
+"C. civ., art. 2008 à 2010 (ignorance de la cause de fin, tiers de bonne foi, mort du mandataire)",
+"C. civ., art. 1210 (engagements perpétuels)",
+"C. sport, L. 222-17, I, 2° (durée de trois ans au plus)",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.1 (deux ans au plus)"
+],
+"questions": [
+"ctr-34",
+"ctr-36",
+"ctr-45"
+],
+"titre": "La fin du mandat",
+"priorite": 3
+},
+"ctr-l15": {
+"minutes": 5,
+"situation": {
+"texte": "Le club d'Ilyes charge Karim de négocier, au nom du club, le contrat d'un joueur, une société de fabriquer des maillots pour un prix fixé, et Rayan d'acheter des ballons en son propre nom, pour le compte du club.",
+"question": "Comment qualifier chacun de ces trois contrats ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Quatre contrats se ressemblent. Pour les distinguer, on regarde ce que fait la personne, pour le compte de qui elle agit, et au nom de qui elle contracte."
+},
+{
+"t": "table",
+"head": [
+"Contrat",
+"Idée clé",
+"Exemple"
+],
+"rows": [
+[
+"Mandat",
+"Le mandataire agit pour le mandant et en son nom : il le représente.",
+"Un agent négocie un contrat au nom d'un joueur"
+],
+[
+"Commission",
+"Le commissionnaire agit en son propre nom, pour le compte d'un commettant.",
+"Un acheteur commande du matériel en son nom pour le club"
+],
+[
+"Courtage",
+"Le courtier rapproche des parties, sans nécessairement les représenter ni les engager.",
+"Mettre un joueur en contact avec un club"
+],
+[
+"Entreprise",
+"Une partie s'engage à faire quelque chose pour l'autre, pour un prix convenu, sans la représenter.",
+"Une société réalise des vidéos pour le club"
+]
+]
+},
+{
+"t": "h",
+"x": "Et l'agent sportif ?"
+},
+{
+"t": "p",
+"x": "Le Code du sport le définit par sa mission : mettre en relation, directement ou indirectement, deux parties, contre rémunération, indemnité ou avantage, en vue de conclure ou de prolonger un contrat de travail sportif, un contrat d'exploitation de l'image ou un accord de mutation. Sa réglementation s'applique selon cette activité réelle, quel que soit le nom donné au contrat. Il peut aussi représenter un joueur, un entraîneur ou un club, s'il a un contrat écrit avec lui."
+}
+],
+"piege": "Un contrat de prestation avec un prix n'est pas un mandat : le mandat suppose le pouvoir d'agir au nom d'une autre personne.",
+"reponse": "Le contrat avec Karim est un mandat : il agit au nom du club. Celui avec la société de maillots est un contrat d'entreprise : une prestation pour un prix, sans représentation. Celui avec Rayan est une commission : il achète en son propre nom, pour le compte du club.",
+"sources": [
+"C. civ., art. 1984 (mandat)",
+"C. civ., art. 1710 (louage d'ouvrage, contrat d'entreprise)",
+"C. com., art. L. 132-1 (commissionnaire)",
+"C. com., art. L. 131-1 (courtiers)",
+"C. sport, L. 222-7 (définition de l'agent sportif)",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.1"
+],
+"questions": [
+"ctr-37",
+"ctr-38",
+"ctr-39"
+],
+"titre": "Mandat, commission, courtage, entreprise",
+"priorite": 3
+},
+"ctr-l16": {
+"minutes": 5,
+"situation": {
+"texte": "Sofiane, agent sportif, signe avec Tom, joueur de 19 ans, un contrat écrit exclusif de quatre ans. Il touchera 12 % du contrat de travail que Tom signera. Le contrat prévoit aussi que Sofiane pourra agir pour le club recruteur dans la même opération, qu'il n'a pas à être transmis à la fédération, et que Tom ne pourra jamais y mettre fin.",
+"question": "Quelles clauses faut-il corriger ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Pour contrôler un contrat d'agent, on vérifie chaque point. Le droit commun donne le cadre ; le Code du sport et le règlement FFF l'emportent."
+},
+{
+"t": "table",
+"head": [
+"Point à vérifier",
+"Règle"
+],
+"rows": [
+[
+"Écrit",
+"Contrat écrit avec l'une des parties, avant toute mise en rapport."
+],
+[
+"Durée",
+"Trois ans au plus. À la FFF : deux ans au plus, sans reconduction tacite."
+],
+[
+"Rémunération",
+"10 % au plus du contrat conclu, avec la partie qui paie. Aucune rémunération si le joueur est mineur."
+],
+[
+"Une seule partie",
+"L'agent n'agit que pour le compte d'une des parties."
+],
+[
+"Transmission",
+"Contrat et avenants communiqués à la fédération dans le mois. La FFF compte depuis la signature : le plus sûr est d'envoyer dès la signature."
+],
+[
+"Fin du contrat",
+"Pas d'engagement perpétuel : chaque partie peut y mettre fin."
+]
+]
+},
+{
+"t": "h",
+"x": "La sanction"
+},
+{
+"t": "p",
+"x": "Toute convention contraire à ces règles, ou non communiquée à la fédération, est réputée nulle et non écrite. En droit commun, on vérifierait aussi la capacité des parties et l'absence de vice du consentement."
+}
+],
+"piege": "L'accord du joueur ne rend valable aucune de ces clauses : elles viennent des règles impératives du Code du sport, auxquelles la liberté contractuelle ne permet pas de déroger, et de l'interdiction des engagements perpétuels.",
+"reponse": "Cinq clauses sont à corriger : la durée de quatre ans (trois ans au plus, deux ans à la FFF), la commission de 12 % (10 % au plus), l'intervention pour le club dans la même opération (une seule partie), la dispense de transmission (obligatoire dans le mois) et l'interdiction de mettre fin au contrat (engagement perpétuel). Tom étant majeur, l'interdiction de rémunération propre aux mineurs ne joue pas. À défaut de correction, le contrat est réputé nul et non écrit.",
+"sources": [
+"C. sport, L. 222-17, I (écrit, une seule partie, durée, rémunération, communication) et dernier alinéa (nullité)",
+"C. sport, L. 222-18, 3° (rémunération après transmission)",
+"C. sport, L. 222-5 (aucune rémunération pour un mineur)",
+"C. civ., art. 1102 (ordre public)",
+"C. civ., art. 1210 (engagements perpétuels)",
+"Règlement des agents sportifs FFF 2026-2027, art. 6.2.1, 6.2.2, 6.3.1 et 6.4"
+],
+"questions": [
+"ctr-41",
+"ctr-42",
+"ctr-43",
+"ctr-44"
+],
+"titre": "Cas pratique : corriger le mandat d'un agent",
+"priorite": 3
 }
 }
 },
