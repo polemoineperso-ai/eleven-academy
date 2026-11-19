@@ -27160,9 +27160,14 @@
 "d": "2026-11-11",
 "t": "precision",
 "x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
+},
+{
+"d": "2026-11-11",
+"t": "precision",
+"x": "Le montant réglementaire de la dotation initiale est confirmé : 15 000 € au minimum."
 }
 ],
-"v": 23
+"v": 24
 },
 {
 "id": "asso-11",
@@ -27369,9 +27374,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "Explication reformulée sur la licence FIFA."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "Explication reformulée sur la licence FIFA."
 }
 ],
-"v": 23
+"v": 24
 },
 {
 "id": "agt-03",
@@ -29181,9 +29191,14 @@
 "d": "2026-11-14",
 "t": "precision",
 "x": "La réponse précise que l'agent donne quittance au club."
+},
+{
+"d": "2026-11-14",
+"t": "precision",
+"x": "La réponse précise que l'agent donne quittance au club."
 }
 ],
-"v": 23
+"v": 24
 },
 {
 "id": "agt-32",
@@ -33246,6 +33261,276 @@
 "bonne": 0,
 "explication": "Faute de décision portée à sa connaissance dans le délai de deux mois, l'intéressé peut considérer sa demande comme rejetée (C. séc. soc., R. 142-6).",
 "origine": "Leçon trv-l17"
+},
+{
+"id": "ass-l01-q1",
+"chapitre": "m08-2",
+"niveau": 2,
+"enonce": "Hugo blesse Léo par un tacle fautif et sa responsabilité est retenue. À quoi sert alors la RC d'Hugo ?",
+"options": [
+"À indemniser Hugo de ses propres blessures",
+"À indemniser Léo, la victime, du dommage causé par Hugo",
+"À rembourser à Hugo le prix de sa licence",
+"À payer la sanction disciplinaire prononcée contre Hugo"
+],
+"bonne": 1,
+"explication": "La RC couvre les conséquences financières de la responsabilité de l'assuré envers les tiers : elle indemnise la victime (C. civ., art. 1240 ; C. assur., L. 124-3).",
+"origine": "Leçon ass-l01"
+},
+{
+"id": "ass-l02-q1",
+"chapitre": "m08-2",
+"niveau": 2,
+"enonce": "Un club conclut un contrat d'assurance qui couvre ses joueurs et en paie la cotisation. Comment appelle-t-on le club ?",
+"options": [
+"L'assuré",
+"Le souscripteur",
+"Le bénéficiaire",
+"L'assureur"
+],
+"bonne": 1,
+"explication": "Le souscripteur est celui qui conclut le contrat avec l'assureur. Les joueurs couverts sont les assurés (vocabulaire du cours ; C. assur., L. 112-1).",
+"origine": "Leçon ass-l02"
+},
+{
+"id": "ass-l02-q2",
+"chapitre": "m08-2",
+"niveau": 2,
+"enonce": "Un joueur signe une proposition d'assurance, mais l'assureur n'a émis ni police ni note de couverture. Que dit le Code des assurances ?",
+"options": [
+"La proposition engage le joueur seul",
+"La proposition engage l'assureur seul",
+"La proposition n'engage ni l'assuré ni l'assureur",
+"La proposition engage les deux dès la signature"
+],
+"bonne": 2,
+"explication": "La proposition d'assurance n'engage ni l'assuré ni l'assureur ; seule la police ou la note de couverture constate leur engagement réciproque (C. assur., L. 112-2).",
+"origine": "Leçon ass-l02"
+},
+{
+"id": "ass-l02-q3",
+"chapitre": "m08-2",
+"niveau": 2,
+"enonce": "Un joueur se blesse pendant un match, ce qui déclenche la garantie du contrat. Comment appelle-t-on cet événement couvert ?",
+"options": [
+"Une prime",
+"Une franchise",
+"Un sinistre",
+"Une exclusion"
+],
+"bonne": 2,
+"explication": "Le sinistre est la réalisation du risque couvert par le contrat (vocabulaire du cours ; C. assur., L. 124-1-1 pour la RC).",
+"origine": "Leçon ass-l02"
+},
+{
+"id": "ass-l03-q1",
+"chapitre": "m08-2",
+"niveau": 2,
+"enonce": "Un assuré fait volontairement une fausse déclaration qui change l'opinion que l'assureur se fait du risque. Que peut-il arriver au contrat ?",
+"options": [
+"Il est maintenu sans changement",
+"Il est nul, et les primes payées restent acquises à l'assureur",
+"Il est seulement réduit de moitié",
+"Il est maintenu, et les primes sont remboursées"
+],
+"bonne": 1,
+"explication": "La réticence ou la fausse déclaration intentionnelle qui change l'objet du risque ou en diminue l'opinion pour l'assureur rend le contrat nul ; les primes payées restent acquises à l'assureur (C. assur., L. 113-8).",
+"origine": "Leçon ass-l03"
+},
+{
+"id": "ass-l03-q2",
+"chapitre": "m08-2",
+"niveau": 2,
+"enonce": "Comment l'assuré doit-il déclarer à l'assureur une aggravation du risque en cours de contrat ?",
+"options": [
+"Par un simple appel téléphonique",
+"Par lettre recommandée ou envoi recommandé électronique",
+"Uniquement au moment du renouvellement",
+"Par un message oral à l'intermédiaire"
+],
+"bonne": 1,
+"explication": "L'assuré déclare ces circonstances par lettre recommandée ou par envoi recommandé électronique, dans un délai de quinze jours (C. assur., L. 113-2, 3°).",
+"origine": "Leçon ass-l03"
+},
+{
+"id": "ass-l04-q1",
+"chapitre": "m08-2",
+"niveau": 2,
+"enonce": "Dans une assurance de biens, l'indemnité due par l'assureur ne peut pas dépasser :",
+"options": [
+"Le prix d'achat neuf du bien",
+"La valeur de la chose assurée au moment du sinistre",
+"Le double de la prime payée",
+"Le montant que l'assuré réclame"
+],
+"bonne": 1,
+"explication": "L'assurance relative aux biens est un contrat d'indemnité : l'indemnité ne peut pas dépasser la valeur de la chose assurée au moment du sinistre (C. assur., L. 121-1).",
+"origine": "Leçon ass-l04"
+},
+{
+"id": "ass-l04-q2",
+"chapitre": "m08-2",
+"niveau": 2,
+"enonce": "Après avoir indemnisé son assuré, l'assureur prend sa place pour agir contre le responsable du dommage. Comment s'appelle ce mécanisme ?",
+"options": [
+"La déchéance",
+"La subrogation",
+"La franchise",
+"La prescription"
+],
+"bonne": 1,
+"explication": "L'assureur qui a payé l'indemnité est subrogé, jusqu'à concurrence de cette indemnité, dans les droits de l'assuré contre les tiers responsables (C. assur., L. 121-12).",
+"origine": "Leçon ass-l04"
+},
+{
+"id": "ass-l05-q1",
+"chapitre": "m08-2",
+"niveau": 2,
+"enonce": "Un contrat prévoit une franchise de 2 000 €. Un sinistre garanti cause 10 000 € de dommages. Sauf autre clause, que verse l'assureur ?",
+"options": [
+"10 000 €",
+"8 000 €",
+"12 000 €",
+"2 000 €"
+],
+"bonne": 1,
+"explication": "La franchise reste à la charge de l'assuré : l'assureur verse 10 000 - 2 000 = 8 000 € (la franchise est une déduction fixée d'avance par le contrat ; pour l'assurance de biens, voir C. assur., L. 121-1).",
+"origine": "Leçon ass-l05"
+},
+{
+"id": "ass-l06-q1",
+"chapitre": "m08-2",
+"niveau": 2,
+"enonce": "Peut-on, dans le contrat d'assurance, allonger ou raccourcir la prescription de deux ans ?",
+"options": [
+"Oui, d'un commun accord entre les parties",
+"Non, même d'un commun accord",
+"Oui, mais seulement pour l'allonger",
+"Oui, mais seulement pour la raccourcir"
+],
+"bonne": 1,
+"explication": "Les parties ne peuvent, même d'un commun accord, ni modifier la durée de la prescription, ni ajouter aux causes de suspension ou d'interruption (C. assur., L. 114-3).",
+"origine": "Leçon ass-l06"
+},
+{
+"id": "ass-l08-q1",
+"chapitre": "m08-3",
+"niveau": 2,
+"enonce": "Une fédération propose aux demandeurs de licence d'adhérer à son contrat collectif d'assurance de personnes. Elle doit notamment préciser que cette adhésion :",
+"options": [
+"Est obligatoire pour obtenir la licence",
+"N'est pas obligatoire",
+"Est obligatoire pour les mineurs",
+"Remplace toute autre assurance"
+],
+"bonne": 1,
+"explication": "La proposition doit mentionner le prix, préciser que l'adhésion n'est pas obligatoire et indiquer qu'on peut souscrire des garanties individuelles complémentaires (C. sport, L. 321-6).",
+"origine": "Leçon ass-l08"
+},
+{
+"id": "ass-l09-q1",
+"chapitre": "m08-3",
+"niveau": 2,
+"enonce": "Qui doit souscrire l'assurance de personnes des licenciés inscrits sur la liste des sportifs de haut niveau, selon L. 321-4-1 ?",
+"options": [
+"Chaque sportif, à ses frais",
+"La fédération sportive délégataire",
+"Le club employeur uniquement",
+"Le ministre chargé des sports"
+],
+"bonne": 1,
+"explication": "L'article L. 321-4-1 impose aux fédérations sportives délégataires de souscrire ces contrats au bénéfice de leurs licenciés inscrits sur la liste des sportifs de haut niveau.",
+"origine": "Leçon ass-l09"
+},
+{
+"id": "ass-l09-q2",
+"chapitre": "m08-3",
+"niveau": 2,
+"enonce": "Comment les contrats d'assurance de personnes de L. 321-4-1 doivent-ils être conclus ?",
+"options": [
+"Sans formalité particulière",
+"Après appel à la concurrence",
+"Uniquement auprès d'un assureur public",
+"Après accord de chaque sportif"
+],
+"bonne": 1,
+"explication": "Ces contrats ne peuvent être conclus qu'après appel à la concurrence (C. sport, L. 321-4-1).",
+"origine": "Leçon ass-l09"
+},
+{
+"id": "ass-l10-q1",
+"chapitre": "m08-3",
+"niveau": 2,
+"enonce": "Un joueur est blessé dans un duel normal, sans faute caractérisée de son adversaire. La responsabilité civile de l'adversaire est-elle automatiquement engagée ?",
+"options": [
+"Oui, dès qu'il y a une blessure",
+"Non, pas automatiquement : il faut une faute civile appréciée par le juge",
+"Oui, car les licenciés sont des tiers entre eux",
+"Oui, si l'arbitre a sifflé une faute"
+],
+"bonne": 1,
+"explication": "Le droit commun exige une faute (C. civ., art. 1240 et 1241) ; être tiers (C. sport, L. 321-1) donne seulement droit d'être indemnisé si une responsabilité est retenue. Un coup de sifflet ne suffit pas.",
+"origine": "Leçon ass-l10"
+},
+{
+"id": "ass-l10-q2",
+"chapitre": "m08-3",
+"niveau": 2,
+"enonce": "Un joueur frappe un adversaire dans l'intention de le blesser, hors de toute action de jeu. L'assurance RC du joueur couvre-t-elle en principe ce dommage ?",
+"options": [
+"Oui, sans condition",
+"Non : l'assureur ne répond pas des dommages provenant d'une faute intentionnelle ou dolosive de l'assuré",
+"Oui, mais seulement si le joueur est licencié",
+"Non, car la RC ne couvre que les dommages matériels"
+],
+"bonne": 1,
+"explication": "Selon L. 113-1 du Code des assurances, l'assureur ne répond pas des pertes et dommages provenant d'une faute intentionnelle ou dolosive de l'assuré.",
+"origine": "Leçon ass-l10"
+},
+{
+"id": "ass-l10-q3",
+"chapitre": "m08-3",
+"niveau": 2,
+"enonce": "Selon L. 321-3-1 du Code du sport, lors d'un entraînement en vue d'une manifestation sportive sur un lieu réservé à la pratique, un pratiquant ne peut pas être tenu responsable, au titre de la chose qu'il a sous sa garde, des dommages :",
+"options": [
+"Corporels causés à un autre pratiquant",
+"Matériels causés à un autre pratiquant",
+"Matériels causés à un spectateur",
+"Corporels causés à l'arbitre"
+],
+"bonne": 1,
+"explication": "L'article L. 321-3-1 écarte la responsabilité du fait des choses gardées pour les dommages matériels causés à un autre pratiquant, lors d'une manifestation sportive ou d'un entraînement, sur un lieu réservé à cette pratique.",
+"origine": "Leçon ass-l10"
+},
+{
+"id": "ass-l11-q1",
+"chapitre": "m08-4",
+"niveau": 2,
+"enonce": "Que dit le règlement des agents sportifs de la FFF 2026-2027 sur la RC professionnelle ?",
+"options": [
+"Elle est obligatoire pour tout agent licencié",
+"Il est conseillé aux agents licenciés d'en souscrire une, sans que ce soit une obligation légale",
+"Elle est interdite aux agents sportifs",
+"Elle est obligatoire seulement pour les agents des joueurs professionnels"
+],
+"bonne": 1,
+"explication": "Le règlement indique qu'il est conseillé aux agents sportifs licenciés FFF, même s'il ne s'agit pas d'une obligation légale, de souscrire une RC professionnelle (art. 3.5).",
+"origine": "Leçon ass-l11"
+},
+{
+"id": "ass-l11-q2",
+"chapitre": "m08-4",
+"niveau": 2,
+"enonce": "Dans une garantie de responsabilité déclenchée par la réclamation, l'élément déterminant est :",
+"options": [
+"La date de signature du contrat uniquement",
+"La date de la première réclamation adressée à l'assuré ou à son assureur, dans la période prévue par le contrat",
+"La date de paiement de la prime",
+"La date de naissance du joueur"
+],
+"bonne": 1,
+"explication": "La garantie déclenchée par la réclamation couvre l'assuré si le fait dommageable est antérieur à la résiliation ou à l'expiration et si la première réclamation intervient pendant la garantie ou le délai subséquent prévu au contrat (C. assur., L. 124-5).",
+"origine": "Leçon ass-l11"
 }
 ],
 "cartes": [
@@ -36649,6 +36934,15 @@
 "genre": "appli",
 "titre": "Le module 05, Droit fiscal, passe aux leçons",
 "texte": "15 leçons de 5 minutes : impôt sur le revenu, impôt sur les sociétés, micro-entreprise, TVA, et la fiscalité propre au sportif et à l'agent. Les chiffres sont ceux de 2026 ; ils seront mis à jour après la loi de finances pour 2027.",
+"erreurs": [],
+"precisions": []
+},
+{
+"id": "n-lecons-m08-2026-11-19",
+"d": "2026-11-19",
+"genre": "appli",
+"titre": "Le module 08, Droit des assurances, passe aux leçons",
+"texte": "11 leçons de 5 minutes, avec un fil rouge : ne jamais confondre la responsabilité civile, qui paie les dommages causés aux autres, et l'individuelle accident, qui indemnise ses propres blessures. Obligation d'assurance des clubs, sportifs de haut niveau, assurance de l'agent : tout y est.",
 "erreurs": [],
 "precisions": []
 },
@@ -41506,6 +41800,880 @@
 ],
 "titre": "Contester une décision d'un organisme social",
 "priorite": 1
+}
+}
+},
+{
+"domaine": "assurances",
+"titre": "Module 08 · Droit des assurances",
+"parties": [
+{
+"titre": "Le contrat d'assurance",
+"lecons": [
+{
+"id": "ass-l01",
+"titre": "Responsabilité civile ou individuelle accident",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ass-l02",
+"titre": "Le contrat d'assurance et ses acteurs",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "ass-l03",
+"titre": "Déclarer le risque, et ses changements",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ass-l04",
+"titre": "Assurances de dommages, assurances de personnes",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ass-l05",
+"titre": "Garantie, exclusion, franchise et plafond",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ass-l06",
+"titre": "Le sinistre : déclaration et prescription",
+"priorite": 3,
+"dispo": true
+}
+]
+},
+{
+"titre": "Les assurances dans le sport",
+"lecons": [
+{
+"id": "ass-l07",
+"titre": "L'obligation d'assurance des clubs",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ass-l08",
+"titre": "L'individuelle accident et le devoir d'information",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "ass-l09",
+"titre": "Les sportifs de haut niveau",
+"priorite": 1,
+"dispo": true
+},
+{
+"id": "ass-l10",
+"titre": "La responsabilité du sportif sur le terrain",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "L'agent sportif",
+"lecons": [
+{
+"id": "ass-l11",
+"titre": "L'assurance responsabilité civile de l'agent",
+"priorite": 2,
+"dispo": true
+}
+]
+}
+],
+"contenu": {
+"ass-l01": {
+"minutes": 5,
+"situation": {
+"texte": "Pendant un match de district, Hugo tacle fautivement Léo, qui se casse la jambe. Le même week-end, Marie, gardienne d'un autre club, se tord seule la cheville en retombant d'un saut. Personne n'est en faute.",
+"question": "Quelle assurance peut intervenir pour Léo, et laquelle pour Marie ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Deux assurances se ressemblent, mais elles ne protègent pas la même personne. L'assurance de responsabilité civile (RC) paie les dommages que l'assuré cause à autrui, quand sa responsabilité est engagée. L'assuré est la personne couverte par le contrat. L'individuelle accident, elle, indemnise l'assuré pour ses propres blessures, même si personne n'est responsable."
+},
+{
+"t": "table",
+"head": [
+"Question",
+"RC",
+"Individuelle accident"
+],
+"rows": [
+[
+"Qui reçoit l'argent ?",
+"La victime du dommage",
+"L'assuré blessé, ou le bénéficiaire désigné au contrat (celui qui reçoit la somme prévue)"
+],
+[
+"Faut-il un responsable ?",
+"Oui, la responsabilité de l'assuré doit être engagée",
+"Non, un accident suffit"
+],
+[
+"Exemple",
+"Un joueur en blesse un autre par sa faute",
+"Un joueur se blesse seul à l'entraînement"
+]
+]
+},
+{
+"t": "h",
+"x": "La règle à retenir"
+},
+{
+"t": "list",
+"items": [
+"RC : les dommages que je cause aux autres.",
+"Individuelle accident : les dommages corporels (atteintes au corps) que je subis.",
+"La RC d'un joueur ne couvre pas ses propres blessures."
+]
+},
+{
+"t": "p",
+"x": "Une même blessure peut mettre en jeu les deux assurances : la RC du joueur responsable pour la victime, et l'individuelle accident de la victime, si elle en a souscrit une."
+}
+],
+"piege": "La RC du club ou d'un adversaire ne couvre pas automatiquement les blessures du joueur : se blesser seul, sans responsable, ne met jamais en jeu une RC : seule une assurance de personnes (individuelle accident) peut intervenir.",
+"reponse": "Léo est blessé par la faute d'Hugo : c'est la RC d'Hugo qui peut l'indemniser, si la responsabilité d'Hugo est retenue ; sa propre individuelle accident pourrait aussi jouer, s'il en a souscrit une. Marie s'est blessée seule, il n'y a donc aucun responsable et aucune RC à mettre en cause. Son individuelle accident peut intervenir, si elle en a souscrit une.",
+"sources": [
+"C. civ., art. 1240 et 1241 (réparation du dommage causé à autrui)",
+"C. assur., L. 124-3 (droit d'action directe du tiers lésé contre l'assureur de responsabilité)",
+"C. assur., L. 131-1 (assurance contre les accidents atteignant les personnes : sommes fixées par le contrat)",
+"C. sport, L. 321-1 et L. 321-4"
+],
+"questions": [
+"m08-q01",
+"m08-q02",
+"ass-l01-q1"
+],
+"titre": "Responsabilité civile ou individuelle accident",
+"priorite": 3
+},
+"ass-l02": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Sofia conclut un contrat d'assurance avec la compagnie Alpha et paie une cotisation chaque année. Le contrat protège les joueuses du club. Sofia, joueuse, désigne sa sœur Inès pour recevoir la somme prévue en cas de décès accidentel.",
+"question": "Qui est l'assureur, le souscripteur, l'assuré et le bénéficiaire ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un contrat d'assurance met en relation plusieurs personnes. Chacune a un nom précis, et l'examen teste ces mots."
+},
+{
+"t": "table",
+"head": [
+"Terme",
+"Sens",
+"Exemple football"
+],
+"rows": [
+[
+"Assureur",
+"Celui qui accepte de couvrir le risque en échange d'une prime",
+"La compagnie d'assurance"
+],
+[
+"Souscripteur",
+"Celui qui conclut le contrat avec l'assureur",
+"Le club"
+],
+[
+"Assuré",
+"La personne dont la responsabilité ou la personne même est couverte",
+"La joueuse"
+],
+[
+"Bénéficiaire",
+"Celui qui reçoit la somme prévue par le contrat",
+"La personne désignée dans le contrat"
+],
+[
+"Prime (ou cotisation)",
+"La somme payée à l'assureur",
+"La cotisation annuelle du club"
+],
+[
+"Risque",
+"L'événement incertain dont on veut se protéger",
+"Une blessure en match"
+],
+[
+"Sinistre",
+"Le risque qui se réalise : l'événement couvert",
+"La blessure survenue"
+]
+]
+},
+{
+"t": "h",
+"x": "Plusieurs rôles pour une personne"
+},
+{
+"t": "p",
+"x": "Un joueur qui s'assure lui-même est à la fois souscripteur et assuré. Il peut aussi être bénéficiaire. Un club peut au contraire souscrire pour ses joueurs : il conclut le contrat, eux sont couverts."
+},
+{
+"t": "h",
+"x": "La police"
+},
+{
+"t": "p",
+"x": "Le contrat s'appelle la police d'assurance. Elle est écrite et datée. Elle indique notamment les parties, la personne ou la chose assurée, les risques garantis, le début et la durée de la garantie, son montant et la prime. Une simple proposition d'assurance n'engage ni l'assuré ni l'assureur : seule la police ou la note de couverture les engage."
+}
+],
+"piege": "Le souscripteur n'est pas toujours l'assuré : le club qui conclut le contrat et paie la cotisation peut assurer ses joueurs, qui sont alors les assurés.",
+"reponse": "Alpha est l'assureur, car elle accepte de couvrir le risque. Le club est le souscripteur : il conclut le contrat et paie la cotisation. Sofia est l'assurée, puisque le contrat protège les joueuses, et sa sœur Inès est la bénéficiaire, car elle reçoit la somme prévue.",
+"sources": [
+"C. assur., L. 112-1 (assurance pour le compte d'une personne déterminée ou de qui il appartiendra)",
+"C. assur., L. 112-2 (proposition d'assurance, note de couverture)",
+"C. assur., L. 112-3 (contrat écrit)",
+"C. assur., L. 112-4 (mentions de la police)",
+"C. assur., L. 124-1-1 (définition du sinistre en assurance de responsabilité)"
+],
+"questions": [
+"ass-l02-q1",
+"ass-l02-q2",
+"ass-l02-q3"
+],
+"titre": "Le contrat d'assurance et ses acteurs",
+"priorite": 2
+},
+"ass-l03": {
+"minutes": 5,
+"situation": {
+"texte": "À la souscription de sa RC, le club de Julie déclare à l'assureur qu'il n'accueille que des matchs de district. Trois mois plus tard, il décide d'organiser un tournoi international de trois jours, avec plusieurs milliers de spectateurs. Il ne prévient pas l'assureur.",
+"question": "Que devait faire le club, et dans quel délai ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'assureur fixe sa prime d'après le risque, l'événement incertain dont on veut se protéger. Il doit donc connaître la réalité de ce risque."
+},
+{
+"t": "h",
+"x": "À la souscription"
+},
+{
+"t": "p",
+"x": "L'assuré doit répondre exactement aux questions de l'assureur, notamment dans le formulaire de déclaration du risque. Si l'assureur a posé une question en termes généraux, il ne peut pas reprocher une réponse imprécise."
+},
+{
+"t": "table",
+"head": [
+"Cas",
+"Conséquence"
+],
+"rows": [
+[
+"Fausse déclaration ou réticence intentionnelle qui change l'objet du risque ou en diminue l'opinion pour l'assureur",
+"Le contrat est nul. Les primes payées restent à l'assureur."
+],
+[
+"Omission ou erreur dont la mauvaise foi n'est pas établie",
+"Pas de nullité. Constatée avant sinistre : l'assureur maintient le contrat avec une prime plus élevée, ou le résilie 10 jours après notification. Constatée après sinistre : l'indemnité est réduite en proportion."
+]
+]
+},
+{
+"t": "h",
+"x": "En cours de contrat"
+},
+{
+"t": "p",
+"x": "L'assuré doit déclarer les circonstances nouvelles qui aggravent les risques ou en créent de nouveaux. Il le fait par lettre recommandée ou envoi recommandé électronique, dans les 15 jours à partir du moment où il en a connaissance. L'assureur peut alors proposer une nouvelle prime ou résilier le contrat. Si le risque diminue, l'assuré a droit à une baisse de prime."
+},
+{
+"t": "p",
+"x": "La déchéance (perte de la garantie) pour déclaration tardive n'est possible que si le contrat la prévoit et si l'assureur prouve un préjudice."
+}
+],
+"piege": "Le délai de 15 jours vaut pour déclarer une aggravation du risque. Ne le confonds pas avec le délai d'au moins 5 jours ouvrés prévu pour déclarer un sinistre.",
+"reponse": "Le tournoi crée un risque plus grand que celui déclaré : le club devait le signaler à l'assureur par lettre recommandée, dans les 15 jours à partir du moment où il en a eu connaissance. Une fois prévenu, l'assureur peut proposer une prime plus élevée ou résilier. En se taisant, le club peut perdre sa garantie, mais seulement si le contrat le prévoit et si l'assureur prouve que le retard lui a causé un préjudice.",
+"sources": [
+"C. assur., L. 113-2, 2° et 3° (réponses exactes ; déclaration des circonstances nouvelles sous 15 jours, par recommandé)",
+"C. assur., L. 113-4 (aggravation et diminution du risque)",
+"C. assur., L. 113-8 (fausse déclaration intentionnelle)",
+"C. assur., L. 113-9 (omission ou erreur de bonne foi)",
+"C. assur., L. 112-3 (question en termes généraux)"
+],
+"questions": [
+"an24-q07",
+"ass-l03-q1",
+"ass-l03-q2"
+],
+"titre": "Déclarer le risque, et ses changements",
+"priorite": 3
+},
+"ass-l04": {
+"minutes": 5,
+"situation": {
+"texte": "La buvette du club de Théo est détruite par un incendie ; elle valait 8 000 € le jour du sinistre et le club réclame 12 000 € à son assureur. Le même jour, Théo, joueur, se blesse gravement : son contrat d'individuelle accident prévoit 20 000 € en cas d'invalidité permanente, alors qu'il estime son préjudice réel à 60 000 €.",
+"question": "Que peuvent obtenir le club et Théo ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le Code des assurances distingue deux grandes familles de contrats."
+},
+{
+"t": "table",
+"head": [
+"",
+"Assurance de dommages",
+"Assurance de personnes"
+],
+"rows": [
+[
+"Elle protège",
+"Les biens, ou le patrimoine contre une responsabilité",
+"La personne : sa santé, sa vie"
+],
+[
+"Exemples",
+"Incendie de la buvette, RC du club",
+"Individuelle accident, assurance décès"
+],
+[
+"Principe",
+"L'indemnité répare le dommage sans le dépasser",
+"Les sommes assurées sont fixées par le contrat"
+],
+[
+"Recours après paiement",
+"L'assureur est subrogé contre le responsable",
+"En principe non, sauf prestations à caractère indemnitaire"
+]
+]
+},
+{
+"t": "p",
+"x": "La subrogation, c'est quand l'assureur qui a payé prend la place de son assuré pour réclamer l'argent au responsable du dommage, jusqu'à concurrence de ce qu'il a payé."
+},
+{
+"t": "h",
+"x": "Dommages : un contrat d'indemnité"
+},
+{
+"t": "p",
+"x": "Pour un bien, l'indemnité ne peut pas dépasser la valeur de la chose assurée au moment du sinistre. L'assuré ne s'enrichit pas."
+},
+{
+"t": "h",
+"x": "Personnes : un forfait"
+},
+{
+"t": "p",
+"x": "En assurance contre les accidents atteignant les personnes, les sommes assurées sont fixées par le contrat. L'assureur verse la somme prévue, dans la limite des garanties, sans réparer intégralement le préjudice."
+},
+{
+"t": "p",
+"x": "La RC est donc une assurance de dommages, et l'individuelle accident une assurance de personnes : une raison de plus de ne pas les confondre."
+}
+],
+"piege": "L'individuelle accident ne répare pas le préjudice réel : elle verse la somme fixée par le contrat, dans la limite de ses garanties, pas une réparation intégrale.",
+"reponse": "Le club ne peut pas obtenir plus que la valeur de la buvette le jour du sinistre : au maximum 8 000 € et non 12 000 €. Si son invalidité permanente est reconnue, Théo reçoit la somme fixée par son contrat, 20 000 €, même s'il estime son préjudice réel à 60 000 €. Une assurance de personnes verse en principe les sommes fixées par le contrat, pas une réparation intégrale (les remboursements de frais médicaux suivent une autre logique).",
+"sources": [
+"C. assur., L. 121-1 (contrat d'indemnité : indemnité limitée à la valeur de la chose au moment du sinistre)",
+"C. assur., L. 121-12 (subrogation de l'assureur en assurance de dommages)",
+"C. assur., L. 131-1 (sommes assurées fixées par le contrat en assurance contre les accidents)",
+"C. assur., L. 131-2 (pas de subrogation en assurance de personnes, sauf prestations indemnitaires)"
+],
+"questions": [
+"an25-q12",
+"ass-l04-q1",
+"ass-l04-q2"
+],
+"titre": "Assurances de dommages, assurances de personnes",
+"priorite": 3
+},
+"ass-l05": {
+"minutes": 5,
+"situation": {
+"texte": "Le contrat de RC du club de Nina prévoit un plafond de 100 000 € et une franchise de 5 000 €. Un spectateur blessé lors d'un match de nuit réclame 40 000 €. Le contrat exclut les matchs de nuit, mais par une seule phrase noyée dans un paragraphe en petits caractères.",
+"question": "L'assureur peut-il refuser de payer, et sinon combien paie-t-il ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La garantie est ce que l'assureur accepte de couvrir. Le contrat la décrit, avec ses limites."
+},
+{
+"t": "table",
+"head": [
+"Mot",
+"Sens"
+],
+"rows": [
+[
+"Garantie",
+"La protection accordée pour un risque"
+],
+[
+"Exclusion",
+"Ce que le contrat ne couvre pas"
+],
+[
+"Franchise",
+"La somme qui reste à la charge de l'assuré sur chaque sinistre"
+],
+[
+"Plafond",
+"Le montant maximal que l'assureur paie"
+]
+]
+},
+{
+"t": "h",
+"x": "Les règles pour une exclusion"
+},
+{
+"t": "list",
+"items": [
+"Les dommages causés par un cas fortuit ou par la faute de l'assuré sont à la charge de l'assureur, sauf exclusion formelle et limitée dans la police.",
+"Une clause d'exclusion n'est valable que si elle est mentionnée en caractères très apparents. La loi ne précise pas la forme : c'est le juge qui apprécie si la clause est très apparente.",
+"Dans tous les cas, l'assureur ne couvre pas la faute intentionnelle ou dolosive de l'assuré."
+]
+},
+{
+"t": "h",
+"x": "Un exemple chiffré"
+},
+{
+"t": "p",
+"x": "Plafond de 100 000 €, franchise de 5 000 €. Un sinistre garanti de 40 000 € : l'assureur paie 35 000 €, le club garde 5 000 € à sa charge. L'assureur ne peut pas être tenu au-delà de la prestation fixée par le contrat : le plafond limite donc ce qu'il verse."
+}
+],
+"piege": "La faute de l'assuré n'est pas exclue automatiquement : seule la faute intentionnelle ou dolosive l'est. Le reste doit être exclu de façon formelle et limitée.",
+"reponse": "L'exclusion n'est pas mentionnée en caractères très apparents : elle n'est pas valable, et l'assureur ne peut pas s'en servir pour refuser. Le sinistre est donc garanti. L'assureur paie 40 000 € moins la franchise de 5 000 €, soit 35 000 €, sous le plafond de 100 000 €.",
+"sources": [
+"C. assur., L. 113-1 (exclusion formelle et limitée ; faute intentionnelle ou dolosive)",
+"C. assur., L. 112-4 (clauses d'exclusion en caractères très apparents)",
+"C. assur., L. 121-1 (déduction fixée d'avance sur l'indemnité)",
+"C. assur., L. 113-5 (l'assureur ne peut être tenu au-delà de la prestation déterminée par le contrat)"
+],
+"questions": [
+"an23-q18",
+"m08-q12",
+"ass-l05-q1"
+],
+"titre": "Garantie, exclusion, franchise et plafond",
+"priorite": 3
+},
+"ass-l06": {
+"minutes": 5,
+"situation": {
+"texte": "Le 4 mars, un spectateur chute dans la tribune du club d'Alex. Le contrat de RC du club fixe à cinq jours ouvrés le délai pour déclarer un sinistre. Le club, informé de la réclamation du spectateur, prévient l'assureur douze jours ouvrés plus tard. L'assureur veut refuser sa garantie, mais il ne prouve aucun préjudice causé par ce retard.",
+"question": "Le retard fait-il perdre au club sa garantie ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Un sinistre est la réalisation de l'événement couvert. Dans une RC, c'est un dommage causé à un tiers, qui donne lieu à une réclamation."
+},
+{
+"t": "h",
+"x": "Déclarer le sinistre"
+},
+{
+"t": "p",
+"x": "L'assuré prévient l'assureur dès qu'il en a connaissance, et au plus tard dans le délai fixé par le contrat. Ce délai ne peut pas être inférieur à 5 jours ouvrés. Il est de 2 jours ouvrés en cas de vol. Les parties peuvent le prolonger d'un commun accord."
+},
+{
+"t": "p",
+"x": "Si l'assuré est en retard, le contrat peut prévoir la déchéance : la perte du droit à la garantie. Mais l'assureur doit prouver que le retard lui a causé un préjudice. La déchéance est aussi écartée si le retard vient d'un cas fortuit ou de force majeure."
+},
+{
+"t": "h",
+"x": "La prescription"
+},
+{
+"t": "p",
+"x": "La prescription est le délai au bout duquel on ne peut plus agir en justice. En principe, les actions qui dérivent du contrat d'assurance se prescrivent par 2 ans à compter de l'événement qui y donne naissance. Exception à retenir : 10 ans en assurance contre les accidents corporels, quand les bénéficiaires sont les ayants droit de l'assuré décédé."
+},
+{
+"t": "list",
+"items": [
+"Le délai ne court qu'à partir du jour où l'assureur connaît une fausse déclaration, ou du jour où l'assuré connaît le sinistre s'il prouve qu'il l'ignorait.",
+"Si un tiers agit contre l'assuré, le délai court seulement à partir de l'action en justice du tiers ou de son indemnisation.",
+"Il peut être interrompu, par exemple par la désignation d'un expert ou par une lettre recommandée de l'assuré réclamant son indemnité.",
+"Les parties ne peuvent pas le modifier par le contrat, même d'un commun accord."
+]
+}
+],
+"piege": "Deux délais, deux sens : au moins 5 jours ouvrés pour déclarer le sinistre à l'assureur, 2 ans pour agir en justice. Ne les confonds pas.",
+"reponse": "Non. Le club a dépassé le délai du contrat, mais la déchéance pour déclaration tardive ne peut être opposée que si l'assureur prouve que le retard lui a causé un préjudice. Ici l'assureur n'en prouve aucun : le club garde sa garantie.",
+"sources": [
+"C. assur., L. 113-2, 4° (avis du sinistre ; délai minimal de cinq jours ouvrés ; préjudice de l'assureur ; force majeure)",
+"C. assur., L. 124-1-1 (sinistre en assurance de responsabilité)",
+"C. assur., L. 114-1 (prescription de deux ans et point de départ)",
+"C. assur., L. 114-2 (interruption de la prescription)",
+"C. assur., L. 114-3 (durée de prescription non modifiable par contrat)"
+],
+"questions": [
+"m08-q09",
+"m08-q10",
+"ass-l06-q1"
+],
+"titre": "Le sinistre : déclaration et prescription",
+"priorite": 3
+},
+"ass-l07": {
+"minutes": 5,
+"situation": {
+"texte": "Le club de Camille est une association sportive. Son président n'a jamais souscrit d'assurance de responsabilité civile, car il pensait que les licenciés s'assurent eux-mêmes. À l'entraînement, un joueur blesse un coéquipier.",
+"question": "Le président respecte-t-il la loi ? Le coéquipier blessé est-il un tiers ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Les associations, les sociétés et les fédérations sportives doivent souscrire, pour leur activité, une assurance de responsabilité civile. C'est une obligation, pas un conseil."
+},
+{
+"t": "h",
+"x": "Qui doit être couvert ?"
+},
+{
+"t": "list",
+"items": [
+"Le club ou la fédération elle-même.",
+"Ses préposés, c'est-à-dire les salariés et les bénévoles qui agissent pour lui.",
+"Les pratiquants du sport.",
+"Les arbitres et les juges, dans l'exercice de leurs activités."
+]
+},
+{
+"t": "h",
+"x": "Les licenciés sont des tiers entre eux"
+},
+{
+"t": "p",
+"x": "Un tiers est une personne étrangère à l'auteur du dommage, qui le subit. La loi précise que les licenciés et les pratiquants sont considérés comme des tiers entre eux. Un joueur blessé par un coéquipier peut donc être indemnisé par la RC, comme une victime extérieure au club."
+},
+{
+"t": "h",
+"x": "La sanction"
+},
+{
+"t": "p",
+"x": "Le responsable d'une association sportive qui ne souscrit pas ces garanties risque 6 mois d'emprisonnement et 7 500 € d'amende."
+},
+{
+"t": "h",
+"x": "Au football"
+},
+{
+"t": "p",
+"x": "Les règlements généraux de la FFF prévoient un régime d'assurance lié à la signature des licences. Pour la RC, ils fixent au minimum une garantie illimitée pour les dommages corporels et de 170 000 € pour les dommages matériels. Les fédérations agréées peuvent aussi conclure des contrats collectifs pour leurs clubs et licenciés, après appel à la concurrence."
+}
+],
+"piege": "Les bénévoles sont couverts comme les salariés : l'obligation d'assurance ne vise pas seulement les salariés du club.",
+"reponse": "Non. Le club est une association sportive : il devait souscrire une assurance de responsabilité civile, et son président risque 6 mois d'emprisonnement et 7 500 € d'amende. Le coéquipier blessé est bien un tiers, car la loi considère les licenciés comme des tiers entre eux.",
+"sources": [
+"C. sport, L. 321-1 (assurance de responsabilité civile obligatoire ; licenciés tiers entre eux)",
+"C. sport, L. 321-2 (sanction : six mois d'emprisonnement et 7 500 euros d'amende)",
+"C. sport, L. 321-5 (contrats collectifs des fédérations agréées)",
+"Règlements généraux de la FFF 2026-2027, art. 32 (régime d'assurance lié à la licence, minima)"
+],
+"questions": [
+"m08-q03",
+"m08-q04",
+"m08-q05"
+],
+"titre": "L'obligation d'assurance des clubs",
+"priorite": 3
+},
+"ass-l08": {
+"minutes": 5,
+"situation": {
+"texte": "Le club d'Élodie annonce à tous ses joueurs : « Sans assurance individuelle accident, pas de licence. » Il ne leur remet aucun document sur les assurances qui existent.",
+"question": "Le club peut-il imposer cette assurance, et que doit-il faire ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'individuelle accident est une assurance de personnes. Elle indemnise l'assuré pour ses propres dommages corporels (atteintes au corps) après un accident, selon les garanties choisies."
+},
+{
+"t": "table",
+"head": [
+"Garantie possible",
+"Ce qu'elle peut verser"
+],
+"rows": [
+[
+"Décès accidentel",
+"Un capital au bénéficiaire"
+],
+[
+"Invalidité permanente",
+"Un capital selon le taux d'invalidité"
+],
+[
+"Incapacité temporaire",
+"Des indemnités pendant l'arrêt, si le contrat les prévoit"
+],
+[
+"Frais médicaux",
+"Le remboursement de certains frais"
+]
+]
+},
+{
+"t": "h",
+"x": "Elle n'est pas obligatoire"
+},
+{
+"t": "p",
+"x": "Aucun texte n'oblige tous les licenciés à souscrire une individuelle accident. Ce qui est obligatoire, c'est l'information."
+},
+{
+"t": "h",
+"x": "Le devoir d'information"
+},
+{
+"t": "list",
+"items": [
+"Les associations et les fédérations sportives informent leurs adhérents de l'intérêt de souscrire une assurance de personnes couvrant les dommages corporels liés à leur pratique.",
+"Elles les informent aussi de l'existence de garanties d'accompagnement juridique et psychologique, et de prise en charge des frais de procédure des victimes de violences sexuelles, physiques et psychologiques.",
+"Si la fédération propose d'adhérer à son contrat collectif en même temps que la licence, elle indique le prix, précise que l'adhésion n'est pas obligatoire, indique qu'on peut prendre des garanties individuelles complémentaires et joint la notice de l'assureur."
+]
+},
+{
+"t": "p",
+"x": "Au football, les règlements généraux de la FFF prévoient un régime d'assurance lié à la licence, avec des minima (par exemple 15 000 € en cas de mort et 25 000 € en cas d'incapacité permanente). Cette couverture de base est incluse dans la licence : elle ne garantit pas une indemnisation complète, d'où l'intérêt d'informer sur les garanties complémentaires."
+}
+],
+"piege": "Informer n'est pas obliger : l'obligation légale porte sur l'information du licencié, pas sur la souscription d'une individuelle accident.",
+"reponse": "Non. La loi n'oblige pas les licenciés à souscrire une individuelle accident : elle oblige les associations et les fédérations à les informer de l'intérêt d'une assurance de personnes. Le club ne peut donc pas affirmer que la loi impose cette assurance. Il doit en revanche informer ses joueurs de l'intérêt d'une garantie complémentaire : annoncer une obligation qui n'existe pas, ce n'est pas les informer.",
+"sources": [
+"C. sport, L. 321-4 (obligation d'information des adhérents)",
+"C. sport, L. 321-6 (proposition d'adhésion à un contrat collectif d'assurance de personnes)",
+"C. assur., L. 131-1 (assurance contre les accidents : sommes fixées par le contrat)",
+"Règlements généraux de la FFF 2026-2027, art. 32 (régime d'assurance lié à la licence)",
+"Règlements généraux de la FFF 2026-2027, art. 32"
+],
+"questions": [
+"m08-q06",
+"m08-q07",
+"ass-l08-q1"
+],
+"titre": "L'individuelle accident et le devoir d'information",
+"priorite": 3
+},
+"ass-l09": {
+"minutes": 5,
+"situation": {
+"texte": "Yanis est inscrit sur la liste des sportifs de haut niveau, et sa fédération est délégataire. Il se blesse à l'entraînement, dans le cadre de sa pratique de haut niveau. Son coéquipier Hugo, simple licencié non inscrit sur cette liste, se blesse de la même façon.",
+"question": "Lequel des deux bénéficie de l'assurance de personnes que la fédération doit souscrire ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Les sportifs de haut niveau ont un régime à part. Il ne faut pas le confondre avec le régime général des licenciés."
+},
+{
+"t": "h",
+"x": "La règle"
+},
+{
+"t": "list",
+"items": [
+"La fédération sportive délégataire (celle qui a reçu délégation du ministre chargé des sports pour sa discipline) doit souscrire des contrats d'assurance de personnes.",
+"Ces contrats profitent aux licenciés inscrits sur la liste des sportifs de haut niveau.",
+"Ils couvrent les dommages corporels causés par un accident survenu à l'occasion de leur pratique sportive de haut niveau.",
+"Un décret fixe le montant minimal des garanties.",
+"Les contrats ne peuvent être conclus qu'après appel à la concurrence."
+]
+},
+{
+"t": "h",
+"x": "Les exceptions et les effets"
+},
+{
+"t": "p",
+"x": "La fédération n'est pas obligée de souscrire si ces sportifs sont déjà couverts par des garanties de même nature et de même montant. Les sportifs inscrits sont informés du montant des garanties souscrites pour eux. Cette assurance dispense aussi la fédération de son obligation d'informer ces sportifs sur l'intérêt d'une assurance de personnes."
+},
+{
+"t": "p",
+"x": "Pour les autres licenciés, le régime général s'applique : la fédération et le club informent, ils n'imposent rien."
+}
+],
+"piege": "Ce régime ne vise que les licenciés inscrits sur la liste des sportifs de haut niveau : ni tous les licenciés, ni tous les joueurs professionnels.",
+"reponse": "Yanis en bénéficie : il est inscrit sur la liste des sportifs de haut niveau et il s'est blessé à l'occasion de sa pratique de haut niveau. Hugo n'est pas inscrit sur cette liste : le régime spécifique ne le vise pas. Pour lui, c'est le régime général : le club l'informe, et l'assurance de base liée à sa licence s'applique, mais pas le contrat spécifique des sportifs de haut niveau.",
+"sources": [
+"C. sport, L. 321-4-1 (assurance de personnes des sportifs de haut niveau souscrite par les fédérations délégataires)",
+"C. sport, L. 321-4 (obligation d'information, dont la fédération est dispensée pour ces sportifs)",
+"C. sport, L. 131-14 (délégation du ministre chargé des sports)",
+"Règlements généraux de la FFF 2026-2027, art. 32"
+],
+"questions": [
+"m08-q08",
+"ass-l09-q1",
+"ass-l09-q2"
+],
+"titre": "Les sportifs de haut niveau",
+"priorite": 1
+},
+"ass-l10": {
+"minutes": 5,
+"situation": {
+"texte": "Lors d'un match, Bastien tente de prendre le ballon dans un duel normal, et Rayan, qui tombe mal, se blesse. Plus tard, Tom, déjà expulsé, frappe volontairement l'arbitre.",
+"question": "La responsabilité civile de Bastien et celle de Tom sont-elles engagées de la même façon ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Tout fait qui cause un dommage à autrui oblige celui par la faute duquel il est arrivé à le réparer. La loi vise aussi la négligence et l'imprudence. Mais une blessure sur un terrain n'engage pas toujours la responsabilité civile, celle qui oblige à réparer financièrement."
+},
+{
+"t": "h",
+"x": "Trois situations à distinguer"
+},
+{
+"t": "table",
+"head": [
+"Situation",
+"Responsabilité civile du joueur"
+],
+"rows": [
+[
+"Risque normal du jeu : duel normal, sans faute caractérisée",
+"Pas engagée automatiquement"
+],
+[
+"Faute de jeu caractérisée : violation nette des règles, par exemple un tacle très brutal",
+"Peut être engagée"
+],
+[
+"Violence volontaire, hors de toute action de jeu",
+"Peut être engagée, en plus de sanctions disciplinaires et pénales possibles"
+]
+]
+},
+{
+"t": "p",
+"x": "Une faute sifflée par l'arbitre ne suffit donc pas à engager la responsabilité civile. Le juge regarde les circonstances."
+},
+{
+"t": "h",
+"x": "Le rôle de l'assurance"
+},
+{
+"t": "p",
+"x": "L'assurance RC paie, dans les limites du contrat, la réparation due à la victime. Mais l'assureur ne répond pas des dommages qui viennent d'une faute intentionnelle ou dolosive de l'assuré."
+},
+{
+"t": "p",
+"x": "Une règle particulière protège les pratiquants : lors d'une manifestation sportive ou d'un entraînement en vue de cette manifestation, sur un lieu réservé à cette pratique, ils ne répondent pas des dommages matériels causés à un autre pratiquant par une chose qu'ils ont sous leur garde."
+}
+],
+"piege": "Une faute sanctionnée par l'arbitre n'engage pas automatiquement la responsabilité civile du joueur : il faut une faute civile, appréciée par le juge.",
+"reponse": "Non. Bastien a joué un duel normal : sa responsabilité civile n'est pas automatiquement engagée. Tom a frappé volontairement l'arbitre, hors de toute action de jeu : sa responsabilité civile peut être engagée, sans compter les sanctions disciplinaires et pénales possibles. Et si le juge retient que Tom voulait causer le dommage, c'est une faute intentionnelle : l'assurance RC ne la couvre pas.",
+"sources": [
+"C. civ., art. 1240 et 1241 (responsabilité pour faute, négligence, imprudence)",
+"C. civ., art. 1242, al. 1 (responsabilité du fait des choses sous sa garde)",
+"C. sport, L. 321-3-1 (pratiquants : pas de responsabilité du fait des choses pour les dommages matériels entre pratiquants)",
+"C. assur., L. 113-1 (faute intentionnelle ou dolosive exclue)"
+],
+"questions": [
+"ass-l10-q1",
+"ass-l10-q2",
+"ass-l10-q3"
+],
+"titre": "La responsabilité du sportif sur le terrain",
+"priorite": 2
+},
+"ass-l11": {
+"minutes": 5,
+"situation": {
+"texte": "Inès est agent sportif, titulaire de la carte professionnelle d'agent sportif. Elle négocie le contrat d'un joueur sans lui signaler une clause de rupture très défavorable. Elle n'a souscrit aucune assurance de responsabilité civile professionnelle. Le joueur subit un préjudice et lui réclame des dommages-intérêts.",
+"question": "Cette assurance était-elle obligatoire, et qui paie le préjudice ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La RC professionnelle (RC Pro) couvre les conséquences financières des fautes commises dans le cadre de l'activité assurée : erreur dans une négociation, oubli, manquement au devoir de conseil. Selon le contrat, elle peut aussi prendre en charge les frais de défense."
+},
+{
+"t": "h",
+"x": "Est-elle obligatoire pour l'agent sportif ?"
+},
+{
+"t": "p",
+"x": "Non. L'article L. 222-17 du Code du sport encadre le contrat écrit de l'agent. Il ne prévoit aucune obligation d'assurance. Le règlement des agents sportifs de la FFF 2026-2027 dit seulement qu'il est conseillé aux agents licenciés de souscrire une RC Pro, même si ce n'est pas une obligation légale."
+},
+{
+"t": "list",
+"items": [
+"Une obligation légale : un texte l'impose, avec une sanction (c'est le cas pour le club).",
+"Une recommandation : c'est le cas de la RC Pro de l'agent.",
+"Une exigence d'un contrat ou d'un règlement particulier : à vérifier au cas par cas."
+]
+},
+{
+"t": "h",
+"x": "Pas d'obligation, mais un vrai risque"
+},
+{
+"t": "p",
+"x": "Sans assurance, l'agent reste personnellement responsable des préjudices qu'il cause par ses fautes. Mieux vaut lire le contrat de RC Pro avec ces points :"
+},
+{
+"t": "table",
+"head": [
+"Point à vérifier",
+"Question à poser"
+],
+"rows": [
+[
+"Activité assurée",
+"L'intermédiation sportive est-elle couverte ?"
+],
+[
+"Territoire",
+"Les opérations à l'étranger sont-elles couvertes ?"
+],
+[
+"Plafond et franchise",
+"Quel montant maximal, et quelle somme reste à ma charge ?"
+],
+[
+"Exclusions",
+"Quels actes ne sont pas garantis ?"
+],
+[
+"Dans le temps",
+"La garantie est-elle déclenchée par le fait dommageable ou par la réclamation ?"
+]
+]
+}
+],
+"piege": "Ne réponds pas « obligatoire » : la RC Pro de l'agent sportif est conseillée, mais l'article L. 222-17 ne l'impose pas.",
+"reponse": "Non, l'article L. 222-17 n'impose pas de RC Pro à l'agent sportif, et le règlement FFF des agents sportifs la conseille seulement. Mais Inès reste personnellement responsable de sa faute professionnelle : sans assurance, si sa responsabilité est retenue, c'est elle qui devra réparer le préjudice du joueur sur son propre patrimoine.",
+"sources": [
+"C. sport, L. 222-17, dans sa rédaction issue de la loi n° 2026-725 du 3 août 2026, art. 13 (contrat écrit de l'agent ; aucune obligation d'assurance)",
+"Règlement des agents sportifs FFF 2026-2027, art. 3.5 (RC professionnelle conseillée, sans obligation légale)",
+"C. assur., L. 124-5 (garantie déclenchée par le fait dommageable ou par la réclamation)",
+"C. civ., art. 1231-1 (inexécution du contrat : manquement au devoir de conseil)"
+],
+"questions": [
+"m08-q11",
+"ass-l11-q1",
+"ass-l11-q2"
+],
+"titre": "L'assurance responsabilité civile de l'agent",
+"priorite": 2
 }
 }
 }
