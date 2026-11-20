@@ -2513,12 +2513,15 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     if (!S.canEdit) return vMe();
     const V = S.suivi || {};
     if (!V.loaded && !V.loading && S.sb) loadSuivi();
+    const rows = V.rows || [], sel = Math.min(S.suiviSel || 0, Math.max(0, rows.length - 1)), row = rows[sel];
+    const nomDe = (r) => String(r?.data?.settings?.name || "").trim().split(" ")[0] || "";
+    const nom = nomDe(row);
     const tete = `<div class="stack" style="gap:6px"><button class="link-btn" data-go="me" style="align-self:flex-start">${icon("back")} Mon espace</button>
-      <h1 class="h-screen">Suivi de la candidate</h1>
+      <h1 class="h-screen">${nom ? `Suivi ${/^[aeiouyhàâéèêëîïôûü]/i.test(nom) ? "d'" : "de "}${esc(nom)}` : "Suivi des apprenants"}</h1>
       <p class="muted small" style="margin:0">Mis à jour à chaque séance. Visible par toi seul, pour préparer votre point de la semaine.</p></div>`;
     if (!V.loaded) return `${header()}<main class="screen narrow">${tete}<p class="muted">Chargement…</p></main>`;
-    const row = (V.rows || [])[0];
-    if (V.error || !row) return `${header()}<main class="screen narrow">${tete}<p class="muted">${V.error ? "La progression de la candidate n'est pas lisible : la règle d'accès Supabase n'est peut-être pas encore en place (fichier supabase/suivi.sql)." : "Aucune progression de candidate pour l'instant : elle apparaîtra après sa première séance."}</p></main>`;
+    const choix = rows.length > 1 ? `<div class="chips" role="group" aria-label="Apprenant suivi">${rows.map((r, i) => `<button class="chip" data-act="suivi-sel" data-param="${i}" aria-pressed="${i === sel}">${esc(nomDe(r) || "Sans prénom")}</button>`).join("")}</div>` : "";
+    if (V.error || !row) return `${header()}<main class="screen narrow">${tete}<p class="muted">${V.error ? "La progression des apprenants n'est pas lisible : la règle d'accès Supabase n'est peut-être pas encore en place (fichier supabase/suivi.sql)." : "Aucun apprenant pour l'instant : sa progression apparaîtra après sa première séance."}</p></main>`;
     const p = row.data || {}, t = today();
     const act = p.activite || {}, jours = Object.keys(act).sort();
     const datesLecons = Object.values(p.lecons || {}).map((v) => (typeof v === "object" ? v.d : v)).filter(Boolean);
@@ -2546,7 +2549,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     }).sort((a, b) => (C.domain(a.m.domaine)?.ordre || 0) - (C.domain(b.m.domaine)?.ordre || 0));
     const commences = mods.filter((x) => x.ok + x.rv + x.fa > 0), pasCommences = mods.length - commences.length;
     const aRevoir = tous.map((l) => ({ l, e: etatDe(p, l.id) })).filter((x) => x.e?.cle === "revoir");
-    return `${header()}<main class="screen narrow">${tete}
+    return `${header()}<main class="screen narrow">${tete}${choix}
       <div class="suivi">
         ${inactif != null && inactif >= 4 ? `<div class="alerte full">${icon("clock")}<div><b>Aucune séance depuis ${inactif} jours</b><span>Dernière activité le ${esc(frDate(derniere))}. Un mot d'encouragement aide souvent à reprendre.</span></div></div>` : ""}
         <section aria-labelledby="sv-bref"><h2 class="h-sec" id="sv-bref">En bref</h2>
@@ -2676,7 +2679,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         <button class="btn btn-ghost btn-block" data-act="logout">Me déconnecter</button></section>` : ""}
       ${S.owner ? `<p class="owner-note">Tu vois l'application avec ton compte : la progression affichée ici est la tienne. Pour qu'la candidate ait la sienne, partage-lui l'application en Contributeur depuis le menu Partager ; elle verra son prénom et ses propres scores.</p>` : ""}
       ${S.canEdit ? `<button class="row" data-go="veille"><span class="stack"><span class="row-title">Veille juridique</span><span class="row-sub">${S.veilleEtat ? `${S.veilleEtat.en_attente || 0} point${(S.veilleEtat.en_attente || 0) > 1 ? "s" : ""} en attente` : "Les changements de textes à vérifier"}</span></span><span class="row-side">${icon("chevron")}</span></button>` : ""}
-      ${S.canEdit ? `<button class="row" data-go="suivi"><span class="stack"><span class="row-title">Suivi de la candidate</span><span class="row-sub">Sa semaine, ses modules, ses leçons à revoir</span></span><span class="row-side">${icon("chevron")}</span></button>` : ""}
+      ${S.canEdit ? `<button class="row" data-go="suivi"><span class="stack"><span class="row-title">Suivi des apprenants</span><span class="row-sub">Leur semaine, leurs modules, leurs leçons à revoir</span></span><span class="row-side">${icon("chevron")}</span></button>` : ""}
       <section class="sec" aria-labelledby="set-t"><h2 class="h-sec" id="set-t">Réglages</h2>
         <div class="setting"><label for="s-per"><b>Questions par séance</b><span class="tiny">Environ 1 min 30 par question.</span></label>
           <div class="seg" id="s-per" role="group" aria-label="Questions par séance">${[10, 15, 20].map((n) => `<button data-act="per" data-param="${n}" aria-pressed="${st.perSession === n}">${n}</button>`).join("")}</div></div>
@@ -3077,6 +3080,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "lecon-pick": { const [qid, j] = String(param).split(":"); const q = C.q(qid); if (!q || (S.leconQ ||= {})[qid] !== undefined) break;
         S.leconQ[qid] = Number(j); const right = grade(q, Number(j)); save(); render();
         announce(right ? "Bonne réponse." : `La bonne réponse était ${LETTERS[q.bonne]}.`); break; }
+      case "suivi-sel": S.suiviSel = Number(param) || 0; render(); break;
       case "lecon-refaire": S.leconOpen = null; S.leconBilan = null; go("lecon", param); break;
       case "lecon-done": {
         const m = (S.content?.lecons || []).find((x) => x.contenu[param]), L = m?.contenu[param]; if (!L || S.leconBilan?.id === param) break;
@@ -3254,7 +3258,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "f5e22204745a";
+  const BUILD = "02708fe806fa";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
