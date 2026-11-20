@@ -2503,7 +2503,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   async function loadSuivi() {
     S.suivi = { loading: true }; render();
     try {
-      const r = await S.sb.from("progress").select("user_id, data, updated_at").neq("user_id", S.uid).order("updated_at", { ascending: false });
+      const r = await S.sb.from("progress").select("user_id, data, updated_at").order("updated_at", { ascending: false });
       if (r.error) throw r.error;
       S.suivi = { loaded: true, rows: r.data || [] };
     } catch (e) { S.suivi = { loaded: true, error: String(e?.message || e) }; }
@@ -2513,12 +2513,14 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     if (!S.canEdit) return vMe();
     const V = S.suivi || {};
     if (!V.loaded && !V.loading && S.sb) loadSuivi();
-    const rows = V.rows || [], sel = Math.min(S.suiviSel || 0, Math.max(0, rows.length - 1)), row = rows[sel];
-    const nomDe = (r) => String(r?.data?.settings?.name || "").trim().split(" ")[0] || "";
-    const nom = nomDe(row);
+    // Les autres apprenants d'abord, puis « Moi » (progression locale, la plus fraîche) : l'administrateur est aussi un apprenant
+    const rows = V.loaded && !V.error ? [...(V.rows || []).filter((r) => r.user_id !== S.uid), { user_id: S.uid, data: S.progress || {}, moi: true }] : [];
+    const sel = Math.min(S.suiviSel || 0, Math.max(0, rows.length - 1)), row = rows[sel];
+    const nomDe = (r) => (r?.moi ? "Moi" : String(r?.data?.settings?.name || "").trim().split(" ")[0] || "");
+    const nom = row?.moi ? "" : nomDe(row);
     const tete = `<div class="stack" style="gap:6px"><button class="link-btn" data-go="me" style="align-self:flex-start">${icon("back")} Mon espace</button>
-      <h1 class="h-screen">${nom ? `Suivi ${/^[aeiouyhàâéèêëîïôûü]/i.test(nom) ? "d'" : "de "}${esc(nom)}` : "Suivi des apprenants"}</h1>
-      <p class="muted small" style="margin:0">Mis à jour à chaque séance. Visible par toi seul, pour préparer votre point de la semaine.</p></div>`;
+      <h1 class="h-screen">${row?.moi ? "Ton suivi" : nom ? `Suivi ${/^[aeiouyhàâéèêëîïôûü]/i.test(nom) ? "d'" : "de "}${esc(nom)}` : "Suivi des apprenants"}</h1>
+      <p class="muted small" style="margin:0">${row?.moi ? "Ta progression, présentée comme celle des autres apprenants." : "Mis à jour à chaque séance. Visible par toi seul, pour préparer votre point de la semaine."}</p></div>`;
     if (!V.loaded) return `${header()}<main class="screen narrow">${tete}<p class="muted">Chargement…</p></main>`;
     const choix = rows.length > 1 ? `<div class="chips" role="group" aria-label="Apprenant suivi">${rows.map((r, i) => `<button class="chip" data-act="suivi-sel" data-param="${i}" aria-pressed="${i === sel}">${esc(nomDe(r) || "Sans prénom")}</button>`).join("")}</div>` : "";
     if (V.error || !row) return `${header()}<main class="screen narrow">${tete}<p class="muted">${V.error ? "La progression des apprenants n'est pas lisible : la règle d'accès Supabase n'est peut-être pas encore en place (fichier supabase/suivi.sql)." : "Aucun apprenant pour l'instant : sa progression apparaîtra après sa première séance."}</p></main>`;
@@ -3258,7 +3260,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "02708fe806fa";
+  const BUILD = "47b677d09457";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
