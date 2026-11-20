@@ -2854,7 +2854,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     if (b) { b.hidden = !show; if (show) b.dataset.param = arbParam(); }
     document.body.classList.toggle("has-arb", !!show);
   }
-  const arbParam = () => ["fiche", "cours", "chapter"].includes(S.view) && S.param ? `c:${S.param}` : "g";
+  const arbParam = () => S.view === "lecon" && S.param ? `l:${S.param}` : ["fiche", "cours", "chapter"].includes(S.view) && S.param ? `c:${S.param}` : "g";
   const ARB_ERR = {
     limit_user: "Tu as posé tes 20 questions du jour. L'arbitre revient demain.",
     limit_all: "L'arbitre a reçu beaucoup de questions aujourd'hui. Il revient demain.",
@@ -2866,6 +2866,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   function arbSuggestions() {
     if (S.arb.ctx.ex) return ["Explique-moi ce corrigé simplement", "Pourquoi ce texte s'applique ici ?", "Comment rédiger cette réponse à l'examen ?"];
     if (S.arb.ctx.q) return ["Explique-moi ça plus simplement", "Donne-moi un exemple dans le football", "Pourquoi les autres réponses sont fausses ?"];
+    if (S.arb.ctx.lecon) return ["Explique-moi cette leçon simplement", "Donne-moi un autre exemple dans le football"];
     if (S.arb.ctx.chapitre) return ["Explique-moi ce chapitre simplement", "Quels pièges éviter à l'examen ?"];
     return ["Quelle est la différence entre agrément et délégation ?", "Que fait un agent sportif, concrètement ?"];
   }
@@ -2876,6 +2877,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     const inner = `<span>${esc(t.titre)}</span>${icon("chevron")}`;
     if (t.kind === "art") return `<button type="button" class="arb-src-link" data-act="art" data-param="${esc(t.ref)}">${inner}</button>`;
     if (t.kind === "cours" || t.kind === "fiche") return `<button type="button" class="arb-src-link" data-go="${t.kind}" data-param="${esc(t.ref)}" data-from="chapter">${inner}</button>`;
+    if (t.kind === "lecon") return `<button type="button" class="arb-src-link" data-go="lecon" data-param="${esc(t.ref)}">${inner}</button>`;
     if (t.kind === "outil") return `<button type="button" class="arb-src-link" data-go="outil" data-param="${esc(t.ref)}">${inner}</button>`;
     if (t.titre === "Lexique des billets") return `<button type="button" class="arb-src-link" data-go="cards">${inner}</button>`;
     return `<span class="arb-src-note">${esc(t.titre)}</span>`;
@@ -2933,7 +2935,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     const [kind, id, pick, extra] = String(param).split(":");
     const key = String(param);
     const examCase = kind === "x" ? examById(id)?.cas?.[Number(pick)] : null;
-    const ctx = kind === "q" ? { q: id, pick: pick === "" ? null : Number(pick) } : kind === "c" ? { chapitre: id }
+    const ctx = kind === "q" ? { q: id, pick: pick === "" ? null : Number(pick) } : kind === "c" ? { chapitre: id } : kind === "l" ? { lecon: id }
       : kind === "x" ? { ex: id, cas: Number(pick), qn: Number(extra), rep: String(examNow()?.cas?.[`${pick}-${extra}`] || "").slice(0, 800) } : {};
     if (!S.arb) S.arb = Object.assign({ key, ctx, msgs: [], busy: false, err: "", left: null }, arbRestore());
     // The conversation follows the user from screen to screen; only the context of the next question changes
@@ -3335,7 +3337,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "5b8da1150faa";
+  const BUILD = "1dea1a56c0c1";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
