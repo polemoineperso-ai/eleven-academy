@@ -660,6 +660,12 @@ a.row:hover .row-title { color: var(--green); }
 .lecon-bilan { display: flex; flex-direction: column; gap: 16px; padding: 18px; border: 2px solid var(--green); border-radius: var(--r-m); }
 .lecon-bilan .h-sec { display: flex; align-items: center; gap: 8px; margin: 0; }
 .lecon-bilan .h-sec svg { width: 20px; height: 20px; color: var(--green); }
+.lecon-bilan.a-revoir { border-color: var(--gold); }
+.lecon-bilan.a-revoir .h-sec svg { color: var(--gold); }
+.lecon-etat { display: inline-flex; align-items: center; gap: 6px; }
+.lecon-etat.ok { color: var(--green); }
+.lecon-etat.revoir { color: var(--gold); }
+.lecon-etat svg { width: 16px; height: 16px; }
 .lecon-row.is-off { opacity: 0.55; cursor: default; }
 .lecon-part { margin: 14px 0 4px; font-size: 13.5px; font-weight: 700; color: var(--fg-2); }
 .report-item p { margin: 0; font-size: 15px; line-height: 1.55; max-width: 65ch; }
@@ -1277,7 +1283,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     const chs = C.domains().filter((d) => !leconsPleines(d.id)).flatMap((d) => C.chapters().filter((c) => c.domaine === d.id));
     const open = chs.filter((c) => chapterState(c).key !== "ok");
     const nl = nextLecon(), rang = (dom) => C.domains().findIndex((d) => d.id === dom);
-    const viaLecon = nl && { go: "lecon", id: nl.l.id, t: `${nl.faites ? "Continue" : "Commence"} les leçons du ${nl.m.titre.split(" · ")[0].toLowerCase()} : « ${nl.l.titre} »`, w: `${nl.m.contenu[nl.l.id]?.minutes || 5} minutes, puis ${nl.m.contenu[nl.l.id]?.questions.length || 3} questions.${nl.faites ? ` ${nl.faites} leçon${nl.faites > 1 ? "s" : ""} faite${nl.faites > 1 ? "s" : ""} sur ${nl.total}.` : ""}` };
+    const viaLecon = nl && (nl.revoir ? { go: "lecon", id: nl.l.id, t: `Revois « ${nl.l.titre} »`, w: `${nl.revoir.ok} sur ${nl.revoir.n} la dernière fois : refais-la pour la réussir.` } : { go: "lecon", id: nl.l.id, t: `${nl.faites ? "Continue" : "Commence"} les leçons du ${nl.m.titre.split(" · ")[0].toLowerCase()} : « ${nl.l.titre} »`, w: `${nl.m.contenu[nl.l.id]?.minutes || 5} minutes, puis ${nl.m.contenu[nl.l.id]?.questions.length || 3} questions.${nl.faites ? ` ${nl.faites} leçon${nl.faites > 1 ? "s" : ""} faite${nl.faites > 1 ? "s" : ""} sur ${nl.total}.` : ""}` });
     if (!open.length && viaLecon) return viaLecon;
     if (!open.length) return { id: null, t: "Tous les chapitres sont validés", w: "Garde le rythme avec la séance du jour : la révision espacée entretient ce que tu as acquis." };
     const fresh = open.find((c) => hasCours(c) && isRead(c.id) && chapterState(c).key === "new");
@@ -1857,13 +1863,27 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   const PRIO = { 3: "Très fréquent à l'examen", 2: "Fréquent à l'examen", 1: "Plus rare à l'examen" };
   const leconsOf = (dom) => (S.content?.lecons || []).find((m) => m.domaine === dom);
   const leconDone = (id) => !!S.progress.lecons?.[id];
+  /* Gradation : « Réussie » (tout juste), « À revoir » (au moins une erreur), « Faite » (terminée avant l'enregistrement du score) */
+  const leconEtat = (id) => {
+    const v = S.progress.lecons?.[id]; if (!v) return null;
+    if (typeof v !== "object") return { cle: "faite", ok: null, n: null };
+    return { cle: v.ok >= v.n ? "reussie" : "revoir", ok: v.ok, n: v.n };
+  };
+  const leconBadge = (id) => {
+    const e = leconEtat(id); if (!e) return icon("chevron");
+    if (e.cle === "reussie") return `<span class="lecon-etat ok">${icon("check")}Réussie <span class="num">${e.ok}/${e.n}</span></span>`;
+    if (e.cle === "revoir") return `<span class="lecon-etat revoir">${icon("refresh")}À revoir <span class="num">${e.ok}/${e.n}</span></span>`;
+    return `<span class="lecon-etat">${icon("check")}Faite</span>`;
+  };
   function leconsSection(d) {
     const m = leconsOf(d.id); if (!m) return "";
-    const toutes = m.parties.flatMap((p) => p.lecons), faites = toutes.filter((l) => leconDone(l.id)).length, dispo = toutes.filter((l) => l.dispo).length;
+    const toutes = m.parties.flatMap((p) => p.lecons), dispo = toutes.filter((l) => l.dispo).length;
+    const nb = (cle) => toutes.filter((l) => leconEtat(l.id)?.cle === cle).length, ok = nb("reussie"), rv = nb("revoir"), fa = nb("faite");
+    const bilan = [ok && `${ok} réussie${ok > 1 ? "s" : ""}`, rv && `${rv} à revoir`, fa && `${fa} faite${fa > 1 ? "s" : ""}`].filter(Boolean).join(", ");
     return `<section class="sec" aria-labelledby="mod-lec"><h2 class="h-sec" id="mod-lec">Les leçons</h2>
-      <p class="muted small" style="margin:0">Une notion par leçon, en 5 minutes : une situation, la règle, le piège, puis des questions. ${dispo < toutes.length ? `${dispo} leçon${dispo > 1 ? "s" : ""} prête${dispo > 1 ? "s" : ""} sur ${toutes.length}, les autres arrivent.` : ""}${faites ? ` ${faites} faite${faites > 1 ? "s" : ""}.` : ""}</p>
+      <p class="muted small" style="margin:0">Une notion par leçon, en 5 minutes : une situation, la règle, le piège, puis des questions. ${dispo < toutes.length ? `${dispo} leçon${dispo > 1 ? "s" : ""} prête${dispo > 1 ? "s" : ""} sur ${toutes.length}, les autres arrivent.` : ""}${bilan ? ` ${bilan}.` : ""}</p>
       ${m.parties.map((p) => `<p class="lecon-part">${esc(p.titre)}</p><div class="rows">${p.lecons.map((l) => l.dispo
-        ? `<button class="row lecon-row" data-go="lecon" data-param="${l.id}"><span class="stack"><span class="row-title">${esc(l.titre)}</span><span class="row-sub">${esc(m.contenu[l.id]?.minutes || 5)} min · ${esc(PRIO[l.priorite] || "")}</span></span><span class="row-side">${leconDone(l.id) ? `${icon("check")}Faite` : icon("chevron")}</span></button>`
+        ? `<button class="row lecon-row" data-go="lecon" data-param="${l.id}"><span class="stack"><span class="row-title">${esc(l.titre)}</span><span class="row-sub">${esc(m.contenu[l.id]?.minutes || 5)} min · ${esc(PRIO[l.priorite] || "")}</span></span><span class="row-side">${leconBadge(l.id)}</span></button>`
         : `<div class="row lecon-row is-off" aria-disabled="true"><span class="stack"><span class="row-title">${esc(l.titre)}</span><span class="row-sub">Bientôt · ${esc(PRIO[l.priorite] || "")}</span></span></div>`).join("")}</div>`).join("")}
     </section>`;
   }
@@ -1874,17 +1894,20 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   function nextLecon() {
     for (const m of S.content?.lecons || []) {
       const dispo = m.parties.flatMap((p) => p.lecons).filter((l) => l.dispo);
+      const faites = dispo.filter((x) => leconDone(x.id)).length;
       const l = dispo.find((x) => !leconDone(x.id));
-      if (l) return { m, l, faites: dispo.filter((x) => leconDone(x.id)).length, total: dispo.length };
+      if (l) return { m, l, faites, total: dispo.length };
+      const r = dispo.find((x) => leconEtat(x.id)?.cle === "revoir");
+      if (r) return { m, l: r, faites, total: dispo.length, revoir: leconEtat(r.id), reussies: dispo.filter((x) => leconEtat(x.id)?.cle !== "revoir").length };
     }
     return null;
   }
   function leconCard() {
     const n = nextLecon(); if (!n) return "";
-    const pct = Math.round((n.faites / n.total) * 100), mod = n.m.titre.split(" · ")[0];
-    return `<section class="side-card" aria-labelledby="nl-t"><div class="sec-head"><h2 class="h-sec" id="nl-t">Ta prochaine leçon</h2><button class="link-btn" data-go="module" data-param="${n.m.domaine}">${esc(mod)}</button></div>
-      <div class="rows"><button class="row" data-go="lecon" data-param="${n.l.id}"><span class="stack"><span class="row-title">${esc(n.l.titre)}</span><span class="row-sub">${esc(n.m.contenu[n.l.id]?.minutes || 5)} min · ${esc(PRIO[n.l.priorite] || "")}</span></span><span class="row-side">${icon("chevron")}</span></button></div>
-      <p class="tiny muted num" style="margin:0">${n.faites ? `${n.faites} leçon${n.faites > 1 ? "s" : ""} faite${n.faites > 1 ? "s" : ""} sur ${n.total} dans le ${esc(mod.toLowerCase())}` : `Aucune leçon faite pour l'instant, ${n.total} au programme du ${esc(mod.toLowerCase())}`}</p>
+    const fait = n.revoir ? n.reussies : n.faites, pct = Math.round((fait / n.total) * 100), mod = n.m.titre.split(" · ")[0];
+    return `<section class="side-card" aria-labelledby="nl-t"><div class="sec-head"><h2 class="h-sec" id="nl-t">${n.revoir ? "Une leçon à revoir" : "Ta prochaine leçon"}</h2><button class="link-btn" data-go="module" data-param="${n.m.domaine}">${esc(mod)}</button></div>
+      <div class="rows"><button class="row" data-go="lecon" data-param="${n.l.id}"><span class="stack"><span class="row-title">${esc(n.l.titre)}</span><span class="row-sub">${n.revoir ? `<span class="num">${n.revoir.ok}/${n.revoir.n}</span> la dernière fois : refais-la pour la réussir` : `${esc(n.m.contenu[n.l.id]?.minutes || 5)} min · ${esc(PRIO[n.l.priorite] || "")}`}</span></span><span class="row-side">${icon(n.revoir ? "refresh" : "chevron")}</span></button></div>
+      <p class="tiny muted num" style="margin:0">${n.revoir ? `${fait} leçon${fait > 1 ? "s" : ""} réussie${fait > 1 ? "s" : ""} sur ${n.total} dans le ${esc(mod.toLowerCase())}` : n.faites ? `${n.faites} leçon${n.faites > 1 ? "s" : ""} faite${n.faites > 1 ? "s" : ""} sur ${n.total} dans le ${esc(mod.toLowerCase())}` : `Aucune leçon faite pour l'instant, ${n.total} au programme du ${esc(mod.toLowerCase())}`}</p>
       <span class="bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Leçons faites dans le ${esc(mod.toLowerCase())}"><i style="width:${pct}%"></i></span></section>`;
   }
   function vLecon() {
@@ -1917,14 +1940,17 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         <p class="lecon-sources">Sources : ${(L.sources || []).map(esc).join(" ; ")}</p>
       </section>
       <section class="sec lecon-quiz" aria-labelledby="lq-t"><h2 class="h-sec" id="lq-t">À toi de jouer</h2>${quiz}</section>
-      ${B ? `<section class="lecon-bilan" aria-labelledby="lb-t"><h2 class="h-sec" id="lb-t">${icon("check")}Leçon terminée, ${B.right} sur ${B.total}</h2>
+      ${B ? `<section class="lecon-bilan${B.reussie ? "" : " a-revoir"}" aria-labelledby="lb-t"><h2 class="h-sec" id="lb-t">${B.reussie ? `${icon("check")}Leçon réussie, ${B.right} sur ${B.total}` : `${icon("refresh")}Leçon à revoir, ${B.right} sur ${B.total}`}</h2>
+        ${B.reussie ? (B.rattrapage ? `<p class="small" style="margin:0">Bravo, tu l'as rattrapée : +5 points de bonus.</p>` : "") : `<p class="small" style="margin:0">Il te reste ${B.total - B.right} question${B.total - B.right > 1 ? "s" : ""} à maîtriser. Relis la règle et le piège, puis refais la leçon : ton meilleur score est gardé.</p>`}
         <div class="gains"><span class="gain num">${icon("star")}+${B.pts} points</span><span class="gain num">${icon("flame")}${B.streak} ${B.streak > 1 ? "jours" : "jour"} d'affilée</span></div>
         <div class="stack" style="gap:8px"><p class="small" style="margin:0"><b class="num">${B.pct} %</b> du ${esc(modNom)} acquis</p><span class="bar" role="progressbar" aria-valuenow="${B.pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Part du ${esc(modNom)} acquise"><i style="width:${B.pct}%"></i></span></div>
         ${B.divisionUp ? `<div class="trophy-new ${fxOn() ? "pop" : ""}">${pic("ic-trophy")}<div><b>Montée en ${esc(B.divisionUp)}</b><span>Tu changes de division.</span></div></div>` : ""}
         ${B.won.map((tid) => { const tr = TROPHIES.find((x) => x.id === tid); return tr ? `<div class="trophy-new ${fxOn() ? "pop" : ""}">${pic("ic-trophy")}<div><b>Trophée : ${esc(tr.name)}</b><span>${esc(tr.desc)}</span></div></div>` : ""; }).join("")}
       </section>` : ""}
       <div class="lesson-end">
-        ${B ? `${suiv ? `<button class="btn btn-primary btn-block" data-go="lecon" data-param="${suiv.id}">Leçon suivante : ${esc(suiv.titre)}${icon("chevron")}</button>
+        ${B && !B.reussie ? `<button class="btn btn-primary btn-block" data-act="lecon-refaire" data-param="${id}">${icon("refresh")}Refaire la leçon</button>
+          ${suiv ? `<button class="link-btn" data-go="lecon" data-param="${suiv.id}" style="align-self:center">Plus tard, passer à la leçon suivante${icon("chevron")}</button>` : `<button class="link-btn" data-go="module" data-param="${m.domaine}" style="align-self:center">Retour au ${esc(modNom)}</button>`}`
+          : B ? `${suiv ? `<button class="btn btn-primary btn-block" data-go="lecon" data-param="${suiv.id}">Leçon suivante : ${esc(suiv.titre)}${icon("chevron")}</button>
           <button class="link-btn" data-go="module" data-param="${m.domaine}" style="align-self:center">Retour au ${esc(modNom)}</button>`
             : `<button class="btn btn-primary btn-block" data-go="module" data-param="${m.domaine}">Retour au ${esc(modNom)}</button>`}`
           : `<button class="btn btn-primary btn-block" data-act="lecon-done" data-param="${id}" ${fini ? "" : "disabled"}>${icon("check")}${fini ? "Terminer la leçon" : "Réponds aux questions pour terminer"}</button>
@@ -2864,16 +2890,20 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "lecon-pick": { const [qid, j] = String(param).split(":"); const q = C.q(qid); if (!q || (S.leconQ ||= {})[qid] !== undefined) break;
         S.leconQ[qid] = Number(j); const right = grade(q, Number(j)); save(); render();
         announce(right ? "Bonne réponse." : `La bonne réponse était ${LETTERS[q.bonne]}.`); break; }
+      case "lecon-refaire": S.leconOpen = null; S.leconBilan = null; go("lecon", param); break;
       case "lecon-done": {
         const m = (S.content?.lecons || []).find((x) => x.contenu[param]), L = m?.contenu[param]; if (!L || S.leconBilan?.id === param) break;
         const t = today(), before = division(S.progress.xp).cur.name, st = S.leconQ || {};
         const right = L.questions.filter((qid) => C.q(qid) && st[qid] === C.q(qid).bonne).length, total = L.questions.filter((qid) => st[qid] !== undefined).length;
-        const bonus = S.progress.lecons?.[param] ? 0 : 10; /* bonus de fin de leçon, une seule fois par leçon */
+        const avant = leconEtat(param), reussie = right === total;
+        /* 10 points la première fois ; 5 points de rattrapage quand une leçon « À revoir » devient « Réussie » */
+        const bonus = !avant ? 10 : (avant.cle === "revoir" && reussie ? 5 : 0), rattrapage = !!avant && avant.cle === "revoir" && reussie;
         S.progress.xp += bonus;
-        S.progress.lecons = Object.assign({}, S.progress.lecons, { [param]: t });
+        const meilleur = avant?.ok != null ? Math.max(avant.ok, right) : right;
+        S.progress.lecons = Object.assign({}, S.progress.lecons, { [param]: { d: t, ok: meilleur, n: total } });
         const streak = bumpStreak(t).count, won = checkTrophies(t);
         const after = division(S.progress.xp).cur.name;
-        S.leconBilan = { id: param, pts: right * 10 + (total - right) * 2 + bonus, right, total, streak, won, divisionUp: after !== before ? after : null, pct: mastery(C.qOfDomain(m.domaine)), mod: m.titre.split(" · ")[0] };
+        S.leconBilan = { id: param, pts: right * 10 + (total - right) * 2 + bonus, right, total, reussie, rattrapage, streak, won, divisionUp: after !== before ? after : null, pct: mastery(C.qOfDomain(m.domaine)), mod: m.titre.split(" · ")[0] };
         save(); render(); announce(`Leçon terminée : ${S.leconBilan.pts} points gagnés.`); break; }
       case "veille-set": { const [id, statut] = String(param).split(":");
         S.sb.from("veille_items").update({ statut, decide_le: new Date().toISOString() }).eq("id", Number(id)).then((r) => {
@@ -3036,7 +3066,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "b7eee43ad096";
+  const BUILD = "4216bd2552a9";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
