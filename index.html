@@ -662,7 +662,51 @@ a.row:hover .row-title { color: var(--green); }
 .lecon-bilan .h-sec svg { width: 20px; height: 20px; color: var(--green); }
 .lecon-bilan.a-revoir { border-color: var(--gold); }
 .lecon-bilan.a-revoir .h-sec svg { color: var(--gold); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .lecon-etat { display: inline-flex; align-items: center; gap: 6px; }
+/* Programme de la semaine (accueil) */
+.semaine { display: flex; flex-direction: column; gap: 14px; }
+.sem-obj b { font-size: 25px; font-weight: 800; color: var(--chalk); }
+.sem-list { display: flex; flex-direction: column; }
+.sem-item { display: grid; grid-template-columns: 26px 1fr; gap: 4px 12px; align-items: center; padding: 11px 0; border-top: 1px solid var(--line); color: inherit; text-align: left; background: none; border-left: 0; border-right: 0; border-bottom: 0; font: inherit; width: 100%; }
+button.sem-item { cursor: pointer; }
+.sem-item > svg, .sem-item .sem-dot { justify-self: center; }
+.sem-item > svg { width: 20px; height: 20px; }
+.sem-item .sem-dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--line-strong); }
+.sem-item.ok > svg { color: var(--green); }
+.sem-item.revoir > svg { color: var(--gold); }
+.sem-t { display: block; font-size: 15.5px; font-weight: 600; line-height: 1.35; color: var(--chalk); }
+.sem-item.ok .sem-t { color: var(--fg-2); font-weight: 500; }
+.sem-s { display: block; font-size: 13px; color: var(--fg-3); font-weight: 500; margin-top: 2px; }
+.sem-item.now .sem-dot { border-color: var(--green); background: var(--green); }
+.sem-item .btn-mini { grid-column: 2; justify-self: start; margin-top: 8px; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 16px; border-radius: 999px; background: var(--green); color: var(--on-green); font-weight: 700; font-size: 14px; border: 0; cursor: pointer; }
+.sem-item .btn-mini svg { width: 14px; height: 14px; }
+.sem-foot { font-size: 13px; color: var(--fg-2); line-height: 1.5; margin: 0; }
+.sem-foot b { color: var(--chalk); font-weight: 700; }
+/* Suivi de la candidate (espace éditeur) */
+.suivi { display: flex; flex-direction: column; gap: 28px; }
+.suivi .kv { display: grid; margin: 8px 0 0; }
+.suivi .kv > div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 15px; }
+.suivi .kv dt { color: var(--fg-2); }
+.suivi .kv dd { margin: 0; font-weight: 700; color: var(--chalk); text-align: right; }
+.suivi .alerte { display: grid; grid-template-columns: 22px 1fr; gap: 12px; padding: 14px 16px; border-radius: var(--r-m); background: rgba(245, 184, 46, 0.14); border: 1px solid rgba(245, 184, 46, 0.5); }
+.suivi .alerte svg { width: 22px; height: 22px; color: var(--gold); }
+.suivi .alerte b { display: block; color: var(--chalk); font-size: 15px; }
+.suivi .alerte span { display: block; color: var(--fg-2); font-size: 14px; line-height: 1.45; margin-top: 2px; }
+.mod-row { display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; padding: 13px 0; border-top: 1px solid var(--line); }
+.mod-row .mod-t { font-weight: 700; font-size: 15px; color: var(--chalk); }
+.mod-row .mod-flag { display: inline-block; white-space: nowrap; margin-left: 10px; font-size: 11.5px; font-weight: 700; color: var(--gold); }
+.mod-row .mod-s { grid-column: 1; font-size: 13px; color: var(--fg-2); }
+.mod-row .mod-s .rv { color: var(--gold); font-weight: 600; }
+.mod-row .mod-p { grid-row: 1 / span 2; grid-column: 2; align-self: center; font-weight: 800; font-size: 18px; color: var(--chalk); font-variant-numeric: tabular-nums; }
+.mod-row .bar { grid-column: 1 / -1; height: 6px; }
+.sem-hist { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; align-items: end; height: 130px; padding-top: 6px; }
+.sem-hist .col { display: flex; flex-direction: column; align-items: center; gap: 6px; height: 100%; justify-content: flex-end; }
+.sem-hist .col i { flex-shrink: 0; width: 100%; max-width: 44px; border-radius: 8px 8px 2px 2px; background: var(--green); min-height: 3px; }
+.sem-hist .col.cur i { background: rgba(169, 224, 35, 0.45); }
+.sem-hist .col b { font-size: 14px; color: var(--chalk); font-variant-numeric: tabular-nums; }
+.sem-hist .col span { font-size: 12px; color: var(--fg-3); }
+@media (min-width: 900px) { .suivi { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 48px; } .suivi .full { grid-column: 1 / -1; } }
 .lecon-etat.ok { color: var(--green); }
 .lecon-etat.revoir { color: var(--gold); }
 .lecon-etat svg { width: 16px; height: 16px; }
@@ -1188,6 +1232,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     S.progress.xp += bonus;
     const st = bumpStreak(t);
     S.progress.sessions.unshift({ date: t, kind: s.kind, label: s.label, right, total });
+    noteActivite(t, "m");
     S.progress.sessions = S.progress.sessions.slice(0, 60);
     const won = checkTrophies(t, { total, right });
     s.summary = { right, total, bonus, won, divisionUp: division(S.progress.xp).cur.name !== before ? division(S.progress.xp).cur.name : null };
@@ -1207,8 +1252,11 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       }
       st.last = t;
     }
+    st.best = Math.max(st.best || 0, st.count);
     return st;
   }
+  /* Série vraie à la date t : elle tombe à 0 si la dernière séance date de plus de 2 jours (un jour de repos par semaine toléré) */
+  const serieReelle = (st, t) => { if (!st?.last) return 0; const g = daysBetween(st.last, t); return g <= 1 || (g === 2 && (!st.rest || daysBetween(st.rest, t) >= 7)) ? st.count || 0 : 0; };
   /* Trophées : vérifiés à la fin d'un match ou d'une leçon ; match = { total, right } pour les trophées propres aux matchs */
   function checkTrophies(t, match) {
     const won = [], award = (id) => { if (!S.progress.trophies[id]) { S.progress.trophies[id] = t; won.push(id); } };
@@ -1348,7 +1396,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
           <span class="tiny num">${dv.next ? `${fmt(p.xp)} / ${fmt(dv.next.min)} pts pour ${esc(dv.next.name)}` : "Division maximale"}</span></div>
         <div class="bar gold" role="progressbar" aria-valuenow="${dv.pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Progression vers la division suivante"><i style="width:${dv.pct}%"></i></div>
       </section>
-      ${leconCard()}
+      ${semaineCard() || leconCard()}
       ${newsCard()}
       ${next ? `<section class="side-card" aria-labelledby="nt-t"><div class="sec-head"><h2 class="h-sec" id="nt-t">Prochain trophée</h2><button class="link-btn" data-go="progress">Armoire</button></div>
         <div class="cabinet"><div class="trophy"><span class="trophy-mark">${next.t.mark()}</span><span style="min-width:0"><b>${esc(next.t.name)}</b><span class="row-sub">${esc(next.t.desc)}</span></span><span class="trophy-val">${esc(next.pr.label)}</span><span class="bar" aria-hidden="true"><i style="width:${next.pr.pct}%"></i></span></div></div></section>` : ""}
@@ -1890,6 +1938,70 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* Un module dont toutes les leçons sont prêtes n'affiche plus ses chapitres : un seul parcours d'apprentissage */
   const leconsPleines = (dom) => { const m = leconsOf(dom); return !!m && m.parties.every((p) => p.lecons.every((l) => l.dispo)); };
   const leconDeQ = (qid) => { for (const m of S.content?.lecons || []) for (const [id, L] of Object.entries(m.contenu)) if (L.questions.includes(qid)) return id; return null; };
+  /* Journal d'activité : nombre de leçons (l) et de matchs (m) par jour, pour le programme et le suivi */
+  function noteActivite(t, k) {
+    const a = (S.progress.activite ||= {}), j = (a[t] ||= {});
+    j[k] = (j[k] || 0) + 1;
+    const cles = Object.keys(a).sort(); while (cles.length > 120) delete a[cles.shift()];
+  }
+  const lundi = (iso) => { const d = new Date(iso + "T12:00:00"), w = (d.getDay() + 6) % 7; return addDays(iso, -w); };
+  const FIN_LECONS = "2027-05-31"; /* finir les leçons fin mai, puis cinq mois de matchs et d'examens blancs */
+  const etatDe = (p, id) => {
+    const v = p?.lecons?.[id]; if (!v) return null;
+    if (typeof v !== "object") return { cle: "faite", ok: null, n: null, d: v };
+    return { cle: v.ok >= v.n ? "reussie" : "revoir", ok: v.ok, n: v.n, d: v.d };
+  };
+  const toutesLecons = () => (S.content?.lecons || []).flatMap((m) => m.parties.flatMap((p) => p.lecons).filter((l) => l.dispo).map((l) => ({ ...l, m })));
+  function rythme(p, t) {
+    const reste = toutesLecons().filter((l) => !etatDe(p, l.id)).length;
+    const semaines = Math.max(1, Math.ceil(daysBetween(t, FIN_LECONS) / 7));
+    return { reste, par: Math.min(7, Math.max(3, Math.ceil(reste / semaines))) };
+  }
+  const faiteDepuis = (p, id, debut) => { const e = etatDe(p, id); return !!e && String(e.d || "") >= debut; };
+  /* Le programme se fige le lundi : la suite du parcours, plus 1 ou 2 leçons à revoir */
+  function semaine(p = S.progress, t = today()) {
+    const debut = lundi(t);
+    if (p.semaine?.debut === debut && p.semaine.ids?.length) return p.semaine;
+    const toutes = toutesLecons(), obj = rythme(p, t).par;
+    /* Programme créé en cours de semaine : les leçons déjà faites depuis lundi y comptent */
+    const deja = toutes.filter((l) => faiteDepuis(p, l.id, debut)).map((l) => l.id);
+    const revoir = toutes.filter((l) => etatDe(p, l.id)?.cle === "revoir" && !deja.includes(l.id)).slice(0, 2).map((l) => l.id);
+    const place = Math.max(1, obj - deja.length - revoir.length);
+    const neuves = toutes.filter((l) => !etatDe(p, l.id)).slice(0, place).map((l) => l.id);
+    const ids = [...deja, ...revoir.slice(0, 1), ...neuves, ...revoir.slice(1)];
+    const sem = { debut, ids, obj: ids.length };
+    if (p === S.progress && ids.length) { S.progress.semaine = sem; save(); }
+    return sem;
+  }
+  function semaineCard() {
+    if (!S.content?.lecons?.length) return "";
+    const t = today(), sem = semaine(); if (!sem.ids.length) return "";
+    const tous = Object.fromEntries(toutesLecons().map((l) => [l.id, l]));
+    const items = sem.ids.map((id) => tous[id]).filter(Boolean);
+    const faites = items.filter((l) => faiteDepuis(S.progress, l.id, sem.debut)).length;
+    const jours = Object.entries(S.progress.activite || {}).filter(([d, j]) => d >= sem.debut && j.m).length;
+    const now = items.find((l) => !faiteDepuis(S.progress, l.id, sem.debut));
+    const pct = Math.round((faites / items.length) * 100), fin = addDays(sem.debut, 6);
+    const jour = (iso) => new Date(iso + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "short", day: "numeric", month: "short" });
+    const r = rythme(S.progress, t);
+    const ligne = (l) => {
+      const e = etatDe(S.progress, l.id), fait = faiteDepuis(S.progress, l.id, sem.debut), titre = esc(l.titre), modN = esc(l.m.titre.split(" · ")[0]);
+      if (fait && e.cle === "revoir") return `<button class="sem-item revoir" data-go="lecon" data-param="${l.id}">${icon("refresh")}<span><span class="sem-t">${titre}</span><span class="sem-s">À revoir <span class="num">${e.ok}/${e.n}</span> : refais-la cette semaine</span></span></button>`;
+      const quand = e?.d ? new Date(e.d + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "long" }) : "";
+      if (fait) return `<button class="sem-item ok" data-go="lecon" data-param="${l.id}">${icon("check")}<span><span class="sem-t">${titre}</span><span class="sem-s">${e.cle === "reussie" ? `Réussie <span class="num">${e.ok}/${e.n}</span>` : "Faite"}${quand ? `, ${esc(quand)}` : ""}</span></span></button>`;
+      const sub = e?.cle === "revoir" ? `À revoir : <span class="num">${e.ok}/${e.n}</span> la dernière fois` : `${esc(l.m.contenu[l.id]?.minutes || 5)} min · ${esc(PRIO[l.priorite] || modN)}`;
+      if (l === now) return `<div class="sem-item now"><span class="sem-dot"></span><span><span class="sem-t">${titre}</span><span class="sem-s">${sub}</span></span><button class="btn-mini" data-go="lecon" data-param="${l.id}">${icon("play")}${e ? "Refaire" : "Commencer"}</button></div>`;
+      return `<button class="sem-item" data-go="lecon" data-param="${l.id}"><span class="sem-dot"></span><span><span class="sem-t">${titre}</span><span class="sem-s">${sub}</span></span></button>`;
+    };
+    return `<section class="side-card semaine" aria-labelledby="sem-t">
+      <div class="sec-head"><h2 class="h-sec" id="sem-t">Ta semaine</h2><span class="tiny">du ${esc(jour(sem.debut))} au ${esc(jour(fin))}</span></div>
+      <p class="sem-obj" style="margin:0"><b class="num">${faites} leçon${faites > 1 ? "s" : ""} sur ${items.length}</b></p>
+      <span class="bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100" aria-valuetext="${faites} leçon${faites > 1 ? "s" : ""} sur ${items.length}" aria-label="Programme de la semaine"><i style="width:${pct}%"></i></span>
+      <p class="sem-foot" style="margin-top:-4px">${faites >= items.length ? "<b>Programme terminé, bravo.</b> Tu peux avancer sur la suite du parcours." : `Et le match du jour : <b>${jours} jour${jours > 1 ? "s" : ""} sur 5</b> cette semaine.`}</p>
+      <div class="sem-list">${items.map(ligne).join("")}</div>
+      ${r.reste ? `<p class="sem-foot">Rythme conseillé : <b>${r.par} leçons par semaine</b> pour finir les ${r.reste} leçons restantes fin mai 2027, puis cinq mois de matchs et d'examens blancs avant l'épreuve.</p>` : ""}
+    </section>`;
+  }
   /* Accueil : la première leçon disponible et pas encore faite */
   function nextLecon() {
     for (const m of S.content?.lecons || []) {
@@ -2388,6 +2500,77 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         return `<div class="todo-row">${icon(a.ic)}<div><b>${esc(a.titre)}</b><span class="todo-sub">${esc(a.sous)}</span></div>${i === 0 ? `<button class="btn btn-primary" ${target}>${esc(a.label)}</button>` : `<button class="link-btn" ${target}>${esc(a.label)}${icon("chevron")}</button>`}</div>`;
       }).join("")}${acts.length > 3 ? `<p class="tiny muted" style="margin:0 0 10px">Et ${plural(acts.length - 3, "autre action", "autres actions")} ensuite.</p>` : ""}</section>`;
   }
+  async function loadSuivi() {
+    S.suivi = { loading: true }; render();
+    try {
+      const r = await S.sb.from("progress").select("user_id, data, updated_at").neq("user_id", S.uid).order("updated_at", { ascending: false });
+      if (r.error) throw r.error;
+      S.suivi = { loaded: true, rows: r.data || [] };
+    } catch (e) { S.suivi = { loaded: true, error: String(e?.message || e) }; }
+    if (S.view === "suivi") render();
+  }
+  function vSuivi() {
+    if (!S.canEdit) return vMe();
+    const V = S.suivi || {};
+    if (!V.loaded && !V.loading && S.sb) loadSuivi();
+    const tete = `<div class="stack" style="gap:6px"><button class="link-btn" data-go="me" style="align-self:flex-start">${icon("back")} Mon espace</button>
+      <h1 class="h-screen">Suivi de la candidate</h1>
+      <p class="muted small" style="margin:0">Mis à jour à chaque séance. Visible par toi seul, pour préparer votre point de la semaine.</p></div>`;
+    if (!V.loaded) return `${header()}<main class="screen narrow">${tete}<p class="muted">Chargement…</p></main>`;
+    const row = (V.rows || [])[0];
+    if (V.error || !row) return `${header()}<main class="screen narrow">${tete}<p class="muted">${V.error ? "La progression de la candidate n'est pas lisible : la règle d'accès Supabase n'est peut-être pas encore en place (fichier supabase/suivi.sql)." : "Aucune progression de candidate pour l'instant : elle apparaîtra après sa première séance."}</p></main>`;
+    const p = row.data || {}, t = today();
+    const act = p.activite || {}, jours = Object.keys(act).sort();
+    const datesLecons = Object.values(p.lecons || {}).map((v) => (typeof v === "object" ? v.d : v)).filter(Boolean);
+    const derniere = [...jours, ...datesLecons, ...(p.sessions || []).map((x) => x.date)].sort().pop() || null;
+    const inactif = derniere ? daysBetween(derniere, t) : null;
+    const sem = semaine(p, t), debut = lundi(t);
+    const tous = toutesLecons();
+    const nbSem = sem.ids.filter((id) => faiteDepuis(p, id, debut)).length;
+    const matchsSem = jours.filter((d) => d >= debut).reduce((n, d) => n + (act[d].m || 0), 0);
+    const etats = tous.map((l) => etatDe(p, l.id));
+    const ok = etats.filter((e) => e?.cle === "reussie").length, rv = etats.filter((e) => e?.cle === "revoir").length, fa = etats.filter((e) => e?.cle === "faite").length;
+    const qs = S.content?.questions || [], acquises = qs.filter((q) => (p.answers?.[q.id]?.box || 0) >= 2).length;
+    const pctQ = qs.length ? Math.round((100 * acquises) / qs.length) : 0;
+    const histo = [3, 2, 1, 0].map((k) => {
+      const d0 = addDays(debut, -7 * k), d1 = addDays(d0, 6), dans = (d) => d >= d0 && d <= d1;
+      const parJournal = jours.filter(dans).reduce((n, d) => n + (act[d].l || 0), 0);
+      return { d0, n: parJournal || datesLecons.filter(dans).length, cur: k === 0 };
+    });
+    const maxH = Math.max(sem.obj || 5, ...histo.map((h) => h.n));
+    const jourC = (iso) => new Date(iso + "T12:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
+    const mods = (S.content?.lecons || []).map((m) => {
+      const ls = m.parties.flatMap((x) => x.lecons).filter((l) => l.dispo), es = ls.map((l) => etatDe(p, l.id));
+      const qd = C.qOfDomain(m.domaine), pct = qd.length ? Math.round((100 * qd.filter((q) => (p.answers?.[q.id]?.box || 0) >= 2).length) / qd.length) : 0;
+      return { m, total: ls.length, ok: es.filter((e) => e?.cle === "reussie").length, rv: es.filter((e) => e?.cle === "revoir").length, fa: es.filter((e) => e?.cle === "faite").length, pct };
+    }).sort((a, b) => (C.domain(a.m.domaine)?.ordre || 0) - (C.domain(b.m.domaine)?.ordre || 0));
+    const commences = mods.filter((x) => x.ok + x.rv + x.fa > 0), pasCommences = mods.length - commences.length;
+    const aRevoir = tous.map((l) => ({ l, e: etatDe(p, l.id) })).filter((x) => x.e?.cle === "revoir");
+    return `${header()}<main class="screen narrow">${tete}
+      <div class="suivi">
+        ${inactif != null && inactif >= 4 ? `<div class="alerte full">${icon("clock")}<div><b>Aucune séance depuis ${inactif} jours</b><span>Dernière activité le ${esc(frDate(derniere))}. Un mot d'encouragement aide souvent à reprendre.</span></div></div>` : ""}
+        <section aria-labelledby="sv-bref"><h2 class="h-sec" id="sv-bref">En bref</h2>
+          <dl class="kv">
+            <div><dt>Dernière séance</dt><dd>${derniere ? `${esc(jourC(derniere))}${inactif ? `, il y a ${inactif} jour${inactif > 1 ? "s" : ""}` : ", aujourd'hui"}` : "aucune"}</dd></div>
+            <div><dt>Cette semaine</dt><dd>${nbSem} leçon${nbSem > 1 ? "s" : ""} sur ${sem.obj} · ${matchsSem} match${matchsSem > 1 ? "s" : ""}</dd></div>
+            <div><dt>Série en cours</dt><dd>${serieReelle(p.streak, t)} jour${serieReelle(p.streak, t) > 1 ? "s" : ""}</dd></div>
+            <div><dt>Série la plus longue</dt><dd>${Math.max(p.streak?.best || 0, p.streak?.count || 0)} jour${Math.max(p.streak?.best || 0, p.streak?.count || 0) > 1 ? "s" : ""}</dd></div>
+            <div><dt>Leçons</dt><dd>${ok} réussie${ok > 1 ? "s" : ""} · ${rv} à revoir${fa ? ` · ${fa} faite${fa > 1 ? "s" : ""}` : ""} · ${tous.length - ok - rv - fa} à faire</dd></div>
+            <div><dt>Questions acquises</dt><dd>${pctQ} % (${acquises} sur ${qs.length})</dd></div>
+          </dl></section>
+        <section aria-labelledby="sv-hist"><h2 class="h-sec" id="sv-hist">Les 4 dernières semaines</h2>
+          <p class="tiny" style="margin:4px 0 0">Leçons terminées par semaine (objectif : ${sem.obj})</p>
+          <div class="sem-hist">${histo.map((h) => `<div class="col${h.cur ? " cur" : ""}"><span class="sr-only">${h.cur ? "Cette semaine" : `Semaine du ${esc(jourC(h.d0))}`} : ${h.n} leçon${h.n > 1 ? "s" : ""}</span><b aria-hidden="true">${h.n}</b><i aria-hidden="true" style="height:${Math.max(3, Math.round((80 * h.n) / maxH))}px"></i><span aria-hidden="true">${h.cur ? "Cette sem." : esc(jourC(h.d0))}</span></div>`).join("")}</div></section>
+        <section class="full" aria-labelledby="sv-mod"><h2 class="h-sec" id="sv-mod">Par module</h2>
+          ${commences.length ? commences.map((x) => `<div class="mod-row"><span class="mod-t">${esc(x.m.titre)}${x.rv >= 2 ? `<span class="mod-flag">À surveiller</span>` : ""}</span><span class="mod-p">${x.pct} %</span>
+            <span class="mod-s">${x.ok} réussie${x.ok > 1 ? "s" : ""}${x.rv ? ` · <span class="rv">${x.rv} à revoir</span>` : ""}${x.fa ? ` · ${x.fa} faite${x.fa > 1 ? "s" : ""}` : ""} · ${x.total - x.ok - x.rv - x.fa} à faire</span>
+            <span class="bar" aria-hidden="true"><i style="width:${x.pct}%"></i></span></div>`).join("") : `<p class="muted small">Aucun module commencé pour l'instant.</p>`}
+          ${pasCommences && commences.length ? `<p class="tiny" style="margin:10px 0 0">${pasCommences === 1 ? "L'autre module n'est" : `Les ${pasCommences} autres modules ne sont`} pas encore commencé${pasCommences > 1 ? "s" : ""}.</p>` : ""}</section>
+        ${aRevoir.length ? `<section class="full" aria-labelledby="sv-rv"><h2 class="h-sec" id="sv-rv">Leçons à revoir</h2>
+          <div class="rows">${aRevoir.map(({ l, e }) => `<div class="row"><span class="stack"><span class="row-title">${esc(l.titre)}</span><span class="row-sub">${esc(l.m.titre.split(" · ")[0])} · <span class="num">${e.ok} sur ${e.n}</span> le ${esc(jourC(e.d))}</span></span></div>`).join("")}</div></section>` : ""}
+      </div>
+    </main>`;
+  }
   function vVeille() {
     if (!S.canEdit) return vMe();
     const V = S.veille || {};
@@ -2481,6 +2664,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     </section>`;
   }
   function vMe() {
+    S.suivi = null; /* le suivi se recharge à chaque visite */
     const st = S.progress.settings; const reportFor = S.param && C.q(S.param);
     return `${header()}<main class="screen narrow">
       <div class="greet"><h1 class="h-screen">Mon espace</h1><p>${syncBadge()}</p></div>
@@ -2492,10 +2676,13 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         <button class="btn btn-ghost btn-block" data-act="logout">Me déconnecter</button></section>` : ""}
       ${S.owner ? `<p class="owner-note">Tu vois l'application avec ton compte : la progression affichée ici est la tienne. Pour qu'la candidate ait la sienne, partage-lui l'application en Contributeur depuis le menu Partager ; elle verra son prénom et ses propres scores.</p>` : ""}
       ${S.canEdit ? `<button class="row" data-go="veille"><span class="stack"><span class="row-title">Veille juridique</span><span class="row-sub">${S.veilleEtat ? `${S.veilleEtat.en_attente || 0} point${(S.veilleEtat.en_attente || 0) > 1 ? "s" : ""} en attente` : "Les changements de textes à vérifier"}</span></span><span class="row-side">${icon("chevron")}</span></button>` : ""}
+      ${S.canEdit ? `<button class="row" data-go="suivi"><span class="stack"><span class="row-title">Suivi de la candidate</span><span class="row-sub">Sa semaine, ses modules, ses leçons à revoir</span></span><span class="row-side">${icon("chevron")}</span></button>` : ""}
       <section class="sec" aria-labelledby="set-t"><h2 class="h-sec" id="set-t">Réglages</h2>
         <div class="setting"><label for="s-per"><b>Questions par séance</b><span class="tiny">Environ 1 min 30 par question.</span></label>
           <div class="seg" id="s-per" role="group" aria-label="Questions par séance">${[10, 15, 20].map((n) => `<button data-act="per" data-param="${n}" aria-pressed="${st.perSession === n}">${n}</button>`).join("")}</div></div>
         <div class="setting"><label for="s-sheet"><b>Feuilles de lecture claires</b><span class="tiny">Fiches et articles sur fond clair.</span></label><input type="checkbox" class="switch" id="s-sheet" data-set="lightSheets" ${st.lightSheets ? "checked" : ""}></div>
+        <div class="setting"><label for="s-mail-dim"><b>E-mail du dimanche</b><span class="tiny">Ton bilan de la semaine et le programme de la suivante.</span></label><input type="checkbox" class="switch" id="s-mail-dim" data-set="emailDimanche" ${st.emailDimanche !== false ? "checked" : ""}></div>
+        <div class="setting"><label for="s-mail-rel"><b>Rappel après 4 jours sans séance</b><span class="tiny">Un seul e-mail, au plus une fois par semaine.</span></label><input type="checkbox" class="switch" id="s-mail-rel" data-set="emailRelance" ${st.emailRelance !== false ? "checked" : ""}></div>
         <div class="setting"><label for="s-fx"><b>Célébrations</b><span class="tiny">Animations de score et de trophées.</span></label><input type="checkbox" class="switch" id="s-fx" data-set="fx" ${st.fx ? "checked" : ""}></div>
       </section>
       <section class="sec" aria-labelledby="rep-t"><h2 class="h-sec" id="rep-t">Signaler une erreur</h2>
@@ -2789,7 +2976,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       return;
     }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
-    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe, news: vNews, veille: vVeille, lecon: vLecon };
+    const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe, news: vNews, veille: vVeille, lecon: vLecon, suivi: vSuivi };
     app.innerHTML = typo((views[S.view] || vHome)());
     renderTabs();
     linkRefs(app);
@@ -2902,6 +3089,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         const meilleur = avant?.ok != null ? Math.max(avant.ok, right) : right;
         S.progress.lecons = Object.assign({}, S.progress.lecons, { [param]: { d: t, ok: meilleur, n: total } });
         const streak = bumpStreak(t).count, won = checkTrophies(t);
+        noteActivite(t, "l");
         const after = division(S.progress.xp).cur.name;
         S.leconBilan = { id: param, pts: right * 10 + (total - right) * 2 + bonus, right, total, reussie, rattrapage, streak, won, divisionUp: after !== before ? after : null, pct: mastery(C.qOfDomain(m.domaine)), mod: m.titre.split(" · ")[0] };
         save(); render(); announce(`Leçon terminée : ${S.leconBilan.pts} points gagnés.`); break; }
@@ -3066,7 +3254,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "4216bd2552a9";
+  const BUILD = "f5e22204745a";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;

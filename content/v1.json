@@ -37678,6 +37678,15 @@
 "precisions": []
 },
 {
+"id": "n-semaine-2026-11-21",
+"d": "2026-11-21",
+"genre": "appli",
+"titre": "Ton programme de la semaine",
+"texte": "Chaque lundi, l'accueil te propose les leçons de la semaine, avec ta progression : la suite du parcours, et une leçon à revoir quand il y en a. Le rythme conseillé est calculé pour finir les leçons fin mai 2027 et garder cinq mois de matchs et d'examens blancs avant l'épreuve. Une leçon terminée avec une erreur s'affiche « À revoir » : refais-la pour la réussir, ton meilleur score est gardé.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
