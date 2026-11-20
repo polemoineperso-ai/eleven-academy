@@ -37687,6 +37687,15 @@
 "precisions": []
 },
 {
+"id": "n-retour-2026-11-21",
+"d": "2026-11-21",
+"genre": "appli",
+"titre": "Le bouton retour du navigateur fonctionne",
+"texte": "La flèche retour du navigateur, ou le geste retour du téléphone, ramène maintenant à l'écran précédent de l'appli. Pendant un match ou une leçon commencée, elle demande d'abord si tu veux quitter. Et si tu recharges la page, tu restes sur l'écran où tu étais.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",

@@ -1280,7 +1280,72 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     S.view = view; S.param = param; render();
     window.scrollTo(0, 0);
     focusH1();
+    histPush();
   }
+  /* ---------- Bouton retour du navigateur (et geste retour du téléphone) ----------
+     Chaque écran est une entrée de l'historique. Le retour revient à l'écran précédent ; pendant un match, un examen,
+     une leçon commencée ou une fiche modifiée, il demande d'abord confirmation. Les écrans de séance terminée sont sautés. */
+  const SEANCE = ["quiz", "result", "cardPlay", "exam", "examFix", "tour", "ficheEdit"];
+  const histEtat = () => ({ ea: 1, view: S.view, param: S.param ?? null, from: S.from ?? null });
+  function histPush() {
+    try {
+      const h = history.state, e = histEtat();
+      if (h && h.ea && h.view === e.view && h.param === e.param) history.replaceState(e, "");
+      else if (h && h.ea) history.pushState(e, "");
+      else history.replaceState(e, ""); /* premier écran : le retour suivant quitte l'appli, comme partout */
+    } catch { /* historique indisponible */ }
+  }
+  function ecranValide(h) {
+    if (!h || !h.ea) return false;
+    if (h.view === "quiz") return !!(S.session && !S.session.summary);
+    if (h.view === "result") return !!S.session;
+    if (h.view === "cardPlay") return !!S.deck;
+    if (h.view === "exam" || h.view === "examFix") return !!examNow();
+    if (h.view === "tour" || h.view === "ficheEdit") return false;
+    return true;
+  }
+  function leconCommencee() {
+    if (S.view !== "lecon" || S.leconBilan?.id === S.param) return false;
+    const L = (S.content?.lecons || []).find((x) => x.contenu[S.param])?.contenu[S.param];
+    return !!L && L.questions.some((qid) => S.leconQ?.[qid] !== undefined);
+  }
+  /* Renvoie true si l'écran actuel retient le retour (une confirmation s'affiche à la place) */
+  function retenirRetour() {
+    const dlg = document.querySelector("dialog[open]");
+    if (dlg) { dlg.close(); return true; }
+    if (S.navConfirm) { S.navConfirm = null; render(); return true; }
+    const s = S.session;
+    if (S.view === "quiz" && s && !s.summary && s.kind !== "apercu" && s.results.length) {
+      if (!s.confirmQuit) { s.confirmQuit = true; render(); document.querySelector("[data-act=stay]")?.focus(); }
+      return true;
+    }
+    if (S.view === "exam") { const cur = examNow(); if (cur && cur.phase !== "fix") { cur.confirm = "drop"; render(); document.querySelector(".ed-confirm")?.scrollIntoView({ block: "center" }); return true; } }
+    if (S.view === "examFix" && examNow()) {
+      S.navConfirm = { titre: "Quitter la correction ?", texte: "Ta note n'est pas encore enregistrée. Tu pourras reprendre la correction depuis l'onglet Match." }; render();
+      document.querySelector("[data-act=nav-stay]")?.focus(); return true;
+    }
+    if (S.view === "ficheEdit" && S.edit && S.edit.dirty) { S.edit.confirm = "quit"; render(); document.querySelector(".ed-confirm")?.scrollIntoView({ block: "center" }); return true; }
+    if (leconCommencee()) {
+      S.navConfirm = { titre: "Quitter la leçon ?", texte: "Tes réponses sont gardées, mais la leçon ne compte qu'une fois terminée." }; render();
+      document.querySelector("[data-act=nav-stay]")?.focus(); return true;
+    }
+    return false;
+  }
+  let histSaut = 0;
+  window.addEventListener("popstate", (ev) => {
+    if (S.login || !S.progress || S.welcome) return;
+    const h = ev.state;
+    if (S.navForce) S.navForce = false;
+    else if (!histSaut && retenirRetour()) { try { history.pushState(histEtat(), ""); } catch { /* historique indisponible */ } return; }
+    /* On saute les écrans de séance terminée et les doublons de l'écran actuel */
+    if (h && h.ea && (!ecranValide(h) || (h.view === S.view && h.param === (S.param ?? null))) && histSaut < 15) { histSaut++; history.back(); return; }
+    histSaut = 0;
+    if (S.view === "quiz" && S.session && !S.session.summary) keepSession();
+    if (S.view === "cardPlay") S.deck = null;
+    const e = h && h.ea && ecranValide(h) ? h : { view: "home", param: null, from: null };
+    S.view = e.view; S.param = e.param; S.from = e.from; render();
+    window.scrollTo(0, 0); focusH1();
+  });
   function focusH1() {
     const h = document.querySelector("#app h1");
     if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
@@ -2982,7 +3047,8 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     }
     if (!S.content) { app.innerHTML = vEmpty(); renderTabs(); return; }
     const views = { home: vHome, train: vTrain, chapter: vChapter, quiz: vQuiz, result: vResult, tour: vTour, match: vMatch, examIntro: vExamIntro, exam: vExam, examFix: vExamFix, cards: vCards, cardPlay: vCardPlay, revisions: vTrain, fiche: vFiche, ficheEdit: vFicheEdit, cours: vCours, outil: vOutil, module: vModule, progress: vProgress, me: vMe, news: vNews, veille: vVeille, lecon: vLecon, suivi: vSuivi };
-    app.innerHTML = typo((views[S.view] || vHome)());
+    app.innerHTML = typo((views[S.view] || vHome)()) + (S.navConfirm ? `<div class="confirm-layer"><div class="confirm" role="alertdialog" aria-modal="true" aria-labelledby="nc-t" aria-describedby="nc-d"><b id="nc-t">${esc(S.navConfirm.titre)}</b><p id="nc-d" class="small muted" style="margin:0">${esc(S.navConfirm.texte)}</p>
+      <div class="confirm-actions"><button class="btn btn-primary" data-act="nav-stay">Rester</button><button class="btn btn-ghost" data-act="nav-leave">Quitter</button></div></div></div>` : "");
     renderTabs();
     linkRefs(app);
   }
@@ -3047,6 +3113,8 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
         break;
       }
       case "stay": if (s) { s.confirmQuit = false; render(); } break;
+      case "nav-stay": S.navConfirm = null; render(); break;
+      case "nav-leave": S.navConfirm = null; S.navForce = true; history.back(); break;
       case "quit-yes": { const any = S.session?.results.length; S.session = null; keepSession(); toast(any ? "Match quitté. Tes réponses sont gardées." : "Match quitté."); go("home"); break; }
       case "resume": if (S.pending) { S.session = S.pending; S.session.confirmQuit = false; S.pending = null; go("quiz"); } break;
       case "report": go("me", param); requestAnimationFrame(() => document.getElementById("r-msg")?.focus()); break;
@@ -3260,7 +3328,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "47b677d09457";
+  const BUILD = "0525d42a07e6";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
@@ -3298,6 +3366,8 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       const kept = lsGet(sessKey());
       if (kept && kept.ids && kept.date === today() && kept.i < kept.ids.length && kept.ids.every((id) => C.q(id))) { kept.picked = null; S.pending = kept; }
       else lsSet(sessKey(), null);
+      const h = history.state;
+      if (h && h.ea && !SEANCE.includes(h.view)) { S.welcome = false; S.view = h.view; S.param = h.param ?? null; S.from = h.from ?? null; }
     }
     render();
   }
@@ -3342,6 +3412,8 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       const kept = lsGet(sessKey());
       if (kept && kept.ids && kept.date === today() && kept.i < kept.ids.length && kept.ids.every((id) => C.q(id))) { kept.picked = null; S.pending = kept; }
       else lsSet(sessKey(), null);
+      const h = history.state;
+      if (h && h.ea && !SEANCE.includes(h.view)) { S.welcome = false; S.view = h.view; S.param = h.param ?? null; S.from = h.from ?? null; }
     }
     render();
   }
