@@ -933,9 +933,9 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
     { id: "perfect", name: "Clean sheet", desc: "Un match d'au moins 5 questions sans encaisser d'erreur", mark: () => pic("ic-tr-clean") },
     { id: "streak7", name: "7 matchs d'affilée", desc: "Jouer 7 jours de suite", mark: () => pic("ic-tr-serie") },
     { id: "hundred", name: "100 sélections", desc: "100 réponses données", mark: () => pic("ic-tr-100") },
-    { id: "dom-associations", name: "Champion des associations", desc: "80 % du domaine acquis", mark: () => champMark("associations") },
-    { id: "dom-agents", name: "Champion des agents sportifs", desc: "80 % du domaine acquis", mark: () => champMark("agents") },
-    { id: "dom-dopage", name: "Champion de l'antidopage", desc: "80 % du domaine acquis", mark: () => champMark("dopage") },
+    { id: "dom-associations", name: "Champion des associations", desc: "80 % du module acquis", mark: () => champMark("associations") },
+    { id: "dom-agents", name: "Champion des agents sportifs", desc: "80 % du module acquis", mark: () => champMark("agents") },
+    { id: "dom-dopage", name: "Champion de l'antidopage", desc: "80 % du module acquis", mark: () => champMark("dopage") },
     { id: "dom-contrats", name: "Champion des contrats", desc: "80 % du module acquis", mark: () => champMark("contrats") },
     { id: "dom-societes", name: "Champion des sociétés", desc: "80 % du module acquis", mark: () => champMark("societes") },
     { id: "dom-fiscal", name: "Champion du fiscal", desc: "80 % du module acquis", mark: () => champMark("fiscal") },
@@ -3036,7 +3036,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "fff9850b3292";
+  const BUILD = "b7eee43ad096";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;

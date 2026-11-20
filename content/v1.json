@@ -3774,10 +3774,11 @@
 {
 "id": "dopage",
 "ordre": 10,
-"titre": "Complément · Dopage",
-"sous_titre": "Hors modules : au programme de l'épreuve générale",
+"titre": "Module 10 · Lutte contre le dopage",
+"sous_titre": "Code du sport, Code mondial antidopage, sanctions",
 "epreuve": "generale",
-"module": ""
+"module": "Module 10 · Lutte contre le dopage",
+"num": "10"
 }
 ],
 "chapitres": [
@@ -27721,7 +27722,7 @@
 "id": "dop-10",
 "chapitre": "dopage-principes",
 "niveau": 1,
-"enonce": "Un sportif a besoin d'un médicament contenant une substance interdite. Il adresse sa demande d'autorisation d'usage à des fins thérapeutiques à :",
+"enonce": "Un sportif de niveau national a besoin d'un médicament contenant une substance interdite. Il adresse sa demande d'autorisation d'usage à des fins thérapeutiques à :",
 "options": [
 "Son médecin traitant",
 "Sa fédération",
@@ -27730,7 +27731,7 @@
 "Le CNOSF"
 ],
 "bonne": 2,
-"explication": "À l'AFLD. Un traitement conforme à une autorisation n'entraîne ni sanction disciplinaire ni sanction pénale.",
+"explication": "À l'AFLD (C. sport, L. 232-2 et R. 232-74 ; un sportif de niveau international s'adresse à sa fédération internationale). Un traitement conforme à une autorisation n'entraîne ni sanction disciplinaire ni sanction pénale.",
 "article": {
 "texte": "Code du sport",
 "ref": "L. 232-2",
@@ -27739,7 +27740,15 @@
 "modifie_par": "loi n° 2026-201 du 20 mars 2026"
 },
 "origine": "Rédigée d'après le texte",
-"verifiee_le": "2026-11-03"
+"verifiee_le": "2026-11-03",
+"maj": [
+{
+"d": "2026-11-20",
+"t": "precision",
+"x": "L'énoncé vise le sportif de niveau national ; le sportif international s'adresse à sa fédération internationale."
+}
+],
+"v": 2
 },
 {
 "id": "dop-11",
@@ -33968,6 +33977,246 @@
 "bonne": 0,
 "explication": "L. 222-2-10-1 permet à une association ou à une société sportive de conclure ce contrat avec le sportif ou l'entraîneur professionnel qu'elle emploie (loi n° 2026-725, art. 25, 14°).",
 "origine": "Leçon act-l11"
+},
+{
+"id": "dop-l01-q1",
+"chapitre": "dopage-principes",
+"niveau": 2,
+"enonce": "Quel organe de l'AFLD prononce les sanctions disciplinaires en cas de violation des règles antidopage ?",
+"options": [
+"Le collège",
+"La commission des sanctions",
+"Le ministre chargé des sports",
+"La fédération sportive du sportif",
+"Le Comité national olympique et sportif français"
+],
+"bonne": 1,
+"explication": "La commission des sanctions prononce les sanctions (C. sport, L. 232-23). Le collège décide d'engager les poursuites et valide les accords de composition administrative (C. sport, L. 232-22). Sans accord, c'est la commission des sanctions qui statue.",
+"origine": "Leçon dop-l01"
+},
+{
+"id": "dop-l01-q2",
+"chapitre": "dopage-principes",
+"niveau": 2,
+"enonce": "Selon le Code du sport, qui est un sportif au sens de la lutte contre le dopage ?",
+"options": [
+"Seulement le sportif professionnel",
+"Seulement le sportif inscrit sur la liste des sportifs de haut niveau",
+"Toute personne qui participe ou se prépare à une manifestation organisée par une fédération agréée, entre autres cas",
+"Seulement le sportif de niveau international",
+"Seulement le sportif désigné dans le groupe cible"
+],
+"bonne": 2,
+"explication": "Est un sportif toute personne qui participe ou se prépare à une manifestation organisée par une fédération agréée ou autorisée par une fédération délégataire, à une manifestation avec remise de prix ou à une manifestation internationale (C. sport, L. 230-3, I).",
+"origine": "Leçon dop-l01"
+},
+{
+"id": "dop-l01-q3",
+"chapitre": "dopage-principes",
+"niveau": 2,
+"enonce": "Quelle est la nature juridique de l'Agence française de lutte contre le dopage ?",
+"options": [
+"Un service du ministère chargé des sports",
+"Une autorité publique indépendante",
+"Une association créée par le CNOSF",
+"Un organe de l'Agence mondiale antidopage",
+"Une fédération sportive délégataire"
+],
+"bonne": 1,
+"explication": "L'AFLD est une autorité publique indépendante qui définit et met en oeuvre les actions de lutte contre le dopage (C. sport, L. 232-5, I).",
+"origine": "Leçon dop-l01"
+},
+{
+"id": "dop-l02-q1",
+"chapitre": "dopage-principes",
+"niveau": 2,
+"enonce": "Selon la Liste des interdictions 2027, une substance de la classe S1 (agents anabolisants) est :",
+"options": [
+"Interdite seulement en compétition et spécifiée",
+"Interdite en permanence et non spécifiée",
+"Interdite en permanence et spécifiée",
+"Interdite seulement dans certains sports",
+"Autorisée hors compétition"
+],
+"bonne": 1,
+"explication": "Les substances de la classe S1 sont interdites en permanence, en et hors compétition, et toutes sont non spécifiées (Liste des interdictions 2027, S1).",
+"origine": "Leçon dop-l02"
+},
+{
+"id": "dop-l02-q2",
+"chapitre": "dopage-principes",
+"niveau": 2,
+"enonce": "Quelle substance la Liste des interdictions 2027 cite-t-elle comme substance d'abus ?",
+"options": [
+"La cocaïne",
+"Le cannabidiol (CBD)",
+"Les bêta-2-agonistes",
+"Les glucocorticoïdes",
+"Les diurétiques"
+],
+"bonne": 0,
+"explication": "La Liste 2027 cite comme substances d'abus la cocaïne, l'héroïne, la MDMA et le THC. Le CBD n'est pas interdit (Liste des interdictions 2027, introduction, S6 à S8).",
+"origine": "Leçon dop-l02"
+},
+{
+"id": "dop-l02-q3",
+"chapitre": "dopage-principes",
+"niveau": 2,
+"enonce": "Selon la Liste des interdictions 2027, sauf mention contraire, une substance interdite est considérée comme :",
+"options": [
+"Une substance spécifiée",
+"Une substance non spécifiée",
+"Une substance d'abus",
+"Une substance autorisée hors compétition",
+"Une substance interdite seulement dans certains sports"
+],
+"bonne": 0,
+"explication": "Toutes les substances interdites sont des substances spécifiées, sauf mention contraire dans la Liste (Code mondial antidopage 2027, art. 4.2.2, cité dans la Liste des interdictions 2027).",
+"origine": "Leçon dop-l02"
+},
+{
+"id": "dop-l03-q1",
+"chapitre": "dopage-principes",
+"niveau": 2,
+"enonce": "Parmi les conditions pour obtenir une AUT, on trouve :",
+"options": [
+"L'accord préalable de la fédération du sportif",
+"Le fait que la substance soit vendue sans ordonnance",
+"Le fait d'avoir déjà utilisé la substance sans AUT",
+"L'absence de toute alternative thérapeutique autorisée et raisonnable",
+"Le fait que le sportif ne participe à aucune compétition"
+],
+"bonne": 3,
+"explication": "La substance doit être un traitement indiqué sans qu'il existe d'alternative thérapeutique autorisée et raisonnable. Le besoin ne doit pas résulter d'un usage antérieur sans AUT (C. sport, D. 232-72).",
+"origine": "Leçon dop-l03"
+},
+{
+"id": "dop-l04-q1",
+"chapitre": "dopage-principes",
+"niveau": 2,
+"enonce": "Au domicile du sportif, un contrôle antidopage peut avoir lieu, hors manifestation ou entraînement en cours et lieu ouvert au public :",
+"options": [
+"À toute heure, de jour comme de nuit",
+"Entre 6 heures et 23 heures",
+"Entre 8 heures et 20 heures",
+"Seulement entre 9 heures et 18 heures",
+"Jamais, le domicile étant protégé"
+],
+"bonne": 1,
+"explication": "Les lieux de contrôle, dont le domicile du sportif, ne sont accessibles qu'entre 6 heures et 23 heures, sauf lieu ouvert au public ou manifestation ou entraînement en cours (C. sport, L. 232-13-1 et L. 232-14).",
+"origine": "Leçon dop-l04"
+},
+{
+"id": "dop-l05-q1",
+"chapitre": "dopage-sanctions",
+"niveau": 2,
+"enonce": "Parmi les actes suivants, lequel est une violation des règles antidopage qui peut être commise par toute personne, et pas seulement par un sportif ?",
+"options": [
+"La présence d'une substance interdite dans son échantillon",
+"L'usage d'une substance interdite par un sportif",
+"L'administration à un sportif d'une substance interdite",
+"Trois manquements aux obligations de localisation",
+"La possession en compétition d'une substance interdite par un sportif"
+],
+"bonne": 2,
+"explication": "Il est interdit à toute personne d'administrer ou de tenter d'administrer aux sportifs une substance ou méthode interdite (C. sport, L. 232-10, 1°). Les autres actes cités visent le sportif.",
+"origine": "Leçon dop-l05"
+},
+{
+"id": "dop-l05-q2",
+"chapitre": "dopage-sanctions",
+"niveau": 2,
+"enonce": "Un sportif tente de faire usage d'une substance interdite, mais la tentative échoue pour une raison indépendante de sa volonté et la substance n'entre jamais dans son organisme. Selon le Code du sport :",
+"options": [
+"Il n'y a pas de violation, car la substance n'est pas dans son organisme",
+"Il y a violation : l'usage et la tentative d'usage sont interdits",
+"Il y a violation seulement si la substance est non spécifiée",
+"Il y a violation seulement si le sportif est dans le groupe cible",
+"Il y a violation seulement si le sportif est professionnel"
+],
+"bonne": 1,
+"explication": "Il est interdit à tout sportif de faire usage ou de tenter de faire usage d'une substance ou méthode interdite (C. sport, L. 232-9, II, 3° ; la tentative est définie à L. 230-5).",
+"origine": "Leçon dop-l05"
+},
+{
+"id": "dop-l07-q1",
+"chapitre": "dopage-sanctions",
+"niveau": 2,
+"enonce": "Un sportif reçoit la notification des griefs de l'AFLD avec une proposition de composition administrative. De combien de temps dispose-t-il pour l'accepter ou la refuser ?",
+"options": [
+"5 jours",
+"15 jours",
+"20 jours",
+"30 jours",
+"10 ans"
+],
+"bonne": 2,
+"explication": "L'intéressé a 20 jours à compter de la réception de la notification pour entrer en voie de composition administrative ou la refuser (C. sport, R. 232-89, II, 3°).",
+"origine": "Leçon dop-l07"
+},
+{
+"id": "dop-l07-q2",
+"chapitre": "dopage-sanctions",
+"niveau": 2,
+"enonce": "Devant quelle juridiction forme-t-on le recours de pleine juridiction contre une décision de la commission des sanctions de l'AFLD ?",
+"options": [
+"Le tribunal judiciaire",
+"Le Conseil d'État",
+"La Cour de cassation",
+"Le tribunal administratif",
+"La cour d'appel"
+],
+"bonne": 1,
+"explication": "Les recours de pleine juridiction sont présentés devant le Conseil d'État, dans un délai d'un mois à partir de la notification (C. sport, L. 232-24 et R. 232-98).",
+"origine": "Leçon dop-l07"
+},
+{
+"id": "dop-l09-q1",
+"chapitre": "dopage-aide",
+"niveau": 2,
+"enonce": "Quelle est la durée minimale de la suspension pour administration ou trafic de substances ou méthodes interdites (C. sport, L. 232-10, 1° et 3°) ?",
+"options": [
+"6 mois",
+"2 ans",
+"4 ans",
+"8 ans",
+"10 ans"
+],
+"bonne": 2,
+"explication": "La suspension est au minimum de 4 ans et peut aller jusqu'à la suspension définitive selon la gravité (C. sport, L. 232-23-3-6).",
+"origine": "Leçon dop-l09"
+},
+{
+"id": "dop-l09-q2",
+"chapitre": "dopage-aide",
+"niveau": 2,
+"enonce": "Un sportif fait appel à un préparateur physique suspendu pour dopage. Que doit établir l'AFLD pour retenir une association interdite ?",
+"options": [
+"Que le sportif connaissait le statut du préparateur physique",
+"Que le sportif s'est dopé",
+"Que le sportif a tiré un avantage sportif de cette collaboration",
+"Que le préparateur physique a commis une récidive",
+"Rien, le recours à ses services suffit"
+],
+"bonne": 0,
+"explication": "L'AFLD doit établir que le sportif ou l'autre personne connaissait le statut disqualifiant du membre du personnel d'encadrement (C. sport, L. 232-9-1).",
+"origine": "Leçon dop-l09"
+},
+{
+"id": "dop-l09-q3",
+"chapitre": "dopage-aide",
+"niveau": 2,
+"enonce": "Quelle peine maximale encourt, en principe, la personne qui cède ou offre à des sportifs, sans raison médicale, des substances interdites ?",
+"options": [
+"6 mois d'emprisonnement et 7 500 €",
+"1 an d'emprisonnement et 3 750 €",
+"3 ans d'emprisonnement et 45 000 €",
+"5 ans d'emprisonnement et 75 000 €",
+"10 ans d'emprisonnement et 150 000 €"
+],
+"bonne": 3,
+"explication": "La cession ou l'offre aux sportifs, sans raison médicale dûment justifiée, est punie de 5 ans d'emprisonnement et de 75 000 € d'amende, portés à 7 ans et 150 000 € dans certains cas aggravés (C. sport, L. 232-26, II).",
+"origine": "Leçon dop-l09"
 }
 ],
 "cartes": [
@@ -37420,6 +37669,15 @@
 "precisions": []
 },
 {
+"id": "n-lecons-m10-2026-11-20",
+"d": "2026-11-20",
+"genre": "appli",
+"titre": "Le dopage devient le module 10, en leçons",
+"texte": "Le dopage est au programme officiel de l'épreuve générale et est tombé en cas pratique en 2025 : il devient un module à part entière, avec 9 leçons de 5 minutes, de la liste des interdictions aux sanctions de l'entourage du sportif. Les leçons suivent le Code du sport et signalent les points où le Code mondial antidopage 2027 diffère.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",
@@ -37449,6 +37707,11 @@
 "g": "q",
 "id": "m09-q06",
 "x": "L'énoncé précise qu'il s'agit de la durée fixée par la loi (la FFF retient deux ans)."
+},
+{
+"g": "q",
+"id": "dop-10",
+"x": "L'énoncé vise le sportif de niveau national ; le sportif international s'adresse à sa fédération internationale."
 }
 ]
 },
@@ -46865,6 +47128,759 @@
 ],
 "titre": "Le contrat d'image après la réforme",
 "priorite": 2
+}
+}
+},
+{
+"domaine": "dopage",
+"titre": "Module 10 · Lutte contre le dopage",
+"parties": [
+{
+"titre": "Le cadre de la lutte antidopage",
+"lecons": [
+{
+"id": "dop-l01",
+"titre": "Qui lutte contre le dopage ?",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "dop-l02",
+"titre": "La liste des interdictions",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "dop-l03",
+"titre": "Se soigner : l'autorisation d'usage à des fins thérapeutiques",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "dop-l04",
+"titre": "Contrôles, prélèvements et localisation",
+"priorite": 3,
+"dispo": true
+}
+]
+},
+{
+"titre": "Les violations et leurs sanctions",
+"lecons": [
+{
+"id": "dop-l05",
+"titre": "Les violations des règles antidopage",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "dop-l06",
+"titre": "La durée des suspensions",
+"priorite": 3,
+"dispo": true
+},
+{
+"id": "dop-l07",
+"titre": "La procédure et la prescription",
+"priorite": 2,
+"dispo": true
+}
+]
+},
+{
+"titre": "Aide substantielle et entourage",
+"lecons": [
+{
+"id": "dop-l08",
+"titre": "L'aide substantielle et le sursis",
+"priorite": 2,
+"dispo": true
+},
+{
+"id": "dop-l09",
+"titre": "L'entourage du sportif, et l'agent",
+"priorite": 3,
+"dispo": true
+}
+]
+}
+],
+"contenu": {
+"dop-l01": {
+"minutes": 5,
+"situation": {
+"texte": "Hugo, 19 ans, joue dans un club amateur, en championnat régional. Ce championnat est organisé par une fédération sportive agréée. Hugo pense que seuls les professionnels sont contrôlés et que seule sa fédération peut le sanctionner.",
+"question": "Hugo peut-il être contrôlé, et qui peut le sanctionner ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'Agence française de lutte contre le dopage (AFLD) est au centre du dispositif. C'est une autorité publique indépendante. Elle travaille avec l'Agence mondiale antidopage (AMA), qui publie le Code mondial antidopage."
+},
+{
+"t": "table",
+"head": [
+"Acteur",
+"Rôle"
+],
+"rows": [
+[
+"AFLD",
+"Définit le programme annuel de contrôles, fait analyser les prélèvements, délivre les autorisations d'usage à des fins thérapeutiques, poursuit et sanctionne."
+],
+[
+"Collège de l'AFLD (9 membres)",
+"Décide d'engager les poursuites disciplinaires et valide les accords de composition administrative."
+],
+[
+"Commission des sanctions (10 membres)",
+"Prononce les sanctions."
+],
+[
+"Ministre chargé des sports",
+"Engage et coordonne les actions de prévention, de surveillance médicale, de recherche et d'éducation. L'AFLD coordonne le programme d'éducation."
+],
+[
+"Fédérations, ligues, clubs",
+"Donnent à l'AFLD les informations utiles. Les fédérations lui signalent les manquements qu'elles découvrent."
+]
+]
+},
+{
+"t": "h",
+"x": "Qui est un sportif ?"
+},
+{
+"t": "p",
+"x": "Est un sportif toute personne qui participe ou se prépare à une manifestation organisée par une fédération agréée, à une manifestation avec remise de prix, ou à une manifestation internationale. Un joueur amateur qui joue une compétition organisée par une fédération agréée est donc un sportif. La loi distingue ensuite le sportif de niveau national, international ou récréatif."
+}
+],
+"piege": "Le dopage ne concerne pas que les professionnels : un joueur amateur qui participe à une compétition d'une fédération agréée est un sportif au sens du Code du sport.",
+"reponse": "Oui. Hugo participe à une manifestation organisée par une fédération agréée : il est un sportif au sens du Code du sport, donc l'AFLD peut le contrôler. Les sanctions pour dopage sont prononcées, en principe, par la commission des sanctions de l'AFLD, pas par la fédération.",
+"sources": [
+"C. sport, L. 230-3 (définition du sportif)",
+"C. sport, L. 232-5 (missions de l'AFLD, contrôles pendant les manifestations des fédérations agréées)",
+"C. sport, L. 232-6 et L. 232-7-2 (collège de 9 membres, commission des sanctions de 10 membres)",
+"C. sport, L. 232-22 et L. 232-23 (poursuites par le collège, sanctions par la commission des sanctions)",
+"C. sport, L. 232-10-2 (signalement des manquements)",
+"C. sport, L. 230-1 (rôle du ministre chargé des sports)"
+],
+"questions": [
+"dop-l01-q1",
+"dop-l01-q2",
+"dop-l01-q3"
+],
+"titre": "Qui lutte contre le dopage ?",
+"priorite": 3
+},
+"dop-l02": {
+"minutes": 5,
+"situation": {
+"texte": "Inès joue en championnat de France. Elle a un rhume et veut prendre un médicament vendu sans ordonnance. Une coéquipière lui dit que la liste des interdictions change chaque année et que c'est au médecin de la connaître, pas à elle.",
+"question": "Inès est-elle dégagée de toute responsabilité si le médicament contient une substance interdite ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La liste des interdictions énumère les substances et les méthodes interdites. Elle est élaborée au niveau international et publiée au Journal officiel. La Liste 2027 entre en vigueur le 1er janvier 2027."
+},
+{
+"t": "table",
+"head": [
+"Catégorie",
+"Exemples dans la Liste 2027"
+],
+"rows": [
+[
+"Interdites en permanence (en et hors compétition)",
+"S0 substances non approuvées, S1 agents anabolisants, S2 hormones peptidiques, S3 bêta-2-agonistes, S4 modulateurs hormonaux, S5 diurétiques et agents masquants, méthodes M1 à M3"
+],
+[
+"Interdites en compétition seulement",
+"S6 stimulants, S7 narcotiques, S8 cannabinoïdes, S9 glucocorticoïdes"
+],
+[
+"Interdites dans certains sports",
+"P1 bêtabloquants"
+]
+]
+},
+{
+"t": "h",
+"x": "Spécifiée ou non spécifiée"
+},
+{
+"t": "p",
+"x": "Sauf mention contraire dans la Liste, toute substance interdite est une substance spécifiée. Sont non spécifiées les substances des classes S1, S2, S4.3, S4.4 et S6.A. Les méthodes interdites le sont aussi, sauf M2.2. Cette étiquette ne mesure pas la dangerosité : elle fixe la durée de base de la suspension, 4 ans pour une substance non spécifiée et 2 ans pour une substance spécifiée, et elle joue aussi sur la suspension provisoire."
+},
+{
+"t": "h",
+"x": "Substance d'abus"
+},
+{
+"t": "p",
+"x": "Une substance d'abus est souvent consommée dans la société, en dehors du sport. La Liste 2027 cite la cocaïne, l'héroïne, la MDMA (ecstasy) et le THC (cannabis). Le cannabidiol (CBD) n'est pas interdit."
+},
+{
+"t": "h",
+"x": "En compétition"
+},
+{
+"t": "p",
+"x": "En principe, la période en compétition commence juste avant minuit la veille de la compétition. Elle finit avec la compétition et la collecte des échantillons."
+}
+],
+"piege": "Une substance spécifiée est tout autant interdite : spécifiée ne veut pas dire moins dangereuse, cela change notamment la durée de base de la suspension et le régime de la suspension provisoire.",
+"reponse": "Non. Il incombe à chaque sportif de s'assurer qu'aucune substance interdite ne pénètre dans son organisme. Inès doit donc vérifier la liste en vigueur, sans compter sur son médecin ou sur une coéquipière.",
+"sources": [
+"C. sport, L. 232-9, I (responsabilité du sportif) et dernier alinéa (liste des interdictions, publiée au Journal officiel)",
+"Liste des interdictions 2027, introduction (spécifiée et non spécifiée, substances d'abus, période en compétition)",
+"Liste des interdictions 2027, S0 à S9, M1 à M3 et P1",
+"Liste des interdictions 2027, S8 (le cannabidiol n'est pas interdit)",
+"Code mondial antidopage 2027, art. 4.2.2 (substances spécifiées, cité dans la Liste)",
+"C. sport, L. 232-23-3-3 (durées de base selon la nature de la substance)"
+],
+"questions": [
+"dop-l02-q1",
+"dop-l02-q2",
+"dop-l02-q3"
+],
+"titre": "La liste des interdictions",
+"priorite": 3
+},
+"dop-l03": {
+"minutes": 5,
+"situation": {
+"texte": "Samir joue en National 1. Il a de l'asthme, et son médecin lui prescrit un médicament qui contient une substance interdite par la liste. Samir pense que l'ordonnance suffit et commence le traitement sans rien demander à personne.",
+"question": "Samir est-il à l'abri d'une sanction ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'autorisation d'usage à des fins thérapeutiques (AUT) permet à un sportif malade d'utiliser une substance ou une méthode interdite pour se soigner. Un traitement conforme à une AUT ne donne lieu ni à sanction disciplinaire ni à sanction pénale. Une ordonnance seule ne suffit pas."
+},
+{
+"t": "h",
+"x": "La démarche"
+},
+{
+"t": "list",
+"items": [
+"À chaque consultation qui donne lieu à une prescription, le sportif fait état de sa qualité de sportif.",
+"Il adresse sa demande à l'AFLD, avec le formulaire signé par son médecin traitant et son dossier médical. Il faut une demande par maladie.",
+"L'AFLD décide après l'avis conforme d'un comité d'au moins trois médecins. Avis conforme : l'AFLD doit le suivre."
+]
+},
+{
+"t": "h",
+"x": "Les quatre conditions, toutes nécessaires"
+},
+{
+"t": "list",
+"items": [
+"La substance est nécessaire au traitement d'une affection médicale dont le diagnostic est étayé par des preuves cliniques pertinentes.",
+"Elle n'améliore pas la performance au-delà du retour à l'état de santé normal.",
+"Il n'existe aucune alternative autorisée et raisonnable.",
+"Le besoin n'est pas la conséquence d'un usage antérieur sans AUT."
+]
+},
+{
+"t": "p",
+"x": "L'AUT prend effet à la date de sa notification, avec des exceptions comme l'urgence. Elle indique la substance, la dose et sa durée, puis expire seule. Lors d'un contrôle, le sportif peut faire état de son AUT ou de sa demande."
+}
+],
+"piege": "Le médecin prescrit, mais c'est l'AFLD qui accorde l'AUT : une ordonnance ne la remplace pas, et l'AUT prend effet en principe à sa notification, pas avant.",
+"reponse": "Non : une ordonnance ne suffit pas pour utiliser une substance interdite. Samir doit obtenir une AUT, que l'AFLD accorde après l'avis conforme d'un comité de médecins. Sans AUT, son traitement n'est pas couvert et la présence de la substance peut être sanctionnée.",
+"sources": [
+"C. sport, L. 232-2 (qualité de sportif, demande à l'AFLD, effet de l'AUT, comité d'au moins trois médecins)",
+"C. sport, L. 232-2-1 (date d'effet de l'AUT, effet rétroactif dans certains cas)",
+"C. sport, D. 232-72 (les quatre conditions)",
+"C. sport, D. 232-73 (contenu de la demande, une demande par pathologie)",
+"C. sport, D. 232-76 et D. 232-77 (comité, contenu et durée de l'AUT)",
+"C. sport, R. 232-49 (le sportif peut faire état d'une AUT lors du contrôle)",
+"C. sport, L. 232-9, dernier alinéa et II (les interdictions ne s'appliquent pas en cas d'AUT)"
+],
+"questions": [
+"dop-10",
+"dop-11",
+"dop-l03-q1"
+],
+"titre": "Se soigner : l'autorisation d'usage à des fins thérapeutiques",
+"priorite": 3
+},
+"dop-l04": {
+"minutes": 5,
+"situation": {
+"texte": "Paul, joueur professionnel d'un club de National, est désigné par l'AFLD dans le groupe cible. Il oublie de mettre à jour sa localisation en janvier, en février, puis en juin de la même année. Ces trois manquements aux obligations de localisation sont constatés.",
+"question": "Paul risque-t-il une sanction ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Les contrôles sont diligentés par l'AFLD. Ils sont réalisés par des personnes qu'elle agrée et qui sont assermentées, c'est-à-dire qui ont prêté serment. Le contrôle est notifié au sportif. Il peut avoir lieu sur un lieu d'entraînement ou de compétition, et même au domicile du sportif. Dans ces lieux, les contrôleurs n'entrent qu'entre 6 h et 23 h, sauf si le lieu est ouvert au public ou si une compétition ou un entraînement est en cours."
+},
+{
+"t": "h",
+"x": "Le prélèvement"
+},
+{
+"t": "list",
+"items": [
+"Le sportif assiste à toutes les opérations. Un procès-verbal est signé, et le sportif en reçoit un double.",
+"L'échantillon A est analysé. L'échantillon B est conservé : sa contre-analyse est de droit à la demande du sportif, à ses frais.",
+"Se soustraire au prélèvement, ou le refuser sans justification, est une violation.",
+"Le laboratoire accrédité par l'AMA peut, si les autres techniques ne suffisent pas, comparer des empreintes génétiques, notamment pour rechercher une administration de sang homologue, une substitution d'échantillons ou une manipulation génétique."
+]
+},
+{
+"t": "h",
+"x": "Groupe cible et localisation"
+},
+{
+"t": "p",
+"x": "Le groupe cible est une liste de sportifs désignés chaque année par l'AFLD, par exemple des sportifs de haut niveau ou des professionnels licenciés d'une fédération agréée. Ils doivent donner des renseignements précis et à jour sur leur localisation, c'est-à-dire sur l'endroit où ils se trouvent, pour permettre les contrôles. Trois manquements à ces obligations sur une période continue de 12 mois sont une violation."
+}
+],
+"piege": "Pour compter les trois manquements, on prend aussi ceux constatés par d'autres organisations antidopage signataires du Code mondial, pas seulement ceux constatés par l'AFLD.",
+"reponse": "Oui. Trois manquements aux obligations de localisation sur une période continue de douze mois sont une violation : ici, cinq mois séparent le premier du troisième. Paul peut donc être sanctionné par la commission des sanctions de l'AFLD.",
+"sources": [
+"C. sport, L. 232-11 et L. 232-12 (personnes habilitées, procès-verbal, double remis au sportif)",
+"C. sport, L. 232-12-2 (empreintes génétiques, information préalable de la personne contrôlée)",
+"C. sport, L. 232-13-1, L. 232-13-2 et L. 232-14 (lieux de contrôle, notification, horaires de 6 h à 23 h)",
+"C. sport, L. 232-9-2 (se soustraire au prélèvement)",
+"C. sport, L. 232-15 (groupe cible et localisation)",
+"C. sport, L. 232-9-3 (trois manquements en 12 mois)",
+"C. sport, R. 232-58 et R. 232-64 (déroulement du contrôle, échantillons A et B)",
+"Code mondial antidopage 2027, art. 2.3 et 2.4"
+],
+"questions": [
+"dop-12",
+"dop-14",
+"dop-l04-q1"
+],
+"titre": "Contrôles, prélèvements et localisation",
+"priorite": 3
+},
+"dop-l05": {
+"minutes": 5,
+"situation": {
+"texte": "Après un match de championnat, le contrôle de Karim, joueur senior, révèle une substance interdite dans son échantillon. Hugo assure qu'il l'a prise sans le savoir, dans la boisson d'un coéquipier. L'AFLD n'a aucune preuve qu'il a voulu se doper.",
+"question": "La violation est-elle quand même établie ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Le Code du sport interdit plusieurs actes, pas seulement la prise d'un produit. Le sportif est responsable de ce qu'il y a dans son corps : l'AFLD n'a pas à prouver une intention, une faute ou une négligence. C'est la responsabilité objective. Le personnel d'encadrement du sportif (entraîneur, soigneur, médecin, agent, parent, etc.) est aussi visé."
+},
+{
+"t": "table",
+"head": [
+"Violation",
+"Auteur"
+],
+"rows": [
+[
+"Présence d'une substance interdite dans l'échantillon",
+"Sportif"
+],
+[
+"Usage ou tentative d'usage",
+"Sportif"
+],
+[
+"Possession sans justification acceptable",
+"Sportif ; membre du personnel d'encadrement, aux fins d'usage par un sportif"
+],
+[
+"Se soustraire au prélèvement, le refuser ou ne pas s'y soumettre",
+"Sportif contrôlé"
+],
+[
+"Trois manquements de localisation en 12 mois",
+"Sportif soumis à la localisation"
+],
+[
+"Falsification ou tentative de falsification d'un élément du contrôle",
+"Toute personne"
+],
+[
+"Administration ou tentative d'administration",
+"Toute personne"
+],
+[
+"Trafic ou tentative de trafic",
+"Toute personne"
+],
+[
+"Complicité ou tentative de complicité",
+"Toute personne"
+],
+[
+"Intimidation ou représailles contre qui signale un dopage",
+"Toute personne"
+],
+[
+"Association avec un membre du personnel d'encadrement sanctionné",
+"Sportif ou toute autre personne"
+],
+[
+"Non-respect d'une suspension",
+"Personne suspendue"
+]
+]
+}
+],
+"piege": "La violation de présence est établie sans preuve d'intention ou de faute : l'intention ne joue que sur la durée de la suspension, pas sur l'existence de la violation.",
+"reponse": "Oui : la présence d'une substance interdite dans l'échantillon d'Hugo suffit à établir la violation, car l'AFLD n'a pas à prouver l'intention, la faute ou la négligence. L'explication d'Hugo pourra seulement compter pour la sanction.",
+"sources": [
+"C. sport, L. 232-9, I et II (présence, possession, usage)",
+"C. sport, L. 232-9-1 (association interdite)",
+"C. sport, L. 232-9-2 (prélèvement)",
+"C. sport, L. 232-9-3 (localisation)",
+"C. sport, L. 232-10 (administration, possession par l'encadrement, trafic, falsification)",
+"C. sport, L. 232-10-3 (complicité) et L. 232-10-4 (intimidation, représailles)",
+"C. sport, L. 232-17 (non-respect d'une suspension)",
+"C. sport, L. 230-5 (tentative) et L. 230-7 (définitions)",
+"Code mondial antidopage 2027, art. 2.1 à 2.11 et annexe 1 (personnel d'encadrement)"
+],
+"questions": [
+"dop-09",
+"dop-l05-q1",
+"dop-l05-q2"
+],
+"titre": "Les violations des règles antidopage",
+"priorite": 3
+},
+"dop-l06": {
+"minutes": 5,
+"situation": {
+"texte": "Mehdi, joueur professionnel du groupe cible, a commis trois manquements à ses obligations de localisation en huit mois. Rien ne laisse penser qu'il cherchait à échapper aux contrôles.",
+"question": "Quelle suspension encourt-il ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "La durée de base de la suspension dépend de la violation, de la nature de la substance et de l'intention. Ces durées sont celles du Code du sport, qui fait foi en France. Le Code mondial antidopage 2027 diffère sur certains points : par exemple, 2 mois au lieu de 3 pour une première violation avec une substance d'abus."
+},
+{
+"t": "table",
+"head": [
+"Violation",
+"Suspension de base"
+],
+"rows": [
+[
+"Présence, usage ou possession d'une substance non spécifiée",
+"4 ans, ramenés à 2 ans si le sportif démontre l'absence d'intention"
+],
+[
+"Présence, usage ou possession d'une substance spécifiée",
+"2 ans, portés à 4 ans si l'AFLD démontre l'intention"
+],
+[
+"Substance d'abus, hors compétition, sans rapport avec la performance",
+"3 mois, ramenés à 1 mois avec un traitement approuvé par l'AFLD"
+],
+[
+"Se soustraire au prélèvement, le refuser, falsification",
+"4 ans, avec des réductions possibles"
+],
+[
+"Trois manquements de localisation",
+"2 ans, réduits au plus de moitié selon la faute"
+],
+[
+"Administration ou trafic",
+"4 ans au minimum, jusqu'à la suspension définitive"
+]
+]
+},
+{
+"t": "h",
+"x": "Réduire ou augmenter"
+},
+{
+"t": "list",
+"items": [
+"Absence de faute ou de négligence démontrée par le sportif : pas de suspension.",
+"Absence de faute ou de négligence significative : pour une substance spécifiée qui n'est pas une substance d'abus, ou issue d'un produit contaminé, d'un avertissement à 2 ans ; pour les autres violations non intentionnelles, une réduction possible jusqu'à la moitié de la durée normale.",
+"Circonstances aggravantes prouvées par l'AFLD : jusqu'à 2 ans de plus, sauf pour l'administration, le trafic, la complicité et l'intimidation.",
+"Récidive : une deuxième violation dans les 10 ans après la notification de la première alourdit la suspension. La troisième entraîne en principe la suspension définitive."
+]
+},
+{
+"t": "p",
+"x": "La suspension prend effet, en principe, à la date de la décision."
+}
+],
+"piege": "La charge de la preuve s'inverse : pour une substance non spécifiée, c'est le sportif qui doit démontrer l'absence d'intention ; pour une substance spécifiée, c'est l'AFLD qui doit démontrer l'intention.",
+"reponse": "La suspension de base est de 2 ans. Elle peut être réduite d'au plus la moitié, selon le degré de faute de Mehdi, donc jusqu'à 1 an. Rien ne laisse penser à une volonté d'échapper aux contrôles : la réduction n'est donc pas exclue.",
+"sources": [
+"C. sport, L. 232-23-3-3 (substances spécifiées et non spécifiées, substances d'abus)",
+"C. sport, L. 232-23-3-4 (prélèvement, falsification)",
+"C. sport, L. 232-23-3-5 (localisation)",
+"C. sport, L. 232-23-3-6 (administration, trafic)",
+"C. sport, L. 232-23-3-8 (violations multiples)",
+"C. sport, L. 232-23-3-10, I, II et V (absence de faute, réductions, circonstances aggravantes)",
+"C. sport, L. 232-23-3-11 (début de la suspension)",
+"Code mondial antidopage 2027, art. 10.2 et 10.3"
+],
+"questions": [
+"dop-01",
+"dop-02",
+"dop-03",
+"dop-04"
+],
+"titre": "La durée des suspensions",
+"priorite": 3
+},
+"dop-l07": {
+"minutes": 5,
+"situation": {
+"texte": "Après un contrôle à la mi-saison, Marc reçoit une lettre recommandée de l'AFLD : son échantillon A contient une substance interdite. Il pense à une erreur et veut faire analyser l'échantillon B.",
+"question": "De quel délai dispose-t-il, et qui paie l'analyse ?"
+},
+"blocs": [
+{
+"t": "table",
+"head": [
+"Étape",
+"Règle"
+],
+"rows": [
+[
+"Information",
+"Le secrétaire général de l'AFLD informe l'intéressé par lettre recommandée : règles présumées violées, faits, sanctions encourues."
+],
+[
+"Échantillon B",
+"Le sportif peut demander son analyse, à ses frais, par lettre recommandée, dans les 5 jours de la réception. Sinon, il est réputé y renoncer."
+],
+[
+"Observations",
+"Il peut présenter des observations écrites dans les 15 jours. Ensuite, des poursuites peuvent être engagées."
+],
+[
+"Griefs",
+"Le collège engage les poursuites. Les griefs sont notifiés avec une proposition de composition administrative. L'intéressé a 20 jours pour répondre."
+],
+[
+"Commission des sanctions",
+"Sans accord, audience devant la commission, qui décide par une décision motivée. Une décision qui constate une violation est rendue publique."
+],
+[
+"Recours",
+"Recours de pleine juridiction devant le Conseil d'État, dans le mois qui suit la notification."
+]
+]
+},
+{
+"t": "h",
+"x": "Composition administrative"
+},
+{
+"t": "p",
+"x": "C'est un accord : la personne reconnaît la violation, accepte les sanctions proposées et renonce à l'audience. Le collège le valide. Si la suspension encourue est de 4 ans ou plus, l'aveu avec accord de composition administrative dans les 20 jours de la notification des griefs réduit la suspension d'un an, sans cumul avec une autre réduction. Le Code mondial 2027 prévoit 25 % de réduction : en France, c'est le Code du sport qui s'applique."
+},
+{
+"t": "h",
+"x": "Suspension provisoire"
+},
+{
+"t": "p",
+"x": "Si le résultat d'analyse implique une substance non spécifiée, le président de l'AFLD ordonne sans délai une suspension provisoire, avant la décision. Pour une substance spécifiée, elle est facultative."
+},
+{
+"t": "h",
+"x": "Prescription"
+},
+{
+"t": "p",
+"x": "L'action disciplinaire se prescrit par 10 ans à compter de la violation. Tout acte d'instruction ou de poursuite interrompt ce délai."
+}
+],
+"piege": "Ne confonds pas les délais : 5 jours pour demander l'échantillon B, 15 jours pour les observations, 20 jours pour la composition administrative, 10 ans pour la prescription.",
+"reponse": "Marc a 5 jours à compter de la réception de la lettre pour demander l'analyse de l'échantillon B, par lettre recommandée. Il la paie lui-même. S'il ne demande rien, il est réputé y renoncer, et la présence de la substance est alors regardée comme établie sur l'échantillon A.",
+"sources": [
+"C. sport, L. 232-21-1 et R. 232-88 (information de l'intéressé, délais de 5 et 15 jours)",
+"C. sport, R. 232-64 (échantillons A et B)",
+"C. sport, L. 232-22 et R. 232-89 (poursuites, composition administrative, délai de 20 jours)",
+"C. sport, L. 232-23-3-10, III (réduction d'un an)",
+"C. sport, L. 232-23-4 et R. 232-88-1 (suspension provisoire)",
+"C. sport, L. 232-23-6 et R. 232-97 (décision motivée, publication)",
+"C. sport, L. 232-24 et R. 232-98 (recours devant le Conseil d'État, délai d'un mois)",
+"C. sport, L. 232-24-1 (prescription de 10 ans)",
+"Code mondial antidopage 2027, art. 17"
+],
+"questions": [
+"dop-13",
+"dop-l07-q1",
+"dop-l07-q2"
+],
+"titre": "La procédure et la prescription",
+"priorite": 2
+},
+"dop-l08": {
+"minutes": 5,
+"situation": {
+"texte": "Ibrahim risque 4 ans de suspension pour une substance non spécifiée. Il remet à l'AFLD une déclaration écrite signée, avec toutes les informations qu'il a, qui permettent de poursuivre le médecin qui lui a fourni le produit. Il collabore ensuite à l'enquête.",
+"question": "Sa suspension peut-elle être allégée, et jusqu'où ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "L'aide substantielle est une aide apportée à la lutte contre le dopage par une personne qui a elle-même commis une violation. Elle suppose deux conditions cumulatives :"
+},
+{
+"t": "list",
+"items": [
+"Divulguer entièrement, dans une déclaration écrite signée ou un entretien enregistré, toutes les informations en sa possession. Elles doivent permettre, par exemple, de poursuivre une violation commise par une autre personne.",
+"Collaborer pleinement à l'enquête, par exemple en témoignant à une audience si on le lui demande."
+]
+},
+{
+"t": "h",
+"x": "Le sursis"
+},
+{
+"t": "p",
+"x": "Le sursis dispense d'exécuter une partie de la suspension, tant que la personne tient ses engagements. La commission des sanctions l'accorde, ou le collège dans un accord."
+},
+{
+"t": "table",
+"head": [
+"Règle",
+"Contenu"
+],
+"rows": [
+[
+"Maximum",
+"Trois quarts de la durée de la suspension"
+],
+[
+"Critères",
+"Gravité de la violation et importance de l'aide"
+],
+[
+"Suspension définitive",
+"En principe, au moins 8 ans sans sursis"
+],
+[
+"Cas exceptionnel",
+"Sursis jusqu'à la totalité, après avis de l'Agence mondiale antidopage"
+],
+[
+"Résultats et publication",
+"En principe, pas de sursis pour l'annulation des résultats ni pour la publication"
+]
+]
+},
+{
+"t": "h",
+"x": "Révocation du sursis"
+},
+{
+"t": "p",
+"x": "À la demande du collège, la commission des sanctions peut révoquer le sursis si la personne commet une nouvelle violation dans les 10 ans qui suivent le prononcé de la sanction, ou si elle cesse de coopérer ou de transmettre les informations promises."
+}
+],
+"piege": "Le sursis est limité aux trois quarts de la suspension, et une suspension définitive laisse, en principe, au moins 8 ans fermes : l'aide substantielle n'efface pas la sanction.",
+"reponse": "Oui. Sa déclaration écrite signée et sa collaboration à l'enquête permettent de poursuivre une autre personne : c'est une aide substantielle. La commission des sanctions peut lui accorder un sursis jusqu'aux trois quarts de 4 ans, soit 3 ans, selon la gravité de la violation et l'importance de l'aide.",
+"sources": [
+"C. sport, L. 230-4 (définition de l'aide substantielle)",
+"C. sport, L. 232-23-3-2, I (sursis, trois quarts, 8 ans, cas exceptionnel)",
+"C. sport, L. 232-23-3-2, II (révocation du sursis)",
+"C. sport, L. 232-22 (accord de composition administrative)",
+"C. sport, R. 232-88, 9° (information sur l'aide substantielle)",
+"Code mondial antidopage 2027, art. 10.7.3"
+],
+"questions": [
+"dop-06",
+"dop-07",
+"dop-08",
+"dop-15"
+],
+"titre": "L'aide substantielle et le sursis",
+"priorite": 2
+},
+"dop-l09": {
+"minutes": 5,
+"situation": {
+"texte": "Yanis, agent sportif, conseille à Tom, joueur de National, un produit qu'il sait interdit, sans aucune raison médicale. Il lui remet une dose, en vue du prochain match. Le produit est une substance non spécifiée.",
+"question": "Quelle violation Yanis commet-il, et quelle suspension encourt-il ?"
+},
+"blocs": [
+{
+"t": "p",
+"x": "Les règles antidopage visent aussi l'entourage du sportif. Le personnel d'encadrement comprend tout entraîneur, soigneur, directeur sportif, agent, personnel médical, parent ou autre personne qui travaille avec un sportif. Un agent sportif qui travaille avec un sportif est donc concerné : l'agent figure dans la définition de l'annexe 1 du Code mondial, à laquelle renvoie le Code du sport."
+},
+{
+"t": "table",
+"head": [
+"Violation",
+"Suspension"
+],
+"rows": [
+[
+"Administration (fournir, faciliter l'usage) ou trafic, ou tentative",
+"4 ans au minimum, jusqu'à la suspension définitive. Un membre du personnel d'encadrement encourt la suspension définitive, sauf si la substance est spécifiée"
+],
+[
+"Complicité (assistance, incitation, dissimulation), intimidation ou représailles",
+"De 2 ans à la suspension définitive (le Code mondial 2027 prévoit au moins 4 ans si la violation implique un mineur ou une personne protégée ; en France, c'est le Code du sport qui s'applique)"
+],
+[
+"Association interdite",
+"2 ans, réduits au plus de moitié selon la faute"
+],
+[
+"Falsification",
+"4 ans"
+]
+]
+},
+{
+"t": "h",
+"x": "L'association interdite"
+},
+{
+"t": "p",
+"x": "Un sportif, ou toute autre personne, ne doit pas recourir à titre professionnel ou sportif aux services d'un membre du personnel d'encadrement sanctionné pour dopage, pendant sa sanction. L'AFLD doit prouver que la personne connaissait ce statut. Si elle y parvient, il revient à la personne de démontrer que le recours à ces services n'avait pas de caractère professionnel ou sportif, ou ne pouvait pas être évité."
+},
+{
+"t": "h",
+"x": "Les poursuites pénales"
+},
+{
+"t": "p",
+"x": "Prescrire, administrer, céder ou offrir aux sportifs des produits interdits sans raison médicale, faciliter leur usage ou y inciter, est un délit : 5 ans de prison et 75 000 € d'amende. La peine est de 7 ans et 150 000 € si les faits visent un mineur, sont commis en bande organisée ou par une personne ayant autorité sur le sportif."
+},
+{
+"t": "p",
+"x": "Le personnel d'encadrement doit aussi signaler à l'AFLD les manquements qu'il découvre. Une aide substantielle peut alléger sa sanction."
+}
+],
+"piege": "L'association interdite ne vise pas seulement le sportif : toute personne qui recourt aux services d'un encadrant sanctionné, en connaissant son statut, peut être sanctionnée.",
+"reponse": "Yanis commet une administration : il fournit à un sportif une substance interdite. Comme membre du personnel d'encadrement, il encourt la suspension définitive, car la substance n'est pas spécifiée. La cession ou l'offre de produits interdits à des sportifs, sans raison médicale dûment justifiée, est aussi un délit, puni de 5 ans de prison et de 75 000 € d'amende. La situation n'indique aucune circonstance aggravante (mineur, bande organisée, autorité sur le sportif) : les peines de 7 ans et 150 000 € ne sont pas retenues ici.",
+"sources": [
+"C. sport, L. 232-10, 1°, 2°, 3° et 4° (administration, possession par l'encadrement, trafic, falsification)",
+"C. sport, L. 232-9-1 (association interdite)",
+"C. sport, L. 232-10-2 (collaboration et signalement)",
+"C. sport, L. 232-10-3 et L. 232-10-4 (complicité, intimidation, représailles)",
+"C. sport, L. 232-23-3-4, L. 232-23-3-6, L. 232-23-3-7 et L. 232-23-3-9 (durées de suspension)",
+"C. sport, L. 232-23, I (sanction pécuniaire, suspension des fonctions d'encadrement)",
+"C. sport, L. 232-26, II (peines pénales)",
+"C. sport, L. 230-4 (aide substantielle)",
+"Code mondial antidopage 2027, art. 2.7 à 2.10, 10.3.3 à 10.3.5 et annexe 1 (personnel d'encadrement)"
+],
+"questions": [
+"dop-05",
+"dop-l09-q1",
+"dop-l09-q2",
+"dop-l09-q3"
+],
+"titre": "L'entourage du sportif, et l'agent",
+"priorite": 3
 }
 }
 }
