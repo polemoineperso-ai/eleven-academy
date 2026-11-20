@@ -37696,6 +37696,15 @@
 "precisions": []
 },
 {
+"id": "n-visite-2026-11-21",
+"d": "2026-11-21",
+"genre": "appli",
+"titre": "« Comment ça marche » remis à jour",
+"texte": "La visite guidée présente maintenant ta semaine et les leçons de 5 minutes. Pour un nouvel apprenant, elle se termine sur sa première leçon ; relue depuis Mon espace, elle se ferme simplement avec « Terminer », sans lancer de match.",
+"erreurs": [],
+"precisions": []
+},
+{
 "id": "n-billets-2026-11-15",
 "d": "2026-11-15",
 "genre": "appli",

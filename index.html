@@ -2980,22 +2980,22 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
 
   /* ---------- Guided tour: once after the first entry, then from Mon espace ---------- */
   const TOUR = [
-    { mark: () => pic("ic-home"), title: "Un match par jour", text: "Dans l'onglet Accueil, tu retrouves chaque jour ton match et ton conseil pour avancer." },
-    { mark: () => pic("ic-tab-programme"), title: "Apprends module par module", text: "Dans Programme, chaque chapitre suit le même parcours : le cours, la fiche, puis les questions. La recherche retrouve aussi un mot ou un article en quelques lettres." },
-    { mark: () => pic("ic-tab-match"), title: "Entraîne-toi comme à l'examen", text: "Dans Match, joue le match du jour ou un module de ton choix. Quand tu te sens à niveau, passe le match officiel : un vrai sujet, en 2 heures, noté sur 20." },
+    { mark: () => pic("ic-home"), title: "Ta semaine, prête chaque lundi", text: "Sur l'Accueil, ton programme de la semaine t'attend : quelques leçons de 5 minutes, à faire dans l'ordre, et le match du jour pour t'entraîner." },
+    { mark: () => pic("ic-tab-programme"), title: "Une notion, une leçon de 5 minutes", text: () => `Dans Programme, les modules de l'examen sont découpés en ${toutesLecons().length || "petites"} leçons : une situation de club, la règle, le piège d'examen, puis 3 questions. Tout juste, la leçon est réussie ; sinon, elle passe « À revoir » et revient dans ta semaine.` },
+    { mark: () => pic("ic-tab-match"), title: "Entraîne-toi comme à l'examen", text: "Dans Match, joue le match du jour ou un module de ton choix : les questions ratées reviennent les jours suivants. Quand tu te sens à niveau, passe le match officiel : un vrai sujet, en 2 heures, noté sur 20." },
     { mark: () => pic("ic-tab-billets"), title: "Collectionne le vocabulaire", text: "Dans Billets, retourne un billet et dis si tu connais la notion. Ta collection se colore, du gris à l'or, et les billets à revoir reviennent en premier." },
-    { mark: () => pic("ic-arbitre"), title: "Un doute ? Appelle l'arbitre", text: "Le bouton vert Arbitre, en bas de l'écran, s'ouvre à tout moment : pose ta question, il répond à partir de tes cours. Il reste au vestiaire pendant le match officiel." },
-    { mark: () => pic("ic-tab-progress"), title: "Monte de division", text: "Dans Progression, suis ta division, tes trophées et ce que tu maîtrises dans chaque module." }
+    { mark: () => pic("ic-arbitre"), title: "Un doute ? Appelle l'arbitre", text: "Le bouton vert Arbitre, en bas de l'écran, s'ouvre à tout moment : pose ta question, il répond à partir des cours et des articles de loi de l'appli. Il reste au vestiaire pendant le match officiel." },
+    { mark: () => pic("ic-tab-progress"), title: "Monte de division", text: "Dans Progression, suis ta division, tes trophées et ce que tu maîtrises dans chaque module. Et chaque dimanche, ton bilan de la semaine arrive par e-mail." }
   ];
   function vTour() {
     const i = Math.min(S.tour || 0, TOUR.length - 1), t = TOUR[i], last = i === TOUR.length - 1;
     return `<main class="screen narrow tour">
       <div class="tour-top"><span class="tiny num" aria-live="polite">Écran ${i + 1} sur ${TOUR.length}</span><button class="link-btn" data-act="tour-skip">${S.tourBack ? "Fermer" : "Passer"}</button></div>
       <div class="bar" aria-hidden="true"><i style="width:${Math.round(100 * (i + 1) / TOUR.length)}%"></i></div>
-      <div class="tour-body">${t.mark()}<h1 class="tour-title">${esc(t.title)}</h1><p class="tour-text">${esc(t.text)}</p></div>
+      <div class="tour-body">${t.mark()}<h1 class="tour-title">${esc(t.title)}</h1><p class="tour-text">${esc(typeof t.text === "function" ? t.text() : t.text)}</p></div>
       <div class="${i ? "tour-actions" : "lesson-end"}">
         ${i ? `<button class="btn btn-ghost" data-act="tour-prev">${icon("back")}Retour</button>` : ""}
-        ${last ? `<button class="btn btn-primary" data-act="tour-first">${icon("play")}${S.tourBack ? "Lancer un match" : "Lancer mon premier match"}</button>` : `<button class="btn btn-primary${i ? "" : " btn-block"}" data-act="tour-next">Suivant${icon("chevron")}</button>`}
+        ${last ? (S.tourBack ? `<button class="btn btn-primary" data-act="tour-skip">${icon("check")}Terminer</button>` : `<button class="btn btn-primary" data-act="tour-first">${icon("play")}Première leçon</button>`) : `<button class="btn btn-primary${i ? "" : " btn-block"}" data-act="tour-next">Suivant${icon("chevron")}</button>`}
       </div>
     </main>`;
   }
@@ -3074,7 +3074,14 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
       case "tour-next": S.tour = (S.tour || 0) + 1; go("tour"); break;
       case "tour-prev": S.tour = Math.max(0, (S.tour || 0) - 1); go("tour"); break;
       case "tour-skip": { const back = S.tourBack ? "me" : "home"; tourDone(); S.tourBack = false; go(back); break; }
-      case "tour-first": { tourDone(); S.tourBack = false; const plan = buildDaily(S.progress.settings.perSession); startSession("daily", plan.ids, "Match du jour"); break; }
+      case "tour-first": {
+        tourDone(); S.tourBack = false;
+        /* Première leçon de la semaine ; l'Accueil prend la place de la visite dans l'historique, pour que le retour y ramène */
+        const sem = S.content?.lecons?.length ? semaine() : null, id = sem?.ids.find((x) => !faiteDepuis(S.progress, x, sem.debut)) || nextLecon()?.l.id;
+        try { history.replaceState({ ea: 1, view: "home", param: null, from: null }, ""); } catch { /* historique indisponible */ }
+        if (id) go("lecon", id); else go("home");
+        break;
+      }
       case "rev-kind": S.rev.kind = param; document.querySelectorAll("#rev-chips .chip").forEach((c) => c.setAttribute("aria-pressed", c.dataset.param === param)); document.getElementById("rev-out").innerHTML = typo(normS(S.rev.q).trim().length >= 2 ? revResults() : revDefault()); break;
       case "ask": { const q = C.q(param); if (q) startSession("chapter", [q.id], "Question : " + q.enonce.slice(0, 40)); break; }
       case "toc": { const t = document.getElementById(param); if (t) { t.scrollIntoView({ behavior: fxOn() ? "smooth" : "auto", block: "start" }); t.querySelector("h2")?.setAttribute("tabindex", "-1"); t.querySelector("h2")?.focus({ preventScroll: true }); } break; }
@@ -3328,7 +3335,7 @@ body.has-arb #app::after { content: ""; display: block; height: 64px; }
   /* ---------- Boot ---------- */
   const CFG = window.EA_CONFIG || {};
   /* ---------- New version notice: GitHub Pages keeps the page in cache for up to 10 minutes ---------- */
-  const BUILD = "0525d42a07e6";
+  const BUILD = "5b8da1150faa";
   const UPD = { remote: null, last: 0 };
   function updatePaint(allowed) {
     if (allowed !== undefined) UPD.allowed = allowed;
